@@ -1,0 +1,31 @@
+.header-phone-link {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 700;
+    color: white;
+    align-self: center;
+    margin-right: 40px;
+    transition: color .2s;
+    &:last-child {
+        margin-right: 0;
+    }
+    &:link,
+    &:visited {
+        color: white;
+    }
+
+
+    .no-touch &:hover,
+    .touch &:active {
+        text-decoration: underline;
+    }
+
+
+    .page-header.fixed & {
+        color: black;
+        &:link,
+        &:visited {
+            color: black;
+        }
+    }
+}

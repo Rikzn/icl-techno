@@ -1,0 +1,128 @@
+{% set title = "Index Page" %} {% extends "layout.njk" %} {% block content %}
+<section class="intro-slider js-intro-slider">
+    <div class="intro-slider__content">
+        <ul class="intro-slider__slides-container">
+            <li class="intro-slider__slide active">
+                Слайд 1
+            </li>
+            <li class="intro-slider__slide">
+                Слайд 2
+            </li>
+            <li class="intro-slider__slide">
+                Слайд 3
+            </li>
+            <li class="intro-slider__slide">
+                Слайд 4
+            </li>
+            <li class="intro-slider__slide">
+                Слайд 5
+            </li>
+        </ul>
+
+        <ul class="intro-slider__pagination js-intro-slider-pagination">
+            <li class="intro-slider__pagination-item active">
+                <a href="#" class="intro-slider__pagination-btn"> </a>
+            </li>
+            <li class="intro-slider__pagination-item">
+                <a href="#" class="intro-slider__pagination-btn"> </a>
+            </li>
+            <li class="intro-slider__pagination-item">
+                <a href="#" class="intro-slider__pagination-btn"> </a>
+            </li>
+            <li class="intro-slider__pagination-item">
+                <a href="#" class="intro-slider__pagination-btn"> </a>
+            </li>
+            <li class="intro-slider__pagination-item">
+                <a href="#" class="intro-slider__pagination-btn"> </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="home-news">
+    <div class="home-news__top-row">
+        <h2 class="section-header">
+            Новости
+        </h2>
+        <a href="#" class="section-header">Все новости</a>
+    </div>
+    <div class="home-news__slider">
+        <div class="home-news__slider-container">
+            <ul class="home-news__list">
+                <li class="home-news__list-item">
+                    <a href="#" class="home-news__card">
+                        <span class="home-news__card-left-column">
+                            <span class="home-news__card-date">
+                                12
+                                <span class="home-news__card-month">
+                                    ноя
+                                </span>
+                            </span>
+
+                            <svg width="10" height="18" aria-hidden="true" class="icon-small-arrow-right">
+                                <use xlink:href="#small-arrow-right" />
+                            </svg>
+                        </span>
+                        <span class="home-news__card-right-column">
+                            <span class="home-news__card-image-container">
+                                <img src="img/news/news-image-2.jpg" alt="Новость 1" class="home-news__card-image" />
+                            </span>
+                            <span class="home-news__card-text">
+                                СХД от «Рэйдикс» и ICL обеспечит сохранность данных Территориального фонда ОМС в Республике Мордовия
+                            </span>
+                        </span>
+                    </a>
+                </li>
+                <li class="home-news__list-item">
+                    <a href="#" class="home-news__card">
+                        <span class="home-news__card-left-column">
+                            <span class="home-news__card-date">
+                                12
+                                <span class="home-news__card-month">
+                                    ноя
+                                </span>
+                            </span>
+
+                            <svg width="10" height="18" aria-hidden="true" class="icon-small-arrow-right">
+                                <use xlink:href="#small-arrow-right" />
+                            </svg>
+                        </span>
+                        <span class="home-news__card-right-column">
+                            <span class="home-news__card-image-container">
+                                <img src="img/news/news-image-2.jpg" alt="Новость 2" class="home-news__card-image" />
+                            </span>
+                            <span class="home-news__card-text">
+                                СХД от «Рэйдикс» и ICL обеспечит сохранность данных Территориального фонда ОМС в Республике Мордовия
+                            </span>
+                        </span>
+                    </a>
+                </li>
+                <li class="home-news__list-item">
+                    <a href="#" class="home-news__card">
+                        <span class="home-news__card-left-column">
+                            <span class="home-news__card-date">
+                                12
+                                <span class="home-news__card-month">
+                                    ноя
+                                </span>
+                            </span>
+
+                            <svg width="10" height="18" aria-hidden="true" class="icon-small-arrow-right">
+                                <use xlink:href="#small-arrow-right" />
+                            </svg>
+                        </span>
+                        <span class="home-news__card-right-column">
+                            <span class="home-news__card-image-container">
+                                <img src="img/news/news-image-3.jpg" alt="Новость 3" class="home-news__card-image" />
+                            </span>
+                            <span class="home-news__card-text">
+                                СХД от «Рэйдикс» и ICL обеспечит сохранность данных Территориального фонда ОМС в Республике Мордовия
+                            </span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+{% endblock %}

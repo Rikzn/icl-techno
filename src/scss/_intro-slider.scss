@@ -1,0 +1,102 @@
+.intro-slider {
+    height: 650px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 110px;
+}
+
+.intro-slider__content {
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    height: 100%;
+    left: calc((100vw - 100%) / 2 * -1);
+    background-color: $red;
+    color: white;
+    z-index: -1;
+}
+
+
+.intro-slider__slides-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.intro-slider__slide {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s, visibility 0s linear .3s;
+
+
+    font-size: 60px;
+    line-height: 1.2;
+    font-weight: 700;
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        transition: .3s;
+        z-index: 5;
+    }
+}
+
+.intro-slider__pagination {
+    position: absolute;
+    top: calc(100% + 3px);
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    margin: 0 -2px;
+}
+
+.intro-slider__pagination-item {
+    width: 200px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.intro-slider__pagination-btn {
+    display: block;
+    background-color: #cdcdcd;
+    height: 6px;
+    position: relative;
+    &::after {
+        content: '';
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        background-color: darkgrey;
+        transform-origin: left center;
+        transform: translateZ(0) scaleX(0);
+        animation-name: movingBar;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+    }
+}
+
+
+@keyframes movingBar {
+    from {
+        transform: translateZ(0) scaleX(0);
+    }
+
+    to {
+        transform: translateZ(0) scaleX(1);
+    }
+}
