@@ -330,21 +330,23 @@ p.extra-small-text {
   justify-content: center;
   opacity: 0;
   visibility: hidden;
-  transition: opacity .3s, visibility 0s linear .3s;
+  transition: opacity 0.3s, visibility 0s linear 0.3s;
   font-size: 60px;
   line-height: 1.2;
   font-weight: 700; }
   .intro-slider__slide.active {
     opacity: 1;
     visibility: visible;
-    transition: .3s;
+    transition: 0.3s;
     z-index: 5; }
 
-.intro-slider__pagination {
+.intro-slider__pagination-container {
   position: absolute;
   top: calc(100% + 3px);
   left: 0;
-  width: 100%;
+  width: 100%; }
+
+.intro-slider__pagination {
   display: flex;
   margin: 0 -2px; }
 
@@ -353,13 +355,35 @@ p.extra-small-text {
   flex-grow: 1;
   flex-shrink: 0;
   padding-left: 2px;
-  padding-right: 2px; }
+  padding-right: 2px;
+  position: relative; }
+
+.intro-slider__pagination-active-slide-mark {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding-left: 2px;
+  padding-right: 2px;
+  transition: transform .3s;
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  min-width: 200px; }
+  .intro-slider__pagination-active-slide-mark::before {
+    content: '';
+    width: 100%;
+    flex-grow: 1;
+    background-color: #FB0D1B; }
 
 .intro-slider__pagination-btn {
   display: block;
   background-color: #cdcdcd;
   height: 6px;
-  position: relative; }
+  position: relative;
+  -webkit-animation-duration: inherit;
+          animation-duration: inherit; }
   .intro-slider__pagination-btn::after {
     content: '';
     width: 100%;
@@ -369,11 +393,12 @@ p.extra-small-text {
     height: 100%;
     background-color: darkgrey;
     transform-origin: left center;
-    transform: translateZ(0) scaleX(0);
+    transform: translateZ(0) scaleX(0); }
+  .intro-slider__pagination-item.incoming .intro-slider__pagination-btn::after {
     -webkit-animation-name: movingBar;
             animation-name: movingBar;
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
+    -webkit-animation-duration: inherit;
+            animation-duration: inherit;
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear; }
 

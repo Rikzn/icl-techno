@@ -16,14 +16,12 @@
     z-index: -1;
 }
 
-
 .intro-slider__slides-container {
     width: 100%;
     height: 100%;
     position: relative;
     overflow: hidden;
 }
-
 
 .intro-slider__slide {
     position: absolute;
@@ -37,8 +35,7 @@
     justify-content: center;
     opacity: 0;
     visibility: hidden;
-    transition: opacity .3s, visibility 0s linear .3s;
-
+    transition: opacity 0.3s, visibility 0s linear 0.3s;
 
     font-size: 60px;
     line-height: 1.2;
@@ -46,17 +43,19 @@
     &.active {
         opacity: 1;
         visibility: visible;
-        transition: .3s;
+        transition: 0.3s;
         z-index: 5;
     }
 }
 
-.intro-slider__pagination {
+.intro-slider__pagination-container {
     position: absolute;
     top: calc(100% + 3px);
     left: 0;
     width: 100%;
+}
 
+.intro-slider__pagination {
     display: flex;
     margin: 0 -2px;
 }
@@ -67,6 +66,28 @@
     flex-shrink: 0;
     padding-left: 2px;
     padding-right: 2px;
+    position: relative;
+}
+
+.intro-slider__pagination-active-slide-mark {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding-left: 2px;
+    padding-right: 2px;
+    transition: transform .3s;
+    z-index: 30;
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    &::before {
+        content: '';
+        width: 100%;
+        flex-grow: 1;
+        background-color: $red;
+    }
 }
 
 .intro-slider__pagination-btn {
@@ -74,6 +95,7 @@
     background-color: #cdcdcd;
     height: 6px;
     position: relative;
+    animation-duration: inherit;
     &::after {
         content: '';
         width: 100%;
@@ -84,12 +106,18 @@
         background-color: darkgrey;
         transform-origin: left center;
         transform: translateZ(0) scaleX(0);
-        animation-name: movingBar;
-        animation-duration: 3s;
-        animation-timing-function: linear;
+        
+    }
+
+
+    .intro-slider__pagination-item.incoming & {
+        &::after {
+            animation-name: movingBar;
+            animation-duration: inherit;
+            animation-timing-function: linear;
+        }
     }
 }
-
 
 @keyframes movingBar {
     from {
