@@ -367,10 +367,11 @@ p.extra-small-text {
   padding-left: 2px;
   padding-right: 2px;
   transition: transform .3s;
-  z-index: 30;
+  z-index: 50;
   display: flex;
   flex-direction: column;
-  min-width: 200px; }
+  min-width: 200px;
+  will-change: transform; }
   .intro-slider__pagination-active-slide-mark::before {
     content: '';
     width: 100%;
@@ -384,6 +385,9 @@ p.extra-small-text {
   position: relative;
   -webkit-animation-duration: inherit;
           animation-duration: inherit; }
+  .intro-slider__pagination-item.active .intro-slider__pagination-btn {
+    cursor: default;
+    pointer-events: none; }
   .intro-slider__pagination-btn::after {
     content: '';
     width: 100%;
@@ -394,6 +398,11 @@ p.extra-small-text {
     background-color: darkgrey;
     transform-origin: left center;
     transform: translateZ(0) scaleX(0); }
+  .no-touch .intro-slider__pagination-item:not(.active) .intro-slider__pagination-btn:hover .intro-slider__pagination-image-popover {
+    transform: translateZ(0) scaleY(1); }
+  .no-touch .intro-slider__pagination-item:not(.active) .intro-slider__pagination-btn:hover .intro-slider__pagination-image-popover-text {
+    opacity: 1;
+    transition: opacity .2s ease-out .2s; }
   .intro-slider__pagination-item.incoming .intro-slider__pagination-btn::after {
     -webkit-animation-name: movingBar;
             animation-name: movingBar;
@@ -401,6 +410,52 @@ p.extra-small-text {
             animation-duration: inherit;
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear; }
+
+.intro-slider__pagination-image-popover {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-height: 125px;
+  background-color: #FB0D1B;
+  color: white;
+  padding-top: 20px;
+  padding-left: 25px;
+  padding-right: 50px;
+  z-index: 40;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 20px;
+  transition: transform .2s;
+  transform-origin: center bottom;
+  transform: translateZ(0) scaleY(0); }
+  .intro-slider__pagination-image-popover::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.4); }
+
+.intro-slider__pagination-image-popover-text {
+  position: relative;
+  z-index: 3;
+  opacity: 0;
+  transition: opacity .2s; }
+
+.intro-slider__pagination-image-popover-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  font-family: 'object-fit: cover; object-position: center;';
+  z-index: 1; }
 
 @-webkit-keyframes movingBar {
   from {

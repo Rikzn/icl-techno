@@ -26,8 +26,10 @@ export default function() {
     function setActiveSlide(index) {
         if (index === activeSlideIndex) return;
         slides[activeSlideIndex].classList.remove('active');
+        paginationItems[activeSlideIndex].classList.remove('active');
         activeSlideIndex = index;
         slides[activeSlideIndex].classList.add('active');
+        paginationItems[activeSlideIndex].classList.add('active');
         console.log(`Setting active index ${activeSlideIndex}`);
         activeMark.style.transform = `translateX(${activeSlideIndex * 100}%)`;
     }
