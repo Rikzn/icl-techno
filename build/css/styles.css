@@ -854,3 +854,250 @@ p.extra-small-text {
   .no-touch .footer-content__icl-websites-link:hover,
   .touch .footer-content__icl-websites-link:active {
     text-decoration: underline; }
+
+.realised-projects {
+  margin-bottom: 100px; }
+
+.realised-projects__top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 45px; }
+
+.realised-projects__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -12px; }
+
+.realised-projects__list-item {
+  padding: 12px;
+  width: 33.33%;
+  display: flex;
+  flex-direction: column; }
+  .realised-projects__list-item--large {
+    width: 66.66%; }
+
+.realised-projects__card {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  padding-bottom: 45px;
+  border: 1px solid #d0d0d0;
+  flex-grow: 1;
+  position: relative; }
+  .realised-projects__card:link, .realised-projects__card:visited {
+    color: black; }
+  .realised-projects__list-item--large .realised-projects__card:link, .realised-projects__list-item--large .realised-projects__card:visited {
+    color: white; }
+  .no-touch .realised-projects__card:hover .realised-projects__corner::before,
+  .touch .realised-projects__card:active .realised-projects__corner::before {
+    transform: scale(1); }
+  .no-touch .realised-projects__card:hover .realised-projects__corner > svg,
+  .touch .realised-projects__card:active .realised-projects__corner > svg {
+    opacity: 1;
+    transform: translateX(0); }
+  .no-touch .realised-projects__card:hover .realised-projects__company-logo,
+  .touch .realised-projects__card:active .realised-projects__company-logo {
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+    opacity: 1; }
+  .no-touch .realised-projects__card:hover .realised-projects__card-label,
+  .touch .realised-projects__card:active .realised-projects__card-label {
+    opacity: 1;
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0); }
+
+.realised-projects__corner {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  right: -1px;
+  bottom: -1px; }
+  .realised-projects__corner::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-left: 120px solid transparent;
+    border-bottom: 120px solid #FB0D1B;
+    transform-origin: right bottom;
+    transform: scale(0);
+    transition: transform .2s; }
+  .realised-projects__corner > svg {
+    fill: white;
+    width: 25px;
+    height: 14px;
+    position: absolute;
+    right: 24px;
+    bottom: 28px;
+    z-index: 30;
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity .2s, transform .2s; }
+
+.realised-projects__card-label {
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 12px;
+  line-height: 1.2;
+  padding: 7px 10px;
+  margin-right: 15px;
+  border: 1px solid #FB0D1B;
+  color: #FB0D1B;
+  text-transform: uppercase;
+  margin-right: 15px;
+  white-space: nowrap;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  opacity: .4;
+  transition: opacity .2s, -webkit-filter .2s;
+  transition: filter .2s, opacity .2s;
+  transition: filter .2s, opacity .2s, -webkit-filter .2s; }
+  .realised-projects__list-item--large .realised-projects__card-label {
+    opacity: 1;
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0); }
+
+.realised-projects__card-date {
+  color: #bababa;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 16px;
+  margin-top: 0.4em;
+  white-space: nowrap; }
+  .realised-projects__list-item--large .realised-projects__card-date {
+    color: white; }
+
+.realised-projects__card-top-row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 84px; }
+  .realised-projects__list-item--large .realised-projects__card-top-row {
+    margin-bottom: 104px; }
+
+.realised-projects__company-logo {
+  height: 60px;
+  width: auto;
+  max-width: none;
+  margin-left: auto;
+  display: block;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  transition: opacity .2s, -webkit-filter .2s;
+  transition: filter .2s, opacity .2s;
+  transition: filter .2s, opacity .2s, -webkit-filter .2s;
+  opacity: 0.5; }
+  .realised-projects__list-item--large .realised-projects__company-logo {
+    height: 40px;
+    opacity: 1;
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0); }
+
+.realised-projects__content {
+  margin-top: auto; }
+  .realised-projects__list-item--large .realised-projects__content {
+    padding-right: 60px; }
+
+.realised-projects__title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  display: block; }
+
+.realised-projects__paragraph {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  margin-top: 15px;
+  display: block; }
+
+.realised-projects__bg-image-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; }
+  .realised-projects__bg-image-container::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); }
+
+.realised-projects__bg-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  font-family: 'object-fit: cover; object-position: center;'; }
+
+.equipment {
+  margin-bottom: 100px; }
+
+.equipment__top-row {
+  display: flex;
+  align-self: flex-start; }
+
+.equipment__tabs-navigation {
+  display: flex;
+  margin-left: auto; }
+
+.equipment__tab-button {
+  font-size: 16px;
+  line-height: 22px;
+  width: 180px;
+  flex-shrink: 0; }
+  .equipment__tab-button:link, .equipment__tab-button:visited {
+    color: black; }
+  .no-touch .equipment__tab-button:hover .equipment__tab-button-text::before,
+  .touch .equipment__tab-button:active .equipment__tab-button-text::before {
+    transform: translateZ(0) scale(1); }
+  .equipment__tab-button.active {
+    pointer-events: none;
+    cursor: default;
+    font-weight: 700; }
+    .equipment__tab-button.active .equipment__tab-button-text::before {
+      transform: translateZ(0) scale(1); }
+
+.equipment__tab-button-text {
+  position: relative; }
+  .equipment__tab-button-text::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    height: 3px;
+    margin-top: 8px;
+    background-color: #FB0D1B;
+    transform: translateZ(0) scale(0);
+    transform-origin: left center;
+    transition: transform .2s; }
+
+.equipment__tabs-list {
+  margin-top: 100px;
+  position: relative; }
+
+.equipment__tab-item {
+  min-height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s, visibility 0.5s;
+  z-index: 1;
+  display: flex;
+  flex-direction: column; }
+  .equipment__tab-item.active {
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+    z-index: 2; }

@@ -5,6 +5,7 @@ import objectFitImages from 'object-fit-images';
 import detectIt from 'detect-it';
 import introSlider from './introSlider';
 import fixHeader from './fixHeader';
+import tabs from './tabs';
 
 document.addEventListener('DOMContentLoaded', function() {
     // Полифилл .contains для IE 11
@@ -30,4 +31,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Фиксируем хедер на скролл
 
     fixHeader();
+
+    // Табы
+
+    tabs();
+
+
 });

@@ -1,0 +1,221 @@
+.realised-projects {
+    margin-bottom: 100px;
+}
+
+.realised-projects__top-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+
+.realised-projects__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -12px;
+}
+
+.realised-projects__list-item {
+    padding: 12px;
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    &--large {
+        width: 66.66%;
+    }
+}
+
+.realised-projects__card {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    padding-bottom: 45px;
+    border: 1px solid #d0d0d0;
+    flex-grow: 1;
+    position: relative;
+    &:link,
+    &:visited {
+        color: black;
+    }
+
+
+    .realised-projects__list-item--large & {
+        &:link,
+        &:visited {
+            color: white;
+        }
+    }
+
+
+    .no-touch &:hover,
+    .touch &:active {
+        .realised-projects__corner {
+            &::before {
+                transform: scale(1);
+            }
+
+            > svg {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .realised-projects__company-logo {
+            filter: grayscale(0);
+            opacity: 1;
+        }
+
+
+        .realised-projects__card-label {
+            opacity: 1;
+            filter: grayscale(0);
+        }
+    }
+}
+
+
+
+.realised-projects__corner {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    right: -1px;
+    bottom: -1px;
+   
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-left: 120px solid transparent;
+        border-bottom: 120px solid $red;
+        transform-origin: right bottom;
+        transform: scale(0);
+        transition: transform .2s;
+    }
+    > svg {
+        fill: white;
+        width: 25px;
+        height: 14px;
+        position: absolute;
+        right: 24px;
+        bottom: 28px;
+        z-index: 30;
+        opacity: 0;
+        transform: translateX(-30px);
+        transition: opacity .2s, transform .2s;
+    }
+
+}
+
+.realised-projects__card-label {
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 12px;
+    line-height: 1.2;
+    padding: 7px 10px;
+    margin-right: 15px;
+    border: 1px solid $red;
+    color: $red;
+    text-transform: uppercase;
+    margin-right: 15px;
+    white-space: nowrap;
+    filter: grayscale(1);
+    opacity: .4;
+    transition: filter .2s, opacity .2s;
+
+    .realised-projects__list-item--large & {
+        opacity: 1;
+        filter: grayscale(0);
+    }
+}
+
+.realised-projects__card-date {
+    color: #bababa;
+    font-family: $proxima;
+    font-size: 16px;
+    margin-top: 0.4em;
+    white-space: nowrap;
+
+    .realised-projects__list-item--large & {
+        color: white;
+    }
+}
+
+.realised-projects__card-top-row {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 84px;
+
+    .realised-projects__list-item--large & {
+        margin-bottom: 104px;
+    }
+}
+
+.realised-projects__company-logo {
+    height: 60px;
+    width: auto;
+    max-width: none;
+    margin-left: auto;
+    display: block;
+    filter: grayscale(1);
+    transition: filter .2s, opacity .2s;
+    opacity: 0.5;
+
+    .realised-projects__list-item--large & {
+        height: 40px;
+        opacity: 1;
+        filter: grayscale(0);
+    }
+}
+
+.realised-projects__content {
+    margin-top: auto;
+    .realised-projects__list-item--large & {
+        padding-right: 60px;
+    }
+}
+
+.realised-projects__title {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    display: block;
+}
+
+.realised-projects__paragraph {
+    font-family: $proxima;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-top: 15px;
+    display: block;
+}
+
+
+.realised-projects__bg-image-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(black, .4);
+        
+    }
+}
+
+.realised-projects__bg-image {
+    width: 100%;
+    height: 100%;
+    
+    @include objectFitCover();
+}
