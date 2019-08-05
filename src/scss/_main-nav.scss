@@ -62,6 +62,8 @@
     }
 
     .main-nav__list-item.active & {
+        cursor: default;
+        pointer-events: none;
         &::before {
             transform: translateZ(0) scaleX(1);
         }

@@ -1,77 +1,132 @@
 {% set title = "Index Page" %} {% extends "layout.njk" %} {% block content %}
 <section class="intro-slider js-intro-slider">
-    <div class="intro-slider__content">
-        <ul class="intro-slider__slides-container js-intro-slider-slides">
-            <li class="intro-slider__slide active">
-                Слайд 1
+    <ul class="intro-slider__slides-container js-intro-slider-slides">
+        <li class="intro-slider__slide active">
+            <div class="intro-slider__slide-content">
+                <div class="intro-slider__slide-text-block">
+                    <h4 class="intro-slider__slide-heading">
+                        ICL − Проводник в мир высоких технологий
+                    </h4>
+                    <p class="intro-slider__slide-paragraph">
+                        Предоставляем комплексные решения в области информационных технологий и услуги по консалтингу, проектированию, внедрению.
+                    </p>
+                </div>
+            </div>
+            <div class="intro-slider__slide-bg-content intro-slider__slide-bg-content--type-1">
+                <div class="diagonal-gradient"></div>
+                <div class="image-overlay"></div>
+                <img src="img/top-slider/slider-bg-1.jpg" alt="Изображение в слайдере" class="halfscreen-image">
+                <div class="brick-near-edge"></div>
+            </div>
+        </li>
+        <li class="intro-slider__slide">
+            <div class="intro-slider__slide-content">
+                <div class="intro-slider__slide-text-block">
+                    <h4 class="intro-slider__slide-heading">
+                        Слайд 2
+                    </h4>
+                    <p class="intro-slider__slide-paragraph">
+                        Предоставляем комплексные решения в области информационных технологий и услуги по консалтингу, проектированию, внедрению.
+                    </p>
+                </div>
+            </div>
+            <div class="intro-slider__slide-bg-content"></div>
+        </li>
+        <li class="intro-slider__slide">
+            <div class="intro-slider__slide-content">
+                <div class="intro-slider__slide-text-block">
+                    <h4 class="intro-slider__slide-heading">
+                        Слайд 3
+                    </h4>
+                    <p class="intro-slider__slide-paragraph">
+                        Предоставляем комплексные решения в области информационных технологий и услуги по консалтингу, проектированию, внедрению.
+                    </p>
+                </div>
+            </div>
+            <div class="intro-slider__slide-bg-content"></div>
+        </li>
+        <li class="intro-slider__slide">
+            <div class="intro-slider__slide-content">
+                <div class="intro-slider__slide-text-block">
+                    <h4 class="intro-slider__slide-heading">
+                        Слайд 4
+                    </h4>
+                    <p class="intro-slider__slide-paragraph">
+                        Предоставляем комплексные решения в области информационных технологий и услуги по консалтингу, проектированию, внедрению.
+                    </p>
+                </div>
+            </div>
+            <div class="intro-slider__slide-bg-content"></div>
+        </li>
+        <li class="intro-slider__slide">
+            <div class="intro-slider__slide-content">
+                <div class="intro-slider__slide-text-block">
+                    <h4 class="intro-slider__slide-heading">
+                        Слайд 5
+                    </h4>
+                    <p class="intro-slider__slide-paragraph">
+                        Предоставляем комплексные решения в области информационных технологий и услуги по консалтингу, проектированию, внедрению.
+                    </p>
+                </div>
+            </div>
+            <div class="intro-slider__slide-bg-content">
+                
+            </div>
+        </li>
+    </ul>
+    <div class="intro-slider__pagination-container">
+        <ul class="intro-slider__pagination js-intro-slider-pagination">
+            <li class="intro-slider__pagination-item active">
+                <a href="#" class="intro-slider__pagination-btn">
+                    <span class="intro-slider__pagination-image-popover">
+                        <img src="img/top-slider/btn-bg.jpg" alt="Картинка превью на кнопке" class="intro-slider__pagination-image-popover-image" />
+                        <span class="intro-slider__pagination-image-popover-text">
+                            Завод вычислительной техники
+                        </span>
+                    </span>
+                </a>
             </li>
-            <li class="intro-slider__slide">
-                Слайд 2
+            <li class="intro-slider__pagination-item">
+                <a href="#" class="intro-slider__pagination-btn"
+                    ><span class="intro-slider__pagination-image-popover">
+                        <img src="img/top-slider/btn-bg.jpg" alt="Картинка превью на кнопке" class="intro-slider__pagination-image-popover-image" />
+                        <span class="intro-slider__pagination-image-popover-text">
+                            Завод вычислительной техники
+                        </span>
+                    </span></a
+                >
             </li>
-            <li class="intro-slider__slide">
-                Слайд 3
+            <li class="intro-slider__pagination-item">
+                <a href="#" class="intro-slider__pagination-btn"
+                    ><span class="intro-slider__pagination-image-popover">
+                        <img src="img/top-slider/btn-bg.jpg" alt="Картинка превью на кнопке" class="intro-slider__pagination-image-popover-image" />
+                        <span class="intro-slider__pagination-image-popover-text">
+                            Завод вычислительной техники
+                        </span>
+                    </span></a
+                >
             </li>
-            <li class="intro-slider__slide">
-                Слайд 4
+            <li class="intro-slider__pagination-item">
+                <a href="#" class="intro-slider__pagination-btn"
+                    ><span class="intro-slider__pagination-image-popover">
+                        <img src="img/top-slider/btn-bg.jpg" alt="Картинка превью на кнопке" class="intro-slider__pagination-image-popover-image" />
+                        <span class="intro-slider__pagination-image-popover-text">
+                            Завод вычислительной техники
+                        </span>
+                    </span></a
+                >
             </li>
-            <li class="intro-slider__slide">
-                Слайд 5
+            <li class="intro-slider__pagination-item">
+                <a href="#" class="intro-slider__pagination-btn"
+                    ><span class="intro-slider__pagination-image-popover">
+                        <img src="img/top-slider/btn-bg.jpg" alt="Картинка превью на кнопке" class="intro-slider__pagination-image-popover-image" />
+                        <span class="intro-slider__pagination-image-popover-text">
+                            Завод вычислительной техники
+                        </span>
+                    </span></a
+                >
             </li>
         </ul>
-        <div class="intro-slider__pagination-container">
-            <ul class="intro-slider__pagination js-intro-slider-pagination">
-                <li class="intro-slider__pagination-item active">
-                    <a href="#" class="intro-slider__pagination-btn">
-                        <span class="intro-slider__pagination-image-popover">
-                            <img src="img/top-slider/btn-bg.jpg" alt="Картинка превью на кнопке" class="intro-slider__pagination-image-popover-image" />
-                            <span class="intro-slider__pagination-image-popover-text">
-                                Завод вычислительной техники
-                            </span>
-                        </span>
-                    </a>
-                </li>
-                <li class="intro-slider__pagination-item">
-                    <a href="#" class="intro-slider__pagination-btn"
-                        ><span class="intro-slider__pagination-image-popover">
-                            <img src="img/top-slider/btn-bg.jpg" alt="Картинка превью на кнопке" class="intro-slider__pagination-image-popover-image" />
-                            <span class="intro-slider__pagination-image-popover-text">
-                                Завод вычислительной техники
-                            </span>
-                        </span></a
-                    >
-                </li>
-                <li class="intro-slider__pagination-item">
-                    <a href="#" class="intro-slider__pagination-btn"
-                        ><span class="intro-slider__pagination-image-popover">
-                            <img src="img/top-slider/btn-bg.jpg" alt="Картинка превью на кнопке" class="intro-slider__pagination-image-popover-image" />
-                            <span class="intro-slider__pagination-image-popover-text">
-                                Завод вычислительной техники
-                            </span>
-                        </span></a
-                    >
-                </li>
-                <li class="intro-slider__pagination-item">
-                    <a href="#" class="intro-slider__pagination-btn"
-                        ><span class="intro-slider__pagination-image-popover">
-                            <img src="img/top-slider/btn-bg.jpg" alt="Картинка превью на кнопке" class="intro-slider__pagination-image-popover-image" />
-                            <span class="intro-slider__pagination-image-popover-text">
-                                Завод вычислительной техники
-                            </span>
-                        </span></a
-                    >
-                </li>
-                <li class="intro-slider__pagination-item">
-                    <a href="#" class="intro-slider__pagination-btn"
-                        ><span class="intro-slider__pagination-image-popover">
-                            <img src="img/top-slider/btn-bg.jpg" alt="Картинка превью на кнопке" class="intro-slider__pagination-image-popover-image" />
-                            <span class="intro-slider__pagination-image-popover-text">
-                                Завод вычислительной техники
-                            </span>
-                        </span></a
-                    >
-                </li>
-            </ul>
-        </div>
     </div>
 </section>
 
