@@ -8,6 +8,7 @@
     justify-content: center;
     transform-origin: left center;
     transition: transform .2s;
+    flex-shrink: 0;
     .page-header.fixed & {
         transform: translateZ(0) scale(.85);
     }

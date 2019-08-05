@@ -10,6 +10,7 @@
     transition: 0.2s;
     clip-path: polygon(0px 10px, 10px 0px, 100% 0px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0% 100%);
     transition: clip-path 0.3s, background-color 0.3s;
+    white-space: nowrap;
     &:link,
     &:visited {
         color: white;
