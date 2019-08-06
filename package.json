@@ -27,7 +27,8 @@
     "object-fit-images": "^3.2.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "regenerator-runtime": "^0.13.2"
+    "regenerator-runtime": "^0.13.2",
+    "swiper": "^4.5.0"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",

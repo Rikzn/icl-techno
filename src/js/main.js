@@ -6,6 +6,7 @@ import detectIt from 'detect-it';
 import introSlider from './introSlider';
 import fixHeader from './fixHeader';
 import tabs from './tabs';
+import equipmentSlider from './equipmentSlider';
 
 document.addEventListener('DOMContentLoaded', function() {
     // Полифилл .contains для IE 11
@@ -35,6 +36,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Табы
 
     tabs();
+
+    // Слайдер оборудования
+
+    equipmentSlider();
 
 
 });
