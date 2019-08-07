@@ -1,0 +1,235 @@
+.header-search {
+    margin-left: auto;
+    margin-bottom: -6px;
+    margin-top: -6px;
+    display: flex;
+    flex-direction: column;
+    .search-open & {
+        .header-search__dropdown {
+            opacity: 1;
+            visibility: visible;
+            transition: .2s
+        }
+
+
+        .header-search__btn {
+            > svg {
+                fill: $red !important;
+            }
+        }
+
+
+        .header-search__dropdown-overlay {
+            opacity: 1;
+            visibility: visible;
+            transition: all .2s;
+        }
+    }
+}
+
+
+
+.header-search__btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    flex-grow: 1;
+    > svg {
+        fill: white;
+        transition: fill .2s;
+    }
+
+    .page-header.fixed &,
+    .page-header:hover & {
+        > svg {
+            fill: black;
+        }
+    }
+
+
+    
+}
+
+
+
+.header-search__dropdown-overlay {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(black, .5);
+    z-index: 100;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .2s, visibility 0s linear .2s;
+}
+
+.header-search__dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    color: black;
+    border-top: 1px solid #d0d0d0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s, visibility 0s linear 0.2s;
+    padding-bottom: 50px;
+    padding-top: 35px;
+    z-index: 900;
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        background-color: #fff;
+        z-index: 10;
+    }
+
+    &::after {
+        content: '';
+        bottom: 0;
+        width: 100%;
+        height: 10px;
+        left: 0;
+        z-index: 5;
+        position: absolute;
+        box-shadow: 0px 4px 40px rgba(black, 0.15);
+    }
+}
+
+
+
+.header-search__dropdown-content {
+    width: 100%;
+    max-width: $max-container-width + $desktop-content-padding * 2;
+    margin: 0 auto;
+    padding: 0 $desktop-content-padding;
+    position: relative;
+    z-index: 30;
+    @include breakpoint(mobile) {
+        padding: 0 $mobile-content-padding;
+    }
+}
+
+
+.header-search__wrapper {
+    max-width: 744px;
+    margin: 0 auto;
+    padding-top: 45px;
+    padding-bottom: 30px;
+}
+
+
+
+.header-search__form {
+    display: flex;
+    flex-direction: column;  
+}
+
+
+.header-search__form-row {
+    display: flex;
+    border: 1px solid #D0D0D0;
+}
+
+
+.header-search__input {
+    width: 50%;
+    flex-grow: 1;
+    font-family: $proxima;
+    font-size: 20px;
+    padding: 13px 25px;
+    border: none;
+    outline: none;
+    color: black;
+    @include placeholder {
+        font-family: $proxima;
+        color: #BABABA;
+        font-size: 20px;
+    }
+}
+
+
+.header-search__submit {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    margin-left: -20px;
+    outline: none;
+     svg {
+        fill: #BABABA;
+    }
+}
+
+.header-search__submit-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.header-search__results {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #D0D0D0;
+    border-top: none;
+    border-bottom: none;
+}
+
+
+.header-search__results-item {
+    &:last-child {
+        border-bottom: 1px solid #D0D0D0;
+    }
+}
+
+
+.header-search__results-link {
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 13px 25px;
+    font-family: $proxima;
+    font-size: 20px;
+    transition: background-color .2s;
+    &:link,
+    &:visited {
+        color: black;
+    }
+
+    .no-touch &:hover,
+    .touch &:active {
+        background: rgba(#D0D0D0, .4);
+    }
+}
+
+
+.header-search__result-category {
+    display: flex;
+    align-items: center;
+    color: $red;
+    .icon-arrow-right-no-circle {
+        fill: #D0D0D0;
+        margin-left: 10px;
+        width: 16px;
+        height: 10px;
+        flex-shrink: 0;
+    }
+}
+
+
+.header-search__result-text {
+    color: black;
+    margin-left: 10px;
+}

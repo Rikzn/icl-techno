@@ -1,0 +1,176 @@
+.about-company {
+    position: relative;
+    margin-bottom: 100px;
+    z-index: 1;
+    color: white;
+    padding-bottom: 85px;
+    padding-top: 70px;
+}
+
+.about-company__bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    left: calc((100vw - 100%) / 2 * -1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.abount-company__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -30px;
+}
+
+.about-company__column {
+    padding: 0 30px;
+    width: 33.33%;
+    &--large {
+        width: 66.66%;
+    }
+}
+
+.about-company__heading {
+    display: flex;
+    align-items: center;
+}
+
+.about-company__logo {
+    margin-left: 15px;
+}
+
+.about-company__supplementary-heading {
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+.about-company__paragraph {
+    font-family: $proxima;
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 1.4;
+}
+
+.about-company__details-link {
+    color: $red;
+    font-family: $proxima;
+    font-size: 16px;
+    line-height: 22px;
+    display: inline-block;
+    margin-top: 20px;
+    &:link,
+    &:visited {
+        color: $red;
+    }
+
+    .no-touch &:hover,
+    .touch &:active {
+        text-decoration: underline;
+    }
+
+    &::after {
+        content: ' >';
+        color: $red;
+        font-size: 16px;
+        line-height: 22px;
+        font-family: $proxima;
+    }
+}
+
+.about-company__advantages-list {
+    margin: -18px 0;
+}
+
+.about-company__advantages-list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+
+.about-company__advantage-place {
+    width: 108px;
+    height: 108px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+    flex-shrink: 0;
+    font-size: 80px;
+    line-height: 1;
+    font-weight: 100;
+    position: relative;
+    z-index: 1;
+    &::before {
+        content: '';
+        background-image: url('../img/wings.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+
+.about-company__advantage-place-remark {
+    position: absolute;
+    right: 100%;
+    font-weight: $proxima;
+    font-size: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 400;
+    margin-right: -25px;
+}
+
+
+.about-company__advantage-text {
+    max-width: 240px;
+    font-family: $proxima;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    position: relative;
+}
+
+
+
+.about-company__advantage-text-remark {
+    display: block;
+    font-style: italic;
+    font-weight: 300;
+    // position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 2px;
+}
+
+
+
+.about-company__advantage-numbers {
+    font-size: 80px;
+    line-height: 1;
+    font-weight: 100;
+    margin-left: 60px;
+}
+
+
+.about-company__advantage-numbers-remark {
+    font-family: $proxima;
+    font-size: 20px;
+    position: relative;
+    margin-bottom: 20px;
+    vertical-align: top;
+}
+
+
+

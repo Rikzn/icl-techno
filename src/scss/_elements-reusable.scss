@@ -36,7 +36,9 @@
             background-color: #fff;
         }
 
-        .page-header.fixed & {
+        .page-header.fixed &,
+        .page-header.search-open &,
+        .page-header:hover & {
             background-color: $red;
             color: white;
             &:link,

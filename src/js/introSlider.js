@@ -7,6 +7,8 @@ export default function() {
 
     const slides = Array.from(introSlider.querySelector('.js-intro-slider-slides').children);
     const paginationItems = Array.from(introSlider.querySelector('.js-intro-slider-pagination').children);
+    const prevBtn = introSlider.querySelector('.js-intro-slider-prev');
+    const nextBtn = introSlider.querySelector('.js-intro-slider-next');
     let activeSlideIndex = 0;
     let activeMark;
     let autoplayEnabled = true;
@@ -33,9 +35,6 @@ export default function() {
         console.log(`Setting active index ${activeSlideIndex}`);
         activeMark.style.transform = `translateX(${activeSlideIndex * 100}%)`;
     }
-
-
-    // Функция очистки по окончании анимации
 
     // Функция автоплея
 
@@ -88,5 +87,44 @@ export default function() {
             }
             setActiveSlide(index);
         });
+    });
+
+    // Обработчики событий для стрелок
+
+    prevBtn.addEventListener('click', function(event) {
+        event.preventDefault();
+        let nextActiveIndex;
+        if (activeSlideIndex - 1 >= 0) {
+            nextActiveIndex = activeSlideIndex - 1;
+        } else {
+            nextActiveIndex = slides.length - 1;
+        }
+        autoplay = false;
+        if (timerID) {
+            clearTimeout(timerID);
+            if (nextPaginationItemGlobal) {
+                nextPaginationItemGlobal.classList.remove('incoming');
+                nextPaginationItemGlobal.style.animationDuration = '';
+            }
+        }
+        setActiveSlide(nextActiveIndex);
+    });
+    nextBtn.addEventListener('click', function(event) {
+        event.preventDefault();
+        let nextActiveIndex;
+        if (activeSlideIndex + 1 < slides.length) {
+            nextActiveIndex = activeSlideIndex + 1;
+        } else {
+            nextActiveIndex = 0;
+        }
+        autoplay = false;
+        if (timerID) {
+            clearTimeout(timerID);
+            if (nextPaginationItemGlobal) {
+                nextPaginationItemGlobal.classList.remove('incoming');
+                nextPaginationItemGlobal.style.animationDuration = '';
+            }
+        }
+        setActiveSlide(nextActiveIndex);
     });
 }

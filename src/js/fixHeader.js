@@ -9,7 +9,7 @@ export default function() {
         
         const scrollTop = window.pageYOffset;
 
-        if (scrollTop >= headerStart) {
+        if (scrollTop > headerStart) {
             header.classList.add('fixed');
         } else {
             header.classList.remove('fixed');

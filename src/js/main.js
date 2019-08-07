@@ -7,6 +7,7 @@ import introSlider from './introSlider';
 import fixHeader from './fixHeader';
 import tabs from './tabs';
 import equipmentSlider from './equipmentSlider';
+import search from './search';
 
 document.addEventListener('DOMContentLoaded', function() {
     // Полифилл .contains для IE 11
@@ -23,6 +24,22 @@ document.addEventListener('DOMContentLoaded', function() {
     if (detectIt.hasTouch) {
         document.body.classList.remove('no-touch');
         document.body.classList.add('touch');
+
+        function appendStyle(styles) {
+            var css = document.createElement('style');
+            css.type = 'text/css';
+
+            if (css.styleSheet) css.styleSheet.cssText = styles;
+            else css.appendChild(document.createTextNode(styles));
+
+            document.getElementsByTagName('head')[0].appendChild(css);
+        }
+
+        var styles = '* {cursor: pointer; }';
+
+        window.onload = function() {
+            appendStyle(styles);
+        };
     }
 
     // Слайдер наверху главной страницы
@@ -40,6 +57,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Слайдер оборудования
 
     equipmentSlider();
+
+    // Поиск
+
+    search();
 
 
 });
