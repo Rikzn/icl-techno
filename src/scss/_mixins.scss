@@ -1,4 +1,6 @@
-
+@mixin noHighlight() {
+  -webkit-tap-highlight-color: transparent;
+}
 
 @mixin visuallyHidden() {
   border: 0;

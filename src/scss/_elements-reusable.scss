@@ -53,4 +53,11 @@
             }
         }
     }
+
+
+    &--header-btn {
+        @include breakpoint(desktop) {
+            display: none;
+        }
+    }
 }

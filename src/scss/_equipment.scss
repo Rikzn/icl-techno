@@ -111,6 +111,12 @@
         color: black;
     }
 
+
+    .swiper-slide-active & {
+        filter: grayscale(0);
+        opacity: 1;
+    }
+
     .no-touch &:hover,
     .touch &:active {
         filter: grayscale(0);

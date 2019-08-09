@@ -146,7 +146,7 @@
 .intro-slider__pagination-btn {
     display: block;
     background-color: #cdcdcd;
-    height: 6px;
+    height: 8px;
     position: relative;
     animation-duration: inherit;
     .intro-slider__pagination-item.active & {
@@ -247,6 +247,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @include noHighlight();
     &:last-child {
         margin-right: 0;
     }
@@ -292,6 +293,13 @@
         background-image: linear-gradient(to top left, #e70c19, #8d070f);
         transform: skew(-40deg);
         left: -300px;
+        @include breakpoint(desktop) {
+            width: 85%;
+        }
+
+        @include breakpoint(laptop) {
+            width: 95%;
+        }
     }
 
     .image-overlay {
@@ -312,6 +320,8 @@
         top: 0;
         z-index: 15;
         @include objectFitCover();
+        
+       
     }
 
     .brick-near-edge {
@@ -327,6 +337,14 @@
         transform: translateZ(0) rotate(-50deg) skewX(-50deg) translateX(800px);
         outline: 1px solid transparent;
         transition: 1.5s transform cubic-bezier(0.215, 0.61, 0.355, 1);
+        @include breakpoint(desktop) {
+            right: 15%;
+        }
+
+
+        @include breakpoint(laptop) {
+            right: 5%;
+        }
     }
 
     .brick-1 {
@@ -342,6 +360,13 @@
         left: 70%;
         margin-left: -60px;
         transition: 1.5s transform cubic-bezier(0.215, 0.61, 0.355, 1);
+        @include breakpoint(desktop) {
+            left: 85%;
+            margin-left: -100px;
+        }
+        @include breakpoint(laptop) {
+            left: 95%;
+        }
     }
 
     .brick-2 {
@@ -357,6 +382,13 @@
         left: 70%;
         margin-left: -120px;
         transition: 1.5s transform cubic-bezier(0.215, 0.61, 0.355, 1);
+        @include breakpoint(desktop) {
+            left: 85%;
+            margin-left: -170px;
+        }
+        @include breakpoint(laptop) {
+            left: 95%;
+        }
     }
 
     .brick-3 {
@@ -372,6 +404,13 @@
         left: 70%;
         margin-left: -250px;
         transition: 1.5s transform cubic-bezier(0.215, 0.61, 0.355, 1);
+        @include breakpoint(desktop) {
+            left: 85%;
+            margin-left: -300px;
+        }
+        @include breakpoint(laptop) {
+            left: 95%;
+        }
     }
 
     .brick-4 {
@@ -388,6 +427,9 @@
         margin-left: -195px;
         margin-bottom: 100px;
         transition: 1.5s transform cubic-bezier(0.215, 0.61, 0.355, 1);
+        @include breakpoint(desktop) {
+            display: none;
+        }
     }
 
     .brick-5 {
@@ -404,6 +446,13 @@
         margin-left: 270px;
         margin-top: 150px;
         transition: 0.8s transform cubic-bezier(0.215, 0.61, 0.355, 1);
+        @include breakpoint(desktop) {
+            left: 85%;
+            margin-left: 208px;
+        }
+        @include breakpoint(laptop) {
+            left: 95%;
+        }
     }
 
     .intro-slider__slide.active & {
