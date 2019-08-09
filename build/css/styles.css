@@ -1901,10 +1901,16 @@ p.extra-small-text {
 .equipment__top-row {
   display: flex;
   align-self: flex-start; }
+  @media only screen and (max-width: 1240px) {
+    .equipment__top-row {
+      flex-direction: column; } }
 
 .equipment__tabs-navigation {
   display: flex;
   margin-left: auto; }
+  @media only screen and (max-width: 1240px) {
+    .equipment__tabs-navigation {
+      margin-left: 0; } }
 
 .equipment__tab-button {
   font-size: 16px;
@@ -2491,3 +2497,47 @@ p.extra-small-text {
   position: relative;
   margin-bottom: 20px;
   vertical-align: top; }
+
+.catalog-links {
+  margin-bottom: 100px; }
+
+.catalog-links__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -14px; }
+
+.catalog-links__column {
+  padding: 14px;
+  width: 50%; }
+
+.catalog-links__link {
+  color: black;
+  padding-top: 20px;
+  border-top: 4px solid #D8D8D8;
+  display: flex;
+  flex-direction: column;
+  transition: border-color .3s; }
+  .catalog-links__link:link, .catalog-links__link:visited {
+    color: black; }
+  .catalog-links__link > svg {
+    fill: #D8D8D8;
+    margin-left: auto;
+    margin-right: 35px;
+    transition: fill .3s; }
+  .no-touch .catalog-links__link:hover,
+  .touch .catalog-links__link:active {
+    border-color: #FB0D1B; }
+    .no-touch .catalog-links__link:hover > svg,
+    .touch .catalog-links__link:active > svg {
+      fill: #FB0D1B; }
+
+.catalog-links__type {
+  display: block; }
+
+.catalog-links__text {
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700;
+  display: block;
+  width: 70%;
+  margin-top: 18px; }

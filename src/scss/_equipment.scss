@@ -5,11 +5,17 @@
 .equipment__top-row {
     display: flex;
     align-self: flex-start;
+    @include breakpoint(laptop) {
+        flex-direction: column;
+    }
 }
 
 .equipment__tabs-navigation {
     display: flex;
     margin-left: auto;
+    @include breakpoint(laptop) {
+        margin-left: 0;
+    }
 }
 
 .equipment__tab-button {

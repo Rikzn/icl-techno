@@ -1,0 +1,59 @@
+.catalog-links {
+    margin-bottom: 100px;
+}
+
+
+.catalog-links__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -14px;
+}
+
+
+.catalog-links__column {
+    padding: 14px;
+    width: 50%;
+}
+
+
+.catalog-links__link {
+    color: black;
+    padding-top: 20px;
+    border-top: 4px solid #D8D8D8;
+    display: flex;
+    flex-direction: column;
+    transition: border-color .3s;
+    &:link,
+    &:visited {
+        color: black;
+    }
+    > svg {
+        fill: #D8D8D8;
+        margin-left: auto;
+        margin-right: 35px;
+        transition: fill .3s;
+    }
+
+    .no-touch &:hover,
+    .touch &:active {
+        border-color: $red;
+        > svg {
+            fill: $red;
+        }
+    }
+}
+
+
+.catalog-links__type {
+    display: block;
+}
+
+
+.catalog-links__text {
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: 700;
+    display: block;
+    width: 70%;
+    margin-top: 18px;
+}
