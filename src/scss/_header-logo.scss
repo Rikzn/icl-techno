@@ -1,7 +1,6 @@
 .header-logo {
     margin-right: 40px;
     height: 62px;
-    height: auto;
     align-self: center;
     display: flex;
     align-items: center;
@@ -9,6 +8,15 @@
     transform-origin: left center;
     transition: transform .2s;
     flex-shrink: 0;
+    @include breakpoint(tablet) {
+        margin-right: auto;
+    }
+    img {
+        display: block;
+        height: 100%;
+        height: auto;
+        max-width: none;
+    }
     svg {
         height: 100%;
         width: auto;

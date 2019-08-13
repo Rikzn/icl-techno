@@ -1,5 +1,13 @@
 .realised-projects {
     margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    @include breakpoint(tablet) {
+        margin-bottom: 80px;
+    }
+    @include breakpoint(mobile) {
+        margin-bottom: 50px;
+    }
 }
 
 .realised-projects__top-row {
@@ -7,12 +15,48 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 45px;
+    @include breakpoint(mobile) {
+        flex-direction: column;
+        align-items: flex-start;
+        .section-header {
+            order: 2;
+        }
+
+        a.section-header {
+            order: 1;
+            margin-bottom: 10px;
+        }
+
+        @supports (display: contents) {
+            display: contents;
+            .section-header {
+                order: 0;
+                margin-bottom: 20px;
+            }
+    
+            a.section-header {
+                order: 1;
+                margin-bottom: 0;
+                margin-top: 20px;
+                text-align: right;
+            }
+        }
+    }
+    @include breakpoint(small-mobile) {
+        margin-bottom: 25px;
+    }
+
+
+    
 }
 
 .realised-projects__list {
     display: flex;
     flex-wrap: wrap;
     margin: -12px;
+    @include breakpoint(laptop) {
+        margin: -10px;
+    }
 }
 
 .realised-projects__list-item {
@@ -20,8 +64,18 @@
     width: 33.33%;
     display: flex;
     flex-direction: column;
+    @include breakpoint(laptop) {
+        width: 50%;
+        padding: 10px;
+    }
+    @include breakpoint(small-tablet) {
+        width: 100%;
+    }
     &--large {
         width: 66.66%;
+        @include breakpoint(laptop) {
+            width: 100%;
+        }
     }
 }
 
@@ -33,6 +87,10 @@
     border: 1px solid #d0d0d0;
     flex-grow: 1;
     position: relative;
+    @include breakpoint(mobile) {
+        padding: 25px;
+        padding-bottom: 30px;
+    }
     &:link,
     &:visited {
         color: black;
@@ -40,6 +98,7 @@
 
 
     .realised-projects__list-item--large & {
+        border: none;
         &:link,
         &:visited {
             color: white;
@@ -109,6 +168,17 @@
     }
 }
 
+
+
+.realised-projects__card-label-group {
+    display: flex;
+    align-items: center;
+    @include breakpoint(small-tablet) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
 .realised-projects__card-label {
     font-weight: 700;
     letter-spacing: 2px;
@@ -124,7 +194,10 @@
     filter: grayscale(1);
     opacity: .4;
     transition: filter .2s, opacity .2s;
-
+    @include breakpoint(small-tablet) {
+        margin-right: 0;
+        font-size: 10px;
+    }
     .realised-projects__list-item--large & {
         opacity: 1;
         filter: grayscale(0);
@@ -135,9 +208,12 @@
     color: #bababa;
     font-family: $proxima;
     font-size: 16px;
-    margin-top: 0.4em;
+    
     white-space: nowrap;
-
+    @include breakpoint(small-tablet) {
+        margin-top: 8px;
+        font-size: 14px;
+    }
     .realised-projects__list-item--large & {
         color: white;
     }
@@ -147,9 +223,17 @@
     display: flex;
     align-items: flex-start;
     margin-bottom: 84px;
-
+    @include breakpoint(mobile) {
+        margin-bottom: 30px;
+    }
     .realised-projects__list-item--large & {
         margin-bottom: 104px;
+        @include breakpoint(laptop) {
+            margin-bottom: 140px;
+        }
+        @include breakpoint(mobile) {
+            margin-bottom: 120px;
+        }
     }
 }
 
@@ -162,11 +246,19 @@
     filter: grayscale(1);
     transition: filter .2s, opacity .2s;
     opacity: 0.5;
-
+    @include breakpoint(laptop) {
+        height: 50px;
+    }
+    @include breakpoint(mobile) {
+        height: 40px;
+    }
     .realised-projects__list-item--large & {
         height: 40px;
         opacity: 1;
         filter: grayscale(0);
+        @include breakpoint(mobile) {
+            height: 25px;
+        }
     }
 }
 
@@ -174,6 +266,13 @@
     margin-top: auto;
     .realised-projects__list-item--large & {
         padding-right: 60px;
+        @include breakpoint(laptop) {
+            padding-right: 0;
+            width: 70%;
+        }
+        @include breakpoint(small-tablet) {
+            width: 100%;
+        }
     }
 }
 
@@ -182,12 +281,16 @@
     line-height: 28px;
     font-weight: 700;
     display: block;
+    @include breakpoint(small-tablet) {
+        font-size: 20px;
+        line-height: 1.4;
+    }
 }
 
 .realised-projects__paragraph {
     font-family: $proxima;
     font-size: 16px;
-    line-height: 1.2;
+    line-height: 1.4;
     margin-top: 15px;
     display: block;
 }
@@ -197,8 +300,8 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
+    bottom: 0;
+    right: 0;
     z-index: -1;
     &::after {
         content: '';

@@ -48,7 +48,9 @@ p {
     color: #BABABA;
     text-transform: uppercase;
     transition: color .2s;
-   
+    @include breakpoint(small-tablet) {
+        font-size: 14px;
+    }
 }
 
 a.section-header {

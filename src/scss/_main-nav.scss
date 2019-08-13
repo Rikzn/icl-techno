@@ -1,9 +1,7 @@
 .main-nav {
-    margin-right: auto;
+    flex-grow: 1;
     display: flex;
-    // align-items: center;
     flex-direction: column;
-    
 }
 
 .main-nav__list {
@@ -16,8 +14,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: -6px;
-    margin-top: -6px;
+    margin-bottom: -1 * $page-header-bottom-padding;
+    margin-top: -1 * $page-header-bottom-padding;
     flex-direction: column;
     &:last-child {
         margin-right: 0;

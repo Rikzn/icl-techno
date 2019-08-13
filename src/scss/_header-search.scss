@@ -1,9 +1,12 @@
 .header-search {
     margin-left: auto;
-    margin-bottom: -6px;
-    margin-top: -6px;
+    margin-bottom: -1 * $page-header-bottom-padding;
+    margin-top: -1 * $page-header-bottom-padding;
     display: flex;
     flex-direction: column;
+    @include breakpoint(tablet) {
+        display: none;
+    }
     .search-open & {
         .header-search__dropdown {
             opacity: 1;

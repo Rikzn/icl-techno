@@ -11,19 +11,27 @@ $proxima: 'Proxima Nova', sans-serif;
 // Widths
 
 $max-container-width: 1380px;
+
+// Paddings 
+
+
 $desktop-content-padding: 40px;
 $mobile-content-padding: 20px;
+$small-mobile-content-padding: 15px;
+
+$page-header-top-padding: 20px;
+$page-header-bottom-padding: 16px;
 
 // Breakpoints
 
 $large-desktop-width: 1600px;
 $desktop-width: 1400px;
 $laptop-width: 1240px;
-$tablet-width: 1024px;
+$tablet-width: 1080px;
 $small-tablet-width: 968px;
 $mobile-width: 768px;
 $small-mobile-width: 576px;
-$supersmall-mobile-width: 360px;
+$supersmall-mobile-width: 370px;
 
 // Retina
 

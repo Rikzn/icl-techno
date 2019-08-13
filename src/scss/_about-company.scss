@@ -5,6 +5,17 @@
     color: white;
     padding-bottom: 85px;
     padding-top: 70px;
+
+    @include breakpoint(tablet) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    @include breakpoint(tablet) {
+        margin-bottom: 80px;
+    }
+    @include breakpoint(small-tablet) {
+        margin-bottom: 50px;
+    }
 }
 
 .about-company__bg {
@@ -24,6 +35,10 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 -30px;
+    @include breakpoint(laptop) {
+        flex-direction: column;
+        margin: 0;
+    }
 }
 
 .about-company__column {
@@ -31,6 +46,93 @@
     width: 33.33%;
     &--large {
         width: 66.66%;
+
+        @include breakpoint(laptop) {
+            width: 100%;
+            padding: 0;
+            @supports (display: contents) {
+                margin-top: 40px;
+            }
+        }
+    }
+
+    @include breakpoint(laptop) {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 80px;
+
+        &:first-child {
+            @supports (display: contents) {
+                display: contents;
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    @include breakpoint(tablet) {
+        margin-bottom: 40px;
+    }
+}
+
+.about-company__advantages-slider {
+
+
+    .swiper-pagination {
+        position: static;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 35px;
+        margin-top: 20px;
+        display: none;
+        @include breakpoint(mobile) {
+            display: flex;
+        }
+        .swiper-pagination-bullet {
+            background-color: transparent;
+            width: 10px;
+            height: 10px;
+            border: 1px solid #969799;
+            transition: background-color .2s, border-color .2s;
+            outline: none;
+            -webkit-tap-highlight-color: transparent;
+            .no-touch &:hover,
+            .touch &:active {
+                background-color: $red-hover;
+                border-color: $red-hover;
+            }
+        }
+        .swiper-pagination-bullet-active {
+            background-color: $red;
+            border-color: $red;
+        }
+    }
+    
+    .swiper-slide {
+        height: auto;
+        padding: 0 $desktop-content-padding;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include breakpoint(mobile) {
+            padding: 0 $mobile-content-padding;
+        }
+        @include breakpoint(small-mobile) {
+            padding: 0 $small-mobile-content-padding;
+            align-items: stretch;
+        }
+    }
+
+   
+    @include breakpoint(mobile) {
+        margin-left: -1 * $mobile-content-padding;
+        margin-right: -1 * $mobile-content-padding;
+    }
+    @include breakpoint(small-mobile) {
+        margin-left: -1 * $small-mobile-content-padding;
+        margin-right: -1 * $small-mobile-content-padding;
     }
 }
 
@@ -41,13 +143,21 @@
 
 .about-company__logo {
     margin-left: 15px;
+    @include breakpoint(small-tablet) {
+        width: 56px;
+    }
 }
 
 .about-company__supplementary-heading {
     font-size: 32px;
-    line-height: 44px;
+    line-height: 1.375;
     font-weight: 700;
     margin-top: 40px;
+    @include breakpoint(small-tablet) {
+        font-size: 24px;
+        line-height: 28px;
+        margin-top: 30px;
+    }
 }
 
 .about-company__paragraph {
@@ -55,6 +165,13 @@
     font-size: 20px;
     margin-top: 20px;
     line-height: 1.4;
+    @include breakpoint(tablet) {
+        font-size: 18px;
+    }
+    @include breakpoint(small-tablet) {
+        font-size: 16px;
+        margin-top: 15px;
+    }
 }
 
 .about-company__details-link {
@@ -64,6 +181,16 @@
     line-height: 22px;
     display: inline-block;
     margin-top: 20px;
+    @include breakpoint(laptop) {
+        @supports (display: contents) {
+            order: 20;
+        }
+    }
+    @include breakpoint(mobile) {
+        @supports (display: contents) {
+            margin-top: 0;
+        }
+    }
     &:link,
     &:visited {
         color: $red;
@@ -83,16 +210,27 @@
     }
 }
 
-.about-company__advantages-list {
-    margin: -18px 0;
+.about-company__advantages-slider-wrapper {
+    display: flex;
+}
+
+.about-company__advantages-column {
+    width: 50%;
 }
 
 .about-company__advantages-list-item {
     display: flex;
     align-items: center;
     margin-bottom: 28px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    // .about-company__advantages-list--numbers {
+    //     @include breakpoint(supersmall-mobile) {
+    //         margin-bottom: 24px;
+    //     }
+    // }
 }
-
 
 .about-company__advantage-place {
     width: 108px;
@@ -107,6 +245,19 @@
     font-weight: 100;
     position: relative;
     z-index: 1;
+    margin-left: 10px;
+    @include breakpoint(tablet) {
+        font-size: 60px;
+        width: 90px;
+        height: 90px;
+    }
+
+    @include breakpoint(supersmall-mobile) {
+        width: 80px;
+        height: 80px;
+        font-size: 50px;
+        margin-right: 20px;
+    }
     &::before {
         content: '';
         background-image: url('../img/wings.png');
@@ -120,7 +271,6 @@
     }
 }
 
-
 .about-company__advantage-place-remark {
     position: absolute;
     right: 100%;
@@ -130,8 +280,11 @@
     transform: translateY(-50%);
     font-weight: 400;
     margin-right: -25px;
+    @include breakpoint(tablet) {
+        font-size: 16px;
+        margin-right: -20px;
+    }
 }
-
 
 .about-company__advantage-text {
     max-width: 240px;
@@ -140,29 +293,48 @@
     line-height: 1.5;
     font-weight: 400;
     position: relative;
+    // flex-shrink: 0;
+    @include breakpoint(small-mobile) {
+        
+        // max-width: none;
+        // flex-grow: 1;
+        font-size: 14px;
+    }
 }
-
-
 
 .about-company__advantage-text-remark {
     display: block;
     font-style: italic;
     font-weight: 300;
-    // position: absolute;
     top: 100%;
     left: 0;
     margin-top: 2px;
+    @include breakpoint(small-tablet) {
+        font-size: 14px;
+        margin-top: 4px;
+    }
 }
-
-
 
 .about-company__advantage-numbers {
     font-size: 80px;
     line-height: 1;
     font-weight: 100;
-    margin-left: 60px;
-}
+    white-space: nowrap;
+    padding: 0.17em 0;
+    @include breakpoint(tablet) {
+        font-size: 60px;
+        padding: 0.23em 0;
+    }
 
+    @include breakpoint(small-mobile) {
+        font-size: 50px;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        padding-top: 7px;
+    }
+   
+}
 
 .about-company__advantage-numbers-remark {
     font-family: $proxima;
@@ -170,7 +342,9 @@
     position: relative;
     margin-bottom: 20px;
     vertical-align: top;
+    @include breakpoint(small-mobile) {
+        margin: 0;
+        margin-top: 4px;
+        font-size: 22px;
+    }
 }
-
-
-

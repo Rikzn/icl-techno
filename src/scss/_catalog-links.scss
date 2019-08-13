@@ -1,5 +1,11 @@
 .catalog-links {
     margin-bottom: 100px;
+    @include breakpoint(tablet) {
+        margin-bottom: 80px;
+    }
+    @include breakpoint(small-tablet) {
+        margin-bottom: 50px;
+    }
 }
 
 
@@ -7,12 +13,20 @@
     display: flex;
     flex-wrap: wrap;
     margin: -14px;
+    @include breakpoint(mobile) {
+        flex-direction: column;
+    }
 }
 
 
 .catalog-links__column {
     padding: 14px;
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    @include breakpoint(mobile) {
+        width: 100%;
+    }
 }
 
 
@@ -23,6 +37,10 @@
     display: flex;
     flex-direction: column;
     transition: border-color .3s;
+    flex-grow: 1;
+    @include breakpoint(mobile) {
+        padding-right: 70px;
+    }
     &:link,
     &:visited {
         color: black;
@@ -32,6 +50,11 @@
         margin-left: auto;
         margin-right: 35px;
         transition: fill .3s;
+        margin-top: auto;
+        @include breakpoint(mobile) {
+            margin-right: -70px;
+            margin-top: -50px;
+        }
     }
 
     .no-touch &:hover,
@@ -51,9 +74,17 @@
 
 .catalog-links__text {
     font-size: 32px;
-    line-height: 44px;
+    line-height: 1.375;
     font-weight: 700;
     display: block;
     width: 70%;
     margin-top: 18px;
+    @include breakpoint(laptop) {
+        font-size: 28px;
+    }
+    @include breakpoint(small-tablet) {
+        font-size: 20px;
+        margin-top: 10px;
+        width: auto;
+    }
 }

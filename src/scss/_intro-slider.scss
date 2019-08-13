@@ -3,6 +3,15 @@
     position: relative;
     z-index: 1;
     margin-bottom: 110px;
+    @include breakpoint(tablet) {
+        height: 600px;
+        margin-bottom: 90px;
+    }
+    @include breakpoint(small-tablet) {
+        margin-bottom: 60px;
+        height: 500px;
+    }
+  
 }
 
 .intro-slider__slides-container {
@@ -79,6 +88,9 @@
     transform: translateZ(0) translateX(-70px) translateY(-70px);
     transition: transform 1s, opacity 1s;
     opacity: 0;
+    @include breakpoint(mobile) {
+        width: 100%;
+    }
     .intro-slider__slide.active & {
         opacity: 1;
         transform: translateZ(0) translateX(0) translateY(0);
@@ -90,6 +102,16 @@
     font-size: 40px;
     line-height: 53px;
     margin-bottom: 30px;
+    @include breakpoint(tablet) {
+        font-size: 35px;
+        line-height: 45px;
+        margin-bottom: 20px;
+    }
+    @include breakpoint(small-tablet) {
+        font-size: 28px;
+        line-height: 38px;
+        margin-bottom: 15px;
+    }
 }
 
 .intro-slider__slide-paragraph {
@@ -97,6 +119,14 @@
     line-height: 1.4;
     font-family: $proxima;
     font-weight: 400;
+    @include breakpoint(tablet) {
+        font-size: 18px;
+        
+    }
+    @include breakpoint(small-tablet) {
+        font-size: 16px;
+        
+    }
 }
 
 .intro-slider__pagination-container {
@@ -113,7 +143,7 @@
 }
 
 .intro-slider__pagination-item {
-    width: 200px;
+    width: 50px;
     flex-grow: 1;
     flex-shrink: 0;
     padding-left: 2px;
@@ -133,7 +163,7 @@
     z-index: 50;
     display: flex;
     flex-direction: column;
-    min-width: 200px;
+    min-width: 50px;
     will-change: transform;
     &::before {
         content: '';
@@ -149,6 +179,9 @@
     height: 8px;
     position: relative;
     animation-duration: inherit;
+    @include breakpoint(small-tablet) {
+        height: 6px;
+    }
     .intro-slider__pagination-item.active & {
         cursor: default;
         pointer-events: none;
@@ -203,6 +236,9 @@
     transition: transform 0.2s;
     transform-origin: center bottom;
     transform: translateZ(0) scaleY(0);
+    @include breakpoint(laptop) {
+        display: none;
+    }
     &::before {
         content: '';
         position: absolute;
@@ -239,6 +275,9 @@
     bottom: 70px;
     right: 0;
     z-index: 10;
+    @include breakpoint(small-tablet) {
+        bottom: 25px;
+    }
 }
 
 .intro-slider__arrow {
@@ -257,6 +296,10 @@
         width: 45px;
         height: 45px;
         transition: fill 0.2s;
+        @include breakpoint(small-tablet) {
+            width: 40px;
+            height: 40px;
+        }
     }
 
     &:link,
@@ -345,6 +388,12 @@
         @include breakpoint(laptop) {
             right: 5%;
         }
+        @include breakpoint(small-tablet) {
+            // width: 200px;
+            height: 60px;
+            width: 160px;
+            margin-right: 285px;
+        }
     }
 
     .brick-1 {
@@ -367,6 +416,10 @@
         @include breakpoint(laptop) {
             left: 95%;
         }
+        @include breakpoint(tablet) {
+            margin-left: -150px;
+        }
+       
     }
 
     .brick-2 {
@@ -411,6 +464,9 @@
         @include breakpoint(laptop) {
             left: 95%;
         }
+        @include breakpoint(tablet) {
+            margin-left: -250px;
+        }
     }
 
     .brick-4 {
@@ -430,6 +486,7 @@
         @include breakpoint(desktop) {
             display: none;
         }
+        
     }
 
     .brick-5 {

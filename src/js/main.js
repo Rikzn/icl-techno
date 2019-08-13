@@ -8,6 +8,8 @@ import fixHeader from './fixHeader';
 import tabs from './tabs';
 import equipmentSlider from './equipmentSlider';
 import search from './search';
+import homeNewsSlider from './homeNewsSlider';
+import aboutCompanySlider from './aboutCompanySlider';
 
 document.addEventListener('DOMContentLoaded', function() {
     // Полифилл .contains для IE 11
@@ -61,6 +63,15 @@ document.addEventListener('DOMContentLoaded', function() {
     // Поиск
 
     search();
+
+
+    // Слайдер новостей на главной, который появляется только в мобильной версии
+
+    homeNewsSlider();
+
+    // Слайдер о компании на главной, который появляется только начиная с планшетной версии
+
+    aboutCompanySlider();
 
 
 });

@@ -1,5 +1,8 @@
 .equipment {
     margin-bottom: 100px;
+    @include breakpoint(tablet) {
+        margin-bottom: 80px;
+    }
 }
 
 .equipment__top-row {
@@ -15,6 +18,25 @@
     margin-left: auto;
     @include breakpoint(laptop) {
         margin-left: 0;
+        margin-top: 30px;
+    }
+    @include breakpoint(small-tablet) {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 20px;
+        margin-bottom: -20px;
+        margin-left: -1 * $desktop-content-padding;
+        margin-right: -1 * $desktop-content-padding;
+    }
+
+    @include breakpoint(mobile) {
+        margin-left: -1 * $mobile-content-padding;
+        margin-right: -1 * $mobile-content-padding;
+    }
+
+    @include breakpoint(small-mobile) {
+        margin-left: -1 * $small-mobile-content-padding;
+        margin-right: -1 * $small-mobile-content-padding;
     }
 }
 
@@ -23,6 +45,24 @@
     line-height: 22px;
     width: 180px;
     flex-shrink: 0;
+    padding-right: 30px;
+    @include breakpoint(small-tablet) {
+        font-size: 14px;
+        width: 150px;       
+    }
+
+    &:first-child {
+        @include breakpoint(small-tablet) {
+            margin-left: $desktop-content-padding;
+        }
+        @include breakpoint(mobile) {
+            margin-left: $mobile-content-padding;
+        }
+        @include breakpoint(small-mobile) {
+            margin-left: $small-mobile-content-padding;
+        }
+    }
+
 
     &:link,
     &:visited {
@@ -69,6 +109,9 @@
 .equipment__tabs-list {
     margin-top: 100px;
     position: relative;
+    @include breakpoint(tablet) {
+        margin-top: 50px;
+    }
 }
 
 .equipment__tab-item {
@@ -95,12 +138,23 @@
 
 
 .equipment__slider {
-    width: 100vw;
-    margin-left: calc((100vw - 100%) / 2 * -1);
+    // width: 100vw;
+    // margin-left: calc((100vw - 100%) / 2 * -1);
+
+
+    .swiper-container {
+        overflow: initial;
+    }
    
     .swiper-slide {
         height: auto;
         width: 300px;
+        @include breakpoint(tablet) {
+            width: 250px;
+        }
+        @include breakpoint(small-mobile) {
+            width: 60%;
+        }
     }
 }
 
@@ -144,7 +198,14 @@
     margin-top: 45px;
     font-family: $proxima;
     font-size: 16px;
-    line-height: 21px;
+    line-height: 1.3;
+    @include breakpoint(tablet) {
+        margin-top: 20px;
+    }
+    @include breakpoint(mobile) {
+        font-size: 14px;
+        line-height: 20px;
+    }
 }
 
 .equipment__slider-title {
@@ -156,18 +217,29 @@
     display: block;
 }
 
+
+.equipment__slider-card-image-width-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    @include breakpoint(mobile) {
+        width: 100%;
+    }
+}
+
 .equipment__slider-card-image-container {
     width: 100%;
-    height: 278px;
+    padding-bottom: 100%;
+    margin: 0 auto;
     display: block;
     position: relative;
-    padding-bottom: 25px;
 }
 
 .equipment__slider-card-image {
-    // width: 100%;
     height: 100%;
-    width: auto;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
     @include objectFitContain();
 }
 
@@ -177,6 +249,7 @@
     position: absolute;
     right: 0;
     bottom: 0;
+    margin-bottom: -20px;
     box-sizing: border-box;
     &::before {
         content: '';
@@ -207,60 +280,3 @@
 
 
 
-.equipment__links-block {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -14px;
-    margin-top: 70px;
-}
-
-
-.equipment__links-block-column {
-    padding: 14px;
-    width: 50%;
-    
-    
-}
-
-
-.equipment__links-link {
-    color: black;
-    padding-top: 20px;
-    border-top: 4px solid #D8D8D8;
-    display: flex;
-    flex-direction: column;
-    transition: border-color .3s;
-    &:link,
-    &:visited {
-        color: black;
-    }
-    > svg {
-        fill: #D8D8D8;
-        margin-left: auto;
-        margin-right: 35px;
-        transition: fill .3s;
-    }
-
-    .no-touch &:hover,
-    .touch &:active {
-        border-color: $red;
-        > svg {
-            fill: $red;
-        }
-    }
-}
-
-
-.equipment__links-type {
-    display: block;
-}
-
-
-.equipment__links-link-text {
-    font-size: 32px;
-    line-height: 44px;
-    font-weight: 700;
-    display: block;
-    width: 70%;
-    margin-top: 18px;
-}
