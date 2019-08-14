@@ -50,12 +50,21 @@
     
 }
 
-.realised-projects__list {
+.realised-projects__list,
+.realised-projects__outside-cards-list {
     display: flex;
     flex-wrap: wrap;
     margin: -12px;
     @include breakpoint(laptop) {
         margin: -10px;
+    }
+}
+
+
+.realised-projects__outside-cards-list {
+    padding-bottom: 24px;
+    @include breakpoint(laptop) {
+        padding-bottom: 20px;
     }
 }
 
@@ -320,4 +329,18 @@
     height: 100%;
     
     @include objectFitCover();
+}
+
+
+
+.realised-projects__slider {
+    .swiper-slide {
+        height: auto;
+        width: 97%;
+        box-sizing: border-box;
+    }
+
+    .swiper-container {
+        overflow: initial;
+    }
 }

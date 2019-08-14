@@ -54,6 +54,7 @@
     .swiper-slide {
         height: auto;
         width: 97%;
+        box-sizing: border-box;
     }
 
     .swiper-container {
@@ -204,7 +205,5 @@
         padding: 30px;
         min-height: 185px;
     }
-    @include breakpoint(mobile) {
-        min-height: auto;
-    }
+    
 }

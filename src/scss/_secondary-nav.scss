@@ -66,8 +66,7 @@
 
 
 .secondary-nav__heading-link {
-    display: flex;
-    align-items: center;
+    display: inline-block;
     margin-bottom: 15px;
     color: #BABABA;
     &:link,
@@ -82,9 +81,12 @@
 
     svg {
         fill: #BABABA;
-        margin-left: 8px;
-        margin-bottom: 4px;
+        margin-bottom: -3px;
+        margin-left: -4px;
         transform: scaleX(-1);
+        flex-shrink: 0;
+        display: inline-block;
+        vertical-align: baseline;
     }
     &:last-child {
         margin-bottom: 0;

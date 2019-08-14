@@ -1,40 +1,28 @@
+import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+
+
 export default function() {
     const header = document.querySelector('.js-page-header');
-   
 
     if (!header) return;
 
     let headerStart = header.offsetTop;
 
     function fixHeader() {
-        
         const scrollTop = window.pageYOffset;
 
         if (scrollTop > headerStart) {
             header.classList.add('fixed');
-          
         } else {
             header.classList.remove('fixed');
-            
         }
-
-        // console.log('Header starts at', headerStart);
-        // console.log('Scrolled from top', scrollTop);
     }
 
     window.addEventListener('scroll', fixHeader);
 
-    // window.addEventListener('resize', function() {
-    //     header.classList.remove('fixed');
-        
-    //     headerStart = header.offsetTop;
-    // })
-
-
-
-
-
+   
     const burgerBtn = document.querySelector('.js-burger-btn');
+    const burgerMenuScrollContainer = document.querySelector('.js-burger-menu')
 
     if (!burgerBtn) return;
 
@@ -44,16 +32,29 @@ export default function() {
         event.preventDefault();
         if (burgerMenuOpen) {
             document.documentElement.classList.remove('burger-menu-shown');
+            clearAllBodyScrollLocks()
             burgerMenuOpen = false;
-            // console.log('PageYOffset', window.pageYOffset);
-            // console.log('Header Start', headerStart);
             if (window.pageYOffset <= headerStart) {
                 header.classList.remove('fixed');
             }
         } else {
             document.documentElement.classList.add('burger-menu-shown');
             header.classList.add('fixed');
+            disableBodyScroll(burgerMenuScrollContainer);
             burgerMenuOpen = true;
         }
-    })
+    });
+
+
+    if (matchMedia) {
+        const mq = window.matchMedia(`(max-width: 1080px)`);
+        mq.addListener(widthChange);
+        widthChange(mq);
+    }
+
+    function widthChange(mq) {
+        if (!mq.matches) {
+            clearAllBodyScrollLocks();
+        } 
+    }
 }

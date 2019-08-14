@@ -343,6 +343,12 @@
         @include breakpoint(laptop) {
             width: 95%;
         }
+
+
+        @include breakpoint(mobile) {
+            width: 120%;
+            left: -300px;
+        }
     }
 
     .image-overlay {
@@ -353,6 +359,7 @@
         height: 100%;
         background-color: rgba(black, 0.5);
         z-index: 18;
+
     }
 
     .halfscreen-image {
@@ -363,7 +370,9 @@
         top: 0;
         z-index: 15;
         @include objectFitCover();
-        
+        @include breakpoint(mobile) {
+            width: 100%;
+        }
        
     }
 
@@ -388,10 +397,15 @@
         @include breakpoint(laptop) {
             right: 5%;
         }
-        @include breakpoint(small-tablet) {
+        @include breakpoint(tablet) {
             // width: 200px;
             height: 60px;
             width: 160px;
+            margin-right: 285px;
+        }
+
+        @include breakpoint(mobile) {
+            right: -20%;
             margin-right: 285px;
         }
     }
@@ -417,7 +431,8 @@
             left: 95%;
         }
         @include breakpoint(tablet) {
-            margin-left: -150px;
+            
+            display: none;
         }
        
     }
@@ -442,6 +457,25 @@
         @include breakpoint(laptop) {
             left: 95%;
         }
+
+        @include breakpoint(tablet) {
+            width: 500px;
+            height: 85px;
+            margin-left: -200px;
+        }
+
+
+        @include breakpoint(small-tablet) {
+            margin-left: -250px;
+        }
+
+
+
+        @include breakpoint(mobile) {
+            height: 70px;
+            left: 120%;
+            margin-left: -230px;
+        }
     }
 
     .brick-3 {
@@ -465,7 +499,23 @@
             left: 95%;
         }
         @include breakpoint(tablet) {
-            margin-left: -250px;
+            height: 95px;
+            width: 600px;
+            margin-left: -450px;
+            transform: translateZ(0) rotate(-50deg) skewX(-50deg) translateX(-700px);
+            // transform: translateZ(0) rotate(-50deg) skewX(-50deg) translateX(-300px);
+        }
+
+        @include breakpoint(small-tablet) {
+            margin-left: -420px;
+        }
+
+
+
+        @include breakpoint(mobile) {
+            left: 120%;
+            height: 80px;
+            margin-left: -435px;
         }
     }
 
@@ -484,6 +534,9 @@
         margin-bottom: 100px;
         transition: 1.5s transform cubic-bezier(0.215, 0.61, 0.355, 1);
         @include breakpoint(desktop) {
+            display: none;
+        }
+        @include breakpoint(tablet) {
             display: none;
         }
         
@@ -509,6 +562,9 @@
         }
         @include breakpoint(laptop) {
             left: 95%;
+        }
+        @include breakpoint(tablet) {
+            display: none;
         }
     }
 

@@ -9,6 +9,9 @@
     align-items: center;
     justify-content: center;
     padding: 0 8px;
+    @include breakpoint(small-mobile) {
+        display: none;
+    }
     &:link,
     &:visited {
         color: white;

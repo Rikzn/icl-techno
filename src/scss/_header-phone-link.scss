@@ -16,7 +16,7 @@
     }
 
 
-    @include breakpoint(supersmall-mobile) {
+    @include breakpoint(small-mobile) {
         display: none;
     }
     &:last-child {

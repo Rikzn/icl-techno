@@ -10,6 +10,8 @@ import equipmentSlider from './equipmentSlider';
 import search from './search';
 import homeNewsSlider from './homeNewsSlider';
 import aboutCompanySlider from './aboutCompanySlider';
+import realisedProjectsSlider from './realisedProjects';
+import submenus from './submenus';
 
 document.addEventListener('DOMContentLoaded', function() {
     // Полифилл .contains для IE 11
@@ -72,6 +74,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // Слайдер о компании на главной, который появляется только начиная с планшетной версии
 
     aboutCompanySlider();
+
+    // Слайдер реализованных проектов на главной, который появляется только начиная с мобильной версии
+
+    realisedProjectsSlider();
+
+    // Субменю на мобильной ширине
+
+    submenus();
 
 
 });

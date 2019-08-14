@@ -4,6 +4,7 @@
     color: white;
     padding-top: 45px;
     padding-bottom: 45px;
+
     &::before {
         content: '';
         width: 100vw;
@@ -23,18 +24,44 @@
     @include breakpoint(laptop) {
         margin: -15px;
     }
+    @include breakpoint(small-mobile) {
+        margin: -10px;
+    }
+}
 
-   
+.footer-content__logo {
+    @include breakpoint(tablet) {
+        width: 64px;
+    }
 }
 
 .footer-content__top-row-column {
     padding: 25px;
     width: 33.33%;
+
     @include breakpoint(laptop) {
         padding: 15px;
     }
     @include breakpoint(tablet) {
         width: 50%;
+    }
+    @include breakpoint(small-mobile) {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+
+        &:nth-child(odd) {
+            width: 40%;
+        }
+        &:nth-child(even) {
+            width: 60%;
+        }
+    }
+
+    &--factory-info {
+        @include breakpoint(small-tablet) {
+            width: 100% !important;
+        }
     }
 }
 
@@ -45,6 +72,13 @@
     font-size: 24px;
     line-height: 1.2;
     margin-bottom: 15px;
+    white-space: nowrap;
+    @include breakpoint(tablet) {
+        font-size: 20px;
+    }
+    @include breakpoint(small-mobile) {
+        align-self: center;
+    }
     &:link,
     &:visited {
         color: white;
@@ -56,13 +90,16 @@
     }
 }
 
-
-
 .footer-content__write-us {
     margin-top: 20px;
+    @include breakpoint(tablet) {
+        margin-top: 10px;
+    }
+
+    @include breakpoint(small-mobile) {
+        align-self: center;
+    }
 }
-
-
 
 .footer-content__factory-name {
     font-size: 16px;
@@ -70,7 +107,6 @@
     font-weight: 700;
     font-family: $roboto;
 }
-
 
 .footer-content__factory-location {
     font-size: 16px;
@@ -83,13 +119,11 @@
     margin-top: 25px;
 }
 
-
 .footer-content__icl-websites-heading {
     font-size: 14px;
     line-height: 1.6;
     font-weight: 400;
 }
-
 
 .footer-content__icl-websites-list {
     max-width: 350px;
@@ -98,8 +132,12 @@
     margin-top: 8px;
     display: flex;
     flex-wrap: wrap;
+    @include breakpoint(small-mobile) {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        max-width: none;
+    }
 }
-
 
 .footer-content__icl-websites-list-item {
     padding: 0 15px;
@@ -107,13 +145,15 @@
     margin-bottom: 5px;
 }
 
-
 .footer-content__icl-websites-link {
     font-size: 16px;
     line-height: 1.5;
     color: $red;
     display: block;
     white-space: nowrap;
+    @include breakpoint(small-mobile) {
+        font-size: 12px;
+    }
     &::after {
         content: ' >';
         color: $red;
@@ -132,7 +172,6 @@
     }
 }
 
-
 .footer-content__bottom-row {
     display: flex;
     align-items: center;
@@ -141,24 +180,33 @@
     @include breakpoint(tablet) {
         margin-top: 40px;
     }
+    @include breakpoint(mobile) {
+        margin-top: 30px;
+    }
 }
-
 
 .footer-content__copyright {
     color: white;
     font-size: 14px;
     line-height: 22px;
     margin-right: 30px;
+    @include breakpoint(small-mobile) {
+        margin-right: 0;
+        display: block;
+        margin-bottom: 20px;
+    }
 }
-
-
 
 .footer-content__user-policy {
     color: $red;
     font-size: 16px;
     line-height: 22px;
     margin-right: 30px;
-    transition: color .2s;
+    transition: color 0.2s;
+    @include breakpoint(small-mobile) {
+        font-size: 14px;
+        line-height: 23px;
+    }
     &:link,
     &:visited {
         color: $red;
@@ -169,13 +217,16 @@
         text-decoration: underline;
     }
 }
-
 
 .footer-content__vacancy {
     color: $red;
     font-size: 16px;
     line-height: 22px;
-    transition: color .2s;
+    transition: color 0.2s;
+    @include breakpoint(small-mobile) {
+        font-size: 14px;
+        line-height: 23px;
+    }
     &:link,
     &:visited {
         color: $red;
@@ -186,7 +237,6 @@
         text-decoration: underline;
     }
 }
-
 
 .footer-content__social {
     display: flex;
@@ -196,8 +246,13 @@
     @include breakpoint(desktop) {
         margin-right: 0;
     }
+    @include breakpoint(small-tablet) {
+        margin-bottom: 20px;
+        margin-top: 0;
+        order: -1;
+        width: 100%;
+    }
 }
-
 
 .footer-content__social-item {
     margin-right: 34px;
@@ -206,11 +261,10 @@
     }
 }
 
-
 .footer-content__social-link {
     > svg {
         fill: $red;
-        transition: fill .2s;
+        transition: fill 0.2s;
     }
 
     .no-touch &:hover,
@@ -218,11 +272,8 @@
         > svg {
             fill: $red-hover;
         }
-        
     }
 }
-
-
 
 .footer-content__made-by {
     color: white;
@@ -236,15 +287,23 @@
     @include breakpoint(tablet) {
         text-align: left;
     }
+    @include breakpoint(small-mobile) {
+        font-size: 14px;
+    }
     img {
         display: inline-block;
-        vertical-align: bottom;
+        vertical-align: baseline;
         position: relative;
-        bottom: -4px;
+
+        bottom: -10px;
+        @include breakpoint(small-mobile) {
+            width: 80px;
+            bottom: -8px;
+        }
     }
 
     a {
-        display: inline;
+        display: inline-block;
         text-transform: uppercase;
         &:link,
         &:visited {
