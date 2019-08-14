@@ -1,6 +1,5 @@
 import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
-
 export default function() {
     const header = document.querySelector('.js-page-header');
 
@@ -20,23 +19,28 @@ export default function() {
 
     window.addEventListener('scroll', fixHeader);
 
-   
     const burgerBtn = document.querySelector('.js-burger-btn');
-    const burgerMenuScrollContainer = document.querySelector('.js-burger-menu')
+    const burgerMenuScrollContainer = document.querySelector('.js-burger-menu');
+    const burgerMenu = document.querySelector('.js-burger-menu');
 
     if (!burgerBtn) return;
 
     let burgerMenuOpen = false;
 
+    function transitionEndHandler(event) {
+        if (window.pageYOffset <= headerStart) {
+            header.classList.remove('fixed');
+        }
+        burgerMenu.removeEventListener('transitionend', transitionEndHandler)
+    }
+
     burgerBtn.addEventListener('click', function(event) {
         event.preventDefault();
         if (burgerMenuOpen) {
+            burgerMenu.addEventListener('transitionend', transitionEndHandler);
             document.documentElement.classList.remove('burger-menu-shown');
-            clearAllBodyScrollLocks()
-            burgerMenuOpen = false;
-            if (window.pageYOffset <= headerStart) {
-                header.classList.remove('fixed');
-            }
+            clearAllBodyScrollLocks();
+            burgerMenuOpen = false; 
         } else {
             document.documentElement.classList.add('burger-menu-shown');
             header.classList.add('fixed');
@@ -44,7 +48,6 @@ export default function() {
             burgerMenuOpen = true;
         }
     });
-
 
     if (matchMedia) {
         const mq = window.matchMedia(`(max-width: 1080px)`);
@@ -55,6 +58,6 @@ export default function() {
     function widthChange(mq) {
         if (!mq.matches) {
             clearAllBodyScrollLocks();
-        } 
+        }
     }
 }

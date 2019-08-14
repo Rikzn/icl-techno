@@ -26,7 +26,7 @@
     
     .page-header.fixed &,
     .page-header.search-open &,
-    .page-header:hover & {
+    .no-touch .page-header:hover & {
         color: black;
         &:link,
         &:visited {

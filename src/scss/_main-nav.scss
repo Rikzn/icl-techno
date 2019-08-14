@@ -176,7 +176,7 @@
         display: none;
         animation-name: fade-in;
         animation-duration: .3s;
-       
+        transition: none;
         &.shown {
             display: block;
         }

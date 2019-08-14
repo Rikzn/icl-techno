@@ -22,7 +22,7 @@
         width: auto;
         fill: white;
         transition: fill .2s;
-        .page-header:hover &,
+        .no-touch .page-header:hover &,
         .page-header.fixed &,
         .page-header.search-open & {
             fill: $red;
