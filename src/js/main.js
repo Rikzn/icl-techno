@@ -1,6 +1,8 @@
 // import "core-js/stable";
 // import "regenerator-runtime/runtime";
 
+
+import 'picturefill';
 import objectFitImages from 'object-fit-images';
 import detectIt from 'detect-it';
 import introSlider from './introSlider';

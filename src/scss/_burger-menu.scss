@@ -59,7 +59,7 @@
         height: 2px;
         background-color: #fff;
         margin-bottom: 6px;
-        transition: background-color .2s, transform .2s, opacity .2s;
+        transition: background-color .3s, transform .3s, opacity .3s;
         &:last-child {
             margin-bottom: 0;
         }
@@ -100,8 +100,8 @@
 .burger-menu__form-input {
     font: inherit;
     color: black;
-    font-size: 14px;
-    padding: 17px 24px;
+    font-size: 16px;
+    padding: 15px 24px;
     width: 50%;
     flex-grow: 1;
     border: none;
@@ -109,7 +109,7 @@
     padding-right: 0;
     @include placeholder {
         color: #999999;
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
