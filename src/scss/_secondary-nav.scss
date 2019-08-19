@@ -47,9 +47,16 @@
     color: black;
     font-size: 16px;
     line-height: 22px;
+    transition: opacity .2s;
     &:link,
     &:visited {
         color: black;
+    }
+
+
+    .no-touch &:hover,
+    .touch &:active {
+        opacity: .5;
     }
 
 

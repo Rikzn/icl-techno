@@ -2878,9 +2878,13 @@ p.extra-small-text {
 .secondary-nav__link {
   color: black;
   font-size: 16px;
-  line-height: 22px; }
+  line-height: 22px;
+  transition: opacity .2s; }
   .secondary-nav__link:link, .secondary-nav__link:visited {
     color: black; }
+  .no-touch .secondary-nav__link:hover,
+  .touch .secondary-nav__link:active {
+    opacity: .5; }
   @media only screen and (max-width: 768px) {
     .secondary-nav__link {
       font-size: 12px;
@@ -3070,7 +3074,8 @@ p.extra-small-text {
   font-size: 16px;
   line-height: 22px;
   display: inline-block;
-  margin-top: 20px; }
+  margin-top: 20px;
+  transition: color .2s; }
   @media only screen and (max-width: 1240px) {
     @supports (display: contents) {
       .about-company__details-link {
@@ -3083,7 +3088,7 @@ p.extra-small-text {
     color: #FB0D1B; }
   .no-touch .about-company__details-link:hover,
   .touch .about-company__details-link:active {
-    text-decoration: underline; }
+    color: #C40C1F; }
   .about-company__details-link::after {
     content: ' >';
     color: #FB0D1B;
