@@ -662,25 +662,32 @@ p.extra-small-text {
   font-style: normal;
   font-display: swap; }
 
-.container {
+.container,
+.landing-main {
   width: 100%;
   max-width: 1460px;
   margin: 0 auto;
   padding: 0 40px; }
   @media only screen and (max-width: 768px) {
-    .container {
+    .container,
+    .landing-main {
       padding: 0 20px; } }
   @media only screen and (max-width: 576px) {
-    .container {
+    .container,
+    .landing-main {
       padding: 0 15px; } }
-  .container--flex {
+  .container--flex,
+  .landing-main--flex {
     display: flex; }
-  .container--align-items-center {
+  .container--align-items-center,
+  .landing-main--align-items-center {
     align-items: center; }
-  .container--flex-column {
+  .container--flex-column,
+  .landing-main--flex-column {
     display: flex;
     flex-direction: column; }
-  .container--flex-grow {
+  .container--flex-grow,
+  .landing-main--flex-grow {
     flex-grow: 1; }
 
 .page-header {
