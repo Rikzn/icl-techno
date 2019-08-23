@@ -3,10 +3,14 @@ export default function() {
 
     if (!introSlider) return;
 
+
+    
+
     // Основные переменные
 
     const slides = Array.from(introSlider.querySelector('.js-intro-slider-slides').children);
     const paginationItems = Array.from(introSlider.querySelector('.js-intro-slider-pagination').children);
+    const hiddenThumbnails = Array.from(document.querySelectorAll('.intro-slider__hidden-thumbnail'));
     const prevBtn = introSlider.querySelector('.js-intro-slider-prev');
     const nextBtn = introSlider.querySelector('.js-intro-slider-next');
     let activeSlideIndex = 0;
@@ -15,6 +19,31 @@ export default function() {
     const autoplayInterval = 3000;
     let timerID;
     let nextPaginationItemGlobal;
+
+    // Подготовка разметки под слайдер
+
+    hiddenThumbnails.forEach((thumbnail, index) => {
+        const thumbnailToAppend = thumbnail.firstElementChild;
+        if (!thumbnailToAppend) {
+            console.error(`No thumbnail to append`);
+            return;
+        };
+        const paginationItem = paginationItems[index];
+        if (!paginationItem) {
+            console.error(`No pagination with this index ${index}`);
+            return;
+        };
+        const link = paginationItem.firstElementChild;
+        if (!link) {
+            console.error('No link inside this pagination item', paginationItem);
+            return;
+        };
+
+        link.appendChild(thumbnailToAppend);
+
+        thumbnail.remove();
+
+    })
 
     // Создание метки активного элемента
 

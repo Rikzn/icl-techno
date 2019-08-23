@@ -1611,6 +1611,17 @@ p.extra-small-text {
 .intro-slider__slide.active .intro-slider__slide-bg-content--type-1 .brick-5 {
   transform: translateZ(0) skewX(-40deg); }
 
+.intro-slider__hidden-thumbnail {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; }
+
 .home-news {
   margin-bottom: 100px;
   display: flex;

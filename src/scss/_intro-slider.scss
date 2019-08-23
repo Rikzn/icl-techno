@@ -594,3 +594,7 @@
         }
     }
 }
+
+.intro-slider__hidden-thumbnail {
+    @include visuallyHidden();
+}
