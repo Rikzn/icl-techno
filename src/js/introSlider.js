@@ -3,22 +3,24 @@ export default function() {
 
     if (!introSlider) return;
 
-
-    
-
     // Основные переменные
 
     const slides = Array.from(introSlider.querySelector('.js-intro-slider-slides').children);
-    const paginationItems = Array.from(introSlider.querySelector('.js-intro-slider-pagination').children);
+    const pagination = document.querySelector('.js-intro-slider-pagination');
     const hiddenThumbnails = Array.from(document.querySelectorAll('.intro-slider__hidden-thumbnail'));
     const prevBtn = introSlider.querySelector('.js-intro-slider-prev');
     const nextBtn = introSlider.querySelector('.js-intro-slider-next');
-    let activeSlideIndex = 0;
-    let activeMark;
-    let autoplayEnabled = true;
-    const autoplayInterval = 3000;
+
+    const paginationItems = [];
     let timerID;
     let nextPaginationItemGlobal;
+    let activeMark;
+
+    // Конфигурация
+
+    let activeSlideIndex = 0;
+    let autoplayEnabled = true;
+    const autoplayInterval = 3000;
 
     // Подготовка разметки под слайдер
 
@@ -27,23 +29,24 @@ export default function() {
         if (!thumbnailToAppend) {
             console.error(`No thumbnail to append`);
             return;
-        };
-        const paginationItem = paginationItems[index];
-        if (!paginationItem) {
-            console.error(`No pagination with this index ${index}`);
-            return;
-        };
-        const link = paginationItem.firstElementChild;
-        if (!link) {
-            console.error('No link inside this pagination item', paginationItem);
-            return;
-        };
+        }
 
+        const paginationItem = document.createElement('li');
+        paginationItem.className = `intro-slider__pagination-item ${index === activeSlideIndex ? 'active' : ''}`;
+        const link = document.createElement('a');
+        link.className = 'intro-slider__pagination-btn';
+        link.href = '#';
         link.appendChild(thumbnailToAppend);
+        paginationItem.appendChild(link);
 
         thumbnail.remove();
 
-    })
+        paginationItems.push(paginationItem);
+    });
+    const paginationList = document.createElement('ul');
+    paginationList.className = 'intro-slider__pagination';
+    paginationList.append(...paginationItems);
+    pagination.append(paginationList);
 
     // Создание метки активного элемента
 
