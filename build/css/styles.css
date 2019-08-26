@@ -3718,7 +3718,7 @@ a.section-header:link, a.section-header:visited {
               clip-path: polygon(0 0, 100% 0, 100% calc(100% - 25px), calc(100% - 25px) 100%, 0 100%); } }
   .no-touch .production__video-link:hover svg,
   .touch .production__video-link:active svg {
-    transform: scale(1.05); }
+    transform: translate(-50%, -50%) scale(1.05); }
   .production__video-link img {
     position: absolute;
     display: block;
@@ -3740,11 +3740,8 @@ a.section-header:link, a.section-header:visited {
     left: 50%;
     width: 80px;
     height: 80px;
-    margin-left: -40px;
-    margin-top: -40px; }
+    transform: translate(-50%, -50%); }
     @media only screen and (max-width: 576px) {
       .production__video-link svg {
         width: 60px;
-        height: 60px;
-        margin-left: -30px;
-        margin-top: -30px; } }
+        height: 60px; } }

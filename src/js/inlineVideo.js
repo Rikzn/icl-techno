@@ -1,4 +1,8 @@
 export default function() {
+    if (window.matchMedia("(max-width: 1080px)").matches) {
+        return;
+    }
+
     const inlineVideos = Array.from(document.querySelectorAll('.js-inline-video'));
 
     function getYouTubeID(url) {
