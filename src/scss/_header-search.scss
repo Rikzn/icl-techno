@@ -14,13 +14,11 @@
             transition: .2s
         }
 
-
         .header-search__btn {
             > svg {
                 fill: $red !important;
             }
         }
-
 
         .header-search__dropdown-overlay {
             opacity: 1;
@@ -45,14 +43,12 @@
     }
 
     .page-header.fixed &,
+    .page-header--white &,
     .page-header:hover & {
         > svg {
             fill: black;
         }
     }
-
-
-    
 }
 
 

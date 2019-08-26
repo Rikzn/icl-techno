@@ -2,9 +2,9 @@
 @import 'mixins';
 @import 'vendor';
 @import 'global';
-@import 'typography';
 @import 'fontface';
 @import 'layout';
+@import 'default-content';
 @import 'elements-reusable';
 @import 'main-nav';
 @import 'intro-slider';
@@ -20,3 +20,6 @@
 @import 'about-company';
 @import 'catalog-links';
 @import 'burger-menu';
+@import 'about-company-detailed';
+@import 'our-clients';
+@import 'production';

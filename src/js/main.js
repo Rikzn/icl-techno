@@ -1,7 +1,3 @@
-// import "core-js/stable";
-// import "regenerator-runtime/runtime";
-
-
 import 'picturefill';
 import objectFitImages from 'object-fit-images';
 import detectIt from 'detect-it';
@@ -14,6 +10,8 @@ import homeNewsSlider from './homeNewsSlider';
 import aboutCompanySlider from './aboutCompanySlider';
 import realisedProjectsSlider from './realisedProjects';
 import submenus from './submenus';
+import ourClientsSlider from './ourClientsSlider';
+import inlineVideo from './inlineVideo';
 
 document.addEventListener('DOMContentLoaded', function() {
     // Полифилл .contains для IE 11
@@ -23,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Полифилл для CSS свойства ObjectFit (заполнение контейнера изображением)
+    
     objectFitImages();
 
     // Определение тач устройств
@@ -68,7 +67,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     search();
 
-
     // Слайдер новостей на главной, который появляется только в мобильной версии
 
     homeNewsSlider();
@@ -84,6 +82,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // Субменю на мобильной ширине
 
     submenus();
+
+    // Слайдер блока Наши клиенты
+
+    ourClientsSlider();
+
+    // Инлайновые видео
+
+    inlineVideo();
 
 
 });

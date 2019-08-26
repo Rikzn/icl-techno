@@ -39,7 +39,7 @@ export default function() {
         link.appendChild(thumbnailToAppend);
         paginationItem.appendChild(link);
 
-        thumbnail.remove();
+        // thumbnail.remove();
 
         paginationItems.push(paginationItem);
     });

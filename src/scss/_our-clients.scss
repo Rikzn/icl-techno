@@ -1,0 +1,122 @@
+.our-clients {
+    margin-bottom: 100px;
+    @include breakpoint(tablet) {
+        margin-bottom: 80px;
+    }
+    @include breakpoint(small-tablet) {
+        margin-bottom: 50px;
+    }
+}
+
+
+.our-clients__block-heading {
+    margin-bottom: 15px;
+}
+
+
+.our-clients__row {
+    display: flex;
+    align-items: center;
+    @include breakpoint(tablet) {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+.our-clients__content-column {
+    width: 30%;
+    flex-grow: 1;
+    @include breakpoint(tablet) {
+        width: 100%;
+    }
+}
+
+
+.our-clients__slider-column {
+    width: 49.33%;
+    flex-shrink: 0;
+    margin-left: 85px;
+    @include breakpoint(laptop) {
+        margin-left: 50px;
+    }
+
+    @include breakpoint(tablet) {
+        width: 70%;
+        margin-left: 0;
+        margin-top: 50px;
+        max-width: 100%;
+    }
+
+    @include breakpoint(mobile) {
+        width: 100%;
+    }
+}
+
+
+.our-clients__slider {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 50px), calc(100% - 50px) 100%, 0 100%);
+    position: relative;
+    @include breakpoint(small-mobile) {
+        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 25px), calc(100% - 25px) 100%, 0 100%);
+    }
+    .swiper-slide {
+        height: auto;
+        box-sizing: border-box;
+    }
+}
+
+
+.our-clients__slider-image-container {
+    padding-bottom: 64%;
+    background-color: black;
+    position: relative;
+
+}
+
+
+.our-clients__slider-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    @include objectFitCover();
+}
+
+
+.our-clients__slider-arrows {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 30px;
+    right: 60px;
+    z-index: 50;
+    @include breakpoint(small-mobile) {
+        bottom: 20px;
+        right: 30px;
+    }
+}
+
+
+.our-clients__slider-arrow {
+    margin-right: 15px;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    svg {
+        fill: white;
+        transition: fill .2s;
+        @include breakpoint(small-mobile) {
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .no-touch &:hover,
+    .touch &:active {
+        svg {
+            fill: $red;
+        }
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+}

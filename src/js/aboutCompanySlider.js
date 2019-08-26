@@ -28,13 +28,13 @@ export default function() {
                 el: '.swiper-pagination',
                 clickable: true
             },
-            on: {
-                beforeResize() {
-                    if (window.innerWidth <= 768) {
-                        sliderInstance.slides.css('width', '');
-                    }
-                }
-            }
+            // on: {
+            //     beforeResize() {
+            //         if (window.innerWidth <= 768) {
+            //             sliderInstance.slides.css('width', '');
+            //         }
+            //     }
+            // }
         });
     }
 

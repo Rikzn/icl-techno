@@ -24,6 +24,7 @@
         transition: fill .2s;
         .no-touch .page-header:hover &,
         .page-header.fixed &,
+        .page-header--white &,
         .page-header.search-open & {
             fill: $red;
         }

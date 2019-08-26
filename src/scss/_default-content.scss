@@ -1,0 +1,90 @@
+.default-content {
+    h1 {
+        font-size: 40px;
+        @include breakpoint(mobile) {
+            font-size: 28px;
+        }
+    }
+
+    h2 {
+        font-size: 32px;
+        @include breakpoint(mobile) {
+            font-size: 24px;
+        }
+    }
+
+    h3 {
+        font-size: 24px;
+        @include breakpoint(mobile) {
+            font-size: 20px;
+        }
+    }
+
+    h4 {
+        font-size: 20px;
+        @include breakpoint(mobile) {
+            font-size: 16px;
+        }
+    }
+
+    h5 {
+        font-size: 16px;
+        @include breakpoint(mobile) {
+            font-size: 14px;
+        }
+    }
+
+    h1, h2, h3, h4, h5 {
+        margin-bottom: 1em;
+    }
+
+    p {
+        font-family: $proxima;
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: 1em;
+        @include breakpoint(small-mobile) {
+            font-size: 16px;
+        }
+    }
+
+    blockquote {
+        padding-left: 32px;
+        display: block;
+        font-size: 26px;
+        line-height: 1.35;
+        position: relative;
+        font-family: $proxima;
+        margin-bottom: 1.2em;
+        @include breakpoint(tablet) {
+            font-size: 22px;
+        }
+        @include breakpoint(small-mobile) {
+            font-size: 18px;
+        }
+        &::before {
+            content: '';
+            left: 0;
+            height: 100%;
+            top: 0;
+            width: 4px;
+            position: absolute;
+            background-color: $red;
+        }
+    }
+
+
+    h1, h2, h3, h4, h5, p, blockquote {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+
+    .btn-with-corners {
+        margin-top: 20px;
+        @include breakpoint(small-mobile) {
+            margin-top: 10px;
+        }
+    }
+}

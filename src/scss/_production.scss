@@ -1,0 +1,114 @@
+.production {
+    margin-bottom: 100px;
+    @include breakpoint(tablet) {
+        margin-bottom: 80px;
+    }
+    @include breakpoint(small-tablet) {
+        margin-bottom: 50px;
+    }
+}
+
+.production__block-heading {
+    margin-bottom: 15px;
+}
+
+.production__row {
+    display: flex;
+    align-items: center;
+    @include breakpoint(tablet) {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+.production__content-column {
+    width: 30%;
+    flex-grow: 1;
+    @include breakpoint(tablet) {
+        width: 100%;
+    }
+}
+
+.production__video-column {
+    width: 49.33%;
+    flex-shrink: 0;
+    margin-right: 85px;
+    @include breakpoint(laptop) {
+        margin-right: 50px;
+    }
+    @include breakpoint(tablet) {
+        margin-right: 0;
+
+        width: 70%;
+        max-width: 100%;
+        order: 1;
+        margin-top: 50px;
+    }
+
+    @include breakpoint(mobile) {
+        width: 100%;
+    }
+}
+
+.production__video {
+    padding-bottom: 56.25%;
+    position: relative;
+    overflow: hidden;
+    iframe {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.production__video-link {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 50px), calc(100% - 50px) 100%, 0 100%);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // background-color: black;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    @include breakpoint(small-mobile) {
+        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 25px), calc(100% - 25px) 100%, 0 100%);
+    }
+    .no-touch &:hover,
+    .touch &:active {
+        svg {
+            transform: scale(1.05);
+        }
+    }
+    img {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        @include objectFitCover();
+    }
+    svg {
+        fill: white;
+        color: $red;
+        position: absolute;
+        transition: transform 0.2s;
+        top: 50%;
+        left: 50%;
+        width: 80px;
+        height: 80px;
+        margin-left: -40px;
+        margin-top: -40px;
+        @include breakpoint(small-mobile) {
+            width: 60px;
+            height: 60px;
+            margin-left: -30px;
+            margin-top: -30px;
+        }
+    }
+}
