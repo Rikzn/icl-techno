@@ -1,6 +1,12 @@
 import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
 export default function() {
+
+
+
+
+
+
     const header = document.querySelector('.js-page-header');
 
     if (!header) return;
