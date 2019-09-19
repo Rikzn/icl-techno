@@ -104,12 +104,11 @@
         pointer-events: none;
     }
 
-
     .icon-arrow-down {
         fill: $red;
         margin-left: auto;
         display: none;
-        transition: .2s transform;
+        transition: 0.2s transform;
         @include breakpoint(tablet) {
             display: block;
         }
@@ -164,8 +163,6 @@
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.2s, visibility 0s linear 0.2s;
-    padding-bottom: 50px;
-    padding-top: 35px;
 
     z-index: 900;
     @include breakpoint(tablet) {
@@ -176,7 +173,7 @@
         padding: 0;
         display: none;
         animation-name: fade-in;
-        animation-duration: .3s;
+        animation-duration: 0.3s;
         transition: none;
         &.shown {
             display: block;
@@ -212,7 +209,6 @@
     }
 }
 
-
 @keyframes fade-in {
     from {
         opacity: 0;
@@ -238,22 +234,20 @@
 .main-nav__submenu-list {
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
-    margin: -8px;
+    margin: 0 -28px;
+
     @include breakpoint(tablet) {
-        width: 100%;
         margin: 0;
+
         flex-wrap: nowrap;
         flex-direction: column;
     }
 }
 
 .main-nav__submenu-list-item {
-    width: 50%;
-    padding: 8px;
     @include breakpoint(tablet) {
         width: 100%;
-        padding: 0;
+
         margin-bottom: 10px;
         &:last-child {
             margin-bottom: 20px;
@@ -263,21 +257,51 @@
 
 .main-nav__submenu-link {
     color: black;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 16px;
+    line-height: 22px;
     transition: color 0.3s;
-    @include breakpoint(tablet) {
-        font-size: 14px;
-        line-height: 20px;
+    padding: 35px 28px;
+    display: block;
+    transition: background-color 0.2s;
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: $red;
+        transition: opacity 0.2s;
+        opacity: 0;
     }
+
     &:link,
     &:visited {
         color: black;
     }
 
+    .main-nav__submenu-list-item.active &,
     .no-touch &:hover,
     .touch &:active {
-        color: $red;
+        background-color: #f4f4f4;
+        &::after {
+            opacity: 1;
+        }
+    }
+    @include breakpoint(tablet) {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 0;
+        .main-nav__submenu-list-item.active &,
+        .no-touch &:hover,
+        .touch &:active {
+            color: $red;
+            background-color: transparent;
+        }
+        &::after {
+            display: none;
+        }
     }
 }
 
@@ -300,8 +324,9 @@
 
 .main-nav__submenu-products {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-top: 15px;
+
     @include breakpoint(tablet) {
         flex-direction: column;
         justify-content: initial;
@@ -311,10 +336,11 @@
 
 .main-nav__submenu-products-item {
     width: 160px;
-    margin: 0 30px;
+    width: min-content;
+    display: flex;
+    flex-direction: column;
     @include breakpoint(tablet) {
         width: 100%;
-        margin: 0;
         margin-bottom: 10px;
         &:last-child {
             margin-bottom: 20px;
@@ -327,29 +353,66 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
-    
-    @include breakpoint(tablet) {
-        align-items: initial;
-        flex-direction: row;
-    }
+    flex-grow: 1;
+    padding: 22px 40px;
+    transition: color 0.2s, background-color 0.2s;
+    position: relative;
     &:link,
     &:visited {
-        color: black;
+        color: #cfcfcf;
+        @include breakpoint(tablet) {
+            color: black;
+        }
     }
 
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: $red;
+        opacity: 0;
+        transition: opacity 0.2s;
+        @include breakpoint(tablet) {
+            display: none;
+        }
+    }
+
+    .main-nav__submenu-products-item.active &,
     .no-touch &:hover,
     .touch &:active {
+        color: black;
+        background-color: #f6f6f6;
+        &::after {
+            opacity: 1;
+        }
         .main-nav__submenu-title {
-            font-weight: 700;
             @include breakpoint(tablet) {
-                font-weight: 400;
                 color: $red;
             }
         }
 
         .main-nav__submenu-icon-container {
             > svg {
-                fill: $red;
+                fill: #999999;
+            }
+        }
+    }
+
+    @include breakpoint(tablet) {
+        align-items: initial;
+        flex-direction: row;
+        padding: 0;
+        .main-nav__submenu-products-item.active &,
+        .no-touch &:hover,
+        .touch &:active {
+            background-color: transparent;
+            .main-nav__submenu-title {
+                @include breakpoint(tablet) {
+                    color: $red;
+                }
             }
         }
     }
@@ -367,7 +430,7 @@
         display: none;
     }
     > svg {
-        fill: #999999;
+        fill: #c2c2c2;
         transition: fill 0.2s;
     }
 }
@@ -376,7 +439,7 @@
     font-size: 14px;
     line-height: 18px;
     margin-top: 5px;
-    transition: color .2s;
+
     @include breakpoint(tablet) {
         font-size: 14px;
         line-height: 20px;
