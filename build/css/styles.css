@@ -643,7 +643,7 @@ img {
     transform: translateZ(0);
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
-    transition: background-color .2s; }
+    transition: background-color .2s, box-shadow .2s; }
   .page-header.fixed, .page-header.search-open, .page-header--white,
   .no-touch .page-header:hover {
     position: fixed;
@@ -652,7 +652,8 @@ img {
     width: 100%; }
     .page-header.fixed::before, .page-header.search-open::before, .page-header--white::before,
     .no-touch .page-header:hover::before {
-      background-color: white; }
+      background-color: white;
+      box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2); }
 
 .page-content {
   flex-grow: 1;

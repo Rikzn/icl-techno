@@ -37,6 +37,7 @@
     padding-top: $page-header-top-padding;
     padding-bottom: $page-header-bottom-padding;
     transition: box-shadow .2s, padding .2s, height .2s;
+   
     &::before {
         content: '';
         position: absolute;
@@ -47,7 +48,8 @@
         z-index: -1;
         transform: translateZ(0);
         backface-visibility: hidden;
-        transition: background-color .2s;
+        transition: background-color .2s, box-shadow .2s;
+        
     }
 
     &.fixed,
@@ -60,7 +62,7 @@
         width: 100%;
         &::before {
             background-color: white;
-            
+            box-shadow: 0px 5px 30px rgba(black, .2);
         }
     }
 }
