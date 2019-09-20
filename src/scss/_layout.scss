@@ -75,6 +75,36 @@
     
 }
 
+
+
+
+.layout-row {
+    display: flex;
+    @include breakpoint(laptop) {
+        flex-direction: column;
+    }
+}
+
+
+
+.layout-main-column {
+    width: 50%;
+    flex-grow: 1;
+    @include breakpoint(laptop) {
+        width: 100%;
+    }
+}
+
+
+.layout-sidebar {
+    width: 295px;
+    flex-shrink: 0;
+    margin-left: 85px;
+    @include breakpoint(laptop) {
+        display: none;
+    }
+}
+
 .page-main {
     flex-grow: 1;
     display: flex;

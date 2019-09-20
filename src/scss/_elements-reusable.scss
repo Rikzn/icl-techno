@@ -72,7 +72,34 @@
 }
 
 
+.internal-page-back-link {
+    font-size: 16px;
+    line-height: 22px;
+    color: $red;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    &:link,
+    &:visited {
+        color: $red;
+    }
 
+    .no-touch &:hover,
+    .touch &:active {
+        text-decoration: underline;
+    }
+
+    > svg {
+        width: 16px;
+        height: 8px;
+        fill: $red;
+        margin-right: 16px;
+        flex-shrink: 0;
+        &.inverted {
+            transform: rotate(180deg);
+        }
+    }
+}
 
 
 .section-header {

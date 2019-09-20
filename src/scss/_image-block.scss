@@ -1,0 +1,51 @@
+.image-block {
+    &--floated {
+        width: 50%;
+        float: right;
+        margin: 20px;
+        margin-right: 0;
+        @include breakpoint(mobile) {
+            width: 100%;
+            margin: 20px 0;
+            float: none;
+        }
+    }
+}
+
+.image-block__image-container {
+}
+
+.image-block__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.image-block__description-text {
+    font-family: $proxima;
+    font-size: 16px;
+    color: #a4a4a4;
+    margin: 0;
+}
+
+.image-block__source-link {
+    color: $red;
+    font-size: 16px;
+    line-height: 20px;
+    &:link,
+    &:visited {
+        color: $red;
+    }
+
+    .no-touch &:hover,
+    .touch &:active {
+        text-decoration: underline;
+    }
+}
+
+.image-block__image {
+    width: 100%;
+    height: auto;
+    max-width: none;
+}
