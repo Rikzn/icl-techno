@@ -15,6 +15,7 @@ import inlineVideo from './inlineVideo';
 import textInsertionSlider from './textInsertionSlider';
 import scrollableTables from './scrollableTables';
 import gallerySlider from './gallerySlider';
+import accordeons from './accordeons';
 
 document.addEventListener('DOMContentLoaded', function() {
     // Полифилл .contains для IE 11
@@ -105,5 +106,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Слайдеры блоков галерей
 
     gallerySlider();
+
+    // Аккордеоны
+
+    accordeons();
 
 });
