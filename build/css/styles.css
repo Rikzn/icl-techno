@@ -4246,10 +4246,20 @@ a.section-header:link, a.section-header:visited {
   .no-touch .announcement:hover .announcement__btn,
   .touch .announcement:active .announcement__btn {
     text-decoration: underline; }
-  .announcement h1, .announcement h2, .announcement h3, .announcement h4, .announcement h5, .announcement h6 {
+  .announcement h1,
+  .announcement h2,
+  .announcement h3,
+  .announcement h4,
+  .announcement h5,
+  .announcement h6 {
     font-size: 18px;
     line-height: 24px;
     font-weight: 700; }
+  .announcement p {
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 13px;
+    margin-top: 15px;
+    line-height: 1.4; }
   .announcement ul {
     margin-top: 25px; }
     .announcement ul li {
@@ -4267,9 +4277,21 @@ a.section-header:link, a.section-header:visited {
         left: 0;
         top: 13px;
         border-radius: 50%; }
+  .announcement--configure h1,
+  .announcement--configure h2,
+  .announcement--configure h3,
+  .announcement--configure h4,
+  .announcement--configure h5,
+  .announcement--configure h6 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px; }
+  .no-touch .announcement--configure:hover .announcement__btn > svg,
+  .touch .announcement--configure:active .announcement__btn > svg {
+    fill: #FB0D1B; }
 
 .announcement__text-content {
-  border: 1px solid #D0D0D0;
+  border: 1px solid #d0d0d0;
   border-left: none;
   padding: 25px;
   display: flex;
@@ -4278,7 +4300,9 @@ a.section-header:link, a.section-header:visited {
 .announcement__image-container {
   position: relative;
   padding-bottom: 56.25%;
-  background-color: #D0D0D0; }
+  background-color: #d0d0d0; }
+  .announcement--configure .announcement__image-container {
+    padding: 0; }
 
 .announcement__image-container ~ .announcement__text-content {
   border-top: none;
@@ -4295,6 +4319,11 @@ a.section-header:link, a.section-header:visited {
   -o-object-position: center;
      object-position: center;
   font-family: 'object-fit: cover; object-position: center;'; }
+  .announcement--configure .announcement__image {
+    position: static;
+    width: 100%;
+    height: auto;
+    display: block; }
 
 .announcement__btn {
   color: #FB0D1B;
@@ -4304,9 +4333,15 @@ a.section-header:link, a.section-header:visited {
   line-height: 22px;
   margin-top: 35px;
   margin-left: auto; }
+  .announcement--configure .announcement__btn {
+    margin-top: auto; }
   .announcement__btn > svg {
     fill: #FB0D1B;
-    margin-left: 8px; }
+    margin-left: 8px;
+    transition: fill 0.2s; }
+    .announcement--configure .announcement__btn > svg {
+      margin-left: auto;
+      fill: #d8d8d8; }
   .announcement__btn:link, .announcement__btn:visited {
     color: #FB0D1B; }
 
