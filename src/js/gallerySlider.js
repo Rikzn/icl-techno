@@ -13,6 +13,9 @@ export default function() {
             return;
         }
 
+        const gallerySliderThumbnailsToMove = Array.from(gallerySlider.querySelectorAll('.gallery-slider__thumb-hidden-container .gallery-slider__thumbs-card'));
+
+
         const containerMain = gallerySlider.querySelector('.swiper-container');
         if (!containerMain) {
             console.error('No swiper container for: ', gallerySlider);
@@ -27,8 +30,18 @@ export default function() {
             thumbs: {}
         };
 
-        if (gallerySliderThumbs) {
+        if (gallerySliderThumbs && gallerySliderThumbnailsToMove !== 0) {
             const containerThumbs = gallerySliderThumbs.querySelector('.swiper-container');
+            const wrapperThumbs = gallerySliderThumbs.querySelector('.swiper-wrapper');
+            
+            gallerySliderThumbnailsToMove.forEach(thumbCard => {
+                const swiperSlide = document.createElement('div');
+                swiperSlide.className = 'swiper-slide';
+                swiperSlide.appendChild(thumbCard);
+                thumbCard.parentElement.remove();
+                wrapperThumbs.appendChild(swiperSlide);
+            })
+
             sliderOptions.thumbs.swiper = new Swiper(containerThumbs, {
                 slidesPerView: 9,
                 spaceBetween: 24,
