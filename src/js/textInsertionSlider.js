@@ -10,7 +10,7 @@ export default function() {
         }
         new Swiper(sliderContainer, {
             slidesPerView: 1,
-            // loop: true,
+            autoHeight: true,
             navigation: {
                 nextEl: slider.querySelector('.js-text-insertion-slider-next'),
                 prevEl: slider.querySelector('.js-text-insertion-slider-prev')

@@ -14,6 +14,7 @@ import ourClientsSlider from './ourClientsSlider';
 import inlineVideo from './inlineVideo';
 import textInsertionSlider from './textInsertionSlider';
 import scrollableTables from './scrollableTables';
+import gallerySlider from './gallerySlider';
 
 document.addEventListener('DOMContentLoaded', function() {
     // Полифилл .contains для IE 11
@@ -100,5 +101,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Таблицы со скроллингом
 
     scrollableTables();
+
+    // Слайдеры блоков галерей
+
+    gallerySlider();
 
 });

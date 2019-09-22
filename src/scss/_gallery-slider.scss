@@ -1,0 +1,214 @@
+.gallery-slider {
+    margin-bottom: 40px;
+    margin-top: 30px;
+    .swiper-slide {
+        height: auto;
+        box-sizing: border-box;
+    }
+}
+
+.gallery-slider__main-card {
+    border: 1px solid #d0d0d0;
+    background-color: #f8f8f8;
+}
+
+.gallery-slider__main-card-image-container {
+    padding-bottom: 56.25%;
+    position: relative;
+    display: block;
+    &:link,
+    &:visited {
+        color: white;
+    }
+    .no-touch &:hover,
+    .touch &:active {
+        svg {
+            transform: scale(1.08);
+        }
+    }
+
+    svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 80px;
+        height: 80px;
+        margin-top: -40px;
+        margin-left: -40px;
+        fill: white;
+        color: $red;
+        z-index: 10;
+        transition: transform .2s;
+        @include breakpoint(mobile) {
+            width: 50px;
+            height: 50px;
+            margin-top: -25px;
+            margin-left: -25px;
+        }
+    }
+}
+
+.gallery-slider__main-card-image-size-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 100%;
+    width: auto;
+    transform: translateX(-50%);
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 5;
+        background-image: linear-gradient(to top, rgba(black, 0.4), rgba(white, 0));
+    }
+}
+
+.gallery-slider__main-card-image {
+    height: 100%;
+    width: auto;
+    max-width: none;
+    @include objectFitContain();
+}
+
+.gallery-slider__main-card-description {
+    width: 100%;
+    padding: 0 20px;
+    position: absolute;
+    color: white;
+    font-family: $proxima;
+    font-size: 16px;
+    text-align: center;
+    left: 0;
+    bottom: 25px;
+    z-index: 15;
+    @include breakpoint(mobile) {
+        display: none;
+    }
+}
+
+
+
+.gallery-slider__bottom-section {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.gallery-slider__thumbs {
+    width: 50%;
+    flex-grow: 1;
+    // background-color: $red;
+    .swiper-slide {
+        width: 74px;
+        margin-right: 24px;
+    }
+}
+
+
+
+.gallery-slider__thumbs-card {
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 4px solid $red;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity .2s, visibility 0s linear .2s;
+        .swiper-slide-thumb-active & {
+            opacity: 1;
+            visibility: visible;
+            transition: all .2s;
+        }
+    }
+}
+
+
+.gallery-slider__thumbs-card-image-container {
+    padding-bottom: 100%;
+    position: relative;
+}
+
+
+.gallery-slider__thumbs-card-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    @include objectFitCover();
+}
+
+.gallery-slider__arrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    flex-shrink: 0;
+    @include noHighlight();
+    @include breakpoint(small-mobile) {
+        display: none;
+    }
+    &.swiper-button-disabled {
+        cursor: default;
+        pointer-events: none;
+        > svg {
+            fill: #bababa;
+        }
+    }
+    &:first-child {
+        margin-right: 30px;
+        @include breakpoint(mobile) {
+            margin-right: 20px;
+        }
+        @include breakpoint(small-mobile) {
+            margin-right: 10px;
+        }
+    }
+    &:last-child {
+        margin-left: 30px;
+        @include breakpoint(mobile) {
+            margin-left: 20px;
+        }
+        @include breakpoint(small-mobile) {
+            margin-left: 10px;
+        }
+    }
+
+    > svg {
+        fill: $red;
+        width: 45px;
+        height: 45px;
+        transition: fill 0.2s;
+        // @include breakpoint(small-tablet) {
+        //     width: 40px;
+        //     height: 40px;
+        // }
+    }
+
+    &:link,
+    &:visited {
+        color: white;
+    }
+
+    &:not(.swiper-button-disabled) {
+        .no-touch &:hover,
+        .touch &:active {
+            > svg {
+                fill: $red-hover;
+            }
+        }
+    }
+}

@@ -1,7 +1,23 @@
 import PerfectScrollbar from 'perfect-scrollbar';
 
 export default function() {
-    const scrollableTables = Array.from(document.querySelectorAll('.table-scroll-container'));
+    function wrapTable(element) {
+        const tableBlock = document.createElement('div');
+        tableBlock.className = 'table-block';
+        const tablePaddingWrapper = document.createElement('div');
+        tablePaddingWrapper.className = 'table-block__padding-wrapper';
+        const tableScrollContainer = document.createElement('div');
+        tableScrollContainer.className = 'table-block__scroll-container';
+
+        element.parentElement.insertBefore(tableBlock, element);
+        tableBlock.appendChild(tablePaddingWrapper);
+        tablePaddingWrapper.appendChild(tableScrollContainer);
+        tableScrollContainer.appendChild(element);
+
+        return tableScrollContainer;
+    }
+
+    const scrollableTables = Array.from(document.querySelectorAll('.default-content table'));
     console.log('Scrollable tables', scrollableTables);
 
     function addDragScrollHandlers(element) {
@@ -34,10 +50,13 @@ export default function() {
     }
 
     scrollableTables.forEach(table => {
-        new PerfectScrollbar(table, {
+        const tableScrollContainer = wrapTable(table);
+        console.log('Initializing on', tableScrollContainer)
+
+        new PerfectScrollbar(tableScrollContainer, {
             maxScrollbarLength: 105
         });
 
-        addDragScrollHandlers(table);
+        addDragScrollHandlers(tableScrollContainer);
     });
 }

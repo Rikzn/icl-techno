@@ -2,10 +2,18 @@
     &--type-1 {
         display: flex;
         margin: 40px 0;
+        @include breakpoint(mobile) {
+            flex-direction: column;
+            margin: 20px 0;
+        }
         .text-insertion__image-container {
             width: 40%;
             display: flex;
             flex-direction: column;
+            background-color: #D0D0D0;
+            @include breakpoint(mobile) {
+                width: 100%;
+            }
             .text-insertion__image {
                 display: block;
                 width: 100%;
@@ -25,6 +33,12 @@
             border-bottom: 1px solid #d0d0d0;
             display: flex;
             flex-direction: column;
+            @include breakpoint(mobile) {
+                width: 100%;
+                border-top: none;
+                border-left: 1px solid #d0d0d0;
+                padding: 30px 20px;
+            }
         }
 
         .text-insertion__content-wrapper {
@@ -79,6 +93,9 @@
         flex-direction: column;
         z-index: 1;
         margin: 40px 0;
+        @include breakpoint(mobile) {
+            margin: 20px 0;
+        }
         .text-insertion__image {
             position: absolute;
             top: 0;
@@ -97,12 +114,18 @@
             flex-grow: 1;
             display: flex;
             flex-direction: column;
+            @include breakpoint(mobile) {
+                padding: 30px 20px;
+            }
         }
 
         .text-insertion__content-wrapper {
             width: 60%;
             flex-grow: 1;
             margin-bottom: 20px;
+            @include breakpoint(mobile) {
+                width: 100%;
+            }
             & > h1,
             & > h2,
             & > h3,
@@ -129,6 +152,9 @@
             padding-bottom: 15px;
             padding-right: 35px;
             padding-left: 35px;
+            @include breakpoint(mobile) {
+                margin-top: 20px;
+            }
         }
     }
 
@@ -138,6 +164,9 @@
         margin: 40px 0;
         display: flex;
         flex-direction: column;
+        @include breakpoint(mobile) {
+            margin: 20px 0;
+        }
         .text-insertion__content {
             padding: 40px;
             padding-left: 60px;
@@ -147,8 +176,10 @@
             border-right: 1px solid #d0d0d0;
             border-bottom: 1px solid #d0d0d0;
             display: flex;
-            flex-direction: column;
-            
+            flex-direction: column; 
+            @include breakpoint(mobile) {
+                padding: 30px 20px;
+            }
         }
         .text-insertion__content-wrapper {
             margin-bottom: 20px;
@@ -210,6 +241,9 @@
         flex-direction: column;
         background-color: #F8F8F8;
         position: relative;
+        @include breakpoint(mobile) {
+            margin: 20px 0;
+        }
         .swiper-container {
             width: 100%;
         }
@@ -221,7 +255,6 @@
             flex-direction: column;
         }
 
-
         .text-insertion__slider-controls {
             position: absolute;
             display: flex;
@@ -229,8 +262,13 @@
             right: 40px;
             bottom: 40px;
             z-index: 10;
+            @include breakpoint(mobile) {
+                position: static;
+                justify-content: flex-end;
+                padding: 20px;
+                padding-top: 0;
+            }
         }
-
 
         .text-insertion__slider-arrow {
             margin-right: 15px;
@@ -267,7 +305,6 @@
                 color: white;
             }
 
-
             &:not(.swiper-button-disabled) {
                 .no-touch &:hover,
                 .touch &:active {
@@ -276,8 +313,6 @@
                     }
                 }
             }
-        
-           
         }
 
         .text-insertion__content {
@@ -286,10 +321,16 @@
             display: flex;
             flex-direction: column;
             flex-grow: 1;
+            @include breakpoint(mobile) {
+                padding: 30px 20px;
+            }
         }
 
         .text-insertion__content-wrapper {
             margin-bottom: auto;
+            @include breakpoint(mobile) {
+                margin-bottom: 0;
+            }
             & > h1,
             & > h2,
             & > h3,
@@ -323,15 +364,24 @@
             margin-top: 35px;
             align-items: center;
             padding-right: 40px;
+            @include breakpoint(mobile) {
+                padding-right: 0;
+            }
             
         }
         .text-insertion__author-image-container {
             width: 154px;
             height: 154px;
+            background-color: #D0D0D0;
             flex-shrink: 0;
             border-radius: 50%;
             overflow: hidden;
             margin-right: 38px;
+            @include breakpoint(mobile) {
+                width: 80px;
+                height: 80px;
+                margin-right: 15px;
+            }
         }
         .text-insertion__author-image {
             width: 100%;
@@ -339,7 +389,6 @@
             display: block;
             @include objectFitCover();
             flex-shrink: 0;
-            
         }
 
         .text-insertion__author-name {

@@ -1,23 +1,37 @@
 .other-news {
     color: black;
     margin-bottom: 100px;
+    @include breakpoint(mobile) {
+        margin-bottom: 50px;
+    }
 }
 
 .other-news__heading {
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 35px;
+    @include breakpoint(mobile) {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
 }
 
 .other-news__list {
     margin: -12px;
     display: flex;
     flex-wrap: wrap;
+    @include breakpoint(mobile) {
+        margin: -10px;
+    }
 }
 
 .other-news__list-item {
     width: 50%;
     padding: 12px;
+    @include breakpoint(mobile) {
+        width: 100%;
+        padding: 10px;
+    }
 }
 
 .other-news__card {
@@ -28,7 +42,9 @@
     border-right: 1px solid #d0d0d0;
     border-bottom: 1px solid #d0d0d0;
     padding: 35px;
-    
+    @include breakpoint(mobile) {
+        padding: 30px 20px;
+    }
     &:link,
     &:visited {
         color: black;
@@ -63,6 +79,22 @@
 .other-news__tags-list {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    margin-right: -22px;
+    margin-bottom: -10px;
+    @include breakpoint(mobile) {
+        margin-right: -15px;
+        
+    }
+}
+
+
+.other-news__tags-list-item {
+    margin-right: 22px;
+    margin-bottom: 10px;
+    @include breakpoint(mobile) {
+        margin-right: 15px;
+    }
 }
 
 

@@ -12,14 +12,18 @@
     }
 }
 
-.image-block__image-container {
-}
+
 
 .image-block__row {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 15px;
+    @include breakpoint(mobile) {
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: initial;
+    }
 }
 
 .image-block__description-text {
@@ -33,6 +37,9 @@
     color: $red;
     font-size: 16px;
     line-height: 20px;
+    @include breakpoint(mobile) {
+        margin-top: 10px;
+    }
     &:link,
     &:visited {
         color: $red;
