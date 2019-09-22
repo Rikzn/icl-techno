@@ -1,9 +1,216 @@
 .our-history {
+    .swiper-slide {
+        height: auto;
+        box-sizing: border-box;
+    }
+
     margin-bottom: 100px;
     @include breakpoint(tablet) {
         margin-bottom: 80px;
     }
     @include breakpoint(small-tablet) {
         margin-bottom: 50px;
+    }
+}
+
+.our-history__section-header {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.our-history__heading {
+    margin-bottom: 15px;
+    font-size: 32px;
+    line-height: 1.4;
+    @include breakpoint(mobile) {
+        font-size: 24px;
+    }
+}
+
+.our-history__info-slider {
+    position: relative;
+    @include breakpoint(small-mobile) {
+        .swiper-container {
+            overflow: initial;
+        }
+    }
+}
+
+.our-history__info-card {
+    display: flex;
+    @include breakpoint(small-tablet) {
+        flex-direction: column;
+    }
+}
+
+.our-history__info-card-left-column {
+    width: 51%;
+    padding-right: 30px;
+    padding-bottom: 80px;
+    @include breakpoint(small-tablet) {
+        width: 100%;
+        margin-top: 30px;
+    }
+    @include breakpoint(mobile) {
+        margin-top: 20px;
+    }
+    @include breakpoint(small-mobile) {
+        padding-bottom: 0;
+    }
+    & > h1,
+    & > h2,
+    & > h3,
+    & > h4,
+    & > h5,
+    & > h6 {
+        font-size: 32px;
+        line-height: 1.4;
+        font-weight: 400;
+        @include breakpoint(mobile) {
+            font-size: 24px;
+        }
+    }
+
+    > p {
+        font-family: $proxima;
+        font-size: 20px;
+        margin-top: 20px;
+        @include breakpoint(small-mobile) {
+            font-size: 16px;
+        }
+    }
+}
+
+.our-history__info-card-right-column {
+    width: 49%;
+    @include breakpoint(small-tablet) {
+        width: 100%;
+        order: -1;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+.our-history__slider-controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    z-index: 15;
+}
+
+.our-history__slider-arrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    flex-shrink: 0;
+    margin-right: 15px;
+    &:last-child {
+        margin-right: 0;
+    }
+    @include noHighlight();
+    @include breakpoint(small-mobile) {
+        display: none;
+    }
+    &.swiper-button-disabled {
+        cursor: default;
+        pointer-events: none;
+        > svg {
+            fill: #bababa;
+        }
+    }
+
+    > svg {
+        fill: $red;
+        width: 45px;
+        height: 45px;
+        transition: fill 0.2s;
+    }
+
+    &:link,
+    &:visited {
+        color: white;
+    }
+
+    &:not(.swiper-button-disabled) {
+        .no-touch &:hover,
+        .touch &:active {
+            > svg {
+                fill: $red-hover;
+            }
+        }
+    }
+}
+
+.our-history__range-slider {
+    margin-bottom: 65px;
+    border-bottom: 1px solid #d0d0d0;
+    @include breakpoint(small-tablet) {
+        margin-bottom: 40px;
+    }
+    @include breakpoint(mobile) {
+        margin-bottom: 30px;
+    }
+    .swiper-container {
+        overflow: initial;
+    }
+    .swiper-slide {
+        width: auto;
+    }
+}
+
+.our-history__range-slider-block {
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+    padding-bottom: 24px;
+
+    position: relative;
+    cursor: pointer;
+    @include breakpoint(small-tablet) {
+        padding: 20px 0;
+        padding-bottom: 19px;
+    }
+
+    @include breakpoint(mobile) {
+        padding: 13px 0;
+        padding-bottom: 12px;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        width: 100%;
+        height: 4px;
+        background-color: $red;
+        z-index: 5;
+        opacity: 0;
+        transition: opacity 0.2s;
+        .swiper-slide-thumb-active & {
+            opacity: 1;
+        }
+    }
+}
+
+.our-history__year {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-right: 25px;
+    @include breakpoint(small-tablet) {
+        font-size: 20px;
+    }
+    @include breakpoint(mobile) {
+        font-size: 18px;
+    }
+    &:last-child {
+        margin-right: 0;
     }
 }

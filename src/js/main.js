@@ -16,6 +16,7 @@ import textInsertionSlider from './textInsertionSlider';
 import scrollableTables from './scrollableTables';
 import gallerySlider from './gallerySlider';
 import accordeons from './accordeons';
+import ourHistory from './ourHistory';
 
 document.addEventListener('DOMContentLoaded', function() {
     // Полифилл .contains для IE 11
@@ -110,5 +111,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Аккордеоны
 
     accordeons();
+
+    // Слайдер Наша история
+
+    ourHistory();
 
 });

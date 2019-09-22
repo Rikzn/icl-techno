@@ -16,7 +16,7 @@ export default function() {
         const gallerySliderThumbnailsToMove = Array.from(gallerySlider.querySelectorAll('.gallery-slider__thumb-hidden-container .gallery-slider__thumbs-card'));
 
 
-        const containerMain = gallerySlider.querySelector('.swiper-container');
+        const containerMain = gallerySliderMain.querySelector('.swiper-container');
         if (!containerMain) {
             console.error('No swiper container for: ', gallerySlider);
             return;
