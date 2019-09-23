@@ -17,6 +17,8 @@ import scrollableTables from './scrollableTables';
 import gallerySlider from './gallerySlider';
 import accordeons from './accordeons';
 import ourHistory from './ourHistory';
+import serialMasking from './serialInputsMasking';
+import documentsSlider from './documentsSlider';
 
 document.addEventListener('DOMContentLoaded', function() {
     // Полифилл .contains для IE 11
@@ -115,5 +117,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Слайдер Наша история
 
     ourHistory();
+
+    // Маска ввода серийного номера
+
+    serialMasking();
+
+    // Слайдер документов
+
+    documentsSlider();
 
 });
