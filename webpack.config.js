@@ -20,6 +20,7 @@ module.exports = {
       }
     ]
   },
+  devtool: 'eval-source-map',
   mode: 'development',
   externals: {
     jquery: 'jQuery'

@@ -45,11 +45,13 @@
     "del": "^3.0.0",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
+    "gulp-cached": "^1.1.1",
     "gulp-csso": "^3.0.1",
     "gulp-html-beautify": "^1.0.1",
     "gulp-imagemin": "^5.0.3",
     "gulp-inject-partials": "^1.0.4",
     "gulp-newer": "^1.4.0",
+    "gulp-nunjucks-render": "^2.2.3",
     "gulp-plumber": "^1.2.1",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
@@ -61,7 +63,6 @@
     "moment-locales-webpack-plugin": "^1.0.7",
     "webpack": "^4.28.1",
     "webpack-cli": "^3.1.2",
-    "webpack-stream": "^5.2.1",
-    "gulp-nunjucks-render": "^2.2.3"
+    "webpack-stream": "^5.2.1"
   }
 }

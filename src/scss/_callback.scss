@@ -1,23 +1,18 @@
 .callback {
-    margin-bottom: 100px;
+    margin: 100px 0;
     background-color: #eeeeee;
-    padding-top: 60px;
-    padding-left: 75px;
-    padding-right: 65px;
-    padding-bottom: 65px;
+    padding: 60px 65px 65px 75px;
     border-left: 4px solid $red;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+   
     @include breakpoint(tablet) {
-        margin-bottom: 80px;
-        padding-top: 40px;
-        padding-left: 55px;
-        padding-right: 45px;
-        padding-bottom: 45px;
+        margin: 80px 0;
+        padding: 40px 45px 45px 55px;
     }
     @include breakpoint(small-tablet) {
-        margin-bottom: 50px;
+        margin: 50px 0;
     }
     @include breakpoint(mobile) {
         padding-left: 45px;

@@ -3,6 +3,9 @@
     position: relative;
     z-index: 1;
     margin-bottom: 110px;
+    &:first-child {
+        margin-top: -98px;
+    }
     @include breakpoint(tablet) {
         height: 600px;
         margin-bottom: 90px;

@@ -84,7 +84,7 @@ gulp.task('scripts-production', function() {
   return gulp
     .src('./src/js/**/*')
     .pipe(plumber())
-    .pipe(webpackstream({ ...webpackconfig, mode: 'production' }, webpack))
+    .pipe(webpackstream({ ...webpackconfig, mode: 'production', devtool: 'source-map' }, webpack))
     .pipe(gulp.dest('./build/js/'))
     .pipe(browserSync.stream())
 })
