@@ -1,0 +1,106 @@
+.callback {
+    margin-bottom: 100px;
+    background-color: #eeeeee;
+    padding-top: 60px;
+    padding-left: 75px;
+    padding-right: 65px;
+    padding-bottom: 65px;
+    border-left: 4px solid $red;
+    @include breakpoint(tablet) {
+        margin-bottom: 80px;
+        padding-top: 40px;
+        padding-left: 55px;
+        padding-right: 45px;
+        padding-bottom: 45px;
+    }
+    @include breakpoint(small-tablet) {
+        margin-bottom: 50px;
+    }
+    @include breakpoint(mobile) {
+        padding-left: 45px;
+    }
+    @include breakpoint(small-mobile) {
+        padding: 25px 20px;
+    }
+}
+
+.callback__row {
+    display: flex;
+    @include breakpoint(mobile) {
+        flex-direction: column;
+    }
+}
+
+.callback__left-column {
+    width: 40%;
+    @include breakpoint(tablet) {
+        width: 45%;
+    }
+    @include breakpoint(mobile) {
+        width: 100%;
+    }
+}
+
+.callback__right-column {
+    width: 48%;
+    margin-left: auto;
+    @include breakpoint(mobile) {
+        width: 100%;
+        margin-top: 30px;
+    }
+    @include breakpoint(small-mobile) {
+        margin-top: 20px;
+    }
+}
+
+.callback__form-input-group {
+    margin-bottom: 20px;
+}
+
+.callback__form-input,
+.callback__form-textarea {
+    outline: none;
+    font: inherit;
+    width: 100%;
+    border: 1px solid black;
+    font-family: $proxima;
+    font-size: 20px;
+    border-radius: 0;
+    padding: 14px 20px;
+    background: transparent;
+    display: block;
+    @include breakpoint(mobile) {
+        font-size: 16px;
+    }
+    @include placeholder {
+        color: rgba(black, .7);
+        font-family: $proxima;
+    }
+}
+
+.callback__form-textarea {
+    resize: none;
+    height: 140px;
+}
+
+.callback__form-policy {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 18px;
+    margin-top: 25px;
+    color: #B6B6B6;
+    a {
+        display: inline;
+        border-bottom: 1px solid rgba($red, .1);
+        transition: border-color .2s;
+        &:link,
+        &:visited {
+            color: $red;
+        }
+
+        .no-touch &:hover,
+        .touch &:active {
+            border-color: $red;
+        }
+    }
+}
