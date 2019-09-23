@@ -1,0 +1,23 @@
+{% set title = "Страница не найдена" %} {% set headerColor = "white" %} {% extends "layout.html" %} {% block content %}
+
+<section class="error">
+    <div class="error__row">
+        <div class="error__left-column">
+            <h1 class="error__code">
+                404
+            </h1>
+            <p class="error__message">
+                Страница не найдена
+            </p>
+            <p class="error__details">
+                Неправильно набран адрес, или такой страницы больше нет.
+            </p>
+            <p class="error__details">Вернуться на <a href="#">главную</a></p>
+        </div>
+        <div class="error__right-column">
+            <img src="img/404.jpg" alt="Ошибка 404" class="error__image">
+        </div>
+    </div>
+</section>
+
+{% endblock %}

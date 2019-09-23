@@ -1050,6 +1050,11 @@ img {
     .internal-page-back-link > svg.inverted {
       transform: rotate(180deg); }
 
+.parsley-errors-list {
+  margin-top: 5px;
+  color: #FB0D1B;
+  font-size: 14px; }
+
 .section-header {
   font-size: 16px;
   line-height: 1.6;
@@ -6016,11 +6021,6 @@ a.section-header:link, a.section-header:visited {
     .callback__right-column {
       margin-top: 20px; } }
 
-.callback__form .parsley-errors-list {
-  margin-top: 5px;
-  color: #FB0D1B;
-  font-size: 14px; }
-
 .callback__form-input-group {
   margin-bottom: 20px; }
 
@@ -6076,3 +6076,73 @@ a.section-header:link, a.section-header:visited {
     .no-touch .callback__form-policy a:hover,
     .touch .callback__form-policy a:active {
       border-color: #FB0D1B; }
+
+.error {
+  margin: 40px 0; }
+
+.error__row {
+  display: flex;
+  align-items: center; }
+  @media only screen and (max-width: 968px) {
+    .error__row {
+      flex-direction: column;
+      align-items: stretch; } }
+
+.error__left-column {
+  width: 40%; }
+  @media only screen and (max-width: 968px) {
+    .error__left-column {
+      width: 100%; } }
+
+.error__right-column {
+  width: 60%; }
+  @media only screen and (max-width: 968px) {
+    .error__right-column {
+      display: none; } }
+
+.error__code {
+  font-weight: 100;
+  font-size: 100px;
+  line-height: 1.2;
+  margin-bottom: 15px; }
+  @media only screen and (max-width: 1240px) {
+    .error__code {
+      font-size: 80px;
+      margin-bottom: 10px;
+      line-height: 1; } }
+  @media only screen and (max-width: 576px) {
+    .error__code {
+      font-size: 60px; } }
+
+.error__message {
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 700;
+  margin-bottom: 15px; }
+  @media only screen and (max-width: 1240px) {
+    .error__message {
+      font-size: 32px; } }
+  @media only screen and (max-width: 576px) {
+    .error__message {
+      font-size: 26px; } }
+
+.error__details {
+  font-size: 17px;
+  line-height: 23px;
+  margin-bottom: 10px; }
+  @media only screen and (max-width: 1240px) {
+    .error__details {
+      font-size: 16px;
+      line-height: 1.4; } }
+  .error__details a:link, .error__details a:visited {
+    color: #FB0D1B; }
+  .no-touch .error__details a:hover,
+  .touch .error__details a:active {
+    text-decoration: underline; }
+
+.error__image {
+  width: 100%;
+  display: block;
+  height: auto;
+  position: relative;
+  right: -60px; }
