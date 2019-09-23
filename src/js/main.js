@@ -19,6 +19,7 @@ import accordeons from './accordeons';
 import ourHistory from './ourHistory';
 import serialMasking from './serialInputsMasking';
 import documentsSlider from './documentsSlider';
+import formValidation from './formValidation';
 
 document.addEventListener('DOMContentLoaded', function() {
     // Полифилл .contains для IE 11
@@ -125,5 +126,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Слайдер документов
 
     documentsSlider();
+
+    // Валидация форм 
+
+    formValidation();
 
 });

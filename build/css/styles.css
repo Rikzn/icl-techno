@@ -5969,7 +5969,10 @@ a.section-header:link, a.section-header:visited {
   padding-left: 75px;
   padding-right: 65px;
   padding-bottom: 65px;
-  border-left: 4px solid #FB0D1B; }
+  border-left: 4px solid #FB0D1B;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
   @media only screen and (max-width: 1080px) {
     .callback {
       margin-bottom: 80px;
@@ -6012,6 +6015,11 @@ a.section-header:link, a.section-header:visited {
   @media only screen and (max-width: 576px) {
     .callback__right-column {
       margin-top: 20px; } }
+
+.callback__form .parsley-errors-list {
+  margin-top: 5px;
+  color: #FB0D1B;
+  font-size: 14px; }
 
 .callback__form-input-group {
   margin-bottom: 20px; }
