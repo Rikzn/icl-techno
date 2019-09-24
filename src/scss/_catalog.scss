@@ -12,7 +12,6 @@
     margin: -20px -45px;
     display: flex;
     flex-wrap: wrap;
-    
 }
 
 .catalog__list-item {
@@ -29,13 +28,16 @@
     }
     @include breakpoint(small-mobile) {
         width: 100%;
-        
     }
 }
 
 .catalog__product-card {
     display: flex;
     flex-direction: column;
+    @include breakpoint(small-mobile) {
+        flex-direction: row;
+        align-items: flex-start;
+    }
     &:link,
     &:visited {
         color: black;
@@ -59,8 +61,13 @@
 .catalog__product-image-width-wrapper {
     width: 70%;
     margin: 0 auto;
+    flex-shrink: 0;
     @include breakpoint(small-mobile) {
-        width: 100%;
+        width: 70px;
+        height: 70px;
+        margin: 0;
+        margin-right: 30px;
+        margin-top: 10px;
     }
 }
 
@@ -70,9 +77,10 @@
     position: relative;
     margin-bottom: 25px;
     @include breakpoint(small-mobile) {
+        margin-bottom: 0;
         padding-bottom: 0;
-        height: 172px;
-        
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -85,12 +93,7 @@
     @include objectFitContainBottom();
     @include breakpoint(small-mobile) {
         @include objectFitContain();
-        display: block;
         position: static;
-        height: 100%;
-        width: auto;
-        max-width: 100%;
-        margin: 0 auto;
     }
 }
 
@@ -99,12 +102,21 @@
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 12px;
+    @include breakpoint(small-mobile) {
+        font-size: 16px;
+        line-height: 1.2;
+        margin-bottom: 5px;
+    }
 }
 
 .catalog__product-description {
     font-family: $proxima;
     font-size: 16px;
     margin-bottom: 15px;
+    @include breakpoint(small-mobile) {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
 }
 
 .catalog__product-specs-list {
@@ -121,6 +133,11 @@
     @include breakpoint(mobile) {
         font-size: 16px;
     }
+    @include breakpoint(small-mobile) {
+        font-size: 14px;
+        margin-bottom: 5px;
+        padding-left: 20px;
+    }
     &:last-child {
         margin-bottom: 0;
     }
@@ -133,6 +150,11 @@
         left: 0;
         top: 5px;
         border-radius: 50%;
+        @include breakpoint(small-mobile) {
+            width: 6px;
+            height: 6px;
+            top: 5px;
+        }
     }
 }
 
