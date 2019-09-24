@@ -1124,19 +1124,25 @@ a.section-header:link, a.section-header:visited {
     @media only screen and (max-width: 1080px) {
       .main-nav__list-item:last-child {
         border-bottom: 1px solid #d0d0d0; } }
-  .main-nav__list-item:not(.active):hover::before {
+  .main-nav__list-item:hover::before {
     opacity: 1;
     transform: translateZ(0) scaleX(1); }
-  .main-nav__list-item:not(.active):hover .main-nav__submenu {
+  .main-nav__list-item:hover .main-nav__submenu {
     opacity: 1;
     visibility: visible;
     transition: all 0.2s; }
-  .main-nav__list-item:not(.active):hover .main-nav__link::after {
+  .main-nav__list-item:hover .main-nav__link::after {
     opacity: 1; }
-  .main-nav__list-item:not(.active):hover .main-nav__submenu-overlay {
+  .main-nav__list-item:hover .main-nav__submenu-overlay {
     opacity: 1;
     visibility: visible;
     transition: all 0.2s; }
+  .page-header:not(.fixed) .main-nav__list-item.active .main-nav__submenu {
+    opacity: 0;
+    visibility: hidden; }
+  .page-header:not(.fixed) .main-nav__list-item.active .main-nav__submenu-overlay {
+    opacity: 0;
+    visibility: hidden; }
 
 .main-nav__link {
   font-size: 16px;
