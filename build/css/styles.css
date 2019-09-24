@@ -4057,13 +4057,13 @@ a.section-header:link, a.section-header:visited {
         height: 60px; } }
 
 .all-news {
-  margin-bottom: 100px; }
+  margin: 100px 0; }
   @media only screen and (max-width: 1080px) {
     .all-news {
-      margin-bottom: 80px; } }
+      margin: 80px 0; } }
   @media only screen and (max-width: 968px) {
     .all-news {
-      margin-bottom: 50px; } }
+      margin: 50px 0; } }
 
 .all-news__heading {
   font-size: 40px;
@@ -4355,6 +4355,15 @@ a.section-header:link, a.section-header:visited {
       fill: #d8d8d8; }
   .announcement__btn:link, .announcement__btn:visited {
     color: #FB0D1B; }
+
+.article {
+  margin: 100px 0; }
+  @media only screen and (max-width: 1080px) {
+    .article {
+      margin: 80px 0; } }
+  @media only screen and (max-width: 968px) {
+    .article {
+      margin: 50px 0; } }
 
 .article__main-heading {
   font-size: 40px;
