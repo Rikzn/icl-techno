@@ -83,6 +83,16 @@
     @include breakpoint(laptop) {
         flex-direction: column;
     }
+    &:first-child {
+        margin: 100px 0;
+        @include breakpoint(tablet) {
+            margin: 80px 0;
+        }
+        @include breakpoint(small-tablet) {
+            margin: 50px 0;
+        }
+    }
+    
 }
 
 

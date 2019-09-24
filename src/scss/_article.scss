@@ -1,5 +1,8 @@
 .article {
     margin: 100px 0;
+    &:first-child {
+        margin-top: 0;
+    }
     @include breakpoint(tablet) {
         margin: 80px 0;
     }
