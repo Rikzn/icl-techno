@@ -1,0 +1,87 @@
+.breadcrumbs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.breadcrumbs__prev-link,
+.breadcrumbs__next-link {
+    flex-shrink: 0;
+    > svg {
+        fill: #c0c0c0;
+        transition: fill 0.2s;
+        @include breakpoint(small-mobile) {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    &[disabled] {
+        cursor: default;
+        pointer-events: none;
+    }
+
+    &:not([disabled]) {
+        .no-touch &:hover,
+        .touch &:active {
+            > svg {
+                fill: $red;
+            }
+        }
+    }
+}
+
+.breadcrumbs__prev-link {
+    margin-right: 30px;
+    @include breakpoint(small-mobile) {
+        margin-right: 20px;
+    }
+}
+.breadcrumbs__next-link {
+    margin-left: 30px;
+    @include breakpoint(small-mobile) {
+        margin-left: 20px;
+    }
+}
+
+.breadcrubms__list {
+    margin: -10px -20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include breakpoint(small-mobile) {
+        margin: -10px -15px;
+        flex-grow: 1;
+    }
+}
+
+.breadcrubms__list-item {
+    padding: 10px 20px;
+    @include breakpoint(small-mobile) {
+        padding: 10px 15px;
+    }
+}
+
+.breadcrumbs__link {
+    font-size: 17px;
+    line-height: 23px;
+    color: #c0c0c0;
+    transition: color 0.2s;
+    &:link,
+    &:visited {
+        color: #c0c0c0;
+    }
+    .breadcrubms__list-item.active & {
+        cursor: default;
+        pointer-events: none;
+    }
+
+
+    .breadcrubms__list-item.active &,
+    .no-touch &:hover,
+    .touch &:active {
+        color: $red;
+    }
+}

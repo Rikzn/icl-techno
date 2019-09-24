@@ -45,9 +45,17 @@
   font-family: 'object-fit: cover; object-position: top;';
 }
 
+
 @mixin objectFitContain() {
   object-fit: contain;
-  font-family: 'object-fit: contain;';
+  object-position: center;
+  font-family: 'object-fit: contain; object-position: center;';
+}
+
+@mixin objectFitContainBottom() {
+  object-fit: contain;
+  object-position: bottom;
+  font-family: 'object-fit: contain; object-position: bottom;';
 }
 
 

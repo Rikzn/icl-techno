@@ -13,7 +13,7 @@ const newer = require('gulp-newer')
 const svgSprite = require('gulp-svg-sprite')
 const prettier = require('gulp-prettier');
 const nunjucksRender = require('gulp-nunjucks-render');
-
+const cache = require('gulp-cached');
 const webpack = require('webpack')
 const webpackconfig = require('./webpack.config.js')
 const webpackstream = require('webpack-stream')
@@ -48,6 +48,7 @@ gulp.task('sprite', function() {
 gulp.task('nunjucks', function() {
   // Gets .html and .nunjucks files in pages
   return gulp.src('./src/*.+(html|nunjucks|njk)')
+  .pipe(cache('nunjucks'))
   // Renders template with nunjucks
   .pipe(nunjucksRender({
       path: ['./src/templates', './src/img/symbol']
