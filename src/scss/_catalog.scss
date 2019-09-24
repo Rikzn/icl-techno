@@ -166,6 +166,9 @@
     bottom: 0;
     margin-bottom: -20px;
     box-sizing: border-box;
+    @include breakpoint(small-mobile) {
+        display: none;
+    }
     &::before {
         content: '';
         width: 100%;

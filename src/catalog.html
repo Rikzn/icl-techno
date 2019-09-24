@@ -1,5 +1,85 @@
-{% set title = "Каталог" %} {% set headerColor = "white" %} {% extends "layout.html" %} {% block content %}
-<section class="education">
+{% set title = "Каталог" %} {% set headerColor = "white" %} {% set activePage = "catalog" %} {% extends "layout.html" %} {% block content %}
+
+<section class="navigation-standalone">
+    <div class="main-nav__submenu-content main-nav__submenu-content--standalone">
+        <ul class="main-nav__submenu-products">
+            <li class="main-nav__submenu-products-item active">
+                <a href="#" class="main-nav__submenu-products-link">
+                    <span class="main-nav__submenu-icon-container">
+                        <svg width="80" height="80" aria-hidden="true" class="icon-desktop">
+                            <use xlink:href="#desktop" />
+                        </svg>
+                    </span>
+
+                    <span class="main-nav__submenu-title">
+                        Настольные системы
+                    </span>
+                </a>
+            </li>
+            <li class="main-nav__submenu-products-item">
+                <a href="#" class="main-nav__submenu-products-link">
+                    <span class="main-nav__submenu-icon-container">
+                        <svg width="80" height="80" aria-hidden="true" class="icon-laptop">
+                            <use xlink:href="#laptop" />
+                        </svg>
+                    </span>
+                    <span class="main-nav__submenu-title">
+                        Мобильные устройства
+                    </span>
+                </a>
+            </li>
+            <li class="main-nav__submenu-products-item">
+                <a href="#" class="main-nav__submenu-products-link">
+                    <span class="main-nav__submenu-icon-container">
+                        <svg width="56" height="56" aria-hidden="true" class="icon-server">
+                            <use xlink:href="#server" />
+                        </svg>
+                    </span>
+                    <span class="main-nav__submenu-title">
+                        Серверные системы
+                    </span>
+                </a>
+            </li>
+            <li class="main-nav__submenu-products-item">
+                <a href="#" class="main-nav__submenu-products-link">
+                    <span class="main-nav__submenu-icon-container">
+                        <svg width="68" height="68" aria-hidden="true" class="icon-terminal">
+                            <use xlink:href="#terminal" />
+                        </svg>
+                    </span>
+                    <span class="main-nav__submenu-title">
+                        Многофункциональные терминалы
+                    </span>
+                </a>
+            </li>
+            <li class="main-nav__submenu-products-item">
+                <a href="#" class="main-nav__submenu-products-link">
+                    <span class="main-nav__submenu-icon-container">
+                        <svg width="61" height="61" aria-hidden="true" class="icon-hdd">
+                            <use xlink:href="#hdd" />
+                        </svg>
+                    </span>
+                    <span class="main-nav__submenu-title">
+                        Системы хранения данных
+                    </span>
+                </a>
+            </li>
+            <li class="main-nav__submenu-products-item">
+                <a href="#" class="main-nav__submenu-products-link">
+                    <span class="main-nav__submenu-icon-container">
+                        <svg width="67" height="67" aria-hidden="true" class="icon-interactive">
+                            <use xlink:href="#interactive" />
+                        </svg>
+                    </span>
+                    <span class="main-nav__submenu-title">
+                        Интерактивные системы
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="education fullwidth-block">
     <span class="education__background">
         <img src="img/education.jpg" alt="Картинка образовательного блока" class="education__background-image" />
     </span>
@@ -377,7 +457,6 @@
                         </span>
                     </div>
                 </div>
-
                 <div class="catalog__product-content">
                     <h6 class="catalog__product-title">
                         BasicRAY. Модель B182

@@ -28,6 +28,9 @@
         align-items: initial;
         justify-content: initial;
         border-top: 1px solid #d0d0d0;
+        &:first-child {
+            border-top: none;
+        }
         // border-bottom: 1px solid #D0D0D0;
     }
     &:last-child {
@@ -37,28 +40,30 @@
         }
     }
 
-    &:hover {
-        &::before {
-            opacity: 1;
-            transform: translateZ(0) scaleX(1);
-        }
-
-        .main-nav__submenu {
-            opacity: 1;
-            visibility: visible;
-            transition: all 0.2s;
-        }
-
-        .main-nav__link {
-            &::after {
+    &:not(.active) {
+        &:hover {
+            &::before {
                 opacity: 1;
+                transform: translateZ(0) scaleX(1);
             }
-        }
 
-        .main-nav__submenu-overlay {
-            opacity: 1;
-            visibility: visible;
-            transition: all 0.2s;
+            .main-nav__submenu {
+                opacity: 1;
+                visibility: visible;
+                transition: all 0.2s;
+            }
+
+            .main-nav__link {
+                &::after {
+                    opacity: 1;
+                }
+            }
+
+            .main-nav__submenu-overlay {
+                opacity: 1;
+                visibility: visible;
+                transition: all 0.2s;
+            }
         }
     }
 }
@@ -114,6 +119,15 @@
         }
     }
 
+    .page-header.fixed .main-nav__list-item.active &,
+    .page-header.search-open .main-nav__list-item.active &,
+    .page-header--white .main-nav__list-item.active &,
+    .no-touch .page-header:hover .main-nav__list-item.active & {
+        &::after {
+            opacity: 1;
+        }
+    }
+
     &.active {
         .icon-arrow-down {
             transform: rotate(180deg);
@@ -156,14 +170,11 @@
     top: 100%;
     left: 0;
     width: 100%;
-
     color: black;
-
     border-top: 1px solid #d0d0d0;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.2s, visibility 0s linear 0.2s;
-
     z-index: 900;
     @include breakpoint(tablet) {
         position: static;
@@ -226,8 +237,16 @@
     padding: 0 $desktop-content-padding;
     position: relative;
     z-index: 30;
+    &--standalone {
+        max-width: none;
+        padding: 0;
+        margin: 0;
+    }
+
     @include breakpoint(tablet) {
-        padding: 0 40px;
+        &:not(.main-nav__submenu-content--standalone) {
+            padding: 0 40px;
+        }
     }
 }
 
@@ -237,20 +256,32 @@
     margin: 0 -28px;
 
     @include breakpoint(tablet) {
-        margin: 0;
+        .main-nav__submenu-content:not(.main-nav__submenu-content--standalone) & {
+            margin: 0;
+            flex-wrap: nowrap;
+            flex-direction: column;
+        }
 
-        flex-wrap: nowrap;
-        flex-direction: column;
+        .main-nav__submenu-content--standalone & {
+            margin: 0;
+        }
     }
 }
 
 .main-nav__submenu-list-item {
     @include breakpoint(tablet) {
-        width: 100%;
+        .main-nav__submenu-content:not(.main-nav__submenu-content--standalone) & {
+            width: 100%;
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 20px;
+            }
+        }
 
-        margin-bottom: 10px;
-        &:last-child {
-            margin-bottom: 20px;
+        .main-nav__submenu-content--standalone & {
+            margin: 0;
+            // flex-grow: 1;
+            // text-align: center;
         }
     }
 }
@@ -289,18 +320,31 @@
             opacity: 1;
         }
     }
+
     @include breakpoint(tablet) {
-        font-size: 14px;
-        line-height: 20px;
-        padding: 0;
-        .main-nav__submenu-list-item.active &,
-        .no-touch &:hover,
-        .touch &:active {
+        .main-nav__submenu-content:not(.main-nav__submenu-content--standalone) & {
+            font-size: 14px;
+            line-height: 20px;
+            padding: 0;
+
+            .no-touch &:hover,
+            .touch &:active {
+                color: $red;
+                background-color: transparent;
+            }
+            &::after {
+                display: none;
+            }
+        }
+
+        .main-nav__submenu-content:not(.main-nav__submenu-content--standalone) .main-nav__submenu-list-item.active & {
             color: $red;
             background-color: transparent;
         }
-        &::after {
-            display: none;
+
+
+        .main-nav__submenu-content--standalone & {
+            padding: 20px 20px;
         }
     }
 }
@@ -328,9 +372,15 @@
     justify-content: center;
 
     @include breakpoint(tablet) {
-        flex-direction: column;
-        justify-content: initial;
-        margin: 0;
+        .main-nav__submenu-content:not(.main-nav__submenu-content--standalone) & {
+            flex-direction: column;
+            justify-content: initial;
+            margin: 0;
+        }
+
+        .main-nav__submenu-content--standalone & {
+            justify-content: flex-start;
+        }
     }
 }
 
@@ -340,10 +390,27 @@
     display: flex;
     flex-direction: column;
     @include breakpoint(tablet) {
-        width: 100%;
-        margin-bottom: 10px;
-        &:last-child {
-            margin-bottom: 20px;
+        .main-nav__submenu-content:not(.main-nav__submenu-content--standalone) & {
+            width: 100%;
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 20px;
+            }
+        }
+
+        .main-nav__submenu-content--standalone & {
+            width: 25%;
+        }
+    }
+
+    @include breakpoint(small-tablet) {
+        .main-nav__submenu-content--standalone & {
+            width: 33.33%;
+        }
+    }
+    @include breakpoint(supersmall-mobile) {
+        .main-nav__submenu-content--standalone & {
+            width: 50%;
         }
     }
 }
@@ -360,9 +427,6 @@
     &:link,
     &:visited {
         color: #cfcfcf;
-        @include breakpoint(tablet) {
-            color: black;
-        }
     }
 
     &::after {
@@ -375,23 +439,15 @@
         background-color: $red;
         opacity: 0;
         transition: opacity 0.2s;
-        @include breakpoint(tablet) {
-            display: none;
-        }
     }
-
     .main-nav__submenu-products-item.active &,
     .no-touch &:hover,
     .touch &:active {
         color: black;
         background-color: #f6f6f6;
+
         &::after {
             opacity: 1;
-        }
-        .main-nav__submenu-title {
-            @include breakpoint(tablet) {
-                color: $red;
-            }
         }
 
         .main-nav__submenu-icon-container {
@@ -400,19 +456,34 @@
             }
         }
     }
-
     @include breakpoint(tablet) {
-        align-items: initial;
-        flex-direction: row;
-        padding: 0;
-        .main-nav__submenu-products-item.active &,
-        .no-touch &:hover,
-        .touch &:active {
-            background-color: transparent;
-            .main-nav__submenu-title {
-                @include breakpoint(tablet) {
+        .main-nav__submenu-content:not(.main-nav__submenu-content--standalone) & {
+            align-items: initial;
+            flex-direction: row;
+            padding: 0;
+
+            &:link,
+            &:visited {
+                color: black;
+            }
+
+            .no-touch &:hover,
+            .touch &:active {
+                background-color: transparent;
+                .main-nav__submenu-title {
                     color: $red;
                 }
+            }
+
+            &::after {
+                display: none;
+            }
+        }
+
+        .main-nav__submenu-content:not(.main-nav__submenu-content--standalone) .main-nav__submenu-products-item.active & {
+            background-color: transparent;
+            .main-nav__submenu-title {
+                color: $red;
             }
         }
     }
@@ -427,7 +498,16 @@
     align-items: center;
     flex-shrink: 0;
     @include breakpoint(tablet) {
-        display: none;
+        .main-nav__submenu-content:not(.main-nav__submenu-content--standalone) & {
+            display: none;
+        }
+    }
+
+    @include breakpoint(mobile) {
+        .main-nav__submenu-content--standalone & {
+            width: 60px;
+            height: 60px;
+        }
     }
     > svg {
         fill: #c2c2c2;
@@ -439,10 +519,19 @@
     font-size: 14px;
     line-height: 18px;
     margin-top: 5px;
-
     @include breakpoint(tablet) {
-        font-size: 14px;
-        line-height: 20px;
-        margin-top: 0;
+        .main-nav__submenu-content:not(.main-nav__submenu-content--standalone) & {
+            font-size: 14px;
+            line-height: 20px;
+            margin-top: 0;
+        }
+    }
+
+
+    @include breakpoint(mobile) {
+        .main-nav__submenu-content--standalone & {
+            // display: none;
+            font-size: 12px;
+        }
     }
 }

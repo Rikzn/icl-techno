@@ -1,4 +1,42 @@
-{% set title = "О компании" %} {% set headerColor = "white" %} {% extends "layout.html" %} {% block content %}
+{% set title = "О компании" %} {% set headerColor = "white" %} {% set activePage = "about-company" %} {% extends "layout.html" %} {% block content %}
+
+<section class="navigation-standalone">
+    <div class="main-nav__submenu-content main-nav__submenu-content--standalone">
+        <ul class="main-nav__submenu-list">
+            <li class="main-nav__submenu-list-item">
+                <a href="#" class="main-nav__submenu-link">
+                    ICL в цифрах
+                </a>
+            </li>
+            <li class="main-nav__submenu-list-item">
+                <a href="#" class="main-nav__submenu-link">
+                    Производство
+                </a>
+            </li>
+            <li class="main-nav__submenu-list-item">
+                <a href="#" class="main-nav__submenu-link">
+                    История компании
+                </a>
+            </li>
+            <li class="main-nav__submenu-list-item">
+                <a href="#" class="main-nav__submenu-link">
+                    Вакансии
+                </a>
+            </li>
+            <li class="main-nav__submenu-list-item">
+                <a href="#" class="main-nav__submenu-link">
+                    Команда
+                </a>
+            </li>
+            <li class="main-nav__submenu-list-item active">
+                <a href="#" class="main-nav__submenu-link">
+                    Новости
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
 <section class="about-company-detailed">
     <h2 class="section-header about-company-detailed__block-heading">
         О компании

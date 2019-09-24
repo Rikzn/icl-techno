@@ -6,7 +6,7 @@
 <div class="burger-menu js-burger-menu">
     <nav class="main-nav">
         <ul class="main-nav__list">
-            <li class="main-nav__list-item">
+            <li class="main-nav__list-item {% if activePage == 'about-company' %} active {% endif %}">
                 <a href="#" class="main-nav__link js-submenu-link">
                     О компании
                     <svg width="10" height="6" aria-hidden="true" class="icon-arrow-down">
@@ -54,8 +54,8 @@
             <li class="main-nav__list-item">
                 <a href="#" class="main-nav__link">Решения</a>
             </li>
-            <li class="main-nav__list-item">
-                <a href="#" class="main-nav__link main-nav__link js-submenu-link">
+            <li class="main-nav__list-item {% if activePage == 'catalog' %} active {% endif %}">
+                <a href="#" class="main-nav__link js-submenu-link">
                     Продукция
                     <svg width="10" height="6" aria-hidden="true" class="icon-arrow-down">
                         <use xlink:href="#arrow-down" />

@@ -4,10 +4,10 @@
     flex-direction: column;
     @include breakpoint(tablet) {
         position: fixed;
-        top: 98px;
+        top: 100px;
         left: 0;
         width: 100%;
-        height: calc(100% - 98px);
+        height: calc(100% - 100px);
         background-color: #fff;
         margin-right: 0;
         padding: 0 $desktop-content-padding;
