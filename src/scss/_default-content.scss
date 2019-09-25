@@ -41,7 +41,7 @@
     & > h4,
     & > h5,
     & > h6 {
-        margin-bottom: 0.5em;
+        margin-bottom: .5em;
     }
 
     > p {
@@ -71,7 +71,7 @@
     > ul {
         list-style: none;
         margin-bottom: 40px;
-        margin-top: 30px;
+        margin-top: 20px;
         @include breakpoint(mobile) {
             margin-top: 20px;
             margin-bottom: 30px;
@@ -104,7 +104,7 @@
     > ol {
         list-style: none;
         margin-bottom: 40px;
-        margin-top: 30px;
+        margin-top: 20px;
         counter-reset: ordered-list;
         @include breakpoint(mobile) {
             margin-top: 20px;
@@ -145,7 +145,8 @@
         line-height: 1.35;
         position: relative;
         font-family: $proxima;
-        margin-bottom: 1.2em;
+        margin-bottom: 1.5em;
+        margin-top: 1.5em;
         @include breakpoint(tablet) {
             font-size: 22px;
         }
@@ -160,6 +161,38 @@
             width: 4px;
             position: absolute;
             background-color: $red;
+        }
+    }
+
+
+    .show-all-btn {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 55px;
+        @include breakpoint(mobile) {
+            margin-bottom: 20px;
+        }
+    }
+
+    .show-all-btn__link {
+        color: $red;
+        margin-left: auto;
+        display: inline-flex;
+        align-items: center;
+        
+        > svg {
+            fill: $red;
+            margin-left: 8px;
+        }
+        &:link,
+        &:visited {
+            color: $red;
+        }
+
+
+        .no-touch &:hover,
+        .touch &:active {
+            text-decoration: underline;
         }
     }
 
@@ -183,8 +216,8 @@
     }
 
     > .image-block:not(.image-block--floated) {
-        margin-bottom: 40px;
-        margin-top: 40px;
+        margin-bottom: 55px;
+        margin-top: 55px;
         @include breakpoint(mobile) {
             margin-top: 20px;
             margin-bottom: 20px;

@@ -26,7 +26,10 @@
 .documents__heading {
     font-size: 32px;
     font-weight: 700;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    @include breakpoint(tablet) {
+        margin-bottom: 28px;
+    }
     @include breakpoint(mobile) {
         font-size: 24px;
     }
@@ -36,7 +39,10 @@
 .documents__subheading {
     font-size: 24px;
     font-weight: 700;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
+    @include breakpoint(tablet) {
+        margin-bottom: 20px;
+    }
     @include breakpoint(mobile) {
         font-size: 20px;
     }

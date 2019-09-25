@@ -79,12 +79,21 @@
     }
 }
 
+
+.announcement__content {
+    border: 1px solid #d0d0d0;
+    border-left: none;
+}
+
 .announcement__text-content {
     border: 1px solid #d0d0d0;
     border-left: none;
     padding: 25px;
     display: flex;
     flex-direction: column;
+    .announcement--configure & {
+        border: none;
+    }
 }
 
 .announcement__image-container {
