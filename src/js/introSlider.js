@@ -24,29 +24,31 @@ export default function() {
 
     // Подготовка разметки под слайдер
 
-    hiddenThumbnails.forEach((thumbnail, index) => {
-        const thumbnailToAppend = thumbnail.firstElementChild;
-        if (!thumbnailToAppend) {
-            console.error(`No thumbnail to append`);
-            return;
-        }
+    if (!document.body.classList.contains('is-admin')) {
+        hiddenThumbnails.forEach((thumbnail, index) => {
+            const thumbnailToAppend = thumbnail.firstElementChild;
+            if (!thumbnailToAppend) {
+                console.error(`No thumbnail to append`);
+                return;
+            }
 
-        const paginationItem = document.createElement('li');
-        paginationItem.className = `intro-slider__pagination-item ${index === activeSlideIndex ? 'active' : ''}`;
-        const link = document.createElement('a');
-        link.className = 'intro-slider__pagination-btn';
-        link.href = '#';
-        link.appendChild(thumbnailToAppend);
-        paginationItem.appendChild(link);
+            const paginationItem = document.createElement('li');
+            paginationItem.className = `intro-slider__pagination-item ${index === activeSlideIndex ? 'active' : ''}`;
+            const link = document.createElement('a');
+            link.className = 'intro-slider__pagination-btn';
+            link.href = '#';
+            link.appendChild(thumbnailToAppend);
+            paginationItem.appendChild(link);
 
-        // thumbnail.remove();
+            // thumbnail.remove();
 
-        paginationItems.push(paginationItem);
-    });
-    const paginationList = document.createElement('ul');
-    paginationList.className = 'intro-slider__pagination';
-    paginationList.append(...paginationItems);
-    pagination.append(paginationList);
+            paginationItems.push(paginationItem);
+        });
+        const paginationList = document.createElement('ul');
+        paginationList.className = 'intro-slider__pagination';
+        paginationList.append(...paginationItems);
+        pagination.append(paginationList);
+    }
 
     // Создание метки активного элемента
 
