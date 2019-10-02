@@ -232,7 +232,7 @@
                 .no-touch &:hover,
                 .touch &:active {
                     td {
-                        &::before {
+                        &::after {
                             background-color: #F2F2F2;
                         }
                         
