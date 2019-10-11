@@ -75,7 +75,6 @@
 .internal-page-back-link {
     font-size: 16px;
     line-height: 22px;
-    color: $red;
     display: flex;
     align-items: center;
     margin-bottom: 20px; 
@@ -84,9 +83,12 @@
         margin-bottom: 20px;
         margin-top: 20px;
     }
-    &:link,
-    &:visited {
+    a {
         color: $red;
+        &:link,
+        &:visited {
+            color: $red;
+        }
     }
 
     .no-touch &:hover,

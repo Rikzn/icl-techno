@@ -203,8 +203,11 @@
     & > h5,
     & > p,
     & > blockquote {
+        &:empty {
+            display: none;
+        }
         &:last-child {
-            margin-bottom: 0;
+            // margin-bottom: 0;
         }
     }
 

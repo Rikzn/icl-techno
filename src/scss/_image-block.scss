@@ -1,9 +1,15 @@
 .image-block {
     &--floated {
         width: 50%;
-        float: right;
         margin: 20px;
-        margin-right: 0;
+        &.right {
+            float: right;
+            margin-right: 0;
+        }
+        &.left {
+            float: left;
+            margin-left: 0;
+        }
         @include breakpoint(mobile) {
             width: 100%;
             margin: 20px 0;

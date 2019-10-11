@@ -1,5 +1,5 @@
 /**
- * Swiper 4.5.0
+ * Swiper 4.5.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * http://www.idangero.us/swiper/
  *
@@ -7,10 +7,11 @@
  *
  * Released under the MIT License
  *
- * Released on: February 22, 2019
+ * Released on: September 13, 2019
  */
 .swiper-container {
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
   overflow: hidden;
   list-style: none;
@@ -985,14 +986,14 @@ img {
   .touch .default-content .show-all-btn__link:active {
     text-decoration: underline; }
 
-.default-content > h1:last-child,
-.default-content > h2:last-child,
-.default-content > h3:last-child,
-.default-content > h4:last-child,
-.default-content > h5:last-child,
-.default-content > p:last-child,
-.default-content > blockquote:last-child {
-  margin-bottom: 0; }
+.default-content > h1:empty,
+.default-content > h2:empty,
+.default-content > h3:empty,
+.default-content > h4:empty,
+.default-content > h5:empty,
+.default-content > p:empty,
+.default-content > blockquote:empty {
+  display: none; }
 
 .default-content > .btn-with-corners {
   margin-top: 20px; }
@@ -1077,7 +1078,6 @@ img {
 .internal-page-back-link {
   font-size: 16px;
   line-height: 22px;
-  color: #FB0D1B;
   display: flex;
   align-items: center;
   margin-bottom: 20px;
@@ -1086,8 +1086,10 @@ img {
     .internal-page-back-link {
       margin-bottom: 20px;
       margin-top: 20px; } }
-  .internal-page-back-link:link, .internal-page-back-link:visited {
+  .internal-page-back-link a {
     color: #FB0D1B; }
+    .internal-page-back-link a:link, .internal-page-back-link a:visited {
+      color: #FB0D1B; }
   .no-touch .internal-page-back-link:hover,
   .touch .internal-page-back-link:active {
     text-decoration: underline; }
@@ -4628,9 +4630,13 @@ a.section-header:link, a.section-header:visited {
 
 .image-block--floated {
   width: 50%;
-  float: right;
-  margin: 20px;
-  margin-right: 0; }
+  margin: 20px; }
+  .image-block--floated.right {
+    float: right;
+    margin-right: 0; }
+  .image-block--floated.left {
+    float: left;
+    margin-left: 0; }
   @media only screen and (max-width: 768px) {
     .image-block--floated {
       width: 100%;
@@ -6678,3 +6684,12 @@ a.section-header:link, a.section-header:visited {
   .no-touch .breadcrumbs-header__breadcrumbs-link:hover,
   .touch .breadcrumbs-header__breadcrumbs-link:active {
     text-decoration: underline; }
+
+body.is-admin .block-wrapper .default-content > h2, body.is-admin .block-wrapper .default-content > h3, body.is-admin .block-wrapper .default-content > h4, body.is-admin .block-wrapper .default-content > p, body.is-admin .block-wrapper .default-content > blockquote {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+body:not(.is-admin) .block-wrapper .landing-ui-panel {
+  display: none; }
