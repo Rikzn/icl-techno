@@ -3831,6 +3831,7 @@ a.section-header:link, a.section-header:visited {
       display: flex; } }
   .page-header.fixed .burger-menu-open > span,
   .page-header--white .burger-menu-open > span,
+  .page-header--light .burger-menu-open > span,
   .no-touch .page-header:hover .burger-menu-open > span {
     background-color: black; }
   .burger-menu-open > span {
