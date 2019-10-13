@@ -63,11 +63,25 @@
         line-height: 23px;
     }
 
+    &--configure,
+    &--header-btn {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 14px;
+    }
 
     &--header-btn {
+        
+        margin-right: 30px;
         @include breakpoint(desktop) {
             display: none;
         }
+    }
+
+    .page-header--light &--header-btn,
+    .page-header--dark &--header-btn {
+        background-color: $red;
+        color: white;
     }
 }
 

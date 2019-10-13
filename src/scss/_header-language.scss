@@ -2,13 +2,12 @@
     font-size: 16px;
     line-height: 20px;
     color: white;
-    margin-bottom: -1 * $page-header-bottom-padding;
-    margin-top: -1 * $page-header-bottom-padding;
+    font-weight: 500;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 8px;
+    transition: color .2s;
     @include breakpoint(small-mobile) {
         display: none;
     }
@@ -20,6 +19,7 @@
 
     .no-touch &:hover,
     .touch &:active {
+        color: $red !important;
         text-decoration: underline;
     }
 
@@ -27,6 +27,7 @@
     .page-header.fixed &,
     .page-header.search-open &,
     .page-header--white &,
+    .page-header--light &,
     .no-touch .page-header:hover & {
         color: black;
         &:link,

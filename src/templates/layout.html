@@ -18,7 +18,7 @@
         </div>
 
         <div class="page-content">
-            <header class="page-header js-page-header {% if headerColor == 'white' %}    page-header--white {% endif %}">
+            <header class="page-header js-page-header {% if headerColor == 'white' %} page-header--white {% endif %} {% if headerColor == 'dark' %}    page-header--dark {% endif %} {% if headerColor == 'light' %} page-header--light {% endif %}">
                 <div class="container container--flex">
                     {% include "partials/header.html" %}
                 </div>

@@ -1,0 +1,948 @@
+{% set title = "Главная страница" %} {% set headerColor = "light" %} {% set activePage = "catalog" %} {% extends "layout.html" %} {% block content %}
+<section class="catalog-item-header catalog-item-header--light">
+    <div class="catalog-item-header__background-image-container">
+        <img src="img/catalog-item/christian-perner-UKLIuV8rAks-unsplash.jpg" alt="Фоновое изображение" class="catalog-item-header__background-image">
+    </div>
+    
+    <section class="navigation-standalone">
+        <div class="main-nav__submenu-content main-nav__submenu-content--standalone">
+            <ul class="main-nav__submenu-products">
+                <li class="main-nav__submenu-products-item active">
+                    <a href="#" class="main-nav__submenu-products-link">
+                        <span class="main-nav__submenu-icon-container">
+                            <svg width="80" height="80" aria-hidden="true" class="icon-desktop">
+                                <use xlink:href="#desktop" />
+                            </svg>
+                        </span>
+
+                        <span class="main-nav__submenu-title">
+                            Настольные системы
+                        </span>
+                    </a>
+                </li>
+                <li class="main-nav__submenu-products-item">
+                    <a href="#" class="main-nav__submenu-products-link">
+                        <span class="main-nav__submenu-icon-container">
+                            <svg width="80" height="80" aria-hidden="true" class="icon-laptop">
+                                <use xlink:href="#laptop" />
+                            </svg>
+                        </span>
+                        <span class="main-nav__submenu-title">
+                            Мобильные устройства
+                        </span>
+                    </a>
+                </li>
+                <li class="main-nav__submenu-products-item">
+                    <a href="#" class="main-nav__submenu-products-link">
+                        <span class="main-nav__submenu-icon-container">
+                            <svg width="56" height="56" aria-hidden="true" class="icon-server">
+                                <use xlink:href="#server" />
+                            </svg>
+                        </span>
+                        <span class="main-nav__submenu-title">
+                            Серверные системы
+                        </span>
+                    </a>
+                </li>
+                <li class="main-nav__submenu-products-item">
+                    <a href="#" class="main-nav__submenu-products-link">
+                        <span class="main-nav__submenu-icon-container">
+                            <svg width="68" height="68" aria-hidden="true" class="icon-terminal">
+                                <use xlink:href="#terminal" />
+                            </svg>
+                        </span>
+                        <span class="main-nav__submenu-title">
+                            Многофункциональные терминалы
+                        </span>
+                    </a>
+                </li>
+                <li class="main-nav__submenu-products-item">
+                    <a href="#" class="main-nav__submenu-products-link">
+                        <span class="main-nav__submenu-icon-container">
+                            <svg width="61" height="61" aria-hidden="true" class="icon-hdd">
+                                <use xlink:href="#hdd" />
+                            </svg>
+                        </span>
+                        <span class="main-nav__submenu-title">
+                            Системы хранения данных
+                        </span>
+                    </a>
+                </li>
+                <li class="main-nav__submenu-products-item">
+                    <a href="#" class="main-nav__submenu-products-link">
+                        <span class="main-nav__submenu-icon-container">
+                            <svg width="67" height="67" aria-hidden="true" class="icon-interactive">
+                                <use xlink:href="#interactive" />
+                            </svg>
+                        </span>
+                        <span class="main-nav__submenu-title">
+                            Интерактивные системы
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <img src="img/catalog-item/terminal.png" alt="Изображение продукта" class="catalog-item-header__image" />
+    <div class="catalog-item-header__row">
+        <div class="catalog-item-header__content">
+            <h1 class="catalog-item-header__heading">
+                BasicRAY. Модель B182
+            </h1>
+            <p class="catalog-item-header__description">
+                Высокопроизводительный и функциональный ПК с защитой от неблагоприятных внешних воздействий.
+            </p>
+            <div class="catalog-item-header__main-specs">
+                <table>
+                    <tr>
+                        <th>Корпус</th>
+                        <td>
+                            MiniTower
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Блок питания</th>
+                        <td>
+                            400 Вт
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Чипсет материнской платы</th>
+                        <td>
+                            Intel H310 Express
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Сокет процессора</th>
+                        <td>
+                            LGA1151
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <a href="#" class="btn-with-corners btn-with-corners--configure catalog-item-header__configure-btn">Сконфигурировать</a>
+    </div>
+</section>
+
+<section class="tabs-block">
+    <div class="tabs-block__tabs js-tabs">
+        <div class="tabs-block__tabs-navigation js-tabs-navigation">
+            <a href="#" class="tabs-block__tabs-navigation-btn active">
+                <span class="tabs-block__tabs-navigation-btn-text">
+                    Характеристики
+                </span>
+            </a>
+            <a href="#" class="tabs-block__tabs-navigation-btn">
+                <span class="tabs-block__tabs-navigation-btn-text">Фотографии</span>
+            </a>
+            <a href="#" class="tabs-block__tabs-navigation-btn">
+                <span class="tabs-block__tabs-navigation-btn-text">Сертификаты</span>
+            </a>
+            <a href="#" class="tabs-block__tabs-navigation-btn">
+                <span class="tabs-block__tabs-navigation-btn-text">Вопросы и ответы</span>
+            </a>
+            <a href="#" class="tabs-block__tabs-navigation-btn">
+                <span class="tabs-block__tabs-navigation-btn-text">Драйверы</span>
+            </a>
+        </div>
+
+        <ul class="tabs-block__tabs-list js-tabs-list">
+            <li class="tabs-block__tabs-item">
+                <section class="specs">
+                    <div class="specs__table">
+                        <table>
+                            <tr>
+                                <th>
+                                    Процессор
+                                </th>
+                                <td>
+                                    <span class="specs__table-item">
+                                        Intel Celeron
+                                    </span>
+                                    <span class="specs__table-item">
+                                        Intel Pentium
+                                    </span>
+                                    <span class="specs__table-item">
+                                        Intel Core i3 8-го поколения
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Набор микросхем
+                                </th>
+                                <td>
+                                    <span class="specs__table-item">
+                                        Intel H310 Express
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Оперативная память
+                                </th>
+                                <td>
+                                    <span class="specs__table-item">
+                                        2 слота DDR4 DIMM
+                                    </span>
+                                    <span class="specs__table-item">
+                                        Поддержка до 32 ГБ DDR4 2400 МГц
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Видеоконтроллер
+                                </th>
+                                <td>
+                                    <span class="specs__table-item">
+                                        Intel HD Graphics (встроен в процессор)
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Звуковая карта
+                                </th>
+                                <td>
+                                    <span class="specs__table-item">
+                                        Интегрированный HD-кодек
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Накопители информации
+                                </th>
+                                <td>
+                                    <span class="specs__table-item">
+                                        Поддержка до 4 устройств SATA-III
+                                    </span>
+                                    <span class="specs__table-item">
+                                        Поддержка 1 устройства M.2
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Сетевой контроллер
+                                </th>
+                                <td>
+                                    <span class="specs__table-item">
+                                        10/100/1000 Мб/с Gigabit Ethernet
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Слоты расширения
+                                </th>
+                                <td>
+                                    <span class="specs__table-item">
+                                        1 x PCI-E x16
+                                    </span>
+                                    <span class="specs__table-item">
+                                        1 x PCI-E x1
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Порты ввода-вывода на задней панели
+                                </th>
+                                <td>
+                                    <span class="specs__table-item">
+                                        1 x RJ45
+                                    </span>
+                                    <span class="specs__table-item">
+                                        4 x USB 2.0
+                                    </span>
+                                    <span class="specs__table-item">
+                                        2 x USB 3.1
+                                    </span>
+                                    <span class="specs__table-item">
+                                        1 x VGA
+                                    </span>
+                                    <span class="specs__table-item">
+                                        1 x HDMI
+                                    </span>
+                                    <span class="specs__table-item">
+                                        1 x DVI-D Звуковые гнезда (3 шт.)
+                                    </span>
+                                    <span class="specs__table-item">
+                                        2 x PS/2
+                                    </span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+            </li>
+            <li class="tabs-block__tabs-item">
+                <div class="gallery-slider gallery-slider--limited-width js-gallery-slider">
+                    <div class="gallery-slider__main js-gallery-slider-main">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="gallery-slider__main-card">
+                                        <a href="https://youtube.com" class="gallery-slider__main-card-image-container">
+                                            <div class="gallery-slider__main-card-image-size-wrapper">
+                                                <img src="img/article/Slider.jpg" alt="Фотография в слайдере" class="gallery-slider__main-card-image" />
+                                                <div class="gallery-slider__main-card-description">
+                                                    Команда школьников Приволжского федерального округа
+                                                </div>
+                                            </div>
+                                            <svg width="80" height="80" aria-hidden="true" class="icon-play">
+                                                <use xlink:href="#play" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="gallery-slider__thumb-hidden-container">
+                                        <div class="gallery-slider__thumbs-card">
+                                            <div class="gallery-slider__thumbs-card-image-container">
+                                                <img src="img/gallery-slider/slide-photo-1.jpg" alt="Фотография превью слайда" class="gallery-slider__thumbs-card-image" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="gallery-slider__main-card">
+                                        <div class="gallery-slider__main-card-image-container">
+                                            <div class="gallery-slider__main-card-image-size-wrapper">
+                                                <img src="img/gallery-slider/annie-spratt-QckxruozjRg-unsplash.jpg" alt="Фотография в слайдере" class="gallery-slider__main-card-image" />
+                                                <div class="gallery-slider__main-card-description">
+                                                    Команда школьников Приволжского федерального округа
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gallery-slider__thumb-hidden-container">
+                                        <div class="gallery-slider__thumbs-card">
+                                            <div class="gallery-slider__thumbs-card-image-container">
+                                                <img src="img/gallery-slider/slide-photo-2.jpg" alt="Фотография превью слайда" class="gallery-slider__thumbs-card-image" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="gallery-slider__main-card">
+                                        <a href="https://youtube.com" class="gallery-slider__main-card-image-container">
+                                            <div class="gallery-slider__main-card-image-size-wrapper">
+                                                <img src="img/article/Slider.jpg" alt="Фотография в слайдере" class="gallery-slider__main-card-image" />
+                                                <div class="gallery-slider__main-card-description">
+                                                    Команда школьников Приволжского федерального округа
+                                                </div>
+                                            </div>
+                                            <svg width="80" height="80" aria-hidden="true" class="icon-play">
+                                                <use xlink:href="#play" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="gallery-slider__thumb-hidden-container">
+                                        <div class="gallery-slider__thumbs-card">
+                                            <div class="gallery-slider__thumbs-card-image-container">
+                                                <img src="img/gallery-slider/slide-photo-1.jpg" alt="Фотография превью слайда" class="gallery-slider__thumbs-card-image" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-slider__bottom-section">
+                        <a href="#" class="gallery-slider__arrow js-gallery-slider-prev">
+                            <svg width="45" height="45" aria-hidden="true" class="icon-arrow-left">
+                                <use xlink:href="#arrow-left"></use>
+                            </svg>
+                        </a>
+                        <div class="gallery-slider__thumbs js-gallery-slider-thumbs">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper"></div>
+                            </div>
+                        </div>
+                        <a href="#" class="gallery-slider__arrow js-gallery-slider-next">
+                            <svg width="45" height="45" aria-hidden="true" class="icon-arrow-right">
+                                <use xlink:href="#arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="tabs-block__tabs-item">
+                <section class="documents">
+                    <h3 class="documents__subheading">
+                        Группа сертификатов
+                    </h3>
+
+                    <div class="documents__slider js-documents-slider">
+                        <ul class="documents__list">
+                            <li class="documents__list-item">
+                                <a href="#" class="documents__card">
+                                    <img src="img/documents/document-1.jpg" alt="Изображение документа" class="documents__image" />
+                                    <span class="documents__card-title">
+                                        <span class="documents__card-title-text">
+                                            Сертификат соответсвия №2: НИП ФСБ 0000034115
+                                        </span>
+                                    </span>
+                                    <span class="documents__card-size">
+                                        PDF 345 КБ
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li class="documents__list-item">
+                                <a href="#" class="documents__card documents__card--instruction">
+                                    <img src="img/documents/document-2.jpg" alt="Изображение документа" class="documents__image" />
+                                    <span class="documents__card-title">
+                                        <span class="documents__card-title-text">Инструкция по использованию сервера</span>
+                                    </span>
+                                    <span class="documents__card-size">
+                                        PDF 345 КБ
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="documents__list-item">
+                                <a href="#" class="documents__card">
+                                    <img src="img/documents/document-1.jpg" alt="Изображение документа" class="documents__image" />
+                                    <span class="documents__card-title">
+                                        <span class="documents__card-title-text">
+                                            Сертификат соответсвия №2: НИП ФСБ 0000034115
+                                        </span>
+                                    </span>
+                                    <span class="documents__card-size">
+                                        PDF 345 КБ
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="documents__list-item">
+                                <a href="#" class="documents__card">
+                                    <img src="img/documents/document-1.jpg" alt="Изображение документа" class="documents__image" />
+                                    <span class="documents__card-title">
+                                        <span class="documents__card-title-text">
+                                            Сертификат соответсвия №2: НИП ФСБ 0000034115
+                                        </span>
+                                    </span>
+                                    <span class="documents__card-size">
+                                        PDF 345 КБ
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="documents__list-item">
+                                <a href="#" class="documents__card">
+                                    <img src="img/documents/document-1.jpg" alt="Изображение документа" class="documents__image" />
+                                    <span class="documents__card-title">
+                                        <span class="documents__card-title-text">
+                                            Сертификат соответсвия №2: НИП ФСБ 0000034115
+                                        </span>
+                                    </span>
+                                    <span class="documents__card-size">
+                                        PDF 345 КБ
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="documents__list-item">
+                                <a href="#" class="documents__card">
+                                    <img src="img/documents/document-1.jpg" alt="Изображение документа" class="documents__image" />
+                                    <span class="documents__card-title">
+                                        <span class="documents__card-title-text">
+                                            Сертификат соответсвия №2: НИП ФСБ 0000034115
+                                        </span>
+                                    </span>
+                                    <span class="documents__card-size">
+                                        PDF 345 КБ
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="documents__list-item">
+                                <a href="#" class="documents__card">
+                                    <img src="img/documents/document-1.jpg" alt="Изображение документа" class="documents__image" />
+                                    <span class="documents__card-title">
+                                        <span class="documents__card-title-text">
+                                            Сертификат соответсвия №2: НИП ФСБ 0000034115
+                                        </span>
+                                    </span>
+                                    <span class="documents__card-size">
+                                        PDF 345 КБ
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </li>
+            <li class="tabs-block__tabs-item">
+                <section class="faq">
+                    <div class="faq__row js-tabs">
+                        <div class="faq__left-column">
+                            <div class="faq__tabs-navigation js-tabs-navigation">
+                                <a href="#" class="faq__navigation-btn active">
+                                    <span class="faq__navigation-btn-text">
+                                        Сервис и гарантия
+                                    </span>
+                                </a>
+                                <a href="#" class="faq__navigation-btn">
+                                    <span class="faq__navigation-btn-text">Условия использования</span>
+                                </a>
+                                <a href="#" class="faq__navigation-btn">
+                                    <span class="faq__navigation-btn-text">Сервис и гарантия</span>
+                                </a>
+                                <a href="#" class="faq__navigation-btn">
+                                    <span class="faq__navigation-btn-text">Условия использования</span>
+                                </a>
+                                <a href="#" class="faq__navigation-btn">
+                                    <span class="faq__navigation-btn-text">Сервис и гарантия</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="faq__right-column">
+                            <ul class="faq__tabs-list js-tabs-list">
+                                <li class="faq__tabs-item">
+                                    <ul class="faq__accordeons-list">
+                                        <li class="faq__accordeons-list-item js-accordeon">
+                                            <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
+                                                <span class="faq__accordeons-toggle-text">
+                                                    Компания представляет собой объединение предприятий, способных выполнить все этапы реализации проекта.
+                                                </span>
+                                                <svg width="25" height="25" aria-hidden="true" class="icon-cross">
+                                                    <use xlink:href="#cross" />
+                                                </svg>
+                                            </a>
+                                            <div class="faq__accordeons-content js-accordeon-content">
+                                                <p>
+                                                    С 2006 года группа компаний ICL уверенно входит в пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши
+                                                    продукты.
+                                                </p>
+                                                <p>
+                                                    Пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="faq__accordeons-list-item js-accordeon">
+                                            <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
+                                                <span class="faq__accordeons-toggle-text">
+                                                    Компания представляет собой объединение предприятий, способных выполнить все этапы реализации проекта.
+                                                </span>
+                                                <svg width="25" height="25" aria-hidden="true" class="icon-cross">
+                                                    <use xlink:href="#cross" />
+                                                </svg>
+                                            </a>
+                                            <div class="faq__accordeons-content js-accordeon-content">
+                                                <p>
+                                                    С 2006 года группа компаний ICL уверенно входит в пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши
+                                                    продукты.
+                                                </p>
+                                                <p>
+                                                    Пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="faq__accordeons-list-item js-accordeon">
+                                            <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
+                                                <span class="faq__accordeons-toggle-text">
+                                                    Компания представляет собой объединение предприятий, способных выполнить все этапы реализации проекта.
+                                                </span>
+                                                <svg width="25" height="25" aria-hidden="true" class="icon-cross">
+                                                    <use xlink:href="#cross" />
+                                                </svg>
+                                            </a>
+                                            <div class="faq__accordeons-content js-accordeon-content">
+                                                <p>
+                                                    С 2006 года группа компаний ICL уверенно входит в пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши
+                                                    продукты.
+                                                </p>
+                                                <p>
+                                                    Пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="faq__tabs-item">
+                                    <ul class="faq__accordeons-list">
+                                        <li class="faq__accordeons-list-item js-accordeon">
+                                            <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
+                                                <span class="faq__accordeons-toggle-text">
+                                                    Компания представляет собой объединение предприятий, способных выполнить все этапы реализации проекта.
+                                                </span>
+                                                <svg width="25" height="25" aria-hidden="true" class="icon-cross">
+                                                    <use xlink:href="#cross" />
+                                                </svg>
+                                            </a>
+                                            <div class="faq__accordeons-content js-accordeon-content">
+                                                <p>
+                                                    С 2006 года группа компаний ICL уверенно входит в пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши
+                                                    продукты.
+                                                </p>
+                                                <p>
+                                                    Пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="faq__accordeons-list-item js-accordeon">
+                                            <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
+                                                <span class="faq__accordeons-toggle-text">
+                                                    Компания представляет собой объединение предприятий, способных выполнить все этапы реализации проекта.
+                                                </span>
+                                                <svg width="25" height="25" aria-hidden="true" class="icon-cross">
+                                                    <use xlink:href="#cross" />
+                                                </svg>
+                                            </a>
+                                            <div class="faq__accordeons-content js-accordeon-content">
+                                                <p>
+                                                    С 2006 года группа компаний ICL уверенно входит в пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши
+                                                    продукты.
+                                                </p>
+                                                <p>
+                                                    Пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="faq__tabs-item">
+                                    <ul class="faq__accordeons-list">
+                                        <li class="faq__accordeons-list-item js-accordeon">
+                                            <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
+                                                <span class="faq__accordeons-toggle-text">
+                                                    Компания представляет собой объединение предприятий, способных выполнить все этапы реализации проекта.
+                                                </span>
+                                                <svg width="25" height="25" aria-hidden="true" class="icon-cross">
+                                                    <use xlink:href="#cross" />
+                                                </svg>
+                                            </a>
+                                            <div class="faq__accordeons-content js-accordeon-content">
+                                                <p>
+                                                    С 2006 года группа компаний ICL уверенно входит в пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши
+                                                    продукты.
+                                                </p>
+                                                <p>
+                                                    Пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="faq__tabs-item">
+                                    <ul class="faq__accordeons-list">
+                                        <li class="faq__accordeons-list-item js-accordeon">
+                                            <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
+                                                <span class="faq__accordeons-toggle-text">
+                                                    Компания представляет собой объединение предприятий, способных выполнить все этапы реализации проекта.
+                                                </span>
+                                                <svg width="25" height="25" aria-hidden="true" class="icon-cross">
+                                                    <use xlink:href="#cross" />
+                                                </svg>
+                                            </a>
+                                            <div class="faq__accordeons-content js-accordeon-content">
+                                                <p>
+                                                    С 2006 года группа компаний ICL уверенно входит в пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши
+                                                    продукты.
+                                                </p>
+                                                <p>
+                                                    Пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="faq__tabs-item">
+                                    <ul class="faq__accordeons-list">
+                                        <li class="faq__accordeons-list-item js-accordeon">
+                                            <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
+                                                <span class="faq__accordeons-toggle-text">
+                                                    Компания представляет собой объединение предприятий, способных выполнить все этапы реализации проекта.
+                                                </span>
+                                                <svg width="25" height="25" aria-hidden="true" class="icon-cross">
+                                                    <use xlink:href="#cross" />
+                                                </svg>
+                                            </a>
+                                            <div class="faq__accordeons-content js-accordeon-content">
+                                                <p>
+                                                    С 2006 года группа компаний ICL уверенно входит в пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши
+                                                    продукты.
+                                                </p>
+                                                <p>
+                                                    Пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </li>
+            <li class="tabs-block__tabs-item">
+                <section class="serial">
+                    <h3 class="serial__heading">
+                        Скачать драйверы по серийному номеру
+                    </h3>
+                    <div class="serial__row">
+                        <div class="serial__left-column">
+                            <p class="serial__instruction-text">
+                                Для того, чтобы скачать драйвер необходимо указать серийный номер
+                            </p>
+                        </div>
+                        <div class="serial__right-column">
+                            <p class="serial__instruction-text">
+                                Серийный номер можно найти на шильдике на корпусе сервера
+                            </p>
+                        </div>
+                    </div>
+                    <div class="serial__row">
+                        <div class="serial__left-column">
+                            <form action="/" method="GET" class="serial__form">
+                                <label for="serial" class="serial__form-label">Введите серийный номер</label>
+                                <input type="text" name="serial" class="serial__form-input js-serial-masking" id="serial" />
+                                <button type="submit" class="btn-with-corners serial__form-submit">
+                                    Искать
+                                </button>
+                            </form>
+                        </div>
+                        <div class="serial__right-column serial__right-column--image-column">
+                            <img src="img/serial/serial.jpg" alt="Картинка с инструкцией" class="serial__instruction-image" />
+                        </div>
+                    </div>
+                    <div class="serial__search-results">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Название</th>
+                                    <th>Версия</th>
+                                    <th>Опубликовано</th>
+                                    <th>Размер</th>
+                                    <th>Файл</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-th="Название">Драйвер материнской платы — BasicRAY. Модель B182</td>
+                                    <td data-th="Версия">431.60</td>
+                                    <td data-th="Опубликовано">20.07.2019</td>
+                                    <td data-th="Размер">567,7 МБ</td>
+                                    <td data-th="Файл"><a href="#">Скачать</a></td>
+                                </tr>
+                                <tr>
+                                    <td data-th="Название">Драйвер материнской платы — BasicRAY. Модель B182</td>
+                                    <td data-th="Версия">431.60</td>
+                                    <td data-th="Опубликовано">20.07.2019</td>
+                                    <td data-th="Размер">567,7 МБ</td>
+                                    <td data-th="Файл"><a href="#">Скачать</a></td>
+                                </tr>
+                                <tr>
+                                    <td data-th="Название">Драйвер материнской платы — BasicRAY. Модель B182</td>
+                                    <td data-th="Версия">431.60</td>
+                                    <td data-th="Опубликовано">20.07.2019</td>
+                                    <td data-th="Размер">567,7 МБ</td>
+                                    <td data-th="Файл"><a href="#">Скачать</a></td>
+                                </tr>
+                                <tr>
+                                    <td data-th="Название">Драйвер материнской платы — BasicRAY. Модель B182</td>
+                                    <td data-th="Версия">431.60</td>
+                                    <td data-th="Опубликовано">20.07.2019</td>
+                                    <td data-th="Размер">567,7 МБ</td>
+                                    <td data-th="Файл"><a href="#">Скачать</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="callback" style="background-image: url('img/icl-bg.jpg');">
+    <div class="callback__row">
+        <div class="callback__left-column">
+            <div class="callback__content default-content">
+                <h3>
+                    Нужна помощь?
+                </h3>
+                <p>
+                    Звоните нашим специалистам 8 800 555-55-55 или задайте свой вопрос через форму.
+                </p>
+                <ul>
+                    <li>Информационные материалы по всей линейке продукции</li>
+                    <li>Демо-комплекты оборудования</li>
+                    <li>Участие специалистов ICL в ваших мероприятиях для заказчиков</li>
+                </ul>
+            </div>
+        </div>
+        <div class="callback__right-column">
+            <form action="/" method="POST" class="callback__form" data-parsley-validate>
+                <div class="callback__form-input-group">
+                    <input type="text" class="callback__form-input" name="name" placeholder="Имя и фамилия" required />
+                </div>
+                <div class="callback__form-input-group">
+                    <input type="email" class="callback__form-input" name="email" placeholder="Электронная почта" required />
+                </div>
+                <div class="callback__form-input-group">
+                    <textarea class="callback__form-textarea" name="comment" placeholder="Комментарий" required></textarea>
+                </div>
+                <span class="callback__form-policy"> Я согласен с <a href="#">политикой конфиденциальности</a> </span>
+                <button type="submit" class="btn-with-corners callback__form-submit">
+                    Узнать стоимость
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="catalog-links">
+    <div class="catalog-links__row">
+        <div class="catalog-links__column">
+            <a href="#" class="catalog-links__link">
+                <span class="section-header catalog-links__type">
+                    Продукция
+                </span>
+                <span class="catalog-links__text">
+                    Скачать каталог в формате PDF
+                </span>
+                <svg width="45" height="45" aria-hidden="true" class="icon-arrow-right">
+                    <use xlink:href="#arrow-right" />
+                </svg>
+            </a>
+        </div>
+        <div class="catalog-links__column">
+            <a href="#" class="catalog-links__link">
+                <span class="section-header catalog-links__type">
+                    Конфигуратор
+                </span>
+                <span class="catalog-links__text">
+                    Сконфигурируйте собственное оборудование
+                </span>
+                <svg width="45" height="45" aria-hidden="true" class="icon-arrow-right">
+                    <use xlink:href="#arrow-right" />
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="equipment equipment--without-tabs">
+    <h2 class="section-header">
+        Смотрите также
+    </h2>
+
+    <div class="equipment__slider js-equipment-slider">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#" class="equipment__slider-card">
+                        <span class="equipment__slider-card-image-width-wrapper">
+                            <span class="equipment__slider-card-image-container">
+                                <img src="img/solutions-slider/image-1.png" alt="Фото 1" class="equipment__slider-card-image" />
+                                <span class="equipment__slider-corner">
+                                    <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                        <use xlink:href="#arrow-right-no-circle" />
+                                    </svg>
+                                </span>
+                            </span>
+                        </span>
+                        <span class="equipment__slider-content">
+                            <span class="equipment__slider-title">
+                                Предоставляем комплексные
+                            </span>
+                            <span class="equipment__slider-text">
+                                решения в области информационных технологий
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="equipment__slider-card">
+                        <span class="equipment__slider-card-image-width-wrapper">
+                            <span class="equipment__slider-card-image-container">
+                                <img src="img/solutions-slider/image-2.png" alt="Фото 1" class="equipment__slider-card-image" />
+                                <span class="equipment__slider-corner">
+                                    <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                        <use xlink:href="#arrow-right-no-circle" />
+                                    </svg>
+                                </span>
+                            </span>
+                        </span>
+                        <span class="equipment__slider-content">
+                            <span class="equipment__slider-title">
+                                Предоставляем комплексные
+                            </span>
+                            <span class="equipment__slider-text">
+                                решения в области информационных технологий
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="equipment__slider-card">
+                        <span class="equipment__slider-card-image-width-wrapper">
+                            <span class="equipment__slider-card-image-container">
+                                <img src="img/solutions-slider/image-3.png" alt="Фото 1" class="equipment__slider-card-image" />
+                                <span class="equipment__slider-corner">
+                                    <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                        <use xlink:href="#arrow-right-no-circle" />
+                                    </svg>
+                                </span>
+                            </span>
+                        </span>
+                        <span class="equipment__slider-content">
+                            <span class="equipment__slider-title">
+                                Предоставляем комплексные
+                            </span>
+                            <span class="equipment__slider-text">
+                                решения в области информационных технологий
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="equipment__slider-card">
+                        <span class="equipment__slider-card-image-width-wrapper">
+                            <span class="equipment__slider-card-image-container">
+                                <img src="img/solutions-slider/image-4.png" alt="Фото 1" class="equipment__slider-card-image" />
+                                <span class="equipment__slider-corner">
+                                    <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                        <use xlink:href="#arrow-right-no-circle" />
+                                    </svg>
+                                </span>
+                            </span>
+                        </span>
+                        <span class="equipment__slider-content">
+                            <span class="equipment__slider-title">
+                                Предоставляем комплексные
+                            </span>
+                            <span class="equipment__slider-text">
+                                решения в области информационных технологий
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="equipment__slider-card">
+                        <span class="equipment__slider-card-image-width-wrapper">
+                            <span class="equipment__slider-card-image-container">
+                                <img src="img/solutions-slider/image-5.png" alt="Фото 1" class="equipment__slider-card-image" />
+                                <span class="equipment__slider-corner">
+                                    <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                        <use xlink:href="#arrow-right-no-circle" />
+                                    </svg>
+                                </span>
+                            </span>
+                        </span>
+                        <span class="equipment__slider-content">
+                            <span class="equipment__slider-title">
+                                Предоставляем комплексные
+                            </span>
+                            <span class="equipment__slider-text">
+                                решения в области информационных технологий
+                            </span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

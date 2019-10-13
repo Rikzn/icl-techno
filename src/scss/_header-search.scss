@@ -1,9 +1,6 @@
 .header-search {
-    margin-left: auto;
-    margin-bottom: -1 * $page-header-bottom-padding;
-    margin-top: -1 * $page-header-bottom-padding;
-    display: flex;
-    flex-direction: column;
+    margin-right: 30px;
+    align-self: center;
     @include breakpoint(tablet) {
         display: none;
     }
@@ -35,15 +32,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    flex-grow: 1;
+    
+    
     > svg {
         fill: white;
         transition: fill .2s;
     }
 
+    .no-touch &:hover,
+    .touch &:active {
+        > svg {
+            fill: $red !important;
+        }
+    }
+
     .page-header.fixed &,
     .page-header--white &,
+    .page-header--light &,
     .page-header:hover & {
         > svg {
             fill: black;

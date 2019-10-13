@@ -25,6 +25,8 @@
         .no-touch .page-header:hover &,
         .page-header.fixed &,
         .page-header--white &,
+        .page-header--light &,
+        .page-header--dark &,
         .page-header.search-open & {
             fill: $red;
         }

@@ -1,5 +1,37 @@
 {% set title = "Блоки" %} {% set headerColor = "white" %} {% extends "layout.html" %} {% block content %}
 
+<section class="tabs-block">
+    <div class="tabs-block__tabs js-tabs">
+        <div class="tabs-block__tabs-navigation js-tabs-navigation">
+            <a href="#" class="tabs-block__tabs-navigation-btn active">
+                <span class="tabs-block__tabs-navigation-btn-text">
+                    Сервис и гарантия
+                </span>
+            </a>
+            <a href="#" class="tabs-block__tabs-navigation-btn">
+                <span class="tabs-block__tabs-navigation-btn-text">Условия использования</span>
+            </a>
+            <a href="#" class="tabs-block__tabs-navigation-btn">
+                <span class="tabs-block__tabs-navigation-btn-text">Сервис и гарантия</span>
+            </a>
+            <a href="#" class="tabs-block__tabs-navigation-btn">
+                <span class="tabs-block__tabs-navigation-btn-text">Условия использования</span>
+            </a>
+            <a href="#" class="tabs-block__tabs-navigation-btn">
+                <span class="tabs-block__tabs-navigation-btn-text">Сервис и гарантия</span>
+            </a>
+        </div>
+
+        <ul class="tabs-block__tabs-list js-tabs-list">
+            <li class="tabs-block__tabs-item">Таб 1</li>
+            <li class="tabs-block__tabs-item">Таб 2</li>
+            <li class="tabs-block__tabs-item">Таб 3</li>
+            <li class="tabs-block__tabs-item">Таб 4</li>
+            <li class="tabs-block__tabs-item">Таб 5</li>
+        </ul>
+    </div>
+</section>
+
 <section class="callback" style="background-image: url('img/icl-bg.jpg');">
     <div class="callback__row">
         <div class="callback__left-column">
@@ -20,17 +52,15 @@
         <div class="callback__right-column">
             <form action="/" method="POST" class="callback__form" data-parsley-validate>
                 <div class="callback__form-input-group">
-                    <input type="text" class="callback__form-input" name="name" placeholder="Имя и фамилия" required>
+                    <input type="text" class="callback__form-input" name="name" placeholder="Имя и фамилия" required />
                 </div>
                 <div class="callback__form-input-group">
-                    <input type="email" class="callback__form-input" name="email" placeholder="Электронная почта" required>
+                    <input type="email" class="callback__form-input" name="email" placeholder="Электронная почта" required />
                 </div>
                 <div class="callback__form-input-group">
                     <textarea class="callback__form-textarea" name="comment" placeholder="Комментарий" required></textarea>
                 </div>
-                <span class="callback__form-policy">
-                    Я согласен с <a href="#">политикой конфиденциальности</a>
-                </span>
+                <span class="callback__form-policy"> Я согласен с <a href="#">политикой конфиденциальности</a> </span>
                 <button type="submit" class="btn-with-corners callback__form-submit">
                     Узнать стоимость
                 </button>
@@ -38,7 +68,6 @@
         </div>
     </div>
 </section>
-
 
 <section class="documents">
     <h2 class="documents__heading">

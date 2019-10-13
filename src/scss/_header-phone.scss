@@ -1,0 +1,30 @@
+.header-phone {
+    align-self: center;
+    display: block;
+    margin-right: 30px;
+    @include breakpoint(tablet) {
+        display: none;
+    }
+    > svg {
+        display: block;
+        fill: white;
+        transition: fill .2s;
+    }
+
+    .no-touch &:hover,
+    .touch &:active {
+        > svg {
+            fill: $red !important;
+        }
+    }
+
+    .page-header.fixed &,
+    .page-header--white &,
+    .page-header--light &,
+    .page-header:hover &,
+    .search-open & {
+        > svg {
+            fill: black;
+        }
+    }
+}

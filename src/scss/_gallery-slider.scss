@@ -1,6 +1,9 @@
 .gallery-slider {
     margin-bottom: 20px;
     margin-top: 30px;
+    &--limited-width {
+        max-width: 1024px;
+    }
     .swiper-slide {
         height: auto;
         box-sizing: border-box;
@@ -131,11 +134,13 @@
         visibility: hidden;
         pointer-events: none;
         transition: opacity .2s, visibility 0s linear .2s;
-        .swiper-slide-thumb-active & {
-            opacity: 1;
-            visibility: visible;
-            transition: all .2s;
-        }
+        
+    }
+
+    .swiper-slide-thumb-active &::after {
+        opacity: 1;
+        visibility: visible;
+        transition: all .2s;
     }
 }
 

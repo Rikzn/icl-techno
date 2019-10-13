@@ -89,6 +89,9 @@
                     />
                     <path d="M7 10.12a5.06 5.06 0 10-5.06-5.06A5.05 5.05 0 007 10.12zm0-7.55a2.49 2.49 0 11-2.5 2.49A2.5 2.5 0 017 2.57z" />
                 </symbol>
+                <symbol viewBox="0 0 18 18" id="phone" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 12.5a11.36 11.36 0 01-3.57-.57 1 1 0 00-1 .25l-2.2 2.2a15.1 15.1 0 01-6.61-6.59l2.2-2.2a1 1 0 00.25-1A11.36 11.36 0 015.5 1a1 1 0 00-1-1H1a1 1 0 00-1 1 17 17 0 0017 17 1 1 0 001-1v-3.5a1 1 0 00-1-1z" />
+                </symbol>
                 <symbol viewBox="0 0 79 79" id="play" xmlns="http://www.w3.org/2000/svg">
                     <path d="M39.5 0A39.5 39.5 0 1079 39.5 39.49 39.49 0 0039.5 0zM35 48.5v-18l13 9z" />
                     <path fill="currentColor" d="M35 39.5v9l13-9-13-9v9z" />
@@ -136,7 +139,7 @@
         </div>
 
         <div class="page-content">
-            <header class="page-header js-page-header     page-header--white ">
+            <header class="page-header js-page-header  page-header--white   ">
                 <div class="container container--flex">
                     <div class="header-logo">
                         <svg width="82" height="82" aria-hidden="true" class="icon-logo">
@@ -146,7 +149,7 @@
                     <div class="burger-menu js-burger-menu">
                         <nav class="main-nav">
                             <ul class="main-nav__list">
-                                <li class="main-nav__list-item ">
+                                <li class="main-nav__list-item main-nav__list-item--has-submenu ">
                                     <a href="#" class="main-nav__link js-submenu-link">
                                         О компании
                                         <svg width="10" height="6" aria-hidden="true" class="icon-arrow-down">
@@ -194,7 +197,7 @@
                                 <li class="main-nav__list-item">
                                     <a href="#" class="main-nav__link">Решения</a>
                                 </li>
-                                <li class="main-nav__list-item  active ">
+                                <li class="main-nav__list-item main-nav__list-item--has-submenu  active ">
                                     <a href="#" class="main-nav__link js-submenu-link">
                                         Продукция
                                         <svg width="10" height="6" aria-hidden="true" class="icon-arrow-down">
@@ -342,9 +345,15 @@
                         </ul>
                     </div>
 
-                    <a href="tel:+78435149022" class="header-phone-link">+7 (843) 514-90-22</a>
+                    <!-- <a href="tel:+78435149022" class="header-phone-link">+7 (843) 514-90-22</a> -->
 
                     <a href="#" class="btn-with-corners btn-with-corners--white btn-with-corners--header-btn">Написать нам</a>
+
+                    <a href="#" class="header-phone">
+                        <svg width="18" height="18" aria-hidden="true" class="icon-phone">
+                            <use xlink:href="#phone" />
+                        </svg>
+                    </a>
 
                     <div class="header-search">
                         <a href="#" class="header-search__btn js-search-btn">

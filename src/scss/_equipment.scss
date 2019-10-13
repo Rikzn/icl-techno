@@ -3,6 +3,16 @@
     @include breakpoint(tablet) {
         margin: 80px 0;
     }
+
+    @include breakpoint(small-tablet) {
+        margin: 50px 0;
+    }
+
+    &--without-tabs {
+        .section-header {
+            margin-bottom: 100px;
+        }
+    }
 }
 
 .equipment__top-row {
