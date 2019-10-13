@@ -50,7 +50,6 @@
         transform: translateZ(0);
         backface-visibility: hidden;
         transition: background-color .2s, box-shadow .2s;
-        
     }
 
     &--dark {
@@ -64,7 +63,7 @@
     &.fixed,
     &.search-open,
     &--white,
-    .no-touch &:hover {
+    .no-touch &:not(.page-header--dark):not(.page-header--light):hover {
         border-bottom: 1px solid #D0D0D0;
         border-top: 1px solid #fff;
         position: fixed;

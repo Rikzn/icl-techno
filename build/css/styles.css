@@ -779,7 +779,7 @@ img {
   .page-header--light {
     border-bottom: 1px solid #D0D0D0; }
   .page-header.fixed, .page-header.search-open, .page-header--white,
-  .no-touch .page-header:hover {
+  .no-touch .page-header:not(.page-header--dark):not(.page-header--light):hover {
     border-bottom: 1px solid #D0D0D0;
     border-top: 1px solid #fff;
     position: fixed;
@@ -787,7 +787,7 @@ img {
     left: 0;
     width: 100%; }
     .page-header.fixed::before, .page-header.search-open::before, .page-header--white::before,
-    .no-touch .page-header:hover::before {
+    .no-touch .page-header:not(.page-header--dark):not(.page-header--light):hover::before {
       background-color: white; }
 
 .page-content {
@@ -1258,6 +1258,9 @@ a.section-header:link, a.section-header:visited {
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
     border-top: 4px solid currentColor; }
+    @media only screen and (max-width: 1080px) {
+      .main-nav__list-item--has-submenu .main-nav__link::before {
+        display: none; } }
   @media only screen and (max-width: 1080px) {
     .main-nav__link {
       margin: 0;
@@ -1309,7 +1312,7 @@ a.section-header:link, a.section-header:visited {
   .page-header.search-open .main-nav__link,
   .page-header--light .main-nav__link,
   .page-header--white .main-nav__link,
-  .page-header:hover .main-nav__link {
+  .page-header:not(.page-header--dark):not(.page-header--light):hover .main-nav__link {
     color: black; }
     .page-header.fixed .main-nav__link:link, .page-header.fixed .main-nav__link:visited,
     .page-header.search-open .main-nav__link:link,
@@ -1318,8 +1321,8 @@ a.section-header:link, a.section-header:visited {
     .page-header--light .main-nav__link:visited,
     .page-header--white .main-nav__link:link,
     .page-header--white .main-nav__link:visited,
-    .page-header:hover .main-nav__link:link,
-    .page-header:hover .main-nav__link:visited {
+    .page-header:not(.page-header--dark):not(.page-header--light):hover .main-nav__link:link,
+    .page-header:not(.page-header--dark):not(.page-header--light):hover .main-nav__link:visited {
       color: black; }
 
 .main-nav__submenu {
@@ -1331,7 +1334,7 @@ a.section-header:link, a.section-header:visited {
   border-top: 1px solid #d0d0d0;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.2s, visibility 0s linear 0.2s;
+  transition: opacity 0.2s, border-color .2s, visibility 0s linear 0.2s;
   z-index: 900; }
   @media only screen and (max-width: 1080px) {
     .main-nav__submenu {
@@ -1356,7 +1359,8 @@ a.section-header:link, a.section-header:visited {
     top: 0;
     position: absolute;
     background-color: #fff;
-    z-index: 10; }
+    z-index: 10;
+    transition: background-color .2s; }
     @media only screen and (max-width: 1080px) {
       .main-nav__submenu::before {
         display: none; } }
@@ -1372,6 +1376,10 @@ a.section-header:link, a.section-header:visited {
     @media only screen and (max-width: 1080px) {
       .main-nav__submenu::after {
         display: none; } }
+  .page-header--dark:not(.fixed) .main-nav__submenu {
+    border-top: 1px solid transparent; }
+    .page-header--dark:not(.fixed) .main-nav__submenu::before {
+      background-color: rgba(0, 0, 0, 0.96); }
 
 @-webkit-keyframes fade-in {
   from {
@@ -1430,6 +1438,8 @@ a.section-header:link, a.section-header:visited {
   display: block;
   transition: background-color 0.2s;
   position: relative; }
+  .page-header--dark:not(.fixed) .main-nav__submenu-link {
+    color: white; }
   .main-nav__submenu-link::after {
     content: '';
     position: absolute;
@@ -1449,6 +1459,14 @@ a.section-header:link, a.section-header:visited {
     .main-nav__submenu-list-item.active .main-nav__submenu-link::after,
     .no-touch .main-nav__submenu-link:hover::after,
     .touch .main-nav__submenu-link:active::after {
+      opacity: 1; }
+  .page-header--dark:not(.fixed) .main-nav__submenu-list-item.active .main-nav__submenu-link,
+  .no-touch .page-header--dark:not(.fixed) .main-nav__submenu-link:hover,
+  .touch .page-header--dark:not(.fixed) .main-nav__submenu-link:active {
+    background-color: rgba(61, 61, 61, 0.3); }
+    .page-header--dark:not(.fixed) .main-nav__submenu-list-item.active .main-nav__submenu-link::after,
+    .no-touch .page-header--dark:not(.fixed) .main-nav__submenu-link:hover::after,
+    .touch .page-header--dark:not(.fixed) .main-nav__submenu-link:active::after {
       opacity: 1; }
   @media only screen and (max-width: 1080px) {
     .main-nav__submenu-link {
@@ -3176,7 +3194,7 @@ a.section-header:link, a.section-header:visited {
   .page-header.fixed .header-search__btn > svg,
   .page-header--white .header-search__btn > svg,
   .page-header--light .header-search__btn > svg,
-  .page-header:hover .header-search__btn > svg {
+  .page-header:not(.page-header--dark):not(.page-header--light):hover .header-search__btn > svg {
     fill: black; }
 
 .header-search__dropdown-overlay {
@@ -3354,7 +3372,7 @@ a.section-header:link, a.section-header:visited {
   .page-header.search-open .header-language,
   .page-header--white .header-language,
   .page-header--light .header-language,
-  .no-touch .page-header:hover .header-language {
+  .no-touch .page-header:not(.page-header--dark):not(.page-header--light):hover .header-language {
     color: black; }
     .page-header.fixed .header-language:link, .page-header.fixed .header-language:visited,
     .page-header.search-open .header-language:link,
@@ -3363,8 +3381,8 @@ a.section-header:link, a.section-header:visited {
     .page-header--white .header-language:visited,
     .page-header--light .header-language:link,
     .page-header--light .header-language:visited,
-    .no-touch .page-header:hover .header-language:link,
-    .no-touch .page-header:hover .header-language:visited {
+    .no-touch .page-header:not(.page-header--dark):not(.page-header--light):hover .header-language:link,
+    .no-touch .page-header:not(.page-header--dark):not(.page-header--light):hover .header-language:visited {
       color: black; }
 
 .secondary-nav {
@@ -6888,7 +6906,7 @@ a.section-header:link, a.section-header:visited {
   .page-header.fixed .header-phone > svg,
   .page-header--white .header-phone > svg,
   .page-header--light .header-phone > svg,
-  .page-header:hover .header-phone > svg,
+  .page-header:not(.page-header--dark):not(.page-header--light):hover .header-phone > svg,
   .search-open .header-phone > svg {
     fill: black; }
 

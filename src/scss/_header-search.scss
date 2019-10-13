@@ -49,7 +49,7 @@
     .page-header.fixed &,
     .page-header--white &,
     .page-header--light &,
-    .page-header:hover & {
+    .page-header:not(.page-header--dark):not(.page-header--light):hover & {
         > svg {
             fill: black;
         }

@@ -28,7 +28,7 @@
     .page-header.search-open &,
     .page-header--white &,
     .page-header--light &,
-    .no-touch .page-header:hover & {
+    .no-touch .page-header:not(.page-header--dark):not(.page-header--light):hover & {
         color: black;
         &:link,
         &:visited {
