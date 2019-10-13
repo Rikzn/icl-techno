@@ -1,4 +1,5 @@
-import Swiper from 'swiper/dist/js/swiper.js';
+import Swiper from 'swiper';
+
 
 class MobileSlider {
     constructor(element, breakpoint, options = {}) {

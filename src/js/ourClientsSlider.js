@@ -1,4 +1,5 @@
-import Swiper from 'swiper/dist/js/swiper.js';
+import Swiper from 'swiper';
+
 
 export default function() {
     const slider = document.querySelector('.js-our-clients-slider');

@@ -1,4 +1,5 @@
-import Swiper from 'swiper/dist/js/swiper.js';
+import Swiper from 'swiper';
+
 
 export default function() {
     const equipmentSliders = Array.from(document.querySelectorAll('.js-equipment-slider'));
