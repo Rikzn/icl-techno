@@ -21,6 +21,10 @@ import serialMasking from './serialInputsMasking';
 import documentsSlider from './documentsSlider';
 import formValidation from './formValidation';
 
+window.addEventListener('load', function() {
+    document.body.classList.add('loaded');
+})
+
 document.addEventListener('DOMContentLoaded', function() {
     // Полифилл .contains для IE 11
 

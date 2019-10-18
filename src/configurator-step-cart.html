@@ -1,0 +1,49 @@
+{% set title = "Конфигуратор" %} {% set headerColor = "white" %} {% extends "layout.html" %} {% block content %}
+
+<section class="cart">
+    <h2 class="cart__heading">
+        В корзине 3 конфигурации
+    </h2>
+    <div class="cart__row">
+        <div class="cart__left-column">
+            <ul class="cart__items-list">
+                <li class="cart__items-list-item">
+                    <div class="cart__items-card">
+                        <img src="img/configurator/cart-image.jpg" alt="" class="cart__items-card-image" />
+                        <div class="cart__items-card-info">
+                            <span class="cart__items-card-info-name">
+                                Персональный компьютер SafeRAY S171
+                            </span>
+                            <span class="cart__items-card-info-model">
+                                    151KG/U2362/36263/7LJCVJ/GFGU425
+                            </span>
+
+                            <ul class="cart__items-card-info-specs-list">
+                                <li class="cart__items-card-info-specs-list-item">
+                                    tinyTower 250W/B250
+                                </li>
+                                <li class="cart__items-card-info-specs-list-item">
+                                    i3-7100 (3.9GHz)
+                                </li>
+                                <li class="cart__items-card-info-specs-list-item">
+                                    8 Gb DDR4 / 1Tb HDD / 2Tb HDD
+                                </li>
+                                <li class="cart__items-card-info-specs-list-item">
+                                    0 DVD-RW
+                                </li>
+                            </ul>
+
+                            <a href="#" class="cart__items-card-info-show-all">Показать все</a>
+                        </div>
+                        <div class="cart__items-card-controls">
+
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="cart__right-column"></div>
+    </div>
+</section>
+
+{% endblock %}

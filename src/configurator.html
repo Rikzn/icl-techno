@@ -1,0 +1,74 @@
+{% set title = "Конфигуратор" %} {% set headerColor = "white" %} {% extends "layout.html" %} {% block content %}
+
+<section class="configurator">
+    <div class="configurator__row">
+        <h1 class="configurator__main-heading">
+            Конфигуратор оборудования
+        </h1>
+        <a href="#" class="configurator__has-id">
+            <svg width="16" height="16" aria-hidden="true" class="icon-hash">
+                <use xlink:href="#hash" />
+            </svg>
+            У меня есть артикул
+        </a>
+    </div>
+
+    <div class="configurator__view js-configurator-view">
+        <div class="configurator__view-left-column">
+            <div class="configurator__page">
+                <h2 class="configurator__secondary-heading">
+                    Выберите тип оборудования
+                </h2>
+                <ul class="configurator__equipment-type-list">
+                    <li class="configurator__equipment-type-list-item">
+                        <a href="configurator-step-2.html" class="configurator__equipment-type-card">
+                            <div class="configurator__equipment-type-card-icon-container">
+                                <svg width="34" height="68" aria-hidden="true" class="icon-pc">
+                                    <use xlink:href="#pc" />
+                                </svg>
+                            </div>
+
+                            Персональный компьютер
+                        </a>
+                    </li>
+                    <li class="configurator__equipment-type-list-item">
+                        <a href="configurator-step-2.html" class="configurator__equipment-type-card">
+                            <div class="configurator__equipment-type-card-icon-container">
+                                <svg width="62" height="60" aria-hidden="true" class="icon-monitor">
+                                    <use xlink:href="#monitor" />
+                                </svg>
+                            </div>
+                            Моноблок
+                        </a>
+                    </li>
+                    <li class="configurator__equipment-type-list-item">
+                        <a href="configurator-step-2.html" class="configurator__equipment-type-card">
+                            <div class="configurator__equipment-type-card-icon-container">
+                                <svg width="80" height="56" aria-hidden="true" class="icon-notebook">
+                                    <use xlink:href="#notebook" />
+                                </svg>
+                            </div>
+                            Ноутбук
+                        </a>
+                    </li>
+                    <li class="configurator__equipment-type-list-item">
+                        <a href="configurator-step-2.html" class="configurator__equipment-type-card">
+                            <div class="configurator__equipment-type-card-icon-container">
+                                <svg width="48" height="66" aria-hidden="true" class="icon-mobile">
+                                    <use xlink:href="#mobile" />
+                                </svg>
+                            </div>
+                            Планшет
+                        </a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+        <div class="configurator__view-right-column">
+           
+        </div>
+    </div>
+</section>
+
+{% endblock %}
