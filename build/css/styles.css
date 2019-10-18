@@ -1,5 +1,5 @@
 /**
- * Swiper 5.0.4
+ * Swiper 5.1.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * http://swiperjs.com
  *
@@ -7,7 +7,7 @@
  *
  * Released under the MIT License
  *
- * Released on: September 30, 2019
+ * Released on: October 16, 2019
  */
 @font-face {
   font-family: 'swiper-icons';
@@ -162,7 +162,8 @@
 .swiper-button-prev:after,
 .swiper-button-next:after {
   font-family: swiper-icons;
-  font-size: var(--swiper-navigation-size); }
+  font-size: var(--swiper-navigation-size);
+  text-transform: none !important; }
 
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
@@ -6532,40 +6533,39 @@ a.section-header:link, a.section-header:visited {
       font-size: 14px;
       margin-bottom: 10px; } }
 
-.catalog__product-specs-list {
+.catalog__product-specs-list ul {
   list-style: none; }
-
-.catalog__product-specs-list-item {
-  padding-left: 25px;
-  font-size: 16px;
-  position: relative;
-  font-family: "Proxima Nova", sans-serif;
-  margin-bottom: 10px;
-  color: #bababa; }
-  @media only screen and (max-width: 768px) {
-    .catalog__product-specs-list-item {
-      font-size: 16px; } }
-  @media only screen and (max-width: 576px) {
-    .catalog__product-specs-list-item {
-      font-size: 14px;
-      margin-bottom: 5px;
-      padding-left: 20px; } }
-  .catalog__product-specs-list-item:last-child {
-    margin-bottom: 0; }
-  .catalog__product-specs-list-item::before {
-    content: '';
-    width: 8px;
-    height: 8px;
-    background-color: #FB0D1B;
-    position: absolute;
-    left: 0;
-    top: 5px;
-    border-radius: 50%; }
+  .catalog__product-specs-list ul li {
+    padding-left: 25px;
+    font-size: 16px;
+    position: relative;
+    font-family: "Proxima Nova", sans-serif;
+    margin-bottom: 10px;
+    color: #bababa; }
+    @media only screen and (max-width: 768px) {
+      .catalog__product-specs-list ul li {
+        font-size: 16px; } }
     @media only screen and (max-width: 576px) {
-      .catalog__product-specs-list-item::before {
-        width: 6px;
-        height: 6px;
-        top: 5px; } }
+      .catalog__product-specs-list ul li {
+        font-size: 14px;
+        margin-bottom: 5px;
+        padding-left: 20px; } }
+    .catalog__product-specs-list ul li:last-child {
+      margin-bottom: 0; }
+    .catalog__product-specs-list ul li::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background-color: #FB0D1B;
+      position: absolute;
+      left: 0;
+      top: 5px;
+      border-radius: 50%; }
+      @media only screen and (max-width: 576px) {
+        .catalog__product-specs-list ul li::before {
+          width: 6px;
+          height: 6px;
+          top: 5px; } }
 
 .catalog__product-corner {
   width: 120px;
