@@ -1,6 +1,14 @@
 import 'parsleyjs';
+import Inputmask from 'inputmask';
 
 export default function() {
+
+    const phoneNumbers = Array.from(document.querySelectorAll('.js-phone-input'));
+
+    phoneNumbers.forEach(input => {
+        Inputmask({ mask: '+7 (999) 999-99-99' }).mask(input);
+    });
+
     window.Parsley.addValidator('phone', {
         requirementType: 'string',
         validateString: function(value) {

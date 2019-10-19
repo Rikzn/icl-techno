@@ -37,6 +37,7 @@
 
     margin-right: 40px;
     white-space: nowrap;
+    transition: color .2s;
     @include noHighlight();
     &:first-child {
         padding-left: $desktop-content-padding;
@@ -67,6 +68,11 @@
     &:link,
     &:visited {
         color: #737373;
+    }
+
+    .no-touch &:hover,
+    .touch &:active {
+        color: black;
     }
 
     &-text {
