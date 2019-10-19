@@ -11,9 +11,12 @@
 .configurator__main-heading {
     font-size: 40px;
     margin-bottom: 70px;
+    @include breakpoint(laptop) {
+        font-size: 32px;
+    }
     @include breakpoint(mobile) {
-        font-size: 28px;
-        margin-bottom: 40px;
+        font-size: 20px;
+        margin-bottom: 22px;
     }
 }
 
@@ -21,8 +24,8 @@
     font-size: 24px;
     margin-bottom: 40px;
     @include breakpoint(mobile) {
-        font-size: 20px;
-        margin-bottom: 20px;
+        font-size: 18px;
+        margin-bottom: 10px;
     }
 }
 
@@ -42,6 +45,9 @@
     border-radius: 2px;
     padding: 10px;
     transition: border-color 0.2s, color 0.2s;
+    @include breakpoint(mobile) {
+        display: none;
+    }
     .no-touch &:hover,
     .touch &:active {
         border-color: $red;
@@ -60,17 +66,35 @@
 
 .configurator__view {
     display: flex;
+    @include breakpoint(mobile) {
+        flex-direction: column;
+    }
 }
 
 .configurator__view-left-column {
     margin-right: 90px;
     flex-grow: 1;
     width: 50%;
+    @include breakpoint(laptop) {
+        margin-right: 50px;
+    }
+    @include breakpoint(mobile) {
+        margin-right: 0;
+        width: 100%;
+        flex-grow: 0;
+        margin-bottom: 60px;
+    }
 }
 
 .configurator__view-right-column {
     width: 420px;
     flex-shrink: 0;
+    @include breakpoint(laptop) {
+        width: 350px;
+    }
+    @include breakpoint(mobile) {
+        width: 100%;
+    }
 }
 
 .configurator__equipment-type-list {
@@ -84,6 +108,9 @@
     width: 50%;
     border-bottom: 1px solid #d6d6d6;
     border-right: 1px solid #d6d6d6;
+    @include breakpoint(mobile) {
+        width: 100%;
+    }
 }
 
 .configurator__equipment-type-card {
@@ -97,6 +124,12 @@
     padding: 20px;
     padding-top: 30px;
     transition: color 0.2s;
+    @include breakpoint(mobile) {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20px 15px;
+    }
     &:link,
     &:visited {
         color: black;
@@ -119,6 +152,16 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
+    @include breakpoint(mobile) {
+        margin-bottom: 0;
+        margin-right: 20px;
+        width: 60px;
+        height: 60px;
+        > svg {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
     > svg {
         fill: black;
         transition: fill 0.2s;
@@ -128,9 +171,12 @@
 
 .configurator__equipment-item-card {
     padding: 25px 15px;
-    transition: color .2s;
+    transition: color 0.2s;
     display: flex;
     align-items: flex-start;
+    @include breakpoint(mobile) {
+        min-height: 105px;
+    }
     &:link,
     &:visited {
         color: black;
@@ -140,8 +186,7 @@
     .touch &:active {
         .configurator__equipment-item-card-name {
             color: $red;
-        }   
-       
+        }
     }
 }
 
@@ -152,12 +197,24 @@
     height: 100px;
     @include objectFitContain();
     margin-right: 20px;
+    @include breakpoint(laptop) {
+        margin-right: 15px;
+    }
+    @include breakpoint(mobile) {
+        width: 60px;
+        height: 60px;
+        margin-right: 8px;
+    }
 }
 
 .configurator__equipment-item-card-name {
     font-size: 16px;
     margin-right: 30px;
-    transition: color .2s;
+    transition: color 0.2s;
+    @include breakpoint(laptop) {
+        font-size: 14px;
+    }
+   
 }
 
 .configurator__equipment-item-card-price {
@@ -165,11 +222,16 @@
     display: flex;
     flex-direction: column;
     text-align: right;
+   
 }
 
 .configurator__equipment-item-card-price-usd {
     font-size: 16px;
     white-space: nowrap;
+    @include breakpoint(laptop) {
+        font-size: 14px;
+    }
+    
 }
 
 .configurator__equipment-item-card-price-rub {
@@ -196,7 +258,10 @@
     align-items: center;
     justify-content: space-between;
     padding: 15px 20px;
-    transition: color .2s;
+    transition: color 0.2s;
+    @include breakpoint(mobile) {
+        padding: 12px 20px;
+    }
     &:link,
     &:visited {
         color: black;
@@ -210,29 +275,40 @@
 
 .configurator__equipment-simple-list-card-name {
     font-size: 16px;
+    @include breakpoint(laptop) {
+        font-size: 14px;
+    }
+ 
 }
 
 .configurator__equipment-simple-list-card-price {
     display: block;
-    text-align: center;
+    
 }
 
 .configurator__equipment-simple-list-card-price-usd {
     font-size: 16px;
     color: black;
     border-bottom: 1px dotted #d6d6d6;
+    @include breakpoint(laptop) {
+        font-size: 14px;
+    }
+  
 }
 
 .configurator__equipment-simple-list-card-price-rub {
     font-size: 10px;
     color: #939393;
     margin-top: 5px;
+   
+   
 }
 
 .configurator__equipment-simple-list-card-price-usd,
 .configurator__equipment-simple-list-card-price-rub {
     display: block;
-    text-align: center;
+    text-align: right;
+    white-space: nowrap;
 }
 
 .configurator__your-config-model {
@@ -246,6 +322,10 @@
     margin-right: 15px;
     flex-shrink: 0;
     @include objectFitContain();
+    @include breakpoint(laptop) {
+        width: 80px;
+        height: 80px;
+    }
 }
 
 .configurator__your-config-model-brief {
@@ -259,6 +339,12 @@
     font-weight: 700;
     font-size: 20px;
     justify-content: space-between;
+    @include breakpoint(laptop) {
+        font-size: 18px;
+    }
+    // @include breakpoint(mobile) {
+    //     font-size: 14px;
+    // }
 }
 
 .configurator__your-config-model-remove-btn {
@@ -266,7 +352,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    flex-shrink: 0;
+    margin-left: 15px;
     .no-touch &:hover,
     .touch &:active {
         > svg {
@@ -319,35 +406,63 @@
     font-size: 16px;
     line-height: 20px;
     margin-top: 10px;
+    @include breakpoint(laptop) {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    @include breakpoint(mobile) {
+        font-size: 12px;
+        line-height: 15px;
+    }
 }
 
 .configurator__your-config-selected-components {
     margin-top: 24px;
     position: relative;
+    height: 260px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    
+    padding-right: 10px;
+    padding-left: 20px;
+    margin-left: -20px;
+    @include breakpoint(mobile) {
+        height: auto;
+        padding-right: 0;
+    }
+    .ps__rail-x,
+    .ps__rail-y {
+        opacity: 1;
+    }
+
+    .ps__rail-y {
+        width: 4px !important;
+        background-color: #F3F3F3 !important;
+        opacity: 1 !important;
+    }
+
+    .ps__thumb-y {
+        width: 4px;
+        right: 0;
+    }
+
+   
+
+    
+
+    .ps__thumb-x,
+    .ps__thumb-y {
+        border-radius: 0;
+        background-color: #c4c4c4;
+    }
+
+    .ps__rail-y.ps--clicking .ps__thumb-y,
+    .ps__rail-y:focus > .ps__thumb-y,
+    .ps__rail-y:hover > .ps__thumb-y {
+        width: 4px;
+        background-color: #c4c4c4;
+    }
 }
-
-// .configurator__your-config-selected-components-current-marker {
-//     position: absolute;
-//     top: 2px;
-//     right: 100%;
-//     margin-right: -2px;
-
-//     width: 20px;
-//     height: 20px;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: center;
-//     transform: translateY(50px);
-//     transition: transform .3s;
-//     &::after {
-//         content: '';
-//         border-style: solid;
-//         border-width: 4px 4px 4px 0;
-
-//         border-color: transparent $red transparent transparent;
-//     }
-// }
 
 .configurator__your-config-selected-components-table {
     width: 100%;
@@ -453,6 +568,9 @@
                 margin-right: 2px;
                 top: 50%;
                 transform: translateY(-50%);
+                @include breakpoint(mobile) {
+                    transform: translateY(-50%) scaleX(-1);
+                }
             }
             th {
                 font-weight: 700;
@@ -562,6 +680,7 @@
 .configurator__bottom-panel {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     padding: 25px 0;
     border-top: 1px solid #d1d1d1;
     margin-top: 22px;
@@ -574,6 +693,12 @@
     align-items: center;
     margin-right: 25px;
     transition: color 0.2s;
+    @include breakpoint(mobile) {
+        width: 50%;
+        margin: 0;
+        margin-bottom: 20px;
+        padding-right: 20px;
+    }
     .no-touch &:hover,
     .touch &:active {
         color: $red;
@@ -591,16 +716,22 @@
     }
 }
 
-.configurator__bottom-panel-put-request-btn {
+
+.configurator__bottom-panel-cart-buttons {
     margin-left: auto;
-    margin-right: 10px;
     align-self: stretch;
+    display: flex;
+    @include breakpoint(mobile) {
+        width: 100%;
+        margin: 0;
+        margin-top: 20px;
+    }
+    
 }
 
 .configurator__bottom-panel-go-to-cart {
     position: relative;
     background-color: $red;
-
     color: white;
     display: flex;
     flex-direction: column;
@@ -610,13 +741,14 @@
     transition: 0.2s;
     clip-path: polygon(0px 10px, 10px 0px, 100% 0px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0% 100%);
     transition: clip-path 0.3s, background-color 0.3s;
-
     -webkit-tap-highlight-color: transparent;
-
+    margin-left: 10px;
+    // @include breakpoint(mobile) {
+    //     margin-left: auto;
+    // }
     &::before {
         content: '';
         position: absolute;
-
         top: 0;
         left: 0;
         width: 100%;
@@ -659,7 +791,6 @@
     animation-timing-function: ease-in-out;
     animation-play-state: paused;
 }
-
 
 .slide-up {
     animation-name: slide-up;
@@ -705,6 +836,17 @@
     z-index: 1000;
     padding: 32px;
     padding-top: 28px;
+    transition: opacity .2s, visibility 0s linear .2s;
+    opacity: 0;
+    visibility: visible;
+    &--shown {
+        opacity: 1;
+        visibility: visible;
+        transition: all .2s;
+    }
+    @include breakpoint(tablet) {
+        display: none;
+    }
 }
 
 .configurator__added-to-cart-top-row {
@@ -791,58 +933,6 @@
     @include objectFitContain();
 }
 
-// .configurator__amount-btn {
-//     flex-shrink: 0;
-//     display: flex;
-//     align-items: center;
-
-//     padding: 12px 16px;
-//     color: $red;
-//     background-color: $red;
-//     clip-path: polygon(0px 10px, 10px 0px, 100% 0px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0% 100%);
-//     position: relative;
-//     &::before {
-//         content: '';
-//         position: absolute;
-
-//         right: 0;
-//         bottom: 0;
-//         left: 0;
-//         top: 0;
-//         background-color: #fff;
-//         clip-path: polygon(0px 10px, 10px 0px, 100% 0px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0% 100%);
-//         transform: scaleX(0.975) scaleY(0.94);
-//     }
-// }
-
-// .configurator__amount-btn-decrease,
-// .configurator__amount-btn-increase {
-//     width: 16px;
-//     height: 16px;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: center;
-//     position: relative;
-//     z-index: 15;
-//     .no-touch &:hover,
-//     .touch &:active {
-//         > svg {
-//             fill: $red-hover;
-//         }
-//     }
-//     > svg {
-//         fill: $red;
-//         transition: fill 0.2s;
-//     }
-// }
-
-// .configurator__amount-btn-number {
-//     margin: 0 18px;
-//     position: relative;
-//     z-index: 15;
-// }
-
 .configurator__added-to-cart-buttons {
     display: flex;
     align-items: center;
@@ -866,7 +956,7 @@
 
     transition: 0.2s;
     clip-path: polygon(0px 16px, 16px 0px, 100% 0px, 100% calc(100% - 16px), calc(100% - 16px) 100%, 0% 100%);
-    transition: clip-path 0.2s, background-color 0.2s, color .2s;
+    transition: clip-path 0.2s, background-color 0.2s, color 0.2s;
     white-space: nowrap;
     -webkit-tap-highlight-color: transparent;
 
@@ -890,7 +980,7 @@
         flex-shrink: 0;
         position: relative;
         z-index: 10;
-        transition: fill .2s;
+        transition: fill 0.2s;
     }
 
     &--new-config {

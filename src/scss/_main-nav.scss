@@ -606,6 +606,7 @@
     }
 
     @include breakpoint(mobile) {
+        text-align: left;
         .main-nav__submenu-content--standalone & {
             // display: none;
             font-size: 12px;

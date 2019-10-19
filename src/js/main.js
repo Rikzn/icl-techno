@@ -20,6 +20,7 @@ import ourHistory from './ourHistory';
 import serialMasking from './serialInputsMasking';
 import documentsSlider from './documentsSlider';
 import formValidation from './formValidation';
+import configurator from './configurator';
 
 window.addEventListener('load', function() {
     document.body.classList.add('loaded');
@@ -35,6 +36,25 @@ document.addEventListener('DOMContentLoaded', function() {
     // Полифилл для CSS свойства ObjectFit (заполнение контейнера изображением)
     
     objectFitImages();
+
+
+    // Полифилл для метода element.matches();
+
+    if (!Element.prototype.matches) {
+        Element.prototype.matches = Element.prototype.matchesSelector || Element.prototype.webkitMatchesSelector || Element.prototype.mozMatchesSelector || Element.prototype.msMatchesSelector;
+    }
+
+    // Полифилл метода element.closest();
+
+    (function(ELEMENT) {
+        ELEMENT.matches = ELEMENT.matches || ELEMENT.mozMatchesSelector || ELEMENT.msMatchesSelector || ELEMENT.oMatchesSelector || ELEMENT.webkitMatchesSelector;
+        ELEMENT.closest = ELEMENT.closest || function closest(selector) {
+            if (!this) return null;
+            if (this.matches(selector)) return this;
+            if (!this.parentElement) {return null}
+            else return this.parentElement.closest(selector)
+          };
+    }(Element.prototype));
 
     // Определение тач устройств
 
@@ -134,5 +154,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Валидация форм 
 
     formValidation();
+
+    // Скрипты конфигуратора
+
+    configurator();
 
 });

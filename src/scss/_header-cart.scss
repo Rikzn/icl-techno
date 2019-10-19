@@ -1,0 +1,56 @@
+.header-cart {
+    margin-right: 30px;
+    align-self: center;
+}
+
+
+.header-cart__btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: color .2s;
+    @include noHighlight();
+    &:link,
+    &:visited {
+        color: black;
+    }
+
+    .no-touch &:hover,
+    .touch &:active {
+        color: $red;
+    }
+    > svg {
+        fill: currentColor;
+    }
+}
+
+
+.header-cart__btn-amount {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -9px;
+    margin-right: -9px;
+    color: white;
+    width: 18px;
+    height: 18px;
+    background-color: $red;
+    border-radius: 50%;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .2s, visibility 0s linear .2s;
+
+    &--shown {
+        opacity: 1;
+        visibility: visible;
+        transition: all .2s;
+    }
+}

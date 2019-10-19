@@ -29,6 +29,11 @@
                     />
                 </symbol>
                 <symbol viewBox="0 0 18 18" id="cart-edit" xmlns="http://www.w3.org/2000/svg"><path d="M17.7 4a1 1 0 000-1.4L15.4.3a1 1 0 00-1.4 0L12.1 2 16 6zM0 14.3V18h3.8l11-11-3.7-3.8z" /></symbol>
+                <symbol viewBox="0 0 20 20" id="cart-header" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M16 16a2 2 0 11-2 2 2 2 0 012-2zM0 0h3.3l1 2H19a1 1 0 011 1 1.3 1.3 0 01-.1.5L16.3 10a2 2 0 01-1.8 1H7.2l-.9 1.6v.1a.3.3 0 00.2.3H18v2H6a2 2 0 01-2-2 2 2 0 01.2-1l1.4-2.4L2 2H0zm6 16a2 2 0 11-2 2 2 2 0 012-2zm9-7l2.8-5H5l2.4 5z"
+                    />
+                </symbol>
                 <symbol viewBox="0 0 14 18" id="cart-remove" xmlns="http://www.w3.org/2000/svg"><path d="M14 1h-3.5l-1-1h-5l-1 1H0v2h14zM1 16a2 2 0 002 2h8a2 2 0 002-2V4H1z" /></symbol>
                 <symbol viewBox="0 0 8.2 14.9" id="configurator-next" xmlns="http://www.w3.org/2000/svg"><path d="M0 14l.8.9 7-7 .4-.4-.4-.5-7-7-.8.8 6.6 6.6z" /></symbol>
                 <symbol viewBox="0 0 8.2 14.9" id="configurator-prev" xmlns="http://www.w3.org/2000/svg"><path d="M8.2.8L7.4 0l-7 7-.4.4.4.4 7 7 .8-.7-6.6-6.7L8.2.8z" /></symbol>
@@ -78,9 +83,9 @@
                     <path d="M60.3 4.47H6.7A2.23 2.23 0 004.46 6.7v34.62a1.12 1.12 0 001.12 1.11h55.83a1.12 1.12 0 001.12-1.11V6.7a2.23 2.23 0 00-2.23-2.23zm0 35.73H6.7V6.7h53.6zm-27.92 4.47h2.23v2.23h-2.23z" />
                 </symbol>
                 <symbol viewBox="0 0 80 80" id="laptop" xmlns="http://www.w3.org/2000/svg">
-                    <path class="atcls-3" d="M70.88 16.57H9.13a2 2 0 00-2 2v36.5a2 2 0 002 2h61.75a2 2 0 002-2V18.55a2 2 0 00-2-1.98zm.26 38.48a.27.27 0 01-.26.27H9.13a.27.27 0 01-.27-.27v-36.5a.27.27 0 01.27-.27h61.75a.27.27 0 01.26.27z" />
+                    <path class="aucls-3" d="M70.88 16.57H9.13a2 2 0 00-2 2v36.5a2 2 0 002 2h61.75a2 2 0 002-2V18.55a2 2 0 00-2-1.98zm.26 38.48a.27.27 0 01-.26.27H9.13a.27.27 0 01-.27-.27v-36.5a.27.27 0 01.27-.27h61.75a.27.27 0 01.26.27z" />
                     <path
-                        class="atcls-3"
+                        class="aucls-3"
                         d="M78.72 58.31h-2v-40.7a4.89 4.89 0 00-4.89-4.89H8.19a4.89 4.89 0 00-4.89 4.89v40.7h-2A1.28 1.28 0 000 59.6v3.53a4.15 4.15 0 004.16 4.15h71.68A4.15 4.15 0 0080 63.13V59.6a1.28 1.28 0 00-1.28-1.29zM5.86 17.61a2.33 2.33 0 012.33-2.32h63.62a2.33 2.33 0 012.33 2.32v40.7H5.86zm37.91 43.27v.67a.55.55 0 01-.55.55h-6.44a.55.55 0 01-.55-.55v-.67h7.54zm33.66 2.25a1.59 1.59 0 01-1.59 1.58H4.16a1.59 1.59 0 01-1.59-1.58v-2.25h32v.67a2.26 2.26 0 002.26 2.26h6.44a2.26 2.26 0 002.26-2.26v-.67h32z"
                     />
                 </symbol>
@@ -500,6 +505,17 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="header-cart">
+                        <a href="#" class="header-cart__btn">
+                            <svg width="20" height="20" aria-hidden="true" class="icon-cart-header">
+                                <use xlink:href="#cart-header" />
+                            </svg>
+                            <span class="header-cart__btn-amount header-cart__btn-amount--shown">
+                                2
+                            </span>
+                        </a>
                     </div>
 
                     <a href="#" class="header-language">
