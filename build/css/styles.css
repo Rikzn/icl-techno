@@ -1748,7 +1748,10 @@ a.section-header:link, a.section-header:visited {
   display: flex;
   flex-direction: column;
   z-index: 2;
-  color: white; }
+  color: white;
+  pointer-events: none; }
+  .intro-slider__slide-content a {
+    pointer-events: initial; }
 
 .intro-slider__slide-bg-content {
   position: absolute;
