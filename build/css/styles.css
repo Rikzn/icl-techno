@@ -7117,22 +7117,24 @@ a.section-header:link, a.section-header:visited {
 .specs__table table {
   max-width: 1024px;
   width: 100%;
-  border-collapse: collapse; }
+  border-collapse: collapse;
+  border: none;
+  padding: 0; }
   @media only screen and (max-width: 768px) {
     .specs__table table {
       display: block; } }
   @media only screen and (max-width: 768px) {
     .specs__table table thead, .specs__table table tbody, .specs__table table tr, .specs__table table th, .specs__table table td {
       display: block; } }
-  .specs__table table th {
+  .specs__table table th, .specs__table table td:first-child {
     font-weight: 400;
     display: flex;
     align-items: baseline; }
     @media only screen and (max-width: 768px) {
-      .specs__table table th {
+      .specs__table table th, .specs__table table td:first-child {
         font-weight: 700;
         margin-bottom: 4px; } }
-    .specs__table table th::after {
+    .specs__table table th::after, .specs__table table td:first-child::after {
       content: '';
       height: 1px;
       width: 50px;
@@ -7141,14 +7143,15 @@ a.section-header:link, a.section-header:visited {
       margin-right: 10px;
       background-color: #e6e6e6; }
       @media only screen and (max-width: 768px) {
-        .specs__table table th::after {
+        .specs__table table th::after, .specs__table table td:first-child::after {
           display: none; } }
   .specs__table table td,
   .specs__table table th {
     text-align: left;
     font-family: "Proxima Nova", sans-serif;
     font-size: 16px;
-    line-height: 22px; }
+    line-height: 22px;
+    border: none; }
   .specs__table table .specs__table-item {
     display: block; }
     .specs__table table .specs__table-item:last-child {
@@ -8512,6 +8515,9 @@ a.section-header:link, a.section-header:visited {
     opacity: 1;
     visibility: visible;
     transition: all .2s; }
+
+body.is-admin .block-wrapper:first-child {
+  margin-top: 100px; }
 
 body.is-admin .block-wrapper .default-content > h2, body.is-admin .block-wrapper .default-content > h3, body.is-admin .block-wrapper .default-content > h4, body.is-admin .block-wrapper .default-content > p, body.is-admin .block-wrapper .default-content > blockquote {
   padding-top: 15px;

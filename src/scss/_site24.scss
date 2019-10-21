@@ -1,6 +1,9 @@
 body {
   &.is-admin {
     .block-wrapper {
+      &:first-child {
+        margin-top: 100px;
+      }
       .default-content {
         & > h2, & > h3, & > h4, & > p, & > blockquote {
           padding-top: 15px;
