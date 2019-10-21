@@ -17,7 +17,7 @@ export default function() {
         activeTabIndex = tabButtons.findIndex(element => {
             return element.classList.contains('active');
         });
-        if (activeTabIndex != -1) {
+        if (activeTabIndex === -1) {
             activeTabIndex = 0;
         }
 
