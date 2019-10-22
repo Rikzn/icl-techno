@@ -6451,7 +6451,9 @@ a.section-header:link, a.section-header:visited {
   position: relative;
   color: white;
   padding-top: 80px;
-  padding-bottom: 70px; }
+  padding-bottom: 70px;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 20px; }
   .education:first-child {
     margin-top: 0; }
   @media only screen and (max-width: 1080px) {
@@ -6460,6 +6462,31 @@ a.section-header:link, a.section-header:visited {
   @media only screen and (max-width: 968px) {
     .education {
       margin: 50px 0; } }
+  .education h2 {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 30px; }
+    @media only screen and (max-width: 768px) {
+      .education h2 {
+        font-size: 28px; } }
+  .education ul li, .education ol li {
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 10px; }
+    .education ul li:before, .education ol li:before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background-color: #fb0d1b;
+      position: absolute;
+      left: 0;
+      top: 5px;
+      border-radius: 50%; }
+  .education p, .education ul, .education ol {
+    margin-bottom: 40px; }
+  @media only screen and (max-width: 576px) {
+    .education {
+      font-size: 16px; } }
 
 .education__background {
   position: absolute;
