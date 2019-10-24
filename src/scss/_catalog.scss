@@ -117,6 +117,25 @@
         font-size: 14px;
         margin-bottom: 10px;
     }
+
+    ul, ol {
+        list-style: none;
+        li {
+            padding-left: 25px;
+            position: relative;
+            margin-bottom: 10px;
+            &:before {
+                content: '';
+                width: 8px;
+                height: 8px;
+                background-color: #fb0d1b;
+                position: absolute;
+                left: 0;
+                top: 5px;
+                border-radius: 50%;
+            }
+        }
+    }
 }
 
 .catalog__product-specs-list {
