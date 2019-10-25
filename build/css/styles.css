@@ -6587,7 +6587,9 @@ a.section-header:link, a.section-header:visited {
   position: relative;
   color: white;
   padding-top: 80px;
-  padding-bottom: 70px; }
+  padding-bottom: 70px;
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 20px; }
   .education:first-child {
     margin-top: 0; }
   @media only screen and (max-width: 1080px) {
@@ -6596,6 +6598,31 @@ a.section-header:link, a.section-header:visited {
   @media only screen and (max-width: 968px) {
     .education {
       margin: 50px 0; } }
+  .education h2 {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 30px; }
+    @media only screen and (max-width: 768px) {
+      .education h2 {
+        font-size: 28px; } }
+  .education ul li, .education ol li {
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 10px; }
+    .education ul li:before, .education ol li:before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background-color: #fb0d1b;
+      position: absolute;
+      left: 0;
+      top: 5px;
+      border-radius: 50%; }
+  .education p, .education ul, .education ol {
+    margin-bottom: 40px; }
+  @media only screen and (max-width: 576px) {
+    .education {
+      font-size: 16px; } }
 
 .education__background {
   position: absolute;
@@ -6749,6 +6776,21 @@ a.section-header:link, a.section-header:visited {
     .catalog__product-description {
       font-size: 14px;
       margin-bottom: 10px; } }
+  .catalog__product-description ul, .catalog__product-description ol {
+    list-style: none; }
+    .catalog__product-description ul li, .catalog__product-description ol li {
+      padding-left: 25px;
+      position: relative;
+      margin-bottom: 10px; }
+      .catalog__product-description ul li:before, .catalog__product-description ol li:before {
+        content: '';
+        width: 8px;
+        height: 8px;
+        background-color: #fb0d1b;
+        position: absolute;
+        left: 0;
+        top: 5px;
+        border-radius: 50%; }
 
 .catalog__product-specs-list ul {
   list-style: none; }
@@ -7064,6 +7106,23 @@ a.section-header:link, a.section-header:visited {
   @media only screen and (max-width: 576px) {
     .catalog-item-header__description {
       font-size: 16px; } }
+  .catalog-item-header__description p, .catalog-item-header__description ol, .catalog-item-header__description ul {
+    margin-bottom: 20px; }
+    .catalog-item-header__description p:last-child, .catalog-item-header__description ol:last-child, .catalog-item-header__description ul:last-child {
+      margin-bottom: 0; }
+  .catalog-item-header__description ul li, .catalog-item-header__description ol li {
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 10px; }
+    .catalog-item-header__description ul li:before, .catalog-item-header__description ol li:before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background-color: #fb0d1b;
+      position: absolute;
+      left: 0;
+      top: 5px;
+      border-radius: 50%; }
 
 .catalog-item-header__main-specs {
   margin-top: 90px; }
@@ -7250,12 +7309,32 @@ a.section-header:link, a.section-header:visited {
     .specs {
       margin: 50px 0; } }
 
+.specs__table p, .specs__table ol, .specs__table ul {
+  margin-bottom: 20px; }
+  .specs__table p:last-child, .specs__table ol:last-child, .specs__table ul:last-child {
+    margin-bottom: 0; }
+
+.specs__table ul li, .specs__table ol li {
+  padding-left: 25px;
+  position: relative;
+  margin-bottom: 10px; }
+  .specs__table ul li:before, .specs__table ol li:before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #fb0d1b;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    border-radius: 50%; }
+
 .specs__table table {
   max-width: 1024px;
   width: 100%;
   border-collapse: collapse;
   border: none;
-  padding: 0; }
+  padding: 0;
+  table-layout: fixed; }
   @media only screen and (max-width: 768px) {
     .specs__table table {
       display: block; } }
@@ -7287,7 +7366,8 @@ a.section-header:link, a.section-header:visited {
     font-family: "Proxima Nova", sans-serif;
     font-size: 16px;
     line-height: 22px;
-    border: none; }
+    border: none;
+    padding-bottom: 30px; }
   .specs__table table .specs__table-item {
     display: block; }
     .specs__table table .specs__table-item:last-child {

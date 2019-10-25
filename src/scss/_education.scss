@@ -13,6 +13,39 @@
     @include breakpoint(small-tablet) {
         margin: 50px 0;
     }
+    h2 {
+        font-weight: 700;
+        font-size: 40px;
+        margin-bottom: 30px;
+        @include breakpoint(mobile) {
+            font-size: 28px;
+        }
+    }
+    ul, ol {
+        li {
+            padding-left: 25px;
+            position: relative;
+            margin-bottom: 10px;
+            &:before {
+                content: '';
+                width: 8px;
+                height: 8px;
+                background-color: #fb0d1b;
+                position: absolute;
+                left: 0;
+                top: 5px;
+                border-radius: 50%;
+            }
+        }
+    }
+    p, ul, ol {
+        margin-bottom: 40px;
+    }
+    font-family: $proxima;
+    font-size: 20px;
+    @include breakpoint(small-mobile) {
+        font-size: 16px;
+    }
 }
 
 
