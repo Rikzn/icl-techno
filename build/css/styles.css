@@ -8701,11 +8701,17 @@ a.section-header:link, a.section-header:visited {
   -webkit-tap-highlight-color: transparent; }
   .header-cart__btn:link, .header-cart__btn:visited {
     color: black; }
-  .no-touch .header-cart__btn:hover,
-  .touch .header-cart__btn:active {
+  .no-touch .header-cart__btn:hover > svg,
+  .touch .header-cart__btn:active > svg {
     color: #FB0D1B; }
   .header-cart__btn > svg {
-    fill: currentColor; }
+    fill: white;
+    transition: fill .2s; }
+  .page-header.fixed .header-cart__btn > svg,
+  .page-header--white .header-cart__btn > svg,
+  .page-header--light .header-cart__btn > svg,
+  .page-header:not(.page-header--dark):not(.page-header--light):hover .header-cart__btn > svg {
+    fill: black; }
 
 .header-cart__btn-amount {
   position: absolute;
