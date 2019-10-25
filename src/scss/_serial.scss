@@ -60,7 +60,7 @@
     flex-direction: column;
     margin-top: 10px;
     @include breakpoint(tablet) {
-        margin-bottom: 30px;   
+        margin-bottom: 30px;
     }
     @include breakpoint(mobile) {
         padding: 25px 20px;
@@ -105,7 +105,6 @@
     }
 }
 
-
 .serial__instruction-image {
     width: 100%;
     max-width: 420px;
@@ -114,8 +113,6 @@
     margin: 0 auto;
 }
 
-
-
 .serial__search-results {
     table {
         width: 100%;
@@ -123,7 +120,7 @@
         @include breakpoint(small-tablet) {
             display: block;
         }
-        
+
         th,
         td {
             padding: 12px 12px;
@@ -136,12 +133,11 @@
             }
             th {
                 font-size: 16px;
-                
+
                 font-weight: 700;
-                border-bottom: 1px solid #D0D0D0;
+                border-bottom: 1px solid #d0d0d0;
                 @include breakpoint(small-tablet) {
                     display: none;
-                    
                 }
                 &:first-child {
                     padding-left: 0;
@@ -160,23 +156,19 @@
                 font-family: $proxima;
                 font-size: 16px;
                 line-height: 1.4;
-               
+
                 position: relative;
                 @include breakpoint(small-tablet) {
                     display: block;
                     margin-bottom: 10px;
                     padding: 0;
-                    
                 }
 
-
                 &::before {
-                    content: attr(data-th) ":";
+                    content: attr(data-th) ':';
                     color: black;
                     font-weight: 700;
-                    
-                    
-                  
+
                     margin-bottom: 5px;
                     display: none;
                     @include breakpoint(small-tablet) {
@@ -190,7 +182,7 @@
                     top: 0;
                     width: 100%;
                     height: 100%;
-                    transition: background-color .2s;
+                    transition: background-color 0.2s;
                     z-index: -1;
                     @include breakpoint(small-tablet) {
                         display: none;
@@ -219,12 +211,12 @@
 
             tr {
                 @include breakpoint(small-tablet) {
-                   display: block;
+                    display: block;
                     margin-bottom: 30px;
-                    border: 1px solid #D0D0D0;
-                    
+                    border: 1px solid #d0d0d0;
+
                     padding: 15px;
-                   
+
                     &:last-child {
                         margin-bottom: 0;
                     }
@@ -233,17 +225,12 @@
                 .touch &:active {
                     td {
                         &::after {
-                            background-color: #F2F2F2;
+                            background-color: #f2f2f2;
                         }
-                        
                     }
                 }
             }
         }
-
-
-        
-
 
         a {
             &:link,
@@ -257,4 +244,128 @@
             }
         }
     }
+}
+
+.serial__search-preloader {
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    @include breakpoint(mobile) {
+        font-size: 16px;
+    }
+    
+    // letter-spacing: .2px;
+    svg {
+        width: 60px;
+        height: 60px;
+        position: relative;
+        animation: spinner-rotate 2s linear infinite;
+        flex-shrink: 0;
+        margin-right: 25px;
+        @include breakpoint(mobile) {
+            width: 40px;
+            height: 40px;
+        }
+        circle {
+            
+            fill: none;
+            stroke-width: 8;
+            stroke: $red;
+            stroke-dasharray: 405px;
+            stroke-dashoffset: 405px;
+            stroke-linecap: round;
+            animation: spinner 2s linear infinite;
+        }
+    }
+}
+
+
+.serial__error-message {
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    @include breakpoint(mobile) {
+        font-size: 16px;
+    }
+    svg {
+        fill: $red;
+        flex-shrink: 0;
+        margin-right: 20px;
+        transform: rotate(45deg);
+        width: 35px;
+        height: 35px;
+        @include breakpoint(mobile) {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+
+
+@keyframes spinner {
+    0%, 100% {
+        stroke-dashoffset: 405px;
+    }
+    50% {
+        stroke-dashoffset: 0;
+    }
+    50.1% {
+        stroke-dashoffset: 810px;
+    }
+}
+
+
+@keyframes spinner-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes serial-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes serial-fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.serial-fade-in {
+    animation-name: serial-fade-in;
+    animation-duration: 0.3s;
+    animation-play-state: paused;
+    animation-fill-mode: backwards;
+}
+
+.serial-fade-in-playing {
+    animation-play-state: running;
+}
+
+.serial-fade-out {
+    animation-name: serial-fade-out;
+    animation-duration: 0.3s;
+    animation-play-state: paused;
+    animation-fill-mode: backwards;
+}
+
+.serial-fade-out-playing {
+    animation-play-state: running;
 }
