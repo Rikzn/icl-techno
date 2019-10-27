@@ -21,6 +21,7 @@ import serialMasking from './serialInputsMasking';
 import documentsSlider from './documentsSlider';
 import formValidation from './formValidation';
 import configurator from './configurator';
+import serial from './serial';
 
 window.addEventListener('load', function() {
     document.body.classList.add('loaded');
@@ -158,5 +159,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Скрипты конфигуратора
 
     configurator();
+
+    // Поиск по серийному номеру
+
+    serial();
 
 });

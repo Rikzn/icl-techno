@@ -19,10 +19,22 @@
 
     .no-touch &:hover,
     .touch &:active {
-        color: $red;
+        > svg {
+            color: $red;
+        }
     }
     > svg {
-        fill: currentColor;
+        fill: white;
+        transition: fill .2s;
+    }
+
+    .page-header.fixed &,
+    .page-header--white &,
+    .page-header--light &,
+    .page-header:not(.page-header--dark):not(.page-header--light):hover & {
+        > svg {
+            fill:black;
+        }
     }
 }
 
