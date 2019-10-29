@@ -22,3 +22,13 @@ body {
     }
   }
 }
+.block-wrapper {
+  &.block-page {
+    &-08-accordeon {
+      clear: both;
+    }
+    &-09-slider {
+      clear: both;
+    }
+  }
+}

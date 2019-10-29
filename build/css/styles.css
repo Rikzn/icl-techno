@@ -902,21 +902,22 @@ img {
 .default-content > h6 {
   margin-bottom: .5em; }
 
-.default-content > p {
+.default-content .p > p, .default-content > p {
   font-family: "Proxima Nova", sans-serif;
   font-size: 20px;
   line-height: 1.5;
   margin-bottom: 1em; }
-  .default-content > p > a {
+  .default-content .p > p > a, .default-content > p > a {
     display: inline;
     color: #FB0D1B; }
-    .default-content > p > a:link, .default-content > p > a:visited {
+    .default-content .p > p > a:link, .default-content .p > p > a:visited, .default-content > p > a:link, .default-content > p > a:visited {
       color: #FB0D1B; }
-    .no-touch .default-content > p > a:hover,
+    .no-touch .default-content .p > p > a:hover,
+    .touch .default-content .p > p > a:active, .no-touch .default-content > p > a:hover,
     .touch .default-content > p > a:active {
       text-decoration: underline; }
   @media only screen and (max-width: 576px) {
-    .default-content > p {
+    .default-content .p > p, .default-content > p {
       font-size: 16px; } }
 
 .default-content > ul {
@@ -8755,3 +8756,9 @@ body.is-admin .block-wrapper .default-content > h2, body.is-admin .block-wrapper
 
 body:not(.is-admin) .block-wrapper .landing-ui-panel {
   display: none; }
+
+.block-wrapper.block-page-08-accordeon {
+  clear: both; }
+
+.block-wrapper.block-page-09-slider {
+  clear: both; }
