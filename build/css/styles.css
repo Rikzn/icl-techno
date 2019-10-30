@@ -861,6 +861,10 @@ img {
         display: none; } }
   .navigation-standalone + .fullwidth-block {
     margin-top: 0 !important; }
+  .navigation-standalone + .all-news {
+    margin-top: 0; }
+  .navigation-standalone + .block-wrapper.block-page-06-header .breadcrumbs-header {
+    margin-top: 0; }
 
 .default-content > h1 {
   font-size: 40px; }
