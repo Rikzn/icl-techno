@@ -22,6 +22,10 @@ import documentsSlider from './documentsSlider';
 import formValidation from './formValidation';
 import configurator from './configurator';
 import serial from './serial';
+import amountBtns from './amountBtns';
+import modals from './modals';
+import map from './map';
+
 
 window.addEventListener('load', function() {
     document.body.classList.add('loaded');
@@ -163,5 +167,18 @@ document.addEventListener('DOMContentLoaded', function() {
     // Поиск по серийному номеру
 
     serial();
+
+    // Увеличить/уменьшить количество товара
+
+    amountBtns();
+
+    // Модальные окна
+
+    modals();
+
+    // Карты в контактах
+
+    map();
+    
 
 });

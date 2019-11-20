@@ -145,8 +145,32 @@
             <li class="main-nav__list-item">
                 <a href="#" class="main-nav__link">Услуги</a>
             </li>
-            <li class="main-nav__list-item">
-                <a href="#" class="main-nav__link">Поддержка</a>
+           
+            <li class="main-nav__list-item main-nav__list-item--has-submenu {% if activePage == 'support' %} active {% endif %}">
+                <a href="#" class="main-nav__link js-submenu-link">
+                    Поддержка
+                    <svg width="10" height="6" aria-hidden="true" class="icon-arrow-down">
+                        <use xlink:href="#arrow-down" />
+                    </svg>
+                </a>
+                <div class="main-nav__submenu-overlay"></div>
+                <div class="main-nav__submenu js-submenu-content">
+                    <div class="main-nav__submenu-content">
+                        <ul class="main-nav__submenu-list">
+                            <li class="main-nav__submenu-list-item">
+                                <a href="#" class="main-nav__submenu-link">
+                                    Сервисные центры
+                                </a>
+                            </li>
+                            <li class="main-nav__submenu-list-item">
+                                <a href="#" class="main-nav__submenu-link">
+                                    Драйверы
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
             </li>
             <li class="main-nav__list-item">
                 <a href="#" class="main-nav__link">Партнерам</a>
@@ -157,7 +181,7 @@
         </ul>
     </nav>
     <form action="/" method="GET" class="burger-menu__search-form">
-        <input type="text" name="q" class="burger-menu__form-input" placeholder="Что вы хотите найти?">
+        <input type="text" name="q" class="burger-menu__form-input" placeholder="Что вы хотите найти?" />
         <button class="burger-menu__form-submit">
             <svg width="22" height="22" aria-hidden="true" class="icon-search">
                 <use xlink:href="#search" />
@@ -168,7 +192,7 @@
         <a href="tel:+78435149022" class="burger-menu__phone-link">
             +7 (843) 514-90-22
         </a>
-        <a href="#" class="btn-with-corners">Написать нам</a>
+        <a href="#apply-modal" class="btn-with-corners js-modal-open">Написать нам</a>
     </div>
     <ul class="burger-menu__social-list">
         <li class="burger-menu__social-list-item">
@@ -204,8 +228,7 @@
 
 <!-- <a href="tel:+78435149022" class="header-phone-link">+7 (843) 514-90-22</a> -->
 
-<a href="#" class="btn-with-corners btn-with-corners--white btn-with-corners--header-btn">Написать нам</a>
-
+<a href="#apply-modal" class="btn-with-corners btn-with-corners--white btn-with-corners--header-btn js-modal-open">Написать нам</a>
 
 <a href="#" class="header-phone">
     <svg width="18" height="18" aria-hidden="true" class="icon-phone">
@@ -293,7 +316,6 @@
         </div>
     </div>
 </div>
-
 
 <div class="header-cart">
     <a href="#" class="header-cart__btn">

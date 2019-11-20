@@ -7,6 +7,7 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap&subset=cyrillic" rel="stylesheet" />
         <link rel="stylesheet" href="css/styles.min.css" />
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=d41198b4-79cf-4ff2-83a6-aaff2a77a15c&lang=ru_RU" type="text/javascript"></script>
         <title>
             О компании
         </title>
@@ -35,6 +36,7 @@
                     />
                 </symbol>
                 <symbol viewBox="0 0 14 18" id="cart-remove" xmlns="http://www.w3.org/2000/svg"><path d="M14 1h-3.5l-1-1h-5l-1 1H0v2h14zM1 16a2 2 0 002 2h8a2 2 0 002-2V4H1z" /></symbol>
+                <symbol viewBox="0 0 27.44 20.12" id="checked" xmlns="http://www.w3.org/2000/svg"><path d="M26 0L8.72 17.28 1.44 10 0 11.44l8 8 .72.68.72-.68 18-18z" /></symbol>
                 <symbol viewBox="0 0 8.2 14.9" id="configurator-next" xmlns="http://www.w3.org/2000/svg"><path d="M0 14l.8.9 7-7 .4-.4-.4-.5-7-7-.8.8 6.6 6.6z" /></symbol>
                 <symbol viewBox="0 0 8.2 14.9" id="configurator-prev" xmlns="http://www.w3.org/2000/svg"><path d="M8.2.8L7.4 0l-7 7-.4.4.4.4 7 7 .8-.7-6.6-6.7L8.2.8z" /></symbol>
                 <symbol viewBox="0 0 18.8 18" id="copy" xmlns="http://www.w3.org/2000/svg">
@@ -83,9 +85,9 @@
                     <path d="M60.3 4.47H6.7A2.23 2.23 0 004.46 6.7v34.62a1.12 1.12 0 001.12 1.11h55.83a1.12 1.12 0 001.12-1.11V6.7a2.23 2.23 0 00-2.23-2.23zm0 35.73H6.7V6.7h53.6zm-27.92 4.47h2.23v2.23h-2.23z" />
                 </symbol>
                 <symbol viewBox="0 0 80 80" id="laptop" xmlns="http://www.w3.org/2000/svg">
-                    <path class="aucls-3" d="M70.88 16.57H9.13a2 2 0 00-2 2v36.5a2 2 0 002 2h61.75a2 2 0 002-2V18.55a2 2 0 00-2-1.98zm.26 38.48a.27.27 0 01-.26.27H9.13a.27.27 0 01-.27-.27v-36.5a.27.27 0 01.27-.27h61.75a.27.27 0 01.26.27z" />
+                    <path class="avcls-3" d="M70.88 16.57H9.13a2 2 0 00-2 2v36.5a2 2 0 002 2h61.75a2 2 0 002-2V18.55a2 2 0 00-2-1.98zm.26 38.48a.27.27 0 01-.26.27H9.13a.27.27 0 01-.27-.27v-36.5a.27.27 0 01.27-.27h61.75a.27.27 0 01.26.27z" />
                     <path
-                        class="aucls-3"
+                        class="avcls-3"
                         d="M78.72 58.31h-2v-40.7a4.89 4.89 0 00-4.89-4.89H8.19a4.89 4.89 0 00-4.89 4.89v40.7h-2A1.28 1.28 0 000 59.6v3.53a4.15 4.15 0 004.16 4.15h71.68A4.15 4.15 0 0080 63.13V59.6a1.28 1.28 0 00-1.28-1.29zM5.86 17.61a2.33 2.33 0 012.33-2.32h63.62a2.33 2.33 0 012.33 2.32v40.7H5.86zm37.91 43.27v.67a.55.55 0 01-.55.55h-6.44a.55.55 0 01-.55-.55v-.67h7.54zm33.66 2.25a1.59 1.59 0 01-1.59 1.58H4.16a1.59 1.59 0 01-1.59-1.58v-2.25h32v.67a2.26 2.26 0 002.26 2.26h6.44a2.26 2.26 0 002.26-2.26v-.67h32z"
                     />
                 </symbol>
@@ -210,7 +212,7 @@
         </div>
 
         <div class="page-content">
-            <header class="page-header js-page-header  page-header--white   ">
+            <header class="page-header js-compensate-for-scrollbar js-page-header  page-header--white   ">
                 <div class="container container--flex">
                     <div class="header-logo">
                         <svg width="82" height="82" aria-hidden="true" class="icon-logo">
@@ -359,8 +361,31 @@
                                 <li class="main-nav__list-item">
                                     <a href="#" class="main-nav__link">Услуги</a>
                                 </li>
-                                <li class="main-nav__list-item">
-                                    <a href="#" class="main-nav__link">Поддержка</a>
+
+                                <li class="main-nav__list-item main-nav__list-item--has-submenu ">
+                                    <a href="#" class="main-nav__link js-submenu-link">
+                                        Поддержка
+                                        <svg width="10" height="6" aria-hidden="true" class="icon-arrow-down">
+                                            <use xlink:href="#arrow-down" />
+                                        </svg>
+                                    </a>
+                                    <div class="main-nav__submenu-overlay"></div>
+                                    <div class="main-nav__submenu js-submenu-content">
+                                        <div class="main-nav__submenu-content">
+                                            <ul class="main-nav__submenu-list">
+                                                <li class="main-nav__submenu-list-item">
+                                                    <a href="#" class="main-nav__submenu-link">
+                                                        Сервисные центры
+                                                    </a>
+                                                </li>
+                                                <li class="main-nav__submenu-list-item">
+                                                    <a href="#" class="main-nav__submenu-link">
+                                                        Драйверы
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </li>
                                 <li class="main-nav__list-item">
                                     <a href="#" class="main-nav__link">Партнерам</a>
@@ -382,7 +407,7 @@
                             <a href="tel:+78435149022" class="burger-menu__phone-link">
                                 +7 (843) 514-90-22
                             </a>
-                            <a href="#" class="btn-with-corners">Написать нам</a>
+                            <a href="#apply-modal" class="btn-with-corners js-modal-open">Написать нам</a>
                         </div>
                         <ul class="burger-menu__social-list">
                             <li class="burger-menu__social-list-item">
@@ -418,7 +443,7 @@
 
                     <!-- <a href="tel:+78435149022" class="header-phone-link">+7 (843) 514-90-22</a> -->
 
-                    <a href="#" class="btn-with-corners btn-with-corners--white btn-with-corners--header-btn">Написать нам</a>
+                    <a href="#apply-modal" class="btn-with-corners btn-with-corners--white btn-with-corners--header-btn js-modal-open">Написать нам</a>
 
                     <a href="#" class="header-phone">
                         <svg width="18" height="18" aria-hidden="true" class="icon-phone">
@@ -850,7 +875,7 @@
                             <div class="footer-content__top-row-column">
                                 <a href="tel:+78435149022" class="footer-content__phone-link">+7 (843) 514-90-22</a>
                                 <a href="tel:+78435149026" class="footer-content__phone-link">+7 (843) 514-90-26</a>
-                                <a href="#" class="btn-with-corners footer-content__write-us">Написать нам</a>
+                                <a href="#apply-modal" class="btn-with-corners footer-content__write-us js-modal-open">Написать нам</a>
                             </div>
                             <div class="footer-content__top-row-column footer-content__top-row-column--factory-info">
                                 <p class="footer-content__factory-name">
@@ -903,6 +928,57 @@
                                 </li>
                             </ul>
                             <span class="footer-content__made-by"> Сайт разработан в <img src="img/mw-logo.png" width="98" alt="Лого Mark Weber" /> по технологии <a href="#">MODUL-SITE</a> </span>
+                        </div>
+                    </div>
+
+                    <div class="application-modal js-modal js-compensate-for-scrollbar" id="apply-modal">
+                        <div class="application-modal__content">
+                            <button class="application-modal__close-btn js-modal-close">
+                                <span>
+                                    <svg width="22" height="22" aria-hidden="true" class="icon-cross">
+                                        <use xlink:href="#cross"></use>
+                                    </svg>
+                                </span>
+                            </button>
+
+                            <img src="img/icl-bg.jpg" alt="" class="application-modal__background-image" />
+                            <div class="application-modal__inner-wrapper js-modal-scroll-wrapper">
+                                <h3 class="application-modal__heading">
+                                    Свяжитесь с нами
+                                </h3>
+                                <form action="/" method="POST" class="application-modal__form success" data-parsley-validate>
+                                    <div class="application-modal__form-row">
+                                        <input type="text" name="name" class="application-modal__input" required placeholder="Имя и фамилия" />
+                                    </div>
+                                    <div class="application-modal__form-row">
+                                        <input type="email" name="email" class="application-modal__input" required placeholder="Электронная почта" />
+                                    </div>
+                                    <div class="application-modal__form-row">
+                                        <input type="text" name="company" class="application-modal__input" required placeholder="Компания" />
+                                    </div>
+                                    <div class="application-modal__form-row">
+                                        <textarea name="comment" class="application-modal__textarea" placeholder="Комментарий"></textarea>
+                                    </div>
+                                    <div class="application-modal__form-row">
+                                        <label class="application-modal__checkbox">
+                                            <input type="checkbox" name="processing" required />
+                                            <span class="application-modal__checkbox-icon"> </span>
+                                            <span class="application-modal__checkbox-text-block">
+                                                <span class="application-modal__checkbox-action-text"> Я даю согласие на <a href="#">обработку своих персональных данных</a> </span>
+                                                <span class="application-modal__checkbox-law-name">
+                                                    В соответствии со статьей 9 Федерального закона от 27 июля 2006 г. N 152-ФЗ «О персональных данных»
+                                                </span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <button type="submit" class="btn-with-corners application-modal__submit">
+                                        <svg width="28" height="20" aria-hidden="true" class="icon-checked">
+                                            <use xlink:href="#checked"></use>
+                                        </svg>
+                                        Отправлено
+                                    </button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,51 @@
+<div class="application-modal js-modal js-compensate-for-scrollbar" id="apply-modal">
+    <div class="application-modal__content">
+        <button class="application-modal__close-btn js-modal-close">
+            <span>
+                <svg width="22" height="22" aria-hidden="true" class="icon-cross">
+                    <use xlink:href="#cross"></use>
+                </svg>
+            </span>
+        </button>
+
+
+        <img src="img/icl-bg.jpg" alt="" class="application-modal__background-image" />
+        <div class="application-modal__inner-wrapper js-modal-scroll-wrapper">
+            <h3 class="application-modal__heading">
+                Свяжитесь с нами
+            </h3>
+            <form action="/" method="POST" class="application-modal__form success" data-parsley-validate>
+                <div class="application-modal__form-row">
+                    <input type="text" name="name" class="application-modal__input" required placeholder="Имя и фамилия" />
+                </div>
+                <div class="application-modal__form-row">
+                    <input type="email" name="email" class="application-modal__input" required placeholder="Электронная почта" />
+                </div>
+                <div class="application-modal__form-row">
+                    <input type="text" name="company" class="application-modal__input" required placeholder="Компания" />
+                </div>
+                <div class="application-modal__form-row">
+                    <textarea name="comment" class="application-modal__textarea" placeholder="Комментарий"></textarea>
+                </div>
+                <div class="application-modal__form-row">
+                    <label class="application-modal__checkbox">
+                        <input type="checkbox" name="processing" required/>
+                        <span class="application-modal__checkbox-icon"> </span>
+                        <span class="application-modal__checkbox-text-block">
+                            <span class="application-modal__checkbox-action-text"> Я даю согласие на <a href="#">обработку своих персональных данных</a> </span>
+                            <span class="application-modal__checkbox-law-name">
+                                В соответствии со статьей 9 Федерального закона от 27 июля 2006 г. N 152-ФЗ «О персональных данных»
+                            </span>
+                        </span>
+                    </label>
+                </div>
+                <button type="submit" class="btn-with-corners application-modal__submit">
+                    <svg width="28" height="20" aria-hidden="true" class="icon-checked">
+                        <use xlink:href="#checked"></use>
+                    </svg>
+                    Отправлено
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

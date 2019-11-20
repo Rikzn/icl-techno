@@ -99,11 +99,11 @@
         &:visited {
             color: $red;
         }
-    }
 
-    .no-touch &:hover,
-    .touch &:active {
-        text-decoration: underline;
+        .no-touch &:hover,
+        .touch &:active {
+            text-decoration: underline;
+        }
     }
 
     > svg {
@@ -158,11 +158,14 @@ a.section-header {
     background-color: $red;
     clip-path: polygon(0px 10px, 10px 0px, 100% 0px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0% 100%);
     position: relative;
+    width: 110px;
+    flex-shrink: 0;
     @include breakpoint(laptop) {
         padding: 10px 14px;
     }
     @include breakpoint(mobile) {
         padding: 8px 12px;
+        width: 100px;
     }
     &::before {
         content: '';
@@ -201,27 +204,42 @@ a.section-header {
         cursor: default;
         pointer-events: none;
         > svg {
-            fill: #FEB7BB;
+            fill: #feb7bb;
         }
     }
     > svg {
-        
         fill: $red;
         transition: fill 0.2s;
     }
 }
 
 .amount-btn__number {
-    margin: 0 18px;
+    padding: 0 4px;
     position: relative;
     z-index: 15;
     cursor: default;
     font-size: 16px;
+    font-family: inherit;
+    border: none;
+    background-color: transparent;
+    min-width: none;
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: 0;
+    width: 100%;
+    text-align: center;
+    appearance: none;
+    -webkit-appearance: none;
+    color: $red;
+    outline: none;
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+        appearance: none;
+    }
     @include breakpoint(laptop) {
         margin: 0 12px;
     }
     @include breakpoint(mobile) {
-        
         font-size: 14px;
     }
 }

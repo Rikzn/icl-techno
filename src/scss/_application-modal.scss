@@ -1,0 +1,251 @@
+.application-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(black, .5);
+    cursor: pointer;
+    z-index: 1500;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .2s, visibility 0s linear .2s;
+
+    &.shown {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity .2s;
+    }
+}
+
+
+.application-modal__content {
+    
+    
+    max-height: 100%;
+   
+    margin: auto;
+    background-color: #fff;
+    color: black;
+    
+    width: 620px;
+    position: relative;
+    cursor: initial;
+    @include breakpoint(mobile) {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+.application-modal__inner-wrapper {
+    position: relative;
+    z-index: 10;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 56px;
+    padding-top: 45px;
+    max-height: 100%;
+
+    @include breakpoint(mobile) {
+        padding: 20px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+}
+
+
+.application-modal__background-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    @include objectFitCover();
+    z-index: 1;
+}
+
+
+
+
+.application-modal__heading {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    
+}
+
+
+.application-modal__form {
+    margin-top: 40px;
+}
+
+
+.application-modal__form-row {
+    margin-bottom: 20px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+
+.application-modal__input,
+.application-modal__textarea {
+    display: block;
+    font: inherit;
+    width: 100%;
+    border: 1px solid black;
+    color: black;
+    border-radius: 0;
+    background-color: transparent;
+    font-size: 20px;
+    font-family: $proxima;
+    padding: 16px 24px;
+    resize: none;
+    box-shadow: none;
+    outline: none;
+    transition: border-color .2s;
+    &.parsley-error {
+        border-color: $red;
+    }
+    // &.parsley-success {
+    //     border-color: #298416;
+    // }
+    @include placeholder {
+        color: #4D4D4D;
+    }
+}
+
+
+
+.application-modal__textarea {
+    height: 162px;
+}
+
+
+.application-modal__checkbox {
+    display: flex;
+    align-items: flex-start;
+
+    @include noHighlight();
+
+    input[type="checkbox"] {
+        // @include visuallyHidden();
+        display: none;
+    }
+
+    input[type="checkbox"]:checked ~ .application-modal__checkbox-icon::before {
+        transform: scale(1);
+    }
+}
+
+
+.application-modal__checkbox-icon {
+    width: 32px;
+    height: 32px;
+    border: 1px solid black;
+    flex-shrink: 0;
+    margin-right: 24px;
+    .parsley-error & {
+        border-color: $red;
+    }
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-color: $red;
+        border: 8px solid white;
+        transform: scale(0);
+        transition: transform .2s;
+    }
+}
+
+
+.application-modal__checkbox-text-block {
+    margin-top: 6px;
+    color: #4D4D4D
+}
+
+
+.application-modal__checkbox-action-text {
+    font-size: 14px;
+    line-height: 18px;
+    color: #4D4D4D;
+    display: block;
+    a {
+        &:link,
+        &:visited {
+            color: $red;
+        }
+
+        .no-touch &:hover,
+        .touch &:active {
+            color: $red-hover;
+        }
+    }
+}
+
+
+.application-modal__checkbox-law-name {
+    font-size: 12px;
+    display: block;
+    margin-top: 3px;
+}
+
+
+
+.application-modal__submit {
+    margin-top: 2rem;
+    outline: none;
+    display: flex;
+    align-items: center;
+    padding: 14px 30px;
+    user-select: none;
+    @include noHighlight();
+    > svg {
+        flex-shrink: 0;
+        fill: white;
+        margin-right: 12px;
+        display: none;
+    }
+    .application-modal__form.success & {
+        background-color: #298416;
+        > svg {
+            display: block;
+        }
+    }
+}
+
+
+.application-modal__close-btn {
+    width: 50px;
+    height: 50px;
+    background-color: $red;
+    position: absolute;
+    // right: 0;
+    left: 100%;
+    top: 0;
+    z-index: 100;
+    @include breakpoint(mobile) {
+        left: auto;
+        right: 0;
+    }
+    > span {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        > svg {
+            fill: white;
+            transform: rotate(45deg);
+        }
+    }
+}

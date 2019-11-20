@@ -1,11 +1,6 @@
-import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
 export default function() {
-
-
-
-
-
 
     const header = document.querySelector('.js-page-header');
 
@@ -16,14 +11,16 @@ export default function() {
     function fixHeader() {
         const scrollTop = window.pageYOffset;
 
-        if (scrollTop > headerStart) {
+        if (scrollTop > 0) {
             header.classList.add('fixed');
         } else {
             header.classList.remove('fixed');
         }
     }
 
-    window.addEventListener('scroll', fixHeader);
+    window.addEventListener('scroll', fixHeader, {
+        passive: true
+    });
 
     const burgerBtn = document.querySelector('.js-burger-btn');
     const burgerMenuScrollContainer = document.querySelector('.js-burger-menu');
@@ -36,6 +33,7 @@ export default function() {
     function transitionEndHandler(event) {
         if (window.pageYOffset <= headerStart) {
             header.classList.remove('fixed');
+           
         }
         burgerMenu.removeEventListener('transitionend', transitionEndHandler)
     }
@@ -45,7 +43,7 @@ export default function() {
         if (burgerMenuOpen) {
             burgerMenu.addEventListener('transitionend', transitionEndHandler);
             document.documentElement.classList.remove('burger-menu-shown');
-            clearAllBodyScrollLocks();
+            enableBodyScroll(burgerMenuScrollContainer);
             burgerMenuOpen = false; 
         } else {
             document.documentElement.classList.add('burger-menu-shown');

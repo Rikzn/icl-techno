@@ -243,6 +243,19 @@
         @include breakpoint(mobile) {
             font-size: 16px;
         }
-        
+    }
+
+    a {
+        color: $red;
+        transition: color .2s;
+        &:link,
+        &:visited {
+            color: $red;
+        }
+
+        .no-touch &:hover,
+        .touch &:active {
+            color: $red-hover;
+        }
     }
 }

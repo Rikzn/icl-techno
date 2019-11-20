@@ -1,0 +1,283 @@
+.contacts {
+    margin: 100px 0;
+    margin-top: 55px;
+    // @include breakpoint(tablet) {
+    //     margin: 80px 0;
+    // }
+    @include breakpoint(small-tablet) {
+        margin: 50px 0;
+    }
+}
+
+.contacts__heading {
+    font-size: 32px;
+    line-height: 1.4;
+    font-weight: 700;
+    margin-bottom: 60px;
+    @include breakpoint(small-tablet) {
+        margin-bottom: 20px;
+    }
+    @include breakpoint(mobile) {
+        font-size: 24px;
+    }
+}
+
+.contacts__info-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -20px;
+}
+
+.contacts__info-list-item {
+    width: 33.33%;
+    padding: 20px;
+    @include breakpoint(small-tablet) {
+        width: 50%;
+    }
+    @include breakpoint(small-mobile) {
+        width: 100%;
+    }
+}
+
+.contacts__info-block {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        margin-bottom: 20px;
+        font-size: 20px;
+        line-height: 1.8;
+        @include breakpoint(small-mobile) {
+            font-size: 16px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    a {
+        &:link,
+        &:visited {
+            color: $red;
+        }
+
+        .no-touch &:hover,
+        .touch &:active {
+            text-decoration: underline;
+        }
+    }
+
+    ul {
+        display: flex;
+        li {
+            margin-right: 25px;
+            display: flex;
+            flex-direction: column;
+            &:last-child {
+                margin: 0;
+            }
+
+            a {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                flex-grow: 1;
+                svg {
+                    fill: $red;
+                }
+
+                .no-touch &:hover,
+                .touch &:active {
+                    svg {
+                        fill: $red-hover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.contacts__map-block {
+    min-height: 640px;
+
+    position: relative;
+    margin-top: 75px;
+    @include breakpoint(laptop) {
+        min-height: 500px;
+    }
+    @include breakpoint(mobile) {
+        min-height: 400px;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        left: calc((100vw - 100%) / 2 * -1);
+        top: 0;
+        bottom: 0;
+        width: 100vw;
+        background-color: rgba(black, 0.1);
+        z-index: 199;
+        pointer-events: none;
+    }
+}
+
+.contacts__map-wrapper {
+    position: absolute;
+    left: calc((100vw - 100%) / 2 * -1);
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    background-color: $red;
+}
+
+.contacts__map-info-block {
+    z-index: 200;
+    right: 158px;
+    width: 488px;
+    background-color: #fff;
+    border-left: 4px solid $red;
+    padding: 35px 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    @include breakpoint(laptop) {
+        display: none;
+    }
+    &--mobile {
+        display: none;
+        position: static;
+        width: auto;
+        transform: translateY(0);
+        background-color: #f3f3f3;
+
+        @include breakpoint(laptop) {
+            display: block;
+        }
+
+        @include breakpoint(mobile) {
+            padding: 25px 20px;
+            margin: 0 -1 * $mobile-content-padding;
+        }
+
+        @include breakpoint(small-mobile) {
+            margin: 0 -1 * $small-mobile-content-padding;
+        }
+    }
+}
+
+.contacts__map-info-block-heading {
+    font-size: 24px;
+    line-height: 31px;
+    font-weight: 700;
+}
+
+.contacts__map-info-block-description {
+    color: #808080;
+    font-size: 16px;
+    line-height: 23px;
+    margin-top: 5px;
+}
+
+.contacts__map-info-block-content {
+    margin-top: 35px;
+
+    .contacts__map-info-block--mobile & {
+        @include breakpoint(mobile) {
+            margin-top: 20px;
+        }
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 16px;
+        line-height: 21px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        @include breakpoint(small-mobile) {
+            font-size: 16px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.contacts__table {
+    margin-top: 65px;
+}
+
+.contacts__table-heading {
+    font-size: 32px;
+    @include breakpoint(mobile) {
+        font-size: 24px;
+    }
+}
+
+.contacts__table-info {
+    margin-top: 30px;
+    border-collapse: collapse;
+    @include breakpoint(small-tablet) {
+        display: block;
+    }
+    thead,
+    tbody {
+        @include breakpoint(small-tablet) {
+            display: block;
+        }
+    }
+    tr {
+        @include breakpoint(small-tablet) {
+            display: block;
+            margin-bottom: 20px;
+        }
+    }
+    th,
+    td {
+        text-align: left;
+        vertical-align: middle;
+        padding: 8px 0;
+        @include breakpoint(small-tablet) {
+            display: block;
+            padding: 5px 0;
+        }
+    }
+    th {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        padding-right: 100px;
+        @include breakpoint(small-tablet) {
+            font-size: 20px;
+        }
+    }
+
+    td {
+        font-size: 20px;
+        line-height: 1.5;
+        @include breakpoint(small-tablet) {
+            font-size: 18px;
+        }
+        @include breakpoint(small-mobile) {
+            font-size: 16px;
+        }
+    }
+}

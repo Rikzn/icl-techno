@@ -9,6 +9,8 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap&subset=cyrillic" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.min.css" />
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=d41198b4-79cf-4ff2-83a6-aaff2a77a15c&lang=ru_RU" type="text/javascript">
+        </script>
         <title>
             {{ title }}
         </title>
@@ -19,7 +21,7 @@
         </div>
 
         <div class="page-content">
-            <header class="page-header js-page-header {% if headerColor == 'white' %} page-header--white {% endif %} {% if headerColor == 'dark' %}    page-header--dark {% endif %} {% if headerColor == 'light' %} page-header--light {% endif %}">
+            <header class="page-header js-compensate-for-scrollbar js-page-header {% if headerColor == 'white' %} page-header--white {% endif %} {% if headerColor == 'dark' %}    page-header--dark {% endif %} {% if headerColor == 'light' %} page-header--light {% endif %}">
                 <div class="container container--flex">
                     {% include "partials/header.html" %}
                 </div>

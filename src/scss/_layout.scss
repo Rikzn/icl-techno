@@ -29,16 +29,18 @@
 }
 
 .page-header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
     padding-top: $page-header-top-padding;
     padding-bottom: $page-header-bottom-padding;
-    transition: box-shadow .2s, padding .2s, height .2s, border-color .2s;
+    transition: all .2s, padding-right 0s;
     border-bottom: 1px solid transparent;
     border-top: 1px solid transparent;
+
+  
     &::before {
         content: '';
         position: absolute;
@@ -49,7 +51,7 @@
         z-index: -1;
         transform: translateZ(0);
         backface-visibility: hidden;
-        transition: background-color .2s, box-shadow .2s;
+        transition: background-color .1s linear, box-shadow .2s;
     }
 
     &--dark {

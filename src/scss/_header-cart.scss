@@ -30,8 +30,7 @@
 
     .page-header.fixed &,
     .page-header--white &,
-    .page-header--light &,
-    .page-header:not(.page-header--dark):not(.page-header--light):hover & {
+    .page-header--light & {
         > svg {
             fill:black;
         }
