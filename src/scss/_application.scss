@@ -2,14 +2,24 @@
 
 
 .application {
-
+    margin-bottom: 100px;
+    @include breakpoint(tablet) {
+        margin-bottom: 80px;
+    }
+    @include breakpoint(small-tablet) {
+        margin-bottom: 50px;
+    }
 }
 
 .application__heading {
     font-size: 40px;
     margin-bottom: 60px;
+    @include breakpoint(tablet) {
+        font-size: 35px;
+    }
     @include breakpoint(mobile) {
         font-size: 28px;
+        margin-bottom: 30px;
     }
 }
 
@@ -82,17 +92,36 @@
 .application__form-label {
     display: flex;
     align-items: flex-start;
-   
+    pointer-events: none;
+    @include breakpoint(small-tablet) {
+        align-self: stretch;
+        flex-direction: column;
+    }
 }
 
 
 .application__form-label-text {
     font-family: $proxima;
     font-size: 20px;
-    max-width: 232px;
+    max-width: 322px;
     width: 100%;
     margin-top: 12px;
     padding-right: 20px;
+    pointer-events: initial;
+    @include breakpoint(small-tablet) {
+        margin-top: 0;
+        margin-bottom: 12px;
+    }
+    @include breakpoint(mobile) {
+        font-size: 16px;
+        max-width: none;
+    }
+    &--checkbox-text {
+        margin-top: 0;
+    }
+    .disabled & {
+        opacity: .1;
+    }
 }
 
 .application__form-input-wrapper {
@@ -101,13 +130,28 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-
+    
 
     .parsley-errors-list {
         margin: 0;
         margin-left: 20px;
         font-family: $proxima;
         font-size: 12px;
+        width: 30px;
+        flex-grow: 1;
+        @include breakpoint(mobile) {
+            width: auto;
+            flex-grow: 0;
+            margin-left: 0;
+            margin-top: 10px;
+        }
+    }
+
+    .choices {
+        max-width: 420px;
+        @include breakpoint(mobile) {
+            max-width: none;
+        }
     }
 }
 
@@ -128,6 +172,11 @@
     padding: 12px 15px;
     outline: none;
     transition: box-shadow .2s, border-color .2s;
+    pointer-events: initial;
+    @include breakpoint(mobile) {
+        font-size: 16px;
+        max-width: none;
+    }
     &:focus {
         border-color: $red;
         box-shadow: 0px 7px 24px rgba(#FB0D1B, .12);
@@ -135,9 +184,16 @@
 
 
     &.parsley-error {
-        border-color: $red;
-        box-shadow: 0px 7px 24px rgba(#FB0D1B, .12);
+        color: $red;
+        
     }
+
+
+    &[disabled],
+    .disabled & {
+        opacity: .1;
+    }
+    
 }
 
 
@@ -149,11 +205,129 @@
     font-size: 12px;
     margin-top: 7px;
     color: #BABABA;
+    @include breakpoint(mobile) {
+        max-width: none;
+    }
 }
 
+
+.application__form-submit-wrapper {
+    display: flex;
+    max-width: 742px;
+    width: 100%;
+    margin-top: 50px;
+    @include breakpoint(small-tablet) {
+        max-width: 420px;
+    }
+    @include breakpoint(mobile) {
+        max-width: none;
+    }
+}
 
 .application__form-submit {
-    margin-left: auto !important;
-    align-self: flex-end;
+    margin-left: auto;
+    
     display: block;
 }
+
+
+.application__form-checkbox,
+.application__form-radio {
+    display: flex;
+    align-items: center;
+    font-family: $proxima;
+    font-size: 20px;
+    width: 100%;
+    margin-bottom: 5px;
+    pointer-events: initial;
+    user-select: none;
+    @include breakpoint(mobile) {
+        font-size: 16px;
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+    input[type="checkbox"],
+    input[type="radio"] {
+        @include visuallyHidden();
+    }
+     
+}
+
+
+
+.application__form-checkbox-icon {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    flex-shrink: 0;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .2s, border-color .2s;
+    
+    svg {
+        fill: white;
+        opacity: 0;
+        transition: opacity .2s;
+    }
+}
+
+
+.application__form-radio-icon {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    flex-shrink: 0;
+    margin-right: 20px;
+    border-radius: 50%;
+    position: relative;
+    transition: background-color .2s, border-color .2s;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border: 6px solid $red;
+        display: block;
+        border-radius: 50%;
+        opacity: 0;
+        transition: opacity .2s;
+    }
+}
+
+
+
+input[type="checkbox"]:checked ~ .application__form-checkbox-icon {
+    border-color: $red;
+    background-color: $red;
+    > svg {
+        opacity: 1;
+    }
+}
+
+
+input[type="radio"]:checked ~ .application__form-radio-icon {
+    border-color: $red;
+    &::before {
+        opacity: 1;
+    }
+}
+
+
+
+.application__form-heading {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    @include breakpoint(mobile) {
+        font-size: 20px;
+    }
+}
+

@@ -1,0 +1,380 @@
+{% set title = "Страница заявки" %} {% set headerColor = "white" %} {% extends "layout.html" %} {% block content %}
+
+<div class="internal-page-back-link">
+    <svg width="16" height="8" aria-hidden="true" class="icon-arrow-right-no-circle inverted">
+        <use xlink:href="#arrow-right-no-circle" />
+    </svg>
+    <a href="#">Назад</a>
+</div>
+<div class="layout-row">
+    <div class="layout-main-column">
+        <section class="application">
+            <h2 class="application__heading">
+                Заявка на участие в партнерской программе
+            </h2>
+            <form action="/" method="POST" class="application__form" data-parsley-validate>
+                <div class="application__form-row">
+                    <label class="application__form-label">
+                        <div class="application__form-label-text">
+                            Название компании
+                        </div>
+
+                        <div class="application__form-input-wrapper">
+                            <input type="text" class="application__form-input" required />
+                            <div class="application__form-remark">
+                                Полное название компании с указанием формы юридического лица
+                            </div>
+                        </div>
+                    </label>
+                </div>
+                <div class="application__form-row">
+                    <label class="application__form-label">
+                        <div class="application__form-label-text">
+                            Город
+                        </div>
+
+                        <div class="application__form-input-wrapper">
+                            <input type="text" class="application__form-input" required />
+                        </div>
+                    </label>
+                </div>
+
+                <div class="application__form-row">
+                    <label class="application__form-label disabled">
+                        <div class="application__form-label-text">
+                            ИНН Компании
+                        </div>
+
+                        <div class="application__form-input-wrapper">
+                            <input type="text" class="application__form-input" disabled />
+                        </div>
+                    </label>
+                </div>
+
+                <div class="application__form-row">
+                    <label class="application__form-label">
+                        <div class="application__form-label-text">
+                            Телефон
+                        </div>
+
+                        <div class="application__form-input-wrapper">
+                            <input type="tel" class="application__form-input js-phone-input" required data-parsley-phone />
+                        </div>
+                    </label>
+                </div>
+                <div class="application__form-row">
+                    <label class="application__form-label">
+                        <div class="application__form-label-text">
+                            Факс
+                        </div>
+
+                        <div class="application__form-input-wrapper">
+                            <input type="tel" class="application__form-input js-phone-input" required data-parsley-phone />
+                        </div>
+                    </label>
+                </div>
+                <div class="application__form-row">
+                    <label class="application__form-label">
+                        <div class="application__form-label-text">
+                            Сайт компании
+                        </div>
+
+                        <div class="application__form-input-wrapper">
+                            <input type="url" class="application__form-input" required />
+                        </div>
+                    </label>
+                </div>
+                <div class="application__form-row">
+                    <label class="application__form-label">
+                        <div class="application__form-label-text">
+                            Сайт компании
+                        </div>
+
+                        <div class="application__form-input-wrapper">
+                            <select name="select" class="js-custom-select" required>
+                                <option value="value1">до 50 человек</option>
+                                <option value="value2">до 30 человек</option>
+                                <option value="value3">до 20 человек</option>
+                            </select>
+                        </div>
+                    </label>
+                </div>
+                <div class="application__form-row">
+                    <div class="application__form-label">
+                        <div class="application__form-label-text application__form-label-text--checkbox-text">
+                            Основные направления деятельности компании
+                        </div>
+
+                        <div class="application__form-input-wrapper">
+                            <label class="application__form-checkbox">
+                                <input type="checkbox" checked />
+                                <span class="application__form-checkbox-icon">
+                                    <svg width="12" height="14" aria-hidden="true" class="icon-checkbox-mark">
+                                        <use xlink:href="#checkbox-mark" />
+                                    </svg>
+                                </span>
+                                продажа компьютерного оборудования
+                            </label>
+                            <label class="application__form-checkbox">
+                                <input type="checkbox" />
+                                <span class="application__form-checkbox-icon">
+                                    <svg width="12" height="14" aria-hidden="true" class="icon-checkbox-mark">
+                                        <use xlink:href="#checkbox-mark" />
+                                    </svg>
+                                </span>
+                                продажа программного обеспечения
+                            </label>
+                            <label class="application__form-checkbox">
+                                <input type="checkbox" />
+                                <span class="application__form-checkbox-icon">
+                                    <svg width="12" height="14" aria-hidden="true" class="icon-checkbox-mark">
+                                        <use xlink:href="#checkbox-mark" />
+                                    </svg>
+                                </span>
+                                производство оборудования
+                            </label>
+                            <label class="application__form-checkbox">
+                                <input type="checkbox" />
+                                <span class="application__form-checkbox-icon">
+                                    <svg width="12" height="14" aria-hidden="true" class="icon-checkbox-mark">
+                                        <use xlink:href="#checkbox-mark" />
+                                    </svg>
+                                </span>
+                                построение инженерных систем
+                            </label>
+                            <label class="application__form-checkbox">
+                                <input type="checkbox" />
+                                <span class="application__form-checkbox-icon">
+                                    <svg width="12" height="14" aria-hidden="true" class="icon-checkbox-mark">
+                                        <use xlink:href="#checkbox-mark" />
+                                    </svg>
+                                </span>
+                                разработка программного обеспечения
+                            </label>
+                            <label class="application__form-checkbox">
+                                <input type="checkbox" />
+                                <span class="application__form-checkbox-icon">
+                                    <svg width="12" height="14" aria-hidden="true" class="icon-checkbox-mark">
+                                        <use xlink:href="#checkbox-mark" />
+                                    </svg>
+                                </span>
+                                сервисные услуги
+                            </label>
+                            <label class="application__form-checkbox">
+                                <input type="checkbox" />
+                                <span class="application__form-checkbox-icon">
+                                    <svg width="12" height="14" aria-hidden="true" class="icon-checkbox-mark">
+                                        <use xlink:href="#checkbox-mark" />
+                                    </svg>
+                                </span>
+                                ИТ-аутсорсинг
+                            </label>
+                            <label class="application__form-checkbox">
+                                <input type="checkbox" />
+                                <span class="application__form-checkbox-icon">
+                                    <svg width="12" height="14" aria-hidden="true" class="icon-checkbox-mark">
+                                        <use xlink:href="#checkbox-mark" />
+                                    </svg>
+                                </span>
+                                другая деятельность
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="application__form-row">
+                    <div class="application__form-label">
+                        <div class="application__form-label-text application__form-label-text--checkbox-text">
+                            Ваши клиенты
+                        </div>
+
+                        <div class="application__form-input-wrapper">
+                            <label class="application__form-radio">
+                                <input type="radio" name="clients" value="corporate" checked />
+                                <span class="application__form-radio-icon"> </span>
+                                корпоративные клиенты
+                            </label>
+                            <label class="application__form-checkbox">
+                                <input type="radio" name="clients" value="educational" />
+                                <span class="application__form-radio-icon"> </span>
+                                образовательные учреждения
+                            </label>
+                            <label class="application__form-checkbox">
+                                <input type="radio" name="clients" value="med" />
+                                <span class="application__form-radio-icon"> </span>
+                                учреждения здравоохранения
+                            </label>
+                            <label class="application__form-checkbox">
+                                <input type="radio" name="clients" value="police" />
+                                <span class="application__form-radio-icon"> </span>
+                                силовые структуры
+                            </label>
+                            <label class="application__form-checkbox">
+                                <input type="radio" name="clients" value="retail" />
+                                <span class="application__form-radio-icon"> </span>
+                                розница
+                            </label>
+                            <label class="application__form-checkbox">
+                                <input type="radio" name="clients" value="others" />
+                                <span class="application__form-radio-icon"> </span>
+                                другие
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="application__form-row">
+                    <label class="application__form-label">
+                        <div class="application__form-label-text">
+                            Планируете ли вы стать сервисным центром ICL?
+                        </div>
+
+                        <div class="application__form-input-wrapper">
+                            <input type="text" class="application__form-input" required />
+                        </div>
+                    </label>
+                </div>
+                <h3 class="application__form-heading">
+                    Руководитель компании
+                </h3>
+                <div class="application__form-row">
+                    <label class="application__form-label">
+                        <div class="application__form-label-text">
+                            Ф.И.О.
+                        </div>
+
+                        <div class="application__form-input-wrapper">
+                            <input type="text" class="application__form-input" required />
+                        </div>
+                    </label>
+                </div>
+                <div class="application__form-row">
+                    <label class="application__form-label">
+                        <div class="application__form-label-text">
+                            Электронная почта
+                        </div>
+
+                        <div class="application__form-input-wrapper">
+                            <input type="email" class="application__form-input" required />
+                        </div>
+                    </label>
+                </div>
+                <h3 class="application__form-heading">
+                    Руководитель отдела продаж
+                </h3>
+                <div class="application__form-row">
+                    <label class="application__form-label">
+                        <div class="application__form-label-text">
+                            Ф.И.О.
+                        </div>
+
+                        <div class="application__form-input-wrapper">
+                            <input type="text" class="application__form-input" required />
+                        </div>
+                    </label>
+                </div>
+                <div class="application__form-row">
+                    <label class="application__form-label">
+                        <div class="application__form-label-text">
+                            Телефон
+                        </div>
+
+                        <div class="application__form-input-wrapper">
+                            <input type="tel" class="application__form-input js-phone-input" required data-parsley-phone />
+                        </div>
+                    </label>
+                </div>
+                <div class="application__form-row">
+                    <label class="application__form-label">
+                        <div class="application__form-label-text">
+                            Электронная почта
+                        </div>
+
+                        <div class="application__form-input-wrapper">
+                            <input type="email" class="application__form-input" required />
+                        </div>
+                    </label>
+                </div>
+                <h3 class="application__form-heading">
+                    Сотрудник, заполнивший анкету
+                </h3>
+                <div class="application__form-row">
+                    <label class="application__form-label">
+                        <div class="application__form-label-text">
+                            Ф.И.О.
+                        </div>
+
+                        <div class="application__form-input-wrapper">
+                            <input type="text" class="application__form-input" required />
+                        </div>
+                    </label>
+                </div>
+                <div class="application__form-row">
+                    <label class="application__form-label">
+                        <div class="application__form-label-text">
+                            Телефон
+                        </div>
+
+                        <div class="application__form-input-wrapper">
+                            <input type="tel" class="application__form-input js-phone-input" required data-parsley-phone />
+                        </div>
+                    </label>
+                </div>
+                <div class="application__form-row">
+                    <label class="application__form-label">
+                        <div class="application__form-label-text">
+                            Электронная почта
+                        </div>
+
+                        <div class="application__form-input-wrapper">
+                            <input type="email" class="application__form-input" required />
+                        </div>
+                    </label>
+                </div>
+                <div class="application__form-row">
+                    <label class="application__form-label">
+                        <div class="application__form-label-text">
+                            Должность
+                        </div>
+
+                        <div class="application__form-input-wrapper">
+                            <input type="text" class="application__form-input" required />
+                        </div>
+                    </label>
+                </div>
+                <div class="application__form-submit-wrapper">
+                    <button type="submit" class="btn-with-corners application__form-submit">
+                        Отправить
+                    </button>
+                </div>
+            </form>
+        </section>
+    </div>
+    <div class="layout-sidebar">
+        <div href="#" class="application__announcement">
+            <h5>
+                Есть вопросы?
+            </h5>
+            <p>
+                <b>
+                    Отдел продаж
+                </b>
+                <br />
+
+                Сабирова Альбина Ансаровна
+                <br />
+                <a href="mailto:a.sabirova@icl.kazan.ru">a.sabirova@icl.kazan.ru</a>
+            </p>
+            <p>
+                <b>
+                    Отдел продаж
+                </b>
+                <br />
+
+                Чулков Антон Сергеевич
+                <br />
+                <a href="mailto:a.chulkov@icl.kazan.ru">a.chulkov@icl.kazan.ru</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

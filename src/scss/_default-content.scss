@@ -1,6 +1,9 @@
 .default-content {
     > h1 {
         font-size: 40px;
+        @include breakpoint(tablet) {
+            font-size: 35px;
+        }
         @include breakpoint(mobile) {
             font-size: 28px;
         }

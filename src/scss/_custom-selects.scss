@@ -1,0 +1,96 @@
+.choices {
+    font-size: 20px;
+    font-family: $proxima;
+    margin-bottom: 0;
+    width: 100%;
+    pointer-events: initial;
+    @include breakpoint(mobile) {
+        font-size: 16px;
+    }
+}
+
+
+.choices__inner {
+    border: none;
+    padding: 0;
+    display: flex;
+    background-color: transparent;
+    border-radius: 0;
+    font-size: 20px;
+    min-height: auto;
+    padding: 12px 15px;
+    border: 1px solid black;
+    opacity: 1;
+    border-radius: 0 !important;
+    transition: box-shadow .2s, border-color .2s;
+    @include breakpoint(mobile) {
+        font-size: 16px;
+    }
+}
+
+.is-focused .choices__inner,
+.is-open .choices__inner {
+    border-color: $red;
+    box-shadow: 0px 7px 24px rgba(#FB0D1B, .12);
+}
+
+.choices[data-type*=select-one] .choices__inner {
+    padding-bottom: 12px;
+}
+
+.choices[data-type*=select-one]::after {
+    border: none !important;
+    margin-top: -5px !important;
+    right: 12px;
+    background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 10'%3E%3Cpath d='M14.4 0L16 1.7 8 10 0 1.7 1.6 0 8 6.6z' fill='%23fb0d1b'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 10px;
+    transition: transform .2s;
+}
+
+.choices[data-type*=select-one].is-open::after {
+    transform: rotate(180deg);
+}
+
+.choices__placeholder {
+    opacity: 1;
+    color: $red;
+}
+
+.choices__list--single {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+}
+
+
+.choices__list--dropdown {
+    border-color: $red !important;
+    border-radius: 0 !important;
+    // margin-top: -2px;
+    word-break: initial;
+    
+}
+
+
+
+
+
+
+.choices__list--dropdown .choices__item {
+    font-size: 20px;
+    padding: 12px 15px;
+    @include breakpoint(mobile) {
+        font-size: 16px;
+    }
+}
+
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted {
+    background-color: rgba(black, .03);
+    
+}

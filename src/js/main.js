@@ -25,6 +25,7 @@ import serial from './serial';
 import amountBtns from './amountBtns';
 import modals from './modals';
 import map from './map';
+import customSelects from './customSelects';
 
 
 window.addEventListener('load', function() {
@@ -179,6 +180,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Карты в контактах
 
     map();
+
+    // Кастомные селекты
+
+    customSelects();
     
 
 });
