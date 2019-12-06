@@ -74,8 +74,7 @@
     }
 }
 
-.services__cities-list {
-}
+
 
 .services__cities-list-item {
     margin-bottom: 10px;
@@ -122,9 +121,10 @@
     &:visited {
         color: black;
     }
-
+    
     .no-touch &:hover,
-    .touch &:active {
+    .touch &:active,
+    &.active {
         color: white;
         &::before {
             opacity: 1;
@@ -132,15 +132,28 @@
     }
 }
 
+
+.services__city-cards {
+    position: relative;
+}
+
 .services__city-card {
     background-color: #fff;
-    position: relative;
-    // @include breakpoint(mobile) {
-    //     margin: 0 -1 * $mobile-content-padding;
-    // }
-    // @include breakpoint(small-mobile) {
-    //     margin: 0 -1 * $small-mobile-content-padding;
-    // }
+    left: 0;
+    top: 0;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s, visibility 0.5s;
+    z-index: 1;
+    position: absolute;
+    &.active {
+        position: relative;
+        opacity: 1;
+        visibility: visible;
+        z-index: 2;
+        transition: all .5s;
+    }
     &::after {
         content: '';
         width: 4px;
@@ -257,3 +270,6 @@
 .services__city-card-btn {
     margin-top: 40px;
 }
+
+
+

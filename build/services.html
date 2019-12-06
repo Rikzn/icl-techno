@@ -155,6 +155,7 @@
                     <path fill="currentColor" d="M35 39.5v9l13-9-13-9v9z" />
                 </symbol>
                 <symbol viewBox="0 0 7.8 8.3" id="plus" xmlns="http://www.w3.org/2000/svg"><path d="M4.6 3.3V0H3.2v3.3H0v1.4h3.2v3.6h1.4V4.7h3.2V3.3H4.6z" /></symbol>
+                <symbol viewBox="0 0 37.92 26.67" id="quotes" xmlns="http://www.w3.org/2000/svg"><path d="M0 16h8.13L2.71 26.67h8.12L16.25 16V0H0v16zM21.67 0v16h8.12l-5.41 10.67h8.12L37.92 16V0H21.67z" /></symbol>
                 <symbol viewBox="0 0 11.5 11.5" id="remove" xmlns="http://www.w3.org/2000/svg"><path d="M11.5.8l-.8-.8-5 5L.8 0 0 .8l5 5-5 4.9.8.8 5-5 4.9 5 .8-.8-5-5 5-4.9z" /></symbol>
                 <symbol viewBox="0 0 17.9 17.2" id="save" xmlns="http://www.w3.org/2000/svg">
                     <path d="M17.6 3.3l-3.2-3-.3-.3H0v17.2h17.9V3.6zm-12-1.7H9V3h1.7V1.6h1.6v3H5.7zm7.4 14H4.9v-5.4H13zm3.3 0h-1.7v-7H3.3v7H1.6v-14h2.5v4.7h9.7V1.8l2.4 2.4z" />
@@ -590,7 +591,7 @@
                                 <b>Эл. почта:</b> <b><a href="mailto:support@icl.ru">support@icl.ru</a></b>
                             </p>
                         </div>
-                        <div class="services__row">
+                        <div class="services__row js-services-cities">
                             <img src="img/services/map.jpg" alt="Карта с городами" class="services__map" />
                             <div class="services__left-column">
                                 <div class="services__cities">
@@ -601,10 +602,10 @@
                                             </div>
                                             <ul class="services__cities-list">
                                                 <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Абакан</a>
+                                                    <a href="#" class="services__cities-link" data-target-city="abakan">Абакан</a>
                                                 </li>
                                                 <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Архангельск</a>
+                                                    <a href="#" class="services__cities-link" data-target-city="arhangelsk">Архангельск</a>
                                                 </li>
                                                 <li class="services__cities-list-item">
                                                     <a href="#" class="services__cities-link">Астрахань</a>
@@ -970,68 +971,134 @@
                                 </div>
                             </div>
                             <div class="services__right-column">
-                                <div class="services__city-card">
-                                    <div class="services__city-card-image-container">
-                                        <img src="img/services/city-card.jpg" alt="Фотография города" class="services__city-card-image" />
-                                    </div>
-                                    <div class="services__city-card-content">
-                                        <h4 class="section-header services__city-card-name">
-                                            астрахань
-                                        </h4>
-                                        <h3 class="services__city-card-header">
-                                            Астраханское представительство «АйСиЭл Сервисез»
-                                        </h3>
-                                        <div class="services__city-card-info">
-                                            <p>
-                                                Стать партнером компании «ICL Техно» просто и выгодно. Для получения статуса партнера необходимо выполнить следующие 4 шага:
-                                            </p>
+                                <div class="services__city-cards">
+                                    <div class="services__city-card" data-city="abakan">
+                                        <div class="services__city-card-image-container">
+                                            <img src="img/services/city-card.jpg" alt="Фотография города" class="services__city-card-image" />
                                         </div>
-                                        <ul class="services__city-card-list">
-                                            <li class="services__city-card-list-item">
-                                                <div class="services__city-card-item-content">
-                                                    <p>
-                                                        <b>Представитель:</b>
-                                                    </p>
-                                                    <p>
-                                                        Храмова Светлана доб.138
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li class="services__city-card-list-item">
-                                                <div class="services__city-card-item-content">
-                                                    <p>
-                                                        <b>Адрес:</b>
-                                                    </p>
-                                                    <p>
-                                                        Красная Набережная, 37
-                                                    </p>
-                                                    <p>
-                                                        <a href="#">Смотреть на карте</a>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li class="services__city-card-list-item">
-                                                <div class="services__city-card-item-content">
-                                                    <p>
-                                                        <b>Телефон:</b>
-                                                    </p>
-                                                    <p>
-                                                        (8512)51-57-54, 51-67-35(факс)
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li class="services__city-card-list-item">
-                                                <div class="services__city-card-item-content">
-                                                    <p>
-                                                        <b>Сайт партнера:</b>
-                                                    </p>
-                                                    <p>
-                                                        <a href="service@tf-tan.ru"> service@tf-tan.ru</a>
-                                                    </p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                        <a href="#" class="btn-with-corners services__city-card-btn">Отправить заявку</a>
+                                        <div class="services__city-card-content">
+                                            <h4 class="section-header services__city-card-name">
+                                                астрахань
+                                            </h4>
+                                            <h3 class="services__city-card-header">
+                                                Астраханское представительство «АйСиЭл Сервисез»
+                                            </h3>
+                                            <div class="services__city-card-info">
+                                                <p>
+                                                    Стать партнером компании «ICL Техно» просто и выгодно. Для получения статуса партнера необходимо выполнить следующие 4 шага:
+                                                </p>
+                                            </div>
+                                            <ul class="services__city-card-list">
+                                                <li class="services__city-card-list-item">
+                                                    <div class="services__city-card-item-content">
+                                                        <p>
+                                                            <b>Представитель:</b>
+                                                        </p>
+                                                        <p>
+                                                            Храмова Светлана доб.138
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="services__city-card-list-item">
+                                                    <div class="services__city-card-item-content">
+                                                        <p>
+                                                            <b>Адрес:</b>
+                                                        </p>
+                                                        <p>
+                                                            Красная Набережная, 37
+                                                        </p>
+                                                        <p>
+                                                            <a href="#">Смотреть на карте</a>
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="services__city-card-list-item">
+                                                    <div class="services__city-card-item-content">
+                                                        <p>
+                                                            <b>Телефон:</b>
+                                                        </p>
+                                                        <p>
+                                                            (8512)51-57-54, 51-67-35(факс)
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="services__city-card-list-item">
+                                                    <div class="services__city-card-item-content">
+                                                        <p>
+                                                            <b>Сайт партнера:</b>
+                                                        </p>
+                                                        <p>
+                                                            <a href="service@tf-tan.ru"> service@tf-tan.ru</a>
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <a href="#" class="btn-with-corners services__city-card-btn">Отправить заявку</a>
+                                        </div>
+                                    </div>
+                                    <div class="services__city-card" data-city="arhangelsk">
+                                        <div class="services__city-card-image-container">
+                                            <img src="img/services/city-card.jpg" alt="Фотография города" class="services__city-card-image" />
+                                        </div>
+                                        <div class="services__city-card-content">
+                                            <h4 class="section-header services__city-card-name">
+                                                Архангельск
+                                            </h4>
+                                            <h3 class="services__city-card-header">
+                                                Архангельское представительство «АйСиЭл Сервисез»
+                                            </h3>
+                                            <div class="services__city-card-info">
+                                                <p>
+                                                    Стать партнером компании «ICL Техно» просто и выгодно. Для получения статуса партнера необходимо выполнить следующие 4 шага:
+                                                </p>
+                                            </div>
+                                            <ul class="services__city-card-list">
+                                                <li class="services__city-card-list-item">
+                                                    <div class="services__city-card-item-content">
+                                                        <p>
+                                                            <b>Представитель:</b>
+                                                        </p>
+                                                        <p>
+                                                            Храмова Светлана доб.138
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="services__city-card-list-item">
+                                                    <div class="services__city-card-item-content">
+                                                        <p>
+                                                            <b>Адрес:</b>
+                                                        </p>
+                                                        <p>
+                                                            Красная Набережная, 37
+                                                        </p>
+                                                        <p>
+                                                            <a href="#">Смотреть на карте</a>
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="services__city-card-list-item">
+                                                    <div class="services__city-card-item-content">
+                                                        <p>
+                                                            <b>Телефон:</b>
+                                                        </p>
+                                                        <p>
+                                                            (8512)51-57-54, 51-67-35(факс)
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="services__city-card-list-item">
+                                                    <div class="services__city-card-item-content">
+                                                        <p>
+                                                            <b>Сайт партнера:</b>
+                                                        </p>
+                                                        <p>
+                                                            <a href="service@tf-tan.ru"> service@tf-tan.ru</a>
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <a href="#" class="btn-with-corners services__city-card-btn">Отправить заявку</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

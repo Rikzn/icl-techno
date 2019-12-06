@@ -1,0 +1,111 @@
+.become-partner {
+    margin: 100px 0;
+    @include breakpoint(tablet) {
+        margin: 80px 0;
+    }
+    @include breakpoint(small-tablet) {
+        margin: 50px 0;
+    }
+}
+
+
+.become-partner__heading {
+    font-size: 32px;
+    @include breakpoint(mobile) {
+        font-size: 24px;
+    }
+}
+
+
+
+.become-partner__row {
+    display: flex;
+    margin-top: 30px;
+}
+
+
+.become-partner__left-column {
+    width: 50%;
+    flex-grow: 1;
+    margin-right: 150px;
+}
+
+
+.become-partner__right-column {
+    width: 300px;
+    flex-shrink: 0;
+}
+
+
+.become-partner__subtitle {
+    font-size: 20px;
+    line-height: 28px;
+    font-family: $proxima;
+}
+
+
+.become-partner__steps-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -12px;
+}
+
+
+.become-partner__steps-list-item {
+    width: 33.33%;
+    padding: 12px;
+}
+
+
+.become-partner__steps-card {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.become-partner__steps-card-number {
+    font-size: 72px;
+    line-height: 84px;
+    color: $red;
+    font-family: $roboto;
+    margin-bottom: 15px;
+}
+
+
+.become-partner__steps-card-title {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 8px;
+}
+
+
+.become-partner__steps-card-content {
+    font-size: 16px;
+    line-height: 22px;
+    > * {
+        &:first-child {
+            margin-top: 0;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    > p {
+        margin: 15px;
+    }
+
+    > a,
+    > p a {
+        color: $red;
+        transition: color .2s;
+        &:link,
+        &:visited {
+            color: $red;
+        }
+
+        .no-touch &:hover,
+        .touch &:active {
+            color: $red-hover;
+        }
+    }
+}

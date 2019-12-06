@@ -6,7 +6,7 @@ export default function() {
         const tabItems = Array.from(item.querySelector('.js-tabs-list').children);
         let activeTabIndex;
 
-        if (!tabButtons.legth === 0 || tabItems.length === 0) {
+        if (!tabButtons.length === 0 || tabItems.length === 0) {
             console.log('Отсутвуют кнопки или табы');
             return;
         } else if (tabButtons.length !== tabItems.length) {

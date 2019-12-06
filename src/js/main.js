@@ -26,6 +26,7 @@ import amountBtns from './amountBtns';
 import modals from './modals';
 import map from './map';
 import customSelects from './customSelects';
+import servicesCities from './servicesCities';
 
 
 window.addEventListener('load', function() {
@@ -184,6 +185,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Кастомные селекты
 
     customSelects();
+
+    // Города с сервисами
+
+    servicesCities();
     
 
 });

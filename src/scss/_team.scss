@@ -1,0 +1,194 @@
+.team {
+    margin: 100px 0;
+    @include breakpoint(tablet) {
+        margin: 80px 0;
+    }
+    @include breakpoint(small-tablet) {
+        margin: 50px 0;
+    }
+}
+
+.team__heading {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    @include breakpoint(tablet) {
+        font-size: 35px;
+    }
+    @include breakpoint(mobile) {
+        font-size: 28px;
+    }
+}
+
+.team__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.team__list-item {
+    width: 33.33%;
+    padding: 15px;
+}
+
+.team__card {
+    color: white;
+    // min-height: 554px;
+    position: relative;
+    // display: flex;
+    // flex-direction: column;
+    display: block;
+    overflow: hidden;
+    &::after {
+        content: '';
+        width: 100%;
+        padding-bottom: 126%;
+        display: block;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: -2;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: $red;
+    }
+    &:link,
+    &:visited {
+        color: white;
+    }
+
+    .no-touch &:hover,
+    .touch &:active {
+        .team__card-content-name-layer {
+            &::before {
+                flex-grow: 0;
+            }
+        }
+        .team__card-bg-image-container {
+            &::before {
+                opacity: 0;
+            }
+            &::after {
+                opacity: 1;
+            }
+        }
+
+        .team__card-content-info-layer {
+            transform: translateY(0);
+        }
+    }
+}
+
+.team__card-bg-image-container {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, rgba(black, 0.5), rgba(black, 0) 50%);
+        z-index: 2;
+        transition: opacity 0.3s;
+    }
+
+    &::after {
+        content: '';
+        z-index: 2;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(black, 0.5);
+        transition: opacity 0.3s;
+        opacity: 0;
+    }
+}
+
+.team__card-image {
+    width: 100%;
+    height: 100%;
+    @include objectFitCover();
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.team__card-content {
+    // flex-grow: 1;
+    // position: relative;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.team__card-content-name-layer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 42px;
+    display: flex;
+    flex-direction: column;
+    &::before {
+        content: '';
+        flex-grow: 1;
+        transition: flex-grow 0.3s ease-out;
+    }
+}
+
+
+.team__card-content-info-layer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 42px;
+    display: flex;
+    flex-direction: column;
+    transition: transform .3s ease-out;
+    transform: translateY(100%);
+    .icon-quotes {
+        fill: $red;
+    }
+
+    &::before {
+        content: '';
+        flex-grow: 1;
+        transition: flex-grow 0.3s ease-out;
+    }
+}
+
+.team__card-content-name {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 8px;
+}
+
+.team__card-content-role {
+    font-size: 16px;
+    line-height: 22px;
+    font-family: $proxima;
+}
+
+.team__card-text {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 21px;
+    font-family: $proxima;
+}
