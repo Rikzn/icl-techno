@@ -21,6 +21,12 @@
 .become-partner__row {
     display: flex;
     margin-top: 30px;
+    @include breakpoint(laptop) {
+        flex-direction: column;
+    }
+    @include breakpoint(mobile) {
+        margin-top: 15px;
+    }
 }
 
 
@@ -28,32 +34,84 @@
     width: 50%;
     flex-grow: 1;
     margin-right: 150px;
+    @include breakpoint(laptop) {
+        width: 100%;
+        margin-right: 0;
+    }
 }
 
 
 .become-partner__right-column {
     width: 300px;
     flex-shrink: 0;
+    @include breakpoint(laptop) {
+        display: none;
+    }
 }
 
 
 .become-partner__subtitle {
     font-size: 20px;
-    line-height: 28px;
+    line-height: 1.4;
     font-family: $proxima;
+    margin-bottom: 45px;
+    @include breakpoint(mobile) {
+        font-size: 16px;
+    }
 }
 
 
 .become-partner__steps-list {
     display: flex;
     flex-wrap: wrap;
-    margin: -12px;
+    margin: -40px -30px;
+    @include breakpoint(mobile) {
+        margin: -20px -30px;
+    }
+    @include breakpoint(small-mobile) {
+        margin: -10px -20px;
+    }
 }
 
 
 .become-partner__steps-list-item {
     width: 33.33%;
-    padding: 12px;
+    padding: 40px 30px;
+    @include breakpoint(mobile) {
+        padding: 20px 30px;
+    }
+    @include breakpoint(small-mobile) {
+        padding: 10px 20px;
+    }
+    &:nth-child(3n + 1) {
+        .become-partner__steps-card-number-bar {
+            display: none;
+        }
+    }
+
+    @include breakpoint(mobile) {
+        width: 50%;
+        &:nth-child(3n + 1) {
+            .become-partner__steps-card-number-bar {
+                display: flex;
+            }
+        }
+        &:nth-child(2n + 1) {
+            .become-partner__steps-card-number-bar {
+                display: none;
+            }
+        }
+    }
+
+
+    @include breakpoint(small-mobile) {
+        width: 100%;
+        .become-partner__steps-card-number-bar {
+            display: none !important;
+        }
+    }
+
+
 }
 
 
@@ -65,10 +123,50 @@
 
 .become-partner__steps-card-number {
     font-size: 72px;
-    line-height: 84px;
+    line-height: 1.2;
+    font-weight: 100;
     color: $red;
     font-family: $roboto;
     margin-bottom: 15px;
+    position: relative;
+    @include breakpoint(small-mobile) {
+        font-size: 50px;
+        margin-bottom: 8px;
+    }
+}
+
+
+.become-partner__steps-card-number-bar {
+    position: absolute;
+    
+    display: flex;
+    align-items: center;
+    right: 100%;
+    margin-right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    // width: calc(108% - 60px);
+    width: calc(95% - 60px);
+    &::before,
+    &::after {
+        content: '';
+        width: 12px;
+        height: 12px;
+        display: block;
+        border: 2px solid $red;
+        border-radius: 50%;
+        flex-shrink: 0;
+    }
+
+    
+}
+
+
+.become-partner__steps-card-number-bar-middle {
+    height: 1px;
+    background-color: $red;
+    flex-grow: 1;
+    width: 20px;
 }
 
 
@@ -76,12 +174,14 @@
     font-size: 16px;
     line-height: 22px;
     margin-bottom: 8px;
+    font-weight: 700;
 }
 
 
 .become-partner__steps-card-content {
     font-size: 16px;
     line-height: 22px;
+    padding-right: 30px;
     > * {
         &:first-child {
             margin-top: 0;
@@ -91,7 +191,7 @@
         }
     }
     > p {
-        margin: 15px;
+        margin: 15px 0;
     }
 
     > a,

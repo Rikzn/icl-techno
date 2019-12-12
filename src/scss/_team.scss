@@ -17,6 +17,7 @@
     }
     @include breakpoint(mobile) {
         font-size: 28px;
+        margin-bottom: 30px;
     }
 }
 
@@ -24,11 +25,21 @@
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
+    @include breakpoint(mobile) {
+        margin: -8px;
+    }
 }
 
 .team__list-item {
     width: 33.33%;
     padding: 15px;
+    @include breakpoint(mobile) {
+        width: 50%;
+        padding: 8px;
+    }
+    @include breakpoint(small-mobile) {
+        width: 100%;
+    }
 }
 
 .team__card {
@@ -143,6 +154,12 @@
     padding: 42px;
     display: flex;
     flex-direction: column;
+    @include breakpoint(small-tablet) {
+        padding: 30px;
+    }
+    @include breakpoint(mobile) {
+        padding: 20px;
+    }
     &::before {
         content: '';
         flex-grow: 1;
@@ -162,6 +179,12 @@
     flex-direction: column;
     transition: transform .3s ease-out;
     transform: translateY(100%);
+    @include breakpoint(small-tablet) {
+        padding: 30px;
+    }
+    @include breakpoint(mobile) {
+        padding: 20px;
+    }
     .icon-quotes {
         fill: $red;
     }
@@ -178,6 +201,9 @@
     font-size: 24px;
     line-height: 28px;
     margin-bottom: 8px;
+    // @include breakpoint(mobile) {
+    //     font-size: 20px;
+    // }
 }
 
 .team__card-content-role {

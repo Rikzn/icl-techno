@@ -22,12 +22,25 @@
     display: flex;
     flex-wrap: wrap;
     margin: -12px;
+    @include breakpoint(mobile) {
+        margin: -8px;
+    }
 }
 
 
 .ceo__list-item {
     width: 25%;
     padding: 12px;
+    @include breakpoint(laptop) {
+        width: 33.33%;
+    }
+    @include breakpoint(mobile) {
+        width: 50%;
+        padding: 8px;
+    }
+    // @include breakpoint(small-mobile) {
+    //     width: 100%;
+    // }
 }
 
 
@@ -79,13 +92,22 @@
     justify-content: flex-end;
     padding: 32px;
     z-index: 5;
+    @include breakpoint(small-tablet) {
+        padding: 30px;
+    }
+    @include breakpoint(mobile) {
+        padding: 20px;
+    }
 }
 
 
 .ceo__content-name {
     font-size: 24px;
-    line-height: 28px;
+    line-height: 1.2;
     font-weight: 700;
+    @include breakpoint(mobile) {
+        font-size: 16px;
+    }
 }
 
 
@@ -93,4 +115,7 @@
     font-family: $proxima;
     font-size: 16px;
     margin-top: 8px;
+    @include breakpoint(mobile) {
+        font-size: 14px;
+    }
 }

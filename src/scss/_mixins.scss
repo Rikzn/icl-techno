@@ -94,6 +94,15 @@
 }
 
 @mixin defaultContent() {
+    > * {
+        &:first-child {
+            margin-top: 0;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
     > a {
         color: $red;
         transition: color 0.2s;
@@ -161,7 +170,7 @@
         font-size: 20px;
         line-height: 1.5;
         margin-bottom: 1em;
-
+        margin-top: 1em;
         a {
             display: inline;
             color: $red;
@@ -178,6 +187,8 @@
         }
         @include breakpoint(small-mobile) {
             font-size: 16px;
+            margin-bottom: 0.5em;
+            margin-top: 0.5em;
         }
     }
 
@@ -185,18 +196,26 @@
         list-style: none;
         margin-bottom: 40px;
         margin-top: 20px;
+        line-height: 1.5;
         @include breakpoint(mobile) {
             margin-top: 20px;
             margin-bottom: 30px;
+        }
+        @include breakpoint(small-mobile) {
+            margin-bottom: 0.5em;
+            margin-top: 0.5em;
         }
         li {
             padding-left: 25px;
             font-size: 20px;
             position: relative;
             font-family: $proxima;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             @include breakpoint(mobile) {
                 font-size: 16px;
+            }
+            @include breakpoint(small-tablet) {
+                margin-bottom: 5px;
             }
             &:last-child {
                 margin-bottom: 0;
@@ -218,10 +237,15 @@
         list-style: none;
         margin-bottom: 40px;
         margin-top: 20px;
+        line-height: 1.5;
         counter-reset: ordered-list;
         @include breakpoint(mobile) {
             margin-top: 20px;
             margin-bottom: 30px;
+        }
+        @include breakpoint(small-mobile) {
+            margin-bottom: 0.5em;
+            margin-top: 0.5em;
         }
         li {
             padding-left: 25px;
@@ -232,6 +256,9 @@
             counter-increment: ordered-list;
             @include breakpoint(mobile) {
                 font-size: 16px;
+            }
+            @include breakpoint(small-tablet) {
+                margin-bottom: 5px;
             }
             &::before {
                 content: counter(ordered-list) '. ';
@@ -317,9 +344,6 @@
         &:empty {
             display: none;
         }
-        &:last-child {
-            // margin-bottom: 0;
-        }
     }
 
     > .btn-with-corners {
@@ -327,6 +351,11 @@
         @include breakpoint(small-mobile) {
             margin-top: 10px;
         }
+    }
+
+    > img {
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     > .image-block:not(.image-block--floated) {
