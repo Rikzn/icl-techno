@@ -28,6 +28,7 @@ import map from './map';
 import customSelects from './customSelects';
 import servicesCities from './servicesCities';
 import teamModals from './teamModals';
+import showAll from './showAll';
 
 
 window.addEventListener('load', function() {
@@ -194,6 +195,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Модалки команды
 
     teamModals();
+
+    // Показать все
+
+    showAll();
     
 
 });

@@ -197,6 +197,22 @@
     .touch &:active {
         text-decoration: underline;
     }
+
+
+    &.active {
+        order: 5;
+    }
+}
+
+
+.cart__items-card-info-show-all + .cart__items-card-info-specs-list {
+    display: none;
+    margin-top: 5px;
+}
+
+
+.cart__items-card-info-show-all.active + .cart__items-card-info-specs-list {
+    display: flex;
 }
 
 .cart__items-card-controls {

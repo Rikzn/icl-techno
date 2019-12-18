@@ -8910,6 +8910,15 @@ a.section-header:link, a.section-header:visited {
   .no-touch .cart__items-card-info-show-all:hover,
   .touch .cart__items-card-info-show-all:active {
     text-decoration: underline; }
+  .cart__items-card-info-show-all.active {
+    order: 5; }
+
+.cart__items-card-info-show-all + .cart__items-card-info-specs-list {
+  display: none;
+  margin-top: 5px; }
+
+.cart__items-card-info-show-all.active + .cart__items-card-info-specs-list {
+  display: flex; }
 
 .cart__items-card-controls {
   margin-top: 15px;
