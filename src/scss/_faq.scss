@@ -239,6 +239,7 @@
     padding-right: 60px;
     @include breakpoint(mobile) {
         padding-right: 45px;
+        padding-right: 0;
     }
     > * {
         &:last-child {
@@ -300,6 +301,9 @@
                 left: 0;
                 top: 10px;
                 border-radius: 50%;
+                @include breakpoint(mobile) {
+                    top: 8px;
+                }
             }
         }
     }

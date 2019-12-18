@@ -1,5 +1,5 @@
-import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
-import getScrollbarWidth from './functions/getScrollbarWidth';
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
+
 
 
 export default function() {

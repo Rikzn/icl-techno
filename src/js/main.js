@@ -27,6 +27,7 @@ import modals from './modals';
 import map from './map';
 import customSelects from './customSelects';
 import servicesCities from './servicesCities';
+import teamModals from './teamModals';
 
 
 window.addEventListener('load', function() {
@@ -189,6 +190,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Города с сервисами
 
     servicesCities();
+
+    // Модалки команды
+
+    teamModals();
     
 
 });

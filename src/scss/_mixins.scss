@@ -93,6 +93,35 @@
     }
 }
 
+
+@mixin breakpointMF($class) {
+    @if $class == large-desktop {
+        @media only screen and (max-width: $desktop-width + 1px) {
+            @content;
+        }
+    } @else if $class == desktop {
+        @media only screen and (max-width: $laptop-width + 1px) {
+            @content;
+        }
+    } @else if $class == laptop {
+        @media only screen and (max-width: $tablet-width + 1px) {
+            @content;
+        }
+    } @else if $class == tablet {
+        @media only screen and (max-width: $small-tablet-width + 1px) {
+            @content;
+        }
+    } @else if $class == small-tablet {
+        @media only screen and (min-width: $mobile-width + 1px) {
+            @content;
+        }
+    } @else if $class == mobile {
+        @media only screen and (max-width: $small-mobile-width + 1px) {
+            @content;
+        }
+    } 
+}
+
 @mixin defaultContent() {
     > * {
         &:first-child {

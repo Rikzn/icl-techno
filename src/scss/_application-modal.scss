@@ -9,11 +9,9 @@
     background-color: rgba(black, .5);
     cursor: pointer;
     z-index: 1500;
-
     opacity: 0;
     visibility: hidden;
     transition: opacity .2s, visibility 0s linear .2s;
-
     &.shown {
         opacity: 1;
         visibility: visible;
