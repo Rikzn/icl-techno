@@ -11520,6 +11520,84 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
   .touch .partner-candidate__announcement a:not(.btn-with-corners):active {
     text-decoration: underline; }
 
+.search__content {
+  max-width: 740px;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 85px;
+  margin-bottom: 85px; }
+  @media only screen and (max-width: 768px) {
+    .search__content {
+      margin: 40px 0; } }
+
+.search__input-wrapper {
+  border: 1px solid black;
+  display: flex;
+  align-items: center; }
+
+.search__input {
+  border: none;
+  width: 50%;
+  flex-grow: 1;
+  padding: 14px 16px;
+  font: inherit;
+  font-family: "Proxima Nova", sans-serif;
+  background: transparent;
+  font-size: 20px;
+  color: black; }
+  @media only screen and (max-width: 768px) {
+    .search__input {
+      font-size: 18px; } }
+  .search__input::-webkit-input-placeholder {
+    color: black; }
+  .search__input:-moz-placeholder {
+    color: black; }
+  .search__input::-moz-placeholder {
+    color: black; }
+  .search__input:-ms-input-placeholder {
+    color: black; }
+
+.search__submit {
+  flex-shrink: 0;
+  margin-right: 20px; }
+  .search__submit svg {
+    fill: black;
+    transition: fill .2s; }
+    @media only screen and (max-width: 768px) {
+      .search__submit svg {
+        width: 22px;
+        height: 22px; } }
+  .no-touch .search__submit:hover svg,
+  .touch .search__submit:active svg {
+    fill: #FB0D1B; }
+
+.search__results-heading {
+  color: #bababa;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.search__results {
+  margin-top: 30px;
+  padding: 0 16px; }
+
+.search__results-list {
+  margin-top: 20px; }
+
+.search__results-list-item {
+  margin-bottom: 15px; }
+  .search__results-list-item a {
+    color: black;
+    transition: color .2s; }
+    .search__results-list-item a:link, .search__results-list-item a:visited {
+      color: black; }
+    .no-touch .search__results-list-item a:hover,
+    .touch .search__results-list-item a:active {
+      color: #FB0D1B; }
+  .search__results-list-item:last-child {
+    margin-bottom: 0; }
+
 body.is-admin .block-wrapper:first-child {
   margin-top: 100px; }
 

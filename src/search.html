@@ -1,0 +1,32 @@
+{% set title = "Поиск" %} {% set headerColor = "white" %} {% extends "layout.html" %} {% block content %}
+
+<section class="search">
+    <div class="search__content">
+        <div class="search__input-wrapper">
+            <input type="search" class="search__input" name="q" placeholder="Что вы хотите найти?"/>
+            <button type="submit" class="search__submit">
+                <svg width="24" height="24" aria-hidden="true" class="icon-search">
+                    <use xlink:href="#search"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="search__results">
+            <h5 class="search__results-heading">
+                быстрые ссылки
+            </h5>
+            <ul class="search__results-list">
+                <li class="search__results-list-item">
+                    <a href="#">Мобильные устройства</a>
+                </li>
+                <li class="search__results-list-item">
+                    <a href="#">Настольные системы</a>
+                </li>
+                <li class="search__results-list-item">
+                    <a href="#">Серверные системы</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
