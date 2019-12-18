@@ -6,6 +6,7 @@ export default function() {
     const modalLinks = Array.from(document.querySelectorAll('.js-modal-open'));
     const modalCloseLinks = Array.from(document.querySelectorAll('.js-modal-close'));
     const modals = Array.from(document.querySelectorAll('.js-modal'));
+    let activeModal = null;
 
     modalLinks.forEach(link => {
         link.addEventListener('click', function(event) {
@@ -18,6 +19,8 @@ export default function() {
                     disableBodyScroll(modal.querySelector('.js-modal-scroll-wrapper'), {
                         reserveScrollBarGap: false
                     })
+                    activeModal = modal;
+
                 }
             }
         })
@@ -26,11 +29,10 @@ export default function() {
     modalCloseLinks.forEach(btn => {
         btn.addEventListener('click', function() {
             const modal = this.closest('.js-modal');
-
             if (modal) {
                 modal.classList.remove('shown');
                 enableBodyScroll(modal.querySelector('.js-modal-scroll-wrapper'))
-                
+                activeModal = null;
             }
         })
     });
@@ -40,9 +42,17 @@ export default function() {
             if (this === event.target) {
                 modal.classList.remove('shown');
                 enableBodyScroll(modal.querySelector('.js-modal-scroll-wrapper'))
-               
+                activeModal = null;
             }
-        })
-        
+        })    
+    })
+
+
+    document.addEventListener('keyup', function(event) {
+        if (event.key === 'Escape' && activeModal) {
+            activeModal.classList.remove('shown');
+            enableBodyScroll(activeModal.querySelector('.js-modal-scroll-wrapper'))
+            activeModal = null;
+        }
     })
 }
