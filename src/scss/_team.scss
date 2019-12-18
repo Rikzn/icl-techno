@@ -72,23 +72,26 @@
         color: white;
     }
 
-    .no-touch &:hover {
-        .team__card-content-name-layer {
-            &::before {
-                flex-grow: 0;
+    @include breakpointMF(small-tablet) {
+        .no-touch &:hover,
+        &.active {
+            .team__card-content-name-layer {
+                &::before {
+                    flex-grow: 0;
+                }
             }
-        }
-        .team__card-bg-image-container {
-            &::before {
-                opacity: 0;
+            .team__card-bg-image-container {
+                &::before {
+                    opacity: 0;
+                }
+                &::after {
+                    opacity: 1;
+                }
             }
-            &::after {
-                opacity: 1;
-            }
-        }
 
-        .team__card-content-info-layer {
-            transform: translateY(0);
+            .team__card-content-info-layer {
+                transform: translateY(0);
+            }
         }
     }
 }
@@ -264,7 +267,8 @@
     position: relative;
 
     @include breakpoint(mobile) {
-        padding: 20px;
+        padding: 50px 20px;
+        
         display: block;
         // &::after {
         //     content: '';
@@ -316,7 +320,7 @@
 .team__modal-heading {
     font-weight: 700;
     font-size: 40px;
-    line-height: 54px;
+    line-height: 1.2;
     flex-shrink: 0;
     @include breakpoint(mobile) {
         font-size: 28px;
@@ -409,4 +413,37 @@
             transform: rotate(45deg);
         }
     }
+}
+
+.team__modal-next,
+.team__modal-prev {
+    position: absolute;
+
+    top: 50%;
+    margin-top: -23px;
+    @include breakpoint(mobile) {
+        display: none;
+    }
+    .no-touch &:hover,
+    .touch &:active {
+        svg {
+            fill: $red;
+        }
+    }
+    svg {
+        fill: white;
+        width: 46px;
+        height: 46px;
+        transition: fill 0.2s;
+    }
+}
+
+.team__modal-prev {
+    right: 100%;
+    margin-right: 30px;
+}
+
+.team__modal-next {
+    left: 100%;
+    margin-left: 30px;
 }
