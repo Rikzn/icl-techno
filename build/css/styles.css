@@ -983,6 +983,11 @@ textarea {
   border-radius: 0;
   font: inherit; }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
 textarea {
   resize: none;
   box-shadow: none; }
@@ -8389,6 +8394,21 @@ a.section-header:link, a.section-header:visited {
     display: flex;
     align-items: baseline;
     padding: 2px 5px; }
+  .configurator__config-summary-table input {
+    font: inherit;
+    background-color: transparent;
+    border: none;
+    min-width: 0;
+    width: auto;
+    border: 1px solid transparent;
+    padding: 2px 4px;
+    transition: border-color .2s;
+    outline: none;
+    width: 28px; }
+    .configurator__config-summary-table input.currency {
+      width: 38px; }
+    .configurator__config-summary-table input:focus {
+      border: 1px solid lightgrey; }
 
 .configurator__config-summary-price-usd,
 .configurator__config-summary-price-rub {

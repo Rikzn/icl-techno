@@ -655,6 +655,28 @@
         align-items: baseline;
         padding: 2px 5px;
     }
+
+
+
+   
+    input {
+        font: inherit;
+        background-color: transparent;
+        border: none;
+        min-width: 0;
+        width: auto;
+        border: 1px solid transparent;
+        padding: 2px 4px;
+        transition: border-color .2s;
+        outline: none;
+        width: 28px;
+        &.currency {
+            width: 38px;
+        }
+        &:focus {
+            border: 1px solid lightgrey;
+        }
+    }
 }
 
 .configurator__config-summary-price-usd,
