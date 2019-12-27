@@ -265,7 +265,7 @@
     padding: 50px;
     display: flex;
     position: relative;
-
+    z-index: 10;
     @include breakpoint(mobile) {
         padding: 50px 20px;
         
@@ -289,6 +289,27 @@
     @include objectFitCover();
 }
 
+
+.team__modal-bg-video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+
+.team__modal-bg-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
 .team__modal-person-image {
     position: absolute;
     left: 20px;
@@ -296,7 +317,7 @@
     width: 50%;
     max-height: 90%;
     height: auto;
-    z-index: 2;
+    z-index: 3;
     @include objectFitContainBottom();
 
     @include breakpoint(mobile) {

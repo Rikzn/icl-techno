@@ -37,6 +37,7 @@
         -webkit-overflow-scrolling: touch;
         padding-bottom: 20px;
         margin-bottom: -20px;
+        flex-wrap: nowrap;
         margin-left: -1 * $desktop-content-padding;
         margin-right: -1 * $desktop-content-padding;
     }

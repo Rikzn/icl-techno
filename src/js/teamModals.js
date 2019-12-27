@@ -2,6 +2,8 @@ import PerfectScrollbar from 'perfect-scrollbar';
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 import detectIt from 'detect-it';
 
+import 'objectFitPolyfill';
+
 export default function() {
     const modals = Array.from(document.querySelectorAll('.js-team-modal'));
     let activeModal = null;
@@ -14,6 +16,15 @@ export default function() {
         const next = modal.querySelector('.team__modal-next');
         const prev = modal.querySelector('.team__modal-prev');
 
+
+        function loadAndPlayVideo(modal) {
+            const video = modal.querySelector('video');
+            if (!video) return;
+            objectFitPolyfill(video);
+            video.currentTime = 0;
+            video.play();
+        }
+
         open.addEventListener('click', function(event) {
             event.preventDefault();
             content.classList.add('shown');
@@ -21,6 +32,7 @@ export default function() {
             content.style.transitionDuration = '';
             disableBodyScroll(innerContent);
             activeModal = modal;
+            loadAndPlayVideo(activeModal);
         });
 
         close.addEventListener('click', function(event) {
@@ -61,6 +73,7 @@ export default function() {
                 content.style.transitionDuration = '0s';
                 disableBodyScroll(innerContent);
                 activeModal = modal;
+                loadAndPlayVideo(activeModal);
             } else {
                 const nextModal = modals[0];
                 const content = nextModal.querySelector('.js-team-modal-content');
@@ -71,6 +84,7 @@ export default function() {
                 content.style.transitionDuration = '0s';
                 disableBodyScroll(innerContent);
                 activeModal = modal;
+                loadAndPlayVideo(activeModal);
             }
         });
 
@@ -92,6 +106,7 @@ export default function() {
                 content.style.transitionDuration = '0s';
                 disableBodyScroll(innerContent);
                 activeModal = modal;
+                loadAndPlayVideo(activeModal);
             } else {
                 const nextModal = modals[modals.length - 1];
                 const content = nextModal.querySelector('.js-team-modal-content');
@@ -102,6 +117,7 @@ export default function() {
                 content.style.transitionDuration = '0s';
                 disableBodyScroll(innerContent);
                 activeModal = modal;
+                loadAndPlayVideo(activeModal);
             }
         });
 

@@ -243,8 +243,15 @@
             </a>
             <div class="team__modal js-team-modal-content">
                 <div class="team__modal-inner">
-                    <img src="img/team/modal-bg-blurred.jpg" alt="" class="team__modal-bg-image" />
+                    <!-- <img src="img/team/modal-bg-blurred.jpg" alt="" class="team__modal-bg-image" /> -->
+                    <video width="480" poster="img/team/modal-bg-blurred.jpg" class="team__modal-bg-video" playsinline muted loop data-object-fit>
+                        <source src="misc/video/video.mp4" type="video/mp4" />
+                        <source src="misc/video/video.webm" type="video/webm" />
+                        Your browser doesn't support HTML5 video tag.
+                    </video>
+                    <span class="team__modal-bg-overlay" style="background: black; opacity: .3;"></span>
                     <img src="img/team/modal-person.png" alt="" class="team__modal-person-image" />
+                    
                     <button class="team__modal-close-btn js-team-modal-close">
                         <span>
                             <svg width="22" height="22" aria-hidden="true" class="icon-cross">
