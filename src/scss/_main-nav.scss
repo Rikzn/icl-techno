@@ -508,7 +508,7 @@
             }
 
             > img {
-                opacity: 1;
+                opacity: .6;
             }
         }
     }
@@ -526,6 +526,10 @@
         .main-nav__submenu-icon-container {
             > svg {
                 fill: white;
+            }
+
+            > img {
+                opacity: 1;
             }
         }
     }
