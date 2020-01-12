@@ -1,983 +1,965 @@
-{% set title = "Команда" %} {% set headerColor = "white" %} {% set activePage = "about-company" %} {% extends "layout.html" %} {% block content %}
+{% set title = "Команда" %}
+{% set headerColor = "white" %}
+{% set activePage = "about-company" %}
+{% extends "layout.html" %}
+{% block content %}
 
-<section class="navigation-standalone">
-    <div class="main-nav__submenu-content main-nav__submenu-content--standalone">
-        <ul class="main-nav__submenu-list">
-            <li class="main-nav__submenu-list-item">
-                <a href="#" class="main-nav__submenu-link">
-                    ICL в цифрах
+    <section class="navigation-standalone">
+        <div class="main-nav__submenu-content main-nav__submenu-content--standalone">
+            <ul class="main-nav__submenu-list">
+                <li class="main-nav__submenu-list-item">
+                    <a href="#" class="main-nav__submenu-link">
+                        ICL в цифрах
+                    </a>
+                </li>
+                <li class="main-nav__submenu-list-item">
+                    <a href="#" class="main-nav__submenu-link">
+                        Производство
+                    </a>
+                </li>
+                <li class="main-nav__submenu-list-item">
+                    <a href="#" class="main-nav__submenu-link">
+                        История компании
+                    </a>
+                </li>
+                <li class="main-nav__submenu-list-item">
+                    <a href="#" class="main-nav__submenu-link">
+                        Вакансии
+                    </a>
+                </li>
+                <li class="main-nav__submenu-list-item active">
+                    <a href="#" class="main-nav__submenu-link">
+                        Команда
+                    </a>
+                </li>
+                <li class="main-nav__submenu-list-item">
+                    <a href="#" class="main-nav__submenu-link">
+                        Новости
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="team">
+        <span class="section-header">
+            Команда
+        </span>
+        <h2 class="team__heading">
+            В нашей компании работают исключительно профессионалы своего дела
+        </h2>
+        <ul class="team__list">
+            <li class="team__list-item js-team-modal">
+                <a href="#" class="team__card js-team-modal-open">
+                    <div class="team__card-bg-image-container">
+                        <img src="img/team/team-member-1.jpg" alt="" class="team__card-image"/>
+                    </div>
+                    <div class="team__card-content">
+                        <div class="team__card-content-name-layer">
+                            <p class="team__card-content-name">
+                                Александр Костылев
+                            </p>
+                            <p class="team__card-content-role">
+                                Генеральный директор
+                            </p>
+                        </div>
+                        <div class="team__card-content-info-layer">
+                            <svg width="38" height="28" aria-hidden="true" class="icon-quotes">
+                                <use xlink:href="#quotes"/>
+                            </svg>
+                            <p class="team__card-text">
+                                Высокопроизводительный и функциональный ПК с защитой от неблагоприятных внешних воздействий.
+                            </p>
+                        </div>
+                    </div>
                 </a>
+                <div class="team__modal js-team-modal-content">
+                    <div class="team__modal-inner">
+                        <img src="img/team/modal-bg-blurred.jpg" alt="" class="team__modal-bg-image"/>
+                        <img src="img/team/modal-person.png" alt="" class="team__modal-person-image"/>
+                        <button class="team__modal-close-btn js-team-modal-close">
+                            <span>
+                                <svg width="22" height="22" aria-hidden="true" class="icon-cross">
+                                    <use xlink:href="#cross"></use>
+                                </svg>
+                            </span>
+                        </button>
+                        <a href="#" class="team__modal-prev">
+                            <svg width="46" height="46" aria-hidden="true" class="icon-arrow-left">
+                                <use xlink:href="#arrow-left"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="team__modal-next">
+                            <svg width="46" height="46" aria-hidden="true" class="icon-arrow-right">
+                                <use xlink:href="#arrow-right"></use>
+                            </svg>
+                        </a>
+
+                        <div class="team__modal-inner-scroll-wrapper">
+                            <div class="team__modal-content-column">
+                                <h4 class="team__modal-heading">
+                                    Олег Прохоров
+                                </h4>
+                                <p class="team__modal-role">
+                                    Руководитель отдела продаж
+                                </p>
+                                <div class="team__modal-text-wrapper">
+                                    <p>
+                                        <b>
+                                            Эксперт по стратегическому планированию и продажам в ICL Техно
+                                        </b>
+                                    </p>
+                                    <p>
+                                        Пришел на работу в Группу компаний ICL в 2008 году. Стартовал с позиции руководителя группы системных инженеров. Занимал различные позиции, связанные с поддержкой продаж, продажами, маркетингом. Руководил и входил в состав проектных групп ряда важнейших внутренних и внешних проектов (например, сертификация компании по стандарту ISO27001).
+                                    </p>
+                                    <p>
+                                        <b>
+                                            Награды
+                                        </b>
+                                    </p>
+                                    <p>
+                                        Открыла 40 партнерских сетей, получила премию дарвина, успешно подняла на новый уровень продажи ICL Техно.Открыла 40 партнерских сетей, получила премию дарвина, успешно подняла на новый уровень продажи ICL Техно.
+                                    </p>
+                                    <p>
+                                        <b>
+                                            Достижения
+                                        </b>
+                                    </p>
+                                    <p>
+                                        Открыла 40 партнерских сетей, получила премию дарвина, успешно подняла на новый уровень продажи ICL Техно.Открыла 40 партнерских сетей, получила премию дарвина, успешно подняла на новый уровень продаж...
+                                    </p>
+                                </div>
+                                <a href="#" class="btn-with-corners team__modal-ask-question-btn">Задать вопрос</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </li>
-            <li class="main-nav__submenu-list-item">
-                <a href="#" class="main-nav__submenu-link">
-                    Производство
+            <li class="team__list-item js-team-modal">
+                <a href="#" class="team__card js-team-modal-open">
+                    <div class="team__card-bg-image-container">
+                        <img src="img/team/team-member-2.jpg" alt="" class="team__card-image"/>
+                    </div>
+                    <div class="team__card-content">
+                        <div class="team__card-content-name-layer">
+                            <p class="team__card-content-name">
+                                Александр Костылев
+                            </p>
+                            <p class="team__card-content-role">
+                                Генеральный директор
+                            </p>
+                        </div>
+                        <div class="team__card-content-info-layer">
+                            <svg width="38" height="28" aria-hidden="true" class="icon-quotes">
+                                <use xlink:href="#quotes"/>
+                            </svg>
+                            <p class="team__card-text">
+                                Высокопроизводительный и функциональный ПК с защитой от неблагоприятных внешних воздействий.
+                            </p>
+                        </div>
+                    </div>
                 </a>
+                <div class="team__modal js-team-modal-content">
+                    <div class="team__modal-inner">
+                        <img src="img/team/modal-bg-blurred.jpg" alt="" class="team__modal-bg-image"/>
+                        <img src="img/team/modal-person.png" alt="" class="team__modal-person-image"/>
+                        <button class="team__modal-close-btn js-team-modal-close">
+                            <span>
+                                <svg width="22" height="22" aria-hidden="true" class="icon-cross">
+                                    <use xlink:href="#cross"></use>
+                                </svg>
+                            </span>
+                        </button>
+                        <a href="#" class="team__modal-prev">
+                            <svg width="46" height="46" aria-hidden="true" class="icon-arrow-left">
+                                <use xlink:href="#arrow-left"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="team__modal-next">
+                            <svg width="46" height="46" aria-hidden="true" class="icon-arrow-right">
+                                <use xlink:href="#arrow-right"></use>
+                            </svg>
+                        </a>
+                        <div class="team__modal-inner-scroll-wrapper">
+                            <div class="team__modal-content-column">
+                                <h4 class="team__modal-heading">
+                                    Александр Костылев
+                                </h4>
+                                <p class="team__modal-role">
+                                    Руководитель отдела продаж
+                                </p>
+                                <div class="team__modal-text-wrapper">
+                                    <p>
+                                        <b>
+                                            Эксперт по стратегическому планированию и продажам в ICL Техно
+                                        </b>
+                                    </p>
+                                    <p>
+                                        Пришел на работу в Группу компаний ICL в 2008 году. Стартовал с позиции руководителя группы системных инженеров. Занимал различные позиции, связанные с поддержкой продаж, продажами, маркетингом. Руководил и входил в состав проектных групп ряда важнейших внутренних и внешних проектов (например, сертификация компании по стандарту ISO27001).
+                                    </p>
+                                    <p>
+                                        <b>
+                                            Награды
+                                        </b>
+                                    </p>
+                                    <p>
+                                        Открыла 40 партнерских сетей, получила премию дарвина, успешно подняла на новый уровень продажи ICL Техно.Открыла 40 партнерских сетей, получила премию дарвина, успешно подняла на новый уровень продажи ICL Техно.
+                                    </p>
+                                    <p>
+                                        <b>
+                                            Достижения
+                                        </b>
+                                    </p>
+                                    <p>
+                                        Открыла 40 партнерских сетей, получила премию дарвина, успешно подняла на новый уровень продажи ICL Техно.Открыла 40 партнерских сетей, получила премию дарвина, успешно подняла на новый уровень продаж...
+                                    </p>
+                                </div>
+                                <a href="#" class="btn-with-corners team__modal-ask-question-btn">Задать вопрос</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </li>
-            <li class="main-nav__submenu-list-item">
-                <a href="#" class="main-nav__submenu-link">
-                    История компании
+            <li class="team__list-item js-team-modal">
+                <a href="#" class="team__card js-team-modal-open">
+                    <div class="team__card-bg-image-container">
+                        <img src="img/team/team-member-2.jpg" alt="" class="team__card-image"/>
+                    </div>
+                    <div class="team__card-content">
+                        <div class="team__card-content-name-layer">
+                            <p class="team__card-content-name">
+                                Александр Костылев Младший
+                            </p>
+                            <p class="team__card-content-role">
+                                Генеральный директор
+                            </p>
+                        </div>
+                        <div class="team__card-content-info-layer">
+                            <svg width="38" height="28" aria-hidden="true" class="icon-quotes">
+                                <use xlink:href="#quotes"/>
+                            </svg>
+                            <p class="team__card-text">
+                                Высокопроизводительный и функциональный ПК с защитой от неблагоприятных внешних воздействий.
+                            </p>
+                        </div>
+                    </div>
                 </a>
-            </li>
-            <li class="main-nav__submenu-list-item">
-                <a href="#" class="main-nav__submenu-link">
-                    Вакансии
-                </a>
-            </li>
-            <li class="main-nav__submenu-list-item active">
-                <a href="#" class="main-nav__submenu-link">
-                    Команда
-                </a>
-            </li>
-            <li class="main-nav__submenu-list-item">
-                <a href="#" class="main-nav__submenu-link">
-                    Новости
-                </a>
+                <div class="team__modal js-team-modal-content">
+                    <div class="team__modal-inner">
+                        <!-- <img src="img/team/modal-bg-blurred.jpg" alt="" class="team__modal-bg-image" /> -->
+                        <video width="480" poster="img/team/modal-bg-blurred.jpg" class="team__modal-bg-video" playsinline muted loop data-object-fit>
+                            <source src="misc/video/video.mp4" type="video/mp4"/>
+                            <source src="misc/video/video.webm" type="video/webm"/>
+                            Your browser doesn't support HTML5 video tag.
+                        </video>
+                        <span class="team__modal-bg-overlay" style="background: black; opacity: .3;"></span>
+                        <img src="img/team/modal-person.png" alt="" class="team__modal-person-image"/>
+
+                        <button class="team__modal-close-btn js-team-modal-close">
+                            <span>
+                                <svg width="22" height="22" aria-hidden="true" class="icon-cross">
+                                    <use xlink:href="#cross"></use>
+                                </svg>
+                            </span>
+                        </button>
+                        <a href="#" class="team__modal-prev">
+                            <svg width="46" height="46" aria-hidden="true" class="icon-arrow-left">
+                                <use xlink:href="#arrow-left"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="team__modal-next">
+                            <svg width="46" height="46" aria-hidden="true" class="icon-arrow-right">
+                                <use xlink:href="#arrow-right"></use>
+                            </svg>
+                        </a>
+                        <div class="team__modal-inner-scroll-wrapper">
+                            <div class="team__modal-content-column">
+                                <h4 class="team__modal-heading">
+                                    Александр Костылев Младший
+                                </h4>
+                                <p class="team__modal-role">
+                                    Руководитель отдела продаж
+                                </p>
+                                <div class="team__modal-text-wrapper">
+                                    <p>
+                                        <b>
+                                            Эксперт по стратегическому планированию и продажам в ICL Техно
+                                        </b>
+                                    </p>
+                                    <p>
+                                        Пришел на работу в Группу компаний ICL в 2008 году. Стартовал с позиции руководителя группы системных инженеров. Занимал различные позиции, связанные с поддержкой продаж, продажами, маркетингом. Руководил и входил в состав проектных групп ряда важнейших внутренних и внешних проектов (например, сертификация компании по стандарту ISO27001).
+                                    </p>
+                                    <p>
+                                        <b>
+                                            Награды
+                                        </b>
+                                    </p>
+                                    <p>
+                                        Открыла 40 партнерских сетей, получила премию дарвина, успешно подняла на новый уровень продажи ICL Техно.Открыла 40 партнерских сетей, получила премию дарвина, успешно подняла на новый уровень продажи ICL Техно.
+                                    </p>
+                                    <p>
+                                        <b>
+                                            Достижения
+                                        </b>
+                                    </p>
+                                    <p>
+                                        Открыла 40 партнерских сетей, получила премию дарвина, успешно подняла на новый уровень продажи ICL Техно.Открыла 40 партнерских сетей, получила премию дарвина, успешно подняла на новый уровень продаж...
+                                    </p>
+                                </div>
+                                <a href="#" class="btn-with-corners team__modal-ask-question-btn">Задать вопрос</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </li>
         </ul>
-    </div>
-</section>
-<section class="team">
-    <span class="section-header">
-        Команда
-    </span>
-    <h2 class="team__heading">
-        В нашей компании работают исключительно профессионалы своего дела
-    </h2>
-    <ul class="team__list">
-        <li class="team__list-item js-team-modal">
-            <a href="#" class="team__card js-team-modal-open">
-                <div class="team__card-bg-image-container">
-                    <img src="img/team/team-member-1.jpg" alt="" class="team__card-image" />
-                </div>
-                <div class="team__card-content">
-                    <div class="team__card-content-name-layer">
-                        <p class="team__card-content-name">
-                            Александр Костылев
+    </section>
+    <section class="ceo">
+        <h2 class="ceo__heading">
+            Руководители
+        </h2>
+        <ul class="ceo__list">
+            <li class="ceo__list-item">
+                <div class="ceo__card">
+                    <div class="ceo__card-image-container">
+                        <img src="img/team/ceo-1.jpg" alt="" class="ceo__card-image"/>
+                    </div>
+                    <div class="ceo__content">
+                        <p class="ceo__content-name">
+                            Олег Прохоров
                         </p>
-                        <p class="team__card-content-role">
+                        <p class="ceo__content-role">
                             Генеральный директор
                         </p>
                     </div>
-                    <div class="team__card-content-info-layer">
-                        <svg width="38" height="28" aria-hidden="true" class="icon-quotes">
-                            <use xlink:href="#quotes" />
-                        </svg>
-                        <p class="team__card-text">
-                            Высокопроизводительный и функциональный ПК с защитой от неблагоприятных внешних воздействий.
+                </div>
+            </li>
+            <li class="ceo__list-item">
+                <div class="ceo__card">
+                    <div class="ceo__card-image-container">
+                        <img src="img/team/ceo-2.jpg" alt="" class="ceo__card-image"/>
+                    </div>
+                    <div class="ceo__content">
+                        <p class="ceo__content-name">
+                            Александр Костылев
+                        </p>
+                        <p class="ceo__content-role">
+                            Заместитель директора
                         </p>
                     </div>
                 </div>
-            </a>
-            <div class="team__modal js-team-modal-content">
-                <div class="team__modal-inner">
-                    <img src="img/team/modal-bg-blurred.jpg" alt="" class="team__modal-bg-image" />
-                    <img src="img/team/modal-person.png" alt="" class="team__modal-person-image" />
-                    <button class="team__modal-close-btn js-team-modal-close">
-                        <span>
-                            <svg width="22" height="22" aria-hidden="true" class="icon-cross">
-                                <use xlink:href="#cross"></use>
-                            </svg>
+            </li>
+            <li class="ceo__list-item">
+                <div class="ceo__card">
+                    <div class="ceo__card-image-container">
+                        <img src="img/team/ceo-3.jpg" alt="" class="ceo__card-image"/>
+                    </div>
+                    <div class="ceo__content">
+                        <p class="ceo__content-name">
+                            Виктор Алтуфьев
+                        </p>
+                        <p class="ceo__content-role">
+                            Руководитель отдела маркетинга
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="ceo__list-item">
+                <div class="ceo__card">
+                    <div class="ceo__card-image-container">
+                        <img src="img/team/ceo-4.jpg" alt="" class="ceo__card-image"/>
+                    </div>
+                    <div class="ceo__content">
+                        <p class="ceo__content-name">
+                            Виктор Алтуфьев
+                        </p>
+                        <p class="ceo__content-role">
+                            Руководитель отдела маркетинга
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="ceo__list-item">
+                <div class="ceo__card">
+                    <div class="ceo__card-image-container">
+                        <img src="img/team/ceo-1.jpg" alt="" class="ceo__card-image"/>
+                    </div>
+                    <div class="ceo__content">
+                        <p class="ceo__content-name">
+                            Олег Прохоров
+                        </p>
+                        <p class="ceo__content-role">
+                            Генеральный директор
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="ceo__list-item">
+                <div class="ceo__card">
+                    <div class="ceo__card-image-container">
+                        <img src="img/team/ceo-2.jpg" alt="" class="ceo__card-image"/>
+                    </div>
+                    <div class="ceo__content">
+                        <p class="ceo__content-name">
+                            Александр Костылев
+                        </p>
+                        <p class="ceo__content-role">
+                            Заместитель директора
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="ceo__list-item">
+                <div class="ceo__card">
+                    <div class="ceo__card-image-container">
+                        <img src="img/team/ceo-3.jpg" alt="" class="ceo__card-image"/>
+                    </div>
+                    <div class="ceo__content">
+                        <p class="ceo__content-name">
+                            Виктор Алтуфьев
+                        </p>
+                        <p class="ceo__content-role">
+                            Руководитель отдела маркетинга
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="ceo__list-item">
+                <div class="ceo__card">
+                    <div class="ceo__card-image-container">
+                        <img src="img/team/ceo-4.jpg" alt="" class="ceo__card-image"/>
+                    </div>
+                    <div class="ceo__content">
+                        <p class="ceo__content-name">
+                            Виктор Алтуфьев
+                        </p>
+                        <p class="ceo__content-role">
+                            Руководитель отдела маркетинга
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="faq">
+        <h2 class="faq__heading">
+            Вакансии
+        </h2>
+        <div class="faq__row js-tabs">
+            <div class="faq__left-column">
+                <div class="faq__tabs-navigation js-tabs-navigation">
+                    <a href="#" class="faq__navigation-btn active">
+                        <span class="faq__navigation-btn-text">
+                            Производство
                         </span>
-                    </button>
-                    <a href="#" class="team__modal-prev">
-                        <svg width="46" height="46" aria-hidden="true" class="icon-arrow-left">
-                            <use xlink:href="#arrow-left"></use>
-                        </svg>
                     </a>
-                    <a href="#" class="team__modal-next">
-                        <svg width="46" height="46" aria-hidden="true" class="icon-arrow-right">
-                            <use xlink:href="#arrow-right"></use>
-                        </svg>
+                    <a href="#" class="faq__navigation-btn">
+                        <span class="faq__navigation-btn-text">Менеджмент</span>
                     </a>
+                    <a href="#" class="faq__navigation-btn">
+                        <span class="faq__navigation-btn-text">Отдел рекламы</span>
+                    </a>
+                </div>
+            </div>
+            <div class="faq__right-column">
+                <ul class="faq__tabs-list js-tabs-list">
+                    <li class="faq__tabs-item">
+                        <ul class="faq__accordeons-list">
+                            <li class="faq__accordeons-list-item js-accordeon">
+                                <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
+                                    <span class="faq__accordeons-toggle-text">
+                                        Старший системный администратор (Enterprise Management, ITSM) Казань
+                                    </span>
+                                    <svg width="25" height="25" aria-hidden="true" class="icon-cross">
+                                        <use xlink:href="#cross"/>
+                                    </svg>
+                                </a>
+                                <div class="faq__accordeons-content js-accordeon-content">
+                                    <p>
+                                        Поддержка одного или нескольких решений ITSM на базе продуктов от ведущих вендоров (ServiceNow, MS SCSM, CA ServiceDesk Manager, Omnitracker, OTRS, etc). Выполнение регулярных операций по поддержанию систем ITSM заказчика в рабочем состоянии Решение инцидентов, связанных с поддерживаемыми системами
+                                    </p>
+                                    <h4>
+                                        Условия
+                                    </h4>
+                                    <ul>
+                                        <li>
+                                            Поддержка одного или нескольких решений ITSM на базе продуктов от ведущих вендоров (ServiceNow, MS SCSM, CA ServiceDesk Manager, Omnitracker, OTRS, etc).
+                                        </li>
+                                        <li>
+                                            Выполнение регулярных операций по поддержанию систем ITSM заказчика в рабочем состоянии Решение инцидентов, связанных с поддерживаемыми системами
+                                        </li>
+                                        <li>
+                                            Интеграция систем ITSM с другими IT системами заказчика (мониторинг, inventory, и т.д.) Модификация веб-порталов ITSM систем по требованию заказчика
+                                        </li>
+                                        <li>
+                                            Работа по планированию и внедрению изменений в ITSM системах заказчика в рамках процесса управления изменениями, оценка рисков и документирование изменений
+                                        </li>
+                                        <li>
+                                            Предложение возможных улучшений сервиса Следование корпоративным политикам (процедуры, процессы, стандарты, инструкции, соблюдение мер безопасности).
+                                        </li>
+                                    </ul>
+                                    <h4>
+                                        Требования
+                                    </h4>
+                                    <ul>
+                                        <li>
+                                            Поддержка одного или нескольких решений ITSM на базе продуктов от ведущих вендоров (ServiceNow, MS SCSM, CA ServiceDesk Manager, Omnitracker, OTRS, etc).
+                                        </li>
+                                        <li>
+                                            Выполнение регулярных операций по поддержанию систем ITSM заказчика в рабочем состоянии Решение инцидентов, связанных с поддерживаемыми системами
+                                        </li>
+                                        <li>
+                                            Интеграция систем ITSM с другими IT системами заказчика (мониторинг, inventory, и т.д.) Модификация веб-порталов ITSM систем по требованию заказчика
+                                        </li>
+                                        <li>
+                                            Работа по планированию и внедрению изменений в ITSM системах заказчика в рамках процесса управления изменениями, оценка рисков и документирование изменений
+                                        </li>
+                                        <li>
+                                            Предложение возможных улучшений сервиса Следование корпоративным политикам (процедуры, процессы, стандарты, инструкции, соблюдение мер безопасности).
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="btn-with-corners">
+                                        Смотреть вакансию на Head Hunter
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="faq__accordeons-list-item js-accordeon">
+                                <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
+                                    <span class="faq__accordeons-toggle-text">
+                                        Старший системный администратор (Enterprise Management, ITSM) Казань
+                                    </span>
+                                    <svg width="25" height="25" aria-hidden="true" class="icon-cross">
+                                        <use xlink:href="#cross"/>
+                                    </svg>
+                                </a>
+                                <div class="faq__accordeons-content js-accordeon-content">
+                                    <p>
+                                        Поддержка одного или нескольких решений ITSM на базе продуктов от ведущих вендоров (ServiceNow, MS SCSM, CA ServiceDesk Manager, Omnitracker, OTRS, etc). Выполнение регулярных операций по поддержанию систем ITSM заказчика в рабочем состоянии Решение инцидентов, связанных с поддерживаемыми системами
+                                    </p>
+                                    <h4>
+                                        Условия
+                                    </h4>
+                                    <ul>
+                                        <li>
+                                            Поддержка одного или нескольких решений ITSM на базе продуктов от ведущих вендоров (ServiceNow, MS SCSM, CA ServiceDesk Manager, Omnitracker, OTRS, etc).
+                                        </li>
+                                        <li>
+                                            Выполнение регулярных операций по поддержанию систем ITSM заказчика в рабочем состоянии Решение инцидентов, связанных с поддерживаемыми системами
+                                        </li>
+                                        <li>
+                                            Интеграция систем ITSM с другими IT системами заказчика (мониторинг, inventory, и т.д.) Модификация веб-порталов ITSM систем по требованию заказчика
+                                        </li>
+                                        <li>
+                                            Работа по планированию и внедрению изменений в ITSM системах заказчика в рамках процесса управления изменениями, оценка рисков и документирование изменений
+                                        </li>
+                                        <li>
+                                            Предложение возможных улучшений сервиса Следование корпоративным политикам (процедуры, процессы, стандарты, инструкции, соблюдение мер безопасности).
+                                        </li>
+                                    </ul>
+                                    <h4>
+                                        Требования
+                                    </h4>
+                                    <ul>
+                                        <li>
+                                            Поддержка одного или нескольких решений ITSM на базе продуктов от ведущих вендоров (ServiceNow, MS SCSM, CA ServiceDesk Manager, Omnitracker, OTRS, etc).
+                                        </li>
+                                        <li>
+                                            Выполнение регулярных операций по поддержанию систем ITSM заказчика в рабочем состоянии Решение инцидентов, связанных с поддерживаемыми системами
+                                        </li>
+                                        <li>
+                                            Интеграция систем ITSM с другими IT системами заказчика (мониторинг, inventory, и т.д.) Модификация веб-порталов ITSM систем по требованию заказчика
+                                        </li>
+                                        <li>
+                                            Работа по планированию и внедрению изменений в ITSM системах заказчика в рамках процесса управления изменениями, оценка рисков и документирование изменений
+                                        </li>
+                                        <li>
+                                            Предложение возможных улучшений сервиса Следование корпоративным политикам (процедуры, процессы, стандарты, инструкции, соблюдение мер безопасности).
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="btn-with-corners">
+                                        Смотреть вакансию на Head Hunter
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="faq__accordeons-list-item js-accordeon">
+                                <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
+                                    <span class="faq__accordeons-toggle-text">
+                                        Старший системный администратор (Enterprise Management, ITSM) Казань
+                                    </span>
+                                    <svg width="25" height="25" aria-hidden="true" class="icon-cross">
+                                        <use xlink:href="#cross"/>
+                                    </svg>
+                                </a>
+                                <div class="faq__accordeons-content js-accordeon-content">
+                                    <p>
+                                        Поддержка одного или нескольких решений ITSM на базе продуктов от ведущих вендоров (ServiceNow, MS SCSM, CA ServiceDesk Manager, Omnitracker, OTRS, etc). Выполнение регулярных операций по поддержанию систем ITSM заказчика в рабочем состоянии Решение инцидентов, связанных с поддерживаемыми системами
+                                    </p>
+                                    <h4>
+                                        Условия
+                                    </h4>
+                                    <ul>
+                                        <li>
+                                            Поддержка одного или нескольких решений ITSM на базе продуктов от ведущих вендоров (ServiceNow, MS SCSM, CA ServiceDesk Manager, Omnitracker, OTRS, etc).
+                                        </li>
+                                        <li>
+                                            Выполнение регулярных операций по поддержанию систем ITSM заказчика в рабочем состоянии Решение инцидентов, связанных с поддерживаемыми системами
+                                        </li>
+                                        <li>
+                                            Интеграция систем ITSM с другими IT системами заказчика (мониторинг, inventory, и т.д.) Модификация веб-порталов ITSM систем по требованию заказчика
+                                        </li>
+                                        <li>
+                                            Работа по планированию и внедрению изменений в ITSM системах заказчика в рамках процесса управления изменениями, оценка рисков и документирование изменений
+                                        </li>
+                                        <li>
+                                            Предложение возможных улучшений сервиса Следование корпоративным политикам (процедуры, процессы, стандарты, инструкции, соблюдение мер безопасности).
+                                        </li>
+                                    </ul>
+                                    <h4>
+                                        Требования
+                                    </h4>
+                                    <ul>
+                                        <li>
+                                            Поддержка одного или нескольких решений ITSM на базе продуктов от ведущих вендоров (ServiceNow, MS SCSM, CA ServiceDesk Manager, Omnitracker, OTRS, etc).
+                                        </li>
+                                        <li>
+                                            Выполнение регулярных операций по поддержанию систем ITSM заказчика в рабочем состоянии Решение инцидентов, связанных с поддерживаемыми системами
+                                        </li>
+                                        <li>
+                                            Интеграция систем ITSM с другими IT системами заказчика (мониторинг, inventory, и т.д.) Модификация веб-порталов ITSM систем по требованию заказчика
+                                        </li>
+                                        <li>
+                                            Работа по планированию и внедрению изменений в ITSM системах заказчика в рамках процесса управления изменениями, оценка рисков и документирование изменений
+                                        </li>
+                                        <li>
+                                            Предложение возможных улучшений сервиса Следование корпоративным политикам (процедуры, процессы, стандарты, инструкции, соблюдение мер безопасности).
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="btn-with-corners">
+                                        Смотреть вакансию на Head Hunter
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="faq__tabs-item">
+                        <ul class="faq__accordeons-list">
+                            <li class="faq__accordeons-list-item js-accordeon">
+                                <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
+                                    <span class="faq__accordeons-toggle-text">
+                                        Старший системный администратор (Enterprise Management, ITSM) Казань
+                                    </span>
+                                    <svg width="25" height="25" aria-hidden="true" class="icon-cross">
+                                        <use xlink:href="#cross"/>
+                                    </svg>
+                                </a>
+                                <div class="faq__accordeons-content js-accordeon-content">
+                                    <p>
+                                        Поддержка одного или нескольких решений ITSM на базе продуктов от ведущих вендоров (ServiceNow, MS SCSM, CA ServiceDesk Manager, Omnitracker, OTRS, etc). Выполнение регулярных операций по поддержанию систем ITSM заказчика в рабочем состоянии Решение инцидентов, связанных с поддерживаемыми системами
+                                    </p>
+                                    <h4>
+                                        Условия
+                                    </h4>
+                                    <ul>
+                                        <li>
+                                            Поддержка одного или нескольких решений ITSM на базе продуктов от ведущих вендоров (ServiceNow, MS SCSM, CA ServiceDesk Manager, Omnitracker, OTRS, etc).
+                                        </li>
+                                        <li>
+                                            Выполнение регулярных операций по поддержанию систем ITSM заказчика в рабочем состоянии Решение инцидентов, связанных с поддерживаемыми системами
+                                        </li>
+                                        <li>
+                                            Интеграция систем ITSM с другими IT системами заказчика (мониторинг, inventory, и т.д.) Модификация веб-порталов ITSM систем по требованию заказчика
+                                        </li>
+                                        <li>
+                                            Работа по планированию и внедрению изменений в ITSM системах заказчика в рамках процесса управления изменениями, оценка рисков и документирование изменений
+                                        </li>
+                                        <li>
+                                            Предложение возможных улучшений сервиса Следование корпоративным политикам (процедуры, процессы, стандарты, инструкции, соблюдение мер безопасности).
+                                        </li>
+                                    </ul>
+                                    <h4>
+                                        Требования
+                                    </h4>
+                                    <ul>
+                                        <li>
+                                            Поддержка одного или нескольких решений ITSM на базе продуктов от ведущих вендоров (ServiceNow, MS SCSM, CA ServiceDesk Manager, Omnitracker, OTRS, etc).
+                                        </li>
+                                        <li>
+                                            Выполнение регулярных операций по поддержанию систем ITSM заказчика в рабочем состоянии Решение инцидентов, связанных с поддерживаемыми системами
+                                        </li>
+                                        <li>
+                                            Интеграция систем ITSM с другими IT системами заказчика (мониторинг, inventory, и т.д.) Модификация веб-порталов ITSM систем по требованию заказчика
+                                        </li>
+                                        <li>
+                                            Работа по планированию и внедрению изменений в ITSM системах заказчика в рамках процесса управления изменениями, оценка рисков и документирование изменений
+                                        </li>
+                                        <li>
+                                            Предложение возможных улучшений сервиса Следование корпоративным политикам (процедуры, процессы, стандарты, инструкции, соблюдение мер безопасности).
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="btn-with-corners">
+                                        Смотреть вакансию на Head Hunter
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="faq__tabs-item">
+                        <ul class="faq__accordeons-list">
+                            <li class="faq__accordeons-list-item js-accordeon">
+                                <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
+                                    <span class="faq__accordeons-toggle-text">
+                                        Старший системный администратор (Enterprise Management, ITSM) Казань
+                                    </span>
+                                    <svg width="25" height="25" aria-hidden="true" class="icon-cross">
+                                        <use xlink:href="#cross"/>
+                                    </svg>
+                                </a>
+                                <div class="faq__accordeons-content js-accordeon-content">
+                                    <p>
+                                        Поддержка одного или нескольких решений ITSM на базе продуктов от ведущих вендоров (ServiceNow, MS SCSM, CA ServiceDesk Manager, Omnitracker, OTRS, etc). Выполнение регулярных операций по поддержанию систем ITSM заказчика в рабочем состоянии Решение инцидентов, связанных с поддерживаемыми системами
+                                    </p>
+                                    <h4>
+                                        Условия
+                                    </h4>
+                                    <ul>
+                                        <li>
+                                            Поддержка одного или нескольких решений ITSM на базе продуктов от ведущих вендоров (ServiceNow, MS SCSM, CA ServiceDesk Manager, Omnitracker, OTRS, etc).
+                                        </li>
+                                        <li>
+                                            Выполнение регулярных операций по поддержанию систем ITSM заказчика в рабочем состоянии Решение инцидентов, связанных с поддерживаемыми системами
+                                        </li>
+                                        <li>
+                                            Интеграция систем ITSM с другими IT системами заказчика (мониторинг, inventory, и т.д.) Модификация веб-порталов ITSM систем по требованию заказчика
+                                        </li>
+                                        <li>
+                                            Работа по планированию и внедрению изменений в ITSM системах заказчика в рамках процесса управления изменениями, оценка рисков и документирование изменений
+                                        </li>
+                                        <li>
+                                            Предложение возможных улучшений сервиса Следование корпоративным политикам (процедуры, процессы, стандарты, инструкции, соблюдение мер безопасности).
+                                        </li>
+                                    </ul>
+                                    <h4>
+                                        Требования
+                                    </h4>
+                                    <ul>
+                                        <li>
+                                            Поддержка одного или нескольких решений ITSM на базе продуктов от ведущих вендоров (ServiceNow, MS SCSM, CA ServiceDesk Manager, Omnitracker, OTRS, etc).
+                                        </li>
+                                        <li>
+                                            Выполнение регулярных операций по поддержанию систем ITSM заказчика в рабочем состоянии Решение инцидентов, связанных с поддерживаемыми системами
+                                        </li>
+                                        <li>
+                                            Интеграция систем ITSM с другими IT системами заказчика (мониторинг, inventory, и т.д.) Модификация веб-порталов ITSM систем по требованию заказчика
+                                        </li>
+                                        <li>
+                                            Работа по планированию и внедрению изменений в ITSM системах заказчика в рамках процесса управления изменениями, оценка рисков и документирование изменений
+                                        </li>
+                                        <li>
+                                            Предложение возможных улучшений сервиса Следование корпоративным политикам (процедуры, процессы, стандарты, инструкции, соблюдение мер безопасности).
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="btn-with-corners">
+                                        Смотреть вакансию на Head Hunter
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="partner-candidate">
+        <h2 class="partner-candidate__heading">
+            ICL Techno − лучшее место для вложения в будущее
+        </h2>
 
-                    <div class="team__modal-inner-scroll-wrapper">
-                        <div class="team__modal-content-column">
-                            <h4 class="team__modal-heading">
-                                Олег Прохоров
-                            </h4>
-                            <p class="team__modal-role">
-                                Руководитель отдела продаж
-                            </p>
-                            <div class="team__modal-text-wrapper">
-                                <p>
-                                    <b>
-                                        Эксперт по стратегическому планированию и продажам в ICL Техно
-                                    </b>
-                                </p>
-                                <p>
-                                    Пришел на работу в Группу компаний ICL в 2008 году. Стартовал с позиции руководителя группы системных инженеров. Занимал различные позиции, связанные с поддержкой продаж, продажами, маркетингом. Руководил и входил
-                                    в состав проектных групп ряда важнейших внутренних и внешних проектов (например, сертификация компании по стандарту ISO27001).
-                                </p>
-                                <p>
-                                    <b>
-                                        Награды
-                                    </b>
-                                </p>
-                                <p>
-                                    Открыла 40 партнерских сетей, получила премию дарвина, успешно подняла на новый уровень продажи ICL Техно.Открыла 40 партнерских сетей, получила премию дарвина, успешно подняла на новый уровень продажи ICL Техно.
-                                </p>
-                                <p>
-                                    <b>
-                                        Достижения
-                                    </b>
-                                </p>
-                                <p>
-                                    Открыла 40 партнерских сетей, получила премию дарвина, успешно подняла на новый уровень продажи ICL Техно.Открыла 40 партнерских сетей, получила премию дарвина, успешно подняла на новый уровень продаж...
-                                </p>
-                            </div>
-                            <a href="#" class="btn-with-corners team__modal-ask-question-btn">Задать вопрос</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </li>
-        <li class="team__list-item js-team-modal">
-            <a href="#" class="team__card js-team-modal-open">
-                <div class="team__card-bg-image-container">
-                    <img src="img/team/team-member-2.jpg" alt="" class="team__card-image" />
-                </div>
-                <div class="team__card-content">
-                    <div class="team__card-content-name-layer">
-                        <p class="team__card-content-name">
-                            Александр Костылев
-                        </p>
-                        <p class="team__card-content-role">
-                            Генеральный директор
-                        </p>
-                    </div>
-                    <div class="team__card-content-info-layer">
-                        <svg width="38" height="28" aria-hidden="true" class="icon-quotes">
-                            <use xlink:href="#quotes" />
-                        </svg>
-                        <p class="team__card-text">
-                            Высокопроизводительный и функциональный ПК с защитой от неблагоприятных внешних воздействий.
-                        </p>
-                    </div>
-                </div>
-            </a>
-            <div class="team__modal js-team-modal-content">
-                <div class="team__modal-inner">
-                    <img src="img/team/modal-bg-blurred.jpg" alt="" class="team__modal-bg-image" />
-                    <img src="img/team/modal-person.png" alt="" class="team__modal-person-image" />
-                    <button class="team__modal-close-btn js-team-modal-close">
-                        <span>
-                            <svg width="22" height="22" aria-hidden="true" class="icon-cross">
-                                <use xlink:href="#cross"></use>
-                            </svg>
+        <div class="partner-candidate__content">
+            <blockquote>
+                Партнером "АйСиЭл Техно" может стать компания, профессионально занимающаяся продажей компьютерной техники, и заинтересованная в развитии совместного бизнеса по поставкам продукции производства ICL в регионы России.
+            </blockquote>
+            <p>
+                Партнером "АйСиЭл Техно" может стать компания, профессионально занимающаяся продажей компьютерной техники, и заинтересованная в развитии совместного бизнеса по поставкам продукции производства ICL в регионы России.
+            </p>
+            <img src="img/partner-candidate/parnter-candidate.jpg" alt=""/>
+        </div>
+
+        {# <div class="partner-candidate__announcement">
+            <h4>
+                Стать партнером
+            </h4>
+            <p>
+                Партнером "АйСиЭл Техно" может стать компания, профессионально занимающаяся продажей компьютерной техники
+            </p>
+            <a href="#" class="btn-with-corners">Подать заявку</a>
+        </div> #}
+    </section>
+    <section class="become-partner">
+        <h2 class="become-partner__heading">
+            Как стать партнером?
+        </h2>
+
+        <p class="become-partner__subtitle">
+            Стать партнером компании «ICL Техно» просто и выгодно. Для получения статуса партнера необходимо выполнить следующие 4 шага:
+        </p>
+        <ul class="become-partner__steps-list">
+            <li class="become-partner__steps-list-item">
+                <div class="become-partner__steps-card">
+                    <span class="become-partner__steps-card-number">
+                        01
+                        <span class="become-partner__steps-card-number-bar">
+                            <span class="become-partner__steps-card-number-bar-middle"></span>
                         </span>
-                    </button>
-                    <a href="#" class="team__modal-prev">
-                        <svg width="46" height="46" aria-hidden="true" class="icon-arrow-left">
-                            <use xlink:href="#arrow-left"></use>
-                        </svg>
-                    </a>
-                    <a href="#" class="team__modal-next">
-                        <svg width="46" height="46" aria-hidden="true" class="icon-arrow-right">
-                            <use xlink:href="#arrow-right"></use>
-                        </svg>
-                    </a>
-                    <div class="team__modal-inner-scroll-wrapper">
-                        <div class="team__modal-content-column">
-                            <h4 class="team__modal-heading">
-                                Александр Костылев
-                            </h4>
-                            <p class="team__modal-role">
-                                Руководитель отдела продаж
-                            </p>
-                            <div class="team__modal-text-wrapper">
-                                <p>
-                                    <b>
-                                        Эксперт по стратегическому планированию и продажам в ICL Техно
-                                    </b>
-                                </p>
-                                <p>
-                                    Пришел на работу в Группу компаний ICL в 2008 году. Стартовал с позиции руководителя группы системных инженеров. Занимал различные позиции, связанные с поддержкой продаж, продажами, маркетингом. Руководил и входил
-                                    в состав проектных групп ряда важнейших внутренних и внешних проектов (например, сертификация компании по стандарту ISO27001).
-                                </p>
-                                <p>
-                                    <b>
-                                        Награды
-                                    </b>
-                                </p>
-                                <p>
-                                    Открыла 40 партнерских сетей, получила премию дарвина, успешно подняла на новый уровень продажи ICL Техно.Открыла 40 партнерских сетей, получила премию дарвина, успешно подняла на новый уровень продажи ICL Техно.
-                                </p>
-                                <p>
-                                    <b>
-                                        Достижения
-                                    </b>
-                                </p>
-                                <p>
-                                    Открыла 40 партнерских сетей, получила премию дарвина, успешно подняла на новый уровень продажи ICL Техно.Открыла 40 партнерских сетей, получила премию дарвина, успешно подняла на новый уровень продаж...
-                                </p>
-                            </div>
-                            <a href="#" class="btn-with-corners team__modal-ask-question-btn">Задать вопрос</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </li>
-        <li class="team__list-item js-team-modal">
-            <a href="#" class="team__card js-team-modal-open">
-                <div class="team__card-bg-image-container">
-                    <img src="img/team/team-member-2.jpg" alt="" class="team__card-image" />
-                </div>
-                <div class="team__card-content">
-                    <div class="team__card-content-name-layer">
-                        <p class="team__card-content-name">
-                            Александр Костылев Младший
-                        </p>
-                        <p class="team__card-content-role">
-                            Генеральный директор
-                        </p>
-                    </div>
-                    <div class="team__card-content-info-layer">
-                        <svg width="38" height="28" aria-hidden="true" class="icon-quotes">
-                            <use xlink:href="#quotes" />
-                        </svg>
-                        <p class="team__card-text">
-                            Высокопроизводительный и функциональный ПК с защитой от неблагоприятных внешних воздействий.
-                        </p>
-                    </div>
-                </div>
-            </a>
-            <div class="team__modal js-team-modal-content">
-                <div class="team__modal-inner">
-                    <!-- <img src="img/team/modal-bg-blurred.jpg" alt="" class="team__modal-bg-image" /> -->
-                    <video width="480" poster="img/team/modal-bg-blurred.jpg" class="team__modal-bg-video" playsinline muted loop data-object-fit>
-                        <source src="misc/video/video.mp4" type="video/mp4" />
-                        <source src="misc/video/video.webm" type="video/webm" />
-                        Your browser doesn't support HTML5 video tag.
-                    </video>
-                    <span class="team__modal-bg-overlay" style="background: black; opacity: .3;"></span>
-                    <img src="img/team/modal-person.png" alt="" class="team__modal-person-image" />
-                    
-                    <button class="team__modal-close-btn js-team-modal-close">
-                        <span>
-                            <svg width="22" height="22" aria-hidden="true" class="icon-cross">
-                                <use xlink:href="#cross"></use>
-                            </svg>
-                        </span>
-                    </button>
-                    <a href="#" class="team__modal-prev">
-                        <svg width="46" height="46" aria-hidden="true" class="icon-arrow-left">
-                            <use xlink:href="#arrow-left"></use>
-                        </svg>
-                    </a>
-                    <a href="#" class="team__modal-next">
-                        <svg width="46" height="46" aria-hidden="true" class="icon-arrow-right">
-                            <use xlink:href="#arrow-right"></use>
-                        </svg>
-                    </a>
-                    <div class="team__modal-inner-scroll-wrapper">
-                        <div class="team__modal-content-column">
-                            <h4 class="team__modal-heading">
-                                Александр Костылев Младший
-                            </h4>
-                            <p class="team__modal-role">
-                                Руководитель отдела продаж
-                            </p>
-                            <div class="team__modal-text-wrapper">
-                                <p>
-                                    <b>
-                                        Эксперт по стратегическому планированию и продажам в ICL Техно
-                                    </b>
-                                </p>
-                                <p>
-                                    Пришел на работу в Группу компаний ICL в 2008 году. Стартовал с позиции руководителя группы системных инженеров. Занимал различные позиции, связанные с поддержкой продаж, продажами, маркетингом. Руководил и входил
-                                    в состав проектных групп ряда важнейших внутренних и внешних проектов (например, сертификация компании по стандарту ISO27001).
-                                </p>
-                                <p>
-                                    <b>
-                                        Награды
-                                    </b>
-                                </p>
-                                <p>
-                                    Открыла 40 партнерских сетей, получила премию дарвина, успешно подняла на новый уровень продажи ICL Техно.Открыла 40 партнерских сетей, получила премию дарвина, успешно подняла на новый уровень продажи ICL Техно.
-                                </p>
-                                <p>
-                                    <b>
-                                        Достижения
-                                    </b>
-                                </p>
-                                <p>
-                                    Открыла 40 партнерских сетей, получила премию дарвина, успешно подняла на новый уровень продажи ICL Техно.Открыла 40 партнерских сетей, получила премию дарвина, успешно подняла на новый уровень продаж...
-                                </p>
-                            </div>
-                            <a href="#" class="btn-with-corners team__modal-ask-question-btn">Задать вопрос</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </li>
-    </ul>
-</section>
-<section class="ceo">
-    <h2 class="ceo__heading">
-        Руководители
-    </h2>
-    <ul class="ceo__list">
-        <li class="ceo__list-item">
-            <div class="ceo__card">
-                <div class="ceo__card-image-container">
-                    <img src="img/team/ceo-1.jpg" alt="" class="ceo__card-image" />
-                </div>
-                <div class="ceo__content">
-                    <p class="ceo__content-name">
-                        Олег Прохоров
-                    </p>
-                    <p class="ceo__content-role">
-                        Генеральный директор
-                    </p>
-                </div>
-            </div>
-        </li>
-        <li class="ceo__list-item">
-            <div class="ceo__card">
-                <div class="ceo__card-image-container">
-                    <img src="img/team/ceo-2.jpg" alt="" class="ceo__card-image" />
-                </div>
-                <div class="ceo__content">
-                    <p class="ceo__content-name">
-                        Александр Костылев
-                    </p>
-                    <p class="ceo__content-role">
-                        Заместитель директора
-                    </p>
-                </div>
-            </div>
-        </li>
-        <li class="ceo__list-item">
-            <div class="ceo__card">
-                <div class="ceo__card-image-container">
-                    <img src="img/team/ceo-3.jpg" alt="" class="ceo__card-image" />
-                </div>
-                <div class="ceo__content">
-                    <p class="ceo__content-name">
-                        Виктор Алтуфьев
-                    </p>
-                    <p class="ceo__content-role">
-                        Руководитель отдела маркетинга
-                    </p>
-                </div>
-            </div>
-        </li>
-        <li class="ceo__list-item">
-            <div class="ceo__card">
-                <div class="ceo__card-image-container">
-                    <img src="img/team/ceo-4.jpg" alt="" class="ceo__card-image" />
-                </div>
-                <div class="ceo__content">
-                    <p class="ceo__content-name">
-                        Виктор Алтуфьев
-                    </p>
-                    <p class="ceo__content-role">
-                        Руководитель отдела маркетинга
-                    </p>
-                </div>
-            </div>
-        </li>
-        <li class="ceo__list-item">
-            <div class="ceo__card">
-                <div class="ceo__card-image-container">
-                    <img src="img/team/ceo-1.jpg" alt="" class="ceo__card-image" />
-                </div>
-                <div class="ceo__content">
-                    <p class="ceo__content-name">
-                        Олег Прохоров
-                    </p>
-                    <p class="ceo__content-role">
-                        Генеральный директор
-                    </p>
-                </div>
-            </div>
-        </li>
-        <li class="ceo__list-item">
-            <div class="ceo__card">
-                <div class="ceo__card-image-container">
-                    <img src="img/team/ceo-2.jpg" alt="" class="ceo__card-image" />
-                </div>
-                <div class="ceo__content">
-                    <p class="ceo__content-name">
-                        Александр Костылев
-                    </p>
-                    <p class="ceo__content-role">
-                        Заместитель директора
-                    </p>
-                </div>
-            </div>
-        </li>
-        <li class="ceo__list-item">
-            <div class="ceo__card">
-                <div class="ceo__card-image-container">
-                    <img src="img/team/ceo-3.jpg" alt="" class="ceo__card-image" />
-                </div>
-                <div class="ceo__content">
-                    <p class="ceo__content-name">
-                        Виктор Алтуфьев
-                    </p>
-                    <p class="ceo__content-role">
-                        Руководитель отдела маркетинга
-                    </p>
-                </div>
-            </div>
-        </li>
-        <li class="ceo__list-item">
-            <div class="ceo__card">
-                <div class="ceo__card-image-container">
-                    <img src="img/team/ceo-4.jpg" alt="" class="ceo__card-image" />
-                </div>
-                <div class="ceo__content">
-                    <p class="ceo__content-name">
-                        Виктор Алтуфьев
-                    </p>
-                    <p class="ceo__content-role">
-                        Руководитель отдела маркетинга
-                    </p>
-                </div>
-            </div>
-        </li>
-    </ul>
-</section>
-<section class="faq">
-    <h2 class="faq__heading">
-        Вакансии
-    </h2>
-    <div class="faq__row js-tabs">
-        <div class="faq__left-column">
-            <div class="faq__tabs-navigation js-tabs-navigation">
-                <a href="#" class="faq__navigation-btn active">
-                    <span class="faq__navigation-btn-text">
-                        Производство
                     </span>
-                </a>
-                <a href="#" class="faq__navigation-btn">
-                    <span class="faq__navigation-btn-text">Менеджмент</span>
-                </a>
-                <a href="#" class="faq__navigation-btn">
-                    <span class="faq__navigation-btn-text">Отдел рекламы</span>
-                </a>
-            </div>
-        </div>
-        <div class="faq__right-column">
-            <ul class="faq__tabs-list js-tabs-list">
-                <li class="faq__tabs-item">
-                    <ul class="faq__accordeons-list">
-                        <li class="faq__accordeons-list-item js-accordeon">
-                            <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
-                                <span class="faq__accordeons-toggle-text">
-                                    Старший системный администратор (Enterprise Management, ITSM) Казань
-                                </span>
-                                <svg width="25" height="25" aria-hidden="true" class="icon-cross">
-                                    <use xlink:href="#cross" />
-                                </svg>
-                            </a>
-                            <div class="faq__accordeons-content js-accordeon-content">
-                                <p>
-                                    Поддержка одного или нескольких решений ITSM на базе продуктов от ведущих вендоров (ServiceNow, MS SCSM, CA ServiceDesk Manager, Omnitracker, OTRS, etc). Выполнение регулярных операций по поддержанию систем ITSM
-                                    заказчика в рабочем состоянии Решение инцидентов, связанных с поддерживаемыми системами
-                                </p>
-                                <h4>
-                                    Условия
-                                </h4>
-                                <ul>
-                                    <li>
-                                        Поддержка одного или нескольких решений ITSM на базе продуктов от ведущих вендоров (ServiceNow, MS SCSM, CA ServiceDesk Manager, Omnitracker, OTRS, etc).
-                                    </li>
-                                    <li>
-                                        Выполнение регулярных операций по поддержанию систем ITSM заказчика в рабочем состоянии Решение инцидентов, связанных с поддерживаемыми системами
-                                    </li>
-                                    <li>
-                                        Интеграция систем ITSM с другими IT системами заказчика (мониторинг, inventory, и т.д.) Модификация веб-порталов ITSM систем по требованию заказчика
-                                    </li>
-                                    <li>
-                                        Работа по планированию и внедрению изменений в ITSM системах заказчика в рамках процесса управления изменениями, оценка рисков и документирование изменений
-                                    </li>
-                                    <li>
-                                        Предложение возможных улучшений сервиса Следование корпоративным политикам (процедуры, процессы, стандарты, инструкции, соблюдение мер безопасности).
-                                    </li>
-                                </ul>
-                                <h4>
-                                    Требования
-                                </h4>
-                                <ul>
-                                    <li>
-                                        Поддержка одного или нескольких решений ITSM на базе продуктов от ведущих вендоров (ServiceNow, MS SCSM, CA ServiceDesk Manager, Omnitracker, OTRS, etc).
-                                    </li>
-                                    <li>
-                                        Выполнение регулярных операций по поддержанию систем ITSM заказчика в рабочем состоянии Решение инцидентов, связанных с поддерживаемыми системами
-                                    </li>
-                                    <li>
-                                        Интеграция систем ITSM с другими IT системами заказчика (мониторинг, inventory, и т.д.) Модификация веб-порталов ITSM систем по требованию заказчика
-                                    </li>
-                                    <li>
-                                        Работа по планированию и внедрению изменений в ITSM системах заказчика в рамках процесса управления изменениями, оценка рисков и документирование изменений
-                                    </li>
-                                    <li>
-                                        Предложение возможных улучшений сервиса Следование корпоративным политикам (процедуры, процессы, стандарты, инструкции, соблюдение мер безопасности).
-                                    </li>
-                                </ul>
-                                <a href="#" class="btn-with-corners">
-                                    Смотреть вакансию на Head Hunter
-                                </a>
-                            </div>
-                        </li>
-                        <li class="faq__accordeons-list-item js-accordeon">
-                            <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
-                                <span class="faq__accordeons-toggle-text">
-                                    Старший системный администратор (Enterprise Management, ITSM) Казань
-                                </span>
-                                <svg width="25" height="25" aria-hidden="true" class="icon-cross">
-                                    <use xlink:href="#cross" />
-                                </svg>
-                            </a>
-                            <div class="faq__accordeons-content js-accordeon-content">
-                                <p>
-                                    Поддержка одного или нескольких решений ITSM на базе продуктов от ведущих вендоров (ServiceNow, MS SCSM, CA ServiceDesk Manager, Omnitracker, OTRS, etc). Выполнение регулярных операций по поддержанию систем ITSM
-                                    заказчика в рабочем состоянии Решение инцидентов, связанных с поддерживаемыми системами
-                                </p>
-                                <h4>
-                                    Условия
-                                </h4>
-                                <ul>
-                                    <li>
-                                        Поддержка одного или нескольких решений ITSM на базе продуктов от ведущих вендоров (ServiceNow, MS SCSM, CA ServiceDesk Manager, Omnitracker, OTRS, etc).
-                                    </li>
-                                    <li>
-                                        Выполнение регулярных операций по поддержанию систем ITSM заказчика в рабочем состоянии Решение инцидентов, связанных с поддерживаемыми системами
-                                    </li>
-                                    <li>
-                                        Интеграция систем ITSM с другими IT системами заказчика (мониторинг, inventory, и т.д.) Модификация веб-порталов ITSM систем по требованию заказчика
-                                    </li>
-                                    <li>
-                                        Работа по планированию и внедрению изменений в ITSM системах заказчика в рамках процесса управления изменениями, оценка рисков и документирование изменений
-                                    </li>
-                                    <li>
-                                        Предложение возможных улучшений сервиса Следование корпоративным политикам (процедуры, процессы, стандарты, инструкции, соблюдение мер безопасности).
-                                    </li>
-                                </ul>
-                                <h4>
-                                    Требования
-                                </h4>
-                                <ul>
-                                    <li>
-                                        Поддержка одного или нескольких решений ITSM на базе продуктов от ведущих вендоров (ServiceNow, MS SCSM, CA ServiceDesk Manager, Omnitracker, OTRS, etc).
-                                    </li>
-                                    <li>
-                                        Выполнение регулярных операций по поддержанию систем ITSM заказчика в рабочем состоянии Решение инцидентов, связанных с поддерживаемыми системами
-                                    </li>
-                                    <li>
-                                        Интеграция систем ITSM с другими IT системами заказчика (мониторинг, inventory, и т.д.) Модификация веб-порталов ITSM систем по требованию заказчика
-                                    </li>
-                                    <li>
-                                        Работа по планированию и внедрению изменений в ITSM системах заказчика в рамках процесса управления изменениями, оценка рисков и документирование изменений
-                                    </li>
-                                    <li>
-                                        Предложение возможных улучшений сервиса Следование корпоративным политикам (процедуры, процессы, стандарты, инструкции, соблюдение мер безопасности).
-                                    </li>
-                                </ul>
-                                <a href="#" class="btn-with-corners">
-                                    Смотреть вакансию на Head Hunter
-                                </a>
-                            </div>
-                        </li>
-                        <li class="faq__accordeons-list-item js-accordeon">
-                            <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
-                                <span class="faq__accordeons-toggle-text">
-                                    Старший системный администратор (Enterprise Management, ITSM) Казань
-                                </span>
-                                <svg width="25" height="25" aria-hidden="true" class="icon-cross">
-                                    <use xlink:href="#cross" />
-                                </svg>
-                            </a>
-                            <div class="faq__accordeons-content js-accordeon-content">
-                                <p>
-                                    Поддержка одного или нескольких решений ITSM на базе продуктов от ведущих вендоров (ServiceNow, MS SCSM, CA ServiceDesk Manager, Omnitracker, OTRS, etc). Выполнение регулярных операций по поддержанию систем ITSM
-                                    заказчика в рабочем состоянии Решение инцидентов, связанных с поддерживаемыми системами
-                                </p>
-                                <h4>
-                                    Условия
-                                </h4>
-                                <ul>
-                                    <li>
-                                        Поддержка одного или нескольких решений ITSM на базе продуктов от ведущих вендоров (ServiceNow, MS SCSM, CA ServiceDesk Manager, Omnitracker, OTRS, etc).
-                                    </li>
-                                    <li>
-                                        Выполнение регулярных операций по поддержанию систем ITSM заказчика в рабочем состоянии Решение инцидентов, связанных с поддерживаемыми системами
-                                    </li>
-                                    <li>
-                                        Интеграция систем ITSM с другими IT системами заказчика (мониторинг, inventory, и т.д.) Модификация веб-порталов ITSM систем по требованию заказчика
-                                    </li>
-                                    <li>
-                                        Работа по планированию и внедрению изменений в ITSM системах заказчика в рамках процесса управления изменениями, оценка рисков и документирование изменений
-                                    </li>
-                                    <li>
-                                        Предложение возможных улучшений сервиса Следование корпоративным политикам (процедуры, процессы, стандарты, инструкции, соблюдение мер безопасности).
-                                    </li>
-                                </ul>
-                                <h4>
-                                    Требования
-                                </h4>
-                                <ul>
-                                    <li>
-                                        Поддержка одного или нескольких решений ITSM на базе продуктов от ведущих вендоров (ServiceNow, MS SCSM, CA ServiceDesk Manager, Omnitracker, OTRS, etc).
-                                    </li>
-                                    <li>
-                                        Выполнение регулярных операций по поддержанию систем ITSM заказчика в рабочем состоянии Решение инцидентов, связанных с поддерживаемыми системами
-                                    </li>
-                                    <li>
-                                        Интеграция систем ITSM с другими IT системами заказчика (мониторинг, inventory, и т.д.) Модификация веб-порталов ITSM систем по требованию заказчика
-                                    </li>
-                                    <li>
-                                        Работа по планированию и внедрению изменений в ITSM системах заказчика в рамках процесса управления изменениями, оценка рисков и документирование изменений
-                                    </li>
-                                    <li>
-                                        Предложение возможных улучшений сервиса Следование корпоративным политикам (процедуры, процессы, стандарты, инструкции, соблюдение мер безопасности).
-                                    </li>
-                                </ul>
-                                <a href="#" class="btn-with-corners">
-                                    Смотреть вакансию на Head Hunter
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-                <li class="faq__tabs-item">
-                    <ul class="faq__accordeons-list">
-                        <li class="faq__accordeons-list-item js-accordeon">
-                            <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
-                                <span class="faq__accordeons-toggle-text">
-                                    Старший системный администратор (Enterprise Management, ITSM) Казань
-                                </span>
-                                <svg width="25" height="25" aria-hidden="true" class="icon-cross">
-                                    <use xlink:href="#cross" />
-                                </svg>
-                            </a>
-                            <div class="faq__accordeons-content js-accordeon-content">
-                                <p>
-                                    Поддержка одного или нескольких решений ITSM на базе продуктов от ведущих вендоров (ServiceNow, MS SCSM, CA ServiceDesk Manager, Omnitracker, OTRS, etc). Выполнение регулярных операций по поддержанию систем ITSM
-                                    заказчика в рабочем состоянии Решение инцидентов, связанных с поддерживаемыми системами
-                                </p>
-                                <h4>
-                                    Условия
-                                </h4>
-                                <ul>
-                                    <li>
-                                        Поддержка одного или нескольких решений ITSM на базе продуктов от ведущих вендоров (ServiceNow, MS SCSM, CA ServiceDesk Manager, Omnitracker, OTRS, etc).
-                                    </li>
-                                    <li>
-                                        Выполнение регулярных операций по поддержанию систем ITSM заказчика в рабочем состоянии Решение инцидентов, связанных с поддерживаемыми системами
-                                    </li>
-                                    <li>
-                                        Интеграция систем ITSM с другими IT системами заказчика (мониторинг, inventory, и т.д.) Модификация веб-порталов ITSM систем по требованию заказчика
-                                    </li>
-                                    <li>
-                                        Работа по планированию и внедрению изменений в ITSM системах заказчика в рамках процесса управления изменениями, оценка рисков и документирование изменений
-                                    </li>
-                                    <li>
-                                        Предложение возможных улучшений сервиса Следование корпоративным политикам (процедуры, процессы, стандарты, инструкции, соблюдение мер безопасности).
-                                    </li>
-                                </ul>
-                                <h4>
-                                    Требования
-                                </h4>
-                                <ul>
-                                    <li>
-                                        Поддержка одного или нескольких решений ITSM на базе продуктов от ведущих вендоров (ServiceNow, MS SCSM, CA ServiceDesk Manager, Omnitracker, OTRS, etc).
-                                    </li>
-                                    <li>
-                                        Выполнение регулярных операций по поддержанию систем ITSM заказчика в рабочем состоянии Решение инцидентов, связанных с поддерживаемыми системами
-                                    </li>
-                                    <li>
-                                        Интеграция систем ITSM с другими IT системами заказчика (мониторинг, inventory, и т.д.) Модификация веб-порталов ITSM систем по требованию заказчика
-                                    </li>
-                                    <li>
-                                        Работа по планированию и внедрению изменений в ITSM системах заказчика в рамках процесса управления изменениями, оценка рисков и документирование изменений
-                                    </li>
-                                    <li>
-                                        Предложение возможных улучшений сервиса Следование корпоративным политикам (процедуры, процессы, стандарты, инструкции, соблюдение мер безопасности).
-                                    </li>
-                                </ul>
-                                <a href="#" class="btn-with-corners">
-                                    Смотреть вакансию на Head Hunter
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-                <li class="faq__tabs-item">
-                    <ul class="faq__accordeons-list">
-                        <li class="faq__accordeons-list-item js-accordeon">
-                            <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
-                                <span class="faq__accordeons-toggle-text">
-                                    Старший системный администратор (Enterprise Management, ITSM) Казань
-                                </span>
-                                <svg width="25" height="25" aria-hidden="true" class="icon-cross">
-                                    <use xlink:href="#cross" />
-                                </svg>
-                            </a>
-                            <div class="faq__accordeons-content js-accordeon-content">
-                                <p>
-                                    Поддержка одного или нескольких решений ITSM на базе продуктов от ведущих вендоров (ServiceNow, MS SCSM, CA ServiceDesk Manager, Omnitracker, OTRS, etc). Выполнение регулярных операций по поддержанию систем ITSM
-                                    заказчика в рабочем состоянии Решение инцидентов, связанных с поддерживаемыми системами
-                                </p>
-                                <h4>
-                                    Условия
-                                </h4>
-                                <ul>
-                                    <li>
-                                        Поддержка одного или нескольких решений ITSM на базе продуктов от ведущих вендоров (ServiceNow, MS SCSM, CA ServiceDesk Manager, Omnitracker, OTRS, etc).
-                                    </li>
-                                    <li>
-                                        Выполнение регулярных операций по поддержанию систем ITSM заказчика в рабочем состоянии Решение инцидентов, связанных с поддерживаемыми системами
-                                    </li>
-                                    <li>
-                                        Интеграция систем ITSM с другими IT системами заказчика (мониторинг, inventory, и т.д.) Модификация веб-порталов ITSM систем по требованию заказчика
-                                    </li>
-                                    <li>
-                                        Работа по планированию и внедрению изменений в ITSM системах заказчика в рамках процесса управления изменениями, оценка рисков и документирование изменений
-                                    </li>
-                                    <li>
-                                        Предложение возможных улучшений сервиса Следование корпоративным политикам (процедуры, процессы, стандарты, инструкции, соблюдение мер безопасности).
-                                    </li>
-                                </ul>
-                                <h4>
-                                    Требования
-                                </h4>
-                                <ul>
-                                    <li>
-                                        Поддержка одного или нескольких решений ITSM на базе продуктов от ведущих вендоров (ServiceNow, MS SCSM, CA ServiceDesk Manager, Omnitracker, OTRS, etc).
-                                    </li>
-                                    <li>
-                                        Выполнение регулярных операций по поддержанию систем ITSM заказчика в рабочем состоянии Решение инцидентов, связанных с поддерживаемыми системами
-                                    </li>
-                                    <li>
-                                        Интеграция систем ITSM с другими IT системами заказчика (мониторинг, inventory, и т.д.) Модификация веб-порталов ITSM систем по требованию заказчика
-                                    </li>
-                                    <li>
-                                        Работа по планированию и внедрению изменений в ITSM системах заказчика в рамках процесса управления изменениями, оценка рисков и документирование изменений
-                                    </li>
-                                    <li>
-                                        Предложение возможных улучшений сервиса Следование корпоративным политикам (процедуры, процессы, стандарты, инструкции, соблюдение мер безопасности).
-                                    </li>
-                                </ul>
-                                <a href="#" class="btn-with-corners">
-                                    Смотреть вакансию на Head Hunter
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
-</section>
-<section class="partner-candidate">
-    <h2 class="partner-candidate__heading">
-        ICL Techno − лучшее место для вложения в будущее
-    </h2>
-    <div class="partner-candidate__row">
-        <div class="partner-candidate__left-column">
-            <div class="partner-candidate__content">
-                <blockquote>
-                    Партнером "АйСиЭл Техно" может стать компания, профессионально занимающаяся продажей компьютерной техники, и заинтересованная в развитии совместного бизнеса по поставкам продукции производства ICL в регионы России.
-                </blockquote>
-                <p>
-                    Партнером "АйСиЭл Техно" может стать компания, профессионально занимающаяся продажей компьютерной техники, и заинтересованная в развитии совместного бизнеса по поставкам продукции производства ICL в регионы России.
-                </p>
-                <img src="img/partner-candidate/parnter-candidate.jpg" alt="" />
-            </div>
-        </div>
-        <div class="partner-candidate__right-column">
-            <div class="partner-candidate__announcement">
-                <h4>
-                    Стать партнером
-                </h4>
-                <p>
-                    Партнером "АйСиЭл Техно" может стать компания, профессионально занимающаяся продажей компьютерной техники
-                </p>
-                <a href="#" class="btn-with-corners">Подать заявку</a>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="become-partner">
-    <h2 class="become-partner__heading">
-        Как стать партнером?
-    </h2>
-    <div class="become-partner__row">
-        <div class="become-partner__left-column">
-            <p class="become-partner__subtitle">
-                Стать партнером компании «ICL Техно» просто и выгодно. Для получения статуса партнера необходимо выполнить следующие 4 шага:
-            </p>
-            <ul class="become-partner__steps-list">
-                <li class="become-partner__steps-list-item">
-                    <div class="become-partner__steps-card">
-                        <span class="become-partner__steps-card-number">
-                            01
-                            <span class="become-partner__steps-card-number-bar">
-                                <span class="become-partner__steps-card-number-bar-middle"></span>
-                            </span>
-                        </span>
-                        <p class="become-partner__steps-card-title">
-                            Заполнить заявку
-                        </p>
-                        <div class="become-partner__steps-card-content">
-                            <p><a href="#">Заполнить заявку</a> на сайте, связаться с нами по телефону или по электронной почте, получить соответствующий бланк-заявку.</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="become-partner__steps-list-item">
-                    <div class="become-partner__steps-card">
-                        <span class="become-partner__steps-card-number">
-                            02
-                            <span class="become-partner__steps-card-number-bar">
-                                <span class="become-partner__steps-card-number-bar-middle"></span>
-                            </span>
-                        </span>
-                        <p class="become-partner__steps-card-title">
-                            Начать закупки ICL
-                        </p>
-                        <div class="become-partner__steps-card-content">
-                            <p>
-                                Стать партнером компании «ICL Техно» просто и выгодно. Для получения статуса партнера необходимо выполнить следующие 4 шага:
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li class="become-partner__steps-list-item">
-                    <div class="become-partner__steps-card">
-                        <span class="become-partner__steps-card-number">
-                            03
-                            <span class="become-partner__steps-card-number-bar">
-                                <span class="become-partner__steps-card-number-bar-middle"></span>
-                            </span>
-                        </span>
-                        <p class="become-partner__steps-card-title">
-                            Преодолеть порог авторизации
-                        </p>
-                        <div class="become-partner__steps-card-content">
-                            <p>
-                                Стать партнером компании «ICL Техно» просто и выгодно. Для получения статуса партнера необходимо выполнить следующие 4 шага:
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li class="become-partner__steps-list-item">
-                    <div class="become-partner__steps-card">
-                        <span class="become-partner__steps-card-number">
-                            04
-                            <span class="become-partner__steps-card-number-bar">
-                                <span class="become-partner__steps-card-number-bar-middle"></span>
-                            </span>
-                        </span>
-                        <p class="become-partner__steps-card-title">
-                            Подписать партнерское соглашение
-                        </p>
-                        <div class="become-partner__steps-card-content">
-                            <p><a href="#">Заполнить заявку</a> на сайте, связаться с нами по телефону или по электронной почте, получить соответствующий бланк-заявку.</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="become-partner__steps-list-item">
-                    <div class="become-partner__steps-card">
-                        <span class="become-partner__steps-card-number">
-                            05
-                            <span class="become-partner__steps-card-number-bar">
-                                <span class="become-partner__steps-card-number-bar-middle"></span>
-                            </span>
-                        </span>
-                        <p class="become-partner__steps-card-title">
-                            Начать закупки ICL
-                        </p>
-                        <div class="become-partner__steps-card-content">
-                            <p>
-                                Стать партнером компании «ICL Техно» просто и выгодно. Для получения статуса партнера необходимо выполнить следующие 4 шага:
-                            </p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="become-partner__right-column">
-            <div style="height: 662px; background-color: #EAEAEA; display: flex; flex-direction: column; align-items: center; justify-content: center; font-weight: 700;">
-                Место для сайдбара
-            </div>
-        </div>
-    </div>
-</section>
-<section class="partner-benefits">
-    <h2 class="partner-benefits__heading">
-        Почему выгодно быть партнером ICL Techno
-    </h2>
-    <div class="partner-benefits__row">
-        <div class="partner-benefits__left-column">
-            <p class="partner-benefits__subtitle">
-                Стать партнером компании «ICL Техно» просто и выгодно. Для получения статуса партнера необходимо выполнить следующие 4 шага:
-            </p>
-            <ul class="partner-benefits__list">
-                <li class="partner-benefits__list-item">
-                    <div class="partner-benefits__card">
-                        <h3>
-                            Маркетинговая поддержка
-                        </h3>
-                        <ul>
-                            <li>
-                                Информационные материалы по всей линейке продукции
-                            </li>
-                            <li>
-                                Демо-комплекты оборудования
-                            </li>
-                            <li>
-                                Участие специалистов ICL в ваших мероприятиях для заказчиков
-                            </li>
-                            <li>
-                                Информирование о новых проектах, продуктовых линейках, маркетинговых акциях
-                            </li>
-                            <li>
-                                фирменные сувениры для ваших заказчиков
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="partner-benefits__list-item">
-                    <div class="partner-benefits__card">
-                        <h3>
-                            Коммерческая поддержка
-                        </h3>
-                        <ul>
-                            <li>
-                                Защита проектов (поддержка участия в тендерах)
-                            </li>
-                            <li>
-                                Гибкие финансовые условия
-                            </li>
-                            <li>
-                                Защита проектов (поддержка участия в тендерах)
-                            </li>
-                            <li>
-                                Гибкие финансовые условия
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="partner-benefits__list-item partner-benefits__list-item--wide">
-                    <div class="partner-benefits__card">
-                        <h3>
-                            Партнерские конференции
-                        </h3>
+                    <p class="become-partner__steps-card-title">
+                        Заполнить заявку
+                    </p>
+                    <div class="become-partner__steps-card-content">
                         <p>
-                            Ежегодно наша компания проводит партнерские конференции в России и за рубежом, на которые мы приглашаем наших лучших партнеров, многие из которых за годы совместной работы стали нашими близкими друзьями.
+                            <a href="#">Заполнить заявку</a>
+                            на сайте, связаться с нами по телефону или по электронной почте, получить соответствующий бланк-заявку.</p>
+                    </div>
+                </div>
+            </li>
+            <li class="become-partner__steps-list-item">
+                <div class="become-partner__steps-card">
+                    <span class="become-partner__steps-card-number">
+                        02
+                        <span class="become-partner__steps-card-number-bar">
+                            <span class="become-partner__steps-card-number-bar-middle"></span>
+                        </span>
+                    </span>
+                    <p class="become-partner__steps-card-title">
+                        Начать закупки ICL
+                    </p>
+                    <div class="become-partner__steps-card-content">
+                        <p>
+                            Стать партнером компании «ICL Техно» просто и выгодно. Для получения статуса партнера необходимо выполнить следующие 4 шага:
                         </p>
                     </div>
-                </li>
-            </ul>
-        </div>
-        <div class="partner-benefits__right-column">
-            <div style="height: 662px; background-color: #EAEAEA; display: flex; flex-direction: column; align-items: center; justify-content: center; font-weight: 700;">
-                Место для сайдбара
-            </div>
-        </div>
-    </div>
-</section>
+                </div>
+            </li>
+            <li class="become-partner__steps-list-item">
+                <div class="become-partner__steps-card">
+                    <span class="become-partner__steps-card-number">
+                        03
+                        <span class="become-partner__steps-card-number-bar">
+                            <span class="become-partner__steps-card-number-bar-middle"></span>
+                        </span>
+                    </span>
+                    <p class="become-partner__steps-card-title">
+                        Преодолеть порог авторизации
+                    </p>
+                    <div class="become-partner__steps-card-content">
+                        <p>
+                            Стать партнером компании «ICL Техно» просто и выгодно. Для получения статуса партнера необходимо выполнить следующие 4 шага:
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="become-partner__steps-list-item">
+                <div class="become-partner__steps-card">
+                    <span class="become-partner__steps-card-number">
+                        04
+                        <span class="become-partner__steps-card-number-bar">
+                            <span class="become-partner__steps-card-number-bar-middle"></span>
+                        </span>
+                    </span>
+                    <p class="become-partner__steps-card-title">
+                        Подписать партнерское соглашение
+                    </p>
+                    <div class="become-partner__steps-card-content">
+                        <p>
+                            <a href="#">Заполнить заявку</a>
+                            на сайте, связаться с нами по телефону или по электронной почте, получить соответствующий бланк-заявку.</p>
+                    </div>
+                </div>
+            </li>
+            <li class="become-partner__steps-list-item">
+                <div class="become-partner__steps-card">
+                    <span class="become-partner__steps-card-number">
+                        05
+                        <span class="become-partner__steps-card-number-bar">
+                            <span class="become-partner__steps-card-number-bar-middle"></span>
+                        </span>
+                    </span>
+                    <p class="become-partner__steps-card-title">
+                        Начать закупки ICL
+                    </p>
+                    <div class="become-partner__steps-card-content">
+                        <p>
+                            Стать партнером компании «ICL Техно» просто и выгодно. Для получения статуса партнера необходимо выполнить следующие 4 шага:
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    </section>
+    <section class="partner-benefits">
+        <h2 class="partner-benefits__heading">
+            Почему выгодно быть партнером ICL Techno
+        </h2>
+
+        <p class="partner-benefits__subtitle">
+            Стать партнером компании «ICL Техно» просто и выгодно. Для получения статуса партнера необходимо выполнить следующие 4 шага:
+        </p>
+        <ul class="partner-benefits__list">
+            <li class="partner-benefits__list-item">
+                <div class="partner-benefits__card">
+                    <h3>
+                        Маркетинговая поддержка
+                    </h3>
+                    <ul>
+                        <li>
+                            Информационные материалы по всей линейке продукции
+                        </li>
+                        <li>
+                            Демо-комплекты оборудования
+                        </li>
+                        <li>
+                            Участие специалистов ICL в ваших мероприятиях для заказчиков
+                        </li>
+                        <li>
+                            Информирование о новых проектах, продуктовых линейках, маркетинговых акциях
+                        </li>
+                        <li>
+                            фирменные сувениры для ваших заказчиков
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="partner-benefits__list-item">
+                <div class="partner-benefits__card">
+                    <h3>
+                        Коммерческая поддержка
+                    </h3>
+                    <ul>
+                        <li>
+                            Защита проектов (поддержка участия в тендерах)
+                        </li>
+                        <li>
+                            Гибкие финансовые условия
+                        </li>
+                        <li>
+                            Защита проектов (поддержка участия в тендерах)
+                        </li>
+                        <li>
+                            Гибкие финансовые условия
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="partner-benefits__list-item partner-benefits__list-item--wide">
+                <div class="partner-benefits__card">
+                    <h3>
+                        Партнерские конференции
+                    </h3>
+                    <p>
+                        Ежегодно наша компания проводит партнерские конференции в России и за рубежом, на которые мы приглашаем наших лучших партнеров, многие из которых за годы совместной работы стали нашими близкими друзьями.
+                    </p>
+                </div>
+            </li>
+        </ul>
+
+    </section>
 {% endblock %}

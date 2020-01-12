@@ -1363,8 +1363,8 @@ img {
   line-height: 1.35;
   position: relative;
   font-family: "Proxima Nova", sans-serif;
-  margin-bottom: 1.5em;
-  margin-top: 1.5em; }
+  margin-bottom: 15px;
+  margin-top: 15px; }
   @media only screen and (max-width: 1080px) {
     .default-content > blockquote {
       font-size: 22px; } }
@@ -10767,10 +10767,12 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
       margin: 50px 0; } }
 
 .become-partner__heading {
-  font-size: 32px; }
+  font-size: 32px;
+  margin-bottom: 30px; }
   @media only screen and (max-width: 768px) {
     .become-partner__heading {
-      font-size: 24px; } }
+      font-size: 24px;
+      margin-bottom: 15px; } }
 
 .become-partner__row {
   display: flex;
@@ -10927,10 +10929,12 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
       margin: 50px 0; } }
 
 .partner-benefits__heading {
-  font-size: 32px; }
+  font-size: 32px;
+  margin-bottom: 30px; }
   @media only screen and (max-width: 768px) {
     .partner-benefits__heading {
-      font-size: 24px; } }
+      font-size: 24px;
+      margin-bottom: 15px; } }
 
 .partner-benefits__row {
   display: flex;
@@ -11160,8 +11164,8 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
   line-height: 1.35;
   position: relative;
   font-family: "Proxima Nova", sans-serif;
-  margin-bottom: 1.5em;
-  margin-top: 1.5em; }
+  margin-bottom: 15px;
+  margin-top: 15px; }
   @media only screen and (max-width: 1080px) {
     .partner-benefits__card > blockquote {
       font-size: 22px; } }
@@ -11236,10 +11240,12 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
       margin: 50px 0; } }
 
 .partner-candidate__heading {
-  font-size: 32px; }
+  font-size: 32px;
+  margin-bottom: 30px; }
   @media only screen and (max-width: 768px) {
     .partner-candidate__heading {
-      font-size: 24px; } }
+      font-size: 24px;
+      margin-bottom: 15px; } }
 
 .partner-candidate__row {
   display: flex;
@@ -11435,8 +11441,8 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
   line-height: 1.35;
   position: relative;
   font-family: "Proxima Nova", sans-serif;
-  margin-bottom: 1.5em;
-  margin-top: 1.5em; }
+  margin-bottom: 15px;
+  margin-top: 15px; }
   @media only screen and (max-width: 1080px) {
     .partner-candidate__content > blockquote {
       font-size: 22px; } }

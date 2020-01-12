@@ -314,8 +314,8 @@
         line-height: 1.35;
         position: relative;
         font-family: $proxima;
-        margin-bottom: 1.5em;
-        margin-top: 1.5em;
+        margin-bottom: 15px;
+        margin-top: 15px;
         @include breakpoint(tablet) {
             font-size: 22px;
         }
