@@ -506,6 +506,10 @@
             > svg {
                 fill: #999999;
             }
+
+            > img {
+                opacity: 1;
+            }
         }
     }
 
@@ -567,15 +571,32 @@
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
+    position: relative;
     > svg {
         fill: #c2c2c2;
         transition: fill 0.2s;
     }
 
+    > img {
+        max-width: 80%;
+        max-height: 80%;
+        width: auto;
+        height: auto;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        opacity: .25;
+    }
+
     .navigation-standalone--dark & {
         > svg {
-            fill: #6A6A6A;
-            
+            fill: #6A6A6A;  
+        }
+
+        > img {
+            opacity: .5;
+            filter: invert(100%);
         }
     }
     @include breakpoint(tablet) {
