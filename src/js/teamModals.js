@@ -2,7 +2,7 @@ import PerfectScrollbar from 'perfect-scrollbar';
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 import detectIt from 'detect-it';
 
-import 'objectFitPolyfill';
+
 
 export default function() {
     const modals = Array.from(document.querySelectorAll('.js-team-modal'));
@@ -25,6 +25,14 @@ export default function() {
             video.play();
         }
 
+
+        function pauseVideo(modal) {
+            const video = modal.querySelector('video');
+            if (!video) return;
+            video.pause();
+            video.currentTime = 0;
+        }
+
         open.addEventListener('click', function(event) {
             event.preventDefault();
             content.classList.add('shown');
@@ -41,6 +49,7 @@ export default function() {
             open.classList.remove('active');
             content.style.transitionDuration = '';
             enableBodyScroll(innerContent);
+            pauseVideo(activeModal);
             activeModal = null;
         });
 
@@ -51,6 +60,7 @@ export default function() {
                 open.classList.remove('active');
                 content.style.transitionDuration = '';
                 enableBodyScroll(innerContent);
+                pauseVideo(activeModal);
                 activeModal = null;
             }
         });
@@ -141,6 +151,7 @@ export default function() {
             open.classList.remove('active');
             content.style.transitionDuration = '';
             enableBodyScroll(innerContent);
+            pauseVideo(activeModal);
             activeModal = null;
         }
     });

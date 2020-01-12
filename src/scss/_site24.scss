@@ -14,13 +14,7 @@ body {
       }
     }
   }
-  &:not(.is-admin) {
-    .block-wrapper {
-      .landing-ui-panel {
-        display: none;
-      }
-    }
-  }
+  
 }
 .block-wrapper {
   &.block-page {

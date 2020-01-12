@@ -1,5 +1,6 @@
 import 'picturefill';
 import objectFitImages from 'object-fit-images';
+import 'objectFitPolyfill';
 import detectIt from 'detect-it';
 import introSlider from './introSlider';
 import fixHeader from './fixHeader';
