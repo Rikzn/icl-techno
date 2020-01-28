@@ -469,6 +469,8 @@
     padding: 22px 40px;
     transition: color 0.2s, background-color 0.2s;
     position: relative;
+    user-select: none;
+    @include noHighlight();
     &:link,
     &:visited {
         color: #cfcfcf;
@@ -508,7 +510,8 @@
             }
 
             > img {
-                opacity: .6;
+                opacity: 1;
+                filter: invert(34%) sepia(68%) saturate(7328%) hue-rotate(344deg) brightness(90%) contrast(121%);
             }
         }
     }
