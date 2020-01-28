@@ -25,7 +25,7 @@ export default function() {
                 {},
                 {
                     iconLayout: 'default#image',
-                    iconImageHref: 'img/pin.svg',
+                    iconImageHref: mapElement.getAttribute('data-pin'),
                     iconImageSize: pinSize,
                     iconImageOffset: [-pinSize[0]/2, -pinSize[1]]
                 }
