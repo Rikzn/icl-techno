@@ -132,7 +132,7 @@
         }
     }
 
-    > a {
+    > a:not(.btn-with-corners) {
         color: $red;
         transition: color 0.2s;
         &:link,

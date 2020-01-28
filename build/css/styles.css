@@ -1198,13 +1198,13 @@ img {
 .default-content > *:last-child {
   margin-bottom: 0; }
 
-.default-content > a {
+.default-content > a:not(.btn-with-corners) {
   color: #FB0D1B;
   transition: color 0.2s; }
-  .default-content > a:link, .default-content > a:visited {
+  .default-content > a:not(.btn-with-corners):link, .default-content > a:not(.btn-with-corners):visited {
     color: #FB0D1B; }
-  .no-touch .default-content > a:hover,
-  .touch .default-content > a:active {
+  .no-touch .default-content > a:not(.btn-with-corners):hover,
+  .touch .default-content > a:not(.btn-with-corners):active {
     color: #C40C1F; }
 
 .default-content > h1 {
@@ -11235,13 +11235,13 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
 .partner-benefits__card > *:last-child {
   margin-bottom: 0; }
 
-.partner-benefits__card > a {
+.partner-benefits__card > a:not(.btn-with-corners) {
   color: #FB0D1B;
   transition: color 0.2s; }
-  .partner-benefits__card > a:link, .partner-benefits__card > a:visited {
+  .partner-benefits__card > a:not(.btn-with-corners):link, .partner-benefits__card > a:not(.btn-with-corners):visited {
     color: #FB0D1B; }
-  .no-touch .partner-benefits__card > a:hover,
-  .touch .partner-benefits__card > a:active {
+  .no-touch .partner-benefits__card > a:not(.btn-with-corners):hover,
+  .touch .partner-benefits__card > a:not(.btn-with-corners):active {
     color: #C40C1F; }
 
 .partner-benefits__card > h1 {
@@ -11512,13 +11512,13 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
 .partner-candidate__content > *:last-child {
   margin-bottom: 0; }
 
-.partner-candidate__content > a {
+.partner-candidate__content > a:not(.btn-with-corners) {
   color: #FB0D1B;
   transition: color 0.2s; }
-  .partner-candidate__content > a:link, .partner-candidate__content > a:visited {
+  .partner-candidate__content > a:not(.btn-with-corners):link, .partner-candidate__content > a:not(.btn-with-corners):visited {
     color: #FB0D1B; }
-  .no-touch .partner-candidate__content > a:hover,
-  .touch .partner-candidate__content > a:active {
+  .no-touch .partner-candidate__content > a:not(.btn-with-corners):hover,
+  .touch .partner-candidate__content > a:not(.btn-with-corners):active {
     color: #C40C1F; }
 
 .partner-candidate__content > h1 {
