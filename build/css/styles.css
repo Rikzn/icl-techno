@@ -1145,6 +1145,10 @@ img {
     .layout-main-column {
       width: 100%; } }
 
+.layout-main-column .container:first-child,
+.layout-main-column .landing-main:first-child {
+  margin-top: 0; }
+
 .layout-sidebar {
   width: 295px;
   flex-shrink: 0;

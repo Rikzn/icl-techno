@@ -110,6 +110,13 @@
     }
 }
 
+.layout-main-column .container,
+.layout-main-column .landing-main {
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
 .layout-sidebar {
     width: 295px;
     flex-shrink: 0;
