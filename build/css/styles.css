@@ -8599,6 +8599,7 @@ a.section-header:link, a.section-header:visited {
         right: 100%;
         margin-right: 2px;
         top: 50%;
+        margin-top: -2px;
         transform: translateY(-50%); }
         @media only screen and (max-width: 768px) {
           .configurator__your-config-selected-components-table tr.current::after {
@@ -8648,6 +8649,9 @@ a.section-header:link, a.section-header:visited {
   .configurator__config-summary-table thead,
   .configurator__config-summary-table tbody {
     display: block; }
+  .configurator__config-summary-table td {
+    display: flex;
+    align-items: baseline; }
   .configurator__config-summary-table th {
     display: flex;
     align-items: baseline;
@@ -9007,6 +9011,45 @@ a.section-header:link, a.section-header:visited {
 .configurator__added-to-cart-btn-text {
   position: relative;
   z-index: 10; }
+
+.configurator__success {
+  border: 1px solid #ADADAD;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  min-height: 480px; }
+  @media only screen and (max-width: 768px) {
+    .configurator__success {
+      min-height: 240px;
+      padding: 20px; } }
+
+.configurator__success-content {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 32px; }
+  @media only screen and (max-width: 1240px) {
+    .configurator__success-content {
+      font-size: 24px; } }
+  @media only screen and (max-width: 576px) {
+    .configurator__success-content {
+      font-size: 18px; } }
+  .configurator__success-content svg {
+    fill: #00A44B;
+    flex-shrink: 0;
+    margin-right: 60px; }
+    @media only screen and (max-width: 1240px) {
+      .configurator__success-content svg {
+        width: 120px;
+        height: 80px;
+        margin-right: 40px; } }
+    @media only screen and (max-width: 576px) {
+      .configurator__success-content svg {
+        width: 90px;
+        height: 50px;
+        margin-right: 20px; } }
 
 .cart {
   margin: 100px 0; }

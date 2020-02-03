@@ -567,6 +567,7 @@
                 right: 100%;
                 margin-right: 2px;
                 top: 50%;
+                margin-top: -2px;
                 transform: translateY(-50%);
                 @include breakpoint(mobile) {
                     transform: translateY(-50%) scaleX(-1);
@@ -633,6 +634,12 @@
     thead,
     tbody {
         display: block;
+    }
+
+
+    td {
+        display: flex;
+        align-items: baseline;
     }
 
     th {
@@ -1040,4 +1047,51 @@
 .configurator__added-to-cart-btn-text {
     position: relative;
     z-index: 10;
+}
+
+
+
+.configurator__success {
+    border: 1px solid #ADADAD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    min-height: 480px;
+    @include breakpoint(mobile) {
+        min-height: 240px;
+        padding: 20px;
+    }
+}
+
+
+.configurator__success-content {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 32px;
+    @include breakpoint(laptop) {
+        font-size: 24px;
+    }
+
+    @include breakpoint(small-mobile) {
+        font-size: 18px;
+    }
+    svg {
+        fill: #00A44B;
+        flex-shrink: 0;
+        margin-right: 60px;
+        @include breakpoint(laptop) {
+            width: 120px;
+            height: 80px;
+            margin-right: 40px;
+        }
+
+        @include breakpoint(small-mobile) {
+            width: 90px;
+            height: 50px;
+            margin-right: 20px;
+        }
+    }
 }
