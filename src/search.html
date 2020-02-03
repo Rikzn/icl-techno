@@ -1,32 +1,216 @@
-{% set title = "Поиск" %} {% set headerColor = "white" %} {% extends "layout.html" %} {% block content %}
+{% set title = "Поиск" %}
+{% set headerColor = "white" %}
+{% extends "layout.html" %}
+{% block content %}
 
-<section class="search">
-    <div class="search__content">
-        <div class="search__input-wrapper">
-            <input type="search" class="search__input" name="q" placeholder="Что вы хотите найти?"/>
-            <button type="submit" class="search__submit">
-                <svg width="24" height="24" aria-hidden="true" class="icon-search">
-                    <use xlink:href="#search"></use>
-                </svg>
+    <section class="search">
+        <div class="search__form">
+            <input type="search" class="search__input" placeholder="Поиск">
+            <button class="search__submit">
+                <span class="search__submit-content">
+                    <svg width="24" height="24" aria-hidden="true" class="search__submit-icon">
+                        <use xlink:href="#search"/>
+                    </svg>
+                </span>
             </button>
         </div>
-        <div class="search__results">
-            <h5 class="search__results-heading">
-                быстрые ссылки
-            </h5>
-            <ul class="search__results-list">
-                <li class="search__results-list-item">
-                    <a href="#">Мобильные устройства</a>
-                </li>
-                <li class="search__results-list-item">
-                    <a href="#">Настольные системы</a>
-                </li>
-                <li class="search__results-list-item">
-                    <a href="#">Серверные системы</a>
-                </li>
-            </ul>
+        <div class="search__found-entries">
+            Найдено 15 результатов
         </div>
-    </div>
-</section>
+        <div class="search__results">
+            <div class="tabs-block__tabs js-tabs">
+                <div class="tabs-block__tabs-navigation js-tabs-navigation">
+                    <a href="#" class="tabs-block__tabs-navigation-btn active">
+                        <span class="tabs-block__tabs-navigation-btn-text">
+                            Все категории
+                        </span>
+                    </a>
+                    <a href="#" class="tabs-block__tabs-navigation-btn">
+                        <span class="tabs-block__tabs-navigation-btn-text">Продукции и решения</span>
+                    </a>
+                    <a href="#" class="tabs-block__tabs-navigation-btn">
+                        <span class="tabs-block__tabs-navigation-btn-text">Новости</span>
+                    </a>
+                    <a href="#" class="tabs-block__tabs-navigation-btn">
+                        <span class="tabs-block__tabs-navigation-btn-text">Страницы</span>
+                    </a>
+                </div>
+                <ul class="tabs-block__tabs-list js-tabs-list">
+                    <li class="tabs-block__tabs-item">
+                        <ul class="search__results-list">
+                            <li class="search__results-list-item">
+                                <div class="search__results-card">
+                                    <h5 class="search__results-card-title">
+                                        BasicRAY. Модель B182
+                                    </h5>
+                                    <div class="search__results-card-text">
+                                        <p>
+                                            226 команд школьников и студентов из
+                                            <a href="#">Приволжского федерального округа</a>
+                                            (Самарской, Волгоградской, Оренбургской областей, Республики Татарстан, Удмуртской республики и Республики Мордовия) продемонстрировали на фестивале свои способности в решении сложных инженерных задач и научно-техническом творчестве.
+                                        </p>
+                                    </div>
+                                    <div class="show-all-btn show-all-btn--start">
+                                        <a href="#" class="show-all-btn__link">
+                                            Все высказывания
+                                            <svg width="16" height="8" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                                <use xlink:href="#arrow-right-no-circle"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="search__results-list-item">
+                                <div class="search__results-card">
+                                    <h5 class="search__results-card-title">
+                                        BasicRAY. Модель B182
+                                    </h5>
+                                    <div class="search__results-card-text">
+                                        <p>
+                                            226 команд школьников и студентов из
+                                            <a href="#">Приволжского федерального округа</a>
+                                            (Самарской, Волгоградской, Оренбургской областей, Республики Татарстан, Удмуртской республики и Республики Мордовия) продемонстрировали на фестивале свои способности в решении сложных инженерных задач и научно-техническом творчестве.
+                                        </p>
+                                    </div>
+                                    <div class="show-all-btn show-all-btn--start">
+                                        <a href="#" class="show-all-btn__link">
+                                            Все высказывания
+                                            <svg width="16" height="8" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                                <use xlink:href="#arrow-right-no-circle"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="search__results-list-item">
+                                <div class="search__results-card">
+                                    <h5 class="search__results-card-title">
+                                        BasicRAY. Модель B182
+                                    </h5>
+                                    <div class="search__results-card-text">
+                                        <p>
+                                            226 команд школьников и студентов из
+                                            <a href="#">Приволжского федерального округа</a>
+                                            (Самарской, Волгоградской, Оренбургской областей, Республики Татарстан, Удмуртской республики и Республики Мордовия) продемонстрировали на фестивале свои способности в решении сложных инженерных задач и научно-техническом творчестве.
+                                        </p>
+                                    </div>
+                                    <div class="show-all-btn show-all-btn--start">
+                                        <a href="#" class="show-all-btn__link">
+                                            Все высказывания
+                                            <svg width="16" height="8" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                                <use xlink:href="#arrow-right-no-circle"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="search__results-list-item">
+                                <div class="search__results-card">
+                                    <h5 class="search__results-card-title">
+                                        BasicRAY. Модель B182
+                                    </h5>
+                                    <div class="search__results-card-text">
+                                        <p>
+                                            226 команд школьников и студентов из
+                                            <a href="#">Приволжского федерального округа</a>
+                                            (Самарской, Волгоградской, Оренбургской областей, Республики Татарстан, Удмуртской республики и Республики Мордовия) продемонстрировали на фестивале свои способности в решении сложных инженерных задач и научно-техническом творчестве.
+                                        </p>
+                                    </div>
+                                    <div class="show-all-btn show-all-btn--start">
+                                        <a href="#" class="show-all-btn__link">
+                                            Все высказывания
+                                            <svg width="16" height="8" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                                <use xlink:href="#arrow-right-no-circle"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="search__results-list-item">
+                                <div class="search__results-card">
+                                    <h5 class="search__results-card-title">
+                                        BasicRAY. Модель B182
+                                    </h5>
+                                    <div class="search__results-card-text">
+                                        <p>
+                                            226 команд школьников и студентов из
+                                            <a href="#">Приволжского федерального округа</a>
+                                            (Самарской, Волгоградской, Оренбургской областей, Республики Татарстан, Удмуртской республики и Республики Мордовия) продемонстрировали на фестивале свои способности в решении сложных инженерных задач и научно-техническом творчестве.
+                                        </p>
+                                    </div>
+                                    <div class="show-all-btn show-all-btn--start">
+                                        <a href="#" class="show-all-btn__link">
+                                            Все высказывания
+                                            <svg width="16" height="8" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                                <use xlink:href="#arrow-right-no-circle"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="tabs-block__tabs-item">
+                        <ul class="search__results-list">
+                            <li class="search__results-list-item">
+                                <div class="search__results-card">
+                                    <h5 class="search__results-card-title">
+                                        BasicRAY. Модель B182
+                                    </h5>
+                                    <div class="search__results-card-text">
+                                        <p>
+                                            226 команд школьников и студентов из
+                                            <a href="#">Приволжского федерального округа</a>
+                                            (Самарской, Волгоградской, Оренбургской областей, Республики Татарстан, Удмуртской республики и Республики Мордовия) продемонстрировали на фестивале свои способности в решении сложных инженерных задач и научно-техническом творчестве.
+                                        </p>
+                                    </div>
+                                    <div class="show-all-btn show-all-btn--start">
+                                        <a href="#" class="show-all-btn__link">
+                                            Все высказывания
+                                            <svg width="16" height="8" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                                <use xlink:href="#arrow-right-no-circle"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="tabs-block__tabs-item">Таб 3</li>
+                    <li class="tabs-block__tabs-item">Таб 4</li>
+                </ul>
+            </div>
+            <nav class="pagination">
+                <a href="#" class="pagination__prev-link">
+                    <svg width="45" height="45" aria-hidden="true" class="icon-arrow-left">
+                        <use xlink:href="#arrow-left"></use>
+                    </svg>
+                </a>
+                <ul class="pagination__list">
+                    <li class="pagination__list-item active">
+                        <a href="#" class="pagination__link">1</a>
+                    </li>
+                    <li class="pagination__list-item">
+                        <a href="#" class="pagination__link">2</a>
+                    </li>
+                    <li class="pagination__list-item">
+                        <a href="#" class="pagination__link">3</a>
+                    </li>
+                    <li class="pagination__list-item">
+                        <a href="#" class="pagination__link">4</a>
+                    </li>
+                    <li class="pagination__list-item">
+                        <a href="#" class="pagination__link">5</a>
+                    </li>
+                </ul>
+                <a href="#" class="pagination__next-link">
+                    <svg width="45" height="45" aria-hidden="true" class="icon-arrow-right">
+                        <use xlink:href="#arrow-right"></use>
+                    </svg>
+                </a>
+            </nav>
+        </div>
+    </section>
 
 {% endblock %}

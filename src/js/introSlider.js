@@ -25,6 +25,8 @@ export default function() {
     // Подготовка разметки под слайдер
 
     if (!document.body.classList.contains('is-admin')) {
+        introSlider.classList.add('initialized');
+
         hiddenThumbnails.forEach((thumbnail, index) => {
             const thumbnailToAppend = thumbnail.firstElementChild;
             if (!thumbnailToAppend) {

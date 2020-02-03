@@ -110,8 +110,8 @@
     }
 }
 
-.layout-main-column .container,
-.layout-main-column .landing-main {
+.layout-main-column .container > *,
+.layout-main-column .landing-main > * {
     &:first-child {
         margin-top: 0;
     }

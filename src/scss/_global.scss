@@ -27,11 +27,16 @@ ul {
 
 input,
 textarea {
-  -webkit-appearance: none;
+  border: none;
+  background: transparent;
+  box-shadow: none;
   border-radius: 0;
   font: inherit;
+  display: block;
+  width: 100%;
+  resize: none;
+  outline: none;
 }
-
 
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
@@ -39,9 +44,16 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0; 
 }
 
-textarea {
-  resize: none;
-  box-shadow: none;
+input[type="search"] {
+  -webkit-appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  display: none;
 }
 
 button {

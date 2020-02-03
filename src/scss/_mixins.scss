@@ -333,35 +333,7 @@
         }
     }
 
-    .show-all-btn {
-        display: flex;
-        justify-content: flex-end;
-        margin-bottom: 55px;
-        @include breakpoint(mobile) {
-            margin-bottom: 20px;
-        }
-    }
-
-    .show-all-btn__link {
-        color: $red;
-        margin-left: auto;
-        display: inline-flex;
-        align-items: center;
-
-        > svg {
-            fill: $red;
-            margin-left: 8px;
-        }
-        &:link,
-        &:visited {
-            color: $red;
-        }
-
-        .no-touch &:hover,
-        .touch &:active {
-            text-decoration: underline;
-        }
-    }
+    
 
     & > h1,
     & > h2,

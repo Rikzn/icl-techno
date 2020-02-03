@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="css/styles.min.css" />
         <script src="https://api-maps.yandex.ru/2.1/?apikey=d41198b4-79cf-4ff2-83a6-aaff2a77a15c&lang=ru_RU" type="text/javascript"></script>
         <title>
-            Поиск
+            Каталог
         </title>
     </head>
     <body class="no-touch" ontouchstart="">
@@ -272,7 +272,7 @@
                                 <li class="main-nav__list-item">
                                     <a href="#" class="main-nav__link">Решения</a>
                                 </li>
-                                <li class="main-nav__list-item main-nav__list-item--has-submenu ">
+                                <li class="main-nav__list-item main-nav__list-item--has-submenu  active ">
                                     <a href="#" class="main-nav__link js-submenu-link">
                                         Продукция
                                         <svg width="10" height="6" aria-hidden="true" class="icon-arrow-down">
@@ -558,219 +558,717 @@
             </header>
             <main class="page-main">
                 <div class="container">
-                    <section class="search">
-                        <div class="search__form">
-                            <input type="search" class="search__input" placeholder="Поиск" />
-                            <button class="search__submit">
-                                <span class="search__submit-content">
-                                    <svg width="24" height="24" aria-hidden="true" class="search__submit-icon">
-                                        <use xlink:href="#search" />
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
-                        <div class="search__found-entries">
-                            Найдено 15 результатов
-                        </div>
-                        <div class="search__results">
-                            <div class="tabs-block__tabs js-tabs">
-                                <div class="tabs-block__tabs-navigation js-tabs-navigation">
-                                    <a href="#" class="tabs-block__tabs-navigation-btn active">
-                                        <span class="tabs-block__tabs-navigation-btn-text">
-                                            Все категории
+                    <section class="navigation-standalone">
+                        <div class="main-nav__submenu-content main-nav__submenu-content--standalone">
+                            <ul class="main-nav__submenu-products">
+                                <li class="main-nav__submenu-products-item active">
+                                    <a href="#" class="main-nav__submenu-products-link">
+                                        <span class="main-nav__submenu-icon-container">
+                                            <img src="img/products/desktop.svg" alt="" />
+                                        </span>
+
+                                        <span class="main-nav__submenu-title">
+                                            Настольные системы
                                         </span>
                                     </a>
-                                    <a href="#" class="tabs-block__tabs-navigation-btn">
-                                        <span class="tabs-block__tabs-navigation-btn-text">Продукции и решения</span>
+                                </li>
+                                <li class="main-nav__submenu-products-item">
+                                    <a href="#" class="main-nav__submenu-products-link">
+                                        <span class="main-nav__submenu-icon-container">
+                                            <img src="img/products/laptop.svg" alt="" />
+                                        </span>
+                                        <span class="main-nav__submenu-title">
+                                            Мобильные устройства
+                                        </span>
                                     </a>
-                                    <a href="#" class="tabs-block__tabs-navigation-btn">
-                                        <span class="tabs-block__tabs-navigation-btn-text">Новости</span>
+                                </li>
+                                <li class="main-nav__submenu-products-item">
+                                    <a href="#" class="main-nav__submenu-products-link">
+                                        <span class="main-nav__submenu-icon-container">
+                                            <img src="img/products/server.svg" alt="" />
+                                        </span>
+                                        <span class="main-nav__submenu-title">
+                                            Серверные системы
+                                        </span>
                                     </a>
-                                    <a href="#" class="tabs-block__tabs-navigation-btn">
-                                        <span class="tabs-block__tabs-navigation-btn-text">Страницы</span>
+                                </li>
+                                <li class="main-nav__submenu-products-item">
+                                    <a href="#" class="main-nav__submenu-products-link">
+                                        <span class="main-nav__submenu-icon-container">
+                                            <img src="img/products/terminal.svg" alt="" />
+                                        </span>
+                                        <span class="main-nav__submenu-title">
+                                            Многофункциональные терминалы
+                                        </span>
                                     </a>
-                                </div>
-                                <ul class="tabs-block__tabs-list js-tabs-list">
-                                    <li class="tabs-block__tabs-item">
-                                        <ul class="search__results-list">
-                                            <li class="search__results-list-item">
-                                                <div class="search__results-card">
-                                                    <h5 class="search__results-card-title">
-                                                        BasicRAY. Модель B182
-                                                    </h5>
-                                                    <div class="search__results-card-text">
-                                                        <p>
-                                                            226 команд школьников и студентов из
-                                                            <a href="#">Приволжского федерального округа</a>
-                                                            (Самарской, Волгоградской, Оренбургской областей, Республики Татарстан, Удмуртской республики и Республики Мордовия) продемонстрировали на фестивале свои способности в решении сложных
-                                                            инженерных задач и научно-техническом творчестве.
-                                                        </p>
-                                                    </div>
-                                                    <div class="show-all-btn show-all-btn--start">
-                                                        <a href="#" class="show-all-btn__link">
-                                                            Все высказывания
-                                                            <svg width="16" height="8" aria-hidden="true" class="icon-arrow-right-no-circle">
-                                                                <use xlink:href="#arrow-right-no-circle"></use>
-                                                            </svg>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="search__results-list-item">
-                                                <div class="search__results-card">
-                                                    <h5 class="search__results-card-title">
-                                                        BasicRAY. Модель B182
-                                                    </h5>
-                                                    <div class="search__results-card-text">
-                                                        <p>
-                                                            226 команд школьников и студентов из
-                                                            <a href="#">Приволжского федерального округа</a>
-                                                            (Самарской, Волгоградской, Оренбургской областей, Республики Татарстан, Удмуртской республики и Республики Мордовия) продемонстрировали на фестивале свои способности в решении сложных
-                                                            инженерных задач и научно-техническом творчестве.
-                                                        </p>
-                                                    </div>
-                                                    <div class="show-all-btn show-all-btn--start">
-                                                        <a href="#" class="show-all-btn__link">
-                                                            Все высказывания
-                                                            <svg width="16" height="8" aria-hidden="true" class="icon-arrow-right-no-circle">
-                                                                <use xlink:href="#arrow-right-no-circle"></use>
-                                                            </svg>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="search__results-list-item">
-                                                <div class="search__results-card">
-                                                    <h5 class="search__results-card-title">
-                                                        BasicRAY. Модель B182
-                                                    </h5>
-                                                    <div class="search__results-card-text">
-                                                        <p>
-                                                            226 команд школьников и студентов из
-                                                            <a href="#">Приволжского федерального округа</a>
-                                                            (Самарской, Волгоградской, Оренбургской областей, Республики Татарстан, Удмуртской республики и Республики Мордовия) продемонстрировали на фестивале свои способности в решении сложных
-                                                            инженерных задач и научно-техническом творчестве.
-                                                        </p>
-                                                    </div>
-                                                    <div class="show-all-btn show-all-btn--start">
-                                                        <a href="#" class="show-all-btn__link">
-                                                            Все высказывания
-                                                            <svg width="16" height="8" aria-hidden="true" class="icon-arrow-right-no-circle">
-                                                                <use xlink:href="#arrow-right-no-circle"></use>
-                                                            </svg>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="search__results-list-item">
-                                                <div class="search__results-card">
-                                                    <h5 class="search__results-card-title">
-                                                        BasicRAY. Модель B182
-                                                    </h5>
-                                                    <div class="search__results-card-text">
-                                                        <p>
-                                                            226 команд школьников и студентов из
-                                                            <a href="#">Приволжского федерального округа</a>
-                                                            (Самарской, Волгоградской, Оренбургской областей, Республики Татарстан, Удмуртской республики и Республики Мордовия) продемонстрировали на фестивале свои способности в решении сложных
-                                                            инженерных задач и научно-техническом творчестве.
-                                                        </p>
-                                                    </div>
-                                                    <div class="show-all-btn show-all-btn--start">
-                                                        <a href="#" class="show-all-btn__link">
-                                                            Все высказывания
-                                                            <svg width="16" height="8" aria-hidden="true" class="icon-arrow-right-no-circle">
-                                                                <use xlink:href="#arrow-right-no-circle"></use>
-                                                            </svg>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="search__results-list-item">
-                                                <div class="search__results-card">
-                                                    <h5 class="search__results-card-title">
-                                                        BasicRAY. Модель B182
-                                                    </h5>
-                                                    <div class="search__results-card-text">
-                                                        <p>
-                                                            226 команд школьников и студентов из
-                                                            <a href="#">Приволжского федерального округа</a>
-                                                            (Самарской, Волгоградской, Оренбургской областей, Республики Татарстан, Удмуртской республики и Республики Мордовия) продемонстрировали на фестивале свои способности в решении сложных
-                                                            инженерных задач и научно-техническом творчестве.
-                                                        </p>
-                                                    </div>
-                                                    <div class="show-all-btn show-all-btn--start">
-                                                        <a href="#" class="show-all-btn__link">
-                                                            Все высказывания
-                                                            <svg width="16" height="8" aria-hidden="true" class="icon-arrow-right-no-circle">
-                                                                <use xlink:href="#arrow-right-no-circle"></use>
-                                                            </svg>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="tabs-block__tabs-item">
-                                        <ul class="search__results-list">
-                                            <li class="search__results-list-item">
-                                                <div class="search__results-card">
-                                                    <h5 class="search__results-card-title">
-                                                        BasicRAY. Модель B182
-                                                    </h5>
-                                                    <div class="search__results-card-text">
-                                                        <p>
-                                                            226 команд школьников и студентов из
-                                                            <a href="#">Приволжского федерального округа</a>
-                                                            (Самарской, Волгоградской, Оренбургской областей, Республики Татарстан, Удмуртской республики и Республики Мордовия) продемонстрировали на фестивале свои способности в решении сложных
-                                                            инженерных задач и научно-техническом творчестве.
-                                                        </p>
-                                                    </div>
-                                                    <div class="show-all-btn show-all-btn--start">
-                                                        <a href="#" class="show-all-btn__link">
-                                                            Все высказывания
-                                                            <svg width="16" height="8" aria-hidden="true" class="icon-arrow-right-no-circle">
-                                                                <use xlink:href="#arrow-right-no-circle"></use>
-                                                            </svg>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="tabs-block__tabs-item">Таб 3</li>
-                                    <li class="tabs-block__tabs-item">Таб 4</li>
-                                </ul>
-                            </div>
-                            <nav class="pagination">
-                                <a href="#" class="pagination__prev-link">
-                                    <svg width="45" height="45" aria-hidden="true" class="icon-arrow-left">
-                                        <use xlink:href="#arrow-left"></use>
-                                    </svg>
-                                </a>
-                                <ul class="pagination__list">
-                                    <li class="pagination__list-item active">
-                                        <a href="#" class="pagination__link">1</a>
-                                    </li>
-                                    <li class="pagination__list-item">
-                                        <a href="#" class="pagination__link">2</a>
-                                    </li>
-                                    <li class="pagination__list-item">
-                                        <a href="#" class="pagination__link">3</a>
-                                    </li>
-                                    <li class="pagination__list-item">
-                                        <a href="#" class="pagination__link">4</a>
-                                    </li>
-                                    <li class="pagination__list-item">
-                                        <a href="#" class="pagination__link">5</a>
-                                    </li>
-                                </ul>
-                                <a href="#" class="pagination__next-link">
-                                    <svg width="45" height="45" aria-hidden="true" class="icon-arrow-right">
-                                        <use xlink:href="#arrow-right"></use>
-                                    </svg>
-                                </a>
-                            </nav>
+                                </li>
+                                <li class="main-nav__submenu-products-item">
+                                    <a href="#" class="main-nav__submenu-products-link">
+                                        <span class="main-nav__submenu-icon-container">
+                                            <img src="img/products/hdd.svg" alt="" />
+                                        </span>
+                                        <span class="main-nav__submenu-title">
+                                            Системы хранения данных
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="main-nav__submenu-products-item">
+                                    <a href="#" class="main-nav__submenu-products-link">
+                                        <span class="main-nav__submenu-icon-container">
+                                            <img src="img/products/interactive.svg" alt="" />
+                                        </span>
+                                        <span class="main-nav__submenu-title">
+                                            Интерактивные системы
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
+                    </section>
+                    <section class="education fullwidth-block">
+                        <span class="education__background">
+                            <img src="img/education.jpg" alt="Картинка образовательного блока" class="education__background-image" />
+                        </span>
+                        <div class="education__content">
+                            <h2 class="education__heading">
+                                Наши решения для образования самые лучшие
+                            </h2>
+                            <p class="education__text">
+                                Базовая модель, настольный компьютер начального уровня. Наиболее востребованная модель у корпоративных пользователей для работы с документами, почтой и различными.
+                            </p>
+                            <a href="#" class="btn-with-corners education__link">
+                                Решения для образования
+                            </a>
+                        </div>
+                    </section>
+                    <section class="catalog">
+                        <div class="catalog__filter">
+                            <div class="catalog__filter-row">
+                                <h3 class="catalog__filter-amount">
+                                    Найдено 16 моделей
+                                </h3>
+                                <div class="catalog__filter-selectors">
+                                    <div class="catalog__filter-selectors-groups">
+                                        <div class="catalog__filter-selectors-group">
+                                            <button class="catalog__filer-selectors-open-btn">
+                                                <span class="catalog__filer-selectors-open-btn-content">
+                                                    Диагональ экрана
+
+                                                    <svg width="10" height="6" aria-hidden="true" class="icon-arrow-down">
+                                                        <use xlink:href="#arrow-down" />
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                            <div class="catalog__filter-selectors-group-wrapper">
+                                                <div class="catalog__filter-selectors-group-inner-wrapper">
+                                                    <label class="catalog__filter-checkbox">
+                                                        <input type="checkbox" name="diagonal" checked />
+                                                        <span class="catalog__filter-checkbox-text">
+                                                            От 20 до 24 дюймов
+                                                        </span>
+                                                        <svg width="10" height="10" aria-hidden="true" class="icon-checkbox-mark">
+                                                            <use xlink:href="#checkbox-mark" />
+                                                        </svg>
+                                                    </label>
+                                                    <label class="catalog__filter-checkbox">
+                                                        <input type="checkbox" name="diagonal" />
+                                                        <span class="catalog__filter-checkbox-text">
+                                                            От 24 до 27 дюймов
+                                                        </span>
+                                                        <svg width="10" height="10" aria-hidden="true" class="icon-checkbox-mark">
+                                                            <use xlink:href="#checkbox-mark" />
+                                                        </svg>
+                                                    </label>
+                                                    <label class="catalog__filter-checkbox">
+                                                        <input type="checkbox" name="diagonal" />
+                                                        <span class="catalog__filter-checkbox-text">
+                                                            Более 28 дюймов
+                                                        </span>
+                                                        <svg width="10" height="10" aria-hidden="true" class="icon-checkbox-mark">
+                                                            <use xlink:href="#checkbox-mark" />
+                                                        </svg>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="catalog__filter-selectors-group">
+                                            <button class="catalog__filer-selectors-open-btn">
+                                                <span class="catalog__filer-selectors-open-btn-content">
+                                                    Процессор
+
+                                                    <svg width="10" height="6" aria-hidden="true" class="icon-arrow-down">
+                                                        <use xlink:href="#arrow-down" />
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                            <div class="catalog__filter-selectors-group-wrapper">
+                                                <div class="catalog__filter-selectors-group-inner-wrapper">
+                                                    <label class="catalog__filter-checkbox">
+                                                        <input type="checkbox" name="cpu" />
+                                                        <span class="catalog__filter-checkbox-text">
+                                                            Pentium 4
+                                                        </span>
+                                                        <svg width="10" height="10" aria-hidden="true" class="icon-checkbox-mark">
+                                                            <use xlink:href="#checkbox-mark" />
+                                                        </svg>
+                                                    </label>
+                                                    <label class="catalog__filter-checkbox">
+                                                        <input type="checkbox" name="cpu" />
+                                                        <span class="catalog__filter-checkbox-text">
+                                                            Core 2 Duo
+                                                        </span>
+                                                        <svg width="10" height="10" aria-hidden="true" class="icon-checkbox-mark">
+                                                            <use xlink:href="#checkbox-mark" />
+                                                        </svg>
+                                                    </label>
+                                                    <label class="catalog__filter-checkbox">
+                                                        <input type="checkbox" name="cpu" checked />
+                                                        <span class="catalog__filter-checkbox-text">
+                                                            Intel i9
+                                                        </span>
+                                                        <svg width="10" height="10" aria-hidden="true" class="icon-checkbox-mark">
+                                                            <use xlink:href="#checkbox-mark" />
+                                                        </svg>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="catalog__filter-selectors-group">
+                                            <button class="catalog__filer-selectors-open-btn">
+                                                <span class="catalog__filer-selectors-open-btn-content">
+                                                    Оперативная память
+
+                                                    <svg width="10" height="6" aria-hidden="true" class="icon-arrow-down">
+                                                        <use xlink:href="#arrow-down" />
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                            <div class="catalog__filter-selectors-group-wrapper">
+                                                <div class="catalog__filter-selectors-group-inner-wrapper">
+                                                    <label class="catalog__filter-checkbox">
+                                                        <input type="checkbox" name="ram" />
+                                                        <span class="catalog__filter-checkbox-text">
+                                                            8 гигабайт
+                                                        </span>
+                                                        <svg width="10" height="10" aria-hidden="true" class="icon-checkbox-mark">
+                                                            <use xlink:href="#checkbox-mark" />
+                                                        </svg>
+                                                    </label>
+                                                    <label class="catalog__filter-checkbox">
+                                                        <input type="checkbox" name="ram" />
+                                                        <span class="catalog__filter-checkbox-text">
+                                                            16 гигабайт
+                                                        </span>
+                                                        <svg width="10" height="10" aria-hidden="true" class="icon-checkbox-mark">
+                                                            <use xlink:href="#checkbox-mark" />
+                                                        </svg>
+                                                    </label>
+                                                    <label class="catalog__filter-checkbox">
+                                                        <input type="checkbox" name="ram" checked />
+                                                        <span class="catalog__filter-checkbox-text">
+                                                            32 гигабайта
+                                                        </span>
+                                                        <svg width="10" height="10" aria-hidden="true" class="icon-checkbox-mark">
+                                                            <use xlink:href="#checkbox-mark" />
+                                                        </svg>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="catalog__filer-remove-all" disabled>
+                                            Удалить все
+                                            <svg width="16" height="16" aria-hidden="true" class="icon-cross">
+                                                <use xlink:href="#cross" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="catalog__filter-selectors-chosen">
+                                        <div class="catalog__filter-selectors-chosen-card">
+                                            Монитор 27 дюймов
+                                            <svg width="16" height="16" aria-hidden="true" class="icon-cross">
+                                                <use xlink:href="#cross" />
+                                            </svg>
+                                        </div>
+                                        <div class="catalog__filter-selectors-chosen-card">
+                                            Intel Core i9
+                                            <svg width="16" height="16" aria-hidden="true" class="icon-cross">
+                                                <use xlink:href="#cross" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="catalog__list">
+                            <li class="catalog__list-item">
+                                <a href="#" class="catalog__product-card">
+                                    <div class="catalog__product-image-width-wrapper">
+                                        <div class="catalog__product-image-container">
+                                            <img src="img/catalog/product-1.jpg" alt="Продукт 1" class="catalog__product-image" />
+                                            <span class="catalog__product-corner">
+                                                <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                                    <use xlink:href="#arrow-right-no-circle"></use>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="catalog__product-content">
+                                        <h6 class="catalog__product-title">
+                                            BasicRAY. Модель B182
+                                        </h6>
+                                        <p class="catalog__product-description">
+                                            Высокопроизводительный и функциональный ПК с защитой от неблагоприятных внешних воздействий.
+                                        </p>
+                                        <div class="catalog__product-specs-list">
+                                            <ul>
+                                                <li>
+                                                    Корпус MicroTower
+                                                </li>
+                                                <li>
+                                                    Блок питания 400 Вт
+                                                </li>
+                                                <li>
+                                                    Чипсет материнской платы Intel H310 Express
+                                                </li>
+                                                <li>
+                                                    Сокет процессора LGA1151
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="catalog__list-item">
+                                <a href="#" class="catalog__product-card">
+                                    <div class="catalog__product-image-width-wrapper">
+                                        <div class="catalog__product-image-container">
+                                            <img src="img/catalog/product-2.jpg" alt="Продукт 2" class="catalog__product-image" />
+                                            <span class="catalog__product-corner">
+                                                <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                                    <use xlink:href="#arrow-right-no-circle"></use>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="catalog__product-content">
+                                        <h6 class="catalog__product-title">
+                                            BasicRAY. Модель B182
+                                        </h6>
+                                        <p class="catalog__product-description">
+                                            Высокопроизводительный и функциональный ПК с защитой от неблагоприятных внешних воздействий.
+                                        </p>
+                                        <div class="catalog__product-specs-list">
+                                            <ul>
+                                                <li>
+                                                    Корпус MicroTower
+                                                </li>
+                                                <li>
+                                                    Блок питания 200/300 Вт
+                                                </li>
+                                                <li>
+                                                    Чипсет материнской платы H110
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="catalog__list-item">
+                                <a href="#" class="catalog__product-card">
+                                    <div class="catalog__product-image-width-wrapper">
+                                        <div class="catalog__product-image-container">
+                                            <img src="img/catalog/product-3.jpg" alt="Продукт 3" class="catalog__product-image" />
+                                            <span class="catalog__product-corner">
+                                                <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                                    <use xlink:href="#arrow-right-no-circle"></use>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="catalog__product-content">
+                                        <h6 class="catalog__product-title">
+                                            BasicRAY. Модель B182
+                                        </h6>
+                                        <p class="catalog__product-description">
+                                            Высокопроизводительный и функциональный ПК с защитой от неблагоприятных внешних воздействий.
+                                        </p>
+                                        <div class="catalog__product-specs-list">
+                                            <ul>
+                                                <li>
+                                                    Корпус MicroTower
+                                                </li>
+                                                <li>
+                                                    Блок питания 200/300 Вт
+                                                </li>
+                                                <li>
+                                                    Чипсет материнской платы H110
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="catalog__list-item">
+                                <a href="#" class="catalog__product-card">
+                                    <div class="catalog__product-image-width-wrapper">
+                                        <div class="catalog__product-image-container">
+                                            <img src="img/catalog/product-4.jpg" alt="Продукт 4" class="catalog__product-image" />
+                                            <span class="catalog__product-corner">
+                                                <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                                    <use xlink:href="#arrow-right-no-circle"></use>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="catalog__product-content">
+                                        <h6 class="catalog__product-title">
+                                            BasicRAY. Модель B182
+                                        </h6>
+                                        <p class="catalog__product-description">
+                                            Высокопроизводительный и функциональный ПК с защитой от неблагоприятных внешних воздействий.
+                                        </p>
+                                        <div class="catalog__product-specs-list">
+                                            <ul>
+                                                <li>
+                                                    Корпус MicroTower
+                                                </li>
+                                                <li>
+                                                    Блок питания 200/300 Вт
+                                                </li>
+                                                <li>
+                                                    Чипсет материнской платы H110
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="catalog__list-item">
+                                <a href="#" class="catalog__product-card">
+                                    <div class="catalog__product-image-width-wrapper">
+                                        <div class="catalog__product-image-container">
+                                            <img src="img/catalog/product-1.jpg" alt="Продукт 1" class="catalog__product-image" />
+                                            <span class="catalog__product-corner">
+                                                <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                                    <use xlink:href="#arrow-right-no-circle"></use>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="catalog__product-content">
+                                        <h6 class="catalog__product-title">
+                                            BasicRAY. Модель B182
+                                        </h6>
+                                        <p class="catalog__product-description">
+                                            Высокопроизводительный и функциональный ПК с защитой от неблагоприятных внешних воздействий.
+                                        </p>
+                                        <div class="catalog__product-specs-list">
+                                            <ul>
+                                                <li>
+                                                    Корпус MicroTower
+                                                </li>
+                                                <li>
+                                                    Блок питания 400 Вт
+                                                </li>
+                                                <li>
+                                                    Чипсет материнской платы Intel H310 Express
+                                                </li>
+                                                <li>
+                                                    Сокет процессора LGA1151
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="catalog__list-item">
+                                <a href="#" class="catalog__product-card">
+                                    <div class="catalog__product-image-width-wrapper">
+                                        <div class="catalog__product-image-container">
+                                            <img src="img/catalog/product-2.jpg" alt="Продукт 2" class="catalog__product-image" />
+                                            <span class="catalog__product-corner">
+                                                <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                                    <use xlink:href="#arrow-right-no-circle"></use>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="catalog__product-content">
+                                        <h6 class="catalog__product-title">
+                                            BasicRAY. Модель B182
+                                        </h6>
+                                        <p class="catalog__product-description">
+                                            Высокопроизводительный и функциональный ПК с защитой от неблагоприятных внешних воздействий.
+                                        </p>
+                                        <div class="catalog__product-specs-list">
+                                            <ul>
+                                                <li>
+                                                    Корпус MicroTower
+                                                </li>
+                                                <li>
+                                                    Блок питания 200/300 Вт
+                                                </li>
+                                                <li>
+                                                    Чипсет материнской платы H110
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="catalog__list-item">
+                                <a href="#" class="catalog__product-card">
+                                    <div class="catalog__product-image-width-wrapper">
+                                        <div class="catalog__product-image-container">
+                                            <img src="img/catalog/product-3.jpg" alt="Продукт 3" class="catalog__product-image" />
+                                            <span class="catalog__product-corner">
+                                                <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                                    <use xlink:href="#arrow-right-no-circle"></use>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="catalog__product-content">
+                                        <h6 class="catalog__product-title">
+                                            BasicRAY. Модель B182
+                                        </h6>
+                                        <p class="catalog__product-description">
+                                            Высокопроизводительный и функциональный ПК с защитой от неблагоприятных внешних воздействий.
+                                        </p>
+                                        <div class="catalog__product-specs-list">
+                                            <ul>
+                                                <li>
+                                                    Корпус MicroTower
+                                                </li>
+                                                <li>
+                                                    Блок питания 200/300 Вт
+                                                </li>
+                                                <li>
+                                                    Чипсет материнской платы H110
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="catalog__list-item">
+                                <a href="#" class="catalog__product-card">
+                                    <div class="catalog__product-image-width-wrapper">
+                                        <div class="catalog__product-image-container">
+                                            <img src="img/catalog/product-4.jpg" alt="Продукт 4" class="catalog__product-image" />
+                                            <span class="catalog__product-corner">
+                                                <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                                    <use xlink:href="#arrow-right-no-circle"></use>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="catalog__product-content">
+                                        <h6 class="catalog__product-title">
+                                            BasicRAY. Модель B182
+                                        </h6>
+                                        <p class="catalog__product-description">
+                                            Высокопроизводительный и функциональный ПК с защитой от неблагоприятных внешних воздействий.
+                                        </p>
+                                        <div class="catalog__product-specs-list">
+                                            <ul>
+                                                <li>
+                                                    Корпус MicroTower
+                                                </li>
+                                                <li>
+                                                    Блок питания 200/300 Вт
+                                                </li>
+                                                <li>
+                                                    Чипсет материнской платы H110
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="catalog__list-item">
+                                <a href="#" class="catalog__product-card">
+                                    <div class="catalog__product-image-width-wrapper">
+                                        <div class="catalog__product-image-container">
+                                            <img src="img/catalog/product-1.jpg" alt="Продукт 1" class="catalog__product-image" />
+                                            <span class="catalog__product-corner">
+                                                <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                                    <use xlink:href="#arrow-right-no-circle"></use>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="catalog__product-content">
+                                        <h6 class="catalog__product-title">
+                                            BasicRAY. Модель B182
+                                        </h6>
+                                        <p class="catalog__product-description">
+                                            Высокопроизводительный и функциональный ПК с защитой от неблагоприятных внешних воздействий.
+                                        </p>
+                                        <div class="catalog__product-specs-list">
+                                            <ul>
+                                                <li>
+                                                    Корпус MicroTower
+                                                </li>
+                                                <li>
+                                                    Блок питания 400 Вт
+                                                </li>
+                                                <li>
+                                                    Чипсет материнской платы Intel H310 Express
+                                                </li>
+                                                <li>
+                                                    Сокет процессора LGA1151
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="catalog__list-item">
+                                <a href="#" class="catalog__product-card">
+                                    <div class="catalog__product-image-width-wrapper">
+                                        <div class="catalog__product-image-container">
+                                            <img src="img/catalog/product-2.jpg" alt="Продукт 2" class="catalog__product-image" />
+                                            <span class="catalog__product-corner">
+                                                <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                                    <use xlink:href="#arrow-right-no-circle"></use>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="catalog__product-content">
+                                        <h6 class="catalog__product-title">
+                                            BasicRAY. Модель B182
+                                        </h6>
+                                        <p class="catalog__product-description">
+                                            Высокопроизводительный и функциональный ПК с защитой от неблагоприятных внешних воздействий.
+                                        </p>
+                                        <div class="catalog__product-specs-list">
+                                            <ul>
+                                                <li>
+                                                    Корпус MicroTower
+                                                </li>
+                                                <li>
+                                                    Блок питания 200/300 Вт
+                                                </li>
+                                                <li>
+                                                    Чипсет материнской платы H110
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="catalog__list-item">
+                                <a href="#" class="catalog__product-card">
+                                    <div class="catalog__product-image-width-wrapper">
+                                        <div class="catalog__product-image-container">
+                                            <img src="img/catalog/product-3.jpg" alt="Продукт 3" class="catalog__product-image" />
+                                            <span class="catalog__product-corner">
+                                                <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                                    <use xlink:href="#arrow-right-no-circle"></use>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="catalog__product-content">
+                                        <h6 class="catalog__product-title">
+                                            BasicRAY. Модель B182
+                                        </h6>
+                                        <p class="catalog__product-description">
+                                            Высокопроизводительный и функциональный ПК с защитой от неблагоприятных внешних воздействий.
+                                        </p>
+                                        <div class="catalog__product-specs-list">
+                                            <ul>
+                                                <li>
+                                                    Корпус MicroTower
+                                                </li>
+                                                <li>
+                                                    Блок питания 200/300 Вт
+                                                </li>
+                                                <li>
+                                                    Чипсет материнской платы H110
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="catalog__list-item">
+                                <a href="#" class="catalog__product-card">
+                                    <div class="catalog__product-image-width-wrapper">
+                                        <div class="catalog__product-image-container">
+                                            <img src="img/catalog/product-4.jpg" alt="Продукт 4" class="catalog__product-image" />
+                                            <span class="catalog__product-corner">
+                                                <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                                    <use xlink:href="#arrow-right-no-circle"></use>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="catalog__product-content">
+                                        <h6 class="catalog__product-title">
+                                            BasicRAY. Модель B182
+                                        </h6>
+                                        <p class="catalog__product-description">
+                                            Высокопроизводительный и функциональный ПК с защитой от неблагоприятных внешних воздействий.
+                                        </p>
+                                        <div class="catalog__product-specs-list">
+                                            <ul>
+                                                <li>
+                                                    Корпус MicroTower
+                                                </li>
+                                                <li>
+                                                    Блок питания 200/300 Вт
+                                                </li>
+                                                <li>
+                                                    Чипсет материнской платы H110
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <nav class="pagination">
+                            <a href="#" class="pagination__prev-link">
+                                <svg width="45" height="45" aria-hidden="true" class="icon-arrow-left">
+                                    <use xlink:href="#arrow-left" />
+                                </svg>
+                            </a>
+                            <ul class="pagination__list">
+                                <li class="pagination__list-item active">
+                                    <a href="#" class="pagination__link">1</a>
+                                </li>
+                                <li class="pagination__list-item">
+                                    <a href="#" class="pagination__link">2</a>
+                                </li>
+                                <li class="pagination__list-item">
+                                    <a href="#" class="pagination__link">3</a>
+                                </li>
+                                <li class="pagination__list-item">
+                                    <a href="#" class="pagination__link">4</a>
+                                </li>
+                                <li class="pagination__list-item">
+                                    <a href="#" class="pagination__link">5</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="pagination__next-link">
+                                <svg width="45" height="45" aria-hidden="true" class="icon-arrow-right">
+                                    <use xlink:href="#arrow-right" />
+                                </svg>
+                            </a>
+                        </nav>
                     </section>
                 </div>
             </main>
