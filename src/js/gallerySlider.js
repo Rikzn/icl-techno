@@ -43,16 +43,12 @@ export default function() {
             })
 
             sliderOptions.thumbs.swiper = new Swiper(containerThumbs, {
-                slidesPerView: 9,
-                spaceBetween: 24,
+                slidesPerView: 4,
+                spaceBetween: 10,
                 threshold: 10,
                 watchSlidesVisibility: true,
                 watchSlidesProgress: true,
                 breakpoints: {
-                    360: {
-                        slidesPerView: 4,
-                        spaceBetween: 10
-                    },
                     576: {
                         slidesPerView: 5,
                         spaceBetween: 10

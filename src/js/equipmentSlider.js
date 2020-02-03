@@ -10,18 +10,18 @@ export default function() {
 
         const slider = new Swiper(container, {
             slidesPerView: 'auto',
-            spaceBetween: 40,
-            centeredSlides: true,
+            spaceBetween: 10,
+            centeredSlides: false,
             loop: true,
             breakpoints: {
-                370: {
-                    slidesPerView: 'auto',
-                    spaceBetween: 10
-                },
-
-                768: {
+                371: {
                     slidesPerView: 'auto',
                     spaceBetween: 20
+                },
+
+                769: {
+                    slidesPerView: 'auto',
+                    spaceBetween: 40
                 }
             },
             on: {

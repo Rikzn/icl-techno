@@ -96,6 +96,8 @@
     @include breakpoint(mobile) {
         width: 100%;
     }
+
+    .intro-slider:not(.initialized) .intro-slider__slide:nth-child(1) &,
     .intro-slider__slide.active & {
         opacity: 1;
         transform: translateZ(0) translateX(0) translateY(0);

@@ -2248,6 +2248,7 @@ a.section-header:link, a.section-header:visited {
   @media only screen and (max-width: 768px) {
     .intro-slider__slide-text-block {
       width: 100%; } }
+  .intro-slider:not(.initialized) .intro-slider__slide:nth-child(1) .intro-slider__slide-text-block,
   .intro-slider__slide.active .intro-slider__slide-text-block {
     opacity: 1;
     transform: translateZ(0) translateX(0) translateY(0); }
@@ -3248,9 +3249,9 @@ a.section-header:link, a.section-header:visited {
       padding-bottom: 30px; } }
   .realised-projects__card:link, .realised-projects__card:visited {
     color: black; }
-  .realised-projects__list-item--large .realised-projects__card {
+  .realised-projects__list-item--with-image .realised-projects__card {
     border: none; }
-    .realised-projects__list-item--large .realised-projects__card:link, .realised-projects__list-item--large .realised-projects__card:visited {
+    .realised-projects__list-item--with-image .realised-projects__card:link, .realised-projects__list-item--with-image .realised-projects__card:visited {
       color: white; }
   .no-touch .realised-projects__card:hover .realised-projects__corner::before,
   .touch .realised-projects__card:active .realised-projects__corner::before {
@@ -3276,6 +3277,9 @@ a.section-header:link, a.section-header:visited {
   position: absolute;
   right: -1px;
   bottom: -1px; }
+  .realised-projects__list-item--with-image .realised-projects__corner {
+    right: 0;
+    bottom: 0; }
   .realised-projects__corner::before {
     content: '';
     width: 100%;
@@ -3330,7 +3334,7 @@ a.section-header:link, a.section-header:visited {
     .realised-projects__card-label {
       margin-right: 0;
       font-size: 10px; } }
-  .realised-projects__list-item--large .realised-projects__card-label {
+  .realised-projects__list-item--with-image .realised-projects__card-label {
     opacity: 1;
     -webkit-filter: grayscale(0);
             filter: grayscale(0); }
@@ -3344,7 +3348,7 @@ a.section-header:link, a.section-header:visited {
     .realised-projects__card-date {
       margin-top: 8px;
       font-size: 14px; } }
-  .realised-projects__list-item--large .realised-projects__card-date {
+  .realised-projects__list-item--with-image .realised-projects__card-date {
     color: white; }
 
 .realised-projects__card-top-row {
@@ -3354,13 +3358,13 @@ a.section-header:link, a.section-header:visited {
   @media only screen and (max-width: 768px) {
     .realised-projects__card-top-row {
       margin-bottom: 30px; } }
-  .realised-projects__list-item--large .realised-projects__card-top-row {
+  .realised-projects__list-item--with-image .realised-projects__card-top-row {
     margin-bottom: 104px; }
     @media only screen and (max-width: 1240px) {
-      .realised-projects__list-item--large .realised-projects__card-top-row {
+      .realised-projects__list-item--with-image .realised-projects__card-top-row {
         margin-bottom: 140px; } }
     @media only screen and (max-width: 768px) {
-      .realised-projects__list-item--large .realised-projects__card-top-row {
+      .realised-projects__list-item--with-image .realised-projects__card-top-row {
         margin-bottom: 120px; } }
 
 .realised-projects__company-logo {
@@ -3381,25 +3385,25 @@ a.section-header:link, a.section-header:visited {
   @media only screen and (max-width: 768px) {
     .realised-projects__company-logo {
       height: 40px; } }
-  .realised-projects__list-item--large .realised-projects__company-logo {
+  .realised-projects__list-item--with-image .realised-projects__company-logo {
     height: 40px;
     opacity: 1;
     -webkit-filter: grayscale(0);
             filter: grayscale(0); }
     @media only screen and (max-width: 768px) {
-      .realised-projects__list-item--large .realised-projects__company-logo {
+      .realised-projects__list-item--with-image .realised-projects__company-logo {
         height: 25px; } }
 
 .realised-projects__content {
   margin-top: auto; }
-  .realised-projects__list-item--large .realised-projects__content {
+  .realised-projects__list-item--with-image .realised-projects__content {
     padding-right: 60px; }
     @media only screen and (max-width: 1240px) {
-      .realised-projects__list-item--large .realised-projects__content {
+      .realised-projects__list-item--with-image .realised-projects__content {
         padding-right: 0;
         width: 70%; } }
     @media only screen and (max-width: 968px) {
-      .realised-projects__list-item--large .realised-projects__content {
+      .realised-projects__list-item--with-image .realised-projects__content {
         width: 100%; } }
 
 .realised-projects__title {

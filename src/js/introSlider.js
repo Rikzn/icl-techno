@@ -62,7 +62,7 @@ export default function() {
     // Функция установки активного слайда
 
     function setActiveSlide(index) {
-        if (index === activeSlideIndex) return;
+        
         slides[activeSlideIndex].classList.remove('active');
         paginationItems[activeSlideIndex].classList.remove('active');
         activeSlideIndex = index;
@@ -104,7 +104,10 @@ export default function() {
         }, autoplayInterval);
     }
 
+    setActiveSlide(activeSlideIndex);
+
     autoplay();
+
 
     // Обработчики событий на ссылки пагинации слайдера
 
