@@ -9,7 +9,7 @@
     align-self: center;
     transition: 0.2s;
     clip-path: polygon(0px 10px, 10px 0px, 100% 0px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0% 100%);
-    transition: clip-path 0.3s, background-color 0.3s;
+    transition: clip-path 0.3s, background-color 0.3s, color .2s;
     white-space: nowrap;
     -webkit-tap-highlight-color: transparent;
     &:link,

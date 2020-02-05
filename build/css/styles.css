@@ -1438,9 +1438,9 @@ img {
   transition: 0.2s;
   -webkit-clip-path: polygon(0px 10px, 10px 0px, 100% 0px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0% 100%);
           clip-path: polygon(0px 10px, 10px 0px, 100% 0px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0% 100%);
-  transition: background-color 0.3s, -webkit-clip-path 0.3s;
-  transition: clip-path 0.3s, background-color 0.3s;
-  transition: clip-path 0.3s, background-color 0.3s, -webkit-clip-path 0.3s;
+  transition: background-color 0.3s, color .2s, -webkit-clip-path 0.3s;
+  transition: clip-path 0.3s, background-color 0.3s, color .2s;
+  transition: clip-path 0.3s, background-color 0.3s, color .2s, -webkit-clip-path 0.3s;
   white-space: nowrap;
   -webkit-tap-highlight-color: transparent; }
   .btn-with-corners:link, .btn-with-corners:visited {
@@ -9798,11 +9798,11 @@ a.section-header:link, a.section-header:visited {
   z-index: 1500;
   opacity: 0;
   visibility: hidden;
-  transition: opacity .2s, visibility 0s linear .2s; }
+  transition: opacity 0.2s, visibility 0s linear 0.2s; }
   .application-modal.shown {
     opacity: 1;
     visibility: visible;
-    transition: opacity .2s; }
+    transition: opacity 0.2s; }
 
 .application-modal__content {
   max-height: 100%;
@@ -9873,22 +9873,22 @@ a.section-header:link, a.section-header:visited {
   resize: none;
   box-shadow: none;
   outline: none;
-  transition: border-color .2s; }
+  transition: border-color 0.2s; }
   .application-modal__input.parsley-error,
   .application-modal__textarea.parsley-error {
     border-color: #FB0D1B; }
   .application-modal__input::-webkit-input-placeholder,
   .application-modal__textarea::-webkit-input-placeholder {
-    color: #4D4D4D; }
+    color: #4d4d4d; }
   .application-modal__input:-moz-placeholder,
   .application-modal__textarea:-moz-placeholder {
-    color: #4D4D4D; }
+    color: #4d4d4d; }
   .application-modal__input::-moz-placeholder,
   .application-modal__textarea::-moz-placeholder {
-    color: #4D4D4D; }
+    color: #4d4d4d; }
   .application-modal__input:-ms-input-placeholder,
   .application-modal__textarea:-ms-input-placeholder {
-    color: #4D4D4D; }
+    color: #4d4d4d; }
 
 .application-modal__textarea {
   height: 162px; }
@@ -9897,9 +9897,9 @@ a.section-header:link, a.section-header:visited {
   display: flex;
   align-items: flex-start;
   -webkit-tap-highlight-color: transparent; }
-  .application-modal__checkbox input[type="checkbox"] {
+  .application-modal__checkbox input[type='checkbox'] {
     display: none; }
-  .application-modal__checkbox input[type="checkbox"]:checked ~ .application-modal__checkbox-icon::before {
+  .application-modal__checkbox input[type='checkbox']:checked ~ .application-modal__checkbox-icon::before {
     transform: scale(1); }
 
 .application-modal__checkbox-icon {
@@ -9918,16 +9918,16 @@ a.section-header:link, a.section-header:visited {
     background-color: #FB0D1B;
     border: 8px solid white;
     transform: scale(0);
-    transition: transform .2s; }
+    transition: transform 0.2s; }
 
 .application-modal__checkbox-text-block {
   margin-top: 6px;
-  color: #4D4D4D; }
+  color: #4d4d4d; }
 
 .application-modal__checkbox-action-text {
   font-size: 14px;
   line-height: 18px;
-  color: #4D4D4D;
+  color: #4d4d4d;
   display: block; }
   .application-modal__checkbox-action-text a:link, .application-modal__checkbox-action-text a:visited {
     color: #FB0D1B; }
@@ -9983,6 +9983,80 @@ a.section-header:link, a.section-header:visited {
     .application-modal__close-btn > span > svg {
       fill: white;
       transform: rotate(45deg); }
+
+.text-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  cursor: pointer;
+  z-index: 1500;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s, visibility 0s linear 0.2s; }
+  .text-modal .article,
+  .text-modal .article__content {
+    margin-bottom: 0; }
+  .text-modal.shown {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.2s; }
+
+.text-modal__content {
+  max-height: 100%;
+  margin: auto;
+  background-color: #fff;
+  color: black;
+  max-width: 1154px;
+  position: relative;
+  cursor: initial; }
+  @media only screen and (max-width: 768px) {
+    .text-modal__content {
+      width: 100%;
+      height: 100%; } }
+
+.text-modal__close-btn {
+  width: 50px;
+  height: 50px;
+  background-color: #FB0D1B;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  z-index: 100; }
+  @media only screen and (max-width: 768px) {
+    .text-modal__close-btn {
+      left: auto;
+      right: 0; } }
+  .text-modal__close-btn > span {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .text-modal__close-btn > span > svg {
+      fill: white;
+      transform: rotate(45deg); }
+
+.text-modal__inner-wrapper {
+  position: relative;
+  z-index: 10;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 56px;
+  padding-top: 45px;
+  max-height: 100%; }
+  @media only screen and (max-width: 768px) {
+    .text-modal__inner-wrapper {
+      padding: 20px;
+      padding-bottom: 30px;
+      padding-top: 30px; } }
 
 .services {
   margin: 100px 0; }

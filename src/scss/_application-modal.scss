@@ -6,29 +6,24 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: rgba(black, .5);
+    background-color: rgba(black, 0.5);
     cursor: pointer;
     z-index: 1500;
     opacity: 0;
     visibility: hidden;
-    transition: opacity .2s, visibility 0s linear .2s;
+    transition: opacity 0.2s, visibility 0s linear 0.2s;
     &.shown {
         opacity: 1;
         visibility: visible;
-        transition: opacity .2s;
+        transition: opacity 0.2s;
     }
 }
 
-
 .application-modal__content {
-    
-    
     max-height: 100%;
-   
     margin: auto;
     background-color: #fff;
     color: black;
-    
     width: 620px;
     position: relative;
     cursor: initial;
@@ -37,7 +32,6 @@
         height: 100%;
     }
 }
-
 
 .application-modal__inner-wrapper {
     position: relative;
@@ -55,7 +49,6 @@
     }
 }
 
-
 .application-modal__background-image {
     position: absolute;
     left: 0;
@@ -67,21 +60,15 @@
     z-index: 1;
 }
 
-
-
-
 .application-modal__heading {
     font-size: 32px;
     font-weight: 700;
     line-height: 1.2;
-    
 }
-
 
 .application-modal__form {
     margin-top: 40px;
 }
-
 
 .application-modal__form-row {
     margin-bottom: 20px;
@@ -89,8 +76,6 @@
         margin-bottom: 0;
     }
 }
-
-
 
 .application-modal__input,
 .application-modal__textarea {
@@ -107,7 +92,7 @@
     resize: none;
     box-shadow: none;
     outline: none;
-    transition: border-color .2s;
+    transition: border-color 0.2s;
     &.parsley-error {
         border-color: $red;
     }
@@ -115,16 +100,13 @@
     //     border-color: #298416;
     // }
     @include placeholder {
-        color: #4D4D4D;
+        color: #4d4d4d;
     }
 }
-
-
 
 .application-modal__textarea {
     height: 162px;
 }
-
 
 .application-modal__checkbox {
     display: flex;
@@ -132,16 +114,15 @@
 
     @include noHighlight();
 
-    input[type="checkbox"] {
+    input[type='checkbox'] {
         // @include visuallyHidden();
         display: none;
     }
 
-    input[type="checkbox"]:checked ~ .application-modal__checkbox-icon::before {
+    input[type='checkbox']:checked ~ .application-modal__checkbox-icon::before {
         transform: scale(1);
     }
 }
-
 
 .application-modal__checkbox-icon {
     width: 32px;
@@ -160,21 +141,19 @@
         background-color: $red;
         border: 8px solid white;
         transform: scale(0);
-        transition: transform .2s;
+        transition: transform 0.2s;
     }
 }
 
-
 .application-modal__checkbox-text-block {
     margin-top: 6px;
-    color: #4D4D4D
+    color: #4d4d4d;
 }
-
 
 .application-modal__checkbox-action-text {
     font-size: 14px;
     line-height: 18px;
-    color: #4D4D4D;
+    color: #4d4d4d;
     display: block;
     a {
         &:link,
@@ -189,14 +168,11 @@
     }
 }
 
-
 .application-modal__checkbox-law-name {
     font-size: 12px;
     display: block;
     margin-top: 3px;
 }
-
-
 
 .application-modal__submit {
     margin-top: 2rem;
@@ -219,7 +195,6 @@
         }
     }
 }
-
 
 .application-modal__close-btn {
     width: 50px;
