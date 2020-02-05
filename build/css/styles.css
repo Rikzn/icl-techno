@@ -10062,10 +10062,12 @@ a.section-header:link, a.section-header:visited {
   margin: 100px 0; }
   @media only screen and (max-width: 1080px) {
     .services {
-      margin: 80px 0; } }
+      margin: 60px 0;
+      margin-top: 40px; } }
   @media only screen and (max-width: 968px) {
     .services {
-      margin: 50px 0; } }
+      margin: 40px 0;
+      margin-top: 30px; } }
   .services .tabs-block__tabs-navigation {
     margin-bottom: 15px; }
   .services .tabs-block__tabs-navigation-btn {
@@ -10093,9 +10095,15 @@ a.section-header:link, a.section-header:visited {
   display: flex;
   padding-top: 122px;
   position: relative; }
+  @media only screen and (max-width: 1240px) {
+    .services__row {
+      padding-top: 90px; } }
+  @media only screen and (max-width: 1080px) {
+    .services__row {
+      padding-top: 60px; } }
   @media only screen and (max-width: 968px) {
     .services__row {
-      padding-top: 30px;
+      padding-top: 60px;
       flex-direction: column; } }
 
 .services__map {
@@ -10124,6 +10132,9 @@ a.section-header:link, a.section-header:visited {
     .services__right-column {
       width: 100%;
       padding-top: 40px; } }
+  @media only screen and (max-width: 576px) {
+    .services__right-column {
+      padding-top: 60px; } }
 
 .services__cities {
   display: flex;
@@ -10312,6 +10323,10 @@ a.section-header:link, a.section-header:visited {
     .services__city-card-label {
       top: 20px;
       left: 22px; } }
+  @media only screen and (max-width: 576px) {
+    .services__city-card-label {
+      font-size: 12px;
+      padding: 7px 10px; } }
 
 .contacts {
   margin: 100px 0;

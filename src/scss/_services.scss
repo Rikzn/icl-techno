@@ -1,10 +1,12 @@
 .services {
     margin: 100px 0;
     @include breakpoint(tablet) {
-        margin: 80px 0;
+        margin: 60px 0;
+        margin-top: 40px;
     }
     @include breakpoint(small-tablet) {
-        margin: 50px 0;
+        margin: 40px 0;
+        margin-top: 30px;
     }
 
 
@@ -43,8 +45,14 @@
     display: flex;
     padding-top: 122px;
     position: relative;
+    @include breakpoint(laptop) {
+        padding-top: 90px;
+    }
+    @include breakpoint(tablet) {
+        padding-top: 60px;
+    }
     @include breakpoint(small-tablet) {
-        padding-top: 30px;
+        padding-top: 60px;
         flex-direction: column;
     }
 }
@@ -72,6 +80,10 @@
     @include breakpoint(small-tablet) {
         width: 100%;
         padding-top: 40px;
+    }
+
+    @include breakpoint(small-mobile) {
+        padding-top: 60px;
     }
 }
 
@@ -307,5 +319,10 @@
     @include breakpoint(small-mobile) {
         top: 20px;
         left: 22px;
+    }
+
+    @include breakpoint(small-mobile) {
+        font-size: 12px;
+        padding: 7px 10px;
     }
 }
