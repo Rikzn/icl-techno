@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="css/styles.min.css" />
         <script src="https://api-maps.yandex.ru/2.1/?apikey=d41198b4-79cf-4ff2-83a6-aaff2a77a15c&lang=ru_RU" type="text/javascript"></script>
         <title>
-            Сервисные центры
+            Главная страница
         </title>
     </head>
     <body class="no-touch" ontouchstart="">
@@ -215,7 +215,7 @@
         </div>
 
         <div class="page-content">
-            <header class="page-header js-compensate-for-scrollbar js-page-header  page-header--white   ">
+            <header class="page-header js-compensate-for-scrollbar js-page-header      page-header--dark  ">
                 <div class="container container--flex">
                     <div class="header-logo">
                         <svg width="82" height="82" aria-hidden="true" class="icon-logo">
@@ -273,7 +273,7 @@
                                 <li class="main-nav__list-item">
                                     <a href="#" class="main-nav__link">Решения</a>
                                 </li>
-                                <li class="main-nav__list-item main-nav__list-item--has-submenu ">
+                                <li class="main-nav__list-item main-nav__list-item--has-submenu  active ">
                                     <a href="#" class="main-nav__link js-submenu-link">
                                         Продукция
                                         <svg width="10" height="6" aria-hidden="true" class="icon-arrow-down">
@@ -365,7 +365,7 @@
                                     <a href="#" class="main-nav__link">Услуги</a>
                                 </li>
 
-                                <li class="main-nav__list-item main-nav__list-item--has-submenu  active ">
+                                <li class="main-nav__list-item main-nav__list-item--has-submenu ">
                                     <a href="#" class="main-nav__link js-submenu-link">
                                         Поддержка
                                         <svg width="10" height="6" aria-hidden="true" class="icon-arrow-down">
@@ -559,571 +559,706 @@
             </header>
             <main class="page-main">
                 <div class="container">
-                    <section class="navigation-standalone">
-                        <div class="main-nav__submenu-content main-nav__submenu-content--standalone">
-                            <ul class="main-nav__submenu-list">
-                                <li class="main-nav__submenu-list-item active">
-                                    <a href="#" class="main-nav__submenu-link">
-                                        Сервисные центры
-                                    </a>
+                    <section class="catalog-item-header">
+                        <div class="catalog-item-header__background-dark-gradient"></div>
+                        <section class="navigation-standalone navigation-standalone--dark">
+                            <div class="main-nav__submenu-content main-nav__submenu-content--standalone">
+                                <ul class="main-nav__submenu-products">
+                                    <li class="main-nav__submenu-products-item active">
+                                        <a href="#" class="main-nav__submenu-products-link">
+                                            <span class="main-nav__submenu-icon-container">
+                                                <img src="img/products/desktop.svg" alt="" />
+                                            </span>
+
+                                            <span class="main-nav__submenu-title">
+                                                Настольные системы
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav__submenu-products-item">
+                                        <a href="#" class="main-nav__submenu-products-link">
+                                            <span class="main-nav__submenu-icon-container">
+                                                <img src="img/products/laptop.svg" alt="" />
+                                            </span>
+                                            <span class="main-nav__submenu-title">
+                                                Мобильные устройства
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav__submenu-products-item">
+                                        <a href="#" class="main-nav__submenu-products-link">
+                                            <span class="main-nav__submenu-icon-container">
+                                                <img src="img/products/server.svg" alt="" />
+                                            </span>
+                                            <span class="main-nav__submenu-title">
+                                                Серверные системы
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav__submenu-products-item">
+                                        <a href="#" class="main-nav__submenu-products-link">
+                                            <span class="main-nav__submenu-icon-container">
+                                                <img src="img/products/terminal.svg" alt="" />
+                                            </span>
+                                            <span class="main-nav__submenu-title">
+                                                Многофункциональные терминалы
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav__submenu-products-item">
+                                        <a href="#" class="main-nav__submenu-products-link">
+                                            <span class="main-nav__submenu-icon-container">
+                                                <img src="img/products/hdd.svg" alt="" />
+                                            </span>
+                                            <span class="main-nav__submenu-title">
+                                                Системы хранения данных
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="main-nav__submenu-products-item">
+                                        <a href="#" class="main-nav__submenu-products-link">
+                                            <span class="main-nav__submenu-icon-container">
+                                                <img src="img/products/interactive.svg" alt="" />
+                                            </span>
+                                            <span class="main-nav__submenu-title">
+                                                Интерактивные системы
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <img src="img/catalog-item/server.png" alt="Изображение продукта" class="catalog-item-header__image" />
+                        <div class="catalog-item-header__row">
+                            <div class="catalog-item-header__content">
+                                <h1 class="catalog-item-header__heading">
+                                    BasicRAY. Модель B182
+                                </h1>
+                                <p class="catalog-item-header__description">
+                                    Высокопроизводительный и функциональный ПК с защитой от неблагоприятных внешних воздействий.
+                                </p>
+                                <div class="catalog-item-header__main-specs">
+                                    <table>
+                                        <tr>
+                                            <th>Корпус</th>
+                                            <td>
+                                                MiniTower
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Блок питания</th>
+                                            <td>
+                                                400 Вт
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Чипсет материнской платы</th>
+                                            <td>
+                                                Intel H310 Express
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Сокет процессора</th>
+                                            <td>
+                                                LGA1151
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-with-corners btn-with-corners--configure catalog-item-header__configure-btn">Сконфигурировать</a>
+                        </div>
+                    </section>
+
+                    <section class="tabs-block">
+                        <div class="tabs-block__tabs js-tabs">
+                            <div class="tabs-block__tabs-navigation js-tabs-navigation">
+                                <a href="#" class="tabs-block__tabs-navigation-btn active">
+                                    <span class="tabs-block__tabs-navigation-btn-text">
+                                        Характеристики
+                                    </span>
+                                </a>
+                                <a href="#" class="tabs-block__tabs-navigation-btn">
+                                    <span class="tabs-block__tabs-navigation-btn-text">Фотографии</span>
+                                </a>
+                                <a href="#" class="tabs-block__tabs-navigation-btn">
+                                    <span class="tabs-block__tabs-navigation-btn-text">Сертификаты</span>
+                                </a>
+                                <a href="#" class="tabs-block__tabs-navigation-btn">
+                                    <span class="tabs-block__tabs-navigation-btn-text">Вопросы и ответы</span>
+                                </a>
+                                <a href="#" class="tabs-block__tabs-navigation-btn">
+                                    <span class="tabs-block__tabs-navigation-btn-text">Драйверы</span>
+                                </a>
+                            </div>
+
+                            <ul class="tabs-block__tabs-list js-tabs-list">
+                                <li class="tabs-block__tabs-item">
+                                    <section class="specs">
+                                        <div class="specs__table">
+                                            <table>
+                                                <tr>
+                                                    <th>
+                                                        Процессор
+                                                    </th>
+                                                    <td>
+                                                        <span class="specs__table-item">
+                                                            Intel Celeron
+                                                        </span>
+                                                        <span class="specs__table-item">
+                                                            Intel Pentium
+                                                        </span>
+                                                        <span class="specs__table-item">
+                                                            Intel Core i3 8-го поколения
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Набор микросхем
+                                                    </th>
+                                                    <td>
+                                                        <span class="specs__table-item">
+                                                            Intel H310 Express
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Оперативная память
+                                                    </th>
+                                                    <td>
+                                                        <span class="specs__table-item">
+                                                            2 слота DDR4 DIMM
+                                                        </span>
+                                                        <span class="specs__table-item">
+                                                            Поддержка до 32 ГБ DDR4 2400 МГц
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Видеоконтроллер
+                                                    </th>
+                                                    <td>
+                                                        <span class="specs__table-item">
+                                                            Intel HD Graphics (встроен в процессор)
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Звуковая карта
+                                                    </th>
+                                                    <td>
+                                                        <span class="specs__table-item">
+                                                            Интегрированный HD-кодек
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Накопители информации
+                                                    </th>
+                                                    <td>
+                                                        <span class="specs__table-item">
+                                                            Поддержка до 4 устройств SATA-III
+                                                        </span>
+                                                        <span class="specs__table-item">
+                                                            Поддержка 1 устройства M.2
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Сетевой контроллер
+                                                    </th>
+                                                    <td>
+                                                        <span class="specs__table-item">
+                                                            10/100/1000 Мб/с Gigabit Ethernet
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Слоты расширения
+                                                    </th>
+                                                    <td>
+                                                        <span class="specs__table-item">
+                                                            1 x PCI-E x16
+                                                        </span>
+                                                        <span class="specs__table-item">
+                                                            1 x PCI-E x1
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        Порты ввода-вывода на задней панели
+                                                    </th>
+                                                    <td>
+                                                        <span class="specs__table-item">
+                                                            1 x RJ45
+                                                        </span>
+                                                        <span class="specs__table-item">
+                                                            4 x USB 2.0
+                                                        </span>
+                                                        <span class="specs__table-item">
+                                                            2 x USB 3.1
+                                                        </span>
+                                                        <span class="specs__table-item">
+                                                            1 x VGA
+                                                        </span>
+                                                        <span class="specs__table-item">
+                                                            1 x HDMI
+                                                        </span>
+                                                        <span class="specs__table-item">
+                                                            1 x DVI-D Звуковые гнезда (3 шт.)
+                                                        </span>
+                                                        <span class="specs__table-item">
+                                                            2 x PS/2
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </section>
                                 </li>
-                                <li class="main-nav__submenu-list-item">
-                                    <a href="#" class="main-nav__submenu-link">
-                                        Драйверы
-                                    </a>
+                                <li class="tabs-block__tabs-item">
+                                    <div class="gallery-slider gallery-slider--limited-width js-gallery-slider">
+                                        <div class="gallery-slider__main js-gallery-slider-main">
+                                            <div class="swiper-container">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <div class="gallery-slider__main-card">
+                                                            <a href="https://youtube.com" class="gallery-slider__main-card-image-container">
+                                                                <div class="gallery-slider__main-card-image-size-wrapper">
+                                                                    <img src="img/article/Slider.jpg" alt="Фотография в слайдере" class="gallery-slider__main-card-image" />
+                                                                    <div class="gallery-slider__main-card-description">
+                                                                        Команда школьников Приволжского федерального округа
+                                                                    </div>
+                                                                </div>
+                                                                <svg width="80" height="80" aria-hidden="true" class="icon-play">
+                                                                    <use xlink:href="#play" />
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                        <div class="gallery-slider__thumb-hidden-container">
+                                                            <div class="gallery-slider__thumbs-card">
+                                                                <div class="gallery-slider__thumbs-card-image-container">
+                                                                    <img src="img/gallery-slider/slide-photo-1.jpg" alt="Фотография превью слайда" class="gallery-slider__thumbs-card-image" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="gallery-slider__main-card">
+                                                            <div class="gallery-slider__main-card-image-container">
+                                                                <div class="gallery-slider__main-card-image-size-wrapper">
+                                                                    <img src="img/gallery-slider/annie-spratt-QckxruozjRg-unsplash.jpg" alt="Фотография в слайдере" class="gallery-slider__main-card-image" />
+                                                                    <div class="gallery-slider__main-card-description">
+                                                                        Команда школьников Приволжского федерального округа
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="gallery-slider__thumb-hidden-container">
+                                                            <div class="gallery-slider__thumbs-card">
+                                                                <div class="gallery-slider__thumbs-card-image-container">
+                                                                    <img src="img/gallery-slider/slide-photo-2.jpg" alt="Фотография превью слайда" class="gallery-slider__thumbs-card-image" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="gallery-slider__main-card">
+                                                            <a href="https://youtube.com" class="gallery-slider__main-card-image-container">
+                                                                <div class="gallery-slider__main-card-image-size-wrapper">
+                                                                    <img src="img/article/Slider.jpg" alt="Фотография в слайдере" class="gallery-slider__main-card-image" />
+                                                                    <div class="gallery-slider__main-card-description">
+                                                                        Команда школьников Приволжского федерального округа
+                                                                    </div>
+                                                                </div>
+                                                                <svg width="80" height="80" aria-hidden="true" class="icon-play">
+                                                                    <use xlink:href="#play" />
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                        <div class="gallery-slider__thumb-hidden-container">
+                                                            <div class="gallery-slider__thumbs-card">
+                                                                <div class="gallery-slider__thumbs-card-image-container">
+                                                                    <img src="img/gallery-slider/slide-photo-1.jpg" alt="Фотография превью слайда" class="gallery-slider__thumbs-card-image" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gallery-slider__bottom-section">
+                                            <a href="#" class="gallery-slider__arrow js-gallery-slider-prev">
+                                                <svg width="45" height="45" aria-hidden="true" class="icon-arrow-left">
+                                                    <use xlink:href="#arrow-left"></use>
+                                                </svg>
+                                            </a>
+                                            <div class="gallery-slider__thumbs js-gallery-slider-thumbs">
+                                                <div class="swiper-container">
+                                                    <div class="swiper-wrapper"></div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="gallery-slider__arrow js-gallery-slider-next">
+                                                <svg width="45" height="45" aria-hidden="true" class="icon-arrow-right">
+                                                    <use xlink:href="#arrow-right"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="tabs-block__tabs-item">
+                                    <section class="documents">
+                                        <h3 class="documents__subheading">
+                                            Группа сертификатов
+                                        </h3>
+
+                                        <div class="documents__slider js-documents-slider">
+                                            <ul class="documents__list">
+                                                <li class="documents__list-item">
+                                                    <a href="#" class="documents__card">
+                                                        <img src="img/documents/document-1.jpg" alt="Изображение документа" class="documents__image" />
+                                                        <span class="documents__card-title">
+                                                            <span class="documents__card-title-text">
+                                                                Сертификат соответсвия №2: НИП ФСБ 0000034115
+                                                            </span>
+                                                        </span>
+                                                        <span class="documents__card-size">
+                                                            PDF 345 КБ
+                                                        </span>
+                                                    </a>
+                                                </li>
+
+                                                <li class="documents__list-item">
+                                                    <a href="#" class="documents__card documents__card--instruction">
+                                                        <img src="img/documents/document-2.jpg" alt="Изображение документа" class="documents__image" />
+                                                        <span class="documents__card-title">
+                                                            <span class="documents__card-title-text">Инструкция по использованию сервера</span>
+                                                        </span>
+                                                        <span class="documents__card-size">
+                                                            PDF 345 КБ
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li class="documents__list-item">
+                                                    <a href="#" class="documents__card">
+                                                        <img src="img/documents/document-1.jpg" alt="Изображение документа" class="documents__image" />
+                                                        <span class="documents__card-title">
+                                                            <span class="documents__card-title-text">
+                                                                Сертификат соответсвия №2: НИП ФСБ 0000034115
+                                                            </span>
+                                                        </span>
+                                                        <span class="documents__card-size">
+                                                            PDF 345 КБ
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li class="documents__list-item">
+                                                    <a href="#" class="documents__card">
+                                                        <img src="img/documents/document-1.jpg" alt="Изображение документа" class="documents__image" />
+                                                        <span class="documents__card-title">
+                                                            <span class="documents__card-title-text">
+                                                                Сертификат соответсвия №2: НИП ФСБ 0000034115
+                                                            </span>
+                                                        </span>
+                                                        <span class="documents__card-size">
+                                                            PDF 345 КБ
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li class="documents__list-item">
+                                                    <a href="#" class="documents__card">
+                                                        <img src="img/documents/document-1.jpg" alt="Изображение документа" class="documents__image" />
+                                                        <span class="documents__card-title">
+                                                            <span class="documents__card-title-text">
+                                                                Сертификат соответсвия №2: НИП ФСБ 0000034115
+                                                            </span>
+                                                        </span>
+                                                        <span class="documents__card-size">
+                                                            PDF 345 КБ
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li class="documents__list-item">
+                                                    <a href="#" class="documents__card">
+                                                        <img src="img/documents/document-1.jpg" alt="Изображение документа" class="documents__image" />
+                                                        <span class="documents__card-title">
+                                                            <span class="documents__card-title-text">
+                                                                Сертификат соответсвия №2: НИП ФСБ 0000034115
+                                                            </span>
+                                                        </span>
+                                                        <span class="documents__card-size">
+                                                            PDF 345 КБ
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li class="documents__list-item">
+                                                    <a href="#" class="documents__card">
+                                                        <img src="img/documents/document-1.jpg" alt="Изображение документа" class="documents__image" />
+                                                        <span class="documents__card-title">
+                                                            <span class="documents__card-title-text">
+                                                                Сертификат соответсвия №2: НИП ФСБ 0000034115
+                                                            </span>
+                                                        </span>
+                                                        <span class="documents__card-size">
+                                                            PDF 345 КБ
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </section>
+                                </li>
+                                <li class="tabs-block__tabs-item">
+                                    <section class="faq">
+                                        <div class="faq__row js-tabs">
+                                            <div class="faq__left-column">
+                                                <div class="faq__tabs-navigation js-tabs-navigation">
+                                                    <a href="#" class="faq__navigation-btn active">
+                                                        <span class="faq__navigation-btn-text">
+                                                            Сервис и гарантия
+                                                        </span>
+                                                    </a>
+                                                    <a href="#" class="faq__navigation-btn">
+                                                        <span class="faq__navigation-btn-text">Условия использования</span>
+                                                    </a>
+                                                    <a href="#" class="faq__navigation-btn">
+                                                        <span class="faq__navigation-btn-text">Сервис и гарантия</span>
+                                                    </a>
+                                                    <a href="#" class="faq__navigation-btn">
+                                                        <span class="faq__navigation-btn-text">Условия использования</span>
+                                                    </a>
+                                                    <a href="#" class="faq__navigation-btn">
+                                                        <span class="faq__navigation-btn-text">Сервис и гарантия</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="faq__right-column">
+                                                <ul class="faq__tabs-list js-tabs-list">
+                                                    <li class="faq__tabs-item">
+                                                        <ul class="faq__accordeons-list">
+                                                            <li class="faq__accordeons-list-item js-accordeon">
+                                                                <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
+                                                                    <span class="faq__accordeons-toggle-text">
+                                                                        Компания представляет собой объединение предприятий, способных выполнить все этапы реализации проекта.
+                                                                    </span>
+                                                                    <svg width="25" height="25" aria-hidden="true" class="icon-cross">
+                                                                        <use xlink:href="#cross" />
+                                                                    </svg>
+                                                                </a>
+                                                                <div class="faq__accordeons-content js-accordeon-content">
+                                                                    <p>
+                                                                        С 2006 года группа компаний ICL уверенно входит в пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и
+                                                                        совершенствовать наши продукты.
+                                                                    </p>
+                                                                    <p>
+                                                                        Пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
+                                                                    </p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="faq__accordeons-list-item js-accordeon">
+                                                                <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
+                                                                    <span class="faq__accordeons-toggle-text">
+                                                                        Компания представляет собой объединение предприятий, способных выполнить все этапы реализации проекта.
+                                                                    </span>
+                                                                    <svg width="25" height="25" aria-hidden="true" class="icon-cross">
+                                                                        <use xlink:href="#cross" />
+                                                                    </svg>
+                                                                </a>
+                                                                <div class="faq__accordeons-content js-accordeon-content">
+                                                                    <p>
+                                                                        С 2006 года группа компаний ICL уверенно входит в пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и
+                                                                        совершенствовать наши продукты.
+                                                                    </p>
+                                                                    <p>
+                                                                        Пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
+                                                                    </p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="faq__accordeons-list-item js-accordeon">
+                                                                <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
+                                                                    <span class="faq__accordeons-toggle-text">
+                                                                        Компания представляет собой объединение предприятий, способных выполнить все этапы реализации проекта.
+                                                                    </span>
+                                                                    <svg width="25" height="25" aria-hidden="true" class="icon-cross">
+                                                                        <use xlink:href="#cross" />
+                                                                    </svg>
+                                                                </a>
+                                                                <div class="faq__accordeons-content js-accordeon-content">
+                                                                    <p>
+                                                                        С 2006 года группа компаний ICL уверенно входит в пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и
+                                                                        совершенствовать наши продукты.
+                                                                    </p>
+                                                                    <p>
+                                                                        Пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
+                                                                    </p>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="faq__tabs-item">
+                                                        <ul class="faq__accordeons-list">
+                                                            <li class="faq__accordeons-list-item js-accordeon">
+                                                                <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
+                                                                    <span class="faq__accordeons-toggle-text">
+                                                                        Компания представляет собой объединение предприятий, способных выполнить все этапы реализации проекта.
+                                                                    </span>
+                                                                    <svg width="25" height="25" aria-hidden="true" class="icon-cross">
+                                                                        <use xlink:href="#cross" />
+                                                                    </svg>
+                                                                </a>
+                                                                <div class="faq__accordeons-content js-accordeon-content">
+                                                                    <p>
+                                                                        С 2006 года группа компаний ICL уверенно входит в пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и
+                                                                        совершенствовать наши продукты.
+                                                                    </p>
+                                                                    <p>
+                                                                        Пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
+                                                                    </p>
+                                                                </div>
+                                                            </li>
+                                                            <li class="faq__accordeons-list-item js-accordeon">
+                                                                <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
+                                                                    <span class="faq__accordeons-toggle-text">
+                                                                        Компания представляет собой объединение предприятий, способных выполнить все этапы реализации проекта.
+                                                                    </span>
+                                                                    <svg width="25" height="25" aria-hidden="true" class="icon-cross">
+                                                                        <use xlink:href="#cross" />
+                                                                    </svg>
+                                                                </a>
+                                                                <div class="faq__accordeons-content js-accordeon-content">
+                                                                    <p>
+                                                                        С 2006 года группа компаний ICL уверенно входит в пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и
+                                                                        совершенствовать наши продукты.
+                                                                    </p>
+                                                                    <p>
+                                                                        Пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
+                                                                    </p>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="faq__tabs-item">
+                                                        <ul class="faq__accordeons-list">
+                                                            <li class="faq__accordeons-list-item js-accordeon">
+                                                                <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
+                                                                    <span class="faq__accordeons-toggle-text">
+                                                                        Компания представляет собой объединение предприятий, способных выполнить все этапы реализации проекта.
+                                                                    </span>
+                                                                    <svg width="25" height="25" aria-hidden="true" class="icon-cross">
+                                                                        <use xlink:href="#cross" />
+                                                                    </svg>
+                                                                </a>
+                                                                <div class="faq__accordeons-content js-accordeon-content">
+                                                                    <p>
+                                                                        С 2006 года группа компаний ICL уверенно входит в пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и
+                                                                        совершенствовать наши продукты.
+                                                                    </p>
+                                                                    <p>
+                                                                        Пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
+                                                                    </p>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="faq__tabs-item">
+                                                        <ul class="faq__accordeons-list">
+                                                            <li class="faq__accordeons-list-item js-accordeon">
+                                                                <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
+                                                                    <span class="faq__accordeons-toggle-text">
+                                                                        Компания представляет собой объединение предприятий, способных выполнить все этапы реализации проекта.
+                                                                    </span>
+                                                                    <svg width="25" height="25" aria-hidden="true" class="icon-cross">
+                                                                        <use xlink:href="#cross" />
+                                                                    </svg>
+                                                                </a>
+                                                                <div class="faq__accordeons-content js-accordeon-content">
+                                                                    <p>
+                                                                        С 2006 года группа компаний ICL уверенно входит в пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и
+                                                                        совершенствовать наши продукты.
+                                                                    </p>
+                                                                    <p>
+                                                                        Пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
+                                                                    </p>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="faq__tabs-item">
+                                                        <ul class="faq__accordeons-list">
+                                                            <li class="faq__accordeons-list-item js-accordeon">
+                                                                <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
+                                                                    <span class="faq__accordeons-toggle-text">
+                                                                        Компания представляет собой объединение предприятий, способных выполнить все этапы реализации проекта.
+                                                                    </span>
+                                                                    <svg width="25" height="25" aria-hidden="true" class="icon-cross">
+                                                                        <use xlink:href="#cross" />
+                                                                    </svg>
+                                                                </a>
+                                                                <div class="faq__accordeons-content js-accordeon-content">
+                                                                    <p>
+                                                                        С 2006 года группа компаний ICL уверенно входит в пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и
+                                                                        совершенствовать наши продукты.
+                                                                    </p>
+                                                                    <p>
+                                                                        Пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
+                                                                    </p>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </li>
+                                <li class="tabs-block__tabs-item">
+                                    <section class="serial js-serial">
+                                        <h3 class="serial__heading">
+                                            Скачать драйверы по серийному номеру
+                                        </h3>
+                                        <div class="serial__row">
+                                            <div class="serial__left-column">
+                                                <p class="serial__instruction-text">
+                                                    Для того, чтобы скачать драйвер необходимо указать серийный номер
+                                                </p>
+                                            </div>
+                                            <div class="serial__right-column">
+                                                <p class="serial__instruction-text">
+                                                    Серийный номер можно найти на шильдике на корпусе сервера
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="serial__row">
+                                            <div class="serial__left-column">
+                                                <form action="/" method="GET" class="serial__form js-driver-search-form">
+                                                    <label for="serial" class="serial__form-label">Введите серийный номер</label>
+                                                    <input type="text" name="serial" class="serial__form-input js-serial-masking" id="serial" />
+                                                    <button type="submit" class="btn-with-corners serial__form-submit">
+                                                        Искать
+                                                    </button>
+                                                </form>
+                                            </div>
+                                            <div class="serial__right-column serial__right-column--image-column">
+                                                <img src="img/serial/serial.jpg" alt="Картинка с инструкцией" class="serial__instruction-image" />
+                                            </div>
+                                        </div>
+                                        <div class="serial__search-results js-driver-search-results">
+                                            <div class="serial__search-results-animation-wrapper"></div>
+                                        </div>
+                                    </section>
                                 </li>
                             </ul>
                         </div>
                     </section>
 
-                    <section class="services">
-                        <h2 class="services__heading">
-                            Сервисные центры
-                        </h2>
-                        <div class="services__description default-content">
-                            <p>
-                                Пользователи компьютерной техники ICL по всей территории России обеспечены оперативной сервисной поддержкой и гарантийным обслуживанием. В качестве региональных сервисных центров авторизовано более 100 профессиональных
-                                ИТ-компаний.
-                            </p>
-                            <p>
-                                <b>Телефон горячей линии:</b>
-                                <b>
-                                    <a href="tel:+78003337840">8 800 333-78-40</a>
-                                </b>
-                            </p>
-                            <p>
-                                <b>Эл. почта:</b>
-                                <b>
-                                    <a href="mailto:support@icl.ru">support@icl.ru</a>
-                                </b>
-                            </p>
-                        </div>
-                        <div class="services__row js-services-cities">
-                            <img src="img/services/map.jpg" alt="Карта с городами" class="services__map" />
-                            <div class="services__left-column">
-                                <div class="services__cities">
-                                    <div class="services__cities-column">
-                                        <div class="services__cities-block">
-                                            <div class="services__cities-letter">
-                                                А
-                                            </div>
-                                            <ul class="services__cities-list">
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link" data-target-city="abakan">Абакан</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link" data-target-city="arhangelsk">Архангельск</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Астрахань</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="services__cities-block">
-                                            <div class="services__cities-letter">
-                                                Б
-                                            </div>
-                                            <ul class="services__cities-list">
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Барнаул</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Белгород</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Бийск</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Благовещенск</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Брянск</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Бугульма</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="services__cities-block">
-                                            <div class="services__cities-letter">
-                                                В
-                                            </div>
-                                            <ul class="services__cities-list">
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Великий Новгород</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Владивосток</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Владикавказ</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Владимир</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Волгоград</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Воронеж</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="services__cities-block">
-                                            <div class="services__cities-letter">
-                                                Г
-                                            </div>
-                                            <ul class="services__cities-list">
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Грозный</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="services__cities-block">
-                                            <div class="services__cities-letter">
-                                                Е
-                                            </div>
-                                            <ul class="services__cities-list">
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Екатеринбург</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="services__cities-block">
-                                            <div class="services__cities-letter">
-                                                З
-                                            </div>
-                                            <ul class="services__cities-list">
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Заинск</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Зеленодольск</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="services__cities-column">
-                                        <div class="services__cities-block">
-                                            <div class="services__cities-letter">
-                                                И
-                                            </div>
-                                            <ul class="services__cities-list">
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Иваново</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Ижевск</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Йошкар-Ола</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="services__cities-block">
-                                            <div class="services__cities-letter">
-                                                К
-                                            </div>
-                                            <ul class="services__cities-list">
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Казань</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Калининград</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Калуга</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Кемерово</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Киров</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Кострома</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Кукмор, пос.</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Курган</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Курск</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="services__cities-block">
-                                            <div class="services__cities-letter">
-                                                Л
-                                            </div>
-                                            <ul class="services__cities-list">
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Липецк</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="services__cities-block">
-                                            <div class="services__cities-letter">
-                                                М
-                                            </div>
-                                            <ul class="services__cities-list">
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Майкоп</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Махачкала</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Москва</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Мурманск</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="services__cities-block">
-                                            <div class="services__cities-letter">
-                                                Н
-                                            </div>
-                                            <ul class="services__cities-list">
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Набережные Челны</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Нальчик</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Нижнекамск</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Нижний Новгород</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Новокузнецк</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Новороссийск</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Новосибирск</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="services__cities-column">
-                                        <div class="services__cities-block">
-                                            <div class="services__cities-letter">
-                                                О
-                                            </div>
-                                            <ul class="services__cities-list">
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Орел</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Оренбург</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="services__cities-block">
-                                            <div class="services__cities-letter">
-                                                П
-                                            </div>
-                                            <ul class="services__cities-list">
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Пенза</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Пермь</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Петрозаводск</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Петропавловск-камчатский</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Псков</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Пятигорск</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="services__cities-block">
-                                            <div class="services__cities-letter">
-                                                Р
-                                            </div>
-                                            <ul class="services__cities-list">
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Ростов-на-дону</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Рязянь</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="services__cities-block">
-                                            <div class="services__cities-letter">
-                                                С
-                                            </div>
-                                            <ul class="services__cities-list">
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Самара</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Саранск</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Саратов</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Симферополь</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Смоленск</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Сочи</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Ставрополь</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Сургут</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Сыктывкар</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="services__cities-column">
-                                        <div class="services__cities-block">
-                                            <div class="services__cities-letter">
-                                                Т
-                                            </div>
-                                            <ul class="services__cities-list">
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Тамбов</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Тверь</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Тольятти</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Томск</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Тула</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Тюмень</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="services__cities-block">
-                                            <div class="services__cities-letter">
-                                                У
-                                            </div>
-                                            <ul class="services__cities-list">
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Улан-Удэ</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Ульяновск</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Уфа</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="services__cities-block">
-                                            <div class="services__cities-letter">
-                                                Х
-                                            </div>
-                                            <ul class="services__cities-list">
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Хабаровск</a>
-                                                </li>
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Ханты-Мансийск</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="services__cities-block">
-                                            <div class="services__cities-letter">
-                                                Э
-                                            </div>
-                                            <ul class="services__cities-list">
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Элиста</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="services__cities-block">
-                                            <div class="services__cities-letter">
-                                                Я
-                                            </div>
-                                            <ul class="services__cities-list">
-                                                <li class="services__cities-list-item">
-                                                    <a href="#" class="services__cities-link">Якутск</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="services__right-column">
-                                <div class="services__city-cards">
-                                    <div class="services__city-card" data-city="abakan">
-                                        <div class="services__city-card-image-container">
-                                            <img src="img/services/city-card.jpg" alt="Фотография города" class="services__city-card-image" />
-                                            <span class="services__city-card-label">
-                                                Астрахань
-                                            </span>
-                                        </div>
-                                        <div class="services__city-card-content">
-                                            <div class="tabs-block__tabs js-tabs">
-                                                <div class="tabs-block__tabs-navigation js-tabs-navigation">
-                                                    <a href="#" class="tabs-block__tabs-navigation-btn">
-                                                        <span class="tabs-block__tabs-navigation-btn-text">
-                                                            Сервис №1
-                                                        </span>
-                                                    </a>
-                                                    <a href="#" class="tabs-block__tabs-navigation-btn">
-                                                        <span class="tabs-block__tabs-navigation-btn-text">Сервис №2</span>
-                                                    </a>
-                                                </div>
-
-                                                <ul class="tabs-block__tabs-list js-tabs-list">
-                                                    <li class="tabs-block__tabs-item">
-                                                        <div class="services__single-service-card">
-                                                            <h3 class="services__city-card-header">
-                                                                Астраханское представительство «АйСиЭл Сервисез»
-                                                            </h3>
-                                                            <div class="services__city-card-info">
-                                                                <p>
-                                                                    Стать партнером компании «ICL Техно» просто и выгодно. Для получения статуса партнера необходимо выполнить следующие 4 шага:
-                                                                </p>
-                                                            </div>
-                                                            <ul class="services__city-card-list">
-                                                                <li class="services__city-card-list-item">
-                                                                    <div class="services__city-card-item-content">
-                                                                        <p>
-                                                                            <b>Представитель:</b>
-                                                                        </p>
-                                                                        <p>
-                                                                            Храмова Светлана доб.138
-                                                                        </p>
-                                                                    </div>
-                                                                </li>
-                                                                <li class="services__city-card-list-item">
-                                                                    <div class="services__city-card-item-content">
-                                                                        <p>
-                                                                            <b>Адрес:</b>
-                                                                        </p>
-                                                                        <p>
-                                                                            Красная Набережная, 37
-                                                                        </p>
-                                                                        <p>
-                                                                            <a href="#">Смотреть на карте</a>
-                                                                        </p>
-                                                                    </div>
-                                                                </li>
-                                                                <li class="services__city-card-list-item">
-                                                                    <div class="services__city-card-item-content">
-                                                                        <p>
-                                                                            <b>Телефон:</b>
-                                                                        </p>
-                                                                        <p>
-                                                                            (8512)51-57-54, 51-67-35(факс)
-                                                                        </p>
-                                                                    </div>
-                                                                </li>
-                                                                <li class="services__city-card-list-item">
-                                                                    <div class="services__city-card-item-content">
-                                                                        <p>
-                                                                            <b>Сайт партнера:</b>
-                                                                        </p>
-                                                                        <p>
-                                                                            <a href="service@tf-tan.ru"> service@tf-tan.ru</a>
-                                                                        </p>
-                                                                    </div>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </li>
-                                                    <li class="tabs-block__tabs-item">
-                                                        <div class="services__single-service-card">
-                                                            <h3 class="services__city-card-header">
-                                                                Астраханское представительство «АйСиЭл Сервисез» 2
-                                                            </h3>
-                                                            <div class="services__city-card-info">
-                                                                <p>
-                                                                    Стать партнером компании «ICL Техно» просто и выгодно. Для получения статуса партнера необходимо выполнить следующие 4 шага:
-                                                                </p>
-                                                            </div>
-                                                            <ul class="services__city-card-list">
-                                                                <li class="services__city-card-list-item">
-                                                                    <div class="services__city-card-item-content">
-                                                                        <p>
-                                                                            <b>Представитель:</b>
-                                                                        </p>
-                                                                        <p>
-                                                                            Храмова Светлана доб.138
-                                                                        </p>
-                                                                    </div>
-                                                                </li>
-                                                                <li class="services__city-card-list-item">
-                                                                    <div class="services__city-card-item-content">
-                                                                        <p>
-                                                                            <b>Адрес:</b>
-                                                                        </p>
-                                                                        <p>
-                                                                            Красная Набережная, 37
-                                                                        </p>
-                                                                        <p>
-                                                                            <a href="#">Смотреть на карте</a>
-                                                                        </p>
-                                                                    </div>
-                                                                </li>
-                                                                <li class="services__city-card-list-item">
-                                                                    <div class="services__city-card-item-content">
-                                                                        <p>
-                                                                            <b>Телефон:</b>
-                                                                        </p>
-                                                                        <p>
-                                                                            (8512)51-57-54, 51-67-35(факс)
-                                                                        </p>
-                                                                    </div>
-                                                                </li>
-                                                                <li class="services__city-card-list-item">
-                                                                    <div class="services__city-card-item-content">
-                                                                        <p>
-                                                                            <b>Сайт партнера:</b>
-                                                                        </p>
-                                                                        <p>
-                                                                            <a href="service@tf-tan.ru"> service@tf-tan.ru</a>
-                                                                        </p>
-                                                                    </div>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-
-                                            <a href="#" class="btn-with-corners services__city-card-btn">Отправить заявку</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
                     <section class="callback" style="background-image: url('img/icl-bg.jpg');">
                         <div class="callback__row">
                             <div class="callback__left-column">
@@ -1152,14 +1287,165 @@
                                     <div class="callback__form-input-group">
                                         <textarea class="callback__form-textarea" name="comment" placeholder="Комментарий" required></textarea>
                                     </div>
-                                    <span class="callback__form-policy">
-                                        Я согласен с
-                                        <a href="#">политикой конфиденциальности</a>
-                                    </span>
+                                    <span class="callback__form-policy"> Я согласен с <a href="#">политикой конфиденциальности</a> </span>
                                     <button type="submit" class="btn-with-corners callback__form-submit">
                                         Узнать стоимость
                                     </button>
                                 </form>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="catalog-links">
+                        <div class="catalog-links__row">
+                            <div class="catalog-links__column">
+                                <a href="#" class="catalog-links__link">
+                                    <span class="section-header catalog-links__type">
+                                        Продукция
+                                    </span>
+                                    <span class="catalog-links__text">
+                                        Скачать каталог в формате PDF
+                                    </span>
+                                    <svg width="45" height="45" aria-hidden="true" class="icon-arrow-right">
+                                        <use xlink:href="#arrow-right" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="catalog-links__column">
+                                <a href="#" class="catalog-links__link">
+                                    <span class="section-header catalog-links__type">
+                                        Конфигуратор
+                                    </span>
+                                    <span class="catalog-links__text">
+                                        Сконфигурируйте собственное оборудование
+                                    </span>
+                                    <svg width="45" height="45" aria-hidden="true" class="icon-arrow-right">
+                                        <use xlink:href="#arrow-right" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="equipment equipment--without-tabs">
+                        <h2 class="section-header">
+                            Смотрите также
+                        </h2>
+
+                        <div class="equipment__slider js-equipment-slider">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="#" class="equipment__slider-card">
+                                            <span class="equipment__slider-card-image-width-wrapper">
+                                                <span class="equipment__slider-card-image-container">
+                                                    <img src="img/solutions-slider/image-1.png" alt="Фото 1" class="equipment__slider-card-image" />
+                                                    <span class="equipment__slider-corner">
+                                                        <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                                            <use xlink:href="#arrow-right-no-circle" />
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <span class="equipment__slider-content">
+                                                <span class="equipment__slider-title">
+                                                    Предоставляем комплексные
+                                                </span>
+                                                <span class="equipment__slider-text">
+                                                    решения в области информационных технологий
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="equipment__slider-card">
+                                            <span class="equipment__slider-card-image-width-wrapper">
+                                                <span class="equipment__slider-card-image-container">
+                                                    <img src="img/solutions-slider/image-2.png" alt="Фото 1" class="equipment__slider-card-image" />
+                                                    <span class="equipment__slider-corner">
+                                                        <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                                            <use xlink:href="#arrow-right-no-circle" />
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <span class="equipment__slider-content">
+                                                <span class="equipment__slider-title">
+                                                    Предоставляем комплексные
+                                                </span>
+                                                <span class="equipment__slider-text">
+                                                    решения в области информационных технологий
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="equipment__slider-card">
+                                            <span class="equipment__slider-card-image-width-wrapper">
+                                                <span class="equipment__slider-card-image-container">
+                                                    <img src="img/solutions-slider/image-3.png" alt="Фото 1" class="equipment__slider-card-image" />
+                                                    <span class="equipment__slider-corner">
+                                                        <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                                            <use xlink:href="#arrow-right-no-circle" />
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <span class="equipment__slider-content">
+                                                <span class="equipment__slider-title">
+                                                    Предоставляем комплексные
+                                                </span>
+                                                <span class="equipment__slider-text">
+                                                    решения в области информационных технологий
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="equipment__slider-card">
+                                            <span class="equipment__slider-card-image-width-wrapper">
+                                                <span class="equipment__slider-card-image-container">
+                                                    <img src="img/solutions-slider/image-4.png" alt="Фото 1" class="equipment__slider-card-image" />
+                                                    <span class="equipment__slider-corner">
+                                                        <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                                            <use xlink:href="#arrow-right-no-circle" />
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <span class="equipment__slider-content">
+                                                <span class="equipment__slider-title">
+                                                    Предоставляем комплексные
+                                                </span>
+                                                <span class="equipment__slider-text">
+                                                    решения в области информационных технологий
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="equipment__slider-card">
+                                            <span class="equipment__slider-card-image-width-wrapper">
+                                                <span class="equipment__slider-card-image-container">
+                                                    <img src="img/solutions-slider/image-5.png" alt="Фото 1" class="equipment__slider-card-image" />
+                                                    <span class="equipment__slider-corner">
+                                                        <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                                            <use xlink:href="#arrow-right-no-circle" />
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <span class="equipment__slider-content">
+                                                <span class="equipment__slider-title">
+                                                    Предоставляем комплексные
+                                                </span>
+                                                <span class="equipment__slider-text">
+                                                    решения в области информационных технологий
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </section>
