@@ -2,18 +2,16 @@ import PerfectScrollbar from 'perfect-scrollbar';
 import detectIt from 'detect-it';
 
 export default function() {
-    const addToCartCloseBtns = Array.from(document.querySelectorAll('.js-add-to-card-close'));
-
-    addToCartCloseBtns.forEach(btn => {
-        btn.addEventListener('click', function(event) {
-            console.log('Clicked');
+    document.addEventListener('click', event => {
+        const isCartModalCloseBtns = event.target.matches('.js-add-to-card-close') || event.target.closest('.js-add-to-card-close');
+        if (isCartModalCloseBtns) {
+            const button = event.target.matches('.js-add-to-card-close') ? event.target : event.target.closest('.js-add-to-card-close');
             event.preventDefault();
-            const modal = this.closest('.js-added-to-cart-popover');
-            console.log(modal);
+            const modal = button.closest('.js-added-to-cart-popover');
             if (modal) {
                 modal.classList.remove('configurator__added-to-cart--shown');
             }
-        });
+        }
     });
 
     const scrollableTables = Array.from(document.querySelectorAll('.js-configurator-scrollable-table'));
