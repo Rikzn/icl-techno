@@ -4,7 +4,7 @@ import Swiper from 'swiper';
 export default function() {
     const slider = document.querySelector('.js-our-clients-slider');
 
-    if (!slider) return;
+    if (!slider || document.body.classList.contains('is-admin')) return;
 
     new Swiper(slider.querySelector('.swiper-container'), {
         slidesPerView: 1,
