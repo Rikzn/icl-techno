@@ -93,7 +93,6 @@
     }
 }
 
-
 @mixin breakpointMF($class) {
     @if $class == large-desktop {
         @media only screen and (max-width: $desktop-width + 1px) {
@@ -119,10 +118,15 @@
         @media only screen and (max-width: $small-mobile-width + 1px) {
             @content;
         }
-    } 
+    }
 }
 
 @mixin defaultContent() {
+    font-size: 20px;
+    // font-family: "Proxima Nova",sans-serif;
+    @include breakpoint(mobile) {
+        font-size: 16px;
+    }
     > * {
         &:first-child {
             margin-top: 0;
@@ -194,7 +198,8 @@
     }
 
     .p > p,
-    > p {
+    > p,
+    p:not([class]) {
         font-family: $proxima;
         font-size: 20px;
         line-height: 1.5;
@@ -332,8 +337,6 @@
             background-color: $red;
         }
     }
-
-    
 
     & > h1,
     & > h2,

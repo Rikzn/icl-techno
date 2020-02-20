@@ -43,6 +43,14 @@
 
         .text-insertion__content-wrapper {
             margin-bottom: 20px;
+            & > * {
+                &:first-child {
+                    margin-top: 0;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
             & > h1,
             & > h2,
             & > h3,
@@ -52,13 +60,14 @@
                 font-size: 20px;
                 line-height: 1.4;
                 font-weight: 700;
-                margin-bottom: 15px;
+                margin: 15px 0;
             }
 
-            > p {
+            p:not([class]) {
                 font-size: 18px;
                 line-height: 1.4;
                 font-family: $proxima;
+                margin: 15px 0;
                 @include breakpoint(mobile) {
                     font-size: 16px;
                 }
@@ -71,6 +80,7 @@
             margin-left: auto;
             display: flex;
             align-items: center;
+            font-size: 16px;
             > svg {
                 fill: $red;
                 margin-left: 8px;
@@ -130,6 +140,14 @@
             @include breakpoint(small-mobile) {
                 width: 100%;
             }
+            & > * {
+                &:first-child {
+                    margin-top: 0;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
             & > h1,
             & > h2,
             & > h3,
@@ -139,13 +157,14 @@
                 font-size: 20px;
                 line-height: 1.4;
                 font-weight: 700;
-                margin-bottom: 15px;
+                margin: 15px 0;
             }
 
-            > p {
+            p:not([class]) {
                 font-size: 18px;
                 line-height: 1.4;
                 font-family: $proxima;
+                margin: 15px 0;
                 @include breakpoint(mobile) {
                     font-size: 16px;
                 }
@@ -159,6 +178,7 @@
             padding-bottom: 15px;
             padding-right: 35px;
             padding-left: 35px;
+            font-size: 16px;
             @include breakpoint(mobile) {
                 margin-top: 10px;
             }
@@ -191,6 +211,14 @@
         .text-insertion__content-wrapper {
             margin-bottom: 20px;
             flex-grow: 1;
+            & > * {
+                &:first-child {
+                    margin-top: 0;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
             & > h1,
             & > h2,
             & > h3,
@@ -200,21 +228,20 @@
                 font-size: 20px;
                 line-height: 1.4;
                 font-weight: 700;
-                margin-bottom: 5px;
+                margin: 15px 0;
             }
 
-            > span {
+            span:not([class]) {
                 font-family: $proxima;
                 font-size: 16px;
                 color: #BABABA;
-               
             }
 
-            > p {
+            p:not([class]) {
                 font-size: 18px;
                 line-height: 1.4;
                 font-family: $proxima;
-                margin-top: 15px;
+                margin: 15px 0;
                 @include breakpoint(mobile) {
                     font-size: 16px;
                 }
@@ -226,6 +253,7 @@
             margin-left: auto;
             display: flex;
             align-items: center;
+            font-size: 16px;
             > svg {
                 fill: $red;
                 margin-left: 8px;
@@ -354,14 +382,14 @@
                 margin-bottom: 5px;
             }
 
-            > span {
+            span:not([class]) {
                 font-family: $proxima;
                 font-size: 16px;
                 color: #BABABA;
                
             }
 
-            > p {
+            p:not([class]) {
                 font-size: 18px;
                 line-height: 1.4;
                 font-family: $proxima;
