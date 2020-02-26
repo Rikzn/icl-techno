@@ -30,7 +30,7 @@ export default function() {
                     iconImageOffset: [-pinSize[0]/2, -pinSize[1]]
                 }
             );
-
+            myMap.controls.add('zoomControl');
             myMap.geoObjects.add(myPlacemark);
 
             myMap.behaviors.disable('scrollZoom');
