@@ -20,7 +20,7 @@ export default function() {
 
     let activeSlideIndex = 0;
     let autoplayEnabled = true;
-    const autoplayInterval = 3000;
+    const autoplayInterval = 6000;
 
     // Подготовка разметки под слайдер
 
