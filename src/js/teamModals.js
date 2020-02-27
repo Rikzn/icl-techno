@@ -8,7 +8,7 @@ export default function() {
 
     modals.forEach((modal, modalIndex) => {
         const open = modal.querySelector('.js-team-modal-open');
-        const close = modal.querySelector('.js-team-modal-close');
+        const close = Array.from(modal.querySelectorAll('.js-team-modal-close'));
         const content = modal.querySelector('.js-team-modal-content');
         const innerContent = modal.querySelector('.team__modal-inner-scroll-wrapper');
         const next = modal.querySelector('.team__modal-next');
@@ -39,14 +39,16 @@ export default function() {
             loadAndPlayVideo(activeModal);
         });
 
-        close.addEventListener('click', function(event) {
-            event.preventDefault();
-            content.classList.remove('shown');
-            open.classList.remove('active');
-            content.style.transitionDuration = '';
-            enableBodyScroll(innerContent);
-            pauseVideo(activeModal);
-            activeModal = null;
+        close.forEach(btn => {
+            btn.addEventListener('click', function(event) {
+                event.preventDefault();
+                content.classList.remove('shown');
+                open.classList.remove('active');
+                content.style.transitionDuration = '';
+                enableBodyScroll(innerContent);
+                pauseVideo(activeModal);
+                activeModal = null;
+            });
         });
 
         content.addEventListener('click', function(event) {
