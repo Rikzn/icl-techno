@@ -288,6 +288,18 @@
     color: black;
     font-size: 18px;
     font-weight: 500;
+
+    a {
+        transition: color .2s;
+        &:link,
+        &:visited {
+            color: $red;
+        }
+
+        &:hover {
+            color: $red-hover;
+        }
+    }
     @include breakpoint(mobile) {
         font-size: 16px;
     }

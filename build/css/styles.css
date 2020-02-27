@@ -7000,6 +7000,12 @@ a.section-header:link, a.section-header:visited {
   color: black;
   font-size: 18px;
   font-weight: 500; }
+  .serial__error-message a {
+    transition: color .2s; }
+    .serial__error-message a:link, .serial__error-message a:visited {
+      color: #FB0D1B; }
+    .serial__error-message a:hover {
+      color: #C40C1F; }
   @media only screen and (max-width: 768px) {
     .serial__error-message {
       font-size: 16px; } }
