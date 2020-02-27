@@ -2034,7 +2034,7 @@ a.section-header:link, a.section-header:visited {
   text-align: center;
   align-items: center;
   flex-grow: 1;
-  padding: 22px 40px;
+  padding: 10px 32px;
   transition: color 0.2s, background-color 0.2s;
   position: relative;
   -webkit-user-select: none;
@@ -2043,7 +2043,7 @@ a.section-header:link, a.section-header:visited {
           user-select: none;
   -webkit-tap-highlight-color: transparent; }
   .main-nav__submenu-products-link:link, .main-nav__submenu-products-link:visited {
-    color: #cfcfcf; }
+    color: black; }
   .navigation-standalone--dark .main-nav__submenu-products-link:link, .navigation-standalone--dark .main-nav__submenu-products-link:visited {
     color: #696969; }
   .main-nav__submenu-products-link::after {
@@ -2150,13 +2150,11 @@ a.section-header:link, a.section-header:visited {
 
 .main-nav__submenu-title {
   font-size: 14px;
-  line-height: 18px;
-  margin-top: 5px; }
+  line-height: 18px; }
   @media only screen and (max-width: 1080px) {
     .main-nav__submenu-content:not(.main-nav__submenu-content--standalone) .main-nav__submenu-title {
       font-size: 14px;
-      line-height: 20px;
-      margin-top: 0; } }
+      line-height: 18px; } }
   @media only screen and (max-width: 768px) {
     .main-nav__submenu-title {
       text-align: left; }
@@ -8161,9 +8159,6 @@ a.section-header:link, a.section-header:visited {
   align-self: center;
   display: block;
   margin-right: 30px; }
-  @media only screen and (max-width: 1080px) {
-    .header-phone {
-      display: none; } }
   .header-phone > svg {
     display: block;
     fill: white;

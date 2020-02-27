@@ -466,14 +466,14 @@
     text-align: center;
     align-items: center;
     flex-grow: 1;
-    padding: 22px 40px;
+    padding: 10px 32px;
     transition: color 0.2s, background-color 0.2s;
     position: relative;
     user-select: none;
     @include noHighlight();
     &:link,
     &:visited {
-        color: #cfcfcf;
+        color: black;
     }
 
     .navigation-standalone--dark & {
@@ -624,12 +624,12 @@
 .main-nav__submenu-title {
     font-size: 14px;
     line-height: 18px;
-    margin-top: 5px;
+    
     @include breakpoint(tablet) {
         .main-nav__submenu-content:not(.main-nav__submenu-content--standalone) & {
             font-size: 14px;
-            line-height: 20px;
-            margin-top: 0;
+            line-height: 18px;
+           
         }
     }
 

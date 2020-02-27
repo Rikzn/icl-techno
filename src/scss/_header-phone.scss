@@ -2,9 +2,9 @@
     align-self: center;
     display: block;
     margin-right: 30px;
-    @include breakpoint(tablet) {
-        display: none;
-    }
+    // @include breakpoint(tablet) {
+    //     display: none;
+    // }
     > svg {
         display: block;
         fill: white;
