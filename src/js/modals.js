@@ -27,6 +27,7 @@ export default function() {
         if (event.target.matches('.js-modal-open') || event.target.closest('.js-modal-open')) {
             event.preventDefault();
             const link = event.target.matches('.js-modal-open') ? event.target : event.target.closest('.js-modal-open');
+            if (link.classList.contains('is-disabled')) return;
             const hash = link.hash;
 
             if (hash) {
@@ -42,16 +43,29 @@ export default function() {
         }
     });
 
-    modalCloseLinks.forEach(btn => {
-        btn.addEventListener('click', function() {
-            const modal = this.closest('.js-modal');
+    document.addEventListener('click', event => {
+        if (event.target.matches('.js-modal-close') || event.target.closest('.js-modal-close')) {
+            event.preventDefault();
+            const closeBtn = event.target.matches('.js-modal-close') ? event.target : event.target.closest('.js-modal-close');
+            const modal = closeBtn.closest('.js-modal');
             if (modal) {
                 modal.classList.remove('shown');
                 enableBodyScroll(modal.querySelector('.js-modal-scroll-wrapper'));
                 activeModal = null;
             }
-        });
+        }
     });
+
+    // modalCloseLinks.forEach(btn => {
+    //     btn.addEventListener('click', function() {
+    //         const modal = this.closest('.js-modal');
+    //         if (modal) {
+    //             modal.classList.remove('shown');
+    //             enableBodyScroll(modal.querySelector('.js-modal-scroll-wrapper'));
+    //             activeModal = null;
+    //         }
+    //     });
+    // });
 
     modals.forEach(modal => {
         modal.addEventListener('click', function(event) {
