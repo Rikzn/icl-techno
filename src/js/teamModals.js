@@ -2,8 +2,6 @@ import PerfectScrollbar from 'perfect-scrollbar';
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 import detectIt from 'detect-it';
 
-
-
 export default function() {
     const modals = Array.from(document.querySelectorAll('.js-team-modal'));
     let activeModal = null;
@@ -16,7 +14,6 @@ export default function() {
         const next = modal.querySelector('.team__modal-next');
         const prev = modal.querySelector('.team__modal-prev');
 
-
         function loadAndPlayVideo(modal) {
             const video = modal.querySelector('video');
             if (!video) return;
@@ -24,7 +21,6 @@ export default function() {
             video.currentTime = 0;
             video.play();
         }
-
 
         function pauseVideo(modal) {
             const video = modal.querySelector('video');

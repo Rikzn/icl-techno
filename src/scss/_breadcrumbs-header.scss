@@ -2,10 +2,8 @@
     position: relative;
     color: white;
     margin: 100px 0;
-
     &--black {
         color: black;
-        
     }
     
     @include breakpoint(tablet) {
@@ -14,6 +12,8 @@
     @include breakpoint(small-tablet) {
         margin: 50px 0;
     }
+
+    
 }
 
 
@@ -93,14 +93,12 @@
         color: white;
     }
 
-
     .breadcrumbs-header--black & {
         &:link,
         &:visited {
             color: black;
         }
     }
-
 
     .no-touch &:hover,
     .touch &:active {
