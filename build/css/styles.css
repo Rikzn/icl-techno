@@ -3269,14 +3269,14 @@ a.section-header:link, a.section-header:visited {
 .footer-content__bottom-row {
   display: flex;
   align-items: center;
-  margin-top: 95px;
+  margin-top: 40px;
   flex-wrap: wrap; }
   @media only screen and (max-width: 1080px) {
     .footer-content__bottom-row {
-      margin-top: 40px; } }
+      margin-top: 30px; } }
   @media only screen and (max-width: 768px) {
     .footer-content__bottom-row {
-      margin-top: 30px; } }
+      margin-top: 20px; } }
 
 .footer-content__copyright {
   color: white;
