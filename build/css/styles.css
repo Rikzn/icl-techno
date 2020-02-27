@@ -7925,6 +7925,8 @@ a.section-header:link, a.section-header:visited {
   position: relative;
   color: white;
   margin: 100px 0; }
+  .breadcrumbs-header--black {
+    color: black; }
   @media only screen and (max-width: 1080px) {
     .breadcrumbs-header {
       margin: 80px 0; } }
@@ -7987,7 +7989,7 @@ a.section-header:link, a.section-header:visited {
     content: '/';
     font-size: 17px;
     line-height: 23px;
-    color: white; }
+    color: currentColor; }
 
 .breadcrumbs-header__breadcrumbs-link {
   font-size: 17px;
@@ -7996,6 +7998,8 @@ a.section-header:link, a.section-header:visited {
   display: block; }
   .breadcrumbs-header__breadcrumbs-link:link, .breadcrumbs-header__breadcrumbs-link:visited {
     color: white; }
+  .breadcrumbs-header--black .breadcrumbs-header__breadcrumbs-link:link, .breadcrumbs-header--black .breadcrumbs-header__breadcrumbs-link:visited {
+    color: black; }
   .no-touch .breadcrumbs-header__breadcrumbs-link:hover,
   .touch .breadcrumbs-header__breadcrumbs-link:active {
     text-decoration: underline; }
