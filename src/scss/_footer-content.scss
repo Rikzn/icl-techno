@@ -17,15 +17,30 @@
     }
 }
 
-.footer-content__top-row {
+
+.footer-content__row {
     display: flex;
     flex-wrap: wrap;
     margin: -25px;
     @include breakpoint(laptop) {
         margin: -15px;
     }
+}
+
+.footer-content__column {
+    width: 33.33%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(small-tablet) {
+        width: 50%;
+        padding: 15px;
+    }
+
+
     @include breakpoint(small-mobile) {
-        margin: -10px;
+        width: 100%;
     }
 }
 
@@ -33,86 +48,6 @@
     @include breakpoint(tablet) {
         width: 64px;
     }
-}
-
-.footer-content__top-row-column {
-    padding: 25px;
-    width: 33.33%;
-
-    @include breakpoint(laptop) {
-        padding: 15px;
-    }
-    @include breakpoint(tablet) {
-        width: 50%;
-    }
-    @include breakpoint(small-mobile) {
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-
-        &:nth-child(odd) {
-            width: 40%;
-        }
-        &:nth-child(even) {
-            width: 60%;
-        }
-    }
-
-    &--factory-info {
-        @include breakpoint(small-tablet) {
-            width: 100% !important;
-        }
-    }
-}
-
-.footer-content__phone-link {
-    display: block;
-    color: white;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.2;
-    margin-bottom: 15px;
-    white-space: nowrap;
-    @include breakpoint(tablet) {
-        font-size: 20px;
-    }
-    @include breakpoint(small-mobile) {
-        align-self: center;
-    }
-    &:link,
-    &:visited {
-        color: white;
-    }
-
-    .no-touch &:hover,
-    .no-touch &:active {
-        text-decoration: underline;
-    }
-}
-
-.footer-content__write-us {
-    margin-top: 20px;
-    @include breakpoint(tablet) {
-        margin-top: 10px;
-    }
-
-    @include breakpoint(small-mobile) {
-        align-self: center;
-    }
-}
-
-.footer-content__factory-name {
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 700;
-    font-family: $roboto;
-}
-
-.footer-content__factory-location {
-    font-size: 16px;
-    line-height: 24px;
-    font-family: $roboto;
-    margin-top: 7px;
 }
 
 .footer-content__icl-websites {
@@ -172,15 +107,37 @@
     }
 }
 
-.footer-content__bottom-row {
-    display: flex;
-    align-items: center;
-    margin-top: 40px;
-    flex-wrap: wrap;
-    @include breakpoint(tablet) {
-        margin-top: 30px;
+
+.footer-content__factory-name {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-family: $roboto;
+    margin-bottom: 7px;
+    @include breakpoint(small-mobile) {
+        font-size: 14px;
+        font-weight: 400;
     }
-    @include breakpoint(mobile) {
+}
+
+.footer-content__factory-location {
+    font-size: 16px;
+    line-height: 1.2;
+    font-family: $roboto;
+    margin-bottom: 7px;
+    @include breakpoint(small-mobile) {
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+
+.footer__privacy-policy {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-top: 45px;
+    @include breakpoint(small-mobile) {
         margin-top: 20px;
     }
 }
@@ -188,21 +145,19 @@
 .footer-content__copyright {
     color: white;
     font-size: 14px;
-    line-height: 22px;
+    line-height: 1.2;
     margin-right: 30px;
-    @include breakpoint(small-mobile) {
-        margin-right: 0;
-        display: block;
-        margin-bottom: 20px;
-    }
+    white-space: nowrap;
+    
 }
 
 .footer-content__user-policy {
     color: $red;
-    font-size: 16px;
-    line-height: 22px;
-    margin-right: 30px;
+    font-size: 14px;
+    line-height: 1.2;
+    
     transition: color 0.2s;
+    white-space: nowrap;
     @include breakpoint(small-mobile) {
         font-size: 14px;
         line-height: 23px;
@@ -218,40 +173,49 @@
     }
 }
 
-.footer-content__vacancy {
-    color: $red;
-    font-size: 16px;
-    line-height: 22px;
-    transition: color 0.2s;
-    @include breakpoint(small-mobile) {
-        font-size: 14px;
-        line-height: 23px;
-    }
+
+
+.footer-content__phone-link {
+    display: block;
+    color: white;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    white-space: nowrap;
+   
+    
     &:link,
     &:visited {
-        color: $red;
+        color: white;
     }
 
     .no-touch &:hover,
-    .touch &:active {
+    .no-touch &:active {
         text-decoration: underline;
     }
 }
+
+.footer-content__write-us {
+    margin-top: 25px;
+    align-self: flex-start;
+    @include breakpoint(tablet) {
+        margin-top: 15px;
+    }
+
+    
+}
+
+
+
+
+
 
 .footer-content__social {
     display: flex;
     align-items: center;
-    margin: 0 auto;
-    margin-top: 3px;
-    @include breakpoint(desktop) {
-        margin-right: 0;
-    }
-    @include breakpoint(small-tablet) {
-        margin-bottom: 20px;
-        margin-top: 0;
-        order: -1;
-        width: 100%;
-    }
+
+    
 }
 
 .footer-content__social-item {
@@ -277,34 +241,28 @@
 
 .footer-content__made-by {
     color: white;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 1.2;
+    margin-top: auto;
     @include breakpoint(desktop) {
-        width: 100%;
-        margin-top: 20px;
-        text-align: right;
+        
     }
     @include breakpoint(tablet) {
         text-align: left;
     }
-    @include breakpoint(small-mobile) {
-        font-size: 14px;
-    }
-    img {
-        display: inline-block;
-        vertical-align: baseline;
-        position: relative;
 
-        bottom: -10px;
-        @include breakpoint(small-mobile) {
-            width: 80px;
-            bottom: -8px;
-        }
+    @include breakpoint(small-tablet) {
+        margin-top: 25px;
     }
+
+    @include breakpoint(small-mobile) {
+       
+    }
+    
 
     a {
         display: inline-block;
-        text-transform: uppercase;
+        
         &:link,
         &:visited {
             color: $red;
