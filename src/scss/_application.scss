@@ -2,13 +2,7 @@
 
 
 .application {
-    margin-bottom: 100px;
-    @include breakpoint(tablet) {
-        margin-bottom: 80px;
-    }
-    @include breakpoint(small-tablet) {
-        margin-bottom: 50px;
-    }
+    @include section();
 }
 
 .application__heading {

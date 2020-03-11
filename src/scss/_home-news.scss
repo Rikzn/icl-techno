@@ -1,13 +1,7 @@
 .home-news {
-    margin: 100px 0;
     display: flex;
     flex-direction: column;
-    @include breakpoint(tablet) {
-        margin: 80px 0;
-    }
-    @include breakpoint(mobile) {
-        margin: 50px 0;
-    }
+    @include section();
 }
 
 .home-news__top-row {

@@ -121,9 +121,20 @@
     }
 }
 
+
+
+@mixin section() {
+    margin: 60px 0;
+    @include breakpoint(tablet) {
+        margin: 50px 0;
+    }
+    @include breakpoint(small-tablet) {
+        margin: 40px 0;
+    }
+}
+
 @mixin defaultContent() {
     font-size: 20px;
-    // font-family: "Proxima Nova",sans-serif;
     @include breakpoint(mobile) {
         font-size: 16px;
     }

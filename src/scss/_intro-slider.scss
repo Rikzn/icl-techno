@@ -540,20 +540,20 @@
     .brick-5 {
         position: absolute;
         opacity: 0.75;
-        width: 500px;
-        height: 120px;
+        width: 280px;
+        height: 90px;
         top: 0;
         margin-bottom: 115px;
-        transform: translateZ(0) skewX(-40deg) scaleY(0);
+        transform: translateZ(0) rotate(-50deg) skewX(-50deg) translateX(100px);
         z-index: 60;
         background-color: #5a5a5a;
         left: 70%;
-        margin-left: 270px;
-        margin-top: 150px;
-        transition: 0.8s transform cubic-bezier(0.215, 0.61, 0.355, 1);
+        margin-left: 284px;
+        margin-top: 40px;
+        transition: 2s transform cubic-bezier(0.215, 0.61, 0.355, 1);
         @include breakpoint(desktop) {
             left: 85%;
-            margin-left: 208px;
+            margin-left: 232px;
         }
         @include breakpoint(laptop) {
             left: 95%;
@@ -585,7 +585,7 @@
         }
 
         .brick-5 {
-            transform: translateZ(0) skewX(-40deg);
+            transform: translateZ(0) rotate(-50deg) skewX(-50deg) translateX(-200px);
         }
     }
 }

@@ -74,11 +74,7 @@ img {
     max-width: 100%;
 }
 
-section {
-    &:first-child {
-        margin-top: 0;
-    }
-}
+
 
 .visually-hidden {
     @include visuallyHidden();

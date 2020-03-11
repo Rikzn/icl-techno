@@ -1,12 +1,5 @@
 .contacts {
-    margin: 100px 0;
-    margin-top: 55px;
-    // @include breakpoint(tablet) {
-    //     margin: 80px 0;
-    // }
-    @include breakpoint(small-tablet) {
-        margin: 50px 0;
-    }
+    @include section();
 }
 
 .contacts__heading {

@@ -1,5 +1,4 @@
-.container,
-.landing-main {
+.container {
     width: 100%;
     max-width: $max-container-width + $desktop-content-padding * 2;
     margin: 0 auto;
@@ -110,12 +109,12 @@
     }
 }
 
-.layout-main-column .container > *,
-.layout-main-column .landing-main > * {
-    &:first-child {
-        margin-top: 0;
-    }
-}
+// .layout-main-column .container > *,
+// .layout-main-column .landing-main > * {
+//     &:first-child {
+//         margin-top: 0;
+//     }
+// }
 
 .layout-sidebar {
     width: 295px;
