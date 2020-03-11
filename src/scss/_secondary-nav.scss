@@ -34,10 +34,8 @@
 }
 
 .secondary-nav__list-item {
-    margin-bottom: 15px;
-    @include breakpoint(mobile) {
-        margin-bottom: 13px;
-    }
+    margin-bottom: 10px;
+  
     &:last-child {
         margin-bottom: 0;
     }
@@ -45,8 +43,8 @@
 
 .secondary-nav__link {
     color: black;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 14px;
+    line-height: 1.2;
     transition: opacity .2s;
     &:link,
     &:visited {
