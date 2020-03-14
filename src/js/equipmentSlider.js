@@ -11,7 +11,7 @@ export default function() {
         const slider = new Swiper(container, {
             slidesPerView: 'auto',
             spaceBetween: 10,
-            centeredSlides: false,
+            centeredSlides: true,
             loop: true,
             breakpoints: {
                 371: {
