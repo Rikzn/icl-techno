@@ -2032,7 +2032,9 @@ a.section-header:link, a.section-header:visited {
   -webkit-tap-highlight-color: transparent; }
   .main-nav__submenu-products-link:link, .main-nav__submenu-products-link:visited {
     color: black; }
-  .navigation-standalone--dark .main-nav__submenu-products-link:link, .navigation-standalone--dark .main-nav__submenu-products-link:visited {
+  .navigation-standalone--dark .main-nav__submenu-products-link:link, .navigation-standalone--dark .main-nav__submenu-products-link:visited,
+  .page-header--dark .main-nav__submenu-products-link:link,
+  .page-header--dark .main-nav__submenu-products-link:visited {
     color: #696969; }
   .main-nav__submenu-products-link::after {
     content: '';
@@ -2064,21 +2066,33 @@ a.section-header:link, a.section-header:visited {
       -webkit-filter: invert(34%) sepia(68%) saturate(7328%) hue-rotate(344deg) brightness(90%) contrast(121%);
               filter: invert(34%) sepia(68%) saturate(7328%) hue-rotate(344deg) brightness(90%) contrast(121%); }
   .navigation-standalone--dark .main-nav__submenu-products-item.active .main-nav__submenu-products-link,
+  .page-header--dark .main-nav__submenu-products-item.active .main-nav__submenu-products-link,
   .no-touch .navigation-standalone--dark .main-nav__submenu-products-link:hover,
-  .touch .navigation-standalone--dark .main-nav__submenu-products-link:active {
+  .no-touch .page-header--dark .main-nav__submenu-products-link:hover,
+  .touch .navigation-standalone--dark .main-nav__submenu-products-link:active,
+  .touch .page-header--dark .main-nav__submenu-products-link:active {
     color: white;
     background-color: rgba(61, 61, 61, 0.1); }
     .navigation-standalone--dark .main-nav__submenu-products-item.active .main-nav__submenu-products-link::after,
+    .page-header--dark .main-nav__submenu-products-item.active .main-nav__submenu-products-link::after,
     .no-touch .navigation-standalone--dark .main-nav__submenu-products-link:hover::after,
-    .touch .navigation-standalone--dark .main-nav__submenu-products-link:active::after {
+    .no-touch .page-header--dark .main-nav__submenu-products-link:hover::after,
+    .touch .navigation-standalone--dark .main-nav__submenu-products-link:active::after,
+    .touch .page-header--dark .main-nav__submenu-products-link:active::after {
       opacity: 1; }
     .navigation-standalone--dark .main-nav__submenu-products-item.active .main-nav__submenu-products-link .main-nav__submenu-icon-container > svg,
+    .page-header--dark .main-nav__submenu-products-item.active .main-nav__submenu-products-link .main-nav__submenu-icon-container > svg,
     .no-touch .navigation-standalone--dark .main-nav__submenu-products-link:hover .main-nav__submenu-icon-container > svg,
-    .touch .navigation-standalone--dark .main-nav__submenu-products-link:active .main-nav__submenu-icon-container > svg {
+    .no-touch .page-header--dark .main-nav__submenu-products-link:hover .main-nav__submenu-icon-container > svg,
+    .touch .navigation-standalone--dark .main-nav__submenu-products-link:active .main-nav__submenu-icon-container > svg,
+    .touch .page-header--dark .main-nav__submenu-products-link:active .main-nav__submenu-icon-container > svg {
       fill: white; }
     .navigation-standalone--dark .main-nav__submenu-products-item.active .main-nav__submenu-products-link .main-nav__submenu-icon-container > img,
+    .page-header--dark .main-nav__submenu-products-item.active .main-nav__submenu-products-link .main-nav__submenu-icon-container > img,
     .no-touch .navigation-standalone--dark .main-nav__submenu-products-link:hover .main-nav__submenu-icon-container > img,
-    .touch .navigation-standalone--dark .main-nav__submenu-products-link:active .main-nav__submenu-icon-container > img {
+    .no-touch .page-header--dark .main-nav__submenu-products-link:hover .main-nav__submenu-icon-container > img,
+    .touch .navigation-standalone--dark .main-nav__submenu-products-link:active .main-nav__submenu-icon-container > img,
+    .touch .page-header--dark .main-nav__submenu-products-link:active .main-nav__submenu-icon-container > img {
       opacity: 1; }
   @media only screen and (max-width: 1080px) {
     .main-nav__submenu-content:not(.main-nav__submenu-content--standalone) .main-nav__submenu-products-link {
@@ -2122,9 +2136,11 @@ a.section-header:link, a.section-header:visited {
     left: 50%;
     top: 50%;
     opacity: .25; }
-  .navigation-standalone--dark .main-nav__submenu-icon-container > svg {
+  .navigation-standalone--dark .main-nav__submenu-icon-container > svg,
+  .page-header--dark .main-nav__submenu-icon-container > svg {
     fill: #6A6A6A; }
-  .navigation-standalone--dark .main-nav__submenu-icon-container > img {
+  .navigation-standalone--dark .main-nav__submenu-icon-container > img,
+  .page-header--dark .main-nav__submenu-icon-container > img {
     opacity: .5;
     -webkit-filter: invert(100%);
             filter: invert(100%); }

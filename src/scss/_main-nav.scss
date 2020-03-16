@@ -473,7 +473,8 @@
         color: black;
     }
 
-    .navigation-standalone--dark & {
+    .navigation-standalone--dark &,
+    .page-header--dark & {
         &:link,
         &:visited {
             color: #696969;
@@ -514,8 +515,11 @@
     }
 
     .navigation-standalone--dark .main-nav__submenu-products-item.active &,
+    .page-header--dark .main-nav__submenu-products-item.active &,
     .no-touch .navigation-standalone--dark &:hover,
-    .touch .navigation-standalone--dark &:active {
+    .no-touch .page-header--dark &:hover,
+    .touch .navigation-standalone--dark &:active,
+    .touch .page-header--dark &:active {
         color: white;
         background-color: rgba(#3d3d3d, 0.1);
 
@@ -593,7 +597,8 @@
         opacity: .25;
     }
 
-    .navigation-standalone--dark & {
+    .navigation-standalone--dark &,
+    .page-header--dark & {
         > svg {
             fill: #6A6A6A;  
         }
