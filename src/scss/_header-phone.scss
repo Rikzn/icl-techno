@@ -1,21 +1,46 @@
 .header-phone {
-    align-self: center;
-    display: block;
-    margin-right: 30px;
-    // @include breakpoint(tablet) {
-    //     display: none;
-    // }
-    > svg {
+    align-self: stretch;
+    position: relative;
+    @include breakpoint(tablet) {
+        display: none;
+    }
+    &:hover {
+        .header-phone__btn {
+            &::before {
+                opacity: 1;
+            }
+        }
+
+        .header-phone__dropdown {
+            opacity: 1;
+            visibility: visible;
+            transition: all .2s;
+        }
+    }
+}
+
+.header-phone__btn {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    padding: 0 10px;
+   
+    &::before {
+        content: '';
+        position: absolute;
+        height: 3px;
+        background-color: $red;
+        left: 0;
+        width: 100%;
+        bottom: 1px;
+        transition: opacity 0.2s;
+        opacity: 0;
+    }
+    & > svg {
         display: block;
         fill: white;
-        transition: fill .2s;
-    }
-
-    .no-touch &:hover,
-    .touch &:active {
-        > svg {
-            fill: $red !important;
-        }
+        transition: fill 0.2s;
+        flex-shrink: 0;
     }
 
     .page-header.fixed &,
@@ -23,8 +48,100 @@
     .page-header--light &,
     .page-header:not(.page-header--dark):not(.page-header--light):hover &,
     .search-open & {
-        > svg {
+        & > svg {
             fill: black;
         }
+    }
+}
+
+
+
+.header-phone__dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 260px;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .2s, visibility 0s linear .2s;
+    z-index: 50;
+    border: 1px solid #D0D0D0;
+}
+
+.header-phone__dropdown-text {
+    color: #B3B3B3;
+    font-size: 16px;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.header-phone__dropdown-phone-link {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 8px;
+    display: block;
+    transition: color .2s;
+    &:link,
+    &:visited {
+        color: black;
+    }
+
+
+    &:hover {
+        color: $red;
+    }
+}
+
+.header-phone__dropdown-contacts-section {
+    padding: 20px 24px;
+    
+
+}
+
+
+
+.header-phone__dropdown-mail-link {
+    font-size: 16px;
+    line-height: 30px;
+    display: block;
+    &:link,
+    &:visited {
+        color: $red;
+    }
+
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+
+
+.header-phone__dropdown-social-section {
+    border-top: 1px solid #D0D0D0;
+    padding: 24px;
+}
+
+
+.header-phone__dropdown-social-list {
+    display: flex;
+    align-items: center;
+}
+
+
+.header-phone__dropdown-social-list-item {
+    margin-right: 35px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+
+.header-phone__dropdown-social-link {
+    display: block;
+    svg {
+        fill: $red;
     }
 }

@@ -1,46 +1,58 @@
 .header-cart {
-    margin-right: 30px;
     align-self: center;
+    .no-touch &:hover,
+    .touch &:active {
+        .header-cart__btn {
+            &::before {
+                opacity: 1;
+            }
+        }
+    }
 }
 
-
 .header-cart__btn {
+    transition: color 0.2s;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    height: 100px;
+    padding: 0 10px;
     position: relative;
-    transition: color .2s;
+    &::before {
+        content: '';
+        position: absolute;
+        height: 3px;
+        background-color: $red;
+        left: 0;
+        width: 100%;
+        bottom: 1px;
+        transition: opacity 0.2s;
+        opacity: 0;
+    }
     @include noHighlight();
     &:link,
     &:visited {
         color: black;
     }
 
-    
-    > svg {
+    svg {
         fill: white;
-        transition: fill .2s;
+        transition: fill 0.2s;
     }
 
     .page-header.fixed &,
     .page-header--white &,
     .page-header--light &,
     .no-touch .page-header:not(.page-header--dark):not(.page-header--light):hover & {
-        > svg {
-            fill:black;
-        }
-    }
-
-
-    .no-touch &:hover,
-    .touch &:active {
-        > svg {
-            fill: $red !important;
+        svg {
+            fill: black;
         }
     }
 }
 
+
+.header-cart__btn-content {
+    position: relative;
+}
 
 .header-cart__btn-amount {
     position: absolute;
@@ -61,11 +73,11 @@
     font-size: 12px;
     opacity: 0;
     visibility: hidden;
-    transition: opacity .2s, visibility 0s linear .2s;
+    transition: opacity 0.2s, visibility 0s linear 0.2s;
 
     &--shown {
         opacity: 1;
         visibility: visible;
-        transition: all .2s;
+        transition: all 0.2s;
     }
 }

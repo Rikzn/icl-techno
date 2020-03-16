@@ -20,8 +20,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: -1 * $page-header-bottom-padding;
-    margin-top: -1 * $page-header-bottom-padding;
     flex-direction: column;
     @include breakpoint(tablet) {
         margin: 0;
@@ -31,7 +29,6 @@
         &:first-child {
             border-top: none;
         }
-        // border-bottom: 1px solid #D0D0D0;
     }
     &:last-child {
         margin-right: 0;
@@ -117,10 +114,10 @@
     }
     &::after {
         content: '';
-        height: 4px;
+        height: 3px;
         left: 0;
         width: 100%;
-        bottom: 0;
+        bottom: 1px;
         position: absolute;
         background-color: $red;
         opacity: 0;
