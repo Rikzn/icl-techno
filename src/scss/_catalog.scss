@@ -347,6 +347,7 @@
 .catalog__filer-selectors-open-btn {
     outline: none;
     color: black;
+    cursor: default;
 }
 
 .catalog__filer-selectors-open-btn:hover ~ .catalog__filter-selectors-group-wrapper {

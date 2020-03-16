@@ -7732,7 +7732,8 @@ a.section-header:link, a.section-header:visited {
 
 .catalog__filer-selectors-open-btn {
   outline: none;
-  color: black; }
+  color: black;
+  cursor: default; }
 
 .catalog__filer-selectors-open-btn:hover ~ .catalog__filter-selectors-group-wrapper {
   opacity: 1;
