@@ -7762,7 +7762,7 @@ a.section-header:link, a.section-header:visited {
 
 .catalog__filter-row {
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
   margin-bottom: 60px; }
   @media only screen and (max-width: 576px) {
     .catalog__filter-row {
@@ -8175,8 +8175,8 @@ a.section-header:link, a.section-header:visited {
   right: 0;
   bottom: 0;
   width: 50%;
-  height: 50%;
   height: auto;
+  max-height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
   -o-object-position: bottom;
@@ -8185,7 +8185,8 @@ a.section-header:link, a.section-header:visited {
 
 .catalog-item-header__row {
   display: flex;
-  padding: 55px 0; }
+  padding: 55px 0;
+  position: relative; }
   @media only screen and (max-width: 768px) {
     .catalog-item-header__row {
       flex-direction: column;

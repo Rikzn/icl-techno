@@ -213,7 +213,7 @@
 
 .catalog__filter-row {
     display: flex;
-    align-items: flex-start;
+    align-items: baseline;
     margin-bottom: 60px;
 
     @include breakpoint(small-mobile) {

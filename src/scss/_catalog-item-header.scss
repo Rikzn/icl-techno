@@ -49,8 +49,8 @@
     right: 0;
     bottom: 0;
     width: 50%;
-    height: 50%;
     height: auto;
+    max-height: 100%;
     @include objectFitContainBottom();
 }
 
@@ -58,6 +58,7 @@
 .catalog-item-header__row {
     display: flex;
     padding: 55px 0;
+    position: relative;
     @include breakpoint(mobile) {
         flex-direction: column;
         padding: 30px 0;
