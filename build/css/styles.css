@@ -3887,6 +3887,33 @@ a.section-header:link, a.section-header:visited {
     .equipment__slider .swiper-slide {
       width: 60%; } }
 
+.equipment__slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  transition: all 0.2s;
+  outline: none; }
+  .equipment__slider-btn.swiper-button-disabled, .equipment__slider-btn.swiper-button-locked {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s, visibility 0s linear 0.2s; }
+  @media only screen and (max-width: 1080px) {
+    .equipment__slider-btn {
+      display: none; } }
+  .equipment__slider-btn--prev {
+    left: 0; }
+  .equipment__slider-btn--next {
+    right: 0; }
+  .equipment__slider-btn svg {
+    width: 45px;
+    height: 45px;
+    display: block;
+    fill: #FB0D1B;
+    transition: fill 0.2s; }
+  .equipment__slider-btn:hover svg {
+    fill: #C40C1F; }
+
 .equipment__slider-card {
   color: black;
   text-align: center;

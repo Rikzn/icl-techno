@@ -1,6 +1,5 @@
 import Swiper from 'swiper';
 
-
 export default function() {
     const equipmentSliders = Array.from(document.querySelectorAll('.js-equipment-slider'));
 
@@ -12,6 +11,11 @@ export default function() {
             slidesPerView: 'auto',
             spaceBetween: 10,
             centeredSlides: true,
+            watchOverflow: true,
+            navigation: {
+                nextEl: item.querySelector('.equipment__slider-btn--next'),
+                prevEl: item.querySelector('.equipment__slider-btn--prev')
+            },
             loop: true,
             breakpoints: {
                 371: {
