@@ -6105,6 +6105,8 @@ a.section-header:link, a.section-header:visited {
   padding-bottom: 56.25%;
   position: relative;
   display: block; }
+  .gallery-slider__main-card-image-container--no-overlay .gallery-slider__main-card-image-size-wrapper::before {
+    display: none; }
   .gallery-slider__main-card-image-container:link, .gallery-slider__main-card-image-container:visited {
     color: white; }
   .no-touch .gallery-slider__main-card-image-container:hover svg,
@@ -6121,7 +6123,7 @@ a.section-header:link, a.section-header:visited {
     fill: white;
     color: #FB0D1B;
     z-index: 10;
-    transition: transform .2s; }
+    transition: transform 0.2s; }
     @media only screen and (max-width: 768px) {
       .gallery-slider__main-card-image-container svg {
         width: 50px;
@@ -6212,11 +6214,11 @@ a.section-header:link, a.section-header:visited {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: opacity .2s, visibility 0s linear .2s; }
+    transition: opacity 0.2s, visibility 0s linear 0.2s; }
   .swiper-slide-thumb-active .gallery-slider__thumbs-card::after {
     opacity: 1;
     visibility: visible;
-    transition: all .2s; }
+    transition: all 0.2s; }
 
 .gallery-slider__thumbs-card-image-container {
   padding-bottom: 100%;
