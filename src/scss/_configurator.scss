@@ -491,8 +491,8 @@
         }
         .change-btn,
         .remove-btn {
-            opacity: 0;
-            visibility: hidden;
+            // opacity: 0;
+            // visibility: hidden;
             transition: opacity 0.2s, visibility 0s linear 0.2s;
             display: flex;
             flex-direction: column;
@@ -516,8 +516,16 @@
             }
         }
         .change-btn {
-            margin-right: 8px;
+            margin-right: 20px;
+            
+            order: -1;
+        }
+
+
+
+        .remove-btn {
             margin-left: 15px;
+            margin-right: 15px;
         }
     }
 
@@ -560,7 +568,7 @@
                 border-color: transparent $red transparent transparent;
                 position: absolute;
                 right: 100%;
-                margin-right: 2px;
+                margin-right: -34px;
                 top: 50%;
                 margin-top: -2px;
                 transform: translateY(-50%);

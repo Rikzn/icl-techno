@@ -21,7 +21,8 @@ export default function() {
             const ps = new PerfectScrollbar(table, {
                 minScrollbarLength: 112,
                 maxScrollbarLength: 112,
-                wheelPropagation: false
+                wheelPropagation: false,
+                suppressScrollX: true
             });
         });
     }
