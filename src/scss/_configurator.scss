@@ -500,6 +500,7 @@
             justify-content: center;
             width: 14px;
             height: 14px;
+            flex-shrink: 0;
             .no-touch &:hover,
             .touch &:active {
                 > svg {
