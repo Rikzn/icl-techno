@@ -1,11 +1,84 @@
 {% set title = "Блоки" %} {% set headerColor = "white" %} {% extends "layout.html" %} {% block content %}
 
+<section class="numbers">
+    <div class="numbers__bg">
+        <img src="img/numbers-bg.jpg" alt="" class="numbers__bg-image" />
+    </div>
+    <div class="numbers__content">
+        <h2 class="numbers__heading">
+            <span class="numbers__heading-text">О группе компаний</span>
+            <img src="img/simple-icl-logo.svg" alt="Логотип ICL" class="numbers__heading-logo" width="82" />
+        </h2>
+        <div class="numbers__row">
+            <div class="numbers__col">
+                <div class="numbers__card">
+                    <div class="numbers__digit">
+                        <span class="numbers__digit-operand">
+                            Топ
+                        </span>
+                        <span class="numbers__digit-digit">
+                            3
+                        </span>
+                    </div>
+                    <div class="numbers__description">
+                        по производству ИТ-оборудования в России (по версии "Эксперт РА")
+                    </div>
+                    <div class="numbers__text">
+                        Создаем высокотехнологичное оборудование и решения с высокой степенью локализации
+                    </div>
+                </div>
+            </div>
+            <div class="numbers__col">
+                <div class="numbers__card">
+                    <div class="numbers__digit">
+                        <span class="numbers__digit-operand">
+                            До 
+                        </span>
+                        <span class="numbers__digit-digit">
+                            300 000
+                        </span>
+                    </div>
+                    <div class="numbers__description">
+                        производственная мощность завода
+                    </div>
+                    <div class="numbers__text">
+                        Под брендом ICL завод выпускает настольные и мобильные системы, серверы, системы хранения данных, интерактивные панели, инфоматы
+                    </div>
+                </div>
+            </div>
+            <div class="numbers__col">
+                <div class="numbers__card">
+                    <div class="numbers__digit">
+                        <span class="numbers__digit-operand">
+                            Более
+                        </span>
+                        <span class="numbers__digit-digit">
+                            28
+                        </span>
+                    </div>
+                    <div class="numbers__description">
+                        лет опыта в ИТ индустрии
+                    </div>
+                    <div class="numbers__text">
+                        многолетний опыт реализаций крупных ИТ проектов позволяет нам находить решения для любых нестандартных задач
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="show-all-btn__link numbers__show-more">
+            Перейти
+            <svg width="16" height="8" aria-hidden="true" class="icon-arrow-right-no-circle">
+                <use xlink:href="#arrow-right-no-circle"></use>
+            </svg>
+        </a>
+    </div>
+</section>
+
 <section class="realised-projects js-realised-projects-filter">
     <div class="realised-projects__top-row">
         <h2 class="section-header">
             Реализованные проекты
         </h2>
-        
     </div>
 
     <div class="realised-projects__filters">
@@ -43,7 +116,7 @@
                 <div class="catalog__filter-selectors-group-wrapper">
                     <div class="catalog__filter-selectors-group-inner-wrapper">
                         <label class="catalog__filter-checkbox">
-                            <input type="checkbox" name="year" value="2020" checked/>
+                            <input type="checkbox" name="year" value="2020" checked />
                             <span class="catalog__filter-checkbox-text">
                                 2020
                             </span>
@@ -52,7 +125,7 @@
                             </svg>
                         </label>
                         <label class="catalog__filter-checkbox">
-                            <input type="checkbox" name="year" value="2019" checked/>
+                            <input type="checkbox" name="year" value="2019" checked />
                             <span class="catalog__filter-checkbox-text">
                                 2019
                             </span>
@@ -61,7 +134,7 @@
                             </svg>
                         </label>
                         <label class="catalog__filter-checkbox">
-                            <input type="checkbox" name="year" value="2018" checked/>
+                            <input type="checkbox" name="year" value="2018" checked />
                             <span class="catalog__filter-checkbox-text">
                                 2018
                             </span>
