@@ -30,6 +30,7 @@ import customSelects from './customSelects';
 import servicesCities from './servicesCities';
 import teamModals from './teamModals';
 import showAll from './showAll';
+import realisedProjectsFilter from './realisedProjectsFilter';
 
 
 window.addEventListener('load', function() {
@@ -201,5 +202,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     showAll();
     
+
+    // Фильтрация реализованных проектов
+
+    realisedProjectsFilter();
 
 });

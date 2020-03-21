@@ -1,15 +1,15 @@
 import Swiper from 'swiper';
 
-
 export default function() {
     const realisedProjectsSlider = document.querySelector('.js-realised-projects-slider');
-    
 
     if (!realisedProjectsSlider) return;
 
+    
+
     const elementsToMove = Array.from(realisedProjectsSlider.querySelectorAll('.realised-projects__list-item--large'));
     let outsideCardsList;
-   
+
     let cardsMoved = false;
 
     function moveLargeCardsOutside() {
@@ -20,9 +20,9 @@ export default function() {
 
         elementsToMove.forEach(element => {
             outsideCardsList.appendChild(element);
-        })
+        });
 
-        realisedProjectsSlider.parentElement.parentElement.insertBefore(outsideCardsList, realisedProjectsSlider.parentElement)
+        realisedProjectsSlider.parentElement.parentElement.insertBefore(outsideCardsList, realisedProjectsSlider.parentElement);
 
         cardsMoved = true;
     }
@@ -30,18 +30,13 @@ export default function() {
     function moveLargeCardsInside() {
         if (!cardsMoved) return;
         elementsToMove.forEach(element => {
-            
             realisedProjectsSlider.firstElementChild.insertBefore(element, realisedProjectsSlider.firstElementChild.firstElementChild);
-        })
+        });
 
-        outsideCardsList.remove()
+        outsideCardsList.remove();
 
         cardsMoved = false;
     }
-
-    
-
-    
 
     let sliderInstance = null;
     const sliderShowBreakpoint = 768;
@@ -103,4 +98,6 @@ export default function() {
             destroySlider();
         }
     }
+
+    
 }

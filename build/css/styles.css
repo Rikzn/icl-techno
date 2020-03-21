@@ -3520,6 +3520,8 @@ a.section-header:link, a.section-header:visited {
   width: 33.33%;
   display: flex;
   flex-direction: column; }
+  .realised-projects__list-item.hidden {
+    display: none; }
   @media only screen and (max-width: 1240px) {
     .realised-projects__list-item {
       width: 50%;
@@ -3750,12 +3752,40 @@ a.section-header:link, a.section-header:visited {
   height: auto;
   width: 56%;
   box-sizing: border-box; }
+  .realised-projects__slider .swiper-slide.hidden {
+    display: none; }
   @media only screen and (max-width: 576px) {
     .realised-projects__slider .swiper-slide {
       width: 97%; } }
 
 .realised-projects__slider .swiper-container {
   overflow: initial; }
+
+.realised-projects__filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 45px; }
+  @media only screen and (max-width: 1240px) {
+    .realised-projects__filters {
+      flex-direction: column;
+      align-items: initial; } }
+  .realised-projects__filters .tabs-block__tabs-navigation {
+    margin-bottom: 0; }
+    @media only screen and (max-width: 1240px) {
+      .realised-projects__filters .tabs-block__tabs-navigation {
+        margin-bottom: 15px; } }
+  .realised-projects__filters .catalog__filter-selectors-group {
+    margin: 0; }
+  @media only screen and (max-width: 768px) {
+    .realised-projects__filters .tabs-block__tabs-navigation-btn-text {
+      font-size: 14px;
+      line-height: 1.33; } }
+
+@media only screen and (max-width: 1240px) {
+  .realised-projects__year {
+    display: flex;
+    justify-content: flex-end; } }
 
 .equipment {
   margin: 60px 0; }

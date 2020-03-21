@@ -1,5 +1,270 @@
 {% set title = "Блоки" %} {% set headerColor = "white" %} {% extends "layout.html" %} {% block content %}
 
+<section class="realised-projects js-realised-projects-filter">
+    <div class="realised-projects__top-row">
+        <h2 class="section-header">
+            Реализованные проекты
+        </h2>
+        
+    </div>
+
+    <div class="realised-projects__filters">
+        <div class="tabs-block__tabs-navigation js-realised-projects-filter-btns">
+            <a href="#" class="tabs-block__tabs-navigation-btn active" data-category="education">
+                <span class="tabs-block__tabs-navigation-btn-text">
+                    Образование
+                </span>
+            </a>
+            <a href="#" class="tabs-block__tabs-navigation-btn" data-category="meds">
+                <span class="tabs-block__tabs-navigation-btn-text">Здравоохранение</span>
+            </a>
+            <a href="#" class="tabs-block__tabs-navigation-btn" data-category="retail">
+                <span class="tabs-block__tabs-navigation-btn-text">Retail</span>
+            </a>
+            <a href="#" class="tabs-block__tabs-navigation-btn" data-category="gov">
+                <span class="tabs-block__tabs-navigation-btn-text">Государственные организации</span>
+            </a>
+            <a href="#" class="tabs-block__tabs-navigation-btn" data-category="companies">
+                <span class="tabs-block__tabs-navigation-btn-text">Коммерческие организации</span>
+            </a>
+        </div>
+
+        <div class="realised-projects__year js-realised-projects-filter-year">
+            <div class="catalog__filter-selectors-group">
+                <span role="button" class="catalog__filer-selectors-open-btn">
+                    <span class="catalog__filer-selectors-open-btn-content">
+                        Выберите год
+
+                        <svg width="10" height="6" aria-hidden="true" class="icon-arrow-down">
+                            <use xlink:href="#arrow-down" />
+                        </svg>
+                    </span>
+                </span>
+                <div class="catalog__filter-selectors-group-wrapper">
+                    <div class="catalog__filter-selectors-group-inner-wrapper">
+                        <label class="catalog__filter-checkbox">
+                            <input type="checkbox" name="year" value="2020" checked/>
+                            <span class="catalog__filter-checkbox-text">
+                                2020
+                            </span>
+                            <svg width="10" height="10" aria-hidden="true" class="icon-checkbox-mark">
+                                <use xlink:href="#checkbox-mark" />
+                            </svg>
+                        </label>
+                        <label class="catalog__filter-checkbox">
+                            <input type="checkbox" name="year" value="2019" checked/>
+                            <span class="catalog__filter-checkbox-text">
+                                2019
+                            </span>
+                            <svg width="10" height="10" aria-hidden="true" class="icon-checkbox-mark">
+                                <use xlink:href="#checkbox-mark" />
+                            </svg>
+                        </label>
+                        <label class="catalog__filter-checkbox">
+                            <input type="checkbox" name="year" value="2018" checked/>
+                            <span class="catalog__filter-checkbox-text">
+                                2018
+                            </span>
+                            <svg width="10" height="10" aria-hidden="true" class="icon-checkbox-mark">
+                                <use xlink:href="#checkbox-mark" />
+                            </svg>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="realised-projects__slider">
+        <div class="realised-projects__slider-container">
+            <ul class="realised-projects__list">
+                <li class="realised-projects__list-item realised-projects__list-item--large realised-projects__list-item--with-image" data-category="education" data-year="2020">
+                    <a href="#text-modal" class="realised-projects__card js-modal-open">
+                        <span class="realised-projects__card-top-row">
+                            <span class="realised-projects__card-label-group">
+                                <span class="realised-projects__card-label">
+                                    Образование
+                                </span>
+                                <span class="realised-projects__card-date">
+                                    22.05.2020
+                                </span>
+                            </span>
+
+                            <img src="img/aeroflot-logo.svg" alt="Логотип аэрофлота" class="realised-projects__company-logo" />
+                        </span>
+                        <span class="realised-projects__content">
+                            <span class="realised-projects__title">
+                                Международный аэропорт Сочи
+                            </span>
+                            <span class="realised-projects__paragraph">
+                                Предоставляем комплексные решения в области информационных технологий и услуги по консалтингу, проектированию, Предоставляем комплексные решения в области информационных технологий и услуги по консалтингу,
+                                проектированию,
+                            </span>
+                        </span>
+                        <span class="realised-projects__corner">
+                            <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                <use xlink:href="#arrow-right-no-circle" />
+                            </svg>
+                        </span>
+                        <span class="realised-projects__bg-image-container">
+                            <img src="img/airport.jpg" alt="Фото аэропорта" class="realised-projects__bg-image" />
+                        </span>
+                    </a>
+                </li>
+                <li class="realised-projects__list-item" data-category="gov" data-year="2019">
+                    <a href="#text-modal" class="realised-projects__card js-modal-open">
+                        <span class="realised-projects__card-top-row">
+                            <span class="realised-projects__card-label-group">
+                                <span class="realised-projects__card-label">
+                                    госсектор
+                                </span>
+                                <span class="realised-projects__card-date">
+                                    22.05.2019
+                                </span>
+                            </span>
+
+                            <img src="img/rostelecom-logo.svg" alt="Логотип аэрофлота" class="realised-projects__company-logo" />
+                        </span>
+                        <span class="realised-projects__content">
+                            <span class="realised-projects__title">
+                                Мобильный оператор Ростелеком
+                            </span>
+                            <span class="realised-projects__paragraph">
+                                Предоставляем комплексные решения в области информационных технологий и услуги по консалтингу, проектированию,
+                            </span>
+                        </span>
+                        <span class="realised-projects__corner">
+                            <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                <use xlink:href="#arrow-right-no-circle" />
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+                <li class="realised-projects__list-item" data-category="gov" data-year="2020">
+                    <a href="#text-modal" class="realised-projects__card js-modal-open">
+                        <span class="realised-projects__card-top-row">
+                            <span class="realised-projects__card-label-group">
+                                <span class="realised-projects__card-label">
+                                    госсектор
+                                </span>
+                                <span class="realised-projects__card-date">
+                                    22.05.2020
+                                </span>
+                            </span>
+
+                            <img src="img/rostelecom-logo.svg" alt="Логотип аэрофлота" class="realised-projects__company-logo" />
+                        </span>
+                        <span class="realised-projects__content">
+                            <span class="realised-projects__title">
+                                Мобильный оператор Ростелеком
+                            </span>
+                            <span class="realised-projects__paragraph">
+                                Предоставляем комплексные решения в области информационных технологий и услуги по консалтингу, проектированию,
+                            </span>
+                        </span>
+                        <span class="realised-projects__corner">
+                            <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                <use xlink:href="#arrow-right-no-circle" />
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+                <li class="realised-projects__list-item" data-category="meds" data-year="2018">
+                    <a href="#text-modal" class="realised-projects__card js-modal-open">
+                        <span class="realised-projects__card-top-row">
+                            <span class="realised-projects__card-label-group">
+                                <span class="realised-projects__card-label">
+                                    Медицина
+                                </span>
+                                <span class="realised-projects__card-date">
+                                    22.05.2018
+                                </span>
+                            </span>
+
+                            <img src="img/akbars-bank-logo.svg" alt="Логотип аэрофлота" class="realised-projects__company-logo" />
+                        </span>
+                        <span class="realised-projects__content">
+                            <span class="realised-projects__title">
+                                Центральный банк Российской Федерации
+                            </span>
+                            <span class="realised-projects__paragraph">
+                                Предоставляем комплексные решения в области информационных технологий и услуги по консалтингу, проектированию,
+                            </span>
+                        </span>
+                        <span class="realised-projects__corner">
+                            <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                <use xlink:href="#arrow-right-no-circle" />
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+                <li class="realised-projects__list-item realised-projects__list-item--with-image" data-category="retail" data-year="2020">
+                    <a href="#text-modal" class="realised-projects__card js-modal-open">
+                        <span class="realised-projects__card-top-row">
+                            <span class="realised-projects__card-label-group">
+                                <span class="realised-projects__card-label">
+                                    ритейл
+                                </span>
+                                <span class="realised-projects__card-date">
+                                    22.05.2020
+                                </span>
+                            </span>
+
+                            <img src="img/gazprom-logo.svg" alt="Логотип аэрофлота" class="realised-projects__company-logo" />
+                        </span>
+                        <span class="realised-projects__content">
+                            <span class="realised-projects__title">
+                                Центральный банк Российской Федерации
+                            </span>
+                            <span class="realised-projects__paragraph">
+                                Предоставляем комплексные решения в области информационных технологий и услуги по консалтингу, проектированию,
+                            </span>
+                        </span>
+                        <span class="realised-projects__corner">
+                            <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                <use xlink:href="#arrow-right-no-circle" />
+                            </svg>
+                        </span>
+                        <span class="realised-projects__bg-image-container">
+                            <img src="img/airport.jpg" alt="Фото аэропорта" class="realised-projects__bg-image" />
+                        </span>
+                    </a>
+                </li>
+
+                <li class="realised-projects__list-item" data-category="education" data-year="2020">
+                    <a href="#text-modal" class="realised-projects__card js-modal-open">
+                        <span class="realised-projects__card-top-row">
+                            <span class="realised-projects__card-label-group">
+                                <span class="realised-projects__card-label">
+                                    Образование
+                                </span>
+                                <span class="realised-projects__card-date">
+                                    22.05.2020
+                                </span>
+                            </span>
+
+                            <img src="img/akbars-bank-logo.svg" alt="Логотип аэрофлота" class="realised-projects__company-logo" />
+                        </span>
+                        <span class="realised-projects__content">
+                            <span class="realised-projects__title">
+                                Центральный банк Российской Федерации
+                            </span>
+                            <span class="realised-projects__paragraph">
+                                Предоставляем комплексные решения в области информационных технологий и услуги по консалтингу, проектированию,
+                            </span>
+                        </span>
+                        <span class="realised-projects__corner">
+                            <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                <use xlink:href="#arrow-right-no-circle" />
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
 <section class="tabs-block">
     <div class="tabs-block__tabs js-tabs">
         <div class="tabs-block__tabs-navigation js-tabs-navigation">
@@ -621,8 +886,6 @@
                     </tr>
                 </tbody>
             </table> -->
-            
-            
         </div>
     </div>
 </section>
