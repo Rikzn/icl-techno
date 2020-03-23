@@ -9110,8 +9110,8 @@ a.section-header:link, a.section-header:visited {
       color: #505050; }
     .catalog-item-header__main-specs table td {
       font-weight: 700;
-      font-size: 24px;
-      line-height: 28px;
+      font-size: 18px;
+      line-height: 1.2;
       white-space: nowrap;
       padding-left: 25px; }
       @media only screen and (max-width: 768px) {
