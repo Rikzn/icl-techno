@@ -1764,6 +1764,9 @@ a {
 img {
   max-width: 100%; }
 
+section:first-child {
+  margin-top: 0; }
+
 .visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -5699,6 +5702,12 @@ a.section-header:link, a.section-header:visited {
 .our-clients__row {
   display: flex;
   align-items: center; }
+  .our-clients--reversed .our-clients__row {
+    flex-direction: row-reverse; }
+    @media only screen and (max-width: 1080px) {
+      .our-clients--reversed .our-clients__row {
+        flex-direction: column;
+        align-items: stretch; } }
   @media only screen and (max-width: 1080px) {
     .our-clients__row {
       flex-direction: column;
@@ -5715,6 +5724,15 @@ a.section-header:link, a.section-header:visited {
   width: 49.33%;
   flex-shrink: 0;
   margin-left: 85px; }
+  .our-clients--reversed .our-clients__slider-column {
+    margin-left: 0;
+    margin-right: 85px; }
+    @media only screen and (max-width: 1240px) {
+      .our-clients--reversed .our-clients__slider-column {
+        margin-right: 50px; } }
+    @media only screen and (max-width: 1080px) {
+      .our-clients--reversed .our-clients__slider-column {
+        margin-right: 0; } }
   @media only screen and (max-width: 1240px) {
     .our-clients__slider-column {
       margin-left: 50px; } }
@@ -5775,7 +5793,7 @@ a.section-header:link, a.section-header:visited {
   outline: none; }
   .our-clients__slider-arrow svg {
     fill: white;
-    transition: fill .2s; }
+    transition: fill 0.2s; }
     @media only screen and (max-width: 576px) {
       .our-clients__slider-arrow svg {
         width: 40px;
@@ -6451,7 +6469,9 @@ a.section-header:link, a.section-header:visited {
 
 .other-news__list-item {
   width: 50%;
-  padding: 12px; }
+  padding: 12px;
+  display: flex;
+  flex-direction: column; }
   @media only screen and (max-width: 768px) {
     .other-news__list-item {
       width: 100%;
@@ -6464,7 +6484,8 @@ a.section-header:link, a.section-header:visited {
   border-top: 1px solid #d0d0d0;
   border-right: 1px solid #d0d0d0;
   border-bottom: 1px solid #d0d0d0;
-  padding: 35px; }
+  padding: 35px;
+  flex-grow: 1; }
   @media only screen and (max-width: 768px) {
     .other-news__card {
       padding: 30px 20px; } }
@@ -6479,7 +6500,8 @@ a.section-header:link, a.section-header:visited {
 
 .other-news__card-row {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  margin-top: auto; }
 
 .other-news__card-date {
   color: #bababa;

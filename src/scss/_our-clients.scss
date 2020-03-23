@@ -2,15 +2,20 @@
     @include section();
 }
 
-
 .our-clients__block-heading {
     margin-bottom: 20px;
 }
 
-
 .our-clients__row {
     display: flex;
     align-items: center;
+    .our-clients--reversed & {
+        flex-direction: row-reverse;
+        @include breakpoint(tablet) {
+            flex-direction: column;
+            align-items: stretch;
+        }
+    }
     @include breakpoint(tablet) {
         flex-direction: column;
         align-items: stretch;
@@ -25,11 +30,23 @@
     }
 }
 
-
 .our-clients__slider-column {
     width: 49.33%;
     flex-shrink: 0;
     margin-left: 85px;
+
+    .our-clients--reversed & {
+        margin-left: 0;
+        margin-right: 85px;
+
+        @include breakpoint(laptop) {
+            margin-right: 50px;
+        }
+
+        @include breakpoint(tablet) {
+            margin-right: 0;
+        }
+    }
     @include breakpoint(laptop) {
         margin-left: 50px;
     }
@@ -46,7 +63,6 @@
     }
 }
 
-
 .our-clients__slider {
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 50px), calc(100% - 50px) 100%, 0 100%);
     position: relative;
@@ -59,14 +75,11 @@
     }
 }
 
-
 .our-clients__slider-image-container {
     padding-bottom: 64%;
     background-color: black;
     position: relative;
-
 }
-
 
 .our-clients__slider-image {
     position: absolute;
@@ -76,7 +89,6 @@
     height: 100%;
     @include objectFitCover();
 }
-
 
 .our-clients__slider-arrows {
     display: flex;
@@ -91,14 +103,13 @@
     }
 }
 
-
 .our-clients__slider-arrow {
     margin-right: 15px;
     -webkit-tap-highlight-color: transparent;
     outline: none;
     svg {
         fill: white;
-        transition: fill .2s;
+        transition: fill 0.2s;
         @include breakpoint(small-mobile) {
             width: 40px;
             height: 40px;
