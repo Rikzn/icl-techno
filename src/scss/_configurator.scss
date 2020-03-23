@@ -1,5 +1,6 @@
 .configurator {
     @include section();
+    padding-top: 2rem;
 }
 
 .configurator__main-heading {
@@ -16,7 +17,7 @@
 
 .configurator__secondary-heading {
     font-size: 24px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     @include breakpoint(mobile) {
         font-size: 18px;
         margin-bottom: 10px;
@@ -208,7 +209,6 @@
     @include breakpoint(laptop) {
         font-size: 14px;
     }
-   
 }
 
 .configurator__equipment-item-card-price {
@@ -216,7 +216,6 @@
     display: flex;
     flex-direction: column;
     text-align: right;
-   
 }
 
 .configurator__equipment-item-card-price-usd {
@@ -225,7 +224,6 @@
     @include breakpoint(laptop) {
         font-size: 14px;
     }
-    
 }
 
 .configurator__equipment-item-card-price-rub {
@@ -250,11 +248,14 @@
 .configurator__equipment-simple-list-card {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    // justify-content: space-between;
     padding: 15px 20px;
     transition: color 0.2s;
     @include breakpoint(mobile) {
         padding: 12px 20px;
+    }
+    @include breakpoint(supersmall-mobile) {
+        padding: 8px 10px;
     }
     &:link,
     &:visited {
@@ -269,15 +270,15 @@
 
 .configurator__equipment-simple-list-card-name {
     font-size: 16px;
+    padding-right: 14px;
     @include breakpoint(laptop) {
         font-size: 14px;
     }
- 
 }
 
 .configurator__equipment-simple-list-card-price {
     display: block;
-    
+    margin-left: auto;
 }
 
 .configurator__equipment-simple-list-card-price-usd {
@@ -287,15 +288,12 @@
     @include breakpoint(laptop) {
         font-size: 14px;
     }
-  
 }
 
 .configurator__equipment-simple-list-card-price-rub {
     font-size: 10px;
     color: #939393;
     margin-top: 5px;
-   
-   
 }
 
 .configurator__equipment-simple-list-card-price-usd,
@@ -416,7 +414,7 @@
     height: 260px;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-    
+
     padding-right: 10px;
     padding-left: 20px;
     margin-left: -20px;
@@ -431,7 +429,7 @@
 
     .ps__rail-y {
         width: 4px !important;
-        background-color: #F3F3F3 !important;
+        background-color: #f3f3f3 !important;
         opacity: 1 !important;
     }
 
@@ -439,10 +437,6 @@
         width: 4px;
         right: 0;
     }
-
-   
-
-    
 
     .ps__thumb-x,
     .ps__thumb-y {
@@ -517,11 +511,9 @@
         }
         .change-btn {
             margin-right: 20px;
-            
+
             order: -1;
         }
-
-
 
         .remove-btn {
             margin-left: 15px;
@@ -570,7 +562,7 @@
                 right: 100%;
                 margin-right: -34px;
                 top: 50%;
-                margin-top: -2px;
+                // margin-top: -2px;
                 transform: translateY(-50%);
                 @include breakpoint(mobile) {
                     transform: translateY(-50%) scaleX(-1);
@@ -639,7 +631,6 @@
         display: block;
     }
 
-
     td {
         display: flex;
         align-items: baseline;
@@ -666,9 +657,6 @@
         padding: 2px 5px;
     }
 
-
-
-   
     input {
         font: inherit;
         background-color: transparent;
@@ -677,7 +665,7 @@
         width: auto;
         border: 1px solid transparent;
         padding: 2px 4px;
-        transition: border-color .2s;
+        transition: border-color 0.2s;
         outline: none;
         width: 28px;
         &.currency {
@@ -726,7 +714,6 @@
     margin-right: 25px;
     transition: color 0.2s;
     @include breakpoint(mobile) {
-        
         margin: 0;
         margin-bottom: 20px;
         padding-right: 20px;
@@ -747,10 +734,9 @@
     }
 }
 
-
 .configurator__bottom-panel-btn--has-dropdown {
     position: relative;
-    transition: background-color .2s;
+    transition: background-color 0.2s;
     padding: 10px 12px;
     cursor: default;
 
@@ -760,17 +746,16 @@
         width: 8px;
         height: 4px;
     }
-    
+
     &:hover {
-        background-color: #FFF3F4;
+        background-color: #fff3f4;
         .configurator__bottom-panel-btn-dropdown {
             opacity: 1;
             visibility: visible;
-            transition: all .3s;
+            transition: all 0.3s;
         }
     }
 }
-
 
 .configurator__bottom-panel-btn-dropdown {
     position: absolute;
@@ -779,7 +764,7 @@
     padding-top: 5px;
     opacity: 0;
     visibility: hidden;
-    transition: opacity .3s, visibility 0s linear .3s;
+    transition: opacity 0.3s, visibility 0s linear 0.3s;
     z-index: 500;
     @include breakpoint(mobile) {
         left: auto;
@@ -787,14 +772,13 @@
     }
 }
 
-
 .configurator__bottom-panel-btn-dropdown-item {
     display: flex;
     align-items: center;
     font-size: 16px;
     line-height: 20px;
     justify-content: space-between;
-    transition: all .2s;
+    transition: all 0.2s;
     padding: 12px 0;
     @include breakpoint(mobile) {
         font-size: 14px;
@@ -811,9 +795,8 @@
     & > svg {
         margin-left: 15px;
         flex-shrink: 0;
-        transition: fill .2s;
+        transition: fill 0.2s;
     }
-
 
     .no-touch &:hover,
     .touch &:active {
@@ -846,7 +829,6 @@
         margin: 0;
         margin-top: 20px;
     }
-    
 }
 
 .configurator__bottom-panel-go-to-cart {
@@ -956,13 +938,13 @@
     z-index: 1000;
     padding: 32px;
     padding-top: 28px;
-    transition: opacity .2s, visibility 0s linear .2s;
+    transition: opacity 0.2s, visibility 0s linear 0.2s;
     opacity: 0;
     visibility: hidden;
     &--shown {
         opacity: 1;
         visibility: visible;
-        transition: all .2s;
+        transition: all 0.2s;
     }
     @include breakpoint(tablet) {
         display: none;
@@ -1140,10 +1122,8 @@
     z-index: 10;
 }
 
-
-
 .configurator__success {
-    border: 1px solid #ADADAD;
+    border: 1px solid #adadad;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1155,7 +1135,6 @@
         padding: 20px;
     }
 }
-
 
 .configurator__success-content {
     display: flex;
@@ -1170,7 +1149,7 @@
         font-size: 18px;
     }
     svg {
-        fill: #00A44B;
+        fill: #00a44b;
         flex-shrink: 0;
         margin-right: 60px;
         @include breakpoint(laptop) {
@@ -1184,5 +1163,65 @@
             height: 50px;
             margin-right: 20px;
         }
+    }
+}
+
+.configurator__equipment-simple-list-card-checkbox-input {
+    @include visuallyHidden();
+}
+
+.configurator__equipment-simple-list-card-checkbox-mark {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+    margin-right: 18px;
+    border: 1px solid #d6d6d6;
+    position: relative;
+    @include breakpoint(supersmall-mobile) {
+        width: 18px;
+        height: 18px;
+        margin-right: 15px;
+    }
+
+    .icon-checkbox-mark {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        fill: $red;
+        opacity: 0;
+        transition: opacity 0.2s;
+        @include breakpoint(supersmall-mobile) {
+            font-size: 10px;
+            height: 10px;
+        }
+    }
+}
+
+.configurator__equipment-simple-list-card-checkbox-input:checked ~ .configurator__equipment-simple-list-card-checkbox-mark {
+    .icon-checkbox-mark {
+        opacity: 1;
+    }
+}
+
+.configurator__message {
+    background: #f9f2c4;
+    border-radius: 5px;
+    color: black;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 13px 18px;
+    margin-bottom: 20px;
+    display: inline-flex;
+    @include breakpoint(mobile) {
+        margin-bottom: 10px;
+    }
+
+    @include breakpoint(small-mobile) {
+        font-size: 14px;
+        line-height: 1.3;
+       
     }
 }

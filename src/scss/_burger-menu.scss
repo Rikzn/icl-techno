@@ -136,6 +136,16 @@
         align-items: center;
         justify-content: space-between;
     }
+
+    @include breakpoint(supersmall-mobile) {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: initial;
+        .btn-with-corners {
+            align-self: flex-start;
+            margin-top: 20px;
+        }
+    }
 }
 
 
@@ -161,6 +171,10 @@
     @include breakpoint(tablet) {
         display: flex;
     }
+
+    @include breakpoint(supersmall-mobile) {
+        justify-content: flex-start;
+    }
 }
 
 
@@ -171,9 +185,11 @@
 
 
 .burger-menu__social-link {
+    display: block;
     svg {
         fill: $red;
         transition: fill .2s;
+        display: block;
     }
 
     .no-touch &:hover,

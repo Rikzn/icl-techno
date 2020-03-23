@@ -1,5 +1,6 @@
 import PerfectScrollbar from 'perfect-scrollbar';
-import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
+
+import { lockScroll, unlockScroll } from './scrollBlocker';
 import detectIt from 'detect-it';
 
 export default function() {
@@ -34,7 +35,9 @@ export default function() {
             content.classList.add('shown');
             open.classList.add('active');
             content.style.transitionDuration = '';
-            disableBodyScroll(innerContent);
+          
+
+            lockScroll(innerContent);
             activeModal = modal;
             loadAndPlayVideo(activeModal);
         });
@@ -45,7 +48,8 @@ export default function() {
                 content.classList.remove('shown');
                 open.classList.remove('active');
                 content.style.transitionDuration = '';
-                enableBodyScroll(innerContent);
+               
+                unlockScroll();
                 pauseVideo(activeModal);
                 activeModal = null;
             });
@@ -57,7 +61,8 @@ export default function() {
                 content.classList.remove('shown');
                 open.classList.remove('active');
                 content.style.transitionDuration = '';
-                enableBodyScroll(innerContent);
+               
+                unlockScroll();
                 pauseVideo(activeModal);
                 activeModal = null;
             }
@@ -68,7 +73,8 @@ export default function() {
             content.classList.remove('shown');
             open.classList.remove('active');
             content.style.transitionDuration = '0s';
-            enableBodyScroll(innerContent);
+           
+            unlockScroll();
             activeModal = null;
 
             if (modalIndex + 1 < modals.length) {
@@ -79,7 +85,8 @@ export default function() {
                 content.classList.add('shown');
                 open.classList.add('active');
                 content.style.transitionDuration = '0s';
-                disableBodyScroll(innerContent);
+                
+                lockScroll(innerContent);
                 activeModal = modal;
                 loadAndPlayVideo(activeModal);
             } else {
@@ -90,7 +97,8 @@ export default function() {
                 content.classList.add('shown');
                 open.classList.add('active');
                 content.style.transitionDuration = '0s';
-                disableBodyScroll(innerContent);
+             
+                lockScroll(innerContent);
                 activeModal = modal;
                 loadAndPlayVideo(activeModal);
             }
@@ -101,7 +109,8 @@ export default function() {
             content.classList.remove('shown');
             open.classList.remove('active');
             content.style.transitionDuration = '0s';
-            enableBodyScroll(innerContent);
+           
+            unlockScroll();
             activeModal = null;
 
             if (modalIndex - 1 >= 0) {
@@ -112,7 +121,8 @@ export default function() {
                 content.classList.add('shown');
                 open.classList.add('active');
                 content.style.transitionDuration = '0s';
-                disableBodyScroll(innerContent);
+               
+                lockScroll(innerContent)
                 activeModal = modal;
                 loadAndPlayVideo(activeModal);
             } else {
@@ -123,7 +133,8 @@ export default function() {
                 content.classList.add('shown');
                 open.classList.add('active');
                 content.style.transitionDuration = '0s';
-                disableBodyScroll(innerContent);
+              
+                lockScroll(innerContent);
                 activeModal = modal;
                 loadAndPlayVideo(activeModal);
             }
@@ -148,7 +159,8 @@ export default function() {
             content.classList.remove('shown');
             open.classList.remove('active');
             content.style.transitionDuration = '';
-            enableBodyScroll(innerContent);
+          
+            unlockScroll();
             pauseVideo(activeModal);
             activeModal = null;
         }

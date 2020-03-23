@@ -1,4 +1,4 @@
-import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+import { lockScroll, unlockScroll } from './scrollBlocker';
 
 export default function() {
 
@@ -43,12 +43,14 @@ export default function() {
         if (burgerMenuOpen) {
             burgerMenu.addEventListener('transitionend', transitionEndHandler);
             document.documentElement.classList.remove('burger-menu-shown');
-            enableBodyScroll(burgerMenuScrollContainer);
+          
+            unlockScroll();
             burgerMenuOpen = false; 
         } else {
             document.documentElement.classList.add('burger-menu-shown');
             header.classList.add('fixed');
-            disableBodyScroll(burgerMenuScrollContainer);
+           
+            lockScroll(burgerMenuScrollContainer)
             burgerMenuOpen = true;
         }
     });
@@ -61,7 +63,7 @@ export default function() {
 
     function widthChange(mq) {
         if (!mq.matches) {
-            clearAllBodyScrollLocks();
+            unlockScroll();
         }
     }
 }

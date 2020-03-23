@@ -1,4 +1,5 @@
-import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
+
+import { lockScroll, unlockScroll } from './scrollBlocker';
 
 export default function() {
     const modalLinks = Array.from(document.querySelectorAll('.js-modal-open'));
@@ -6,22 +7,7 @@ export default function() {
     const modals = Array.from(document.querySelectorAll('.js-modal'));
     let activeModal = null;
 
-    // modalLinks.forEach(link => {
-    //     link.addEventListener('click', function(event) {
-    //         event.preventDefault();
-    //         const hash = link.hash;
-    //         if (hash) {
-    //             const modal = document.querySelector(hash);
-    //             if (modal) {
-    //                 modal.classList.add('shown');
-    //                 disableBodyScroll(modal.querySelector('.js-modal-scroll-wrapper'), {
-    //                     reserveScrollBarGap: false
-    //                 });
-    //                 activeModal = modal;
-    //             }
-    //         }
-    //     });
-    // });
+    
 
     document.addEventListener('click', event => {
         if (event.target.matches('.js-modal-open') || event.target.closest('.js-modal-open')) {
@@ -34,9 +20,9 @@ export default function() {
                 const modal = document.querySelector(hash);
                 if (modal) {
                     modal.classList.add('shown');
-                    disableBodyScroll(modal.querySelector('.js-modal-scroll-wrapper'), {
-                        reserveScrollBarGap: false
-                    });
+
+                    lockScroll(modal.querySelector('.js-modal-scroll-wrapper'))
+                    
                     activeModal = modal;
                 }
             }
@@ -50,28 +36,19 @@ export default function() {
             const modal = closeBtn.closest('.js-modal');
             if (modal) {
                 modal.classList.remove('shown');
-                enableBodyScroll(modal.querySelector('.js-modal-scroll-wrapper'));
+                unlockScroll();
                 activeModal = null;
             }
         }
     });
 
-    // modalCloseLinks.forEach(btn => {
-    //     btn.addEventListener('click', function() {
-    //         const modal = this.closest('.js-modal');
-    //         if (modal) {
-    //             modal.classList.remove('shown');
-    //             enableBodyScroll(modal.querySelector('.js-modal-scroll-wrapper'));
-    //             activeModal = null;
-    //         }
-    //     });
-    // });
 
     modals.forEach(modal => {
         modal.addEventListener('click', function(event) {
             if (this === event.target) {
                 modal.classList.remove('shown');
-                enableBodyScroll(modal.querySelector('.js-modal-scroll-wrapper'));
+             
+                unlockScroll();
                 activeModal = null;
             }
         });
@@ -80,7 +57,8 @@ export default function() {
     document.addEventListener('keyup', function(event) {
         if (event.key === 'Escape' && activeModal) {
             activeModal.classList.remove('shown');
-            enableBodyScroll(activeModal.querySelector('.js-modal-scroll-wrapper'));
+           
+            unlockScroll();
             activeModal = null;
         }
     });
