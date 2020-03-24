@@ -161,13 +161,25 @@
     }
 }
 
+
+.equipment__slider-btns {
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    margin-left: auto;
+
+    @include breakpoint(tablet) {
+        display: none;
+    }
+}
+
 .equipment__slider-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    margin-left: 15px;
     z-index: 100;
     transition: all 0.2s;
     outline: none;
+    
+    
     &.swiper-button-disabled,
     &.swiper-button-locked {
         opacity: 0;
@@ -175,9 +187,7 @@
         transition: opacity 0.2s, visibility 0s linear 0.2s;
     }
 
-    @include breakpoint(tablet) {
-        display: none;
-    }
+   
     &--prev {
         left: 0;
     }

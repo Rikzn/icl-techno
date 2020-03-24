@@ -4673,10 +4673,17 @@ a.section-header:link, a.section-header:visited {
     .equipment__slider .swiper-slide {
       width: 60%; } }
 
+.equipment__slider-btns {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  margin-left: auto; }
+  @media only screen and (max-width: 1080px) {
+    .equipment__slider-btns {
+      display: none; } }
+
 .equipment__slider-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  margin-left: 15px;
   z-index: 100;
   transition: all 0.2s;
   outline: none; }
@@ -4684,9 +4691,6 @@ a.section-header:link, a.section-header:visited {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.2s, visibility 0s linear 0.2s; }
-  @media only screen and (max-width: 1080px) {
-    .equipment__slider-btn {
-      display: none; } }
   .equipment__slider-btn--prev {
     left: 0; }
   .equipment__slider-btn--next {
