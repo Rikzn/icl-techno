@@ -503,11 +503,11 @@
     }
 
     .navigation-standalone--dark .main-nav__submenu-products-item.active &,
-    .page-header--dark .main-nav__submenu-products-item.active &,
+    .page-header--dark:not(.fixed) .main-nav__submenu-products-item.active &,
     .no-touch .navigation-standalone--dark &:hover,
-    .no-touch .page-header--dark &:hover,
+    .no-touch .page-header--dark:not(.fixed) &:hover,
     .touch .navigation-standalone--dark &:active,
-    .touch .page-header--dark &:active {
+    .touch .page-header--dark:not(.fixed) &:active {
         color: white;
         background-color: rgba(#3d3d3d, 0.1);
 
@@ -588,7 +588,7 @@
     }
 
     .navigation-standalone--dark &,
-    .page-header--dark & {
+    .page-header--dark:not(.fixed) & {
         > svg {
             fill: #6a6a6a;
         }
@@ -671,11 +671,11 @@
     }
 
     .navigation-standalone--dark .main-nav__submenu-products-item.active &,
-    .page-header--dark .main-nav__submenu-products-item.active &,
+    .page-header--dark:not(.fixed) .main-nav__submenu-products-item.active &,
     .no-touch .navigation-standalone--dark &:hover,
-    .no-touch .page-header--dark &:hover,
+    .no-touch .page-header--dark:not(.fixed) &:hover,
     .touch .navigation-standalone--dark &:active,
-    .touch .page-header--dark &:active {
+    .touch .page-header--dark:not(.fixed) &:active {
         .main-nav__submenu-products-link {
             color: white;
             background-color: rgba(#3d3d3d, 0.1);
@@ -694,7 +694,7 @@
     width: 300px;
 
     .navigation-standalone--dark &,
-    .page-header--dark & {
+    .page-header--dark:not(.fixed) & {
         background-color: rgba(0, 0, 0, 0.8);
     }
 
@@ -742,7 +742,7 @@
     }
 
     .navigation-standalone--dark &,
-    .page-header--dark & {
+    .page-header--dark:not(.fixed) & {
         &:link,
         &:visited {
             color: #666;
@@ -801,7 +801,7 @@
     }
 
     .navigation-standalone--dark &,
-    .page-header--dark & {
+    .page-header--dark:not(.fixed) & {
         & > svg {
             fill: #6a6a6a;
         }
