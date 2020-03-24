@@ -134,9 +134,9 @@
 
 .footer__privacy-policy {
     display: flex;
-    align-items: baseline;
-    flex-wrap: wrap;
+    flex-direction: column;
     margin-top: 45px;
+    
     @include breakpoint(small-mobile) {
         margin-top: 20px;
     }
@@ -148,7 +148,7 @@
     line-height: 1.2;
     margin-right: 30px;
     white-space: nowrap;
-    
+    margin-bottom: 10px;
 }
 
 .footer-content__user-policy {

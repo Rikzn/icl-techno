@@ -4128,8 +4128,7 @@ a.section-header:link, a.section-header:visited {
 
 .footer__privacy-policy {
   display: flex;
-  align-items: baseline;
-  flex-wrap: wrap;
+  flex-direction: column;
   margin-top: 45px; }
   @media only screen and (max-width: 576px) {
     .footer__privacy-policy {
@@ -4140,7 +4139,8 @@ a.section-header:link, a.section-header:visited {
   font-size: 14px;
   line-height: 1.2;
   margin-right: 30px;
-  white-space: nowrap; }
+  white-space: nowrap;
+  margin-bottom: 10px; }
 
 .footer-content__user-policy {
   color: #FB0D1B;
@@ -6602,37 +6602,36 @@ a.section-header:link, a.section-header:visited {
         border-top: none;
         border-left: 1px solid #d0d0d0;
         padding: 30px 20px; } }
-  .text-insertion--type-1 .text-insertion__content-wrapper {
-    margin-bottom: 20px; }
-    .text-insertion--type-1 .text-insertion__content-wrapper > *:first-child {
-      margin-top: 0; }
-    .text-insertion--type-1 .text-insertion__content-wrapper > *:last-child {
-      margin-bottom: 0; }
-    .text-insertion--type-1 .text-insertion__content-wrapper > h1,
-    .text-insertion--type-1 .text-insertion__content-wrapper > h2,
-    .text-insertion--type-1 .text-insertion__content-wrapper > h3,
-    .text-insertion--type-1 .text-insertion__content-wrapper > h4,
-    .text-insertion--type-1 .text-insertion__content-wrapper > h5,
-    .text-insertion--type-1 .text-insertion__content-wrapper > h6 {
-      font-size: 20px;
-      line-height: 1.4;
-      font-weight: 700;
-      margin: 15px 0; }
-    .text-insertion--type-1 .text-insertion__content-wrapper p:not([class]) {
-      font-size: 18px;
-      line-height: 1.4;
-      font-family: "Proxima Nova", sans-serif;
-      margin: 15px 0; }
-      @media only screen and (max-width: 768px) {
-        .text-insertion--type-1 .text-insertion__content-wrapper p:not([class]) {
-          font-size: 16px; } }
+  .text-insertion--type-1 .text-insertion__content-wrapper > *:first-child {
+    margin-top: 0; }
+  .text-insertion--type-1 .text-insertion__content-wrapper > *:last-child {
+    margin-bottom: 0; }
+  .text-insertion--type-1 .text-insertion__content-wrapper > h1,
+  .text-insertion--type-1 .text-insertion__content-wrapper > h2,
+  .text-insertion--type-1 .text-insertion__content-wrapper > h3,
+  .text-insertion--type-1 .text-insertion__content-wrapper > h4,
+  .text-insertion--type-1 .text-insertion__content-wrapper > h5,
+  .text-insertion--type-1 .text-insertion__content-wrapper > h6 {
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 700;
+    margin: 15px 0; }
+  .text-insertion--type-1 .text-insertion__content-wrapper p:not([class]) {
+    font-size: 18px;
+    line-height: 1.4;
+    font-family: "Proxima Nova", sans-serif;
+    margin: 15px 0; }
+    @media only screen and (max-width: 768px) {
+      .text-insertion--type-1 .text-insertion__content-wrapper p:not([class]) {
+        font-size: 16px; } }
   .text-insertion--type-1 .text-insertion__btn {
     color: #FB0D1B;
     margin-top: auto;
     margin-left: auto;
     display: flex;
     align-items: center;
-    font-size: 16px; }
+    font-size: 16px;
+    margin-top: 20px; }
     .text-insertion--type-1 .text-insertion__btn > svg {
       fill: #FB0D1B;
       margin-left: 8px; }
