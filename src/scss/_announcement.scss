@@ -1,6 +1,11 @@
 .announcement {
+    z-index: 1000;
+    padding-bottom: 55px;
+}
+
+.announcement__inner {
     border-left: 4px solid $red;
-    margin-bottom: 55px;
+    background-color: #fff;
     font-size: 18px;
     line-height: 24px;
     display: flex;

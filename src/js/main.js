@@ -33,6 +33,7 @@ import showAll from './showAll';
 import realisedProjectsFilter from './realisedProjectsFilter';
 import videoLazyLoading from './videosLazyLoading';
 import '@fancyapps/fancybox';
+import stickyBanner from './stickyBanner';
 
 
 window.addEventListener('load', function() {
@@ -212,5 +213,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Фильтрация реализованных проектов
 
     realisedProjectsFilter();
+
+
+    // Прилипающий баннер
+
+    stickyBanner();
 
 });

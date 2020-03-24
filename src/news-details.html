@@ -8,7 +8,6 @@
 </div>
 <div class="layout-row">
     <div class="layout-main-column">
-        
         <article class="article">
             <div class="article__header">
                 <h2 class="article__main-heading">
@@ -319,7 +318,6 @@
                     </tbody>
                 </table>
 
-
                 <div class="show-all-btn">
                     <a href="#" class="show-all-btn__link">
                         Все характеристики
@@ -328,7 +326,6 @@
                         </svg>
                     </a>
                 </div>
-                
 
                 <h2>Фотогалерея</h2>
                 <div class="gallery-slider js-gallery-slider">
@@ -438,7 +435,9 @@
                             </tr>
                             <tr>
                                 <th>Категория:</th>
-                                <td><a href="#">Новость</a></td>
+                                <td>
+                                    <a href="#">Новость</a>
+                                </td>
                             </tr>
                             <tr>
                                 <th>Автор:</th>
@@ -527,68 +526,74 @@
         </section>
     </div>
     <div class="layout-sidebar">
-        <a href="#" class="announcement">
-            <div class="announcement__image-container">
-                <img src="img/announcement/announcement-card-image-1.jpg" alt="Картинка карточки анонса" class="announcement__image" />
+        <div class="partner-candidate__announcement js-sticky-panel" data-margin-top="100" data-sticky-for="1240" data-sticky-wrap="true">
+            <div class="partner-candidate__announcement-inner">
+                <h4>
+                    Стать партнером
+                </h4>
+                <p>
+                    Партнером "АйСиЭл Техно" может стать компания, профессионально занимающаяся продажей компьютерной техники
+                </p>
+                <a href="#" class="btn-with-corners">Подать заявку</a>
             </div>
-            <div class="announcement__text-content">
-                <h6 class="announcement__title">
-                    Заголовок 6 к боковому баннеру
-                </h6>
-                <span class="announcement__btn">
-                    Перейти
-                    <svg width="16" height="8" aria-hidden="true" class="icon-arrow-right-no-circle">
-                        <use xlink:href="#arrow-right-no-circle" />
-                    </svg>
-                </span>
-            </div>
-        </a>
-        <a href="#" class="announcement">
-            <div class="announcement__text-content">
-                <h6 class="announcement__title">
-                    Заголовок 6 к боковому баннеру
-                </h6>
-                <ul>
-                    <li>Подпункт один</li>
-                    <li>Подпункт два</li>
-                    <li>Подпункт три</li>
-                </ul>
-                <span class="announcement__btn">
-                    Перейти
-                    <svg width="16" height="8" aria-hidden="true" class="icon-arrow-right-no-circle">
-                        <use xlink:href="#arrow-right-no-circle" />
-                    </svg>
-                </span>
-            </div>
-        </a>
-        <a href="#" class="announcement announcement--configure">
-            <div class="announcement__content">
+        </div>
+        <div class="announcement">
+            <a href="#" class="announcement__inner">
                 <div class="announcement__image-container">
-                    <img src="img/announcement/announcement-configure.png" alt="Картинка карточки анонса" class="announcement__image" />
+                    <img src="img/announcement/announcement-card-image-1.jpg" alt="Картинка карточки анонса" class="announcement__image" />
                 </div>
                 <div class="announcement__text-content">
-                    
                     <h6 class="announcement__title">
-                        Сконфигурируйте собственное оборудование
+                        Заголовок 6 к боковому баннеру
                     </h6>
-                    <p>Воспользуйтесь нашим конфигуратором</p>
                     <span class="announcement__btn">
-                        
-                        <svg width="32" height="32" aria-hidden="true" class="icon-arrow-right">
-                            <use xlink:href="#arrow-right" />
+                        Перейти
+                        <svg width="16" height="8" aria-hidden="true" class="icon-arrow-right-no-circle">
+                            <use xlink:href="#arrow-right-no-circle" />
                         </svg>
                     </span>
                 </div>
-            </div>
-        </a>
-        <div class="partner-candidate__announcement">
-            <h4>
-                Стать партнером
-            </h4>
-            <p>
-                Партнером "АйСиЭл Техно" может стать компания, профессионально занимающаяся продажей компьютерной техники
-            </p>
-            <a href="#" class="btn-with-corners">Подать заявку</a>
+            </a>
+        </div>
+        <div class="announcement">
+            <a href="#" class="announcement__inner">
+                <div class="announcement__text-content">
+                    <h6 class="announcement__title">
+                        Заголовок 6 к боковому баннеру
+                    </h6>
+                    <ul>
+                        <li>Подпункт один</li>
+                        <li>Подпункт два</li>
+                        <li>Подпункт три</li>
+                    </ul>
+                    <span class="announcement__btn">
+                        Перейти
+                        <svg width="16" height="8" aria-hidden="true" class="icon-arrow-right-no-circle">
+                            <use xlink:href="#arrow-right-no-circle" />
+                        </svg>
+                    </span>
+                </div>
+            </a>
+        </div>
+        <div class="announcement announcement--configure">
+            <a href="#" class="announcement__inner">
+                <div class="announcement__content">
+                    <div class="announcement__image-container">
+                        <img src="img/announcement/announcement-configure.png" alt="Картинка карточки анонса" class="announcement__image" />
+                    </div>
+                    <div class="announcement__text-content">
+                        <h6 class="announcement__title">
+                            Сконфигурируйте собственное оборудование
+                        </h6>
+                        <p>Воспользуйтесь нашим конфигуратором</p>
+                        <span class="announcement__btn">
+                            <svg width="32" height="32" aria-hidden="true" class="icon-arrow-right">
+                                <use xlink:href="#arrow-right" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </a>
         </div>
     </div>
 </div>

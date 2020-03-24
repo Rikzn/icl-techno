@@ -6132,40 +6132,44 @@ a.section-header:link, a.section-header:visited {
       margin-top: 20px; } }
 
 .announcement {
+  z-index: 1000;
+  padding-bottom: 55px; }
+
+.announcement__inner {
   border-left: 4px solid #FB0D1B;
-  margin-bottom: 55px;
+  background-color: #fff;
   font-size: 18px;
   line-height: 24px;
   display: flex;
   flex-direction: column; }
-  .announcement:link, .announcement:visited {
+  .announcement__inner:link, .announcement__inner:visited {
     color: black; }
-  .no-touch .announcement:hover .announcement__btn,
-  .touch .announcement:active .announcement__btn {
+  .no-touch .announcement__inner:hover .announcement__btn,
+  .touch .announcement__inner:active .announcement__btn {
     text-decoration: underline; }
-  .announcement h1,
-  .announcement h2,
-  .announcement h3,
-  .announcement h4,
-  .announcement h5,
-  .announcement h6 {
+  .announcement__inner h1,
+  .announcement__inner h2,
+  .announcement__inner h3,
+  .announcement__inner h4,
+  .announcement__inner h5,
+  .announcement__inner h6 {
     font-size: 18px;
     line-height: 24px;
     font-weight: 700; }
-  .announcement p {
+  .announcement__inner p {
     font-family: "Proxima Nova", sans-serif;
     font-size: 13px;
     margin-top: 15px;
     line-height: 1.4; }
-  .announcement ul {
+  .announcement__inner ul {
     margin-top: 25px; }
-    .announcement ul li {
+    .announcement__inner ul li {
       color: #FB0D1B;
       font-size: 18px;
       line-height: 36px;
       padding-left: 26px;
       position: relative; }
-      .announcement ul li::before {
+      .announcement__inner ul li::before {
         content: '';
         width: 10px;
         height: 10px;
@@ -6174,17 +6178,17 @@ a.section-header:link, a.section-header:visited {
         left: 0;
         top: 13px;
         border-radius: 50%; }
-  .announcement--configure h1,
-  .announcement--configure h2,
-  .announcement--configure h3,
-  .announcement--configure h4,
-  .announcement--configure h5,
-  .announcement--configure h6 {
+  .announcement__inner--configure h1,
+  .announcement__inner--configure h2,
+  .announcement__inner--configure h3,
+  .announcement__inner--configure h4,
+  .announcement__inner--configure h5,
+  .announcement__inner--configure h6 {
     font-weight: 500;
     font-size: 20px;
     line-height: 24px; }
-  .no-touch .announcement--configure:hover .announcement__btn > svg,
-  .touch .announcement--configure:active .announcement__btn > svg {
+  .no-touch .announcement__inner--configure:hover .announcement__btn > svg,
+  .touch .announcement__inner--configure:active .announcement__btn > svg {
     fill: #FB0D1B; }
 
 .announcement__content {
@@ -13542,18 +13546,21 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
         margin-bottom: 20px; } }
 
 .partner-candidate__announcement {
+  padding-bottom: 55px;
+  z-index: 1000; }
+
+.partner-candidate__announcement-inner {
   border: 1px solid #D0D0D0;
   border-left: none;
   position: relative;
   padding: 25px;
   padding-left: 28px;
-  margin-bottom: 55px;
-  margin-top: 55px; }
-  .partner-candidate__announcement:first-child {
+  background-color: #fff; }
+  .partner-candidate__announcement-inner:first-child {
     margin-top: 0; }
-  .partner-candidate__announcement:last-child {
+  .partner-candidate__announcement-inner:last-child {
     margin-bottom: 0; }
-  .partner-candidate__announcement::after {
+  .partner-candidate__announcement-inner::after {
     content: '';
     left: 0;
     top: -1px;
@@ -13561,32 +13568,32 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
     width: 4px;
     background-color: #FB0D1B;
     position: absolute; }
-  .partner-candidate__announcement h1,
-  .partner-candidate__announcement h2,
-  .partner-candidate__announcement h3,
-  .partner-candidate__announcement h4,
-  .partner-candidate__announcement h5,
-  .partner-candidate__announcement h6 {
+  .partner-candidate__announcement-inner h1,
+  .partner-candidate__announcement-inner h2,
+  .partner-candidate__announcement-inner h3,
+  .partner-candidate__announcement-inner h4,
+  .partner-candidate__announcement-inner h5,
+  .partner-candidate__announcement-inner h6 {
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
     margin-bottom: 15px; }
-    .partner-candidate__announcement h1:last-child,
-    .partner-candidate__announcement h2:last-child,
-    .partner-candidate__announcement h3:last-child,
-    .partner-candidate__announcement h4:last-child,
-    .partner-candidate__announcement h5:last-child,
-    .partner-candidate__announcement h6:last-child {
+    .partner-candidate__announcement-inner h1:last-child,
+    .partner-candidate__announcement-inner h2:last-child,
+    .partner-candidate__announcement-inner h3:last-child,
+    .partner-candidate__announcement-inner h4:last-child,
+    .partner-candidate__announcement-inner h5:last-child,
+    .partner-candidate__announcement-inner h6:last-child {
       margin-bottom: 0; }
-  .partner-candidate__announcement p {
+  .partner-candidate__announcement-inner p {
     margin-bottom: 25px;
     line-height: 1.5; }
-    .partner-candidate__announcement p:last-child {
+    .partner-candidate__announcement-inner p:last-child {
       margin-bottom: 0; }
-  .partner-candidate__announcement a:not(.btn-with-corners):link, .partner-candidate__announcement a:not(.btn-with-corners):visited {
+  .partner-candidate__announcement-inner a:not(.btn-with-corners):link, .partner-candidate__announcement-inner a:not(.btn-with-corners):visited {
     color: #FB0D1B; }
-  .no-touch .partner-candidate__announcement a:not(.btn-with-corners):hover,
-  .touch .partner-candidate__announcement a:not(.btn-with-corners):active {
+  .no-touch .partner-candidate__announcement-inner a:not(.btn-with-corners):hover,
+  .touch .partner-candidate__announcement-inner a:not(.btn-with-corners):active {
     text-decoration: underline; }
 
 .search {
