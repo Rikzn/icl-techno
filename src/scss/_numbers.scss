@@ -49,6 +49,7 @@
     margin-bottom: 60px;
     @include breakpoint(mobile) {
         margin-bottom: 40px;
+        font-size: 14px;
     }
 }
 
@@ -57,14 +58,14 @@
     flex-shrink: 0;
     margin-left: 20px;
     @include breakpoint(small-mobile) {
-        width: 70px;
+        width: 60px;
     }
 }
 
 .numbers__row {
     display: flex;
     flex-wrap: wrap;
-    margin: -20px -65px;
+    margin: -20px -45px;
     @include breakpoint(large-desktop) {
         margin: -20px -35px;
     }
@@ -72,7 +73,7 @@
 
 .numbers__col {
     width: 33.33%;
-    padding: 20px 65px;
+    padding: 20px 45px;
     display: flex;
     flex-direction: column;
     @include breakpoint(large-desktop) {
@@ -93,7 +94,7 @@
 }
 
 .numbers__digit {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     @include breakpoint(large-desktop) {
         margin-bottom: 20px;
     }
@@ -103,58 +104,63 @@
 }
 
 .numbers__digit-operand {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 1.2;
     display: block;
     font-weight: 400;
     @include breakpoint(large-desktop) {
-        font-size: 20px;
+        font-size: 18px;
     }
     @include breakpoint(mobile) {
-        font-size: 18px;
+        font-size: 16px;
         margin-bottom: 3px;
     }
 }
 
 .numbers__digit-digit {
-    font-size: 100px;
+    font-size: 70px;
     line-height: 1;
     margin-bottom: 20px;
 
     @include breakpoint(large-desktop) {
-        font-size: 80px;
+        font-size: 50px;
     }
 
     @include breakpoint(mobile) {
-        font-size: 60px;
+        font-size: 50px;
         
     }
 }
 
 .numbers__description {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.4;
     font-weight: 700;
     margin-bottom: 20px;
-    min-height: 66px;
+    min-height: 56px;
     @include breakpoint(large-desktop) {
-        font-size: 20px;
+        font-size: 18px;
         margin-bottom: 20px;
         min-height: 56px;
+    }
+
+
+    @include breakpoint(tablet) {
+        min-height: auto;
     }
 
     @include breakpoint(mobile) {
         min-height: auto;
         font-size: 18px;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
 }
 
 .numbers__text {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.4;
     @include breakpoint(large-desktop) {
-        font-size: 18px;
+        font-size: 16px;
     }
     @include breakpoint(mobile) {
         font-size: 16px;

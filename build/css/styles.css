@@ -13748,7 +13748,8 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
   margin-bottom: 60px; }
   @media only screen and (max-width: 768px) {
     .numbers__heading {
-      margin-bottom: 40px; } }
+      margin-bottom: 40px;
+      font-size: 14px; } }
 
 .numbers__heading-logo {
   width: 82px;
@@ -13756,19 +13757,19 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
   margin-left: 20px; }
   @media only screen and (max-width: 576px) {
     .numbers__heading-logo {
-      width: 70px; } }
+      width: 60px; } }
 
 .numbers__row {
   display: flex;
   flex-wrap: wrap;
-  margin: -20px -65px; }
+  margin: -20px -45px; }
   @media only screen and (max-width: 1600px) {
     .numbers__row {
       margin: -20px -35px; } }
 
 .numbers__col {
   width: 33.33%;
-  padding: 20px 65px;
+  padding: 20px 45px;
   display: flex;
   flex-direction: column; }
   @media only screen and (max-width: 1600px) {
@@ -13785,7 +13786,7 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
   flex-grow: 1; }
 
 .numbers__digit {
-  margin-bottom: 30px; }
+  margin-bottom: 20px; }
   @media only screen and (max-width: 1600px) {
     .numbers__digit {
       margin-bottom: 20px; } }
@@ -13794,52 +13795,55 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
       margin-bottom: 10px; } }
 
 .numbers__digit-operand {
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1.2;
   display: block;
   font-weight: 400; }
   @media only screen and (max-width: 1600px) {
     .numbers__digit-operand {
-      font-size: 20px; } }
+      font-size: 18px; } }
   @media only screen and (max-width: 768px) {
     .numbers__digit-operand {
-      font-size: 18px;
+      font-size: 16px;
       margin-bottom: 3px; } }
 
 .numbers__digit-digit {
-  font-size: 100px;
+  font-size: 70px;
   line-height: 1;
   margin-bottom: 20px; }
   @media only screen and (max-width: 1600px) {
     .numbers__digit-digit {
-      font-size: 80px; } }
+      font-size: 50px; } }
   @media only screen and (max-width: 768px) {
     .numbers__digit-digit {
-      font-size: 60px; } }
+      font-size: 50px; } }
 
 .numbers__description {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.4;
   font-weight: 700;
   margin-bottom: 20px;
-  min-height: 66px; }
+  min-height: 56px; }
   @media only screen and (max-width: 1600px) {
     .numbers__description {
-      font-size: 20px;
+      font-size: 18px;
       margin-bottom: 20px;
       min-height: 56px; } }
+  @media only screen and (max-width: 1080px) {
+    .numbers__description {
+      min-height: auto; } }
   @media only screen and (max-width: 768px) {
     .numbers__description {
       min-height: auto;
       font-size: 18px;
-      margin-bottom: 15px; } }
+      margin-bottom: 10px; } }
 
 .numbers__text {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.4; }
   @media only screen and (max-width: 1600px) {
     .numbers__text {
-      font-size: 18px; } }
+      font-size: 16px; } }
   @media only screen and (max-width: 768px) {
     .numbers__text {
       font-size: 16px; } }
