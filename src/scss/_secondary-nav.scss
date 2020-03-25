@@ -9,7 +9,7 @@
 .secondary-nav__row {
     display: flex;
     flex-wrap: wrap;
-    margin: -25px;
+    margin: -14px -25px;
     @include breakpoint(laptop) {
         margin: -15px;
     }
@@ -17,7 +17,7 @@
 
 .secondary-nav__column {
     width: 33.33%;
-    padding: 25px;
+    padding: 14px 25px;
     @include breakpoint(laptop) {
        padding: 15px;
     }

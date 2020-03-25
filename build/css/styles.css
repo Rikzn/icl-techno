@@ -4139,15 +4139,15 @@ a.section-header:link, a.section-header:visited {
   font-size: 14px;
   line-height: 1.2;
   margin-right: 30px;
-  white-space: nowrap;
-  margin-bottom: 10px; }
+  white-space: nowrap; }
 
 .footer-content__user-policy {
   color: #FB0D1B;
   font-size: 14px;
   line-height: 1.2;
   transition: color 0.2s;
-  white-space: nowrap; }
+  white-space: nowrap;
+  margin-top: auto; }
   @media only screen and (max-width: 576px) {
     .footer-content__user-policy {
       font-size: 14px;
@@ -4174,27 +4174,30 @@ a.section-header:link, a.section-header:visited {
 
 .footer-content__write-us {
   margin-top: 25px;
-  align-self: flex-start; }
+  align-self: flex-start;
+  margin-bottom: 25px; }
   @media only screen and (max-width: 1080px) {
     .footer-content__write-us {
-      margin-top: 15px; } }
+      margin-top: 20px; } }
 
 .footer-content__social {
   display: flex;
   align-items: center; }
 
 .footer-content__social-item {
-  margin-right: 34px; }
+  margin-right: 15px; }
   .footer-content__social-item:last-child {
     margin-right: 0; }
 
-.footer-content__social-link > svg {
-  fill: #FB0D1B;
-  transition: fill 0.2s; }
-
-.no-touch .footer-content__social-link:hover > svg,
-.touch .footer-content__social-link:active > svg {
-  fill: #C40C1F; }
+.footer-content__social-link {
+  display: block; }
+  .footer-content__social-link > svg {
+    display: block;
+    fill: #FB0D1B;
+    transition: fill 0.2s; }
+  .no-touch .footer-content__social-link:hover > svg,
+  .touch .footer-content__social-link:active > svg {
+    fill: #C40C1F; }
 
 .footer-content__made-by {
   color: white;
@@ -5072,14 +5075,14 @@ a.section-header:link, a.section-header:visited {
 .secondary-nav__row {
   display: flex;
   flex-wrap: wrap;
-  margin: -25px; }
+  margin: -14px -25px; }
   @media only screen and (max-width: 1240px) {
     .secondary-nav__row {
       margin: -15px; } }
 
 .secondary-nav__column {
   width: 33.33%;
-  padding: 25px; }
+  padding: 14px 25px; }
   @media only screen and (max-width: 1240px) {
     .secondary-nav__column {
       padding: 15px; } }
