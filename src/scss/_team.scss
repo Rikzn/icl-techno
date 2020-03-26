@@ -67,8 +67,7 @@
     }
 
     @include breakpointMF(small-tablet) {
-        .no-touch &:hover,
-        &.active {
+        &:hover {
             .team__card-content-name-layer {
                 &::before {
                     flex-grow: 0;
@@ -262,7 +261,7 @@
     z-index: 10;
     @include breakpoint(mobile) {
         padding: 50px 20px;
-        
+
         display: block;
         // &::after {
         //     content: '';
@@ -283,7 +282,6 @@
     @include objectFitCover();
 }
 
-
 .team__modal-bg-video {
     position: absolute;
     left: 0;
@@ -293,7 +291,6 @@
     z-index: -1;
     object-fit: cover;
 }
-
 
 .team__modal-bg-overlay {
     position: absolute;

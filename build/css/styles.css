@@ -12203,13 +12203,13 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
   .team__card:link, .team__card:visited {
     color: white; }
   @media only screen and (min-width: 769px) {
-    .no-touch .team__card:hover .team__card-content-name-layer::before, .team__card.active .team__card-content-name-layer::before {
+    .team__card:hover .team__card-content-name-layer::before {
       flex-grow: 0; }
-    .no-touch .team__card:hover .team__card-bg-image-container::before, .team__card.active .team__card-bg-image-container::before {
+    .team__card:hover .team__card-bg-image-container::before {
       opacity: 0; }
-    .no-touch .team__card:hover .team__card-bg-image-container::after, .team__card.active .team__card-bg-image-container::after {
+    .team__card:hover .team__card-bg-image-container::after {
       opacity: 1; }
-    .no-touch .team__card:hover .team__card-content-info-layer, .team__card.active .team__card-content-info-layer {
+    .team__card:hover .team__card-content-info-layer {
       transform: translateY(0); } }
 
 .team__card-bg-image-container {
