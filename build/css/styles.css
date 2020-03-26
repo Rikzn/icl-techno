@@ -6688,8 +6688,7 @@ a.section-header:link, a.section-header:visited {
         padding-top: 18px; } }
   .text-insertion--type-2 .text-insertion__content-wrapper {
     width: 60%;
-    flex-grow: 1;
-    margin-bottom: 20px; }
+    flex-grow: 1; }
     @media only screen and (max-width: 576px) {
       .text-insertion--type-2 .text-insertion__content-wrapper {
         width: 100%; } }
@@ -6749,7 +6748,6 @@ a.section-header:link, a.section-header:visited {
       .text-insertion--type-3 .text-insertion__content {
         padding: 20px 20px; } }
   .text-insertion--type-3 .text-insertion__content-wrapper {
-    margin-bottom: 20px;
     flex-grow: 1; }
     .text-insertion--type-3 .text-insertion__content-wrapper > *:first-child {
       margin-top: 0; }
@@ -6779,11 +6777,14 @@ a.section-header:link, a.section-header:visited {
           font-size: 16px; } }
   .text-insertion--type-3 .text-insertion__btn {
     color: #FB0D1B;
-    margin-top: auto;
+    margin-top: 20px;
     margin-left: auto;
     display: flex;
     align-items: center;
     font-size: 16px; }
+    @media only screen and (max-width: 768px) {
+      .text-insertion--type-3 .text-insertion__btn {
+        margin-top: 10px; } }
     .text-insertion--type-3 .text-insertion__btn > svg {
       fill: #FB0D1B;
       margin-left: 8px; }

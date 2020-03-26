@@ -137,7 +137,7 @@
         .text-insertion__content-wrapper {
             width: 60%;
             flex-grow: 1;
-            margin-bottom: 20px;
+           
             @include breakpoint(small-mobile) {
                 width: 100%;
             }
@@ -180,6 +180,7 @@
             padding-right: 35px;
             padding-left: 35px;
             font-size: 16px;
+           
             @include breakpoint(mobile) {
                 margin-top: 10px;
             }
@@ -210,7 +211,7 @@
             }
         }
         .text-insertion__content-wrapper {
-            margin-bottom: 20px;
+            
             flex-grow: 1;
             & > * {
                 &:first-child {
@@ -250,11 +251,14 @@
         }
         .text-insertion__btn {
             color: $red;
-            margin-top: auto;
+            margin-top: 20px;
             margin-left: auto;
             display: flex;
             align-items: center;
             font-size: 16px;
+            @include breakpoint(mobile) {
+                margin-top: 10px;
+            }
             > svg {
                 fill: $red;
                 margin-left: 8px;
@@ -263,7 +267,6 @@
             &:visited {
                 color: $red;
             }
-
 
             .no-touch &:hover,
             .touch &:active {
