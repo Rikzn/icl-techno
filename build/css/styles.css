@@ -1893,13 +1893,13 @@ section:first-child {
     .layout-row {
       flex-direction: column; } }
   .layout-row:first-child {
-    margin: 100px 0; }
+    margin-top: 100px; }
     @media only screen and (max-width: 1080px) {
       .layout-row:first-child {
-        margin: 80px 0; } }
+        margin-top: 80px; } }
     @media only screen and (max-width: 968px) {
       .layout-row:first-child {
-        margin: 50px 0; } }
+        margin-top: 50px; } }
 
 .layout-main-column {
   width: 50%;

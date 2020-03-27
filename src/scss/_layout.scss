@@ -92,12 +92,12 @@
         flex-direction: column;
     }
     &:first-child {
-        margin: 100px 0;
+        margin-top: 100px;
         @include breakpoint(tablet) {
-            margin: 80px 0;
+            margin-top: 80px;
         }
         @include breakpoint(small-tablet) {
-            margin: 50px 0;
+            margin-top: 50px;
         }
     }
 }
