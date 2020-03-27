@@ -225,8 +225,8 @@ a.section-header {
     min-width: none;
     flex-shrink: 1;
     flex-grow: 1;
-    flex-basis: 0;
-    width: 100%;
+  
+    width: 55px;
     text-align: center;
     appearance: none;
     -webkit-appearance: none;
@@ -238,6 +238,7 @@ a.section-header {
     }
     @include breakpoint(laptop) {
         margin: 0 12px;
+        width: 40px;
     }
     @include breakpoint(mobile) {
         font-size: 14px;

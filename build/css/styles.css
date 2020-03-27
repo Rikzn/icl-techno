@@ -1732,10 +1732,13 @@ textarea {
   resize: none;
   outline: none; }
 
-input[type='number']::-webkit-inner-spin-button,
-input[type='number']::-webkit-outer-spin-button {
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0; }
+
+input[type=number] {
+  -moz-appearance: textfield; }
 
 input[type='search'] {
   -webkit-appearance: textfield; }
@@ -2371,8 +2374,7 @@ a.section-header:link, a.section-header:visited {
   min-width: none;
   flex-shrink: 1;
   flex-grow: 1;
-  flex-basis: 0;
-  width: 100%;
+  width: 55px;
   text-align: center;
   -moz-appearance: none;
        appearance: none;
@@ -2384,7 +2386,8 @@ a.section-header:link, a.section-header:visited {
             appearance: none; }
   @media only screen and (max-width: 1240px) {
     .amount-btn__number {
-      margin: 0 12px; } }
+      margin: 0 12px;
+      width: 40px; } }
   @media only screen and (max-width: 768px) {
     .amount-btn__number {
       font-size: 14px; } }
