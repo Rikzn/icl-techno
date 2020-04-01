@@ -7,6 +7,14 @@ export default function() {
     const modals = Array.from(document.querySelectorAll('.js-team-modal'));
     let activeModal = null;
 
+
+    function pauseVideo(modal) {
+        const video = modal.querySelector('video');
+        if (!video) return;
+        video.pause();
+        video.currentTime = 0;
+    }
+
     modals.forEach((modal, modalIndex) => {
         const open = modal.querySelector('.js-team-modal-open');
         const close = Array.from(modal.querySelectorAll('.js-team-modal-close'));
@@ -23,20 +31,12 @@ export default function() {
             video.play();
         }
 
-        function pauseVideo(modal) {
-            const video = modal.querySelector('video');
-            if (!video) return;
-            video.pause();
-            video.currentTime = 0;
-        }
-
+    
         open.addEventListener('click', function(event) {
             event.preventDefault();
             content.classList.add('shown');
             open.classList.add('active');
             content.style.transitionDuration = '';
-          
-
             lockScroll(innerContent);
             activeModal = modal;
             loadAndPlayVideo(activeModal);
@@ -48,7 +48,7 @@ export default function() {
                 content.classList.remove('shown');
                 open.classList.remove('active');
                 content.style.transitionDuration = '';
-               
+
                 unlockScroll();
                 pauseVideo(activeModal);
                 activeModal = null;
@@ -61,7 +61,7 @@ export default function() {
                 content.classList.remove('shown');
                 open.classList.remove('active');
                 content.style.transitionDuration = '';
-               
+
                 unlockScroll();
                 pauseVideo(activeModal);
                 activeModal = null;
@@ -73,7 +73,7 @@ export default function() {
             content.classList.remove('shown');
             open.classList.remove('active');
             content.style.transitionDuration = '0s';
-           
+
             unlockScroll();
             activeModal = null;
 
@@ -85,9 +85,9 @@ export default function() {
                 content.classList.add('shown');
                 open.classList.add('active');
                 content.style.transitionDuration = '0s';
-                
+
                 lockScroll(innerContent);
-                activeModal = modal;
+                activeModal = nextModal;
                 loadAndPlayVideo(activeModal);
             } else {
                 const nextModal = modals[0];
@@ -97,9 +97,9 @@ export default function() {
                 content.classList.add('shown');
                 open.classList.add('active');
                 content.style.transitionDuration = '0s';
-             
+
                 lockScroll(innerContent);
-                activeModal = modal;
+                activeModal = nextModal;
                 loadAndPlayVideo(activeModal);
             }
         });
@@ -109,7 +109,7 @@ export default function() {
             content.classList.remove('shown');
             open.classList.remove('active');
             content.style.transitionDuration = '0s';
-           
+
             unlockScroll();
             activeModal = null;
 
@@ -121,9 +121,9 @@ export default function() {
                 content.classList.add('shown');
                 open.classList.add('active');
                 content.style.transitionDuration = '0s';
-               
-                lockScroll(innerContent)
-                activeModal = modal;
+
+                lockScroll(innerContent);
+                activeModal = nextModal;
                 loadAndPlayVideo(activeModal);
             } else {
                 const nextModal = modals[modals.length - 1];
@@ -133,9 +133,9 @@ export default function() {
                 content.classList.add('shown');
                 open.classList.add('active');
                 content.style.transitionDuration = '0s';
-              
+
                 lockScroll(innerContent);
-                activeModal = modal;
+                activeModal = nextModal;
                 loadAndPlayVideo(activeModal);
             }
         });
@@ -153,16 +153,27 @@ export default function() {
     });
 
     document.addEventListener('keyup', function(event) {
+        if (event.key === 'Escape') {
+            console.log('Active modal', activeModal)
+        }
+       
         if (event.key === 'Escape' && activeModal) {
+            console.log('Closing modal', activeModal);
+            
             const content = activeModal.querySelector('.js-team-modal-content');
-            const innerContent = activeModal.querySelector('.team__modal-inner-scroll-wrapper');
+
+            const open = activeModal.querySelector('.js-team-modal-open');
             content.classList.remove('shown');
+
             open.classList.remove('active');
             content.style.transitionDuration = '';
-          
+
             unlockScroll();
+
             pauseVideo(activeModal);
             activeModal = null;
-        }
+
+            
+        } 
     });
 }

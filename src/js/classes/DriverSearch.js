@@ -155,7 +155,7 @@ class DriverSearch {
         } catch (error) {
             if (error.response) {
                 if (error.response.status === 400 || error.response.status === 404) {
-                    await this.showError(`<span>По данному запросу ничего не найдено, пожалуйста свяжитесь с службой поддержки по адресу: <a href="mailto:support@icl.ru">support@icl.ru</a> с указанием серийного номера изделия.</span>`);
+                    await this.showError(`<span>По данному запросу ничего не найдено, пожалуйста свяжитесь с службой поддержки по адресу: <a href="mailto:getdrivers@icl.kazan.ru">getdrivers@icl.kazan.ru</a> с указанием серийного номера изделия.</span>`);
                     
                 } else {
                     await this.showError(`Ошибка ${error.response.status}`);

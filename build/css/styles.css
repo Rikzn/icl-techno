@@ -2672,7 +2672,7 @@ a.section-header:link, a.section-header:visited {
   font-size: 16px;
   line-height: 22px;
   transition: color 0.3s;
-  padding: 40px 28px;
+  padding: 39px 28px;
   display: block;
   transition: background-color 0.2s;
   position: relative; }
@@ -12454,13 +12454,15 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
   overflow-y: auto;
   position: relative;
   padding-right: 20px;
-  -webkit-overflow-scrolling: touch; }
+  -webkit-overflow-scrolling: touch;
+  max-height: 300px; }
   @media only screen and (max-width: 768px) {
     .team__modal-text-wrapper {
       margin-top: 20px;
       padding-right: 0;
       overflow: visible;
-      flex-shrink: 0; } }
+      flex-shrink: 0;
+      max-height: none; } }
   .team__modal-text-wrapper > *:first-child {
     margin-top: 0; }
   .team__modal-text-wrapper > *:last-child {

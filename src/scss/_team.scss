@@ -355,12 +355,13 @@
     position: relative;
     padding-right: 20px;
     -webkit-overflow-scrolling: touch;
-
+    max-height: 300px;
     @include breakpoint(mobile) {
         margin-top: 20px;
         padding-right: 0;
         overflow: visible;
         flex-shrink: 0;
+        max-height: none;
     }
     > * {
         &:first-child {
