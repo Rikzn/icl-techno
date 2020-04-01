@@ -6394,18 +6394,14 @@ a.section-header:link, a.section-header:visited {
     top: 0;
     left: 0;
     background-color: black;
-    transition: -webkit-filter 0.2s;
-    transition: filter 0.2s;
-    transition: filter 0.2s, -webkit-filter 0.2s;
+    transition: background-color .2s, -webkit-filter 0.2s;
+    transition: filter 0.2s, background-color .2s;
+    transition: filter 0.2s, background-color .2s, -webkit-filter 0.2s;
     z-index: -1; }
   .article__footer-sharing-link > svg {
     fill: white; }
   .article__footer-sharing-link:link, .article__footer-sharing-link:visited {
     color: white; }
-  .no-touch .article__footer-sharing-link:hover::before,
-  .touch .article__footer-sharing-link:active::before {
-    -webkit-filter: saturate(150%) brightness(90%);
-            filter: saturate(150%) brightness(90%); }
   .article__footer-sharing-link--vk::before {
     background-color: #4d78a5; }
   .article__footer-sharing-link--fb::before {
@@ -6414,6 +6410,9 @@ a.section-header:link, a.section-header:visited {
     background-color: #ed8d34; }
   .article__footer-sharing-link--twitter::before {
     background-color: #34aef2; }
+  .no-touch .article__footer-sharing-link:hover::before,
+  .touch .article__footer-sharing-link:active::before {
+    background-color: #FB0D1B; }
 
 .article__footer-info-table table {
   font-size: 16px;
@@ -6962,7 +6961,7 @@ a.section-header:link, a.section-header:visited {
 
 .gallery-slider__main-card {
   border: 1px solid #d0d0d0;
-  background-color: #f8f8f8; }
+  background-color: white; }
 
 .gallery-slider__main-card-image-container {
   padding-bottom: 56.25%;
@@ -9424,8 +9423,7 @@ a.section-header:link, a.section-header:visited {
       align-items: baseline; }
       @media only screen and (max-width: 768px) {
         .specs__table table th, .specs__table table td:first-child {
-          font-weight: 700;
-          margin-bottom: 4px; } }
+          font-weight: 700; } }
       .specs__table table th::after, .specs__table table td:first-child::after {
         content: '';
         height: 1px;
@@ -9445,13 +9443,11 @@ a.section-header:link, a.section-header:visited {
       line-height: 22px;
       border: none;
       padding-bottom: 30px; }
+    @media only screen and (max-width: 768px) {
+      .specs__table table th {
+        padding-bottom: 10px; } }
     .specs__table table .specs__table-item {
       display: block; }
-      .specs__table table .specs__table-item:last-child {
-        margin-bottom: 30px; }
-        @media only screen and (max-width: 768px) {
-          .specs__table table .specs__table-item:last-child {
-            margin-bottom: 20px; } }
 
 .configurator {
   margin: 60px 0;

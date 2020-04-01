@@ -140,7 +140,7 @@
         top: 0;
         left: 0;
         background-color: black;
-        transition: filter 0.2s;
+        transition: filter 0.2s, background-color .2s;
         z-index: -1;
     }
 
@@ -153,12 +153,7 @@
         color: white;
     }
 
-    .no-touch &:hover,
-    .touch &:active {
-        &::before {
-            filter: saturate(150%) brightness(90%);
-        }
-    }
+   
 
     &--vk {
         &::before {
@@ -181,6 +176,14 @@
     &--twitter {
         &::before {
             background-color: #34aef2;
+        }
+    }
+
+
+    .no-touch &:hover,
+    .touch &:active {
+        &::before {
+            background-color: $red;
         }
     }
 }

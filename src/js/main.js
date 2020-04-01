@@ -35,6 +35,8 @@ import videoLazyLoading from './videosLazyLoading';
 import '@fancyapps/fancybox';
 import stickyBanner from './stickyBanner';
 
+import mediaModals from './mediaModals';
+
 window.addEventListener('load', function() {
     document.body.classList.add('loaded');
 });
@@ -242,4 +244,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Прилипающий баннер
 
     stickyBanner();
+
+    // Модалки слайдер галереи
+
+    mediaModals();
 });
