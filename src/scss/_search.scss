@@ -1,5 +1,12 @@
 .search {
     @include section();
+    padding-top: 60px;
+    @include breakpoint(tablet) {
+        padding-top: 50px
+    }
+    @include breakpoint(small-tablet) {
+        padding-top: 40px;
+    }
 }
 
 

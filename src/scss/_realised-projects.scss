@@ -264,11 +264,14 @@
         height: 40px;
     }
     .realised-projects__list-item--with-image & {
-        height: 40px;
+      
         opacity: 1;
         filter: grayscale(0);
+        @include breakpoint(laptop) {
+            height: 50px;
+        }
         @include breakpoint(mobile) {
-            height: 25px;
+            height: 40px;
         }
     }
 }

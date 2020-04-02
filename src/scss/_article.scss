@@ -139,7 +139,7 @@
         height: 100%;
         top: 0;
         left: 0;
-        background-color: black;
+        background-color: $red;
         transition: filter 0.2s, background-color .2s;
         z-index: -1;
     }
@@ -155,35 +155,12 @@
 
    
 
-    &--vk {
-        &::before {
-            background-color: #4d78a5;
-        }
-    }
-
-    &--fb {
-        &::before {
-            background-color: #3658a0;
-        }
-    }
-
-    &--ok {
-        &::before {
-            background-color: #ed8d34;
-        }
-    }
-
-    &--twitter {
-        &::before {
-            background-color: #34aef2;
-        }
-    }
-
+    
 
     .no-touch &:hover,
     .touch &:active {
         &::before {
-            background-color: $red;
+            background-color: $red-hover;
         }
     }
 }
