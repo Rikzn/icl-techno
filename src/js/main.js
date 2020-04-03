@@ -34,6 +34,7 @@ import realisedProjectsFilter from './realisedProjectsFilter';
 import videoLazyLoading from './videosLazyLoading';
 import '@fancyapps/fancybox';
 import stickyBanner from './stickyBanner';
+import openInModals from './openInModal';
 
 import mediaModals from './mediaModals';
 
@@ -248,4 +249,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Модалки слайдер галереи
 
     mediaModals();
+
+    // Открытие в модалках по выбору
+
+    openInModals();
 });
