@@ -1,15 +1,19 @@
-export default function() {
+export default function () {
+    const openInModals = Array.from(document.querySelectorAll('[data-open-in-modal]'));
 
-    const openInModals = Array.from(document.querySelectorAll("[data-open-in-modal='Y'"));
+    openInModals.forEach((element) => {
 
-    console.log('Open in modals', openInModals)
+        if (element.getAttribute('data-open-in-modal') === "['Y']") {
 
-    $("[data-open-in-modal='Y'").fancybox({
-        hash: false,
-        backFocus: false,
-        mobile: {
-            clickSlide: 'close',
-            backFocus: false
+           
+            $(element).fancybox({
+                hash: false,
+                backFocus: false,
+                mobile: {
+                    clickSlide: 'close',
+                    backFocus: false,
+                },
+            });
         }
     });
 }
