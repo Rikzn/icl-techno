@@ -35,6 +35,7 @@ import videoLazyLoading from './videosLazyLoading';
 import '@fancyapps/fancybox';
 import stickyBanner from './stickyBanner';
 import openInModals from './openInModal';
+import onlyNumericInput from './onlyNumericInput';
 
 import mediaModals from './mediaModals';
 
@@ -253,4 +254,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Открытие в модалках по выбору
 
     openInModals();
+
+    // Только числовой ввод для type="number"
+
+    onlyNumericInput();
 });

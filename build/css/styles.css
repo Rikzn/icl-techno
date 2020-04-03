@@ -9438,9 +9438,11 @@ a.section-header:link, a.section-header:visited {
       line-height: 22px;
       border: none;
       padding-bottom: 20px; }
-    @media only screen and (max-width: 768px) {
-      .specs__table table th {
-        padding-bottom: 10px; } }
+    .specs__table table th {
+      font-weight: 700; }
+      @media only screen and (max-width: 768px) {
+        .specs__table table th {
+          padding-bottom: 10px; } }
     .specs__table table .specs__table-item {
       display: block; }
 
@@ -10006,6 +10008,8 @@ a.section-header:link, a.section-header:visited {
     transition: border-color 0.2s;
     outline: none;
     width: 28px; }
+    .configurator__config-summary-table input.price-input {
+      width: 80px !important; }
     .configurator__config-summary-table input.currency {
       width: 38px; }
     .configurator__config-summary-table input:focus {

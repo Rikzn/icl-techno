@@ -668,6 +668,9 @@
         transition: border-color 0.2s;
         outline: none;
         width: 28px;
+        &.price-input {
+            width: 80px !important;
+        }
         &.currency {
             width: 38px;
         }
