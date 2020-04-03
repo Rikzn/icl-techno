@@ -1848,7 +1848,7 @@ section:first-child {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 1200;
   height: 100px;
   display: flex;
   align-items: center;
