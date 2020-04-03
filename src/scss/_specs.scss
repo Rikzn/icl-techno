@@ -93,3 +93,13 @@
         }
     }
 }
+
+
+.specs__remark {
+    font-size: 16px;
+    color: $red;
+    margin-top: 20px;
+    @include breakpoint(mobile) {
+        margin-top: 10px;
+    }
+}
