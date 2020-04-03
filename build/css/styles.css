@@ -11189,9 +11189,11 @@ a.section-header:link, a.section-header:visited {
     fill: white;
     margin-right: 12px;
     display: none; }
-  .application-modal__form.success .application-modal__submit {
+  .application-modal__form.success .application-modal__submit,
+  .callback__form.success .application-modal__submit {
     background-color: #298416; }
-    .application-modal__form.success .application-modal__submit > svg {
+    .application-modal__form.success .application-modal__submit > svg,
+    .callback__form.success .application-modal__submit > svg {
       display: block; }
 
 .application-modal__close-btn {

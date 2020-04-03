@@ -188,7 +188,8 @@
         margin-right: 12px;
         display: none;
     }
-    .application-modal__form.success & {
+    .application-modal__form.success &,
+    .callback__form.success & {
         background-color: #298416;
         > svg {
             display: block;

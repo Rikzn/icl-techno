@@ -32,7 +32,7 @@
                 <div class="numbers__card">
                     <div class="numbers__digit">
                         <span class="numbers__digit-operand">
-                            До 
+                            До
                         </span>
                         <span class="numbers__digit-digit">
                             300 000
@@ -388,7 +388,7 @@
             </div>
         </div>
         <div class="callback__right-column">
-            <form action="/" method="POST" class="callback__form" data-parsley-validate>
+            <form action="/" method="POST" class="callback__form success" data-parsley-validate>
                 <div class="callback__form-input-group">
                     <input type="text" class="callback__form-input" name="name" placeholder="Имя и фамилия" required />
                 </div>
@@ -398,9 +398,24 @@
                 <div class="callback__form-input-group">
                     <textarea class="callback__form-textarea" name="comment" placeholder="Комментарий" required></textarea>
                 </div>
-                <span class="callback__form-policy"> Я согласен с <a href="#">политикой конфиденциальности</a> </span>
-                <button type="submit" class="btn-with-corners callback__form-submit">
-                    Узнать стоимость
+                <label class="application-modal__checkbox">
+                    <input type="checkbox" name="processing" required="" data-parsley-multiple="processing" />
+                    <span class="application-modal__checkbox-icon"></span>
+                    <span class="application-modal__checkbox-text-block">
+                        <span class="application-modal__checkbox-action-text">
+                            Я даю согласие на
+                            <a href="#">обработку своих персональных данных</a>
+                        </span>
+                        <span class="application-modal__checkbox-law-name">
+                            В соответствии со статьей 9 Федерального закона от 27 июля 2006 г. N 152-ФЗ «О персональных данных»
+                        </span>
+                    </span>
+                </label>
+                <button type="submit" class="btn-with-corners application-modal__submit">
+                    <svg width="28" height="20" aria-hidden="true" class="icon-checked">
+                        <use xlink:href="#checked"></use>
+                    </svg>
+                    Отправлено
                 </button>
             </form>
         </div>
