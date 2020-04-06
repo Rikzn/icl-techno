@@ -85,6 +85,12 @@
             }
         }
 
+        td {
+            &:first-child {
+                font-weight: 700;
+            }
+        }
+
         .specs__table-item {
             display: block;
             // &:last-child {
@@ -100,7 +106,7 @@
 
 .specs__remark {
     font-size: 16px;
-    color: $red;
+   
     margin-top: 20px;
     @include breakpoint(mobile) {
         margin-top: 10px;
