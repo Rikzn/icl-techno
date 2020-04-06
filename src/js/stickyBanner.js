@@ -9,9 +9,14 @@ export default function() {
 
     const stickyPanels = Array.from(document.querySelectorAll('.js-sticky-panel'));
     
-    const pageFooter = document.querySelector('.page-footer');
+    const layoutMainColumn = document.querySelector('.layout-main-column');
 
-    if (!pageFooter) return;
+    if (!layoutMainColumn) return;
+
+    
+
+
+    console.log('Layout column height', parseInt(window.getComputedStyle(layoutMainColumn).getPropertyValue("height"), 10))
 
     const controller = new ScrollMagic.Controller();
 
@@ -19,7 +24,7 @@ export default function() {
         new ScrollMagic.Scene({
             triggerElement: element,
             triggerHook: 0.18,
-            duration: pageFooter.offsetTop
+            duration: parseInt(window.getComputedStyle(layoutMainColumn).getPropertyValue("height"), 10) - window.innerHeight * 0.82
         })
             .setPin(element, {
                 pushFollowers: false
