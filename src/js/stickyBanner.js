@@ -24,7 +24,8 @@ export default function() {
         new ScrollMagic.Scene({
             triggerElement: element,
             triggerHook: 0.18,
-            duration: parseInt(window.getComputedStyle(layoutMainColumn).getPropertyValue("height"), 10) - window.innerHeight * 0.82
+            duration: parseInt(window.getComputedStyle(layoutMainColumn).getPropertyValue("height"), 10) - parseInt(window.getComputedStyle(element).getPropertyValue("height"), 10) - parseInt(window.getComputedStyle(element).getPropertyValue("padding-bottom"), 10)
+            
         })
             .setPin(element, {
                 pushFollowers: false

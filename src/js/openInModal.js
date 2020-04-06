@@ -3,7 +3,7 @@ export default function () {
 
     openInModals.forEach((element) => {
 
-        if (element.getAttribute('data-open-in-modal') === "['Y']") {
+        if (element.getAttribute('data-open-in-modal')) {
 
            
             $(element).fancybox({
