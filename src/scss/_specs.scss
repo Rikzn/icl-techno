@@ -76,9 +76,18 @@
             padding-bottom: 20px;
         }
 
+        
+
         th {
+            font-weight: 700;
             @include breakpoint(mobile) {
                 padding-bottom: 10px;
+            }
+        }
+
+        td {
+            &:first-child {
+                font-weight: 700;
             }
         }
 
@@ -97,7 +106,7 @@
 
 .specs__remark {
     font-size: 16px;
-    color: $red;
+   
     margin-top: 20px;
     @include breakpoint(mobile) {
         margin-top: 10px;

@@ -35,14 +35,13 @@ import videoLazyLoading from './videosLazyLoading';
 import '@fancyapps/fancybox';
 import stickyBanner from './stickyBanner';
 import openInModals from './openInModal';
+import onlyNumericInput from './onlyNumericInput';
 
 import mediaModals from './mediaModals';
 
-window.addEventListener('load', function() {
-    document.body.classList.add('loaded');
-});
 
-document.addEventListener('DOMContentLoaded', function() {
+
+document.addEventListener('DOMContentLoaded', function () {
     // Полифилл .contains для IE 11
 
     if (!SVGElement.prototype.contains) {
@@ -61,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Полифилл метода element.closest();
 
-    (function(ELEMENT) {
+    (function (ELEMENT) {
         ELEMENT.matches = ELEMENT.matches || ELEMENT.mozMatchesSelector || ELEMENT.msMatchesSelector || ELEMENT.oMatchesSelector || ELEMENT.webkitMatchesSelector;
         ELEMENT.closest =
             ELEMENT.closest ||
@@ -92,14 +91,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
         var styles = '* {cursor: pointer; }';
 
-        window.onload = function() {
+        window.onload = function () {
             appendStyle(styles);
         };
     }
 
     // Source: https://github.com/jserz/js_piece/blob/master/DOM/ParentNode/append()/append().md
-    (function(arr) {
-        arr.forEach(function(item) {
+    (function (arr) {
+        arr.forEach(function (item) {
             if (item.hasOwnProperty('append')) {
                 return;
             }
@@ -111,13 +110,13 @@ document.addEventListener('DOMContentLoaded', function() {
                     var argArr = Array.prototype.slice.call(arguments),
                         docFrag = document.createDocumentFragment();
 
-                    argArr.forEach(function(argItem) {
+                    argArr.forEach(function (argItem) {
                         var isNode = argItem instanceof Node;
                         docFrag.appendChild(isNode ? argItem : document.createTextNode(String(argItem)));
                     });
 
                     this.appendChild(docFrag);
-                }
+                },
             });
         });
     })([Element.prototype, Document.prototype, DocumentFragment.prototype]);
@@ -242,10 +241,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     realisedProjectsFilter();
 
-    // Прилипающий баннер
-
-    stickyBanner();
-
     // Модалки слайдер галереи
 
     mediaModals();
@@ -253,4 +248,20 @@ document.addEventListener('DOMContentLoaded', function() {
     // Открытие в модалках по выбору
 
     openInModals();
+
+    // Только числовой ввод для type="number"
+
+    onlyNumericInput();
+
+
+   
 });
+
+
+window.addEventListener('load', function () {
+    document.body.classList.add('loaded');
+
+    stickyBanner();
+});
+
+
