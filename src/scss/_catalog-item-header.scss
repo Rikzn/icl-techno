@@ -52,6 +52,14 @@
     height: auto;
     max-height: 100%;
     @include objectFitContainBottom();
+
+    @include breakpoint(mobile) {
+        width: 70%;
+        position: static;
+        order: 2;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 
@@ -140,6 +148,7 @@
         border-collapse: collapse;
         @include breakpoint(mobile) {
             display: block;
+            width: 100%;
         }
 
         tr, thead, tbody {
@@ -177,6 +186,7 @@
                 padding-left: 0;
                 font-size: 16px;
                 line-height: 20px;
+                white-space: initial;
             }
         }
     }
