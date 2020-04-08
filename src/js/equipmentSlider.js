@@ -10,6 +10,7 @@ export default function() {
         const slider = new Swiper(container, {
             slidesPerView: 'auto',
             spaceBetween: 10,
+            loopedSlides: 8,
             centeredSlides: true,
             watchOverflow: true,
             navigation: {
@@ -35,6 +36,32 @@ export default function() {
                     }
                 }
             }
+        });
+
+        const navBtns = Array.from(item.querySelectorAll('.equipment__tab-button'));
+
+        function chooseCategory(btn) {
+            const category = btn.getAttribute('data-category');
+            if (!category) return;
+            navBtns.forEach(element => element.classList.remove('active'));
+            btn.classList.add('active');
+            const slides = Array.from(item.querySelectorAll('.swiper-slide:not(.swiper-slide-duplicate)'));
+            console.log('Clicked btn category', category);
+
+            const newSlideIndex = slides.findIndex(element => element.getAttribute('data-category') === category);
+
+            if (newSlideIndex !== -1) {
+                console.log('Slideindex', newSlideIndex);
+
+                slider.slideToLoop(newSlideIndex);
+                slider.update();
+            }
+        }
+        navBtns.forEach(btn => {
+            btn.addEventListener('click', event => {
+                event.preventDefault();
+                chooseCategory(btn);
+            });
         });
     });
 }
