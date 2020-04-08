@@ -63,5 +63,9 @@ export default function() {
                 chooseCategory(btn);
             });
         });
+
+        if (navBtns.length > 0) {
+            chooseCategory(navBtns[0]);
+        }
     });
 }
