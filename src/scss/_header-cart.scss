@@ -42,6 +42,7 @@
     .page-header.fixed &,
     .page-header--white &,
     .page-header--light &,
+    .search-open &,
     .no-touch .page-header:not(.page-header--dark):not(.page-header--light):hover & {
         svg {
             fill: black;

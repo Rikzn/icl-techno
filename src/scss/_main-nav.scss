@@ -294,6 +294,19 @@
             margin: 0;
         }
     }
+
+    @include breakpoint(mobile) {
+        .main-nav__submenu-content--standalone & {
+            margin-left: -$mobile-content-padding;
+            margin-right: -$mobile-content-padding;
+        }
+    }
+    @include breakpoint(small-mobile) {
+        .main-nav__submenu-content--standalone & {
+            margin-left: -$small-mobile-content-padding;
+            margin-right: -$small-mobile-content-padding;
+        }
+    }
 }
 
 .main-nav__submenu-list-item {
@@ -417,10 +430,19 @@
         }
 
         .main-nav__submenu-content--standalone & {
-            justify-content: flex-start;
-            flex-wrap: wrap;
-            display: none;
+            overflow-y: hidden;
+            -webkit-overflow-scrolling: touch;
         }
+    }
+
+
+    @include breakpoint(mobile) {
+        margin-left: -$mobile-content-padding;
+        margin-right: -$mobile-content-padding;
+    }
+    @include breakpoint(small-mobile) {
+        margin-left: -$small-mobile-content-padding;
+        margin-right: -$small-mobile-content-padding;
     }
 }
 
@@ -642,15 +664,18 @@
     flex-direction: column;
     .main-nav__submenu-products-link {
         flex-grow: 1;
+
         @include breakpoint(tablet) {
             display: none;
         }
+
         svg {
             width: 10px;
             height: 6px;
             flex-shrink: 0;
             margin-left: 7px;
             fill: $red;
+
             @include breakpoint(tablet) {
                 display: none;
             }
@@ -709,6 +734,12 @@
         visibility: visible;
         background: transparent !important;
     }
+
+    .navigation-standalone & {
+        @include breakpoint(tablet) {
+            display: flex;
+        }
+    }
 }
 
 .main-nav__submenu-products-item-more-link {
@@ -719,13 +750,55 @@
     font-size: 14px;
     line-height: 19px;
     color: black;
-    @include breakpoint(tablet) {
-        padding: 0;
-        margin-bottom: 10px;
-        &:last-child {
-            margin-bottom: 0;
+
+    .page-header & {
+        @include breakpoint(tablet) {
+            padding: 0;
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
+
+    .navigation-standalone & {
+        @include breakpoint(tablet) {
+            padding: 20px 15px;
+            font-size: 12px;
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 4px;
+                background-color: $red;
+                opacity: 0;
+                transition: opacity 0.2s;
+            }
+            &:link,
+            &:visited {
+                color: #666;
+            }
+
+            .no-touch &:hover,
+            .touch &:active {
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .navigation-standalone--dark & {
+        @include breakpoint(tablet) {
+            &:link,
+            &:visited {
+                color: orange;
+            }
+        }
+    }
+
     &:link,
     &:visited {
         color: black;
@@ -752,6 +825,22 @@
             color: #666;
         }
 
+        &:hover {
+            background-color: rgba(61, 61, 61, 0.1);
+            color: white;
+        }
+    }
+
+    .page-header & {
+        @include breakpoint(tablet) {
+            &:hover {
+                background-color: transparent;
+                color: $red;
+            }
+        }
+    }
+
+    .page-header--dark:not(.fixed) & {
         @include breakpoint(tablet) {
             &:link,
             &:visited {
@@ -760,22 +849,11 @@
         }
 
         &:hover {
-            background-color: rgba(61, 61, 61, 0.1);
-            color: white;
             @include breakpoint(tablet) {
                 background-color: transparent;
                 color: $red;
             }
         }
-    }
-
-    @include breakpoint(tablet) {
-        &:hover {
-            background-color: transparent;
-            color: $red;
-        }
-
-        
     }
 }
 
@@ -784,8 +862,15 @@
     position: relative;
     flex-shrink: 0;
     margin-right: 26px;
-    @include breakpoint(tablet) {
-        display: none;
+    .page-header & {
+        @include breakpoint(tablet) {
+            display: none;
+        }
+    }
+
+    .navigation-standalone & {
+        width: 60px;
+        margin-right: 15px;
     }
 
     & > svg {
