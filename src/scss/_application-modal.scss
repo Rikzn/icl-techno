@@ -189,7 +189,8 @@
         display: none;
     }
     .application-modal__form.success &,
-    .callback__form.success & {
+    .callback__form.success &,
+    .application__form.success & {
         background-color: #298416;
         > svg {
             display: block;

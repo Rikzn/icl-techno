@@ -215,7 +215,8 @@
     display: flex;
     max-width: 742px;
     width: 100%;
-    margin-top: 50px;
+    justify-content: flex-end;
+    // margin-top: 50px;
     @include breakpoint(small-tablet) {
         max-width: 420px;
     }

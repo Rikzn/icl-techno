@@ -11359,10 +11359,12 @@ a.section-header:link, a.section-header:visited {
     margin-right: 12px;
     display: none; }
   .application-modal__form.success .application-modal__submit,
-  .callback__form.success .application-modal__submit {
+  .callback__form.success .application-modal__submit,
+  .application__form.success .application-modal__submit {
     background-color: #298416; }
     .application-modal__form.success .application-modal__submit > svg,
-    .callback__form.success .application-modal__submit > svg {
+    .callback__form.success .application-modal__submit > svg,
+    .application__form.success .application-modal__submit > svg {
       display: block; }
 
 .application-modal__close-btn {
@@ -12133,7 +12135,7 @@ a.section-header:link, a.section-header:visited {
   display: flex;
   max-width: 742px;
   width: 100%;
-  margin-top: 50px; }
+  justify-content: flex-end; }
   @media only screen and (max-width: 968px) {
     .application__form-submit-wrapper {
       max-width: 420px; } }
