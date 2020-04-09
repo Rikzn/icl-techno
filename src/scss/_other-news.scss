@@ -1,9 +1,12 @@
 .other-news {
     color: black;
     margin-bottom: 100px;
-    @include breakpoint(mobile) {
-        margin-bottom: 50px;
+    @include breakpoint(laptop) {
+        margin-bottom: 24px;
     }
+    // @include breakpoint(mobile) {
+    //     margin-bottom: 50px;
+    // }
 }
 
 .other-news__heading {

@@ -6,6 +6,8 @@ import ScrollMagic from 'ScrollMagic';
 export default function() {
     // new Sticky('.js-sticky-panel');
 
+    if (window.matchMedia("(max-width: 1240px)").matches) return;
+
 
     const stickyPanels = Array.from(document.querySelectorAll('.js-sticky-panel'));
     

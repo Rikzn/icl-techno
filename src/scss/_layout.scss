@@ -122,7 +122,10 @@
     flex-shrink: 0;
     margin-left: 85px;
     @include breakpoint(laptop) {
-        display: none;
+        width: 100%;
+        margin: 0;
+        flex-shrink: 1;
+        display: flex;
     }
 }
 

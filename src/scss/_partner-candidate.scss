@@ -54,6 +54,13 @@
 .partner-candidate__announcement {
     padding-bottom: 55px;
     z-index: 1000;
+    @include breakpoint(laptop) {
+        width: calc(50% - 12px);
+        margin: 0;
+    }
+    @include breakpoint(mobile) {
+        width: 100%;
+    }
 }
 
 

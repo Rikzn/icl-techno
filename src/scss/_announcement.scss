@@ -1,6 +1,9 @@
 .announcement {
     z-index: 1000;
     padding-bottom: 55px;
+    @include breakpoint(laptop) {
+        display: none;
+    }
 }
 
 .announcement__inner {
