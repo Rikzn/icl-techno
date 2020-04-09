@@ -432,9 +432,9 @@
         .main-nav__submenu-content--standalone & {
             overflow-y: hidden;
             -webkit-overflow-scrolling: touch;
+            position: relative;
         }
     }
-
 
     @include breakpoint(mobile) {
         margin-left: -$mobile-content-padding;
@@ -662,6 +662,9 @@
     align-self: stretch;
     display: flex;
     flex-direction: column;
+    @include breakpoint(tablet) {
+        position: static;
+    }
     .main-nav__submenu-products-link {
         flex-grow: 1;
 
@@ -761,6 +764,39 @@
         }
     }
 
+    &:link,
+    &:visited {
+        color: black;
+    }
+
+    &:hover,
+    &.active {
+        background-color: #f7f7f7;
+        .main-nav__submenu-products-item-more-link-icon-container {
+            & > svg {
+                fill: #999999;
+            }
+
+            & > img {
+                opacity: 1;
+                filter: invert(34%) sepia(68%) saturate(7328%) hue-rotate(344deg) brightness(90%) contrast(121%);
+            }
+        }
+    }
+
+   
+
+    .page-header & {
+        @include breakpoint(tablet) {
+            &:hover {
+                background-color: transparent;
+                color: $red;
+            }
+        }
+    }
+
+    
+
     .navigation-standalone & {
         @include breakpoint(tablet) {
             padding: 20px 15px;
@@ -783,40 +819,17 @@
             }
 
             .no-touch &:hover,
-            .touch &:active {
+            .touch &:active,
+            &.active {
+                color: black;
                 &::after {
                     opacity: 1;
                 }
             }
         }
     }
-    .navigation-standalone--dark & {
-        @include breakpoint(tablet) {
-            &:link,
-            &:visited {
-                color: orange;
-            }
-        }
-    }
+    
 
-    &:link,
-    &:visited {
-        color: black;
-    }
-
-    &:hover {
-        background-color: #f7f7f7;
-        .main-nav__submenu-products-item-more-link-icon-container {
-            & > svg {
-                fill: #999999;
-            }
-
-            & > img {
-                opacity: 1;
-                filter: invert(34%) sepia(68%) saturate(7328%) hue-rotate(344deg) brightness(90%) contrast(121%);
-            }
-        }
-    }
 
     .navigation-standalone--dark &,
     .page-header--dark:not(.fixed) & {
@@ -825,20 +838,13 @@
             color: #666;
         }
 
-        &:hover {
-            background-color: rgba(61, 61, 61, 0.1);
-            color: white;
+        &:hover,
+        &.active {
+            background-color: rgba(61, 61, 61, 0.1) !important;
+            color: white !important;
         }
     }
 
-    .page-header & {
-        @include breakpoint(tablet) {
-            &:hover {
-                background-color: transparent;
-                color: $red;
-            }
-        }
-    }
 
     .page-header--dark:not(.fixed) & {
         @include breakpoint(tablet) {
@@ -869,8 +875,10 @@
     }
 
     .navigation-standalone & {
-        width: 60px;
-        margin-right: 15px;
+        @include breakpoint(tablet) {
+            width: 60px;
+            margin-right: 15px;
+        }
     }
 
     & > svg {

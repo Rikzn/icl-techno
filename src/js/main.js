@@ -38,6 +38,7 @@ import openInModals from './openInModal';
 import onlyNumericInput from './onlyNumericInput';
 
 import mediaModals from './mediaModals';
+import scrollStandaloneMenu from './scrollStandaloneMenu';
 
 
 
@@ -254,7 +255,9 @@ document.addEventListener('DOMContentLoaded', function () {
     onlyNumericInput();
 
 
-   
+    // Скроллинг до активного пункта меню
+
+    scrollStandaloneMenu();
 });
 
 

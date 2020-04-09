@@ -2762,7 +2762,8 @@ a.section-header:link, a.section-header:visited {
       margin: 0; }
     .main-nav__submenu-content--standalone .main-nav__submenu-products {
       overflow-y: hidden;
-      -webkit-overflow-scrolling: touch; } }
+      -webkit-overflow-scrolling: touch;
+      position: relative; } }
   @media only screen and (max-width: 768px) {
     .main-nav__submenu-products {
       margin-left: -20px;
@@ -2945,6 +2946,9 @@ a.section-header:link, a.section-header:visited {
   align-self: stretch;
   display: flex;
   flex-direction: column; }
+  @media only screen and (max-width: 1080px) {
+    .main-nav__submenu-products-item--more {
+      position: static; } }
   .main-nav__submenu-products-item--more .main-nav__submenu-products-link {
     flex-grow: 1; }
     @media only screen and (max-width: 1080px) {
@@ -3014,6 +3018,20 @@ a.section-header:link, a.section-header:visited {
       margin-bottom: 10px; }
       .page-header .main-nav__submenu-products-item-more-link:last-child {
         margin-bottom: 0; } }
+  .main-nav__submenu-products-item-more-link:link, .main-nav__submenu-products-item-more-link:visited {
+    color: black; }
+  .main-nav__submenu-products-item-more-link:hover, .main-nav__submenu-products-item-more-link.active {
+    background-color: #f7f7f7; }
+    .main-nav__submenu-products-item-more-link:hover .main-nav__submenu-products-item-more-link-icon-container > svg, .main-nav__submenu-products-item-more-link.active .main-nav__submenu-products-item-more-link-icon-container > svg {
+      fill: #999999; }
+    .main-nav__submenu-products-item-more-link:hover .main-nav__submenu-products-item-more-link-icon-container > img, .main-nav__submenu-products-item-more-link.active .main-nav__submenu-products-item-more-link-icon-container > img {
+      opacity: 1;
+      -webkit-filter: invert(34%) sepia(68%) saturate(7328%) hue-rotate(344deg) brightness(90%) contrast(121%);
+              filter: invert(34%) sepia(68%) saturate(7328%) hue-rotate(344deg) brightness(90%) contrast(121%); }
+  @media only screen and (max-width: 1080px) {
+    .page-header .main-nav__submenu-products-item-more-link:hover {
+      background-color: transparent;
+      color: #FB0D1B; } }
   @media only screen and (max-width: 1080px) {
     .navigation-standalone .main-nav__submenu-products-item-more-link {
       padding: 20px 15px;
@@ -3031,34 +3049,21 @@ a.section-header:link, a.section-header:visited {
         transition: opacity 0.2s; }
       .navigation-standalone .main-nav__submenu-products-item-more-link:link, .navigation-standalone .main-nav__submenu-products-item-more-link:visited {
         color: #666; }
-      .no-touch .navigation-standalone .main-nav__submenu-products-item-more-link:hover::after,
-      .touch .navigation-standalone .main-nav__submenu-products-item-more-link:active::after {
-        opacity: 1; } }
-  @media only screen and (max-width: 1080px) {
-    .navigation-standalone--dark .main-nav__submenu-products-item-more-link:link, .navigation-standalone--dark .main-nav__submenu-products-item-more-link:visited {
-      color: orange; } }
-  .main-nav__submenu-products-item-more-link:link, .main-nav__submenu-products-item-more-link:visited {
-    color: black; }
-  .main-nav__submenu-products-item-more-link:hover {
-    background-color: #f7f7f7; }
-    .main-nav__submenu-products-item-more-link:hover .main-nav__submenu-products-item-more-link-icon-container > svg {
-      fill: #999999; }
-    .main-nav__submenu-products-item-more-link:hover .main-nav__submenu-products-item-more-link-icon-container > img {
-      opacity: 1;
-      -webkit-filter: invert(34%) sepia(68%) saturate(7328%) hue-rotate(344deg) brightness(90%) contrast(121%);
-              filter: invert(34%) sepia(68%) saturate(7328%) hue-rotate(344deg) brightness(90%) contrast(121%); }
+      .no-touch .navigation-standalone .main-nav__submenu-products-item-more-link:hover,
+      .touch .navigation-standalone .main-nav__submenu-products-item-more-link:active, .navigation-standalone .main-nav__submenu-products-item-more-link.active {
+        color: black; }
+        .no-touch .navigation-standalone .main-nav__submenu-products-item-more-link:hover::after,
+        .touch .navigation-standalone .main-nav__submenu-products-item-more-link:active::after, .navigation-standalone .main-nav__submenu-products-item-more-link.active::after {
+          opacity: 1; } }
   .navigation-standalone--dark .main-nav__submenu-products-item-more-link:link, .navigation-standalone--dark .main-nav__submenu-products-item-more-link:visited,
   .page-header--dark:not(.fixed) .main-nav__submenu-products-item-more-link:link,
   .page-header--dark:not(.fixed) .main-nav__submenu-products-item-more-link:visited {
     color: #666; }
-  .navigation-standalone--dark .main-nav__submenu-products-item-more-link:hover,
-  .page-header--dark:not(.fixed) .main-nav__submenu-products-item-more-link:hover {
-    background-color: rgba(61, 61, 61, 0.1);
-    color: white; }
-  @media only screen and (max-width: 1080px) {
-    .page-header .main-nav__submenu-products-item-more-link:hover {
-      background-color: transparent;
-      color: #FB0D1B; } }
+  .navigation-standalone--dark .main-nav__submenu-products-item-more-link:hover, .navigation-standalone--dark .main-nav__submenu-products-item-more-link.active,
+  .page-header--dark:not(.fixed) .main-nav__submenu-products-item-more-link:hover,
+  .page-header--dark:not(.fixed) .main-nav__submenu-products-item-more-link.active {
+    background-color: rgba(61, 61, 61, 0.1) !important;
+    color: white !important; }
   @media only screen and (max-width: 1080px) {
     .page-header--dark:not(.fixed) .main-nav__submenu-products-item-more-link:link, .page-header--dark:not(.fixed) .main-nav__submenu-products-item-more-link:visited {
       color: black; } }
@@ -3075,9 +3080,10 @@ a.section-header:link, a.section-header:visited {
   @media only screen and (max-width: 1080px) {
     .page-header .main-nav__submenu-products-item-more-link-icon-container {
       display: none; } }
-  .navigation-standalone .main-nav__submenu-products-item-more-link-icon-container {
-    width: 60px;
-    margin-right: 15px; }
+  @media only screen and (max-width: 1080px) {
+    .navigation-standalone .main-nav__submenu-products-item-more-link-icon-container {
+      width: 60px;
+      margin-right: 15px; } }
   .main-nav__submenu-products-item-more-link-icon-container > svg {
     fill: #c2c2c2;
     transition: fill 0.2s; }
