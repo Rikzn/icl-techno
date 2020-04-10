@@ -2,6 +2,7 @@ import 'picturefill';
 import objectFitImages from 'object-fit-images';
 import 'objectFitPolyfill';
 import detectIt from 'detect-it';
+import smoothscroll from 'smoothscroll-polyfill';
 import introSlider from './introSlider';
 import fixHeader from './fixHeader';
 import tabs from './tabs';
@@ -73,6 +74,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 } else return this.parentElement.closest(selector);
             };
     })(Element.prototype);
+
+
+    // Полифилл функций скроллинга
+
+    smoothscroll.polyfill();
 
     // Определение тач устройств
 

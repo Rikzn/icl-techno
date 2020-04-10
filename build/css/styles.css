@@ -4641,7 +4641,16 @@ a.section-header:link, a.section-header:visited {
       margin-bottom: -20px;
       flex-wrap: nowrap;
       margin-left: -40px;
-      margin-right: -40px; } }
+      margin-right: -40px; }
+      .equipment__tabs-navigation::-webkit-scrollbar * {
+        background: transparent; }
+      .equipment__tabs-navigation::-webkit-scrollbar-track {
+        background-color: transparent; }
+      .equipment__tabs-navigation::-webkit-scrollbar {
+        display: none;
+        background-color: transparent; }
+      .equipment__tabs-navigation::-webkit-scrollbar-thumb {
+        background-color: transparent; } }
   @media only screen and (max-width: 768px) {
     .equipment__tabs-navigation {
       margin-left: -20px;

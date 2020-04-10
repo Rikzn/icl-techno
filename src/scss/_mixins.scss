@@ -29,6 +29,22 @@
     }
 }
 
+@mixin noScrollbar {
+    &::-webkit-scrollbar * {
+        background: transparent;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+    &::-webkit-scrollbar {
+        display: none;
+        background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
+}
+
 @mixin noHighlight() {
     -webkit-tap-highlight-color: transparent;
 }
@@ -120,8 +136,6 @@
         }
     }
 }
-
-
 
 @mixin section() {
     margin: 60px 0;

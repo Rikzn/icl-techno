@@ -34,6 +34,7 @@
         flex-wrap: nowrap;
         margin-left: -1 * $desktop-content-padding;
         margin-right: -1 * $desktop-content-padding;
+        @include noScrollbar();
     }
 
     @include breakpoint(mobile) {
