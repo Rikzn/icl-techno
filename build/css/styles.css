@@ -4634,6 +4634,7 @@ a.section-header:link, a.section-header:visited {
       margin-top: 30px; } }
   @media only screen and (max-width: 968px) {
     .equipment__tabs-navigation {
+      position: relative;
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
       padding-bottom: 20px;

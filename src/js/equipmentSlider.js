@@ -38,27 +38,41 @@ export default function() {
             }
         });
 
+        const tabsNavigation = item.querySelector('.equipment__tabs-navigation');
         const navBtns = Array.from(item.querySelectorAll('.equipment__tab-button'));
 
         function chooseCategory(category) {
             const slides = Array.from(item.querySelectorAll('.swiper-slide:not(.swiper-slide-duplicate)'));
-            console.log('Clicked btn category', category);
-
             const newSlideIndex = slides.findIndex(element => element.getAttribute('data-category') === category);
-
             if (newSlideIndex !== -1) {
-                console.log('Slideindex', newSlideIndex);
                 slider.slideToLoop(newSlideIndex);
                 slider.update();
             }
+        }
+
+        function setActiveBtn(category) {
+            navBtns.forEach(btn => {
+                if (btn.getAttribute('data-category') === category) {
+                    btn.classList.add('active');
+                    const offsetLeft = btn.offsetLeft;
+                    if (Element.prototype.scrollTo) {
+                        tabsNavigation.scrollTo({
+                            top: 0,
+                            left: offsetLeft - 20,
+                            behavior: 'smooth'
+                        });
+                    }
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
         }
         navBtns.forEach(btn => {
             btn.addEventListener('click', event => {
                 event.preventDefault();
                 const category = btn.getAttribute('data-category');
                 if (!category) return;
-                navBtns.forEach(element => element.classList.remove('active'));
-                btn.classList.add('active');
+                setActiveBtn(category);
                 chooseCategory(category);
             });
         });
@@ -70,17 +84,8 @@ export default function() {
         slider.on('slideChangeTransitionEnd', function() {
             const slides = Array.from(item.querySelectorAll('.swiper-slide:not(.swiper-slide-duplicate)'));
             const activeSlide = slides[slider.realIndex];
-            console.log({activeSlide});
-            console.log('Active slide category', activeSlide.getAttribute('data-category'))
 
-
-            navBtns.forEach(btn => {
-                if (btn.getAttribute('data-category') === activeSlide.getAttribute('data-category')) {
-                    btn.classList.add('active');
-                } else {
-                    btn.classList.remove('active');
-                }
-            })
+            setActiveBtn(activeSlide.getAttribute('data-category'));
         });
     });
 }
