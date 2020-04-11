@@ -399,7 +399,8 @@
         background-color: #f4f4f4;
     }
 
-    input[type='checkbox'] {
+    input[type='checkbox'],
+    input[type='radio'] {
         @include visuallyHidden();
     }
     svg {
@@ -411,7 +412,8 @@
         opacity: 0;
     }
 
-    input[type='checkbox']:checked ~ svg {
+    input[type='checkbox']:checked ~ svg,
+    input[type='radio']:checked ~ svg {
         opacity: 1;
     }
 }
