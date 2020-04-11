@@ -848,3 +848,15 @@
 .intro-slider__hidden-thumbnail {
     @include visuallyHidden();
 }
+
+
+
+.intro-slider:not(.initialized) {
+    .intro-slider__slide-text-block {
+        opacity: 0;
+    }
+
+    .intro-slider__pagination-image-popover-text {
+        opacity: 0;
+    }
+}

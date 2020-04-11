@@ -3865,6 +3865,12 @@ a.section-header:link, a.section-header:visited {
   width: 1px;
   white-space: nowrap; }
 
+.intro-slider:not(.initialized) .intro-slider__slide-text-block {
+  opacity: 0; }
+
+.intro-slider:not(.initialized) .intro-slider__pagination-image-popover-text {
+  opacity: 0; }
+
 .home-news {
   display: flex;
   flex-direction: column;
