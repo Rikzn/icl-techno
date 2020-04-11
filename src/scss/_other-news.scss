@@ -2,7 +2,7 @@
     color: black;
     margin-bottom: 100px;
     @include breakpoint(laptop) {
-        margin-bottom: 24px;
+        margin-bottom: 20px;
     }
     // @include breakpoint(mobile) {
     //     margin-bottom: 50px;
