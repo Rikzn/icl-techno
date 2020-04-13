@@ -671,6 +671,17 @@
             <main class="page-main">
                 <div class="container">
                     <section class="intro-slider js-intro-slider">
+                        <style>
+                            .intro-slider:not(.initialized) {
+                                .intro-slider__slide-text-block {
+                                    opacity: 0;
+                                }
+
+                                .intro-slider__pagination-image-popover-text {
+                                    opacity: 0;
+                                }
+                            }
+                        </style>
                         <ul class="intro-slider__slides-container js-intro-slider-slides">
                             <li class="intro-slider__slide">
                                 <div class="intro-slider__slide-content">

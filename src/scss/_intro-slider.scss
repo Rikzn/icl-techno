@@ -850,13 +850,3 @@
 }
 
 
-
-.intro-slider:not(.initialized) {
-    .intro-slider__slide-text-block {
-        opacity: 0;
-    }
-
-    .intro-slider__pagination-image-popover-text {
-        opacity: 0;
-    }
-}
