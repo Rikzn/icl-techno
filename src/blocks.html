@@ -1,939 +1,955 @@
-{% set title = "Блоки" %} {% set headerColor = "white" %} {% extends "layout.html" %} {% block content %}
+{% set title = "Блоки" %}
+{% set headerColor = "white" %}
+{% extends "layout.html" %}
+{% block content %}
 
-<section class="numbers">
-    <div class="numbers__bg">
-        <img src="img/numbers-bg.jpg" alt="" class="numbers__bg-image" />
-    </div>
-    <div class="numbers__content">
-        <h2 class="numbers__heading">
-            <span class="numbers__heading-text">О группе компаний</span>
-            <img src="img/simple-icl-logo.svg" alt="Логотип ICL" class="numbers__heading-logo" width="82" />
-        </h2>
-        <div class="numbers__row">
-            <div class="numbers__col">
-                <div class="numbers__card">
-                    <div class="numbers__digit">
-                        <span class="numbers__digit-operand">
+    <section class="numbers">
+        <div class="numbers__bg">
+            <img src="img/numbers-bg.jpg" alt="" class="numbers__bg-image"/>
+        </div>
+        <div class="numbers__content">
+            <h2 class="numbers__heading">
+                <span class="numbers__heading-text">О группе компаний</span>
+                <img src="img/simple-icl-logo.svg" alt="Логотип ICL" class="numbers__heading-logo" width="82"/>
+            </h2>
+            <div class="numbers__row">
+                <div class="numbers__col">
+                    <div class="numbers__card">
+                        <div class="numbers__digit">
+                            <span class="numbers__digit-operand">
                             Топ
                         </span>
-                        <span class="numbers__digit-digit">
+                            <span class="numbers__digit-digit">
                             3
                         </span>
-                    </div>
-                    <div class="numbers__description">
+                        </div>
+                        <div class="numbers__description">
                         по производству ИТ-оборудования в России (по версии "Эксперт РА")
                     </div>
-                    <div class="numbers__text">
+                        <div class="numbers__text">
                         Создаем высокотехнологичное оборудование и решения с высокой степенью локализации
                     </div>
+                    </div>
                 </div>
-            </div>
-            <div class="numbers__col">
-                <div class="numbers__card">
-                    <div class="numbers__digit">
-                        <span class="numbers__digit-operand">
+                <div class="numbers__col">
+                    <div class="numbers__card">
+                        <div class="numbers__digit">
+                            <span class="numbers__digit-operand">
                             До
                         </span>
-                        <span class="numbers__digit-digit">
+                            <span class="numbers__digit-digit">
                             300 000
                         </span>
-                    </div>
-                    <div class="numbers__description">
+                        </div>
+                        <div class="numbers__description">
                         производственная мощность завода
                     </div>
-                    <div class="numbers__text">
+                        <div class="numbers__text">
                         Под брендом ICL завод выпускает настольные и мобильные системы, серверы, системы хранения данных, интерактивные панели, инфоматы
                     </div>
+                    </div>
                 </div>
-            </div>
-            <div class="numbers__col">
-                <div class="numbers__card">
-                    <div class="numbers__digit">
-                        <span class="numbers__digit-operand">
+                <div class="numbers__col">
+                    <div class="numbers__card">
+                        <div class="numbers__digit">
+                            <span class="numbers__digit-operand">
                             Более
                         </span>
-                        <span class="numbers__digit-digit">
+                            <span class="numbers__digit-digit">
                             28
                         </span>
-                    </div>
-                    <div class="numbers__description">
+                        </div>
+                        <div class="numbers__description">
                         лет опыта в ИТ индустрии
                     </div>
-                    <div class="numbers__text">
+                        <div class="numbers__text">
                         многолетний опыт реализаций крупных ИТ проектов позволяет нам находить решения для любых нестандартных задач
+                    </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <a href="#" class="show-all-btn__link numbers__show-more">
+            <a href="#" class="show-all-btn__link numbers__show-more">
             Перейти
             <svg width="16" height="8" aria-hidden="true" class="icon-arrow-right-no-circle">
-                <use xlink:href="#arrow-right-no-circle"></use>
-            </svg>
-        </a>
-    </div>
-</section>
-
-<section class="realised-projects js-realised-projects-filter">
-    <div class="realised-projects__top-row">
-        <h2 class="section-header">
-            Реализованные проекты
-        </h2>
-    </div>
-
-    <div class="realised-projects__filters">
-        <div class="tabs-block__tabs-navigation js-realised-projects-filter-btns">
-            <a href="#" class="tabs-block__tabs-navigation-btn active" data-category="education">
-                <span class="tabs-block__tabs-navigation-btn-text">
-                    Образование
-                </span>
-            </a>
-            <a href="#" class="tabs-block__tabs-navigation-btn" data-category="meds">
-                <span class="tabs-block__tabs-navigation-btn-text">Здравоохранение</span>
-            </a>
-            <a href="#" class="tabs-block__tabs-navigation-btn" data-category="retail">
-                <span class="tabs-block__tabs-navigation-btn-text">Retail</span>
-            </a>
-            <a href="#" class="tabs-block__tabs-navigation-btn" data-category="gov">
-                <span class="tabs-block__tabs-navigation-btn-text">Государственные организации</span>
-            </a>
-            <a href="#" class="tabs-block__tabs-navigation-btn" data-category="companies">
-                <span class="tabs-block__tabs-navigation-btn-text">Коммерческие организации</span>
+                    <use xlink:href="#arrow-right-no-circle"></use>
+                </svg>
             </a>
         </div>
+    </section>
 
-        <div class="realised-projects__year js-realised-projects-filter-year">
-            <div class="catalog__filter-selectors-group">
-                <span role="button" class="catalog__filer-selectors-open-btn">
-                    <span class="catalog__filer-selectors-open-btn-content">
+    <section class="realised-projects js-realised-projects-filter">
+        <div class="realised-projects__top-row">
+            <h2 class="section-header">
+            Реализованные проекты
+        </h2>
+        </div>
+
+        <div class="realised-projects__filters">
+            <div class="tabs-block__tabs-navigation js-realised-projects-filter-btns">
+                <a href="#" class="tabs-block__tabs-navigation-btn active" data-category="education">
+                    <span class="tabs-block__tabs-navigation-btn-text">
+                    Образование
+                </span>
+                </a>
+                <a href="#" class="tabs-block__tabs-navigation-btn" data-category="meds">
+                    <span class="tabs-block__tabs-navigation-btn-text">Здравоохранение</span>
+                </a>
+                <a href="#" class="tabs-block__tabs-navigation-btn" data-category="retail">
+                    <span class="tabs-block__tabs-navigation-btn-text">Retail</span>
+                </a>
+                <a href="#" class="tabs-block__tabs-navigation-btn" data-category="gov">
+                    <span class="tabs-block__tabs-navigation-btn-text">Государственные организации</span>
+                </a>
+                <a href="#" class="tabs-block__tabs-navigation-btn" data-category="companies">
+                    <span class="tabs-block__tabs-navigation-btn-text">Коммерческие организации</span>
+                </a>
+            </div>
+
+            <div class="realised-projects__year js-realised-projects-filter-year">
+                <div class="catalog__filter-selectors-group">
+                    <span role="button" class="catalog__filer-selectors-open-btn">
+                        <span class="catalog__filer-selectors-open-btn-content">
                         Выберите год
 
                         <svg width="10" height="6" aria-hidden="true" class="icon-arrow-down">
-                            <use xlink:href="#arrow-down" />
-                        </svg>
+                                <use xlink:href="#arrow-down"/>
+                            </svg>
+                        </span>
                     </span>
-                </span>
-                <div class="catalog__filter-selectors-group-wrapper">
-                    <div class="catalog__filter-selectors-group-inner-wrapper">
-                        <label class="catalog__filter-checkbox">
-                            <input type="checkbox" name="year" value="2020" checked />
-                            <span class="catalog__filter-checkbox-text">
+                    <div class="catalog__filter-selectors-group-wrapper">
+                        <div class="catalog__filter-selectors-group-inner-wrapper">
+                            <label class="catalog__filter-checkbox">
+                                <input type="checkbox" name="year" value="2020" checked/>
+                                <span class="catalog__filter-checkbox-text">
                                 2020
                             </span>
-                            <svg width="10" height="10" aria-hidden="true" class="icon-checkbox-mark">
-                                <use xlink:href="#checkbox-mark" />
-                            </svg>
-                        </label>
-                        <label class="catalog__filter-checkbox">
-                            <input type="checkbox" name="year" value="2019" checked />
-                            <span class="catalog__filter-checkbox-text">
+                                <svg width="10" height="10" aria-hidden="true" class="icon-checkbox-mark">
+                                    <use xlink:href="#checkbox-mark"/>
+                                </svg>
+                            </label>
+                            <label class="catalog__filter-checkbox">
+                                <input type="checkbox" name="year" value="2019" checked/>
+                                <span class="catalog__filter-checkbox-text">
                                 2019
                             </span>
-                            <svg width="10" height="10" aria-hidden="true" class="icon-checkbox-mark">
-                                <use xlink:href="#checkbox-mark" />
-                            </svg>
-                        </label>
-                        <label class="catalog__filter-checkbox">
-                            <input type="checkbox" name="year" value="2018" checked />
-                            <span class="catalog__filter-checkbox-text">
+                                <svg width="10" height="10" aria-hidden="true" class="icon-checkbox-mark">
+                                    <use xlink:href="#checkbox-mark"/>
+                                </svg>
+                            </label>
+                            <label class="catalog__filter-checkbox">
+                                <input type="checkbox" name="year" value="2018" checked/>
+                                <span class="catalog__filter-checkbox-text">
                                 2018
                             </span>
-                            <svg width="10" height="10" aria-hidden="true" class="icon-checkbox-mark">
-                                <use xlink:href="#checkbox-mark" />
-                            </svg>
-                        </label>
+                                <svg width="10" height="10" aria-hidden="true" class="icon-checkbox-mark">
+                                    <use xlink:href="#checkbox-mark"/>
+                                </svg>
+                            </label>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="realised-projects__slider">
-        <div class="realised-projects__slider-container">
-            <ul class="realised-projects__list">
-                <li class="realised-projects__list-item realised-projects__list-item--large realised-projects__list-item--with-image" data-category="education" data-year="2020">
-                    <a href="#text-modal" class="realised-projects__card js-modal-open">
-                        <span class="realised-projects__card-top-row">
-                            <span class="realised-projects__card-label-group">
-                                <span class="realised-projects__card-label">
+        <div class="realised-projects__slider">
+            <div class="realised-projects__slider-container">
+                <ul class="realised-projects__list">
+                    <li class="realised-projects__list-item realised-projects__list-item--large realised-projects__list-item--with-image" data-category="education" data-year="2020">
+                        <a href="#text-modal" class="realised-projects__card js-modal-open">
+                            <span class="realised-projects__card-top-row">
+                                <span class="realised-projects__card-label-group">
+                                    <span class="realised-projects__card-label">
                                     Образование
                                 </span>
-                                <span class="realised-projects__card-date">
+                                    <span class="realised-projects__card-date">
                                     22.05.2020
                                 </span>
-                            </span>
+                                </span>
 
-                            <img src="img/aeroflot-logo.svg" alt="Логотип аэрофлота" class="realised-projects__company-logo" />
-                        </span>
-                        <span class="realised-projects__content">
-                            <span class="realised-projects__title">
+                                <img src="img/aeroflot-logo.svg" alt="Логотип аэрофлота" class="realised-projects__company-logo"/>
+                            </span>
+                            <span class="realised-projects__content">
+                                <span class="realised-projects__title">
                                 Международный аэропорт Сочи
                             </span>
-                            <span class="realised-projects__paragraph">
+                                <span class="realised-projects__paragraph">
                                 Предоставляем комплексные решения в области информационных технологий и услуги по консалтингу, проектированию, Предоставляем комплексные решения в области информационных технологий и услуги по консалтингу,
                                 проектированию,
                             </span>
-                        </span>
-                        <span class="realised-projects__corner">
-                            <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
-                                <use xlink:href="#arrow-right-no-circle" />
-                            </svg>
-                        </span>
-                        <span class="realised-projects__bg-image-container">
-                            <img src="img/airport.jpg" alt="Фото аэропорта" class="realised-projects__bg-image" />
-                        </span>
-                    </a>
-                </li>
-                <li class="realised-projects__list-item" data-category="gov" data-year="2019">
-                    <a href="#text-modal" class="realised-projects__card js-modal-open">
-                        <span class="realised-projects__card-top-row">
-                            <span class="realised-projects__card-label-group">
-                                <span class="realised-projects__card-label">
+                            </span>
+                            <span class="realised-projects__corner">
+                                <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                    <use xlink:href="#arrow-right-no-circle"/>
+                                </svg>
+                            </span>
+                            <span class="realised-projects__bg-image-container">
+                                <img src="img/airport.jpg" alt="Фото аэропорта" class="realised-projects__bg-image"/>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="realised-projects__list-item" data-category="gov" data-year="2019">
+                        <a href="#text-modal" class="realised-projects__card js-modal-open">
+                            <span class="realised-projects__card-top-row">
+                                <span class="realised-projects__card-label-group">
+                                    <span class="realised-projects__card-label">
                                     госсектор
                                 </span>
-                                <span class="realised-projects__card-date">
+                                    <span class="realised-projects__card-date">
                                     22.05.2019
                                 </span>
-                            </span>
+                                </span>
 
-                            <img src="img/rostelecom-logo.svg" alt="Логотип аэрофлота" class="realised-projects__company-logo" />
-                        </span>
-                        <span class="realised-projects__content">
-                            <span class="realised-projects__title">
+                                <img src="img/rostelecom-logo.svg" alt="Логотип аэрофлота" class="realised-projects__company-logo"/>
+                            </span>
+                            <span class="realised-projects__content">
+                                <span class="realised-projects__title">
                                 Мобильный оператор Ростелеком
                             </span>
-                            <span class="realised-projects__paragraph">
+                                <span class="realised-projects__paragraph">
                                 Предоставляем комплексные решения в области информационных технологий и услуги по консалтингу, проектированию,
                             </span>
-                        </span>
-                        <span class="realised-projects__corner">
-                            <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
-                                <use xlink:href="#arrow-right-no-circle" />
-                            </svg>
-                        </span>
-                    </a>
-                </li>
-                <li class="realised-projects__list-item" data-category="gov" data-year="2020">
-                    <a href="#text-modal" class="realised-projects__card js-modal-open">
-                        <span class="realised-projects__card-top-row">
-                            <span class="realised-projects__card-label-group">
-                                <span class="realised-projects__card-label">
+                            </span>
+                            <span class="realised-projects__corner">
+                                <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                    <use xlink:href="#arrow-right-no-circle"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="realised-projects__list-item" data-category="gov" data-year="2020">
+                        <a href="#text-modal" class="realised-projects__card js-modal-open">
+                            <span class="realised-projects__card-top-row">
+                                <span class="realised-projects__card-label-group">
+                                    <span class="realised-projects__card-label">
                                     госсектор
                                 </span>
-                                <span class="realised-projects__card-date">
+                                    <span class="realised-projects__card-date">
                                     22.05.2020
                                 </span>
-                            </span>
+                                </span>
 
-                            <img src="img/rostelecom-logo.svg" alt="Логотип аэрофлота" class="realised-projects__company-logo" />
-                        </span>
-                        <span class="realised-projects__content">
-                            <span class="realised-projects__title">
+                                <img src="img/rostelecom-logo.svg" alt="Логотип аэрофлота" class="realised-projects__company-logo"/>
+                            </span>
+                            <span class="realised-projects__content">
+                                <span class="realised-projects__title">
                                 Мобильный оператор Ростелеком
                             </span>
-                            <span class="realised-projects__paragraph">
+                                <span class="realised-projects__paragraph">
                                 Предоставляем комплексные решения в области информационных технологий и услуги по консалтингу, проектированию,
                             </span>
-                        </span>
-                        <span class="realised-projects__corner">
-                            <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
-                                <use xlink:href="#arrow-right-no-circle" />
-                            </svg>
-                        </span>
-                    </a>
-                </li>
-                <li class="realised-projects__list-item" data-category="meds" data-year="2018">
-                    <a href="#text-modal" class="realised-projects__card js-modal-open">
-                        <span class="realised-projects__card-top-row">
-                            <span class="realised-projects__card-label-group">
-                                <span class="realised-projects__card-label">
+                            </span>
+                            <span class="realised-projects__corner">
+                                <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                    <use xlink:href="#arrow-right-no-circle"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="realised-projects__list-item" data-category="meds" data-year="2018">
+                        <a href="#text-modal" class="realised-projects__card js-modal-open">
+                            <span class="realised-projects__card-top-row">
+                                <span class="realised-projects__card-label-group">
+                                    <span class="realised-projects__card-label">
                                     Медицина
                                 </span>
-                                <span class="realised-projects__card-date">
+                                    <span class="realised-projects__card-date">
                                     22.05.2018
                                 </span>
-                            </span>
+                                </span>
 
-                            <img src="img/akbars-bank-logo.svg" alt="Логотип аэрофлота" class="realised-projects__company-logo" />
-                        </span>
-                        <span class="realised-projects__content">
-                            <span class="realised-projects__title">
+                                <img src="img/akbars-bank-logo.svg" alt="Логотип аэрофлота" class="realised-projects__company-logo"/>
+                            </span>
+                            <span class="realised-projects__content">
+                                <span class="realised-projects__title">
                                 Центральный банк Российской Федерации
                             </span>
-                            <span class="realised-projects__paragraph">
+                                <span class="realised-projects__paragraph">
                                 Предоставляем комплексные решения в области информационных технологий и услуги по консалтингу, проектированию,
                             </span>
-                        </span>
-                        <span class="realised-projects__corner">
-                            <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
-                                <use xlink:href="#arrow-right-no-circle" />
-                            </svg>
-                        </span>
-                    </a>
-                </li>
-                <li class="realised-projects__list-item realised-projects__list-item--with-image" data-category="retail" data-year="2020">
-                    <a href="#text-modal" class="realised-projects__card js-modal-open">
-                        <span class="realised-projects__card-top-row">
-                            <span class="realised-projects__card-label-group">
-                                <span class="realised-projects__card-label">
+                            </span>
+                            <span class="realised-projects__corner">
+                                <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                    <use xlink:href="#arrow-right-no-circle"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="realised-projects__list-item realised-projects__list-item--with-image" data-category="retail" data-year="2020">
+                        <a href="#text-modal" class="realised-projects__card js-modal-open">
+                            <span class="realised-projects__card-top-row">
+                                <span class="realised-projects__card-label-group">
+                                    <span class="realised-projects__card-label">
                                     ритейл
                                 </span>
-                                <span class="realised-projects__card-date">
+                                    <span class="realised-projects__card-date">
                                     22.05.2020
                                 </span>
-                            </span>
+                                </span>
 
-                            <img src="img/gazprom-logo.svg" alt="Логотип аэрофлота" class="realised-projects__company-logo" />
-                        </span>
-                        <span class="realised-projects__content">
-                            <span class="realised-projects__title">
+                                <img src="img/gazprom-logo.svg" alt="Логотип аэрофлота" class="realised-projects__company-logo"/>
+                            </span>
+                            <span class="realised-projects__content">
+                                <span class="realised-projects__title">
                                 Центральный банк Российской Федерации
                             </span>
-                            <span class="realised-projects__paragraph">
+                                <span class="realised-projects__paragraph">
                                 Предоставляем комплексные решения в области информационных технологий и услуги по консалтингу, проектированию,
                             </span>
-                        </span>
-                        <span class="realised-projects__corner">
-                            <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
-                                <use xlink:href="#arrow-right-no-circle" />
-                            </svg>
-                        </span>
-                        <span class="realised-projects__bg-image-container">
-                            <img src="img/airport.jpg" alt="Фото аэропорта" class="realised-projects__bg-image" />
-                        </span>
-                    </a>
-                </li>
+                            </span>
+                            <span class="realised-projects__corner">
+                                <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                    <use xlink:href="#arrow-right-no-circle"/>
+                                </svg>
+                            </span>
+                            <span class="realised-projects__bg-image-container">
+                                <img src="img/airport.jpg" alt="Фото аэропорта" class="realised-projects__bg-image"/>
+                            </span>
+                        </a>
+                    </li>
 
-                <li class="realised-projects__list-item" data-category="education" data-year="2020">
-                    <a href="#text-modal" class="realised-projects__card js-modal-open">
-                        <span class="realised-projects__card-top-row">
-                            <span class="realised-projects__card-label-group">
-                                <span class="realised-projects__card-label">
+                    <li class="realised-projects__list-item" data-category="education" data-year="2020">
+                        <a href="#text-modal" class="realised-projects__card js-modal-open">
+                            <span class="realised-projects__card-top-row">
+                                <span class="realised-projects__card-label-group">
+                                    <span class="realised-projects__card-label">
                                     Образование
                                 </span>
-                                <span class="realised-projects__card-date">
+                                    <span class="realised-projects__card-date">
                                     22.05.2020
                                 </span>
-                            </span>
+                                </span>
 
-                            <img src="img/akbars-bank-logo.svg" alt="Логотип аэрофлота" class="realised-projects__company-logo" />
-                        </span>
-                        <span class="realised-projects__content">
-                            <span class="realised-projects__title">
+                                <img src="img/akbars-bank-logo.svg" alt="Логотип аэрофлота" class="realised-projects__company-logo"/>
+                            </span>
+                            <span class="realised-projects__content">
+                                <span class="realised-projects__title">
                                 Центральный банк Российской Федерации
                             </span>
-                            <span class="realised-projects__paragraph">
+                                <span class="realised-projects__paragraph">
                                 Предоставляем комплексные решения в области информационных технологий и услуги по консалтингу, проектированию,
                             </span>
-                        </span>
-                        <span class="realised-projects__corner">
-                            <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
-                                <use xlink:href="#arrow-right-no-circle" />
-                            </svg>
-                        </span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-<section class="tabs-block">
-    <div class="tabs-block__tabs js-tabs">
-        <div class="tabs-block__tabs-navigation js-tabs-navigation">
-            <a href="#" class="tabs-block__tabs-navigation-btn active">
-                <span class="tabs-block__tabs-navigation-btn-text">
-                    Сервис и гарантия
-                </span>
-            </a>
-            <a href="#" class="tabs-block__tabs-navigation-btn">
-                <span class="tabs-block__tabs-navigation-btn-text">Условия использования</span>
-            </a>
-            <a href="#" class="tabs-block__tabs-navigation-btn">
-                <span class="tabs-block__tabs-navigation-btn-text">Сервис и гарантия</span>
-            </a>
-            <a href="#" class="tabs-block__tabs-navigation-btn">
-                <span class="tabs-block__tabs-navigation-btn-text">Условия использования</span>
-            </a>
-            <a href="#" class="tabs-block__tabs-navigation-btn">
-                <span class="tabs-block__tabs-navigation-btn-text">Сервис и гарантия</span>
-            </a>
-        </div>
-
-        <ul class="tabs-block__tabs-list js-tabs-list">
-            <li class="tabs-block__tabs-item">Таб 1</li>
-            <li class="tabs-block__tabs-item">Таб 2</li>
-            <li class="tabs-block__tabs-item">Таб 3</li>
-            <li class="tabs-block__tabs-item">Таб 4</li>
-            <li class="tabs-block__tabs-item">Таб 5</li>
-        </ul>
-    </div>
-</section>
-
-<section class="callback" style="background-image: url('img/icl-bg.jpg');">
-    <div class="callback__row">
-        <div class="callback__left-column">
-            <div class="callback__content default-content">
-                <h3>
-                    Заголовок блока об. связи
-                </h3>
-                <p>
-                    Звоните нашим специалистам 8 800 555-55-55 или задайте свой вопрос через форму.
-                </p>
-                <ul>
-                    <li>Информационные материалы по всей линейке продукции</li>
-                    <li>Демо-комплекты оборудования</li>
-                    <li>Участие специалистов ICL в ваших мероприятиях для заказчиков</li>
+                            </span>
+                            <span class="realised-projects__corner">
+                                <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                    <use xlink:href="#arrow-right-no-circle"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
-        <div class="callback__right-column">
-            <form action="/" method="POST" class="callback__form success" data-parsley-validate>
-                <div class="callback__form-input-group">
-                    <input type="text" class="callback__form-input" name="name" placeholder="Имя и фамилия" required />
+    </section>
+
+    <section class="tabs-block">
+        <div class="tabs-block__tabs js-tabs">
+            <div class="tabs-block__tabs-navigation js-tabs-navigation">
+                <a href="#" class="tabs-block__tabs-navigation-btn active">
+                    <span class="tabs-block__tabs-navigation-btn-text">
+                    Сервис и гарантия
+                </span>
+                </a>
+                <a href="#" class="tabs-block__tabs-navigation-btn">
+                    <span class="tabs-block__tabs-navigation-btn-text">Условия использования</span>
+                </a>
+                <a href="#" class="tabs-block__tabs-navigation-btn">
+                    <span class="tabs-block__tabs-navigation-btn-text">Сервис и гарантия</span>
+                </a>
+                <a href="#" class="tabs-block__tabs-navigation-btn">
+                    <span class="tabs-block__tabs-navigation-btn-text">Условия использования</span>
+                </a>
+                <a href="#" class="tabs-block__tabs-navigation-btn">
+                    <span class="tabs-block__tabs-navigation-btn-text">Сервис и гарантия</span>
+                </a>
+            </div>
+
+            <ul class="tabs-block__tabs-list js-tabs-list">
+                <li class="tabs-block__tabs-item">Таб 1</li>
+                <li class="tabs-block__tabs-item">Таб 2</li>
+                <li class="tabs-block__tabs-item">Таб 3</li>
+                <li class="tabs-block__tabs-item">Таб 4</li>
+                <li class="tabs-block__tabs-item">Таб 5</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="callback" style="background-image: url('img/icl-bg.jpg');">
+        <div class="callback__row">
+            <div class="callback__left-column">
+                <div class="callback__content default-content">
+                    <h3>
+                    Заголовок блока об. связи
+                </h3>
+                    <p>
+                    Звоните нашим специалистам 8 800 555-55-55 или задайте свой вопрос через форму.
+                </p>
+                    <ul>
+                        <li>Информационные материалы по всей линейке продукции</li>
+                        <li>Демо-комплекты оборудования</li>
+                        <li>Участие специалистов ICL в ваших мероприятиях для заказчиков</li>
+                    </ul>
                 </div>
-                <div class="callback__form-input-group">
-                    <input type="email" class="callback__form-input" name="email" placeholder="Электронная почта" required />
-                </div>
-                <div class="callback__form-input-group">
-                    <textarea class="callback__form-textarea" name="comment" placeholder="Комментарий" required></textarea>
-                </div>
-                <label class="application-modal__checkbox">
-                    <input type="checkbox" name="processing" required="" data-parsley-multiple="processing" />
-                    <span class="application-modal__checkbox-icon"></span>
-                    <span class="application-modal__checkbox-text-block">
-                        <span class="application-modal__checkbox-action-text">
+            </div>
+            <div class="callback__right-column">
+                <form action="/" method="POST" class="callback__form success" data-parsley-validate>
+                    <div class="callback__form-input-group">
+                        <input type="text" class="callback__form-input" name="name" placeholder="Имя и фамилия" required/>
+                    </div>
+                    <div class="callback__form-input-group">
+                        <input type="email" class="callback__form-input" name="email" placeholder="Электронная почта" required/>
+                    </div>
+                    <div class="callback__form-input-group">
+                        <textarea class="callback__form-textarea" name="comment" placeholder="Комментарий" required></textarea>
+                    </div>
+                    <label class="application-modal__checkbox">
+                        <input type="checkbox" name="processing" required="" data-parsley-multiple="processing"/>
+                        <span class="application-modal__checkbox-icon"></span>
+                        <span class="application-modal__checkbox-text-block">
+                            <span class="application-modal__checkbox-action-text">
                             Я даю согласие на
                             <a href="#">обработку своих персональных данных</a>
-                        </span>
-                        <span class="application-modal__checkbox-law-name">
+                            </span>
+                            <span class="application-modal__checkbox-law-name">
                             В соответствии со статьей 9 Федерального закона от 27 июля 2006 г. N 152-ФЗ «О персональных данных»
                         </span>
-                    </span>
-                </label>
-                <button type="submit" class="btn-with-corners application-modal__submit">
-                    <svg width="28" height="20" aria-hidden="true" class="icon-checked">
-                        <use xlink:href="#checked"></use>
-                    </svg>
+                        </span>
+                    </label>
+                    <button type="submit" class="btn-with-corners application-modal__submit">
+                        <svg width="28" height="20" aria-hidden="true" class="icon-checked">
+                            <use xlink:href="#checked"></use>
+                        </svg>
                     Отправлено
                 </button>
-            </form>
+                </form>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="documents">
-    <h2 class="documents__heading">
+    <section class="documents">
+        <h2 class="documents__heading">
         Заголовок блока с документами
     </h2>
-    <h3 class="documents__subheading">
+        <h3 class="documents__subheading">
         Подзаголовок группы документов
     </h3>
 
-    <div class="documents__slider js-documents-slider">
-        <ul class="documents__list">
-            <li class="documents__list-item">
-                <a href="#" class="documents__card">
-                    <img src="img/documents/document-1.jpg" alt="Изображение документа" class="documents__image" />
-                    <span class="documents__card-title">
-                        <span class="documents__card-title-text">
+        <div class="documents__slider js-documents-slider">
+            <ul class="documents__list">
+                <li class="documents__list-item">
+                    <a href="#" class="documents__card">
+                        <img src="img/documents/document-1.jpg" alt="Изображение документа" class="documents__image"/>
+                        <span class="documents__card-title">
+                            <span class="documents__card-title-text">
                             Сертификат соответсвия №2: НИП ФСБ 0000034115
                         </span>
-                    </span>
-                    <span class="documents__card-size">
+                        </span>
+                        <span class="documents__card-size">
                         PDF 345 КБ
                     </span>
-                </a>
-            </li>
+                    </a>
+                </li>
 
-            <li class="documents__list-item">
-                <a href="#" class="documents__card documents__card--instruction">
-                    <img src="img/documents/document-2.jpg" alt="Изображение документа" class="documents__image" />
-                    <span class="documents__card-title">
-                        <span class="documents__card-title-text">Инструкция по использованию сервера</span>
-                    </span>
-                    <span class="documents__card-size">
-                        PDF 345 КБ
-                    </span>
-                </a>
-            </li>
-            <li class="documents__list-item">
-                <a href="#" class="documents__card">
-                    <img src="img/documents/document-1.jpg" alt="Изображение документа" class="documents__image" />
-                    <span class="documents__card-title">
-                        <span class="documents__card-title-text">
-                            Сертификат соответсвия №2: НИП ФСБ 0000034115
+                <li class="documents__list-item">
+                    <a href="#" class="documents__card documents__card--instruction">
+                        <img src="img/documents/document-2.jpg" alt="Изображение документа" class="documents__image"/>
+                        <span class="documents__card-title">
+                            <span class="documents__card-title-text">Инструкция по использованию сервера</span>
                         </span>
-                    </span>
-                    <span class="documents__card-size">
+                        <span class="documents__card-size">
                         PDF 345 КБ
                     </span>
-                </a>
-            </li>
-            <li class="documents__list-item">
-                <a href="#" class="documents__card">
-                    <img src="img/documents/document-1.jpg" alt="Изображение документа" class="documents__image" />
-                    <span class="documents__card-title">
-                        <span class="documents__card-title-text">
-                            Сертификат соответсвия №2: НИП ФСБ 0000034115
-                        </span>
-                    </span>
-                    <span class="documents__card-size">
-                        PDF 345 КБ
-                    </span>
-                </a>
-            </li>
-            <li class="documents__list-item">
-                <a href="#" class="documents__card">
-                    <img src="img/documents/document-1.jpg" alt="Изображение документа" class="documents__image" />
-                    <span class="documents__card-title">
-                        <span class="documents__card-title-text">
-                            Сертификат соответсвия №2: НИП ФСБ 0000034115
-                        </span>
-                    </span>
-                    <span class="documents__card-size">
-                        PDF 345 КБ
-                    </span>
-                </a>
-            </li>
-            <li class="documents__list-item">
-                <a href="#" class="documents__card">
-                    <img src="img/documents/document-1.jpg" alt="Изображение документа" class="documents__image" />
-                    <span class="documents__card-title">
-                        <span class="documents__card-title-text">
-                            Сертификат соответсвия №2: НИП ФСБ 0000034115
-                        </span>
-                    </span>
-                    <span class="documents__card-size">
-                        PDF 345 КБ
-                    </span>
-                </a>
-            </li>
-            <li class="documents__list-item">
-                <a href="#" class="documents__card">
-                    <img src="img/documents/document-1.jpg" alt="Изображение документа" class="documents__image" />
-                    <span class="documents__card-title">
-                        <span class="documents__card-title-text">
-                            Сертификат соответсвия №2: НИП ФСБ 0000034115
-                        </span>
-                    </span>
-                    <span class="documents__card-size">
-                        PDF 345 КБ
-                    </span>
-                </a>
-            </li>
-        </ul>
-    </div>
-</section>
-
-<section class="faq">
-    <h2 class="faq__heading">
-        Заголовок блока с вопросами-ответами
-    </h2>
-    <div class="faq__row js-tabs">
-        <div class="faq__left-column">
-            <div class="faq__tabs-navigation js-tabs-navigation">
-                <a href="#" class="faq__navigation-btn active">
-                    <span class="faq__navigation-btn-text">
-                        Сервис и гарантия
-                    </span>
-                </a>
-                <a href="#" class="faq__navigation-btn">
-                    <span class="faq__navigation-btn-text">Условия использования</span>
-                </a>
-                <a href="#" class="faq__navigation-btn">
-                    <span class="faq__navigation-btn-text">Сервис и гарантия</span>
-                </a>
-                <a href="#" class="faq__navigation-btn">
-                    <span class="faq__navigation-btn-text">Условия использования</span>
-                </a>
-                <a href="#" class="faq__navigation-btn">
-                    <span class="faq__navigation-btn-text">Сервис и гарантия</span>
-                </a>
-            </div>
-        </div>
-        <div class="faq__right-column">
-            <ul class="faq__tabs-list js-tabs-list">
-                <li class="faq__tabs-item">
-                    <ul class="faq__accordeons-list">
-                        <li class="faq__accordeons-list-item js-accordeon">
-                            <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
-                                <span class="faq__accordeons-toggle-text">
-                                    Компания представляет собой объединение предприятий, способных выполнить все этапы реализации проекта.
-                                </span>
-                                <svg width="25" height="25" aria-hidden="true" class="icon-cross">
-                                    <use xlink:href="#cross" />
-                                </svg>
-                            </a>
-                            <div class="faq__accordeons-content js-accordeon-content">
-                                <p>
-                                    С 2006 года группа компаний ICL уверенно входит в пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
-                                </p>
-                                <p>
-                                    Пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="faq__accordeons-list-item js-accordeon">
-                            <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
-                                <span class="faq__accordeons-toggle-text">
-                                    Компания представляет собой объединение предприятий, способных выполнить все этапы реализации проекта.
-                                </span>
-                                <svg width="25" height="25" aria-hidden="true" class="icon-cross">
-                                    <use xlink:href="#cross" />
-                                </svg>
-                            </a>
-                            <div class="faq__accordeons-content js-accordeon-content">
-                                <p>
-                                    С 2006 года группа компаний ICL уверенно входит в пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
-                                </p>
-                                <p>
-                                    Пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="faq__accordeons-list-item js-accordeon">
-                            <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
-                                <span class="faq__accordeons-toggle-text">
-                                    Компания представляет собой объединение предприятий, способных выполнить все этапы реализации проекта.
-                                </span>
-                                <svg width="25" height="25" aria-hidden="true" class="icon-cross">
-                                    <use xlink:href="#cross" />
-                                </svg>
-                            </a>
-                            <div class="faq__accordeons-content js-accordeon-content">
-                                <p>
-                                    С 2006 года группа компаний ICL уверенно входит в пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
-                                </p>
-                                <p>
-                                    Пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
+                    </a>
                 </li>
-                <li class="faq__tabs-item">
-                    <ul class="faq__accordeons-list">
-                        <li class="faq__accordeons-list-item js-accordeon">
-                            <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
-                                <span class="faq__accordeons-toggle-text">
-                                    Компания представляет собой объединение предприятий, способных выполнить все этапы реализации проекта.
-                                </span>
-                                <svg width="25" height="25" aria-hidden="true" class="icon-cross">
-                                    <use xlink:href="#cross" />
-                                </svg>
-                            </a>
-                            <div class="faq__accordeons-content js-accordeon-content">
-                                <p>
-                                    С 2006 года группа компаний ICL уверенно входит в пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
-                                </p>
-                                <p>
-                                    Пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="faq__accordeons-list-item js-accordeon">
-                            <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
-                                <span class="faq__accordeons-toggle-text">
-                                    Компания представляет собой объединение предприятий, способных выполнить все этапы реализации проекта.
-                                </span>
-                                <svg width="25" height="25" aria-hidden="true" class="icon-cross">
-                                    <use xlink:href="#cross" />
-                                </svg>
-                            </a>
-                            <div class="faq__accordeons-content js-accordeon-content">
-                                <p>
-                                    С 2006 года группа компаний ICL уверенно входит в пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
-                                </p>
-                                <p>
-                                    Пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
+                <li class="documents__list-item">
+                    <a href="#" class="documents__card">
+                        <img src="img/documents/document-1.jpg" alt="Изображение документа" class="documents__image"/>
+                        <span class="documents__card-title">
+                            <span class="documents__card-title-text">
+                            Сертификат соответсвия №2: НИП ФСБ 0000034115
+                        </span>
+                        </span>
+                        <span class="documents__card-size">
+                        PDF 345 КБ
+                    </span>
+                    </a>
                 </li>
-                <li class="faq__tabs-item">
-                    <ul class="faq__accordeons-list">
-                        <li class="faq__accordeons-list-item js-accordeon">
-                            <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
-                                <span class="faq__accordeons-toggle-text">
-                                    Компания представляет собой объединение предприятий, способных выполнить все этапы реализации проекта.
-                                </span>
-                                <svg width="25" height="25" aria-hidden="true" class="icon-cross">
-                                    <use xlink:href="#cross" />
-                                </svg>
-                            </a>
-                            <div class="faq__accordeons-content js-accordeon-content">
-                                <p>
-                                    С 2006 года группа компаний ICL уверенно входит в пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
-                                </p>
-                                <p>
-                                    Пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
+                <li class="documents__list-item">
+                    <a href="#" class="documents__card">
+                        <img src="img/documents/document-1.jpg" alt="Изображение документа" class="documents__image"/>
+                        <span class="documents__card-title">
+                            <span class="documents__card-title-text">
+                            Сертификат соответсвия №2: НИП ФСБ 0000034115
+                        </span>
+                        </span>
+                        <span class="documents__card-size">
+                        PDF 345 КБ
+                    </span>
+                    </a>
                 </li>
-                <li class="faq__tabs-item">
-                    <ul class="faq__accordeons-list">
-                        <li class="faq__accordeons-list-item js-accordeon">
-                            <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
-                                <span class="faq__accordeons-toggle-text">
-                                    Компания представляет собой объединение предприятий, способных выполнить все этапы реализации проекта.
-                                </span>
-                                <svg width="25" height="25" aria-hidden="true" class="icon-cross">
-                                    <use xlink:href="#cross" />
-                                </svg>
-                            </a>
-                            <div class="faq__accordeons-content js-accordeon-content">
-                                <p>
-                                    С 2006 года группа компаний ICL уверенно входит в пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
-                                </p>
-                                <p>
-                                    Пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
+                <li class="documents__list-item">
+                    <a href="#" class="documents__card">
+                        <img src="img/documents/document-1.jpg" alt="Изображение документа" class="documents__image"/>
+                        <span class="documents__card-title">
+                            <span class="documents__card-title-text">
+                            Сертификат соответсвия №2: НИП ФСБ 0000034115
+                        </span>
+                        </span>
+                        <span class="documents__card-size">
+                        PDF 345 КБ
+                    </span>
+                    </a>
                 </li>
-                <li class="faq__tabs-item">
-                    <ul class="faq__accordeons-list">
-                        <li class="faq__accordeons-list-item js-accordeon">
-                            <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
-                                <span class="faq__accordeons-toggle-text">
-                                    Компания представляет собой объединение предприятий, способных выполнить все этапы реализации проекта.
-                                </span>
-                                <svg width="25" height="25" aria-hidden="true" class="icon-cross">
-                                    <use xlink:href="#cross" />
-                                </svg>
-                            </a>
-                            <div class="faq__accordeons-content js-accordeon-content">
-                                <p>
-                                    С 2006 года группа компаний ICL уверенно входит в пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
-                                </p>
-                                <p>
-                                    Пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
+                <li class="documents__list-item">
+                    <a href="#" class="documents__card">
+                        <img src="img/documents/document-1.jpg" alt="Изображение документа" class="documents__image"/>
+                        <span class="documents__card-title">
+                            <span class="documents__card-title-text">
+                            Сертификат соответсвия №2: НИП ФСБ 0000034115
+                        </span>
+                        </span>
+                        <span class="documents__card-size">
+                        PDF 345 КБ
+                    </span>
+                    </a>
+                </li>
+                <li class="documents__list-item">
+                    <a href="#" class="documents__card">
+                        <img src="img/documents/document-1.jpg" alt="Изображение документа" class="documents__image"/>
+                        <span class="documents__card-title">
+                            <span class="documents__card-title-text">
+                            Сертификат соответсвия №2: НИП ФСБ 0000034115
+                        </span>
+                        </span>
+                        <span class="documents__card-size">
+                        PDF 345 КБ
+                    </span>
+                    </a>
                 </li>
             </ul>
         </div>
-    </div>
-</section>
-<section class="our-history js-our-history">
-    <span class="section-header our-history__section-header">
+    </section>
+
+    <section class="faq">
+        <h2 class="faq__heading">
+        Заголовок блока с вопросами-ответами
+    </h2>
+        <div class="faq__row js-tabs">
+            <div class="faq__left-column">
+                <div class="faq__tabs-navigation js-tabs-navigation">
+                    <a href="#" class="faq__navigation-btn active">
+                        <span class="faq__navigation-btn-text">
+                        Сервис и гарантия
+                    </span>
+                    </a>
+                    <a href="#" class="faq__navigation-btn">
+                        <span class="faq__navigation-btn-text">Условия использования</span>
+                    </a>
+                    <a href="#" class="faq__navigation-btn">
+                        <span class="faq__navigation-btn-text">Сервис и гарантия</span>
+                    </a>
+                    <a href="#" class="faq__navigation-btn">
+                        <span class="faq__navigation-btn-text">Условия использования</span>
+                    </a>
+                    <a href="#" class="faq__navigation-btn">
+                        <span class="faq__navigation-btn-text">Сервис и гарантия</span>
+                    </a>
+                </div>
+            </div>
+            <div class="faq__right-column">
+                <ul class="faq__tabs-list js-tabs-list">
+                    <li class="faq__tabs-item">
+                        <ul class="faq__accordeons-list">
+                            <li class="faq__accordeons-list-item js-accordeon">
+                                <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
+                                    <span class="faq__accordeons-toggle-text">
+                                    Компания представляет собой объединение предприятий, способных выполнить все этапы реализации проекта.
+                                </span>
+                                    <svg width="25" height="25" aria-hidden="true" class="icon-cross">
+                                        <use xlink:href="#cross"/>
+                                    </svg>
+                                </a>
+                                <div class="faq__accordeons-content js-accordeon-content">
+                                    <p>
+                                    С 2006 года группа компаний ICL уверенно входит в пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
+                                </p>
+                                    <p>
+                                    Пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
+                                </p>
+                                </div>
+                            </li>
+                            <li class="faq__accordeons-list-item js-accordeon">
+                                <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
+                                    <span class="faq__accordeons-toggle-text">
+                                    Компания представляет собой объединение предприятий, способных выполнить все этапы реализации проекта.
+                                </span>
+                                    <svg width="25" height="25" aria-hidden="true" class="icon-cross">
+                                        <use xlink:href="#cross"/>
+                                    </svg>
+                                </a>
+                                <div class="faq__accordeons-content js-accordeon-content">
+                                    <p>
+                                    С 2006 года группа компаний ICL уверенно входит в пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
+                                </p>
+                                    <p>
+                                    Пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
+                                </p>
+                                </div>
+                            </li>
+                            <li class="faq__accordeons-list-item js-accordeon">
+                                <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
+                                    <span class="faq__accordeons-toggle-text">
+                                    Компания представляет собой объединение предприятий, способных выполнить все этапы реализации проекта.
+                                </span>
+                                    <svg width="25" height="25" aria-hidden="true" class="icon-cross">
+                                        <use xlink:href="#cross"/>
+                                    </svg>
+                                </a>
+                                <div class="faq__accordeons-content js-accordeon-content">
+                                    <p>
+                                    С 2006 года группа компаний ICL уверенно входит в пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
+                                </p>
+                                    <p>
+                                    Пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
+                                </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="faq__tabs-item">
+                        <ul class="faq__accordeons-list">
+                            <li class="faq__accordeons-list-item js-accordeon">
+                                <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
+                                    <span class="faq__accordeons-toggle-text">
+                                    Компания представляет собой объединение предприятий, способных выполнить все этапы реализации проекта.
+                                </span>
+                                    <svg width="25" height="25" aria-hidden="true" class="icon-cross">
+                                        <use xlink:href="#cross"/>
+                                    </svg>
+                                </a>
+                                <div class="faq__accordeons-content js-accordeon-content">
+                                    <p>
+                                    С 2006 года группа компаний ICL уверенно входит в пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
+                                </p>
+                                    <p>
+                                    Пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
+                                </p>
+                                </div>
+                            </li>
+                            <li class="faq__accordeons-list-item js-accordeon">
+                                <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
+                                    <span class="faq__accordeons-toggle-text">
+                                    Компания представляет собой объединение предприятий, способных выполнить все этапы реализации проекта.
+                                </span>
+                                    <svg width="25" height="25" aria-hidden="true" class="icon-cross">
+                                        <use xlink:href="#cross"/>
+                                    </svg>
+                                </a>
+                                <div class="faq__accordeons-content js-accordeon-content">
+                                    <p>
+                                    С 2006 года группа компаний ICL уверенно входит в пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
+                                </p>
+                                    <p>
+                                    Пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
+                                </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="faq__tabs-item">
+                        <ul class="faq__accordeons-list">
+                            <li class="faq__accordeons-list-item js-accordeon">
+                                <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
+                                    <span class="faq__accordeons-toggle-text">
+                                    Компания представляет собой объединение предприятий, способных выполнить все этапы реализации проекта.
+                                </span>
+                                    <svg width="25" height="25" aria-hidden="true" class="icon-cross">
+                                        <use xlink:href="#cross"/>
+                                    </svg>
+                                </a>
+                                <div class="faq__accordeons-content js-accordeon-content">
+                                    <p>
+                                    С 2006 года группа компаний ICL уверенно входит в пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
+                                </p>
+                                    <p>
+                                    Пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
+                                </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="faq__tabs-item">
+                        <ul class="faq__accordeons-list">
+                            <li class="faq__accordeons-list-item js-accordeon">
+                                <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
+                                    <span class="faq__accordeons-toggle-text">
+                                    Компания представляет собой объединение предприятий, способных выполнить все этапы реализации проекта.
+                                </span>
+                                    <svg width="25" height="25" aria-hidden="true" class="icon-cross">
+                                        <use xlink:href="#cross"/>
+                                    </svg>
+                                </a>
+                                <div class="faq__accordeons-content js-accordeon-content">
+                                    <p>
+                                    С 2006 года группа компаний ICL уверенно входит в пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
+                                </p>
+                                    <p>
+                                    Пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
+                                </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="faq__tabs-item">
+                        <ul class="faq__accordeons-list">
+                            <li class="faq__accordeons-list-item js-accordeon">
+                                <a href="#" class="faq__accordeons-toggle js-accordeon-btn">
+                                    <span class="faq__accordeons-toggle-text">
+                                    Компания представляет собой объединение предприятий, способных выполнить все этапы реализации проекта.
+                                </span>
+                                    <svg width="25" height="25" aria-hidden="true" class="icon-cross">
+                                        <use xlink:href="#cross"/>
+                                    </svg>
+                                </a>
+                                <div class="faq__accordeons-content js-accordeon-content">
+                                    <p>
+                                    С 2006 года группа компаний ICL уверенно входит в пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
+                                </p>
+                                    <p>
+                                    Пятерку лидеров по производству компьютерного оборудования в России, и мы постоянно стремимся укреплять свои позиции и совершенствовать наши продукты.
+                                </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="our-history js-our-history">
+        <span class="section-header our-history__section-header">
         Наша история
     </span>
-    <h2 class="our-history__heading">
+        <h2 class="our-history__heading">
         История компании
     </h2>
-    <div class="our-history__range-slider js-our-history-range-slider">
-        <div class="swiper-container">
-            <div class="swiper-wrapper"></div>
+        <div class="our-history__range-slider js-our-history-range-slider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper"></div>
+            </div>
         </div>
-    </div>
-    <div class="our-history__info-slider js-our-history-info-slider">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="our-history__info-card">
-                        <div class="our-history__info-card-left-column">
-                            <h4>
+        <div class="our-history__info-slider js-our-history-info-slider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="our-history__info-card">
+                            <div class="our-history__info-card-left-column">
+                                <h4>
                                 Основание компании ICL Техно
                             </h4>
-                            <p>
+                                <p>
                                 ICL − российский производитель компьютерной техники, предоставляющий комплексные решения в области информационных технологий и услуги по консалтингу,
                             </p>
-                            <p>
+                                <p>
                                 Проектированию, внедрению, гарантийному и сервисному обслуживанию информационных систем любого масштаба.
                             </p>
+                            </div>
+                            <div class="our-history__info-card-right-column">
+                                <div class="our-history__image-container">
+                                    <img src="img/our-history/our-history-slide.jpg" alt="Картинка слайда История компании"/>
+                                </div>
+
+                            </div>
                         </div>
-                        <div class="our-history__info-card-right-column">
-                            <img src="img/our-history/our-history-slide.jpg" alt="Картинка слайда История компании" />
-                        </div>
-                    </div>
-                    <div class="our-history__hidden-thumb-container">
-                        <div class="our-history__range-slider-block">
-                            <span class="our-history__year">
+                        <div class="our-history__hidden-thumb-container">
+                            <div class="our-history__range-slider-block">
+                                <span class="our-history__year">
                                 1991
                             </span>
-                            <span class="our-history__year">
+                                <span class="our-history__year">
                                 1992
                             </span>
-                            <span class="our-history__year">
+                                <span class="our-history__year">
                                 1993
                             </span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="our-history__info-card">
-                        <div class="our-history__info-card-left-column">
-                            <h4>
+                    <div class="swiper-slide">
+                        <div class="our-history__info-card">
+                            <div class="our-history__info-card-left-column">
+                                <h4>
                                 Основание компании ICL Техно
                             </h4>
-                            <p>
+                                <p>
                                 ICL − российский производитель компьютерной техники, предоставляющий комплексные решения в области информационных технологий и услуги по консалтингу,
                             </p>
-                            <p>
+                                <p>
                                 Проектированию, внедрению, гарантийному и сервисному обслуживанию информационных систем любого масштаба.
                             </p>
+                            </div>
+                            <div class="our-history__info-card-right-column">
+                                <div class="our-history__image-container">
+
+                                    <img src="img/gallery-slider/annie-spratt-QckxruozjRg-unsplash.jpg" alt="Картинка слайда История компании"/>
+
+                                </div>
+                            </div>
                         </div>
-                        <div class="our-history__info-card-right-column">
-                            <img src="img/gallery-slider/annie-spratt-QckxruozjRg-unsplash.jpg" alt="Картинка слайда История компании" />
-                        </div>
-                    </div>
-                    <div class="our-history__hidden-thumb-container">
-                        <div class="our-history__range-slider-block">
-                            <span class="our-history__year">
+                        <div class="our-history__hidden-thumb-container">
+                            <div class="our-history__range-slider-block">
+                                <span class="our-history__year">
                                 1994
                             </span>
-                            <span class="our-history__year">
+                                <span class="our-history__year">
                                 1995
                             </span>
-                            <span class="our-history__year">
+                                <span class="our-history__year">
                                 1996
                             </span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="our-history__info-card">
-                        <div class="our-history__info-card-left-column">
-                            <h4>
+                    <div class="swiper-slide">
+                        <div class="our-history__info-card">
+                            <div class="our-history__info-card-left-column">
+                                <h4>
                                 Основание компании ICL Техно
                             </h4>
-                            <p>
+                                <p>
                                 ICL − российский производитель компьютерной техники, предоставляющий комплексные решения в области информационных технологий и услуги по консалтингу,
                             </p>
-                            <p>
+                                <p>
                                 Проектированию, внедрению, гарантийному и сервисному обслуживанию информационных систем любого масштаба.
                             </p>
-                            <p>
+                                <p>
                                 ICL − российский производитель компьютерной техники, предоставляющий комплексные решения в области информационных технологий и услуги по консалтингу,
                             </p>
-                            <p>
+                                <p>
                                 Проектированию, внедрению, гарантийному и сервисному обслуживанию информационных систем любого масштаба.
                             </p>
+                            </div>
+                            <div class="our-history__info-card-right-column">
+
+                                <div class="our-history__image-container">
+                                    <img src="img/article/Slider.jpg" alt="Картинка слайда История компании"/>
+                                </div>
+
+                            </div>
                         </div>
-                        <div class="our-history__info-card-right-column">
-                            <img src="img/article/Slider.jpg" alt="Картинка слайда История компании" />
-                        </div>
-                    </div>
-                    <div class="our-history__hidden-thumb-container">
-                        <div class="our-history__range-slider-block">
-                            <span class="our-history__year">
+                        <div class="our-history__hidden-thumb-container">
+                            <div class="our-history__range-slider-block">
+                                <span class="our-history__year">
                                 1997
                             </span>
-                            <span class="our-history__year">
+                                <span class="our-history__year">
                                 1998
                             </span>
-                            <span class="our-history__year">
+                                <span class="our-history__year">
                                 1999
                             </span>
-                            <span class="our-history__year">
+                                <span class="our-history__year">
                                 2000
                             </span>
-                            <span class="our-history__year">
+                                <span class="our-history__year">
                                 2001
                             </span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="our-history__info-card">
-                        <div class="our-history__info-card-left-column">
-                            <h4>
+                    <div class="swiper-slide">
+                        <div class="our-history__info-card">
+                            <div class="our-history__info-card-left-column">
+                                <h4>
                                 Основание компании ICL Техно
                             </h4>
-                            <p>
+                                <p>
                                 ICL − российский производитель компьютерной техники, предоставляющий комплексные решения в области информационных технологий и услуги по консалтингу,
                             </p>
-                            <p>
+                                <p>
                                 Проектированию, внедрению, гарантийному и сервисному обслуживанию информационных систем любого масштаба.
                             </p>
-                            <p>
+                                <p>
                                 ICL − российский производитель компьютерной техники, предоставляющий комплексные решения в области информационных технологий и услуги по консалтингу,
                             </p>
-                            <p>
+                                <p>
                                 Проектированию, внедрению, гарантийному и сервисному обслуживанию информационных систем любого масштаба.
                             </p>
+                            </div>
+                            <div class="our-history__info-card-right-column">
+                                <div class="our-history__image-container">
+                                    <img src="img/article/Slider.jpg" alt="Картинка слайда История компании"/>
+                                </div>
+                            </div>
                         </div>
-                        <div class="our-history__info-card-right-column">
-                            <img src="img/article/Slider.jpg" alt="Картинка слайда История компании" />
-                        </div>
-                    </div>
-                    <div class="our-history__hidden-thumb-container">
-                        <div class="our-history__range-slider-block">
-                            <span class="our-history__year">
+                        <div class="our-history__hidden-thumb-container">
+                            <div class="our-history__range-slider-block">
+                                <span class="our-history__year">
                                 2002
                             </span>
-                            <span class="our-history__year">
+                                <span class="our-history__year">
                                 2003
                             </span>
-                            <span class="our-history__year">
+                                <span class="our-history__year">
                                 2004
                             </span>
-                            <span class="our-history__year">
+                                <span class="our-history__year">
                                 2005
                             </span>
-                            <span class="our-history__year">
+                                <span class="our-history__year">
                                 2006
                             </span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="our-history__slider-controls">
+                <a href="#" class="our-history__slider-arrow js-history-slider-prev">
+                    <svg width="45" height="45" aria-hidden="true" class="icon-arrow-left">
+                        <use xlink:href="#arrow-left"></use>
+                    </svg>
+                </a>
+                <a href="#" class="our-history__slider-arrow js-history-slider-next">
+                    <svg width="45" height="45" aria-hidden="true" class="icon-arrow-right">
+                        <use xlink:href="#arrow-right"></use>
+                    </svg>
+                </a>
+            </div>
         </div>
-        <div class="our-history__slider-controls">
-            <a href="#" class="our-history__slider-arrow js-history-slider-prev">
-                <svg width="45" height="45" aria-hidden="true" class="icon-arrow-left">
-                    <use xlink:href="#arrow-left"></use>
-                </svg>
-            </a>
-            <a href="#" class="our-history__slider-arrow js-history-slider-next">
-                <svg width="45" height="45" aria-hidden="true" class="icon-arrow-right">
-                    <use xlink:href="#arrow-right"></use>
-                </svg>
-            </a>
-        </div>
-    </div>
-</section>
-<section class="serial js-serial">
-    <h3 class="serial__heading">
+    </section>
+    <section class="serial js-serial">
+        <h3 class="serial__heading">
         Скачать драйверы по серийному номеру
     </h3>
-    <div class="serial__row">
-        <div class="serial__left-column">
-            <p class="serial__instruction-text">
+        <div class="serial__row">
+            <div class="serial__left-column">
+                <p class="serial__instruction-text">
                 Для того, чтобы скачать драйвер необходимо указать серийный номер
             </p>
-        </div>
-        <div class="serial__right-column">
-            <p class="serial__instruction-text">
+            </div>
+            <div class="serial__right-column">
+                <p class="serial__instruction-text">
                 Серийный номер можно найти на шильдике на корпусе сервера
             </p>
+            </div>
         </div>
-    </div>
-    <div class="serial__row">
-        <div class="serial__left-column">
-            <form action="/" method="GET" class="serial__form js-driver-search-form">
-                <label for="serial" class="serial__form-label">Введите серийный номер</label>
-                <input type="text" name="serial" class="serial__form-input js-serial-masking" id="serial" />
-                <button type="submit" class="btn-with-corners serial__form-submit">
+        <div class="serial__row">
+            <div class="serial__left-column">
+                <form action="/" method="GET" class="serial__form js-driver-search-form">
+                    <label for="serial" class="serial__form-label">Введите серийный номер</label>
+                    <input type="text" name="serial" class="serial__form-input js-serial-masking" id="serial"/>
+                    <button type="submit" class="btn-with-corners serial__form-submit">
                     Искать
                 </button>
-            </form>
+                </form>
+            </div>
+            <div class="serial__right-column serial__right-column--image-column">
+                <img src="img/serial/serial.jpg" alt="Картинка с инструкцией" class="serial__instruction-image"/>
+            </div>
         </div>
-        <div class="serial__right-column serial__right-column--image-column">
-            <img src="img/serial/serial.jpg" alt="Картинка с инструкцией" class="serial__instruction-image" />
-        </div>
-    </div>
-    <div class="serial__search-results js-driver-search-results">
-        <div class="serial__search-results-animation-wrapper">
-            <!-- <table>
+        <div class="serial__search-results js-driver-search-results">
+            <div class="serial__search-results-animation-wrapper">
+                <!-- <table>
                 <thead>
                     <tr>
                         <th>Название</th>
@@ -974,8 +990,8 @@
                     </tr>
                 </tbody>
             </table> -->
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
 {% endblock %}

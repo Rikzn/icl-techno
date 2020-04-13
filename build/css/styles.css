@@ -7714,7 +7714,7 @@ a.section-header:link, a.section-header:visited {
     font-size: 32px;
     line-height: 1.4;
     font-weight: 400;
-    margin-top: -.2em; }
+    margin-top: -0.2em; }
     @media only screen and (max-width: 768px) {
       .our-history__info-card-left-column > h1,
       .our-history__info-card-left-column > h2,
@@ -7744,10 +7744,26 @@ a.section-header:link, a.section-header:visited {
     .our-history__info-card-right-column {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 25px), calc(100% - 25px) 100%, 0 100%);
               clip-path: polygon(0 0, 100% 0, 100% calc(100% - 25px), calc(100% - 25px) 100%, 0 100%); } }
-  .our-history__info-card-right-column img {
+
+.our-history__image-container {
+  position: relative;
+  display: block; }
+  .our-history__image-container img {
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 100%;
-    height: auto;
-    display: block; }
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    font-family: 'object-fit: cover; object-position: center;'; }
+  .our-history__image-container::after {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-bottom: 56.25%; }
 
 .our-history__slider-controls {
   position: absolute;

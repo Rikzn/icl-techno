@@ -4,9 +4,7 @@
         box-sizing: border-box;
     }
 
-
     @include section();
-
 }
 
 .our-history__section-header {
@@ -62,7 +60,7 @@
         font-size: 32px;
         line-height: 1.4;
         font-weight: 400;
-        margin-top: -.2em;
+        margin-top: -0.2em;
         @include breakpoint(mobile) {
             font-size: 24px;
         }
@@ -80,19 +78,34 @@
 
 .our-history__info-card-right-column {
     width: 49%;
-    clip-path: polygon(0 0,100% 0,100% calc(100% - 50px),calc(100% - 50px) 100%,0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 50px), calc(100% - 50px) 100%, 0 100%);
     align-self: flex-start;
     @include breakpoint(small-tablet) {
         width: 100%;
         order: -1;
     }
     @include breakpoint(small-mobile) {
-        clip-path: polygon(0 0,100% 0,100% calc(100% - 25px),calc(100% - 25px) 100%,0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 25px), calc(100% - 25px) 100%, 0 100%);
     }
+}
+
+.our-history__image-container {
+    position: relative;
+    display: block;
+
     img {
+        position: absolute;
+        left: 0;
+        top: 0;
         width: 100%;
-        height: auto;
+        height: 100%;
+        @include objectFitCover();
+    }
+    &::after {
+        content: '';
         display: block;
+        width: 100%;
+        padding-bottom: 56.25%;
     }
 }
 
@@ -216,8 +229,6 @@
         margin-right: 0;
     }
 }
-
-
 
 .our-history__hidden-thumb-container {
     @include visuallyHidden();
