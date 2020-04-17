@@ -130,8 +130,7 @@
         color: black;
     }
 
-    .no-touch &:hover,
-    .touch &:active {
+    &:hover {
         .equipment__tab-button-text {
             &::before {
                 transform: translateZ(0) scale(1);
@@ -152,6 +151,17 @@
         .equipment__tab-button-text {
             &::before {
                 transform: translateZ(0) scale(1);
+            }
+
+            
+        }
+
+        @include breakpoint(small-tablet) {
+            .equipment__tab-all-link {
+                transition: all .3s;
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
             }
         }
     }
