@@ -69,7 +69,7 @@ export default function() {
         }
         navBtns.forEach(btn => {
             btn.addEventListener('click', event => {
-                event.preventDefault();
+                
                 const category = btn.getAttribute('data-category');
                 if (!category) return;
                 setActiveBtn(category);
