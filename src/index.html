@@ -1,148 +1,146 @@
-{% set title = "Главная страница" %}
-{% extends "layout.html" %}
-{% block content %}
-    <section class="intro-slider js-intro-slider">
-        <style>
-            .intro-slider:not(.initialized) {
-                .intro-slider__slide-text-block {
-                    opacity: 0;
-                }
-
-                .intro-slider__pagination-image-popover-text {
-                    opacity: 0;
-                }
+{% set title = "Главная страница" %} {% extends "layout.html" %} {% block content %}
+<section class="intro-slider js-intro-slider">
+    <style>
+        .intro-slider:not(.initialized) {
+            .intro-slider__slide-text-block {
+                opacity: 0;
             }
-        </style>
-        <ul class="intro-slider__slides-container js-intro-slider-slides">
-            <li class="intro-slider__slide">
-                <div class="intro-slider__slide-content">
-                    <div class="intro-slider__slide-text-block">
-                        <h4 class="intro-slider__slide-heading">
+
+            .intro-slider__pagination-image-popover-text {
+                opacity: 0;
+            }
+        }
+    </style>
+    <ul class="intro-slider__slides-container js-intro-slider-slides">
+        <li class="intro-slider__slide">
+            <div class="intro-slider__slide-content">
+                <div class="intro-slider__slide-text-block">
+                    <h4 class="intro-slider__slide-heading">
                         ICL − Проводник в мир высоких технологий
                     </h4>
-                        <p class="intro-slider__slide-paragraph">
+                    <p class="intro-slider__slide-paragraph">
                         Предоставляем комплексные решения в области информационных технологий и услуги по консалтингу, проектированию, внедрению.
                     </p>
-                    </div>
                 </div>
-                <div class="intro-slider__hidden-thumbnail">
-                    <span class="intro-slider__pagination-image-popover">
-                        <img src="img/top-slider/btn-bg.jpg" alt="Картинка превью на кнопке" class="intro-slider__pagination-image-popover-image"/>
-                        <span class="intro-slider__pagination-image-popover-text">
+            </div>
+            <div class="intro-slider__hidden-thumbnail">
+                <span class="intro-slider__pagination-image-popover">
+                    <img src="img/top-slider/btn-bg.jpg" alt="Картинка превью на кнопке" class="intro-slider__pagination-image-popover-image" />
+                    <span class="intro-slider__pagination-image-popover-text">
                         Завод вычислительной техники
                     </span>
-                    </span>
-                </div>
-                <a href="#" class="intro-slider__slide-bg-content intro-slider__slide-bg-content--type-1">
-                    <div class="diagonal-gradient"></div>
-                    <div class="image-overlay"></div>
-                    <img src="img/top-slider/slider-bg-1.jpg" alt="Изображение в слайдере" class="halfscreen-image"/>
-                    <div class="brick-near-edge"></div>
-                    <div class="brick-1"></div>
-                    <div class="brick-2"></div>
-                    <div class="brick-3"></div>
-                    <div class="brick-4"></div>
-                    <div class="brick-5"></div>
-                </a>
-            </li>
-            <li class="intro-slider__slide">
-                <div class="intro-slider__slide-content">
-                    <div class="intro-slider__slide-text-block">
-                        <h4 class="intro-slider__slide-heading">
+                </span>
+            </div>
+            <a href="#" class="intro-slider__slide-bg-content intro-slider__slide-bg-content--type-1">
+                <div class="diagonal-gradient"></div>
+                <div class="image-overlay"></div>
+                <img src="img/top-slider/slider-bg-1.jpg" alt="Изображение в слайдере" class="halfscreen-image" />
+                <div class="brick-near-edge"></div>
+                <div class="brick-1"></div>
+                <div class="brick-2"></div>
+                <div class="brick-3"></div>
+                <div class="brick-4"></div>
+                <div class="brick-5"></div>
+            </a>
+        </li>
+        <li class="intro-slider__slide">
+            <div class="intro-slider__slide-content">
+                <div class="intro-slider__slide-text-block">
+                    <h4 class="intro-slider__slide-heading">
                         ICL − официальный дистрибьютор LEGO Education
                     </h4>
-                        <p class="intro-slider__slide-paragraph">
+                    <p class="intro-slider__slide-paragraph">
                         Предоставляем комплексные решения в области информационных технологий и услуги по консалтингу, проектированию, внедрению.
                     </p>
-                    </div>
                 </div>
-                <div class="intro-slider__hidden-thumbnail">
-                    <span class="intro-slider__pagination-image-popover">
-                        <img src="img/top-slider/btn-bg.jpg" alt="Картинка превью на кнопке" class="intro-slider__pagination-image-popover-image"/>
-                        <span class="intro-slider__pagination-image-popover-text">
+            </div>
+            <div class="intro-slider__hidden-thumbnail">
+                <span class="intro-slider__pagination-image-popover">
+                    <img src="img/top-slider/btn-bg.jpg" alt="Картинка превью на кнопке" class="intro-slider__pagination-image-popover-image" />
+                    <span class="intro-slider__pagination-image-popover-text">
                         Завод вычислительной техники
                     </span>
-                    </span>
-                </div>
-                <a href="#" class="intro-slider__slide-bg-content intro-slider__slide-bg-content--type-2">
-                    <img src="img/top-slider/slider-bg-2.jpg" alt="" class="fullscreen-image"/>
-                    <div class="image-overlay"></div>
-                    <div class="brick-1"></div>
-                    <div class="brick-2"></div>
-                    <div class="brick-3"></div>
-                    <div class="brick-4"></div>
-                    <div class="brick-5"></div>
-                    <div class="brick-6"></div>
-                    <div class="brick-7"></div>
-                    <div class="brick-8"></div>
-                </a>
-            </li>
-            <li class="intro-slider__slide">
-                <div class="intro-slider__slide-content">
-                    <div class="intro-slider__slide-text-block">
-                        <h4 class="intro-slider__slide-heading">
+                </span>
+            </div>
+            <a href="#" class="intro-slider__slide-bg-content intro-slider__slide-bg-content--type-2">
+                <img src="img/top-slider/slider-bg-2.jpg" alt="" class="fullscreen-image" />
+                <div class="image-overlay"></div>
+                <div class="brick-1"></div>
+                <div class="brick-2"></div>
+                <div class="brick-3"></div>
+                <div class="brick-4"></div>
+                <div class="brick-5"></div>
+                <div class="brick-6"></div>
+                <div class="brick-7"></div>
+                <div class="brick-8"></div>
+            </a>
+        </li>
+        <li class="intro-slider__slide">
+            <div class="intro-slider__slide-content">
+                <div class="intro-slider__slide-text-block">
+                    <h4 class="intro-slider__slide-heading">
                         ICL − Проводник в мир высоких технологий
                     </h4>
-                        <p class="intro-slider__slide-paragraph">
+                    <p class="intro-slider__slide-paragraph">
                         Предоставляем комплексные решения в области информационных технологий и услуги по консалтингу, проектированию, внедрению.
                     </p>
-                    </div>
                 </div>
-                <div class="intro-slider__hidden-thumbnail">
-                    <span class="intro-slider__pagination-image-popover">
-                        <img src="img/top-slider/btn-bg.jpg" alt="Картинка превью на кнопке" class="intro-slider__pagination-image-popover-image"/>
-                        <span class="intro-slider__pagination-image-popover-text">
+            </div>
+            <div class="intro-slider__hidden-thumbnail">
+                <span class="intro-slider__pagination-image-popover">
+                    <img src="img/top-slider/btn-bg.jpg" alt="Картинка превью на кнопке" class="intro-slider__pagination-image-popover-image" />
+                    <span class="intro-slider__pagination-image-popover-text">
                         Завод вычислительной техники
                     </span>
-                    </span>
-                </div>
-                <a href="#" class="intro-slider__slide-bg-content intro-slider__slide-bg-content--type-1">
-                    <div class="diagonal-gradient"></div>
-                    <div class="image-overlay"></div>
-                    <img src="img/top-slider/slider-bg-1.jpg" alt="Изображение в слайдере" class="halfscreen-image"/>
-                    <div class="brick-near-edge"></div>
-                    <div class="brick-1"></div>
-                    <div class="brick-2"></div>
-                    <div class="brick-3"></div>
-                    <div class="brick-4"></div>
-                    <div class="brick-5"></div>
-                </a>
-            </li>
-            <li class="intro-slider__slide">
-                <div class="intro-slider__slide-content">
-                    <div class="intro-slider__slide-text-block">
-                        <h4 class="intro-slider__slide-heading">
+                </span>
+            </div>
+            <a href="#" class="intro-slider__slide-bg-content intro-slider__slide-bg-content--type-1">
+                <div class="diagonal-gradient"></div>
+                <div class="image-overlay"></div>
+                <img src="img/top-slider/slider-bg-1.jpg" alt="Изображение в слайдере" class="halfscreen-image" />
+                <div class="brick-near-edge"></div>
+                <div class="brick-1"></div>
+                <div class="brick-2"></div>
+                <div class="brick-3"></div>
+                <div class="brick-4"></div>
+                <div class="brick-5"></div>
+            </a>
+        </li>
+        <li class="intro-slider__slide">
+            <div class="intro-slider__slide-content">
+                <div class="intro-slider__slide-text-block">
+                    <h4 class="intro-slider__slide-heading">
                         ICL − официальный дистрибьютор LEGO Education
                     </h4>
-                        <p class="intro-slider__slide-paragraph">
+                    <p class="intro-slider__slide-paragraph">
                         Предоставляем комплексные решения в области информационных технологий и услуги по консалтингу, проектированию, внедрению.
                     </p>
-                    </div>
                 </div>
-                <div class="intro-slider__hidden-thumbnail">
-                    <span class="intro-slider__pagination-image-popover">
-                        <img src="img/top-slider/btn-bg.jpg" alt="Картинка превью на кнопке" class="intro-slider__pagination-image-popover-image"/>
-                        <span class="intro-slider__pagination-image-popover-text">
+            </div>
+            <div class="intro-slider__hidden-thumbnail">
+                <span class="intro-slider__pagination-image-popover">
+                    <img src="img/top-slider/btn-bg.jpg" alt="Картинка превью на кнопке" class="intro-slider__pagination-image-popover-image" />
+                    <span class="intro-slider__pagination-image-popover-text">
                         Завод вычислительной техники
                     </span>
-                    </span>
-                </div>
-                <a href="#" class="intro-slider__slide-bg-content intro-slider__slide-bg-content--type-2">
-                    <img src="img/top-slider/slider-bg-2.jpg" alt="" class="fullscreen-image"/>
-                    <div class="image-overlay"></div>
-                    <div class="brick-1"></div>
-                    <div class="brick-2"></div>
-                    <div class="brick-3"></div>
-                    <div class="brick-4"></div>
-                    <div class="brick-5"></div>
-                    <div class="brick-6"></div>
-                    <div class="brick-7"></div>
-                    <div class="brick-8"></div>
-                </a>
-            </li>
-        </ul>
-        <div class="intro-slider__pagination-container js-intro-slider-pagination">
-            <!-- <ul class="intro-slider__pagination">
+                </span>
+            </div>
+            <a href="#" class="intro-slider__slide-bg-content intro-slider__slide-bg-content--type-2">
+                <img src="img/top-slider/slider-bg-2.jpg" alt="" class="fullscreen-image" />
+                <div class="image-overlay"></div>
+                <div class="brick-1"></div>
+                <div class="brick-2"></div>
+                <div class="brick-3"></div>
+                <div class="brick-4"></div>
+                <div class="brick-5"></div>
+                <div class="brick-6"></div>
+                <div class="brick-7"></div>
+                <div class="brick-8"></div>
+            </a>
+        </li>
+    </ul>
+    <div class="intro-slider__pagination-container js-intro-slider-pagination">
+        <!-- <ul class="intro-slider__pagination">
             <li class="intro-slider__pagination-item active">
                 <a href="#" class="intro-slider__pagination-btn"> </a>
             </li>
@@ -156,627 +154,662 @@
                 <a href="#" class="intro-slider__pagination-btn"> </a>
             </li>
         </ul> -->
-        </div>
-        <div class="intro-slider__arrows">
-            <a href="#" class="intro-slider__arrow js-intro-slider-prev">
-                <svg width="45" height="45" aria-hidden="true" class="icon-arrow-left">
-                    <use xlink:href="#arrow-left"/>
-                </svg>
-            </a>
-            <a href="#" class="intro-slider__arrow js-intro-slider-next">
-                <svg width="45" height="45" aria-hidden="true" class="icon-arrow-right">
-                    <use xlink:href="#arrow-right"/>
-                </svg>
-            </a>
-        </div>
-    </section>
+    </div>
+    <div class="intro-slider__arrows">
+        <a href="#" class="intro-slider__arrow js-intro-slider-prev">
+            <svg width="45" height="45" aria-hidden="true" class="icon-arrow-left">
+                <use xlink:href="#arrow-left" />
+            </svg>
+        </a>
+        <a href="#" class="intro-slider__arrow js-intro-slider-next">
+            <svg width="45" height="45" aria-hidden="true" class="icon-arrow-right">
+                <use xlink:href="#arrow-right" />
+            </svg>
+        </a>
+    </div>
+</section>
 
-    <section class="equipment js-equipment-slider">
-        <div class="equipment__tabs">
-            <div class="equipment__top-row">
-                <h2 class="section-header">
+<section class="equipment js-equipment-slider">
+    <div class="equipment__tabs">
+        <div class="equipment__top-row">
+            <h2 class="section-header">
                 Ключевые решения
             </h2>
-                <div class="equipment__tabs-navigation">
-                    <a href="#" class="equipment__tab-button active" data-category="education">
-                        <span class="equipment__tab-button-text">Решения для образования</span></a>
-                    <a href="#" class="equipment__tab-button" data-category="medicine">
-                        <span class="equipment__tab-button-text">Решения для здравоохранения</span></a>
-                    <a href="#" class="equipment__tab-button" data-category="infra">
-                        <span class="equipment__tab-button-text">Инфраструктурные решения</span></a>
+            <div class="equipment__tabs-navigation">
+                <div class="equipment__tab-button active" data-category="education">
+                    <span class="equipment__tab-button-text">Решения для образования</span>
 
-                    <a href="#" class="equipment__tab-button" data-category="security">
-                        <span class="equipment__tab-button-text"
-                        >Защищенные<br/>
-                        решения</span
-                    ></a
-                >
-                </div>
-                <div class="equipment__slider-btns">
-                    <a href="#" class="equipment__slider-btn equipment__slider-btn--prev">
-                        <svg width="45" height="45" aria-hidden="true" class="icon-arrow-left">
-                            <use xlink:href="#arrow-left"></use>
+                    <a href="#" class="equipment__tab-all-link">Смотреть все
+
+
+                        <svg width="4" height="12" aria-hidden="true" class="icon-arrow-right">
+                            <use xlink:href="#small-arrow-right"></use>
                         </svg>
                     </a>
-                    <a href="#" class="equipment__slider-btn equipment__slider-btn--next">
-                        <svg width="45" height="45" aria-hidden="true" class="icon-arrow-right">
-                            <use xlink:href="#arrow-right"></use>
+                </div>
+                <div class="equipment__tab-button" data-category="medicine">
+                    <span class="equipment__tab-button-text">Решения для здравоохранения</span>
+
+                    <a href="#" class="equipment__tab-all-link">Смотреть все
+
+
+                        <svg width="4" height="12" aria-hidden="true" class="icon-arrow-right">
+                            <use xlink:href="#small-arrow-right"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="equipment__tab-button" data-category="infra">
+                    <span class="equipment__tab-button-text">Инфраструктурные решения</span>
+
+                    <a href="#" class="equipment__tab-all-link">Смотреть все
+
+
+                        <svg width="4" height="12" aria-hidden="true" class="icon-arrow-right">
+                            <use xlink:href="#small-arrow-right"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="equipment__tab-button" data-category="security">
+                    <span class="equipment__tab-button-text"
+                        >Защищенные<br />
+                        решения</span
+                    >
+
+                    <a href="#" class="equipment__tab-all-link">Смотреть все
+
+
+                        <svg width="4" height="12" aria-hidden="true" class="icon-arrow-right">
+                            <use xlink:href="#small-arrow-right"></use>
                         </svg>
                     </a>
                 </div>
             </div>
-            <ul class="equipment__tabs-list">
-                <li class="equipment__tab-item active">
-                    <div class="equipment__slider">
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide" data-category="education">
-                                    <a href="#" class="equipment__slider-card">
-                                        <span class="equipment__slider-card-image-width-wrapper">
-                                            <span class="equipment__slider-card-image-container">
-                                                <img src="img/solutions-slider/image-1.png" alt="Фото 1" class="equipment__slider-card-image"/>
-                                                <span class="equipment__slider-corner">
-                                                    <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
-                                                        <use xlink:href="#arrow-right-no-circle"/>
-                                                    </svg>
-                                                </span>
+            <div class="equipment__slider-btns">
+                <a href="#" class="equipment__slider-btn equipment__slider-btn--prev">
+                    <svg width="45" height="45" aria-hidden="true" class="icon-arrow-left">
+                        <use xlink:href="#arrow-left"></use>
+                    </svg>
+                </a>
+                <a href="#" class="equipment__slider-btn equipment__slider-btn--next">
+                    <svg width="45" height="45" aria-hidden="true" class="icon-arrow-right">
+                        <use xlink:href="#arrow-right"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <ul class="equipment__tabs-list">
+            <li class="equipment__tab-item active">
+                <div class="equipment__slider">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" data-category="education">
+                                <a href="#" class="equipment__slider-card">
+                                    <span class="equipment__slider-card-image-width-wrapper">
+                                        <span class="equipment__slider-card-image-container">
+                                            <img src="img/solutions-slider/image-1.png" alt="Фото 1" class="equipment__slider-card-image" />
+                                            <span class="equipment__slider-corner">
+                                                <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                                    <use xlink:href="#arrow-right-no-circle" />
+                                                </svg>
                                             </span>
                                         </span>
-                                        <span class="equipment__slider-content">
-                                            <span class="equipment__slider-title">
+                                    </span>
+                                    <span class="equipment__slider-content">
+                                        <span class="equipment__slider-title">
                                             Предоставляем комплексные
                                         </span>
-                                            <span class="equipment__slider-text">
+                                        <span class="equipment__slider-text">
                                             решения в области образования
                                         </span>
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide" data-category="education">
-                                    <a href="#" class="equipment__slider-card">
-                                        <span class="equipment__slider-card-image-width-wrapper">
-                                            <span class="equipment__slider-card-image-container">
-                                                <img src="img/solutions-slider/image-2.png" alt="Фото 1" class="equipment__slider-card-image"/>
-                                                <span class="equipment__slider-corner">
-                                                    <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
-                                                        <use xlink:href="#arrow-right-no-circle"/>
-                                                    </svg>
-                                                </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide" data-category="education">
+                                <a href="#" class="equipment__slider-card">
+                                    <span class="equipment__slider-card-image-width-wrapper">
+                                        <span class="equipment__slider-card-image-container">
+                                            <img src="img/solutions-slider/image-2.png" alt="Фото 1" class="equipment__slider-card-image" />
+                                            <span class="equipment__slider-corner">
+                                                <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                                    <use xlink:href="#arrow-right-no-circle" />
+                                                </svg>
                                             </span>
                                         </span>
-                                        <span class="equipment__slider-content">
-                                            <span class="equipment__slider-title">
+                                    </span>
+                                    <span class="equipment__slider-content">
+                                        <span class="equipment__slider-title">
                                             Предоставляем комплексные
                                         </span>
-                                            <span class="equipment__slider-text">
+                                        <span class="equipment__slider-text">
                                             решения в области образования
                                         </span>
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide" data-category="medicine">
-                                    <a href="#" class="equipment__slider-card">
-                                        <span class="equipment__slider-card-image-width-wrapper">
-                                            <span class="equipment__slider-card-image-container">
-                                                <img src="img/solutions-slider/image-3.png" alt="Фото 1" class="equipment__slider-card-image"/>
-                                                <span class="equipment__slider-corner">
-                                                    <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
-                                                        <use xlink:href="#arrow-right-no-circle"/>
-                                                    </svg>
-                                                </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide" data-category="medicine">
+                                <a href="#" class="equipment__slider-card">
+                                    <span class="equipment__slider-card-image-width-wrapper">
+                                        <span class="equipment__slider-card-image-container">
+                                            <img src="img/solutions-slider/image-3.png" alt="Фото 1" class="equipment__slider-card-image" />
+                                            <span class="equipment__slider-corner">
+                                                <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                                    <use xlink:href="#arrow-right-no-circle" />
+                                                </svg>
                                             </span>
                                         </span>
-                                        <span class="equipment__slider-content">
-                                            <span class="equipment__slider-title">
+                                    </span>
+                                    <span class="equipment__slider-content">
+                                        <span class="equipment__slider-title">
                                             Предоставляем комплексные
                                         </span>
-                                            <span class="equipment__slider-text">
+                                        <span class="equipment__slider-text">
                                             решения в области медицины
                                         </span>
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide" data-category="medicine">
-                                    <a href="#" class="equipment__slider-card">
-                                        <span class="equipment__slider-card-image-width-wrapper">
-                                            <span class="equipment__slider-card-image-container">
-                                                <img src="img/solutions-slider/image-4.png" alt="Фото 1" class="equipment__slider-card-image"/>
-                                                <span class="equipment__slider-corner">
-                                                    <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
-                                                        <use xlink:href="#arrow-right-no-circle"/>
-                                                    </svg>
-                                                </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide" data-category="medicine">
+                                <a href="#" class="equipment__slider-card">
+                                    <span class="equipment__slider-card-image-width-wrapper">
+                                        <span class="equipment__slider-card-image-container">
+                                            <img src="img/solutions-slider/image-4.png" alt="Фото 1" class="equipment__slider-card-image" />
+                                            <span class="equipment__slider-corner">
+                                                <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                                    <use xlink:href="#arrow-right-no-circle" />
+                                                </svg>
                                             </span>
                                         </span>
-                                        <span class="equipment__slider-content">
-                                            <span class="equipment__slider-title">
+                                    </span>
+                                    <span class="equipment__slider-content">
+                                        <span class="equipment__slider-title">
                                             Предоставляем комплексные
                                         </span>
-                                            <span class="equipment__slider-text">
+                                        <span class="equipment__slider-text">
                                             решения в области медицины
                                         </span>
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide" data-category="infra">
-                                    <a href="#" class="equipment__slider-card">
-                                        <span class="equipment__slider-card-image-width-wrapper">
-                                            <span class="equipment__slider-card-image-container">
-                                                <img src="img/solutions-slider/image-5.png" alt="Фото 1" class="equipment__slider-card-image"/>
-                                                <span class="equipment__slider-corner">
-                                                    <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
-                                                        <use xlink:href="#arrow-right-no-circle"/>
-                                                    </svg>
-                                                </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide" data-category="infra">
+                                <a href="#" class="equipment__slider-card">
+                                    <span class="equipment__slider-card-image-width-wrapper">
+                                        <span class="equipment__slider-card-image-container">
+                                            <img src="img/solutions-slider/image-5.png" alt="Фото 1" class="equipment__slider-card-image" />
+                                            <span class="equipment__slider-corner">
+                                                <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                                    <use xlink:href="#arrow-right-no-circle" />
+                                                </svg>
                                             </span>
                                         </span>
-                                        <span class="equipment__slider-content">
-                                            <span class="equipment__slider-title">
+                                    </span>
+                                    <span class="equipment__slider-content">
+                                        <span class="equipment__slider-title">
                                             Предоставляем комплексные
                                         </span>
-                                            <span class="equipment__slider-text">
+                                        <span class="equipment__slider-text">
                                             решения в области инфраструктуры
                                         </span>
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide" data-category="infra">
-                                    <a href="#" class="equipment__slider-card">
-                                        <span class="equipment__slider-card-image-width-wrapper">
-                                            <span class="equipment__slider-card-image-container">
-                                                <img src="img/solutions-slider/image-1.png" alt="Фото 1" class="equipment__slider-card-image"/>
-                                                <span class="equipment__slider-corner">
-                                                    <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
-                                                        <use xlink:href="#arrow-right-no-circle"/>
-                                                    </svg>
-                                                </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide" data-category="infra">
+                                <a href="#" class="equipment__slider-card">
+                                    <span class="equipment__slider-card-image-width-wrapper">
+                                        <span class="equipment__slider-card-image-container">
+                                            <img src="img/solutions-slider/image-1.png" alt="Фото 1" class="equipment__slider-card-image" />
+                                            <span class="equipment__slider-corner">
+                                                <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                                    <use xlink:href="#arrow-right-no-circle" />
+                                                </svg>
                                             </span>
                                         </span>
-                                        <span class="equipment__slider-content">
-                                            <span class="equipment__slider-title">
+                                    </span>
+                                    <span class="equipment__slider-content">
+                                        <span class="equipment__slider-title">
                                             Предоставляем комплексные
                                         </span>
-                                            <span class="equipment__slider-text">
+                                        <span class="equipment__slider-text">
                                             решения в области ифнарструктуры
                                         </span>
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide" data-category="security">
-                                    <a href="#" class="equipment__slider-card">
-                                        <span class="equipment__slider-card-image-width-wrapper">
-                                            <span class="equipment__slider-card-image-container">
-                                                <img src="img/solutions-slider/image-2.png" alt="Фото 1" class="equipment__slider-card-image"/>
-                                                <span class="equipment__slider-corner">
-                                                    <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
-                                                        <use xlink:href="#arrow-right-no-circle"/>
-                                                    </svg>
-                                                </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide" data-category="security">
+                                <a href="#" class="equipment__slider-card">
+                                    <span class="equipment__slider-card-image-width-wrapper">
+                                        <span class="equipment__slider-card-image-container">
+                                            <img src="img/solutions-slider/image-2.png" alt="Фото 1" class="equipment__slider-card-image" />
+                                            <span class="equipment__slider-corner">
+                                                <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                                    <use xlink:href="#arrow-right-no-circle" />
+                                                </svg>
                                             </span>
                                         </span>
-                                        <span class="equipment__slider-content">
-                                            <span class="equipment__slider-title">
+                                    </span>
+                                    <span class="equipment__slider-content">
+                                        <span class="equipment__slider-title">
                                             Предоставляем комплексные
                                         </span>
-                                            <span class="equipment__slider-text">
+                                        <span class="equipment__slider-text">
                                             решения в области безопасности
                                         </span>
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide" data-category="security">
-                                    <a href="#" class="equipment__slider-card">
-                                        <span class="equipment__slider-card-image-width-wrapper">
-                                            <span class="equipment__slider-card-image-container">
-                                                <img src="img/solutions-slider/image-3.png" alt="Фото 1" class="equipment__slider-card-image"/>
-                                                <span class="equipment__slider-corner">
-                                                    <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
-                                                        <use xlink:href="#arrow-right-no-circle"/>
-                                                    </svg>
-                                                </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="swiper-slide" data-category="security">
+                                <a href="#" class="equipment__slider-card">
+                                    <span class="equipment__slider-card-image-width-wrapper">
+                                        <span class="equipment__slider-card-image-container">
+                                            <img src="img/solutions-slider/image-3.png" alt="Фото 1" class="equipment__slider-card-image" />
+                                            <span class="equipment__slider-corner">
+                                                <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                                    <use xlink:href="#arrow-right-no-circle" />
+                                                </svg>
                                             </span>
                                         </span>
-                                        <span class="equipment__slider-content">
-                                            <span class="equipment__slider-title">
+                                    </span>
+                                    <span class="equipment__slider-content">
+                                        <span class="equipment__slider-title">
                                             Предоставляем комплексные
                                         </span>
-                                            <span class="equipment__slider-text">
+                                        <span class="equipment__slider-text">
                                             решения в области безопасности
                                         </span>
-                                        </span>
-                                    </a>
-                                </div>
+                                    </span>
+                                </a>
                             </div>
                         </div>
                     </div>
-                </li>
-            </ul>
-        </div>
-    </section>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
 
-    <section class="catalog-links">
-        <div class="catalog-links__row">
-            <div class="catalog-links__column">
-                <a href="/catalog/" class="catalog-links__link" target="_self"></a>
-                <span class="section-header catalog-links__type">
+<section class="catalog-links">
+    <div class="catalog-links__row">
+        <div class="catalog-links__column">
+            <a href="/catalog/" class="catalog-links__link" target="_self"></a>
+            <span class="section-header catalog-links__type">
                 Продукция
             </span>
-                <span class="catalog-links__text">
+            <span class="catalog-links__text">
                 Смотрите полный каталог продукции
             </span>
-                <svg width="45" height="45" aria-hidden="true" class="icon-arrow-right">
-                    <use xlink:href="#arrow-right"></use>
-                </svg>
-            </div>
-            <div class="catalog-links__column">
-                <a href="#" class="catalog-links__link"></a>
-                <span class="section-header catalog-links__type">
+            <svg width="45" height="45" aria-hidden="true" class="icon-arrow-right">
+                <use xlink:href="#arrow-right"></use>
+            </svg>
+        </div>
+        <div class="catalog-links__column">
+            <a href="#" class="catalog-links__link"></a>
+            <span class="section-header catalog-links__type">
                 Конфигуратор
             </span>
-                <span class="catalog-links__text">
+            <span class="catalog-links__text">
                 Сконфигурируйте собственное оборудование
             </span>
-                <svg width="45" height="45" aria-hidden="true" class="icon-arrow-right">
-                    <use xlink:href="#arrow-right"></use>
-                </svg>
-            </div>
+            <svg width="45" height="45" aria-hidden="true" class="icon-arrow-right">
+                <use xlink:href="#arrow-right"></use>
+            </svg>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="about-company">
-        <span class="about-company__bg">
-            <picture>
-                <source srcset="img/about-company-bg-mobile.jpg" media="(max-width: 768px)"/>
-                <img src="img/about-company-bg.jpg" class="about-company__bg"/>
-            </picture>
-        </span>
-        <div class="abount-company__row">
-            <div class="about-company__column">
-                <h2 class="about-company__heading">
-                    <span class="section-header">О группе компаний</span>
-                    <img src="img/simple-icl-logo.svg" alt="Логотип ICL" class="about-company__logo" width="82"/>
-                </h2>
-                <h3 class="about-company__supplementary-heading">
+<section class="about-company">
+    <span class="about-company__bg">
+        <picture>
+            <source srcset="img/about-company-bg-mobile.jpg" media="(max-width: 768px)" />
+            <img src="img/about-company-bg.jpg" class="about-company__bg" />
+        </picture>
+    </span>
+    <div class="abount-company__row">
+        <div class="about-company__column">
+            <h2 class="about-company__heading">
+                <span class="section-header">О группе компаний</span>
+                <img src="img/simple-icl-logo.svg" alt="Логотип ICL" class="about-company__logo" width="82" />
+            </h2>
+            <h3 class="about-company__supplementary-heading">
                 Российский производитель компьютерной техники
             </h3>
-                <p class="about-company__paragraph">
+            <p class="about-company__paragraph">
                 Предоставляем комплексные решения в области информационных технологий и услуги по консалтингу, проектированию, внедрению, гарантийному и сервисному обслуживанию информационных систем.
             </p>
-                <a href="#" class="about-company__details-link">Подробнее о компании</a>
-            </div>
-            <div class="about-company__column about-company__column--large">
-                <div class="about-company__advantages-slider">
-                    <div class="about-company__advantages-slider-container js-about-company-slider">
-                        <div class="about-company__advantages-slider-wrapper">
-                            <div class="about-company__advantages-column">
-                                <ul class="about-company__advantages-list">
-                                    <li class="about-company__advantages-list-item">
-                                        <span class="about-company__advantage-place">
+            <a href="#" class="about-company__details-link">Подробнее о компании</a>
+        </div>
+        <div class="about-company__column about-company__column--large">
+            <div class="about-company__advantages-slider">
+                <div class="about-company__advantages-slider-container js-about-company-slider">
+                    <div class="about-company__advantages-slider-wrapper">
+                        <div class="about-company__advantages-column">
+                            <ul class="about-company__advantages-list">
+                                <li class="about-company__advantages-list-item">
+                                    <span class="about-company__advantage-place">
                                         3
                                         <span class="about-company__advantage-place-remark">
                                             Топ
                                         </span>
-                                        </span>
-                                        <span class="about-company__advantage-text">
+                                    </span>
+                                    <span class="about-company__advantage-text">
                                         в России ИТ-компания по производству ИТ-оборудования
                                         <span class="about-company__advantage-text-remark">по версии РА Эксперт</span>
-                                        </span>
-                                    </li>
-                                    <li class="about-company__advantages-list-item">
-                                        <span class="about-company__advantage-place">
+                                    </span>
+                                </li>
+                                <li class="about-company__advantages-list-item">
+                                    <span class="about-company__advantage-place">
                                         7
                                         <span class="about-company__advantage-place-remark">
                                             Топ
                                         </span>
-                                        </span>
-                                        <span class="about-company__advantage-text">
+                                    </span>
+                                    <span class="about-company__advantage-text">
                                         крупнейших поставщиков услуг ИТ-поддержки России
                                         <span class="about-company__advantage-text-remark">по мнению CNEWS</span>
-                                        </span>
-                                    </li>
-                                    <li class="about-company__advantages-list-item">
-                                        <span class="about-company__advantage-place">
+                                    </span>
+                                </li>
+                                <li class="about-company__advantages-list-item">
+                                    <span class="about-company__advantage-place">
                                         20
                                         <span class="about-company__advantage-place-remark">
                                             Топ
                                         </span>
-                                        </span>
-                                        <span class="about-company__advantage-text">
+                                    </span>
+                                    <span class="about-company__advantage-text">
                                         крупнейших ИТ-компаний России
                                         <span class="about-company__advantage-text-remark">по мнению РИА Рейтинг</span>
-                                        </span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="about-company__advantages-column">
-                                <ul class="about-company__advantages-list about-company__advantages-list--numbers">
-                                    <li class="about-company__advantages-list-item">
-                                        <span class="about-company__advantage-numbers">
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="about-company__advantages-column">
+                            <ul class="about-company__advantages-list about-company__advantages-list--numbers">
+                                <li class="about-company__advantages-list-item">
+                                    <span class="about-company__advantage-numbers">
                                         28
                                         <span class="about-company__advantage-numbers-remark">
                                             лет в индустрии
                                         </span>
-                                        </span>
-                                    </li>
-                                    <li class="about-company__advantages-list-item">
-                                        <span class="about-company__advantage-numbers">
+                                    </span>
+                                </li>
+                                <li class="about-company__advantages-list-item">
+                                    <span class="about-company__advantage-numbers">
                                         300 000
                                         <span class="about-company__advantage-numbers-remark">
                                             изделий в год текст с переносом
                                         </span>
-                                        </span>
-                                    </li>
-                                    <li class="about-company__advantages-list-item">
-                                        <span class="about-company__advantage-numbers">
+                                    </span>
+                                </li>
+                                <li class="about-company__advantages-list-item">
+                                    <span class="about-company__advantage-numbers">
                                         2 900
                                         <span class="about-company__advantage-numbers-remark">
                                             сотрудников
                                         </span>
-                                        </span>
-                                    </li>
-                                </ul>
-                            </div>
+                                    </span>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="swiper-pagination"></div>
                     </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="realised-projects">
-        <div class="realised-projects__top-row">
-            <h2 class="section-header">
+<section class="realised-projects">
+    <div class="realised-projects__top-row">
+        <h2 class="section-header">
             Реализованные проекты
         </h2>
-            <a href="#" class="section-header">Все проекты</a>
-        </div>
+        <a href="#" class="section-header">Все проекты</a>
+    </div>
 
-        <div class="realised-projects__slider">
-            <div class="realised-projects__slider-container js-realised-projects-slider">
-                <ul class="realised-projects__list">
-                    <li class="realised-projects__list-item realised-projects__list-item--large realised-projects__list-item--with-image">
-                        <a href="#text-modal" class="realised-projects__card js-modal-open">
-                            <span class="realised-projects__card-top-row">
-                                <span class="realised-projects__card-label-group">
-                                    <span class="realised-projects__card-label">
+    <div class="realised-projects__slider">
+        <div class="realised-projects__slider-container js-realised-projects-slider">
+            <ul class="realised-projects__list">
+                <li class="realised-projects__list-item realised-projects__list-item--large realised-projects__list-item--with-image">
+                    <a href="#text-modal" class="realised-projects__card js-modal-open">
+                        <span class="realised-projects__card-top-row">
+                            <span class="realised-projects__card-label-group">
+                                <span class="realised-projects__card-label">
                                     госсектор
                                 </span>
-                                    <span class="realised-projects__card-date">
+                                <span class="realised-projects__card-date">
                                     22.05.2019
                                 </span>
-                                </span>
-
-                                <img src="img/aeroflot-logo.svg" alt="Логотип аэрофлота" class="realised-projects__company-logo"/>
                             </span>
-                            <span class="realised-projects__content">
-                                <span class="realised-projects__title">
+
+                            <img src="img/aeroflot-logo.svg" alt="Логотип аэрофлота" class="realised-projects__company-logo" />
+                        </span>
+                        <span class="realised-projects__content">
+                            <span class="realised-projects__title">
                                 Международный аэропорт Сочи
                             </span>
-                                <span class="realised-projects__paragraph">
+                            <span class="realised-projects__paragraph">
                                 Предоставляем комплексные решения в области информационных технологий и услуги по консалтингу, проектированию, Предоставляем комплексные решения в области информационных технологий и услуги по консалтингу,
                                 проектированию,
                             </span>
-                            </span>
-                            <span class="realised-projects__corner">
-                                <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
-                                    <use xlink:href="#arrow-right-no-circle"/>
-                                </svg>
-                            </span>
-                            <span class="realised-projects__bg-image-container">
-                                <img src="img/airport.jpg" alt="Фото аэропорта" class="realised-projects__bg-image"/>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="realised-projects__list-item">
-                        <a href="#text-modal" class="realised-projects__card js-modal-open">
-                            <span class="realised-projects__card-top-row">
-                                <span class="realised-projects__card-label-group">
-                                    <span class="realised-projects__card-label">
+                        </span>
+                        <span class="realised-projects__corner">
+                            <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                <use xlink:href="#arrow-right-no-circle" />
+                            </svg>
+                        </span>
+                        <span class="realised-projects__bg-image-container">
+                            <img src="img/airport.jpg" alt="Фото аэропорта" class="realised-projects__bg-image" />
+                        </span>
+                    </a>
+                </li>
+                <li class="realised-projects__list-item">
+                    <a href="#text-modal" class="realised-projects__card js-modal-open">
+                        <span class="realised-projects__card-top-row">
+                            <span class="realised-projects__card-label-group">
+                                <span class="realised-projects__card-label">
                                     госсектор
                                 </span>
-                                    <span class="realised-projects__card-date">
+                                <span class="realised-projects__card-date">
                                     22.05.2019
                                 </span>
-                                </span>
-
-                                <img src="img/rostelecom-logo.svg" alt="Логотип аэрофлота" class="realised-projects__company-logo"/>
                             </span>
-                            <span class="realised-projects__content">
-                                <span class="realised-projects__title">
+
+                            <img src="img/rostelecom-logo.svg" alt="Логотип аэрофлота" class="realised-projects__company-logo" />
+                        </span>
+                        <span class="realised-projects__content">
+                            <span class="realised-projects__title">
                                 Мобильный оператор Ростелеком
                             </span>
-                                <span class="realised-projects__paragraph">
+                            <span class="realised-projects__paragraph">
                                 Предоставляем комплексные решения в области информационных технологий и услуги по консалтингу, проектированию,
                             </span>
-                            </span>
-                            <span class="realised-projects__corner">
-                                <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
-                                    <use xlink:href="#arrow-right-no-circle"/>
-                                </svg>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="realised-projects__list-item">
-                        <a href="#text-modal" class="realised-projects__card js-modal-open">
-                            <span class="realised-projects__card-top-row">
-                                <span class="realised-projects__card-label-group">
-                                    <span class="realised-projects__card-label">
+                        </span>
+                        <span class="realised-projects__corner">
+                            <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                <use xlink:href="#arrow-right-no-circle" />
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+                <li class="realised-projects__list-item">
+                    <a href="#text-modal" class="realised-projects__card js-modal-open">
+                        <span class="realised-projects__card-top-row">
+                            <span class="realised-projects__card-label-group">
+                                <span class="realised-projects__card-label">
                                     госсектор
                                 </span>
-                                    <span class="realised-projects__card-date">
+                                <span class="realised-projects__card-date">
                                     22.05.2019
                                 </span>
-                                </span>
-
-                                <img src="img/rostelecom-logo.svg" alt="Логотип аэрофлота" class="realised-projects__company-logo"/>
                             </span>
-                            <span class="realised-projects__content">
-                                <span class="realised-projects__title">
+
+                            <img src="img/rostelecom-logo.svg" alt="Логотип аэрофлота" class="realised-projects__company-logo" />
+                        </span>
+                        <span class="realised-projects__content">
+                            <span class="realised-projects__title">
                                 Мобильный оператор Ростелеком
                             </span>
-                                <span class="realised-projects__paragraph">
+                            <span class="realised-projects__paragraph">
                                 Предоставляем комплексные решения в области информационных технологий и услуги по консалтингу, проектированию,
                             </span>
-                            </span>
-                            <span class="realised-projects__corner">
-                                <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
-                                    <use xlink:href="#arrow-right-no-circle"/>
-                                </svg>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="realised-projects__list-item">
-                        <a href="#text-modal" class="realised-projects__card js-modal-open">
-                            <span class="realised-projects__card-top-row">
-                                <span class="realised-projects__card-label-group">
-                                    <span class="realised-projects__card-label">
+                        </span>
+                        <span class="realised-projects__corner">
+                            <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                <use xlink:href="#arrow-right-no-circle" />
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+                <li class="realised-projects__list-item">
+                    <a href="#text-modal" class="realised-projects__card js-modal-open">
+                        <span class="realised-projects__card-top-row">
+                            <span class="realised-projects__card-label-group">
+                                <span class="realised-projects__card-label">
                                     госсектор
                                 </span>
-                                    <span class="realised-projects__card-date">
+                                <span class="realised-projects__card-date">
                                     22.05.2019
                                 </span>
-                                </span>
-
-                                <img src="img/akbars-bank-logo.svg" alt="Логотип аэрофлота" class="realised-projects__company-logo"/>
                             </span>
-                            <span class="realised-projects__content">
-                                <span class="realised-projects__title">
+
+                            <img src="img/akbars-bank-logo.svg" alt="Логотип аэрофлота" class="realised-projects__company-logo" />
+                        </span>
+                        <span class="realised-projects__content">
+                            <span class="realised-projects__title">
                                 Центральный банк Российской Федерации
                             </span>
-                                <span class="realised-projects__paragraph">
+                            <span class="realised-projects__paragraph">
                                 Предоставляем комплексные решения в области информационных технологий и услуги по консалтингу, проектированию,
                             </span>
-                            </span>
-                            <span class="realised-projects__corner">
-                                <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
-                                    <use xlink:href="#arrow-right-no-circle"/>
-                                </svg>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="realised-projects__list-item realised-projects__list-item--with-image">
-                        <a href="#text-modal" class="realised-projects__card js-modal-open">
-                            <span class="realised-projects__card-top-row">
-                                <span class="realised-projects__card-label-group">
-                                    <span class="realised-projects__card-label">
+                        </span>
+                        <span class="realised-projects__corner">
+                            <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                <use xlink:href="#arrow-right-no-circle" />
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+                <li class="realised-projects__list-item realised-projects__list-item--with-image">
+                    <a href="#text-modal" class="realised-projects__card js-modal-open">
+                        <span class="realised-projects__card-top-row">
+                            <span class="realised-projects__card-label-group">
+                                <span class="realised-projects__card-label">
                                     госсектор
                                 </span>
-                                    <span class="realised-projects__card-date">
+                                <span class="realised-projects__card-date">
                                     22.05.2019
                                 </span>
-                                </span>
-
-                                <img src="img/gazprom-logo.svg" alt="Логотип аэрофлота" class="realised-projects__company-logo"/>
                             </span>
-                            <span class="realised-projects__content">
-                                <span class="realised-projects__title">
+
+                            <img src="img/gazprom-logo.svg" alt="Логотип аэрофлота" class="realised-projects__company-logo" />
+                        </span>
+                        <span class="realised-projects__content">
+                            <span class="realised-projects__title">
                                 Центральный банк Российской Федерации
                             </span>
-                                <span class="realised-projects__paragraph">
+                            <span class="realised-projects__paragraph">
                                 Предоставляем комплексные решения в области информационных технологий и услуги по консалтингу, проектированию,
                             </span>
-                            </span>
-                            <span class="realised-projects__corner">
-                                <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
-                                    <use xlink:href="#arrow-right-no-circle"/>
-                                </svg>
-                            </span>
-                            <span class="realised-projects__bg-image-container">
-                                <img src="img/airport.jpg" alt="Фото аэропорта" class="realised-projects__bg-image"/>
-                            </span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                        </span>
+                        <span class="realised-projects__corner">
+                            <svg width="25" height="14" aria-hidden="true" class="icon-arrow-right-no-circle">
+                                <use xlink:href="#arrow-right-no-circle" />
+                            </svg>
+                        </span>
+                        <span class="realised-projects__bg-image-container">
+                            <img src="img/airport.jpg" alt="Фото аэропорта" class="realised-projects__bg-image" />
+                        </span>
+                    </a>
+                </li>
+            </ul>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="home-news">
-        <div class="home-news__top-row">
-            <h2 class="section-header">
+<section class="home-news">
+    <div class="home-news__top-row">
+        <h2 class="section-header">
             Новости
         </h2>
-            <a href="#" class="section-header">Все новости</a>
+        <a href="#" class="section-header">Все новости</a>
+    </div>
+    <div class="home-news__slider">
+        <div class="home-news__slider-container js-home-news-slider">
+            <ul class="home-news__list">
+                <li class="home-news__list-item">
+                    <a href="#" class="home-news__card">
+                        <span class="home-news__card-left-column">
+                            <span class="home-news__card-date">
+                                12
+                                <span class="home-news__card-month">
+                                    ноя
+                                </span>
+                            </span>
+
+                            <svg width="10" height="18" aria-hidden="true" class="icon-small-arrow-right">
+                                <use xlink:href="#small-arrow-right" />
+                            </svg>
+                        </span>
+                        <span class="home-news__card-right-column">
+                            <span class="home-news__card-image-container">
+                                <img src="img/news/news-image-2.jpg" alt="Новость 1" class="home-news__card-image" />
+                            </span>
+                            <span class="home-news__card-text">
+                                СХД от «Рэйдикс» и ICL обеспечит сохранность данных Территориального фонда ОМС в Республике Мордовия
+                            </span>
+                        </span>
+                    </a>
+                </li>
+                <li class="home-news__list-item">
+                    <a href="#" class="home-news__card">
+                        <span class="home-news__card-left-column">
+                            <span class="home-news__card-date">
+                                12
+                                <span class="home-news__card-month">
+                                    ноя
+                                </span>
+                            </span>
+
+                            <svg width="10" height="18" aria-hidden="true" class="icon-small-arrow-right">
+                                <use xlink:href="#small-arrow-right" />
+                            </svg>
+                        </span>
+                        <span class="home-news__card-right-column">
+                            <span class="home-news__card-image-container">
+                                <img src="img/news/news-image-2.jpg" alt="Новость 2" class="home-news__card-image" />
+                            </span>
+                            <span class="home-news__card-text">
+                                СХД от «Рэйдикс» и ICL обеспечит сохранность данных Территориального фонда ОМС в Республике Мордовия
+                            </span>
+                        </span>
+                    </a>
+                </li>
+                <li class="home-news__list-item">
+                    <a href="#" class="home-news__card">
+                        <span class="home-news__card-left-column">
+                            <span class="home-news__card-date">
+                                12
+                                <span class="home-news__card-month">
+                                    ноя
+                                </span>
+                            </span>
+
+                            <svg width="10" height="18" aria-hidden="true" class="icon-small-arrow-right">
+                                <use xlink:href="#small-arrow-right" />
+                            </svg>
+                        </span>
+                        <span class="home-news__card-right-column">
+                            <span class="home-news__card-image-container">
+                                <img src="img/news/news-image-3.jpg" alt="Новость 3" class="home-news__card-image" />
+                            </span>
+                            <span class="home-news__card-text">
+                                СХД от «Рэйдикс» и ICL обеспечит сохранность данных Территориального фонда ОМС в Республике Мордовия
+                            </span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
         </div>
-        <div class="home-news__slider">
-            <div class="home-news__slider-container js-home-news-slider">
-                <ul class="home-news__list">
-                    <li class="home-news__list-item">
-                        <a href="#" class="home-news__card">
-                            <span class="home-news__card-left-column">
-                                <span class="home-news__card-date">
-                                12
-                                <span class="home-news__card-month">
-                                    ноя
-                                </span>
-                                </span>
-
-                                <svg width="10" height="18" aria-hidden="true" class="icon-small-arrow-right">
-                                    <use xlink:href="#small-arrow-right"/>
-                                </svg>
-                            </span>
-                            <span class="home-news__card-right-column">
-                                <span class="home-news__card-image-container">
-                                    <img src="img/news/news-image-2.jpg" alt="Новость 1" class="home-news__card-image"/>
-                                </span>
-                                <span class="home-news__card-text">
-                                СХД от «Рэйдикс» и ICL обеспечит сохранность данных Территориального фонда ОМС в Республике Мордовия
-                            </span>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="home-news__list-item">
-                        <a href="#" class="home-news__card">
-                            <span class="home-news__card-left-column">
-                                <span class="home-news__card-date">
-                                12
-                                <span class="home-news__card-month">
-                                    ноя
-                                </span>
-                                </span>
-
-                                <svg width="10" height="18" aria-hidden="true" class="icon-small-arrow-right">
-                                    <use xlink:href="#small-arrow-right"/>
-                                </svg>
-                            </span>
-                            <span class="home-news__card-right-column">
-                                <span class="home-news__card-image-container">
-                                    <img src="img/news/news-image-2.jpg" alt="Новость 2" class="home-news__card-image"/>
-                                </span>
-                                <span class="home-news__card-text">
-                                СХД от «Рэйдикс» и ICL обеспечит сохранность данных Территориального фонда ОМС в Республике Мордовия
-                            </span>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="home-news__list-item">
-                        <a href="#" class="home-news__card">
-                            <span class="home-news__card-left-column">
-                                <span class="home-news__card-date">
-                                12
-                                <span class="home-news__card-month">
-                                    ноя
-                                </span>
-                                </span>
-
-                                <svg width="10" height="18" aria-hidden="true" class="icon-small-arrow-right">
-                                    <use xlink:href="#small-arrow-right"/>
-                                </svg>
-                            </span>
-                            <span class="home-news__card-right-column">
-                                <span class="home-news__card-image-container">
-                                    <img src="img/news/news-image-3.jpg" alt="Новость 3" class="home-news__card-image"/>
-                                </span>
-                                <span class="home-news__card-text">
-                                СХД от «Рэйдикс» и ICL обеспечит сохранность данных Территориального фонда ОМС в Республике Мордовия
-                            </span>
-                            </span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
+    </div>
+</section>
 
 {% endblock %}

@@ -20,17 +20,18 @@
     display: flex;
     flex-wrap: wrap;
     margin-left: auto;
-    margin-bottom: -25px;
+    margin-bottom: -35px;
+    align-items: flex-start;
     @include breakpoint(laptop) {
         margin-left: 0;
         margin-top: 30px;
     }
     @include breakpoint(small-tablet) {
         position: relative;
-        overflow-x: auto;
+        overflow-y: hidden;
         -webkit-overflow-scrolling: touch;
-        padding-bottom: 20px;
-        margin-bottom: -20px;
+        padding-bottom: 30px;
+        margin-bottom: -30px;
         flex-wrap: nowrap;
         margin-left: -1 * $desktop-content-padding;
         margin-right: -1 * $desktop-content-padding;
@@ -48,6 +49,56 @@
     }
 }
 
+
+.equipment__tab-all-link {
+    color: $red;
+    font-size: 16px;
+    line-height: 21px;
+    display: inline-flex;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-weight: 400;
+    padding-top: 14px;
+    z-index: 20;
+    transition: opacity .3s, transform .3s, visibility 0s linear .3s;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100%);
+
+    @include breakpoint(small-tablet) {
+        font-size: 14px;
+    }
+    svg {
+        width: 6px;
+        height: 12px;
+        flex-shrink: 0;
+        margin-left: 8px;
+        fill: $red;
+        transition: fill .2s;
+
+        @include breakpoint(small-tablet) {
+            width: 5px;
+            height: 10px;
+            margin-left: 6px;
+        }
+    }
+    &:link,
+    &:visited {
+        color: $red;
+    }
+
+
+    &:hover {
+        color: $red-hover;
+
+        svg {
+            fill: $red-hover;
+        }
+    }
+}
+
 .equipment__tab-button {
     font-size: 16px;
     line-height: 22px;
@@ -55,6 +106,8 @@
     flex-shrink: 0;
     padding-right: 30px;
     margin-bottom: 25px;
+    position: relative;
+    cursor: pointer;
     @include breakpoint(small-tablet) {
         font-size: 14px;
         margin-bottom: 0;
@@ -84,10 +137,17 @@
                 transform: translateZ(0) scale(1);
             }
         }
+
+        .equipment__tab-all-link {
+            transition: all .3s;
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
     }
     &.active {
-        pointer-events: none;
-        cursor: default;
+       
         font-weight: 700;
         .equipment__tab-button-text {
             &::before {
@@ -96,6 +156,8 @@
         }
     }
 }
+
+
 
 .equipment__tab-button-text {
     position: relative;
@@ -111,6 +173,13 @@
         transform: translateZ(0) scale(0);
         transform-origin: left center;
         transition: transform 0.2s;
+    }
+
+
+    @include breakpoint(small-tablet) {
+        br {
+            display: none;
+        }
     }
 }
 
