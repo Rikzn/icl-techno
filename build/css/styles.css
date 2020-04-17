@@ -4737,12 +4737,11 @@ a.section-header:link, a.section-header:visited {
     font-weight: 700; }
     .equipment__tab-button.active .equipment__tab-button-text::before {
       transform: translateZ(0) scale(1); }
-    @media only screen and (max-width: 968px) {
-      .equipment__tab-button.active .equipment__tab-all-link {
-        transition: all .3s;
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0); } }
+    .equipment__tab-button.active .equipment__tab-all-link {
+      transition: all .3s;
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0); }
 
 .equipment__tab-button-text {
   position: relative; }
