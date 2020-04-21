@@ -238,6 +238,7 @@
     max-height: 90%;
     min-height: 500px;
     max-width: 80%;
+    height: 100%;
     margin: auto;
     position: relative;
     @include breakpoint(mobile) {
@@ -322,6 +323,7 @@
     color: white;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     @include breakpoint(mobile) {
         width: 100%;
         margin-left: none;
@@ -355,7 +357,7 @@
     position: relative;
     padding-right: 20px;
     -webkit-overflow-scrolling: touch;
-    max-height: 300px;
+    max-height: 100%;
     @include breakpoint(mobile) {
         margin-top: 20px;
         padding-right: 0;

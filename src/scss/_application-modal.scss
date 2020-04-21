@@ -38,8 +38,8 @@
     z-index: 10;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-    padding: 56px;
-    padding-top: 45px;
+    padding: 40px;
+    padding-top: 30px;
     max-height: 100%;
 
     @include breakpoint(mobile) {
@@ -67,7 +67,7 @@
 }
 
 .application-modal__form {
-    margin-top: 40px;
+    margin-top: 25px;
 }
 
 .application-modal__form-row {
@@ -105,7 +105,7 @@
 }
 
 .application-modal__textarea {
-    height: 162px;
+    height: 130px;
 }
 
 .application-modal__checkbox {
@@ -175,7 +175,7 @@
 }
 
 .application-modal__submit {
-    margin-top: 2rem;
+    margin-top: 10px;
     outline: none;
     display: flex;
     align-items: center;
@@ -203,10 +203,11 @@
     height: 50px;
     background-color: $red;
     position: absolute;
-    // right: 0;
     left: 100%;
     top: 0;
     z-index: 100;
+
+   
     @include breakpoint(mobile) {
         left: auto;
         right: 0;
@@ -221,6 +222,16 @@
         > svg {
             fill: white;
             transform: rotate(45deg);
+            transition: transform .3s;
+        }
+    }
+
+
+    &:hover {
+        > span {
+            > svg {
+                transform: rotate(225deg);
+            }
         }
     }
 }

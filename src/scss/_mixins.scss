@@ -340,14 +340,14 @@
     > blockquote {
         padding-left: 32px;
         display: block;
-        font-size: 26px;
+        font-size: 22px;
         line-height: 1.35;
         position: relative;
         font-family: $proxima;
         margin-bottom: 15px;
         margin-top: 15px;
         @include breakpoint(tablet) {
-            font-size: 22px;
+            font-size: 20px;
         }
         @include breakpoint(small-mobile) {
             font-size: 18px;

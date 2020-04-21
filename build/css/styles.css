@@ -2135,7 +2135,7 @@ section:first-child {
   .default-content > blockquote {
     padding-left: 32px;
     display: block;
-    font-size: 26px;
+    font-size: 22px;
     line-height: 1.35;
     position: relative;
     font-family: "Proxima Nova", sans-serif;
@@ -2143,7 +2143,7 @@ section:first-child {
     margin-top: 15px; }
     @media only screen and (max-width: 1080px) {
       .default-content > blockquote {
-        font-size: 22px; } }
+        font-size: 20px; } }
     @media only screen and (max-width: 576px) {
       .default-content > blockquote {
         font-size: 18px; } }
@@ -5863,7 +5863,6 @@ a.section-header:link, a.section-header:visited {
 
 .our-clients__slider-image-container {
   padding-bottom: 64%;
-  background-color: black;
   position: relative; }
 
 .our-clients__slider-image {
@@ -9142,7 +9141,7 @@ a.section-header:link, a.section-header:visited {
 
 .catalog-item-header {
   position: relative;
-  margin-bottom: 110px;
+  margin-bottom: 40px;
   padding-top: 100px;
   color: white; }
   .catalog-item-header--light {
@@ -9419,7 +9418,7 @@ a.section-header:link, a.section-header:visited {
   flex-direction: row;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
   margin-left: -40px;
   margin-right: -40px; }
   @media only screen and (max-width: 768px) {
@@ -11307,8 +11306,8 @@ a.section-header:link, a.section-header:visited {
   z-index: 10;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  padding: 56px;
-  padding-top: 45px;
+  padding: 40px;
+  padding-top: 30px;
   max-height: 100%; }
   @media only screen and (max-width: 768px) {
     .application-modal__inner-wrapper {
@@ -11336,7 +11335,7 @@ a.section-header:link, a.section-header:visited {
   line-height: 1.2; }
 
 .application-modal__form {
-  margin-top: 40px; }
+  margin-top: 25px; }
 
 .application-modal__form-row {
   margin-bottom: 20px; }
@@ -11376,7 +11375,7 @@ a.section-header:link, a.section-header:visited {
     color: #4d4d4d; }
 
 .application-modal__textarea {
-  height: 162px; }
+  height: 130px; }
 
 .application-modal__checkbox {
   display: flex;
@@ -11426,7 +11425,7 @@ a.section-header:link, a.section-header:visited {
   margin-top: 3px; }
 
 .application-modal__submit {
-  margin-top: 2rem;
+  margin-top: 10px;
   outline: none;
   display: flex;
   align-items: center;
@@ -11471,7 +11470,10 @@ a.section-header:link, a.section-header:visited {
     justify-content: center; }
     .application-modal__close-btn > span > svg {
       fill: white;
-      transform: rotate(45deg); }
+      transform: rotate(45deg);
+      transition: transform .3s; }
+  .application-modal__close-btn:hover > span > svg {
+    transform: rotate(225deg); }
 
 .text-modal {
   position: fixed;
@@ -12375,7 +12377,7 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
 
 .choices__placeholder {
   opacity: 1;
-  color: #FB0D1B; }
+  color: #bababa; }
 
 .choices__list--single {
   padding: 0;
@@ -12601,6 +12603,7 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
   max-height: 90%;
   min-height: 500px;
   max-width: 80%;
+  height: 100%;
   margin: auto;
   position: relative; }
   @media only screen and (max-width: 768px) {
@@ -12679,7 +12682,8 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
   width: 50%;
   color: white;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: center; }
   @media only screen and (max-width: 768px) {
     .team__modal-content-column {
       width: 100%;
@@ -12710,7 +12714,7 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
   position: relative;
   padding-right: 20px;
   -webkit-overflow-scrolling: touch;
-  max-height: 300px; }
+  max-height: 100%; }
   @media only screen and (max-width: 768px) {
     .team__modal-text-wrapper {
       margin-top: 20px;
@@ -13299,7 +13303,7 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
   .partner-benefits__card > blockquote {
     padding-left: 32px;
     display: block;
-    font-size: 26px;
+    font-size: 22px;
     line-height: 1.35;
     position: relative;
     font-family: "Proxima Nova", sans-serif;
@@ -13307,7 +13311,7 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
     margin-top: 15px; }
     @media only screen and (max-width: 1080px) {
       .partner-benefits__card > blockquote {
-        font-size: 22px; } }
+        font-size: 20px; } }
     @media only screen and (max-width: 576px) {
       .partner-benefits__card > blockquote {
         font-size: 18px; } }
@@ -13551,7 +13555,7 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
   .partner-candidate__content > blockquote {
     padding-left: 32px;
     display: block;
-    font-size: 26px;
+    font-size: 22px;
     line-height: 1.35;
     position: relative;
     font-family: "Proxima Nova", sans-serif;
@@ -13559,7 +13563,7 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
     margin-top: 15px; }
     @media only screen and (max-width: 1080px) {
       .partner-candidate__content > blockquote {
-        font-size: 22px; } }
+        font-size: 20px; } }
     @media only screen and (max-width: 576px) {
       .partner-candidate__content > blockquote {
         font-size: 18px; } }
@@ -13763,7 +13767,7 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
   .landing-node-text > blockquote {
     padding-left: 32px;
     display: block;
-    font-size: 26px;
+    font-size: 22px;
     line-height: 1.35;
     position: relative;
     font-family: "Proxima Nova", sans-serif;
@@ -13771,7 +13775,7 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
     margin-top: 15px; }
     @media only screen and (max-width: 1080px) {
       .landing-node-text > blockquote {
-        font-size: 22px; } }
+        font-size: 20px; } }
     @media only screen and (max-width: 576px) {
       .landing-node-text > blockquote {
         font-size: 18px; } }
