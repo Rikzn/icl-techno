@@ -161,9 +161,10 @@
         }
     }
 
-    > a:not(.btn-with-corners) {
+    a:not([class]) {
         color: $red;
         transition: color 0.2s;
+        
         &:link,
         &:visited {
             color: $red;

@@ -1976,13 +1976,13 @@ section:first-child {
     margin-top: 0; }
   .default-content > *:last-child {
     margin-bottom: 0; }
-  .default-content > a:not(.btn-with-corners) {
+  .default-content a:not([class]) {
     color: #FB0D1B;
     transition: color 0.2s; }
-    .default-content > a:not(.btn-with-corners):link, .default-content > a:not(.btn-with-corners):visited {
+    .default-content a:not([class]):link, .default-content a:not([class]):visited {
       color: #FB0D1B; }
-    .no-touch .default-content > a:not(.btn-with-corners):hover,
-    .touch .default-content > a:not(.btn-with-corners):active {
+    .no-touch .default-content a:not([class]):hover,
+    .touch .default-content a:not([class]):active {
       color: #C40C1F; }
   .default-content > h1 {
     font-size: 40px; }
@@ -13195,13 +13195,13 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
     margin-top: 0; }
   .partner-benefits__card > *:last-child {
     margin-bottom: 0; }
-  .partner-benefits__card > a:not(.btn-with-corners) {
+  .partner-benefits__card a:not([class]) {
     color: #FB0D1B;
     transition: color 0.2s; }
-    .partner-benefits__card > a:not(.btn-with-corners):link, .partner-benefits__card > a:not(.btn-with-corners):visited {
+    .partner-benefits__card a:not([class]):link, .partner-benefits__card a:not([class]):visited {
       color: #FB0D1B; }
-    .no-touch .partner-benefits__card > a:not(.btn-with-corners):hover,
-    .touch .partner-benefits__card > a:not(.btn-with-corners):active {
+    .no-touch .partner-benefits__card a:not([class]):hover,
+    .touch .partner-benefits__card a:not([class]):active {
       color: #C40C1F; }
   .partner-benefits__card > h1 {
     font-size: 40px; }
@@ -13447,13 +13447,13 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
     margin-top: 0; }
   .partner-candidate__content > *:last-child {
     margin-bottom: 0; }
-  .partner-candidate__content > a:not(.btn-with-corners) {
+  .partner-candidate__content a:not([class]) {
     color: #FB0D1B;
     transition: color 0.2s; }
-    .partner-candidate__content > a:not(.btn-with-corners):link, .partner-candidate__content > a:not(.btn-with-corners):visited {
+    .partner-candidate__content a:not([class]):link, .partner-candidate__content a:not([class]):visited {
       color: #FB0D1B; }
-    .no-touch .partner-candidate__content > a:not(.btn-with-corners):hover,
-    .touch .partner-candidate__content > a:not(.btn-with-corners):active {
+    .no-touch .partner-candidate__content a:not([class]):hover,
+    .touch .partner-candidate__content a:not([class]):active {
       color: #C40C1F; }
   .partner-candidate__content > h1 {
     font-size: 40px; }
@@ -13659,13 +13659,13 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
     margin-top: 0; }
   .landing-node-text > *:last-child {
     margin-bottom: 0; }
-  .landing-node-text > a:not(.btn-with-corners) {
+  .landing-node-text a:not([class]) {
     color: #FB0D1B;
     transition: color 0.2s; }
-    .landing-node-text > a:not(.btn-with-corners):link, .landing-node-text > a:not(.btn-with-corners):visited {
+    .landing-node-text a:not([class]):link, .landing-node-text a:not([class]):visited {
       color: #FB0D1B; }
-    .no-touch .landing-node-text > a:not(.btn-with-corners):hover,
-    .touch .landing-node-text > a:not(.btn-with-corners):active {
+    .no-touch .landing-node-text a:not([class]):hover,
+    .touch .landing-node-text a:not([class]):active {
       color: #C40C1F; }
   .landing-node-text > h1 {
     font-size: 40px; }
