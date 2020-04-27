@@ -1760,7 +1760,8 @@ button {
       -ms-user-select: none;
           user-select: none;
   -webkit-appearance: none;
-  font: inherit; }
+  font: inherit;
+  outline: none; }
 
 a {
   text-decoration: none; }
@@ -11344,13 +11345,21 @@ a.section-header:link, a.section-header:visited {
   margin: auto;
   background-color: #fff;
   color: black;
-  width: 620px;
+  max-width: 620px;
+  width: 100%;
   position: relative;
   cursor: initial; }
   @media only screen and (max-width: 768px) {
     .application-modal__content {
       width: 100%;
       height: 100%; } }
+  .application-modal__content--partner {
+    max-width: 80%; }
+    @media only screen and (max-width: 768px) {
+      .application-modal__content--partner {
+        max-width: 100%;
+        width: 100%;
+        height: 100%; } }
 
 .application-modal__inner-wrapper {
   position: relative;
@@ -11383,10 +11392,8 @@ a.section-header:link, a.section-header:visited {
 .application-modal__heading {
   font-size: 32px;
   font-weight: 700;
-  line-height: 1.2; }
-
-.application-modal__form {
-  margin-top: 25px; }
+  line-height: 1.2;
+  margin-bottom: 25px; }
 
 .application-modal__form-row {
   margin-bottom: 20px; }
@@ -11476,7 +11483,7 @@ a.section-header:link, a.section-header:visited {
   margin-top: 3px; }
 
 .application-modal__submit {
-  margin-top: 10px;
+  margin-top: 20px;
   outline: none;
   display: flex;
   align-items: center;
@@ -12375,6 +12382,9 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
   @media only screen and (max-width: 768px) {
     .application__form-heading {
       font-size: 20px; } }
+
+.application__form--modal {
+  max-width: 1000px; }
 
 .choices {
   font-size: 20px;

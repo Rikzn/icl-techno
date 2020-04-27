@@ -207,6 +207,7 @@
     color: #BABABA;
     @include breakpoint(mobile) {
         max-width: none;
+        
     }
 }
 
@@ -332,3 +333,6 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
     }
 }
 
+.application__form--modal {
+    max-width: 1000px;
+}
