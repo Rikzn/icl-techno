@@ -30,7 +30,7 @@
 
 .is-focused .choices__inner,
 .is-open .choices__inner {
-    border-color: $red;
+    border-color: $red !important;
     box-shadow: 0px 7px 24px rgba(#FB0D1B, .12);
 }
 

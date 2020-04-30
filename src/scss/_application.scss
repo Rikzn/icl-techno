@@ -153,8 +153,22 @@
             max-width: none;
         }
     }
-}
 
+   
+
+
+    .application__form--modal & {
+        .choices__inner {
+            border-color: #717171;
+            border-bottom-width: 4px;
+
+         
+        }
+    }
+
+
+    
+}
 
 
 
@@ -173,6 +187,10 @@
     outline: none;
     transition: box-shadow .2s, border-color .2s;
     pointer-events: initial;
+    .application__form--modal & {
+        border: 1px solid #717171;
+        border-bottom-width: 4px;
+    }
     @include breakpoint(mobile) {
         font-size: 16px;
         max-width: none;

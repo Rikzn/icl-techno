@@ -11405,7 +11405,8 @@ a.section-header:link, a.section-header:visited {
   display: block;
   font: inherit;
   width: 100%;
-  border: 1px solid black;
+  border: 1px solid #717171;
+  border-bottom-width: 4px;
   color: black;
   border-radius: 0;
   background-color: transparent;
@@ -12236,6 +12237,9 @@ a.section-header:link, a.section-header:visited {
     @media only screen and (max-width: 768px) {
       .application__form-input-wrapper .choices {
         max-width: none; } }
+  .application__form--modal .application__form-input-wrapper .choices__inner {
+    border-color: #717171;
+    border-bottom-width: 4px; }
 
 .application__form-input {
   max-width: 420px;
@@ -12250,6 +12254,9 @@ a.section-header:link, a.section-header:visited {
   outline: none;
   transition: box-shadow .2s, border-color .2s;
   pointer-events: initial; }
+  .application__form--modal .application__form-input {
+    border: 1px solid #717171;
+    border-bottom-width: 4px; }
   @media only screen and (max-width: 768px) {
     .application__form-input {
       font-size: 16px;
@@ -12415,7 +12422,7 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
 
 .is-focused .choices__inner,
 .is-open .choices__inner {
-  border-color: #FB0D1B;
+  border-color: #FB0D1B !important;
   box-shadow: 0px 7px 24px rgba(251, 13, 27, 0.12); }
 
 .choices[data-type*=select-one] .choices__inner {
