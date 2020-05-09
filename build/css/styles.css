@@ -4610,7 +4610,8 @@ a.section-header:link, a.section-header:visited {
     justify-content: flex-end; } }
 
 .equipment {
-  margin: 60px 0; }
+  margin: 60px 0;
+  margin-bottom: 80px; }
   @media only screen and (max-width: 1080px) {
     .equipment {
       margin: 50px 0; } }
@@ -4763,7 +4764,7 @@ a.section-header:link, a.section-header:visited {
       display: none; } }
 
 .equipment__tabs-list {
-  margin-top: 100px;
+  margin-top: 60px;
   position: relative; }
   @media only screen and (max-width: 1080px) {
     .equipment__tabs-list {

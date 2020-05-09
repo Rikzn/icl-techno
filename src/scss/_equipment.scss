@@ -1,6 +1,6 @@
 .equipment {
     @include section();
-
+    margin-bottom: 80px;
     &--without-tabs {
         .section-header {
             margin-bottom: 100px;
@@ -194,7 +194,7 @@
 }
 
 .equipment__tabs-list {
-    margin-top: 100px;
+    margin-top: 60px;
     position: relative;
     @include breakpoint(tablet) {
         margin-top: 50px;
