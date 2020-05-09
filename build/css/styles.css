@@ -7968,7 +7968,7 @@ a.section-header:link, a.section-header:visited {
   padding: 45px 50px;
   display: flex;
   flex-direction: column;
-  margin-top: 10px; }
+  margin-top: 30px; }
   @media only screen and (max-width: 1080px) {
     .serial__form {
       margin-bottom: 30px; } }
