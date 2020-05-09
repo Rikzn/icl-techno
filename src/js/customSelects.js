@@ -7,7 +7,7 @@ export default function() {
         new Choices(select, {
             searchEnabled: false,
             itemSelectText: '',
-            // placeholder: false
+            shouldSort: false
         });
     })
 }
