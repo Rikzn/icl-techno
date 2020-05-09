@@ -343,6 +343,24 @@
 .equipment__slider-title {
     font-weight: 700;
     display: block;
+    font-size: 16px;
+    line-height: 21px;
+    font-family: $proxima;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.equipment__slider-tag {
+    font-size: 10px;
+    line-height: 1.4;
+    font-family: $proxima;
+    color: #FF0000;
+    border: 2px solid #FB0D1B;
+    padding: 4px 10px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 15px;
+    display: inline-block;
 }
 
 .equipment__slider-text {
