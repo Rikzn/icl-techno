@@ -1885,6 +1885,9 @@ section:first-child {
     .page-header.fixed::before, .page-header.search-open::before, .page-header--white::before,
     .no-touch .page-header:not(.page-header--dark):not(.page-header--light):hover::before {
       background-color: white; }
+  @media only screen and (max-width: 576px) {
+    .page-header {
+      height: 80px; } }
 
 .page-content {
   flex-grow: 1;
@@ -5712,7 +5715,9 @@ a.section-header:link, a.section-header:visited {
         visibility: visible; } }
   @media only screen and (max-width: 768px) {
     .burger-menu {
-      padding: 0 20px; } }
+      padding: 0 20px;
+      top: 80px;
+      height: calc(100% - 80px); } }
   @media only screen and (max-width: 576px) {
     .burger-menu {
       padding: 0 15px; } }
