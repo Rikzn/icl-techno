@@ -1,6 +1,6 @@
 .equipment {
     @include section();
-
+    margin-bottom: 80px;
     &--without-tabs {
         .section-header {
             margin-bottom: 100px;
@@ -194,7 +194,7 @@
 }
 
 .equipment__tabs-list {
-    margin-top: 100px;
+    margin-top: 60px;
     position: relative;
     @include breakpoint(tablet) {
         margin-top: 50px;
@@ -343,6 +343,24 @@
 .equipment__slider-title {
     font-weight: 700;
     display: block;
+    font-size: 16px;
+    line-height: 21px;
+    font-family: $proxima;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.equipment__slider-tag {
+    font-size: 10px;
+    line-height: 1.4;
+    font-family: $proxima;
+    color: #FF0000;
+    border: 2px solid #FB0D1B;
+    padding: 4px 10px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 15px;
+    display: inline-block;
 }
 
 .equipment__slider-text {

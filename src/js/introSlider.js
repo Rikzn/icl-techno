@@ -69,7 +69,7 @@ export default function() {
         slides[activeSlideIndex].classList.add('active');
         paginationItems[activeSlideIndex].classList.add('active');
         console.log(`Setting active index ${activeSlideIndex}`);
-        activeMark.style.transform = `translateX(${activeSlideIndex * 100}%)`;
+        activeMark.style.transform = `translateY(-50%) translateX(${activeSlideIndex * 100}%)`;
     }
 
     // Функция автоплея

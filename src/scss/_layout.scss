@@ -77,6 +77,10 @@
             background-color: white;
         }
     }
+
+    @include breakpoint(small-mobile) {
+        height: 80px;
+    }
 }
 
 .page-content {

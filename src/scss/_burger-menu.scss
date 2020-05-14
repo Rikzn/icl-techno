@@ -28,6 +28,8 @@
 
     @include breakpoint(mobile) {
         padding: 0 $mobile-content-padding;
+        top: 80px;
+        height: calc(100% - 80px);
     }
 
 
