@@ -11382,6 +11382,16 @@ a.section-header:link, a.section-header:visited {
   visibility: hidden;
   transition: opacity 0.2s, visibility 0s linear 0.2s;
   display: none; }
+  body:not(.loaded) .application-modal {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; }
   .loaded .application-modal {
     display: flex; }
   .application-modal.shown {
