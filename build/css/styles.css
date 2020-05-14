@@ -4915,7 +4915,7 @@ a.section-header:link, a.section-header:visited {
   line-height: 1.4;
   font-family: "Proxima Nova", sans-serif;
   color: #FF0000;
-  border: 2px solid #FB0D1B;
+  border: 1px solid #FB0D1B;
   padding: 4px 10px;
   text-align: center;
   margin: 0 auto;
