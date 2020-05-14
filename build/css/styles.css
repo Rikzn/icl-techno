@@ -11334,7 +11334,10 @@ a.section-header:link, a.section-header:visited {
   z-index: 1500;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.2s, visibility 0s linear 0.2s; }
+  transition: opacity 0.2s, visibility 0s linear 0.2s;
+  display: none; }
+  .loaded .application-modal {
+    display: flex; }
   .application-modal.shown {
     opacity: 1;
     visibility: visible;
@@ -11354,7 +11357,8 @@ a.section-header:link, a.section-header:visited {
       width: 100%;
       height: 100%; } }
   .application-modal__content--partner {
-    max-width: 80%; }
+    max-width: 80%;
+    background-color: #F1F1F1; }
     @media only screen and (max-width: 768px) {
       .application-modal__content--partner {
         max-width: 100%;

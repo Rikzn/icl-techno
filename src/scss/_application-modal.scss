@@ -12,6 +12,11 @@
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.2s, visibility 0s linear 0.2s;
+    display: none;
+
+    .loaded & {
+        display: flex;
+    }
     &.shown {
         opacity: 1;
         visibility: visible;
@@ -38,6 +43,7 @@
 
     &--partner {
         max-width: 80%;
+        background-color: #F1F1F1;
         @include breakpoint(mobile) {
             max-width: 100%;
             width: 100%;
