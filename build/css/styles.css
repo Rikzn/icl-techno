@@ -8621,9 +8621,9 @@ a.section-header:link, a.section-header:visited {
   top: 0;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  font-family: 'object-fit: cover; object-position: center;'; }
+  -o-object-position: right center;
+     object-position: right center;
+  font-family: 'object-fit: cover; object-position: right center;'; }
 
 .education__content {
   width: 50%;

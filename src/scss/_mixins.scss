@@ -60,6 +60,11 @@
     object-position: top;
     font-family: 'object-fit: cover; object-position: top;';
 }
+@mixin objectFitCoverRight() {
+    object-fit: cover;
+    object-position: right center;
+    font-family: 'object-fit: cover; object-position: right center;';
+}
 
 @mixin objectFitContain() {
     object-fit: contain;
