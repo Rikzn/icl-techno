@@ -1362,8 +1362,9 @@
                                                 Сайт компании
                                             </div>
 
-                                            <div class="application__form-input-wrapper">
-                                                <select name="select" class="js-custom-select" required>
+                                            <div class="application__form-input-wrapper" id="partner-select-errors">
+                                                <select name="select" class="js-custom-select" required data-parsley-errors-container="#partner-select-errors">
+                                                    <option value>Не установлено</option>
                                                     <option value="value1">до 50 человек</option>
                                                     <option value="value2">до 30 человек</option>
                                                     <option value="value3">до 20 человек</option>

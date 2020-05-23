@@ -318,7 +318,10 @@
     }
 }
 
-
+input[type="checkbox"][required] ~ .application__form-checkbox-icon,
+input[type="radio"][required] ~ .application__form-radio-icon {
+    border-color: $red;
+}
 
 input[type="checkbox"]:checked ~ .application__form-checkbox-icon {
     border-color: $red;

@@ -144,7 +144,7 @@
     left: calc((100vw - 100%) / 2 * -1);
     // width: 100%;
     top: 100%;
-    margin-top: -7px;
+    margin-top: -52px;
     z-index: 80;
 
     @include breakpoint(small-tablet) {
@@ -198,7 +198,9 @@
     position: relative;
     
 
-    height: 30px;
+    
+
+    height: 120px;
     @include breakpoint(small-tablet) {
         height: 6px;
     }
@@ -263,7 +265,7 @@
     left: 0;
     width: 100%;
     min-height: 125px;
-    bottom: 11px;
+    bottom: 56px;
     color: white;
     padding-top: 20px;
     padding-left: 25px;

@@ -16,7 +16,7 @@ export default function() {
 
             const myMap = new ymaps.Map(mapElement, {
                 center: window.matchMedia("(max-width: 968px)").matches ? coords : centerCoords,
-                zoom: window.matchMedia("(max-width: 968px)").matches ? 17 : 12,
+                zoom: window.matchMedia("(max-width: 968px)").matches ? 17 : 10,
                 controls: []
             });
 

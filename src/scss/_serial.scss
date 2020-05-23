@@ -15,6 +15,21 @@
     font-family: $proxima;
     font-size: 20px;
     margin-bottom: 10px;
+
+    i {
+        font-size: 18px;
+    }
+
+    a {
+        &:link,
+        &:visited {
+            color: $red;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
     @include breakpoint(small-mobile) {
         font-size: 16px;
     }
