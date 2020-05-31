@@ -3,10 +3,8 @@ import Swiper from 'swiper';
 
 export default function() {
     const ourHistorySliders = Array.from(document.querySelectorAll('.js-our-history'));
-
-    console.log('History sliders', ourHistorySliders);
     ourHistorySliders.forEach(slider => {
-        console.log('Initializing', slider);
+       
         const historySliderMain = slider.querySelector('.js-our-history-info-slider');
         const historySliderThumbs = slider.querySelector('.js-our-history-range-slider');
 
@@ -23,7 +21,6 @@ export default function() {
 
         const sliderOptions = {
             spaceBetween: 40,
-            // effect: 'fade',
             autoHeight: true,
             navigation: {
                 prevEl: slider.querySelector('.js-history-slider-prev'),

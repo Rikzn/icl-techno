@@ -1,4 +1,4 @@
-import { TweenMax } from 'gsap/TweenMax';
+import { gsap } from "gsap";
 
 export default function() {
     const faqAccordeons = Array.from(document.querySelectorAll('.js-accordeon'));
@@ -17,14 +17,14 @@ export default function() {
             event.preventDefault();
             accordeon.classList.toggle('active');
             if (!accordeonOpen) {
-                TweenMax.set(content, { clearProps: 'all' });
-                TweenMax.set(content, { height: 'auto' });
-                TweenMax.from(content, 0.4, { height: 0 });
+                gsap.set(content, { clearProps: 'all' });
+                gsap.set(content, { height: 'auto' });
+                gsap.from(content, 0.4, { height: 0 });
                 accordeonOpen = true;
             } else {
-                TweenMax.set(content, { clearProps: 'all' });
-                TweenMax.set(content, { height: 'auto' });
-                TweenMax.to(content, 0.4, { height: 0 });
+                gsap.set(content, { clearProps: 'all' });
+                gsap.set(content, { height: 'auto' });
+                gsap.to(content, 0.4, { height: 0 });
                 accordeonOpen = false;
             }
         });

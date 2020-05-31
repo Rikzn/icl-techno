@@ -5,7 +5,7 @@ export default function() {
 
     const items = Array.from(navigationStandaloneList.querySelectorAll('.main-nav__submenu-products-item, .main-nav__submenu-products-item-more-link'));
 
-    items.forEach(item => console.log('Item offset parent', item.offsetParent));
+  
 
     const activeItem = items.find(element => element.classList.contains('active'));
 

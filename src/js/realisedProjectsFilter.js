@@ -1,6 +1,6 @@
 export default function() {
     const filters = Array.from(document.querySelectorAll('.js-realised-projects-filter'));
-    console.log('Filters', filters);
+
     filters.forEach(item => {
         const btns = Array.from(item.querySelectorAll('.js-realised-projects-filter-btns .tabs-block__tabs-navigation-btn'));
         const initialBtnIndex = 0;
@@ -15,20 +15,14 @@ export default function() {
 
             const selectedYears = activeCheckboxes.map(box => box.value);
 
-            console.log('Selected categories', selectedCategories);
-
-            console.log('Selected years', selectedYears);
-
             cards.forEach(card => {
                 const cardCategory = card.getAttribute('data-category');
 
                 const cardYear = card.getAttribute('data-year');
 
                 if (selectedCategories.includes(cardCategory) && selectedYears.includes(cardYear)) {
-                    console.log('Item is shown', card);
                     card.classList.remove('hidden');
                 } else {
-                    console.log('Item is hidden', card);
                     card.classList.add('hidden');
                 }
             });

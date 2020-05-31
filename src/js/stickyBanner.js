@@ -15,10 +15,6 @@ export default function() {
 
     if (!layoutMainColumn) return;
 
-    
-
-
-    console.log('Layout column height', parseInt(window.getComputedStyle(layoutMainColumn).getPropertyValue("height"), 10))
 
     const controller = new ScrollMagic.Controller();
 

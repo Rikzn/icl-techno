@@ -2,8 +2,7 @@
 import { lockScroll, unlockScroll } from './scrollBlocker';
 
 export default function() {
-    const modalLinks = Array.from(document.querySelectorAll('.js-modal-open'));
-    const modalCloseLinks = Array.from(document.querySelectorAll('.js-modal-close'));
+   
     const modals = Array.from(document.querySelectorAll('.js-modal'));
     let activeModal = null;
 

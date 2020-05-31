@@ -8,13 +8,13 @@ export default function() {
         
 
         if (!submenu) {
-            console.log('Submenu content not found');
+            console.warn('Submenu content not found');
             continue;
         }
 
         link.addEventListener('click', function(event) {
             event.preventDefault();
-            console.log('Clicked on submenu link');
+          
             submenu.classList.toggle('shown');
             link.classList.toggle('active');
         });

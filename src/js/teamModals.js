@@ -153,12 +153,10 @@ export default function() {
     });
 
     document.addEventListener('keyup', function(event) {
-        if (event.key === 'Escape') {
-            console.log('Active modal', activeModal)
-        }
+       
        
         if (event.key === 'Escape' && activeModal) {
-            console.log('Closing modal', activeModal);
+          
             
             const content = activeModal.querySelector('.js-team-modal-content');
 

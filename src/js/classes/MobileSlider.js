@@ -16,7 +16,7 @@ class MobileSlider {
         }
         this.swiperSlides = Array.from(this.swiperWrapper.children);
         if (this.swiperSlides.length === 0) {
-            console.log('No swiper slides present');
+            console.error('No swiper slides present');
             return;
         }
         this.originalClassnames = {

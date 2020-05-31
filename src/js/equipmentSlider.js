@@ -1,4 +1,8 @@
 import Swiper from 'swiper';
+import { gsap } from 'gsap';
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
+
+gsap.registerPlugin(ScrollToPlugin);
 
 export default function() {
     const equipmentSliders = Array.from(document.querySelectorAll('.js-equipment-slider'));
@@ -55,13 +59,9 @@ export default function() {
                 if (btn.getAttribute('data-category') === category) {
                     btn.classList.add('active');
                     const offsetLeft = btn.offsetLeft;
-                    if (Element.prototype.scrollTo) {
-                        tabsNavigation.scrollTo({
-                            top: 0,
-                            left: offsetLeft - 20,
-                            behavior: 'smooth'
-                        });
-                    }
+                   
+
+                    gsap.to(tabsNavigation, { duration: .4, scrollTo: { y: 0, x: offsetLeft - 20 } });
                 } else {
                     btn.classList.remove('active');
                 }
@@ -69,7 +69,6 @@ export default function() {
         }
         navBtns.forEach(btn => {
             btn.addEventListener('click', event => {
-                
                 const category = btn.getAttribute('data-category');
                 if (!category) return;
                 setActiveBtn(category);

@@ -7,10 +7,10 @@ export default function() {
         let activeTabIndex;
 
         if (!tabButtons.length === 0 || tabItems.length === 0) {
-            console.log('Отсутвуют кнопки или табы');
+            console.error('Отсутвуют кнопки или табы');
             return;
         } else if (tabButtons.length !== tabItems.length) {
-            console.log('Количество элементов управления не равно количеству табов');
+            console.error('Количество элементов управления не равно количеству табов');
             return;
         }
         

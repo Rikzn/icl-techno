@@ -6,7 +6,7 @@ export default function() {
     textInsertionSliders.forEach(slider => {
         const sliderContainer = slider.querySelector('.swiper-container');
         if (!sliderContainer) {
-            console.log('No slider container for: ', slider);
+            console.error('No slider container for: ', slider);
             return;
         }
         new Swiper(sliderContainer, {

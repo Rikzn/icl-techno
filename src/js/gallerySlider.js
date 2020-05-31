@@ -4,7 +4,7 @@ export default function() {
     const gallerySliders = Array.from(document.querySelectorAll('.js-gallery-slider'));
 
     for (const gallerySlider of gallerySliders) {
-        console.log('Initializing slider', gallerySlider);
+    
         const gallerySliderMain = gallerySlider.querySelector('.js-gallery-slider-main');
         const gallerySliderThumbs = gallerySlider.querySelector('.js-gallery-slider-thumbs');
 
@@ -69,7 +69,7 @@ export default function() {
             });
         }
 
-        console.log('Options', sliderOptions);
+      
 
         new Swiper(containerMain, sliderOptions);
     }

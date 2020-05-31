@@ -1,3 +1,5 @@
+import Hammer from 'hammerjs';
+
 export default function() {
     const introSlider = document.querySelector('.js-intro-slider');
 
@@ -62,13 +64,12 @@ export default function() {
     // Функция установки активного слайда
 
     function setActiveSlide(index) {
-        
         slides[activeSlideIndex].classList.remove('active');
         paginationItems[activeSlideIndex].classList.remove('active');
         activeSlideIndex = index;
         slides[activeSlideIndex].classList.add('active');
         paginationItems[activeSlideIndex].classList.add('active');
-        console.log(`Setting active index ${activeSlideIndex}`);
+       
         activeMark.style.transform = `translateY(-50%) translateX(${activeSlideIndex * 100}%)`;
     }
 
@@ -108,7 +109,6 @@ export default function() {
 
     autoplay();
 
-
     // Обработчики событий на ссылки пагинации слайдера
 
     paginationItems.forEach((item, index) => {
@@ -128,10 +128,7 @@ export default function() {
         });
     });
 
-    // Обработчики событий для стрелок
-
-    prevBtn.addEventListener('click', function(event) {
-        event.preventDefault();
+    function goPrevSlide() {
         let nextActiveIndex;
         if (activeSlideIndex - 1 >= 0) {
             nextActiveIndex = activeSlideIndex - 1;
@@ -147,9 +144,9 @@ export default function() {
             }
         }
         setActiveSlide(nextActiveIndex);
-    });
-    nextBtn.addEventListener('click', function(event) {
-        event.preventDefault();
+    }
+
+    function goNextSlide() {
         let nextActiveIndex;
         if (activeSlideIndex + 1 < slides.length) {
             nextActiveIndex = activeSlideIndex + 1;
@@ -165,5 +162,27 @@ export default function() {
             }
         }
         setActiveSlide(nextActiveIndex);
+    }
+
+    // Обработчики событий для стрелок
+
+    prevBtn.addEventListener('click', function(event) {
+        event.preventDefault();
+        goPrevSlide();
+    });
+    nextBtn.addEventListener('click', function(event) {
+        event.preventDefault();
+        goNextSlide();
+    });
+
+    // Обработчики свайпов
+
+    const hammertime = new Hammer(introSlider);
+
+    hammertime.on('swipeleft', () => {
+        goPrevSlide();
+    });
+    hammertime.on('swiperight', () => {
+        goNextSlide();
     });
 }

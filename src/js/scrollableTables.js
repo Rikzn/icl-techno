@@ -18,7 +18,7 @@ export default function() {
     }
 
     const scrollableTables = Array.from(document.querySelectorAll('.default-content table'));
-    console.log('Scrollable tables', scrollableTables);
+  
 
     function addDragScrollHandlers(element) {
         var pressed = false;
@@ -51,7 +51,7 @@ export default function() {
 
     scrollableTables.forEach(table => {
         const tableScrollContainer = wrapTable(table);
-        console.log('Initializing on', tableScrollContainer)
+      
 
         new PerfectScrollbar(tableScrollContainer, {
             maxScrollbarLength: 105

@@ -49,7 +49,6 @@
     }
 }
 
-
 .equipment__tab-all-link {
     color: $red;
     font-size: 16px;
@@ -62,7 +61,7 @@
     font-weight: 400;
     padding-top: 14px;
     z-index: 20;
-    transition: opacity .3s, transform .3s, visibility 0s linear .3s;
+    transition: opacity 0.3s, transform 0.3s, visibility 0s linear 0.3s;
     opacity: 0;
     visibility: hidden;
     transform: translateY(100%);
@@ -76,7 +75,7 @@
         flex-shrink: 0;
         margin-left: 8px;
         fill: $red;
-        transition: fill .2s;
+        transition: fill 0.2s;
 
         @include breakpoint(small-tablet) {
             width: 5px;
@@ -88,7 +87,6 @@
     &:visited {
         color: $red;
     }
-
 
     &:hover {
         color: $red-hover;
@@ -130,7 +128,7 @@
         color: black;
     }
 
-    &:hover {
+    .no-touch &:hover {
         .equipment__tab-button-text {
             &::before {
                 transform: translateZ(0) scale(1);
@@ -138,36 +136,28 @@
         }
 
         .equipment__tab-all-link {
-            transition: all .3s;
+            transition: all 0.3s;
             opacity: 1;
             visibility: visible;
             transform: translateY(0);
         }
-
     }
     &.active {
-       
         font-weight: 700;
         .equipment__tab-button-text {
             &::before {
                 transform: translateZ(0) scale(1);
             }
-
-            
         }
 
-      
-            .equipment__tab-all-link {
-                transition: all .3s;
-                opacity: 1;
-                visibility: visible;
-                transform: translateY(0);
-            }
-        
+        .equipment__tab-all-link {
+            transition: all 0.3s;
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
     }
 }
-
-
 
 .equipment__tab-button-text {
     position: relative;
@@ -184,7 +174,6 @@
         transform-origin: left center;
         transition: transform 0.2s;
     }
-
 
     @include breakpoint(small-tablet) {
         br {
@@ -242,7 +231,6 @@
     }
 }
 
-
 .equipment__slider-btns {
     display: flex;
     align-items: center;
@@ -259,8 +247,7 @@
     z-index: 100;
     transition: all 0.2s;
     outline: none;
-    
-    
+
     &.swiper-button-disabled,
     &.swiper-button-locked {
         opacity: 0;
@@ -268,7 +255,6 @@
         transition: opacity 0.2s, visibility 0s linear 0.2s;
     }
 
-   
     &--prev {
         left: 0;
     }
@@ -354,8 +340,8 @@
     font-size: 10px;
     line-height: 1.4;
     font-family: $proxima;
-    color: #FF0000;
-    border: 1px solid #FB0D1B;
+    color: #ff0000;
+    border: 1px solid #fb0d1b;
     padding: 4px 10px;
     text-align: center;
     margin: 0 auto;
