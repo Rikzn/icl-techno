@@ -180,9 +180,11 @@ export default function() {
     const hammertime = new Hammer(introSlider);
 
     hammertime.on('swipeleft', () => {
-        goPrevSlide();
+        goNextSlide();
     });
     hammertime.on('swiperight', () => {
-        goNextSlide();
+       
+
+        goPrevSlide();
     });
 }
