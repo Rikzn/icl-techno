@@ -2257,7 +2257,7 @@ section:first-child {
     font-size: 14px; }
   .btn-with-corners--header-btn {
     margin-right: 30px; }
-    @media only screen and (max-width: 1400px) {
+    @media screen and (max-width: 1230px) {
       .btn-with-corners--header-btn {
         display: none; } }
   .page-header--light .btn-with-corners--header-btn,

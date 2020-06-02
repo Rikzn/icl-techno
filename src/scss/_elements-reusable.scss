@@ -70,7 +70,7 @@
 
     &--header-btn {
         margin-right: 30px;
-        @include breakpoint(desktop) {
+        @media screen and (max-width: 1230px) {
             display: none;
         }
     }
