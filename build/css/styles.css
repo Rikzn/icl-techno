@@ -507,7 +507,6 @@ button.swiper-pagination-bullet {
   height: 100%;
   background: #000;
   opacity: 0.6;
-  -webkit-filter: blur(50px);
   filter: blur(50px);
   z-index: 0; }
 
@@ -2847,8 +2846,7 @@ a.section-header:link, a.section-header:visited {
     .no-touch .main-nav__submenu-products-link:hover .main-nav__submenu-icon-container > img,
     .touch .main-nav__submenu-products-link:active .main-nav__submenu-icon-container > img {
       opacity: 1;
-      -webkit-filter: invert(34%) sepia(68%) saturate(7328%) hue-rotate(344deg) brightness(90%) contrast(121%);
-              filter: invert(34%) sepia(68%) saturate(7328%) hue-rotate(344deg) brightness(90%) contrast(121%); }
+      filter: invert(34%) sepia(68%) saturate(7328%) hue-rotate(344deg) brightness(90%) contrast(121%); }
   .navigation-standalone--dark .main-nav__submenu-products-item.active .main-nav__submenu-products-link,
   .page-header--dark:not(.fixed) .main-nav__submenu-products-item.active .main-nav__submenu-products-link,
   .no-touch .navigation-standalone--dark .main-nav__submenu-products-link:hover,
@@ -2931,8 +2929,7 @@ a.section-header:link, a.section-header:visited {
   .navigation-standalone--dark .main-nav__submenu-icon-container > img,
   .page-header--dark:not(.fixed) .main-nav__submenu-icon-container > img {
     opacity: 0.5;
-    -webkit-filter: invert(100%);
-            filter: invert(100%); }
+    filter: invert(100%); }
   @media only screen and (max-width: 1080px) {
     .main-nav__submenu-content:not(.main-nav__submenu-content--standalone) .main-nav__submenu-icon-container {
       display: none; } }
@@ -3039,8 +3036,7 @@ a.section-header:link, a.section-header:visited {
       fill: #999999; }
     .main-nav__submenu-products-item-more-link:hover .main-nav__submenu-products-item-more-link-icon-container > img, .main-nav__submenu-products-item-more-link.active .main-nav__submenu-products-item-more-link-icon-container > img {
       opacity: 1;
-      -webkit-filter: invert(34%) sepia(68%) saturate(7328%) hue-rotate(344deg) brightness(90%) contrast(121%);
-              filter: invert(34%) sepia(68%) saturate(7328%) hue-rotate(344deg) brightness(90%) contrast(121%); }
+      filter: invert(34%) sepia(68%) saturate(7328%) hue-rotate(344deg) brightness(90%) contrast(121%); }
   @media only screen and (max-width: 1080px) {
     .page-header .main-nav__submenu-products-item-more-link:hover {
       background-color: transparent;
@@ -3116,8 +3112,7 @@ a.section-header:link, a.section-header:visited {
   .navigation-standalone--dark .main-nav__submenu-products-item-more-link-icon-container > img,
   .page-header--dark:not(.fixed) .main-nav__submenu-products-item-more-link-icon-container > img {
     opacity: 0.5;
-    -webkit-filter: invert(100%);
-            filter: invert(100%); }
+    filter: invert(100%); }
   .main-nav__submenu-products-item-more-link-icon-container::after {
     content: '';
     padding-bottom: 100%;
@@ -4414,14 +4409,12 @@ a.section-header:link, a.section-header:visited {
     transform: translateX(0); }
   .no-touch .realised-projects__card:hover .realised-projects__company-logo,
   .touch .realised-projects__card:active .realised-projects__company-logo {
-    -webkit-filter: grayscale(0);
-            filter: grayscale(0);
+    filter: grayscale(0);
     opacity: 1; }
   .no-touch .realised-projects__card:hover .realised-projects__card-label,
   .touch .realised-projects__card:active .realised-projects__card-label {
     opacity: 1;
-    -webkit-filter: grayscale(0);
-            filter: grayscale(0); }
+    filter: grayscale(0); }
 
 .realised-projects__corner {
   width: 120px;
@@ -4476,20 +4469,16 @@ a.section-header:link, a.section-header:visited {
   text-transform: uppercase;
   margin-right: 15px;
   white-space: nowrap;
-  -webkit-filter: grayscale(1);
-          filter: grayscale(1);
+  filter: grayscale(1);
   opacity: .4;
-  transition: opacity .2s, -webkit-filter .2s;
-  transition: filter .2s, opacity .2s;
-  transition: filter .2s, opacity .2s, -webkit-filter .2s; }
+  transition: filter .2s, opacity .2s; }
   @media only screen and (max-width: 968px) {
     .realised-projects__card-label {
       margin-right: 0;
       font-size: 10px; } }
   .realised-projects__list-item--with-image .realised-projects__card-label {
     opacity: 1;
-    -webkit-filter: grayscale(0);
-            filter: grayscale(0); }
+    filter: grayscale(0); }
 
 .realised-projects__card-date {
   color: #bababa;
@@ -4525,11 +4514,8 @@ a.section-header:link, a.section-header:visited {
   max-width: none;
   margin-left: auto;
   display: block;
-  -webkit-filter: grayscale(1);
-          filter: grayscale(1);
-  transition: opacity .2s, -webkit-filter .2s;
+  filter: grayscale(1);
   transition: filter .2s, opacity .2s;
-  transition: filter .2s, opacity .2s, -webkit-filter .2s;
   opacity: 0.5; }
   @media only screen and (max-width: 1240px) {
     .realised-projects__company-logo {
@@ -4539,8 +4525,7 @@ a.section-header:link, a.section-header:visited {
       height: 40px; } }
   .realised-projects__list-item--with-image .realised-projects__company-logo {
     opacity: 1;
-    -webkit-filter: grayscale(0);
-            filter: grayscale(0); }
+    filter: grayscale(0); }
     @media only screen and (max-width: 1240px) {
       .realised-projects__list-item--with-image .realised-projects__company-logo {
         height: 50px; } }
@@ -4869,22 +4854,17 @@ a.section-header:link, a.section-header:visited {
   text-align: center;
   display: flex;
   flex-direction: column;
-  -webkit-filter: grayscale(1);
-          filter: grayscale(1);
+  filter: grayscale(1);
   opacity: 0.65;
-  transition: opacity 0.2s, -webkit-filter 0.2s;
-  transition: filter 0.2s, opacity 0.2s;
-  transition: filter 0.2s, opacity 0.2s, -webkit-filter 0.2s; }
+  transition: filter 0.2s, opacity 0.2s; }
   .equipment__slider-card:link, .equipment__slider-card:visited {
     color: black; }
   .swiper-slide-active .equipment__slider-card {
-    -webkit-filter: grayscale(0);
-            filter: grayscale(0);
+    filter: grayscale(0);
     opacity: 1; }
   .no-touch .equipment__slider-card:hover,
   .touch .equipment__slider-card:active {
-    -webkit-filter: grayscale(0);
-            filter: grayscale(0);
+    filter: grayscale(0);
     opacity: 1; }
     .no-touch .equipment__slider-card:hover .equipment__slider-corner::before,
     .touch .equipment__slider-card:active .equipment__slider-corner::before {
@@ -6616,9 +6596,7 @@ a.section-header:link, a.section-header:visited {
     top: 0;
     left: 0;
     background-color: #FB0D1B;
-    transition: background-color .2s, -webkit-filter 0.2s;
     transition: filter 0.2s, background-color .2s;
-    transition: filter 0.2s, background-color .2s, -webkit-filter 0.2s;
     z-index: -1; }
   .article__footer-sharing-link > svg {
     fill: white; }
@@ -10160,9 +10138,12 @@ a.section-header:link, a.section-header:visited {
     .configurator__your-config-selected-components-table th .remove-btn {
       margin-left: 15px;
       margin-right: 15px; }
+    .configurator__your-config-selected-components-table th .text-content {
+      width: 50%;
+      flex-grow: 1; }
   .configurator__your-config-selected-components-table tr {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     padding: 2px 5px;
     opacity: 0.5;
     cursor: default;

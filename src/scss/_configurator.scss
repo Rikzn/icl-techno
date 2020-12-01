@@ -527,11 +527,17 @@
             margin-left: 15px;
             margin-right: 15px;
         }
+
+
+        .text-content {
+            width: 50%;
+            flex-grow: 1;
+        }
     }
 
     tr {
         display: flex;
-        align-items: baseline;
+        align-items: center;
         padding: 2px 5px;
         opacity: 0.5;
         cursor: default;
