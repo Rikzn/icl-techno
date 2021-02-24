@@ -20,6 +20,14 @@ export default function sliderProject() {
               nextEl: '.completed-projects__slider-next',
               prevEl: '.completed-projects__slider-prev',
             },
+            breakpoints: {
+              768: {
+                slidesPerView: 2,
+              },
+              1240: {
+                slidesPerView: 3,
+              }
+            }
           
           });
     }

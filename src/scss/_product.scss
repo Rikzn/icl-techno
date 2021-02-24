@@ -242,13 +242,34 @@
         position: relative;
         padding-top: 101px;
         padding-bottom: 113px;
+        background-color: #f3f3f3;
+        overflow: hidden;
+        @include breakpoint(laptop) {   
+            padding-top: 73px;
+            padding-bottom: 81px;
+        }
+        @include breakpoint(tablet) {   
+            padding-top: 57px;
+            padding-bottom: 68px;
+        }
         img {
             position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            z-index: -1;
+            height: 92%;
+            top: 37px;
+            right: 160px;
+            z-index: 2;
+            max-width: 885px;
+            @include breakpoint(desktop) {   
+                right: 0;
+            }
+            @include breakpoint(laptop) {   
+                max-width: 687px;
+                height: 58%;
+                top: 165px;
+            }
+            @include breakpoint(tablet) {   
+                top: 145px;
+            }
         }
         h1 {
             font-weight: bold;
@@ -257,12 +278,20 @@
             color: #000;
             margin-bottom: 24px;
             max-width: 629px;
+            position: relative;
+            z-index: 5;
+            @include breakpoint(tablet) {   
+                font-size: 38px;
+                line-height: 43px;
+            }
         }
         p {
             font-size: 20px;
             line-height: 28px;
             color: #000;
             max-width: 532px;
+            position: relative;
+            z-index: 5;
         }
     }
     &-block {
@@ -278,6 +307,14 @@
             width: 643px;
             height: 381px;
             margin-right: 87px;
+            @include breakpoint(desktop) {   
+                width: 529px;
+                height: 356px;
+            }
+            @include breakpoint(laptop) {   
+                width: 491px;
+                height: 281px;
+            }
             &::before {
                 content: '';
                 position: absolute;
@@ -335,6 +372,10 @@
                     justify-content: center;
                     opacity: 0;
                     padding: 40px 85px 15px 110px; 
+                    @include breakpoint(tablet) {   
+                        padding: 35px 47px 15px 47px;
+                    }
+                    
                     img {
                         display: block;
                         max-width: 100%;
@@ -364,23 +405,43 @@
             max-height: 381px;
             display: flex;
             flex-direction: column;
+            @include breakpoint(desktop) {   
+               height: auto;
+            }
             h2 {
                 font-weight: bold;
                 font-size: 32px;
                 line-height: 44px;
                 color: #000;
                 margin-bottom: 9px;
+                @include breakpoint(laptop) {   
+                    font-size: 29px;
+                    line-height: 39px;
+                }
             }
             p {
                 font-size: 20px;
                 line-height: 30px;
                 max-width: 522px;
                 color: #000;
+                @include breakpoint(laptop) {   
+                    font-size: 18px;
+                    line-height: 27px;
+                }
             }
             a {
                 font-size: 20px;
                 line-height: 30px;
                 color: #FB0D1B;
+                transition: 0.3s;
+                &:hover {
+                    color: #c40c1f;
+                    transition: 0.3s;
+                }
+                @include breakpoint(laptop) {   
+                    font-size: 18px;
+                    line-height: 27px;
+                }
             }
         }
         &__image {
@@ -399,6 +460,9 @@
             }
             &-inquiry {
                 background-color: #C40C1F;
+                &:hover {
+                    background-color: #fb0d1b !important;
+                }
             }
         }
         &-reverse {

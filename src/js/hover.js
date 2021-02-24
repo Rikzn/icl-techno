@@ -1,7 +1,6 @@
 
 export default function hover() {
     const elements = Array.from(document.querySelectorAll('.js-services'));
-    console.log("hello");
     elements.forEach(element => {
         const cards = Array.from(element.querySelectorAll('.js-services-card'));
         const cardImg = Array.from(element.querySelectorAll('.js-services-img'));

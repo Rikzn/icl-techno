@@ -42,7 +42,7 @@ import hoverBg from './hoverBg';
 import imageShitch from './imageShitch';
 import sliderProject from './sliderProject';
 import popap from './popap';
-import izimodal from 'izimodal'
+
 
 import mediaModals from './mediaModals';
 import scrollStandaloneMenu from './scrollStandaloneMenu';

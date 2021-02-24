@@ -29,6 +29,10 @@
                 width: 46px;
                 height: 46px;
             }
+            @include breakpoint(desktop) {   
+                left: -2%;
+                z-index: 99;
+                }
         }
         &-next {
             position: absolute;
@@ -43,11 +47,18 @@
                 width: 46px;
                 height: 46px;
             }
+            @include breakpoint(desktop) {   
+                right: -1.2%;
+                z-index: 99;
+            }
         }
+        .swiper-container {
+            margin-left: -8px;
+        }
+        
     }
-    .swiper-container {
-        margin-left: -8px;
-    }
+    
+    
     .realised-projects__list-item {
         width: auto;
     }
@@ -59,5 +70,8 @@
     }
     .realised-projects__card {
         overflow: hidden;
+        @include breakpoint(laptop) {   
+            height: 238px;
+        }
     }
 }
