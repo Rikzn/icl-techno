@@ -1,0 +1,54 @@
+.bg-layers {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%; 
+    height: 112.8%;
+    z-index: -1;
+    @include breakpoint(laptop) {
+        height: 114.8%;
+    }
+    @include breakpoint(tablet) {
+        height: 116.8%;
+    }
+    @include breakpoint(small-tablet) {  
+        height: 125.8%;
+    }
+    &__item {
+        position: absolute;
+        top: -100px;
+        left: 0;
+        width: 100%;
+        height: 112.8%;
+        z-index: -1;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+        @include breakpoint(laptop) {
+            height: 114.8%;
+        }
+        @include breakpoint(tablet) {
+            height: 116.8%;
+        }
+        @include breakpoint(small-tablet) {  
+            height: 125.8%;
+        }
+        &.active {
+            opacity: 1;
+            visibility: visible;
+            transition: 0.8s;
+        }
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &-base-bg {
+        height: 100%;
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }   
+}

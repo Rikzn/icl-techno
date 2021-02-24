@@ -1,0 +1,76 @@
+.popap {
+    &-window {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 40px;
+        .product-block {
+            &__slider {
+                margin-right: 0;
+                max-width: 682px;
+                max-height: 436px;
+                width: auto;
+                height: auto;
+                .image-switch__img {
+                    padding: 40px 85px 15px 110px;
+                }
+            }
+            &__content {
+                height: auto;
+                max-height: none;
+                padding: 0 32px;
+                h2 {
+                    margin-top: 28px;
+                }
+                p {
+                    margin-bottom: 41px;
+                }
+            }
+
+        }
+        .tabs-block__tabs-item {
+            position: relative;
+            opacity: 1;
+            visibility: visible;
+
+        }
+    }
+    .image {
+        &-switch {
+            &__img {
+                padding: 40px 85px 15px 110px;
+            }
+        }
+    }
+    .specs__table {
+        table {
+            width: auto;
+            max-width: none;
+            th {
+                max-width: 300px;
+            }
+        }
+    }
+}
+
+.iziModal.hasScroll {
+    .iziModal-wrap {
+        scrollbar-width: none;
+        scrollbar-color: transparent;
+        &::-webkit-scrollbar {
+            width: 0; /* ширина для вертикального скролла */
+            height: 0; /* высота для горизонтального скролла */
+            background-color: transparent;
+            display: none;
+        }
+    }
+}
+.iziModal {
+    background: transparent !important;
+    box-shadow: none !important;
+    .iziModal-content {
+        margin-top: 350px;
+        margin-bottom: 250px;
+    }
+}

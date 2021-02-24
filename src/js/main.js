@@ -37,6 +37,12 @@ import '@fancyapps/fancybox';
 import stickyBanner from './stickyBanner';
 import openInModals from './openInModal';
 import onlyNumericInput from './onlyNumericInput';
+import hover from './hover';
+import hoverBg from './hoverBg';
+import imageShitch from './imageShitch';
+import sliderProject from './sliderProject';
+import popap from './popap';
+import izimodal from 'izimodal'
 
 import mediaModals from './mediaModals';
 import scrollStandaloneMenu from './scrollStandaloneMenu';
@@ -53,6 +59,27 @@ document.addEventListener('DOMContentLoaded', function () {
     // Полифилл для CSS свойства ObjectFit (заполнение контейнера изображением)
 
     objectFitImages();
+
+    // попап окно
+
+    popap();
+
+    // Слайдер Реализованные проекты
+
+    sliderProject();
+
+    // Слайдер у карточки товара
+
+
+    imageShitch();
+
+    // Ховер эффект для блока "Решения"
+
+    hover();
+
+    // Ховер эффект для блока "Решения" фон
+
+    hoverBg();
 
     // Полифилл для метода element.matches();
 
@@ -127,6 +154,8 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
     })([Element.prototype, Document.prototype, DocumentFragment.prototype]);
+
+
 
     // Ленивая загрузка видео
 
@@ -273,4 +302,8 @@ window.addEventListener('load', function () {
     stickyBanner();
 });
 
+
+
+
+   
 
