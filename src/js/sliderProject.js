@@ -7,7 +7,7 @@ export default function sliderProject() {
         const swiper = new Swiper('.swiper-container', {
             
             direction: 'horizontal',
-            slidesPerView: 3,
+            slidesPerView: 1,
             loop: true,
           
             
@@ -21,6 +21,9 @@ export default function sliderProject() {
               prevEl: '.completed-projects__slider-prev',
             },
             breakpoints: {
+              370: {
+                slidesPerView: 1,
+              },
               768: {
                 slidesPerView: 2,
               },

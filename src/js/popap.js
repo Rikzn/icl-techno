@@ -10,6 +10,7 @@ export default function popap() {
             overlayColor: 'rgba(0, 0, 0, 0.8)',
             transitionIn: 'fadeInUp',
             transitionOut: 'fadeOutDown',
+            zindex: 1500
         });
     }
 

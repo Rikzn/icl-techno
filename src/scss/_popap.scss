@@ -5,6 +5,7 @@
         flex-direction: column;
         align-items: center;
         padding-bottom: 40px;
+        position: relative;
         .product-block {
             &__slider {
                 margin-right: 0;
@@ -20,11 +21,24 @@
                 height: auto;
                 max-height: none;
                 padding: 0 32px;
+                @include breakpoint(mobile) {   
+                    margin: 0;
+                }
+                @include breakpoint(small-mobile) {      
+                    padding: 0 15px;
+                }
                 h2 {
                     margin-top: 28px;
                 }
                 p {
                     margin-bottom: 41px;
+                }
+            }
+            &__btn-link {
+                &:first-child {
+                    @include breakpoint(small-mobile) {      
+                        margin-right: 19px;
+                    }
                 }
             }
 
@@ -36,10 +50,18 @@
 
         }
     }
+    &-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
     .image {
         &-switch {
             &__img {
                 padding: 40px 85px 15px 110px;
+            }
+            @include breakpoint(small-mobile) {      
+                padding: 11px 54px 15px 49px;
             }
         }
     }
@@ -69,8 +91,18 @@
 .iziModal {
     background: transparent !important;
     box-shadow: none !important;
+    @include breakpoint(mobile) {   
+        width: 450px;
+    }
+    @include breakpoint(small-mobile) {      
+        width: 320px;
+    }
     .iziModal-content {
         margin-top: 350px;
         margin-bottom: 250px;
+        @include breakpoint(small-tablet) {   
+            margin-top: 100px;
+            margin-bottom: 40px;
+        }
     }
 }

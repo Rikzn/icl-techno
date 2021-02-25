@@ -1,17 +1,41 @@
 .completed-projects {
     padding-top: 72px;
     padding-bottom: 93px;
+    @include breakpoint(small-tablet) {   
+        padding-top: 50px;
+        padding-bottom: 55px;
+    }
     &__title {
         display: flex;
         margin-bottom: 57px;
+        @include breakpoint(small-tablet) {   
+            margin-bottom: 25px;
+        }
+        @include breakpoint(mobile) {   
+            align-items: center;
+         }         
         h2 {
             font-weight: bold;
             font-size: 40px;
             line-height: 53px;
             color: #000;
+            @include breakpoint(mobile) {   
+                font-size: 29px;
+                line-height: 27px;
+                max-width: 250px;
+            }
+            @include breakpoint(small-mobile) {      
+                font-size: 20px;
+                line-height: 23px;
+                max-width: 249px;
+            }
         }
+        
         a {
             margin-left: auto;
+            @include breakpoint(mobile) {   
+                margin-top: 0;
+             }   
         }
     }
     &__slider {
@@ -28,11 +52,23 @@
             svg {
                 width: 46px;
                 height: 46px;
+                @include breakpoint(small-tablet) {   
+                    width: 32px;
+                    height: 32px;
+                }
             }
             @include breakpoint(desktop) {   
                 left: -2%;
                 z-index: 99;
-                }
+            }
+            @include breakpoint(small-tablet) {   
+                width: 32px;
+                height: 32px;
+            }
+            @include breakpoint(supersmall-mobile) {      
+                display: none;
+            }
+            
         }
         &-next {
             position: absolute;
@@ -46,10 +82,24 @@
             svg {
                 width: 46px;
                 height: 46px;
+                @include breakpoint(small-tablet) {   
+                    width: 32px;
+                    height: 32px;
+                }
             }
             @include breakpoint(desktop) {   
                 right: -1.2%;
                 z-index: 99;
+            }
+            @include breakpoint(small-tablet) {   
+                width: 32px;
+                height: 32px;
+            }
+            @include breakpoint(mobile) {   
+                right: -0.9%;
+            }
+            @include breakpoint(supersmall-mobile) {      
+                display: none;
             }
         }
         .swiper-container {
@@ -72,6 +122,11 @@
         overflow: hidden;
         @include breakpoint(laptop) {   
             height: 238px;
+        }
+        &-top-row {
+            @include breakpoint(small-tablet) {   
+                margin-bottom: 22px;
+            }
         }
     }
 }
