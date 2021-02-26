@@ -162,7 +162,11 @@
     .brick-1 {
         margin-left: -653px;
         bottom: -8%;
+        
         transform: translateZ(0) rotate(-45deg) skewX(-45deg) translateX(-94%);
+        @include breakpoint(desktop) {      
+            bottom: -12%; 
+        }
         @include breakpoint(laptop) {
             margin-left: -580px;
             width: 180px;
@@ -231,9 +235,9 @@
     }
     .brick-8 {
         margin-left: -150px;
-        bottom: 36%;
+        bottom: 45%;
         @include breakpoint(desktop) {
-            bottom: 45%;
+            bottom: 49%;
         }
         @include breakpoint(tablet) {
             display: none;

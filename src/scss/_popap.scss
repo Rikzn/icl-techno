@@ -50,11 +50,6 @@
 
         }
     }
-    &-close {
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
     .image {
         &-switch {
             &__img {
@@ -104,5 +99,20 @@
             margin-top: 100px;
             margin-bottom: 40px;
         }
+    }
+    .popap-close {
+        position: fixed;
+        top: 363px;
+        right: 14px;
+        z-index: 99;
+        background-color: #fff;
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 19px;
+        cursor: pointer;
     }
 }
