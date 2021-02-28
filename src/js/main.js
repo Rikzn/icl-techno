@@ -42,6 +42,8 @@ import hoverBg from './hoverBg';
 import imageShitch from './imageShitch';
 import sliderProject from './sliderProject';
 import popap from './popap';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 
 import mediaModals from './mediaModals';
@@ -306,4 +308,8 @@ window.addEventListener('load', function () {
 
 
    
+gsap.registerPlugin(ScrollTrigger);
 
+let content = gsap.timeline();
+content.from('.animates-left', {opacity: 0, x: -950, duration: 1.5})
+content.from('.animates-right', {opacity: 0, x: 950, duration: 1.5});
