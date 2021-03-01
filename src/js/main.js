@@ -311,5 +311,17 @@ window.addEventListener('load', function () {
 gsap.registerPlugin(ScrollTrigger);
 
 let content = gsap.timeline();
-content.from('.animates-left', {opacity: 0, x: -950, duration: 1.5})
-content.from('.animates-right', {opacity: 0, x: 950, duration: 1.5});
+content.fromTo('.js-animates-one', {x: '+100%'}, {x: 0})
+content.fromTo('.js-animates-two', {x: '-100%'}, {x: 0})
+content.fromTo('.js-animates-three', {x: '+100%'}, {x: 0});
+
+const main = document.querySelector('.product-main');
+
+ScrollTrigger.create({
+    animation: content,
+    trigger: '.product-main',
+    start: 'top top',
+    end: () => main.offsetWidth / 2,
+    scrub: true,
+    pin: true
+});
