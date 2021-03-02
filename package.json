@@ -18,6 +18,7 @@
   ],
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
+    "aos": "^2.3.4",
     "axios": "^0.19.0",
     "body-scroll-lock": "^2.6.4",
     "choices.js": "^9.0.1",

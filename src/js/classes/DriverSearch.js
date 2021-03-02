@@ -175,7 +175,7 @@ class DriverSearch {
     };
 
     makeAPIcall(serial) {
-        return axios.get(`http://81.18.144.84:8080/drivers.json.php?&sn=${serial}`);
+        return axios.get(`https://drivers.icl-techno.ru/drivers.json.php?&sn=${serial}`);
     }
 
     addListeners() {
