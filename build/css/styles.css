@@ -14704,8 +14704,12 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
         @media only screen and (max-width: 968px) {
           .product-block .image-switch__img {
             padding: 36px 36px 30px; } }
+        @media only screen and (max-width: 768px) {
+          .product-block .image-switch__img {
+            opacity: 1; } }
         @media only screen and (max-width: 370px) {
           .product-block .image-switch__img {
+            opacity: 1;
             padding: 10px 26px 10px; } }
         .product-block .image-switch__img img {
           display: block;
@@ -14835,13 +14839,13 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
             margin-left: auto;
             margin-right: auto; } }
 
-.card-hovered .js-services-card:not(.active) {
+.card-hovered .js-services-card:not(.active) a {
   color: rgba(255, 255, 255, 0.6);
   transition: 0.3s; }
-  .card-hovered .js-services-card:not(.active) svg {
+  .card-hovered .js-services-card:not(.active) a svg {
     opacity: 0.6;
     transition: 0.3s; }
-  .card-hovered .js-services-card:not(.active) .intro-slider__slide-bg-content {
+  .card-hovered .js-services-card:not(.active) a .intro-slider__slide-bg-content {
     opacity: 0; }
 
 .card-hovered .intro-slider__slide-bg-content {
