@@ -14332,7 +14332,8 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
     font-weight: bold;
     font-size: 40px;
     line-height: 53px;
-    max-width: 620px; }
+    max-width: 620px;
+    color: #fff; }
     @media only screen and (max-width: 1240px) {
       .product__title {
         font-size: 32px;
@@ -14351,7 +14352,8 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
     font-size: 26px;
     line-height: 30px;
     max-width: 366px;
-    margin-left: auto; }
+    margin-left: auto;
+    color: #fff; }
     @media only screen and (max-width: 1240px) {
       .product__subtitle {
         font-size: 22px; } }
