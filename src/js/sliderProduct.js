@@ -15,6 +15,7 @@ export default function sliderProject() {
                 
                 pagination: {
                   el: '.swiper-pagination',
+                  type: 'bullets',
                 },
               
               });
