@@ -1,29 +1,24 @@
-import Swiper from 'swiper';
+import Swiper, { Navigation, Pagination } from 'swiper';
 
-export default function sliderProject() {
-    const completedProjects = document.querySelectorAll('.product-block');
 
-    if (window.matchMedia('(max-width:700px)').matches) {
+export default function sliderProduct() {
+    const completedProjects = document.querySelectorAll('.product-block__slider');
         if (completedProjects) {
-
-            const swiper = new Swiper('.swiper-container', {
-                
-                direction: 'horizontal',
-                slidesPerView: 1,
+            Swiper.use([Navigation, Pagination]);
+            const mySwiper = new Swiper('.product-block-slider', {
                 loop: true,
               
-                
+                // If we need pagination
                 pagination: {
                   el: '.swiper-pagination',
-                  type: 'bullets',
+                  clickable: true,
                 },
               
-              });
+                // Navigation arrows
+                navigation: {
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+                },
+              })
         }
-    }
-
-    
-
-
-
 }

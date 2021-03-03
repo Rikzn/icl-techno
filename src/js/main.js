@@ -41,13 +41,16 @@ import hover from './hover';
 import hoverBg from './hoverBg';
 import imageShitch from './imageShitch';
 import sliderProject from './sliderProject';
+import sliderProduct from './sliderProduct';
 import popap from './popap';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 
+
 import mediaModals from './mediaModals';
 import scrollStandaloneMenu from './scrollStandaloneMenu';
+// import { from } from 'core-js/fn/array';
 
 
 const AosItem = document.querySelectorAll('.product-block');
@@ -329,6 +332,10 @@ document.addEventListener('DOMContentLoaded', function () {
     // Скроллинг до активного пункта меню
 
     scrollStandaloneMenu();
+
+    // Слайдер мобильной версии страницы "Нацпроект"
+
+    sliderProduct();
 });
 
 

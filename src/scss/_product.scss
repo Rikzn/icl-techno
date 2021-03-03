@@ -598,9 +598,9 @@
         }
     }
     &-slide {
-        display: none;
+        // display: none;
         @include breakpoint(mobile) {
-            display: block;
+            // display: block;
             img {
                 height: 80%;
                 width: 72%;
