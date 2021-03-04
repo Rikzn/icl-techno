@@ -15238,7 +15238,7 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
         .completed-projects__slider-prev {
           width: 32px;
           height: 32px; } }
-      @media only screen and (max-width: 370px) {
+      @media only screen and (max-width: 768px) {
         .completed-projects__slider-prev {
           display: none; } }
     .completed-projects__slider-next {
@@ -15266,9 +15266,6 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
           width: 32px;
           height: 32px; } }
       @media only screen and (max-width: 768px) {
-        .completed-projects__slider-next {
-          right: -0.9%; } }
-      @media only screen and (max-width: 370px) {
         .completed-projects__slider-next {
           display: none; } }
     .completed-projects__slider .swiper-container {

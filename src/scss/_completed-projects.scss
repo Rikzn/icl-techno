@@ -65,7 +65,7 @@
                 width: 32px;
                 height: 32px;
             }
-            @include breakpoint(supersmall-mobile) {      
+            @include breakpoint(mobile) {
                 display: none;
             }
             
@@ -96,11 +96,9 @@
                 height: 32px;
             }
             @include breakpoint(mobile) {   
-                right: -0.9%;
-            }
-            @include breakpoint(supersmall-mobile) {      
                 display: none;
             }
+            
         }
         .swiper-container {
             margin-left: -8px;
