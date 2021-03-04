@@ -539,7 +539,7 @@
                     line-height: 21px;
                 }
             }
-            a {
+            &-link {
                 font-size: 20px;
                 line-height: 30px;
                 color: #FB0D1B;
@@ -575,6 +575,15 @@
                 background-color: #FFEEEF;
                 color: #FB0D1B;
                 transition: 0.3s;
+                display: inline-block;
+                padding: 11px 30px;
+                position: relative;
+                align-self: center;
+                transition: clip-path .3s,background-color .3s,color .2s;
+                transition: clip-path .3s,background-color .3s,color .2s,-webkit-clip-path .3s;
+                clip-path: polygon(0 10px,10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0% 100%);
+                white-space: nowrap;
+                -webkit-tap-highlight-color: transparent;
                 @include breakpoint(small-tablet) {   
                     font-size: 11px;
                 }
@@ -591,6 +600,7 @@
                     color: #fff;
                     background-color: #fb0d1b;
                     transition: 0.3s;
+                    clip-path: polygon(0px 0px, 0px 0px, 100% 0px, 100% 100%, 100% 100%, 0% 100%);
                 }
             }
             &-inquiry {

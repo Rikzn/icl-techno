@@ -15049,24 +15049,24 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
           .product-block__content p {
             font-size: 14px;
             line-height: 21px; } }
-      .product-block__content a {
+      .product-block__content-link {
         font-size: 20px;
         line-height: 30px;
         color: #FB0D1B;
         transition: 0.3s; }
-        .product-block__content a:hover {
+        .product-block__content-link:hover {
           color: #c40c1f;
           transition: 0.3s; }
         @media only screen and (max-width: 1240px) {
-          .product-block__content a {
+          .product-block__content-link {
             font-size: 18px;
             line-height: 27px; } }
         @media only screen and (max-width: 968px) {
-          .product-block__content a {
+          .product-block__content-link {
             font-size: 15px;
             line-height: 21px; } }
         @media only screen and (max-width: 576px) {
-          .product-block__content a {
+          .product-block__content-link {
             font-size: 14px;
             line-height: 21px; } }
     .product-block__image {
@@ -15080,7 +15080,18 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
         cursor: pointer;
         background-color: #FFEEEF;
         color: #FB0D1B;
-        transition: 0.3s; }
+        transition: 0.3s;
+        display: inline-block;
+        padding: 11px 30px;
+        position: relative;
+        align-self: center;
+        transition: background-color .3s,color .2s,-webkit-clip-path .3s;
+        transition: clip-path .3s,background-color .3s,color .2s;
+        transition: clip-path .3s,background-color .3s,color .2s,-webkit-clip-path .3s;
+        -webkit-clip-path: polygon(0 10px, 10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0% 100%);
+                clip-path: polygon(0 10px, 10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0% 100%);
+        white-space: nowrap;
+        -webkit-tap-highlight-color: transparent; }
         @media only screen and (max-width: 968px) {
           .product-block__btn-link {
             font-size: 11px; } }
@@ -15095,7 +15106,9 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
         .product-block__btn-link:hover {
           color: #fff;
           background-color: #fb0d1b;
-          transition: 0.3s; }
+          transition: 0.3s;
+          -webkit-clip-path: polygon(0px 0px, 0px 0px, 100% 0px, 100% 100%, 100% 100%, 0% 100%);
+                  clip-path: polygon(0px 0px, 0px 0px, 100% 0px, 100% 100%, 100% 100%, 0% 100%); }
       .product-block__btn-inquiry {
         background-color: #C40C1F; }
         .product-block__btn-inquiry:hover {
@@ -15218,7 +15231,7 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      left: -4%;
+      left: -3%;
       width: 46px;
       height: 46px;
       cursor: pointer;
@@ -15245,7 +15258,7 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      right: -3.5%;
+      right: -3%;
       width: 46px;
       height: 46px;
       cursor: pointer;
@@ -15268,8 +15281,8 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
       @media only screen and (max-width: 768px) {
         .completed-projects__slider-next {
           display: none; } }
-    .completed-projects__slider .swiper-container {
-      margin-left: -8px; }
+  .completed-projects-slider-container {
+    overflow: hidden; }
   .completed-projects .realised-projects__list-item {
     width: auto; }
   .completed-projects .realised-projects__corner::before {

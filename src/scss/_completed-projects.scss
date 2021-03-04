@@ -44,7 +44,7 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            left: -4%;
+            left: -3%;
             width: 46px;
             height: 46px;
             cursor: pointer;
@@ -74,7 +74,7 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            right: -3.5%;
+            right: -3%;
             width: 46px;
             height: 46px;
             cursor: pointer;
@@ -100,10 +100,13 @@
             }
             
         }
-        .swiper-container {
-            margin-left: -8px;
-        }
         
+        
+    }
+    &-slider {
+        &-container {
+            overflow: hidden;
+        }
     }
     
     
