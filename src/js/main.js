@@ -86,7 +86,8 @@ if (AosItem) {
 }
 
 
-$('.js-bg-layers').unwrap();
+
+
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -347,6 +348,9 @@ window.addEventListener('load', function () {
 });
 
 
+$('.js-bg-layers').unwrap();
+$('.js-services').unwrap();
+$('.js-product-header').unwrap();
 
 
    

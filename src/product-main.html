@@ -1,12 +1,12 @@
-{% set title = "Главная страница" %} {% extends "layout_new.html" %} {% block content %}
+{% set title = "Главная страница" %} {% extends "layout.html" %} {% block content %}
 
-<section class="product-header">
+<section class="product-header js-product-header">
     <img src="img/eagle.png" alt="eagle">
-    <div class="container">
+       <div class="container">
         <h1>Национальные решения ICL для образования</h1>
         <p>Базовая модель, настольный компьютер начального уровня. Наиболее востребованная модель у корпоративных
             пользователей для работы с документами, почтой и различными</p>
-    </div>
+       </div>
 </section>
 <div class="container">
     <section class="product-main">
@@ -124,9 +124,9 @@
                 </svg>
             </div>
             <div class="swiper-container">
-
+    
                 <div class="swiper-wrapper">
-
+    
                     <div class="swiper-slide">
                         <li class="realised-projects__list-item" data-category="gov" data-year="2019">
                             <a href="#text-modal" class="realised-projects__card js-modal-open">
@@ -139,7 +139,7 @@
                                             22.05.2019
                                         </span>
                                     </span>
-
+    
                                     <img src="img/rostelecom-logo.svg" alt="Логотип аэрофлота"
                                         class="realised-projects__company-logo" />
                                 </span>
@@ -172,7 +172,7 @@
                                             22.05.2020
                                         </span>
                                     </span>
-
+    
                                     <img src="img/rostelecom-logo.svg" alt="Логотип аэрофлота"
                                         class="realised-projects__company-logo" />
                                 </span>
@@ -205,7 +205,7 @@
                                             22.05.2019
                                         </span>
                                     </span>
-
+    
                                     <img src="img/rostelecom-logo.svg" alt="Логотип аэрофлота"
                                         class="realised-projects__company-logo" />
                                 </span>
@@ -227,7 +227,7 @@
                         </li>
                     </div>
                 </div>
-
+    
             </div>
         </div>
     </div>
@@ -271,157 +271,156 @@
             </div>
         </div>
     </section>
-</div>
-
-<div id="modal" class="modal" data-iziModal-fullscreen="true" data-iziModal-icon="icon-home">
-    <div class="popap-window">
-        <div class="popap-close" data-izimodal-close>
-            &#10006;
-        </div>
-        <div class="product-block__slider">
-            <div class="image-switch__img"><img src="img/notebook.png" alt="Ноутбук"></div>
-        </div>
-        <div class="product-block__content">
-            <h2>Ноутбук учителя</h2>
-            <p>Производство расположено на собственном Заводе вычислительной техники мощностью до 300 000 изделий
-                в год.
-                Все линейки компьютерной техники ICL находятся</p>
-            <ul class="tabs-block__tabs-list js-tabs-list">
-                <li class="tabs-block__tabs-item">
-                    <section class="specs">
-                        <div class="specs__table">
-                            <table>
-                                <tr>
-                                    <th>
-                                        Процессор
-                                    </th>
-                                    <td>
-                                        <span class="specs__table-item">
-                                            Intel Celeron
-                                        </span>
-                                        <span class="specs__table-item">
-                                            Intel Pentium
-                                        </span>
-                                        <span class="specs__table-item">
-                                            Intel Core i3 8-го поколения
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        Набор микросхем
-                                    </th>
-                                    <td>
-                                        <span class="specs__table-item">
-                                            Intel H310 Express
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        Оперативная память
-                                    </th>
-                                    <td>
-                                        <span class="specs__table-item">
-                                            2 слота DDR4 DIMM
-                                        </span>
-                                        <span class="specs__table-item">
-                                            Поддержка до 32 ГБ DDR4 2400 МГц
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        Видеоконтроллер
-                                    </th>
-                                    <td>
-                                        <span class="specs__table-item">
-                                            Intel HD Graphics (встроен в процессор)
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        Звуковая карта
-                                    </th>
-                                    <td>
-                                        <span class="specs__table-item">
-                                            Интегрированный HD-кодек
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        Накопители информации
-                                    </th>
-                                    <td>
-                                        <span class="specs__table-item">
-                                            Поддержка до 4 устройств SATA-III
-                                        </span>
-                                        <span class="specs__table-item">
-                                            Поддержка 1 устройства M.2
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        Сетевой контроллер
-                                    </th>
-                                    <td>
-                                        <span class="specs__table-item">
-                                            10/100/1000 Мб/с Gigabit Ethernet
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        Слоты расширения
-                                    </th>
-                                    <td>
-                                        <span class="specs__table-item">
-                                            1 x PCI-E x16
-                                        </span>
-                                        <span class="specs__table-item">
-                                            1 x PCI-E x1
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        Порты ввода-вывода на задней панели
-                                    </th>
-                                    <td>
-                                        <span class="specs__table-item">
-                                            1 x RJ45
-                                        </span>
-                                        <span class="specs__table-item">
-                                            4 x USB 2.0
-                                        </span>
-                                        <span class="specs__table-item">
-                                            2 x USB 3.1
-                                        </span>
-                                        <span class="specs__table-item">
-                                            1 x VGA
-                                        </span>
-                                        <span class="specs__table-item">
-                                            1 x HDMI
-                                        </span>
-                                        <span class="specs__table-item">
-                                            1 x DVI-D Звуковые гнезда (3 шт.)
-                                        </span>
-                                        <span class="specs__table-item">
-                                            2 x PS/2
-                                        </span>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </section>
-                </li>
-            </ul>
-            <div class="product-block__btn">
-                <div class="product-block__btn-link btn-with-corners">Запросить ТЗ</div>
-                <div class="product-block__btn-link btn-with-corners">Запросить КП</div>
+    <div id="modal" class="modal" data-iziModal-fullscreen="true" data-iziModal-icon="icon-home">
+        <div class="popap-window">
+            <div class="popap-close" data-izimodal-close>
+                &#10006;
+            </div>
+            <div class="product-block__slider">
+                <div class="image-switch__img"><img src="img/notebook.png" alt="Ноутбук"></div>
+            </div>
+            <div class="product-block__content">
+                <h2>Ноутбук учителя</h2>
+                <p>Производство расположено на собственном Заводе вычислительной техники мощностью до 300 000 изделий
+                    в год.
+                    Все линейки компьютерной техники ICL находятся</p>
+                <ul class="tabs-block__tabs-list js-tabs-list">
+                    <li class="tabs-block__tabs-item">
+                        <section class="specs">
+                            <div class="specs__table">
+                                <table>
+                                    <tr>
+                                        <th>
+                                            Процессор
+                                        </th>
+                                        <td>
+                                            <span class="specs__table-item">
+                                                Intel Celeron
+                                            </span>
+                                            <span class="specs__table-item">
+                                                Intel Pentium
+                                            </span>
+                                            <span class="specs__table-item">
+                                                Intel Core i3 8-го поколения
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Набор микросхем
+                                        </th>
+                                        <td>
+                                            <span class="specs__table-item">
+                                                Intel H310 Express
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Оперативная память
+                                        </th>
+                                        <td>
+                                            <span class="specs__table-item">
+                                                2 слота DDR4 DIMM
+                                            </span>
+                                            <span class="specs__table-item">
+                                                Поддержка до 32 ГБ DDR4 2400 МГц
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Видеоконтроллер
+                                        </th>
+                                        <td>
+                                            <span class="specs__table-item">
+                                                Intel HD Graphics (встроен в процессор)
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Звуковая карта
+                                        </th>
+                                        <td>
+                                            <span class="specs__table-item">
+                                                Интегрированный HD-кодек
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Накопители информации
+                                        </th>
+                                        <td>
+                                            <span class="specs__table-item">
+                                                Поддержка до 4 устройств SATA-III
+                                            </span>
+                                            <span class="specs__table-item">
+                                                Поддержка 1 устройства M.2
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Сетевой контроллер
+                                        </th>
+                                        <td>
+                                            <span class="specs__table-item">
+                                                10/100/1000 Мб/с Gigabit Ethernet
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Слоты расширения
+                                        </th>
+                                        <td>
+                                            <span class="specs__table-item">
+                                                1 x PCI-E x16
+                                            </span>
+                                            <span class="specs__table-item">
+                                                1 x PCI-E x1
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Порты ввода-вывода на задней панели
+                                        </th>
+                                        <td>
+                                            <span class="specs__table-item">
+                                                1 x RJ45
+                                            </span>
+                                            <span class="specs__table-item">
+                                                4 x USB 2.0
+                                            </span>
+                                            <span class="specs__table-item">
+                                                2 x USB 3.1
+                                            </span>
+                                            <span class="specs__table-item">
+                                                1 x VGA
+                                            </span>
+                                            <span class="specs__table-item">
+                                                1 x HDMI
+                                            </span>
+                                            <span class="specs__table-item">
+                                                1 x DVI-D Звуковые гнезда (3 шт.)
+                                            </span>
+                                            <span class="specs__table-item">
+                                                2 x PS/2
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </section>
+                    </li>
+                </ul>
+                <div class="product-block__btn">
+                    <div class="product-block__btn-link btn-with-corners">Запросить ТЗ</div>
+                    <div class="product-block__btn-link btn-with-corners">Запросить КП</div>
+                </div>
             </div>
         </div>
     </div>
