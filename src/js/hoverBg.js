@@ -36,7 +36,6 @@ export default function hoverBg() {
                 setActiveLayer(null);
             });
             link.addEventListener('click', event => {
-                event.preventDefault();
                 gsap.to(link, {
                     duration: 0.5,
                     ease: 'easeOut',

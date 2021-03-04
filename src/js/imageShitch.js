@@ -3,7 +3,7 @@ export default function imageShitch() {
     const products = document.querySelectorAll('.product-block');
 
     if (products) {
-        if (window.matchMedia('(min-width:700px)').matches) {
+        if (window.matchMedia('(min-width:500px)').matches) {
             products.forEach(el => {
                 let currentProduct = el;
                 const imageSwitchItems = currentProduct.querySelectorAll('.image-switch__item');
