@@ -104,6 +104,8 @@
         }
         @include breakpoint(mobile) {   
             height: auto;
+            padding-top: 45px;
+            padding-bottom: 45px;
         }
         &:last-child {
             border-right: none;
