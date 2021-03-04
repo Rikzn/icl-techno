@@ -14649,6 +14649,9 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
           width: 150%;
           height: 1px;
           background-color: rgba(255, 255, 255, 0.6); } }
+    @media only screen and (max-width: 768px) {
+      .product__nav {
+        height: auto; } }
     .product__nav:last-child {
       border-right: none; }
     .product__nav a {

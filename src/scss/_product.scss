@@ -102,6 +102,9 @@
                 background-color: rgba($color: #fff, $alpha: 0.6);
             }
         }
+        @include breakpoint(mobile) {   
+            height: auto;
+        }
         &:last-child {
             border-right: none;
         }
