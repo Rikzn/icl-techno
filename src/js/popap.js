@@ -2,7 +2,7 @@ import izimodal from 'izimodal';
 
 export default function popap() {
 
-    const popap = document.querySelector('#modal');
+    const popap = document.querySelector('.modal');
     console.log(popap);
     if (popap) {
         $(".modal").iziModal({
