@@ -15444,6 +15444,12 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
     .bg-layers-base-bg img {
       height: 100%;
       width: 100%; }
+      @media only screen and (max-width: 768px) {
+        .bg-layers-base-bg img {
+          -o-object-fit: cover;
+             object-fit: cover;
+          -o-object-position: -420px;
+             object-position: -420px; } }
 
 body.is-admin .block-wrapper:first-child {
   margin-top: 100px; }
