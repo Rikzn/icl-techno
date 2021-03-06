@@ -1,8 +1,8 @@
 .bg-layers {
     position: absolute;
     top: -100px;
-    left: 0;
-    width: 100%; 
+    left: calc((100vw - 100%)/2*-1);
+    width: 100vw;
     height: 115.8%;
     z-index: -1;
     @include breakpoint(laptop) {
@@ -17,8 +17,8 @@
     &__item {
         position: absolute;
         top: -100px;
-        left: 0;
-        width: 100%;
+        left: calc((100vw - 100%)/2*-1);
+        width: 100vw;
         height: 115.8%;
         z-index: -1;
         opacity: 0;

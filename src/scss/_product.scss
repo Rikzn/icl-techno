@@ -256,6 +256,8 @@
         padding-bottom: 113px;
         background-color: #f3f3f3;
         overflow: hidden;
+        left: calc((100vw - 100%)/2*-1);
+        width: 100vw;
         @include breakpoint(laptop) {   
             padding-top: 73px;
             padding-bottom: 81px;
@@ -617,7 +619,7 @@
             }
             .product-block__slider {
                 margin-right: 0;
-                margin-left: 54px;
+                margin-left: auto;
                 @include breakpoint(mobile) {   
                     margin-left: auto;
                     margin-right: auto;
@@ -661,6 +663,7 @@
             }
         }
     }
+
 }
 .card-hovered {
     .js-services-card:not(.active) {

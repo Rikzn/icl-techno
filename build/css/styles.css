@@ -14787,7 +14787,9 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
     padding-top: 101px;
     padding-bottom: 113px;
     background-color: #f3f3f3;
-    overflow: hidden; }
+    overflow: hidden;
+    left: calc((100vw - 100%)/2*-1);
+    width: 100vw; }
     @media only screen and (max-width: 1240px) {
       .product-header {
         padding-top: 73px;
@@ -15120,7 +15122,7 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
           flex-direction: column; } }
       .product-block-reverse .product-block__slider {
         margin-right: 0;
-        margin-left: 54px; }
+        margin-left: auto; }
         @media only screen and (max-width: 768px) {
           .product-block-reverse .product-block__slider {
             margin-left: auto;
@@ -15398,8 +15400,8 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
 .bg-layers {
   position: absolute;
   top: -100px;
-  left: 0;
-  width: 100%;
+  left: calc((100vw - 100%)/2*-1);
+  width: 100vw;
   height: 115.8%;
   z-index: -1; }
   @media only screen and (max-width: 1240px) {
@@ -15414,8 +15416,8 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
   .bg-layers__item {
     position: absolute;
     top: -100px;
-    left: 0;
-    width: 100%;
+    left: calc((100vw - 100%)/2*-1);
+    width: 100vw;
     height: 115.8%;
     z-index: -1;
     opacity: 0;
