@@ -488,6 +488,7 @@
         &__content {
             height: 381px;
             max-height: 381px;
+            max-width: 552px;
             display: flex;
             flex-direction: column;
             @include breakpoint(desktop) {   
@@ -540,7 +541,7 @@
                 }
             }
             &-link {
-                font-size: 20px;
+                font-size: 16px;
                 line-height: 30px;
                 color: #FB0D1B;
                 transition: 0.3s;
@@ -559,6 +560,11 @@
                 @include breakpoint(small-mobile) {   
                     font-size: 14px;
                     line-height: 21px;
+                }
+                svg {
+                    fill: red;
+                    width: 10px;
+                    height: 10px;
                 }
             }
         }

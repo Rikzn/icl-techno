@@ -15000,6 +15000,7 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
     .product-block__content {
       height: 381px;
       max-height: 381px;
+      max-width: 552px;
       display: flex;
       flex-direction: column; }
       @media only screen and (max-width: 1400px) {
@@ -15050,7 +15051,7 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
             font-size: 14px;
             line-height: 21px; } }
       .product-block__content-link {
-        font-size: 20px;
+        font-size: 16px;
         line-height: 30px;
         color: #FB0D1B;
         transition: 0.3s; }
@@ -15069,6 +15070,10 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
           .product-block__content-link {
             font-size: 14px;
             line-height: 21px; } }
+        .product-block__content-link svg {
+          fill: red;
+          width: 10px;
+          height: 10px; }
     .product-block__image {
       position: relative;
       width: 100%;
