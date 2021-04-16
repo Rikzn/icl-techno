@@ -15375,7 +15375,7 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
     .iziModal {
       width: 320px; } }
   .iziModal .iziModal-content {
-    margin-top: 140px;
+    margin-top: 58px;
     margin-bottom: 250px; }
     @media only screen and (max-width: 968px) {
       .iziModal .iziModal-content {
@@ -15383,7 +15383,7 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
         margin-bottom: 40px; } }
   .iziModal .popap-close {
     position: fixed;
-    top: 153px;
+    top: 74px;
     right: 14px;
     z-index: 99;
     background-color: #fff;
