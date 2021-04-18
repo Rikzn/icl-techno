@@ -109,3 +109,23 @@ section {
         overflow: hidden;
     }
 }
+
+
+.product-header img {
+    opacity: 0;
+    animation: emblem;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes emblem {
+    from {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

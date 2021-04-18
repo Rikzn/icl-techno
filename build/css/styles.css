@@ -2059,6 +2059,33 @@ section:first-child {
     height: auto;
     overflow: hidden; }
 
+.product-header img {
+  opacity: 0;
+  -webkit-animation: emblem;
+          animation: emblem;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+@-webkit-keyframes emblem {
+  from {
+    opacity: 0;
+    transform: translateY(50%); }
+  to {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes emblem {
+  from {
+    opacity: 0;
+    transform: translateY(50%); }
+  to {
+    opacity: 1;
+    transform: translateY(0); } }
+
 @font-face {
   font-family: 'Proxima Nova';
   src: url("../misc/fonts/proximanova-light-webfont.woff2") format("woff2"), url("../misc/fonts/proximanova-light-webfont.woff") format("woff");
