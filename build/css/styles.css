@@ -14581,11 +14581,18 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
 
 .product {
   padding-top: 33px;
-  margin-top: -33px;
-  height: 90vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   position: relative; }
+  .product:first-child {
+    margin-top: -100px;
+    padding-top: 133px; }
   .product__content {
-    color: #fff; }
+    color: #fff;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column; }
   .product__header {
     display: flex;
     padding-bottom: 52px;
@@ -14605,7 +14612,9 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
       height: 1px;
       bottom: 0; }
   .product__inner {
-    display: flex; }
+    display: flex;
+    flex-grow: 1;
+    overflow: hidden; }
     @media only screen and (max-width: 968px) {
       .product__inner {
         flex-direction: column; } }
@@ -14657,7 +14666,6 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 70.5vh;
     border-right: 1px solid rgba(255, 255, 255, 0.6);
     position: relative; }
     @media only screen and (max-width: 1240px) {
@@ -15431,39 +15439,21 @@ input[type="radio"]:checked ~ .application__form-radio-icon {
 
 .bg-layers {
   position: absolute;
-  top: -100px;
-  left: calc((100vw - 100%)/2*-1);
-  width: 100vw;
-  height: 115.8%;
+  top: 0;
+  bottom: 0;
+  left: calc((100vw - 100%) / 2 * -1);
+  right: calc((100vw - 100%) / 2 * -1);
   z-index: -1; }
-  @media only screen and (max-width: 1240px) {
-    .bg-layers {
-      height: 114.8%; } }
-  @media only screen and (max-width: 1080px) {
-    .bg-layers {
-      height: 116.8%; } }
-  @media only screen and (max-width: 968px) {
-    .bg-layers {
-      height: 125.8%; } }
   .bg-layers__item {
     position: absolute;
-    top: -100px;
-    left: calc((100vw - 100%)/2*-1);
-    width: 100vw;
-    height: 115.8%;
+    top: 0;
+    left: calc((100vw - 100%) / 2 * -1);
+    right: calc((100vw - 100%)/2 * -1);
+    bottom: 0;
     z-index: -1;
     opacity: 0;
     visibility: hidden;
     transition: 0.3s; }
-    @media only screen and (max-width: 1240px) {
-      .bg-layers__item {
-        height: 114.8%; } }
-    @media only screen and (max-width: 1080px) {
-      .bg-layers__item {
-        height: 116.8%; } }
-    @media only screen and (max-width: 968px) {
-      .bg-layers__item {
-        height: 125.8%; } }
     .bg-layers__item.active {
       opacity: 1;
       visibility: visible;

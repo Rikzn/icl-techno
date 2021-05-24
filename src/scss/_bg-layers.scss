@@ -1,38 +1,22 @@
 .bg-layers {
     position: absolute;
-    top: -100px;
-    left: calc((100vw - 100%)/2*-1);
-    width: 100vw;
-    height: 115.8%;
+    top: 0;
+    bottom: 0;
+    left: calc((100vw - 100%) / 2 * -1);
+    right: calc((100vw - 100%) / 2 * -1);
     z-index: -1;
-    @include breakpoint(laptop) {
-        height: 114.8%;
-    }
-    @include breakpoint(tablet) {
-        height: 116.8%;
-    }
-    @include breakpoint(small-tablet) {  
-        height: 125.8%;
-    }
+    
     &__item {
         position: absolute;
-        top: -100px;
-        left: calc((100vw - 100%)/2*-1);
-        width: 100vw;
-        height: 115.8%;
+        top: 0;
+        left: calc((100vw - 100%) / 2 * -1);
+        right: calc((100vw - 100%)/2 * -1);
+        bottom: 0;
         z-index: -1;
         opacity: 0;
         visibility: hidden;
         transition: 0.3s;
-        @include breakpoint(laptop) {
-            height: 114.8%;
-        }
-        @include breakpoint(tablet) {
-            height: 116.8%;
-        }
-        @include breakpoint(small-tablet) {  
-            height: 125.8%;
-        }
+       
         &.active {
             opacity: 1;
             visibility: visible;
